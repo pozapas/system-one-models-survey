@@ -1,7 +1,7 @@
 {
   "values": {
     "syn.ledgerRows": {
-      "text": "394",
+      "text": "396",
       "source": "shared/ledger/synthesis.json",
       "note": "rows in ledger.csv at synthesis time"
     },

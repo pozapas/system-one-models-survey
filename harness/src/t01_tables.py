@@ -244,7 +244,10 @@ def printed(label):
 
 def best_of(labels, mode):
     """Labels holding the best printed value (max or min); ties are all returned."""
-    vals = {l: printed(l) for l in labels}
+    # Laya (multilingual) on the full intent list works on truncated option keys (its
+    # option text exceeds the input budget), so its cells there are shown but not ranked
+    vals = {l: printed(l) for l in labels
+            if not ("layaml" in l and ("dtwo" in l or "d2k150" in l))}
     vals = {l: v for l, v in vals.items() if v is not None}
     if not vals:
         return set()
@@ -306,6 +309,45 @@ def family_rows(models, ncols, row_fn, between=None):
     return out
 
 
+
+def e_t16_scores():
+    """Appendix. Multi-class Brier score and negative log-likelihood of every model on each
+    benchmark, as shipped. Bold is the lowest value in each column."""
+    models = DECISION_MODELS + ["comparator-open"]
+    dsets = [("doneneutral", "D1"), ("dtwo", "D2")] + [(cs, lab) for _c, cs, lab in D3_TASKS]
+    cols = [(ds, met) for ds, _l in dsets for met in ("brier", "nll")]
+    best = set()
+    for ds, met in cols:
+        best |= best_of([f"e1.{CN.SLUG[m]}.{ds}.{met}" for m in models], "min")
+
+    def row(m):
+        ms = CN.SLUG[m]
+        return [" & ".join([mname(m)] + [ecell(f"e1.{ms}.{ds}.{met}", best) for ds, met in cols])
+                + " \\\\"]
+
+    n = 1 + len(cols)
+    spec = colspec([("P", 0.16)] + [("N", 0.84 / len(cols))] * len(cols))
+    words = {13: "thirteen"}
+    groups = " & ".join("\\hdgroup{two}{%s}" % lab for _ds, lab in dsets)
+    rules = ",".join("%d-%d" % (2 + 2 * i, 3 + 2 * i) for i in range(len(dsets)))
+    subs = " & ".join("\\hdsub{Brier} & \\hdsub{NLL}" for _ in dsets)
+    lines = EAAI_HEADER + [
+        "\\tablestyle",
+        "\\setlength{\\tabcolsep}{2pt}",
+        "\\begin{tabular}{%s}" % spec,
+        "\\toprule",
+        "\\headrow \\hdtop{} & %s \\\\" % groups,
+        "\\bandrules{%s}" % rules,
+        "\\headrow \\hdsub{Model} & %s \\\\" % subs,
+        "\\midrule"]
+    lines += family_rows(models, n, row)
+    lines += ["\\bottomrule", "\\end{tabular}",
+              "\\tablenote{Brier is the multi-class Brier score and NLL the negative log-likelihood"
+              " of the reference label, both from the probabilities as shipped. Bold marks the"
+              " lowest value in each column, with ties bolded, and the over-budget Laya"
+              " (multilingual) cells on D2 are shown but not ranked.}"]
+    return ewrite("t16_scores.tex", lines)
+
 def e_t03_headline():
     """Full width. Columns grouped by dataset: D1 (accuracy, soft accuracy), D2 (accuracy,
     out-of-scope AUROC), D3 (four task accuracies, mean macro-F1). Bold is the best value
@@ -314,14 +356,37 @@ def e_t03_headline():
     cols = [("acc", "doneneutral.acc"), ("soft", "doneneutral.softacc"),
             ("acc", "dtwo.acc"), ("auroc", "oos.auroc")]
     cols += [("acc", f"{cs}.acc") for _c, cs, _l in D3_TASKS] + [("f1", "dthree.macrofone")]
+    # conventional classifiers: one row trained per task on its own labels (BGE-small
+    # embeddings + logistic regression; BERT-base only on D2) and one zero-shot NLI row
+    d3b = ["d3convgoawry", "d3wikicorpus", "d3emotion", "d3wikipoliteness"]
+    bl_rows = [
+        ("BGE-small, trained per task",
+         ["bl.bgesmalllrd1.d1neutral.acc", "bl.bgesmalllrd1.d1neutral.softacc",
+          "bl.bgesmalllrclinc.d2k150.acc", "bl.bgesmalllrclinc.d2k150.aurocoos"]
+         + [f"bl.bgesmalllrd3.{t}.acc" for t in d3b] + ["bl.bgesmalllrd3.dthree.macrofone"]),
+        ("BERT-base, fine-tuned",
+         [None, None, "bl.bertbaseclinc.d2k150.acc", "bl.bertbaseclinc.d2k150.aurocoos"]
+         + [None] * 5),
+        ("DeBERTa-v3 NLI, zero-shot",
+         ["bl.nlidebertav3base.d1neutral.acc", "bl.nlidebertav3base.d1neutral.softacc",
+          "bl.nlidebertav3base.d2k150.acc", "bl.nlidebertav3base.d2k150.aurocoos"]
+         + [f"bl.nlidebertav3base.{t}.acc" for t in d3b]
+         + ["bl.nlidebertav3base.dthree.macrofone"]),
+    ]
     best = set()
-    for _k, suf in cols:
-        best |= best_of([f"e1.{CN.SLUG[m]}.{suf}" for m in models], "max")
+    for j, (_k, suf) in enumerate(cols):
+        pool = [f"e1.{CN.SLUG[m]}.{suf}" for m in models]
+        pool += [labs[j] for _n, labs in bl_rows if labs[j] and has(labs[j])]
+        best |= best_of(pool, "max")
 
     def row(m):
         ms = CN.SLUG[m]
         return [" & ".join([mname(m)] + [ecell(f"e1.{ms}.{suf}", best) for _k, suf in cols])
                 + " \\\\"]
+
+    def bl_row(name, labs):
+        cells = [name] + [ecell(l, best) if l and has(l) else "--" for l in labs]
+        return " & ".join(cells) + " \\\\"
 
     spec = colspec([("P", 0.205)] + [("N", 0.795 / 9)] * 9)
     lines = EAAI_HEADER + [
@@ -336,11 +401,16 @@ def e_t03_headline():
         " & \\hdsub{F1} \\\\",
         "\\midrule"]
     lines += family_rows(models, 10, row)
+    lines += ["\\groupspan{ten}{Classifier trained on each task's own labels}",
+              bl_row(*bl_rows[0]), bl_row(*bl_rows[1]),
+              "\\groupspan{ten}{Zero-shot classifier}", bl_row(*bl_rows[2])]
     lines += ["\\bottomrule", "\\end{tabular}",
               "\\tablenote{Acc.\\ is accuracy, Soft is agreement with the teacher distribution,"
               " AUROC separates in-scope from out-of-scope inputs, and F1 is the mean macro-F1"
-              " of the four D3 tasks in percent. Bold marks the best value in each column,"
-              " with ties bolded.}"]
+              " of the four D3 tasks in percent. The trained classifiers use labeled data of each"
+              " task disjoint from its test items, and the decision models and the comparator use no task"
+              " training except where Section~\\ref{sec:models} states it. Bold marks the best"
+              " value in each column over all rows, with ties bolded.}"]
     return ewrite("t03_headline.tex", lines)
 
 
@@ -950,14 +1020,14 @@ def _body_labels(text):
 # EAAI tables revised past their ACL counterparts: t04 prints a dash where a model has no
 # raw arm, and t08 reads the revision cascades (rv.cas) instead of e6. They are exempt from
 # the ACL cell check below; t09 to t13 have no ACL counterpart.
-EAAI_DIVERGES = {"t04_calibration.tex", "t08_cascade.tex"}
+EAAI_DIVERGES = {"t03_headline.tex", "t04_calibration.tex", "t08_cascade.tex"}
 
 
 def eaai_main():
     load_numbers()
     paths = [e_t03_headline(), e_t04_calibration(), e_t05_cardinality(), e_t06_names(),
              e_t07_cost(), e_t08_cascade(), e_t09_calib_tasks(), e_t10_selective(),
-             e_t11_paired(), e_t12_manifest(), e_t13_gate()]
+             e_t11_paired(), e_t12_manifest(), e_t13_gate(), e_t16_scores()]
     import re
     used = set()
     for p in paths:

@@ -548,7 +548,8 @@ def claims(recs, v):
     add("calib", "Calibrated probabilities", v["calib"], jv, f"after the same temperature fit, {after} of {len(llms)} LLMs below Jev",
         "syn.r2LlmBelowJevAfter", "yes", "mixed" if 0 < after < len(llms) else ("supported" if after == 0 else "contradicted"), rule)
     # (Jev record, [(ledger row, field, pattern, label), ...]) : every comparator ECE the study reports in the ledger
-    calib_cmp = (("rafeJevPlatt", [("L079", "comparator_value", None, "Claude Fable 5.1")]),
+    calib_cmp = (("rafeJevPlatt", [("L079", "comparator_value", None, "Claude Fable 5.1"),
+                                  ("L934", "value", None, "GPT-5.6 Sol")]),
                  ("localllamaJev", [("L515", "comparator_value", None, "meraGPT Decider 1"),
                                     ("L933", "value", None, "Prior (knows nothing)")]),
                  ("kevJevOod", [("L477", "value", None, "Kev-9B served"),

@@ -548,6 +548,597 @@
       }
     }
   },
+  "bge-small-lr-d3": {
+    "answers_dir": "shared/answers/baseline-bge-small-lr-d3",
+    "calibration": {
+      "conv_go_awry": {
+        "T": 1.056134114916527,
+        "val_nll_scaled": 0.6829139590263367
+      },
+      "emotion": {
+        "T": 1.0160436093826042,
+        "val_nll_scaled": 0.8583628535270691
+      },
+      "method": "one temperature per task by NLL (metrics.fit_T grid) on the class-balanced validation part of the training data, applied unchanged to the test items; ece_scaled_crossfit gives the a01 cross-fitting rule for comparison",
+      "wiki_corpus": {
+        "T": 1.0160436093826042,
+        "val_nll_scaled": 0.6467721462249756
+      },
+      "wiki_politeness": {
+        "T": 1.0160436093826042,
+        "val_nll_scaled": 0.8271357417106628
+      }
+    },
+    "d3_conv_go_awry": {
+      "acc": 0.528,
+      "acc_ci": [
+        0.48595,
+        0.572
+      ],
+      "aurc": 0.44500585939248216,
+      "aurc_scaled": 0.44500585939248216,
+      "auroc_oos": null,
+      "brier": 0.500325157510041,
+      "brier_scaled": 0.49978411861901584,
+      "cov5": 0.012,
+      "cov5_scaled": 0.012,
+      "ece_scaled": 0.06908893727605443,
+      "ece_scaled_crossfit": 0.06042607273860516,
+      "ece_shipped": 0.0713128395986355,
+      "latency_ms_p50_cpu": 17.751050007063895,
+      "latency_ms_p50_gpu": 8.51330003933981,
+      "latency_ms_per_item_gpu_batched": 23.22613593787537,
+      "latency_unit": "item",
+      "macro_f1": 0.5279320222111985,
+      "n": 500,
+      "nll": 0.6935855439435865,
+      "nll_scaled": 0.6930129717879551,
+      "softacc": null,
+      "temperature": 1.056134114916527,
+      "temperature_rule": "one temperature fitted on the class-balanced validation part of the training data"
+    },
+    "d3_emotion": {
+      "acc": 0.6746987951807228,
+      "acc_ci": [
+        0.6345381526104418,
+        0.7168674698795181
+      ],
+      "aurc": 0.17500784813922307,
+      "aurc_scaled": 0.17507023747176637,
+      "auroc_oos": null,
+      "brier": 0.44294962286949785,
+      "brier_scaled": 0.44318355638301443,
+      "cov5": 0.040160642570281124,
+      "cov5_scaled": 0.040160642570281124,
+      "ece_scaled": 0.06837067613010206,
+      "ece_scaled_crossfit": 0.06757875517389952,
+      "ece_shipped": 0.07045570562459468,
+      "latency_ms_p50_cpu": 10.046650015283376,
+      "latency_ms_p50_gpu": 6.980850012041628,
+      "latency_ms_per_item_gpu_batched": 1.9076765629506554,
+      "latency_unit": "item",
+      "macro_f1": 0.6763386045290075,
+      "n": 498,
+      "nll": 0.8598052582748036,
+      "nll_scaled": 0.8603038562774307,
+      "softacc": null,
+      "temperature": 1.0160436093826042,
+      "temperature_rule": "one temperature fitted on the class-balanced validation part of the training data"
+    },
+    "d3_wiki_corpus": {
+      "acc": 0.592,
+      "acc_ci": [
+        0.55,
+        0.64
+      ],
+      "aurc": 0.37914384243750654,
+      "aurc_scaled": 0.37914384243750654,
+      "auroc_oos": null,
+      "brier": 0.4903817132772178,
+      "brier_scaled": 0.48991940810808543,
+      "cov5": 0.006,
+      "cov5_scaled": 0.006,
+      "ece_scaled": 0.07523682799443707,
+      "ece_scaled_crossfit": 0.07701744105612539,
+      "ece_shipped": 0.07604950409560099,
+      "latency_ms_p50_cpu": 16.87014999333769,
+      "latency_ms_p50_gpu": 10.541699972236529,
+      "latency_ms_per_item_gpu_batched": 23.384148437799013,
+      "latency_unit": "item",
+      "macro_f1": 0.5912085798105131,
+      "n": 500,
+      "nll": 0.6852792290369726,
+      "nll_scaled": 0.6846584473042532,
+      "softacc": null,
+      "temperature": 1.0160436093826042,
+      "temperature_rule": "one temperature fitted on the class-balanced validation part of the training data"
+    },
+    "d3_wiki_politeness": {
+      "acc": 0.5803212851405622,
+      "acc_ci": [
+        0.5381526104417671,
+        0.6244979919678715
+      ],
+      "aurc": 0.24942715640697957,
+      "aurc_scaled": 0.2493455529192372,
+      "auroc_oos": null,
+      "brier": 0.5155811791169412,
+      "brier_scaled": 0.5153425376528781,
+      "cov5": 0.08433734939759036,
+      "cov5_scaled": 0.08433734939759036,
+      "ece_scaled": 0.05270628546276546,
+      "ece_scaled_crossfit": 0.050064082429726375,
+      "ece_shipped": 0.053411586720239976,
+      "latency_ms_p50_cpu": 11.013699986506253,
+      "latency_ms_p50_gpu": 7.085349992848933,
+      "latency_ms_per_item_gpu_batched": 4.198579686999437,
+      "latency_unit": "item",
+      "macro_f1": 0.5820136015598991,
+      "n": 498,
+      "nll": 0.8577998303244823,
+      "nll_scaled": 0.8576092463726551,
+      "softacc": null,
+      "temperature": 1.0160436093826042,
+      "temperature_rule": "one temperature fitted on the class-balanced validation part of the training data"
+    },
+    "description": "one multinomial logistic regression per D3 task (class_weight balanced) on BAAI/bge-small-en-v1.5 embeddings (CLS pooling, L2-normalized, fp32, 512 tokens, as bge-small-lr-clinc), trained on labelled rows of the task's source dataset with the same label space, disjoint from the test items; written by shared/src/b04_baselines_d3.py",
+    "hyperparameter_selection": {
+      "conv_go_awry": {
+        "C": 0.3,
+        "grid": [
+          {
+            "C": 0.01,
+            "val_acc": 0.5558823529411765,
+            "val_nll": 0.6914547085762024
+          },
+          {
+            "C": 0.03,
+            "val_acc": 0.5568627450980392,
+            "val_nll": 0.6890314221382141
+          },
+          {
+            "C": 0.1,
+            "val_acc": 0.5637254901960784,
+            "val_nll": 0.6848967671394348
+          },
+          {
+            "C": 0.3,
+            "val_acc": 0.5686274509803921,
+            "val_nll": 0.682931125164032
+          },
+          {
+            "C": 1.0,
+            "val_acc": 0.5450980392156862,
+            "val_nll": 0.6894245147705078
+          },
+          {
+            "C": 3.0,
+            "val_acc": 0.5529411764705883,
+            "val_nll": 0.7038740515708923
+          },
+          {
+            "C": 10.0,
+            "val_acc": 0.5509803921568628,
+            "val_nll": 0.7310272455215454
+          },
+          {
+            "C": 30.0,
+            "val_acc": 0.546078431372549,
+            "val_nll": 0.7556400299072266
+          },
+          {
+            "C": 100.0,
+            "val_acc": 0.5568627450980392,
+            "val_nll": 0.7735857963562012
+          },
+          {
+            "C": 300.0,
+            "val_acc": 0.5490196078431373,
+            "val_nll": 0.777995765209198
+          },
+          {
+            "C": 1000.0,
+            "val_acc": 0.553921568627451,
+            "val_nll": 0.7753720879554749
+          }
+        ],
+        "val_acc": 0.5686274509803921,
+        "val_nll": 0.682931125164032
+      },
+      "criterion": "accuracy on the class-balanced validation part, ties by NLL; model fitted on the training part only",
+      "emotion": {
+        "C": 10.0,
+        "grid": [
+          {
+            "C": 0.01,
+            "val_acc": 0.5932203389830508,
+            "val_nll": 1.6172913312911987
+          },
+          {
+            "C": 0.03,
+            "val_acc": 0.6031073446327684,
+            "val_nll": 1.4365311861038208
+          },
+          {
+            "C": 0.1,
+            "val_acc": 0.6299435028248588,
+            "val_nll": 1.2115148305892944
+          },
+          {
+            "C": 0.3,
+            "val_acc": 0.6468926553672316,
+            "val_nll": 1.051190733909607
+          },
+          {
+            "C": 1.0,
+            "val_acc": 0.6652542372881356,
+            "val_nll": 0.934023916721344
+          },
+          {
+            "C": 3.0,
+            "val_acc": 0.672316384180791,
+            "val_nll": 0.8736320734024048
+          },
+          {
+            "C": 10.0,
+            "val_acc": 0.6822033898305084,
+            "val_nll": 0.8584848046302795
+          },
+          {
+            "C": 30.0,
+            "val_acc": 0.6765536723163842,
+            "val_nll": 0.8881142735481262
+          },
+          {
+            "C": 100.0,
+            "val_acc": 0.672316384180791,
+            "val_nll": 0.9381376504898071
+          },
+          {
+            "C": 300.0,
+            "val_acc": 0.6581920903954802,
+            "val_nll": 1.008815884590149
+          },
+          {
+            "C": 1000.0,
+            "val_acc": 0.6581920903954802,
+            "val_nll": 1.024002194404602
+          }
+        ],
+        "val_acc": 0.6822033898305084,
+        "val_nll": 0.8584848046302795
+      },
+      "grid": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0,
+        30.0,
+        100.0,
+        300.0,
+        1000.0
+      ],
+      "wiki_corpus": {
+        "C": 3.0,
+        "grid": [
+          {
+            "C": 0.01,
+            "val_acc": 0.578,
+            "val_nll": 0.6881579756736755
+          },
+          {
+            "C": 0.03,
+            "val_acc": 0.5815,
+            "val_nll": 0.6816209554672241
+          },
+          {
+            "C": 0.1,
+            "val_acc": 0.5965,
+            "val_nll": 0.6702066659927368
+          },
+          {
+            "C": 0.3,
+            "val_acc": 0.618,
+            "val_nll": 0.6582779288291931
+          },
+          {
+            "C": 1.0,
+            "val_acc": 0.6285,
+            "val_nll": 0.6481020450592041
+          },
+          {
+            "C": 3.0,
+            "val_acc": 0.631,
+            "val_nll": 0.6467967629432678
+          },
+          {
+            "C": 10.0,
+            "val_acc": 0.627,
+            "val_nll": 0.6519820690155029
+          },
+          {
+            "C": 30.0,
+            "val_acc": 0.6225,
+            "val_nll": 0.6559341549873352
+          },
+          {
+            "C": 100.0,
+            "val_acc": 0.6205,
+            "val_nll": 0.6608273983001709
+          },
+          {
+            "C": 300.0,
+            "val_acc": 0.619,
+            "val_nll": 0.6610667705535889
+          },
+          {
+            "C": 1000.0,
+            "val_acc": 0.623,
+            "val_nll": 0.6621995568275452
+          }
+        ],
+        "val_acc": 0.631,
+        "val_nll": 0.6467967629432678
+      },
+      "wiki_politeness": {
+        "C": 3.0,
+        "grid": [
+          {
+            "C": 0.01,
+            "val_acc": 0.5719489981785064,
+            "val_nll": 1.0684117078781128
+          },
+          {
+            "C": 0.03,
+            "val_acc": 0.575591985428051,
+            "val_nll": 1.02592134475708
+          },
+          {
+            "C": 0.1,
+            "val_acc": 0.5792349726775956,
+            "val_nll": 0.9526925086975098
+          },
+          {
+            "C": 0.3,
+            "val_acc": 0.5901639344262295,
+            "val_nll": 0.8865241408348083
+          },
+          {
+            "C": 1.0,
+            "val_acc": 0.6065573770491803,
+            "val_nll": 0.8386327028274536
+          },
+          {
+            "C": 3.0,
+            "val_acc": 0.6120218579234973,
+            "val_nll": 0.8270812630653381
+          },
+          {
+            "C": 10.0,
+            "val_acc": 0.6083788706739527,
+            "val_nll": 0.8442968726158142
+          },
+          {
+            "C": 30.0,
+            "val_acc": 0.599271402550091,
+            "val_nll": 0.8883746862411499
+          },
+          {
+            "C": 100.0,
+            "val_acc": 0.5974499089253188,
+            "val_nll": 0.93893963098526
+          },
+          {
+            "C": 300.0,
+            "val_acc": 0.5883424408014571,
+            "val_nll": 0.9685819149017334
+          },
+          {
+            "C": 1000.0,
+            "val_acc": 0.5828779599271403,
+            "val_nll": 0.9898183345794678
+          }
+        ],
+        "val_acc": 0.6120218579234973,
+        "val_nll": 0.8270812630653381
+      }
+    },
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "params": 33364235,
+    "params_note": "encoder parameters plus the four regressions",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "size_mb_fp32": 127.3,
+    "training_data": {
+      "conv_go_awry": {
+        "conversations": 4188,
+        "overlap_after_filter": {
+          "exact": 0,
+          "normalized": 0
+        },
+        "rows_after_cap": 5232,
+        "rows_available": 5232,
+        "rows_dropped_normalized_text_match": 0,
+        "rows_dropped_test_conversation": 1172,
+        "rows_in_source": 6404,
+        "rows_kept_whose_paired_conversation_is_a_test_conversation": 645,
+        "test_conversations": 467,
+        "test_items_matched_to_source_conversation": 500,
+        "test_items_unmatched": 0,
+        "train_class_counts": {
+          "o1": 2069,
+          "o2": 2086
+        },
+        "train_groups": 2472,
+        "train_rows": 4155,
+        "truncated_at_512_tokens": {
+          "test": 25,
+          "train": 220,
+          "val": 50
+        },
+        "val_class_counts": {
+          "o1": 510,
+          "o2": 510
+        },
+        "val_groups": 618,
+        "val_rows": 1020,
+        "val_rows_before_balancing": 1077
+      },
+      "emotion": {
+        "dropped_train_row_indices": [
+          468,
+          1438,
+          1768,
+          2234,
+          2406,
+          2614,
+          2841,
+          3399,
+          3468,
+          3618,
+          3703,
+          5197,
+          5211,
+          6002,
+          6692,
+          7530,
+          8036,
+          8116,
+          8338,
+          8629,
+          9152,
+          9938,
+          10251,
+          10275,
+          10524,
+          10624,
+          10977,
+          10981,
+          12090,
+          12592
+        ],
+        "overlap_after_filter": {
+          "exact": 0,
+          "normalized": 0
+        },
+        "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+        "rows_after_cap": 10000,
+        "rows_available": 15970,
+        "rows_dropped_exact_text_match": 30,
+        "rows_dropped_normalized_text_match": 30,
+        "rows_dropped_test_conversation": 0,
+        "rows_in_source": 16000,
+        "train_class_counts": {
+          "o1": 1373,
+          "o2": 1406,
+          "o3": 1918,
+          "o4": 1790,
+          "o5": 1067,
+          "o6": 446
+        },
+        "train_groups": 8000,
+        "train_rows": 8000,
+        "truncated_at_512_tokens": {
+          "test": 0,
+          "train": 0,
+          "val": 0
+        },
+        "val_class_counts": {
+          "o1": 118,
+          "o2": 118,
+          "o3": 118,
+          "o4": 118,
+          "o5": 118,
+          "o6": 118
+        },
+        "val_groups": 2000,
+        "val_rows": 708,
+        "val_rows_before_balancing": 2000
+      },
+      "sources": {
+        "construction": "the Ziems et al. rules (SALT-NLP/LLMs_for_CSS 55183a64 data_loader.py convokit_process, mappings.py); rebuilds our ConvoKit test states exactly (wiki_corpus: 497 of 500 exactly, 3 up to the order of utterances with equal timestamps)",
+        "conv_go_awry": "ConvoKit conversations-gone-awry-corpus (https://zissou.infosci.cornell.edu/convokit/datasets/conversations-gone-awry-corpus/conversations-gone-awry-corpus.zip), first utterance + each direct reply, label conversation_has_personal_attack",
+        "disjointness": "rows of conversations that produced a test item dropped; rows whose normalized text (lower case, punctuation removed, whitespace collapsed) equals a test text dropped; wiki_corpus also drops rows naming a test item's speaker",
+        "emotion": "dair-ai/emotion config split, train split (revision cab853a1dbdf4c42c2b3ef2173804746df8825fe)",
+        "label_to_option": "conv_go_awry and wiki_corpus True o1, False o2; emotion fear o1, anger o2, joy o3, sadness o4, love o5, surprise o6 (dair-ai labels 4, 3, 1, 0, 2, 5); politeness 1 o1, 0 o2, -1 o3",
+        "sampling": "cap 10000 rows (per-class quota 10000 // K, filled at random), 80/20 split grouped by conversation (pair_id for conv_go_awry), validation part downsampled to equal class counts; seed common.SEED",
+        "wiki_corpus": "ConvoKit wiki-corpus (https://zissou.infosci.cornell.edu/convokit/datasets/wiki-corpus/wiki-corpus.zip), whole conversation, one row per speaker, label is-admin; input = question naming the speaker + newline + conversation",
+        "wiki_politeness": "ConvoKit wikipedia-politeness-corpus (https://zissou.infosci.cornell.edu/convokit/datasets/wikipedia-politeness-corpus/wikipedia-politeness-corpus.zip), label Binary"
+      },
+      "wiki_corpus": {
+        "conversations": 125292,
+        "overlap_after_filter": {
+          "exact": 0,
+          "normalized": 0
+        },
+        "rows_after_cap": 10000,
+        "rows_available": 202000,
+        "rows_dropped_normalized_text_match": 0,
+        "rows_dropped_test_conversation": 1487,
+        "rows_dropped_test_target_speaker": 42946,
+        "rows_in_source": 246433,
+        "test_conversations": 577,
+        "test_items_matched_to_source_conversation": 500,
+        "test_items_unmatched": 0,
+        "test_target_speakers": 428,
+        "train_class_counts": {
+          "o1": 4000,
+          "o2": 3990
+        },
+        "train_groups": 7784,
+        "train_rows": 7990,
+        "truncated_at_512_tokens": {
+          "test": 73,
+          "train": 1023,
+          "val": 230
+        },
+        "val_class_counts": {
+          "o1": 1000,
+          "o2": 1000
+        },
+        "val_groups": 1946,
+        "val_rows": 2000,
+        "val_rows_before_balancing": 2010
+      },
+      "wiki_politeness": {
+        "conversations": 4353,
+        "overlap_after_filter": {
+          "exact": 0,
+          "normalized": 0
+        },
+        "rows_after_cap": 3852,
+        "rows_available": 3852,
+        "rows_dropped_normalized_text_match": 0,
+        "rows_dropped_test_conversation": 501,
+        "rows_in_source": 4353,
+        "test_conversations": 501,
+        "test_items_matched_to_source_conversation": 498,
+        "test_items_unmatched": 0,
+        "train_class_counts": {
+          "o1": 728,
+          "o2": 1615,
+          "o3": 739
+        },
+        "train_groups": 3082,
+        "train_rows": 3082,
+        "truncated_at_512_tokens": {
+          "test": 0,
+          "train": 0,
+          "val": 0
+        },
+        "val_class_counts": {
+          "o1": 183,
+          "o2": 183,
+          "o3": 183
+        },
+        "val_groups": 770,
+        "val_rows": 549,
+        "val_rows_before_balancing": 770
+      }
+    }
+  },
   "nli-deberta-v3-base": {
     "answers_dir": "shared/answers/baseline-nli-deberta-v3-base",
     "calibration": {

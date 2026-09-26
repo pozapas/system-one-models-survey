@@ -1607,6 +1607,1188 @@
     "source": "results/baselines.json",
     "value": 8
   },
+  "bl.bgesmalllrd3.calibration.convgoawry.t": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.056134114916527
+  },
+  "bl.bgesmalllrd3.calibration.convgoawry.valnllscaled": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6829139590263367
+  },
+  "bl.bgesmalllrd3.calibration.emotion.t": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.0160436093826042
+  },
+  "bl.bgesmalllrd3.calibration.emotion.valnllscaled": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8583628535270691
+  },
+  "bl.bgesmalllrd3.calibration.wikicorpus.t": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.0160436093826042
+  },
+  "bl.bgesmalllrd3.calibration.wikicorpus.valnllscaled": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6467721462249756
+  },
+  "bl.bgesmalllrd3.calibration.wikipoliteness.t": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.0160436093826042
+  },
+  "bl.bgesmalllrd3.calibration.wikipoliteness.valnllscaled": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8271357417106628
+  },
+  "bl.bgesmalllrd3.d3convgoawry.acc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.528
+  },
+  "bl.bgesmalllrd3.d3convgoawry.aurc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.44500585939248216
+  },
+  "bl.bgesmalllrd3.d3convgoawry.aurcscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.44500585939248216
+  },
+  "bl.bgesmalllrd3.d3convgoawry.brier": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.500325157510041
+  },
+  "bl.bgesmalllrd3.d3convgoawry.brierscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.49978411861901584
+  },
+  "bl.bgesmalllrd3.d3convgoawry.cov5": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.012
+  },
+  "bl.bgesmalllrd3.d3convgoawry.cov5scaled": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.012
+  },
+  "bl.bgesmalllrd3.d3convgoawry.ecescaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.06908893727605443
+  },
+  "bl.bgesmalllrd3.d3convgoawry.ecescaledcrossfit": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.06042607273860516
+  },
+  "bl.bgesmalllrd3.d3convgoawry.eceshipped": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.0713128395986355
+  },
+  "bl.bgesmalllrd3.d3convgoawry.latencymsp50cpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 17.751050007063895
+  },
+  "bl.bgesmalllrd3.d3convgoawry.latencymsp50gpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 8.51330003933981
+  },
+  "bl.bgesmalllrd3.d3convgoawry.latencymsperitemgpubatched": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 23.22613593787537
+  },
+  "bl.bgesmalllrd3.d3convgoawry.macrof1": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.5279320222111985
+  },
+  "bl.bgesmalllrd3.d3convgoawry.n": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 500
+  },
+  "bl.bgesmalllrd3.d3convgoawry.nll": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6935855439435865
+  },
+  "bl.bgesmalllrd3.d3convgoawry.nllscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6930129717879551
+  },
+  "bl.bgesmalllrd3.d3convgoawry.temperature": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.056134114916527
+  },
+  "bl.bgesmalllrd3.d3emotion.acc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6746987951807228
+  },
+  "bl.bgesmalllrd3.d3emotion.aurc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.17500784813922307
+  },
+  "bl.bgesmalllrd3.d3emotion.aurcscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.17507023747176637
+  },
+  "bl.bgesmalllrd3.d3emotion.brier": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.44294962286949785
+  },
+  "bl.bgesmalllrd3.d3emotion.brierscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.44318355638301443
+  },
+  "bl.bgesmalllrd3.d3emotion.cov5": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.040160642570281124
+  },
+  "bl.bgesmalllrd3.d3emotion.cov5scaled": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.040160642570281124
+  },
+  "bl.bgesmalllrd3.d3emotion.ecescaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.06837067613010206
+  },
+  "bl.bgesmalllrd3.d3emotion.ecescaledcrossfit": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.06757875517389952
+  },
+  "bl.bgesmalllrd3.d3emotion.eceshipped": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.07045570562459468
+  },
+  "bl.bgesmalllrd3.d3emotion.latencymsp50cpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 10.046650015283376
+  },
+  "bl.bgesmalllrd3.d3emotion.latencymsp50gpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 6.980850012041628
+  },
+  "bl.bgesmalllrd3.d3emotion.latencymsperitemgpubatched": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.9076765629506554
+  },
+  "bl.bgesmalllrd3.d3emotion.macrof1": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6763386045290075
+  },
+  "bl.bgesmalllrd3.d3emotion.n": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 498
+  },
+  "bl.bgesmalllrd3.d3emotion.nll": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8598052582748036
+  },
+  "bl.bgesmalllrd3.d3emotion.nllscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8603038562774307
+  },
+  "bl.bgesmalllrd3.d3emotion.temperature": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.0160436093826042
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.acc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.592
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.aurc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.37914384243750654
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.aurcscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.37914384243750654
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.brier": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.4903817132772178
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.brierscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.48991940810808543
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.cov5": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.006
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.cov5scaled": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.006
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.ecescaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.07523682799443707
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.ecescaledcrossfit": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.07701744105612539
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.eceshipped": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.07604950409560099
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.latencymsp50cpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 16.87014999333769
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.latencymsp50gpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 10.541699972236529
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.latencymsperitemgpubatched": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 23.384148437799013
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.macrof1": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.5912085798105131
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.n": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 500
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.nll": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6852792290369726
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.nllscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6846584473042532
+  },
+  "bl.bgesmalllrd3.d3wikicorpus.temperature": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.0160436093826042
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.acc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.5803212851405622
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.aurc": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.24942715640697957
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.aurcscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.2493455529192372
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.brier": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.5155811791169412
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.brierscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.5153425376528781
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.cov5": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.08433734939759036
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.cov5scaled": {
+    "fmt": ".2f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.08433734939759036
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.ecescaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.05270628546276546
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.ecescaledcrossfit": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.050064082429726375
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.eceshipped": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.053411586720239976
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.latencymsp50cpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 11.013699986506253
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.latencymsp50gpu": {
+    "fmt": ".0f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 7.085349992848933
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.latencymsperitemgpubatched": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 4.198579686999437
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.macrof1": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.5820136015598991
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.n": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 498
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.nll": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8577998303244823
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.nllscaled": {
+    "fmt": ".3f",
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8576092463726551
+  },
+  "bl.bgesmalllrd3.d3wikipoliteness.temperature": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1.0160436093826042
+  },
+  "bl.bgesmalllrd3.dthree.macrofone": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baselines.json (mean of the four D3 tasks)",
+    "value": 59.437320202765456
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.convgoawry.c": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.3
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.convgoawry.valacc": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.5686274509803921
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.convgoawry.valnll": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.682931125164032
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.emotion.c": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 10.0
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.emotion.valacc": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6822033898305084
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.emotion.valnll": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8584848046302795
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.wikicorpus.c": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 3.0
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.wikicorpus.valacc": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.631
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.wikicorpus.valnll": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6467967629432678
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.wikipoliteness.c": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 3.0
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.wikipoliteness.valacc": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.6120218579234973
+  },
+  "bl.bgesmalllrd3.hyperparameterselection.wikipoliteness.valnll": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0.8270812630653381
+  },
+  "bl.bgesmalllrd3.params": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 33364235
+  },
+  "bl.bgesmalllrd3.sizembfp32": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 127.3
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.conversations": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 4188
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.overlapafterfilter.exact": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.overlapafterfilter.normalized": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.rowsaftercap": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 5232
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.rowsavailable": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 5232
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.rowsdroppednormalizedtextmatch": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.rowsdroppedtestconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1172
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.rowsinsource": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 6404
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.rowskeptwhosepairedconversationisatestconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 645
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.testconversations": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 467
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.testitemsmatchedtosourceconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 500
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.testitemsunmatched": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.trainclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 2069
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.trainclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 2086
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.traingroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 2472
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.trainrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 4155
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.truncatedat512tokens.test": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 25
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.truncatedat512tokens.train": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 220
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.truncatedat512tokens.val": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 50
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.valclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 510
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.valclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 510
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.valgroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 618
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.valrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1020
+  },
+  "bl.bgesmalllrd3.trainingdata.convgoawry.valrowsbeforebalancing": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1077
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.overlapafterfilter.exact": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.overlapafterfilter.normalized": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.rowsaftercap": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 10000
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.rowsavailable": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 15970
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.rowsdroppedexacttextmatch": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 30
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.rowsdroppednormalizedtextmatch": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 30
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.rowsdroppedtestconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.rowsinsource": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 16000
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.trainclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1373
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.trainclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1406
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.trainclasscounts.o3": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1918
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.trainclasscounts.o4": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1790
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.trainclasscounts.o5": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1067
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.trainclasscounts.o6": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 446
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.traingroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 8000
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.trainrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 8000
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.truncatedat512tokens.test": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.truncatedat512tokens.train": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.truncatedat512tokens.val": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 118
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 118
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valclasscounts.o3": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 118
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valclasscounts.o4": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 118
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valclasscounts.o5": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 118
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valclasscounts.o6": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 118
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valgroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 2000
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 708
+  },
+  "bl.bgesmalllrd3.trainingdata.emotion.valrowsbeforebalancing": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 2000
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.conversations": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 125292
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.overlapafterfilter.exact": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.overlapafterfilter.normalized": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.rowsaftercap": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 10000
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.rowsavailable": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 202000
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.rowsdroppednormalizedtextmatch": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.rowsdroppedtestconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1487
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.rowsdroppedtesttargetspeaker": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 42946
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.rowsinsource": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 246433
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.testconversations": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 577
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.testitemsmatchedtosourceconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 500
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.testitemsunmatched": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.testtargetspeakers": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 428
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.trainclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 4000
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.trainclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 3990
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.traingroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 7784
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.trainrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 7990
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.truncatedat512tokens.test": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 73
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.truncatedat512tokens.train": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1023
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.truncatedat512tokens.val": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 230
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.valclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1000
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.valclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1000
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.valgroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1946
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.valrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 2000
+  },
+  "bl.bgesmalllrd3.trainingdata.wikicorpus.valrowsbeforebalancing": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 2010
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.conversations": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 4353
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.overlapafterfilter.exact": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.overlapafterfilter.normalized": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.rowsaftercap": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 3852
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.rowsavailable": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 3852
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.rowsdroppednormalizedtextmatch": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.rowsdroppedtestconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 501
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.rowsinsource": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 4353
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.testconversations": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 501
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.testitemsmatchedtosourceconversation": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 498
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.testitemsunmatched": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.trainclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 728
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.trainclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 1615
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.trainclasscounts.o3": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 739
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.traingroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 3082
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.trainrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 3082
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.truncatedat512tokens.test": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.truncatedat512tokens.train": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.truncatedat512tokens.val": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 0
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.valclasscounts.o1": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 183
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.valclasscounts.o2": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 183
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.valclasscounts.o3": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 183
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.valgroups": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 770
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.valrows": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 549
+  },
+  "bl.bgesmalllrd3.trainingdata.wikipoliteness.valrowsbeforebalancing": {
+    "fmt": null,
+    "note": null,
+    "source": "results/baselines.json",
+    "value": 770
+  },
   "bl.nlidebertav3base.calibration.td2": {
     "fmt": null,
     "note": null,
@@ -2897,6 +4079,12 @@
     "source": "results/baselines.json",
     "value": 1.0718715038745907
   },
+  "bl.nlidebertav3base.dthree.macrofone": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baselines.json (mean of the four D3 tasks)",
+    "value": 47.960381961685684
+  },
   "bl.nlidebertav3base.params": {
     "fmt": null,
     "note": null,
@@ -3004,6 +4192,2262 @@
     "note": null,
     "source": "results/baselines.json",
     "value": 0
+  },
+  "bp.doneneutral.nli.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 17.65
+  },
+  "bp.doneneutral.nli.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 20.7
+  },
+  "bp.doneneutral.nli.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.nli.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 14.6
+  },
+  "bp.doneneutral.nli.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 32.05
+  },
+  "bp.doneneutral.nli.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 35.05
+  },
+  "bp.doneneutral.nli.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.nli.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 29.099999999999998
+  },
+  "bp.doneneutral.nli.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 30.099999999999998
+  },
+  "bp.doneneutral.nli.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 33.2
+  },
+  "bp.doneneutral.nli.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.nli.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 26.900000000000002
+  },
+  "bp.doneneutral.nli.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.0
+  },
+  "bp.doneneutral.nli.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 7.35
+  },
+  "bp.doneneutral.nli.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0224
+  },
+  "bp.doneneutral.nli.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.8
+  },
+  "bp.doneneutral.nli.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -4.45
+  },
+  "bp.doneneutral.nli.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.2
+  },
+  "bp.doneneutral.nli.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0224
+  },
+  "bp.doneneutral.nli.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.75
+  },
+  "bp.doneneutral.nli.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -6.2
+  },
+  "bp.doneneutral.nli.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.45
+  },
+  "bp.doneneutral.nli.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.nli.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -9.0
+  },
+  "bp.doneneutral.nli.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 27.450000000000003
+  },
+  "bp.doneneutral.nli.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 30.45
+  },
+  "bp.doneneutral.nli.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.nli.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 24.5
+  },
+  "bp.doneneutral.nli.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 18.6
+  },
+  "bp.doneneutral.nli.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 21.85
+  },
+  "bp.doneneutral.nli.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.nli.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 15.299999999999999
+  },
+  "bp.doneneutral.trained.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.4
+  },
+  "bp.doneneutral.trained.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.55
+  },
+  "bp.doneneutral.trained.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.trained.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -14.249999999999998
+  },
+  "bp.doneneutral.trained.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 3.0
+  },
+  "bp.doneneutral.trained.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.800000000000001
+  },
+  "bp.doneneutral.trained.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.10200000000000001
+  },
+  "bp.doneneutral.trained.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.2
+  },
+  "bp.doneneutral.trained.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.05
+  },
+  "bp.doneneutral.trained.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.0
+  },
+  "bp.doneneutral.trained.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.6208
+  },
+  "bp.doneneutral.trained.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.8512499999999987
+  },
+  "bp.doneneutral.trained.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -25.05
+  },
+  "bp.doneneutral.trained.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -21.65
+  },
+  "bp.doneneutral.trained.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.trained.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -28.4
+  },
+  "bp.doneneutral.trained.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -33.5
+  },
+  "bp.doneneutral.trained.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -30.3
+  },
+  "bp.doneneutral.trained.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.trained.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -36.85
+  },
+  "bp.doneneutral.trained.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -35.25
+  },
+  "bp.doneneutral.trained.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -32.2
+  },
+  "bp.doneneutral.trained.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.trained.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -38.25
+  },
+  "bp.doneneutral.trained.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.6
+  },
+  "bp.doneneutral.trained.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.5
+  },
+  "bp.doneneutral.trained.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.6208
+  },
+  "bp.doneneutral.trained.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -4.65
+  },
+  "bp.doneneutral.trained.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -10.45
+  },
+  "bp.doneneutral.trained.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.35
+  },
+  "bp.doneneutral.trained.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.doneneutral.trained.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -13.55
+  },
+  "bp.dtwo.nli.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 35.333333333333336
+  },
+  "bp.dtwo.nli.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 39.666666666666664
+  },
+  "bp.dtwo.nli.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.nli.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 30.833333333333336
+  },
+  "bp.dtwo.nli.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 40.666666666666664
+  },
+  "bp.dtwo.nli.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 44.83333333333333
+  },
+  "bp.dtwo.nli.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.nli.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 36.5
+  },
+  "bp.dtwo.nli.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 34.333333333333336
+  },
+  "bp.dtwo.nli.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 38.5
+  },
+  "bp.dtwo.nli.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.nli.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 30.0
+  },
+  "bp.dtwo.nli.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 17.833333333333336
+  },
+  "bp.dtwo.nli.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 22.0
+  },
+  "bp.dtwo.nli.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.nli.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 13.82916666666667
+  },
+  "bp.dtwo.nli.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -50.16666666666667
+  },
+  "bp.dtwo.nli.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -46.0
+  },
+  "bp.dtwo.nli.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.nli.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -54.166666666666664
+  },
+  "bp.dtwo.nli.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 35.333333333333336
+  },
+  "bp.dtwo.nli.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 39.5
+  },
+  "bp.dtwo.nli.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.nli.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 31.166666666666664
+  },
+  "bp.dtwo.nli.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 35.66666666666667
+  },
+  "bp.dtwo.nli.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 40.0
+  },
+  "bp.dtwo.nli.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.nli.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 31.333333333333336
+  },
+  "bp.dtwo.trained.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.833333333333334
+  },
+  "bp.dtwo.trained.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -6.0
+  },
+  "bp.dtwo.trained.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.trained.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.666666666666666
+  },
+  "bp.dtwo.trained.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.5000000000000004
+  },
+  "bp.dtwo.trained.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.1666666666666667
+  },
+  "bp.dtwo.trained.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0056
+  },
+  "bp.dtwo.trained.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -6.0
+  },
+  "bp.dtwo.trained.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -9.833333333333332
+  },
+  "bp.dtwo.trained.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.000000000000001
+  },
+  "bp.dtwo.trained.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.trained.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -12.833333333333332
+  },
+  "bp.dtwo.trained.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -26.333333333333332
+  },
+  "bp.dtwo.trained.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -22.5
+  },
+  "bp.dtwo.trained.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.trained.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -30.333333333333336
+  },
+  "bp.dtwo.trained.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -94.33333333333334
+  },
+  "bp.dtwo.trained.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -92.5
+  },
+  "bp.dtwo.trained.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.trained.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -96.16666666666667
+  },
+  "bp.dtwo.trained.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.833333333333334
+  },
+  "bp.dtwo.trained.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -6.166666666666667
+  },
+  "bp.dtwo.trained.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.trained.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.666666666666666
+  },
+  "bp.dtwo.trained.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.5
+  },
+  "bp.dtwo.trained.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -5.666666666666666
+  },
+  "bp.dtwo.trained.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0007
+  },
+  "bp.dtwo.trained.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.333333333333332
+  },
+  "bp.emotion.nli.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 15.261044176706829
+  },
+  "bp.emotion.nli.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 19.67871485943775
+  },
+  "bp.emotion.nli.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 10.843373493975903
+  },
+  "bp.emotion.nli.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -14.65863453815261
+  },
+  "bp.emotion.nli.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -10.240963855421686
+  },
+  "bp.emotion.nli.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -19.27710843373494
+  },
+  "bp.emotion.nli.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -12.248995983935743
+  },
+  "bp.emotion.nli.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.630522088353414
+  },
+  "bp.emotion.nli.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -16.666666666666664
+  },
+  "bp.emotion.nli.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -13.453815261044177
+  },
+  "bp.emotion.nli.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.634538152610443
+  },
+  "bp.emotion.nli.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -18.072289156626507
+  },
+  "bp.emotion.nli.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -14.65863453815261
+  },
+  "bp.emotion.nli.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -10.040160642570282
+  },
+  "bp.emotion.nli.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -19.076305220883537
+  },
+  "bp.emotion.nli.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -25.502008032128515
+  },
+  "bp.emotion.nli.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -20.481927710843372
+  },
+  "bp.emotion.nli.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -30.522088353413658
+  },
+  "bp.emotion.nli.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -13.654618473895583
+  },
+  "bp.emotion.nli.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -9.236947791164658
+  },
+  "bp.emotion.nli.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -18.072289156626507
+  },
+  "bp.emotion.nli.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 15.461847389558233
+  },
+  "bp.emotion.nli.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 19.879518072289155
+  },
+  "bp.emotion.nli.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.nli.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 11.04417670682731
+  },
+  "bp.emotion.trained.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 12.851405622489958
+  },
+  "bp.emotion.trained.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 17.670682730923694
+  },
+  "bp.emotion.trained.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 7.83132530120482
+  },
+  "bp.emotion.trained.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -17.06827309236948
+  },
+  "bp.emotion.trained.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -12.048192771084338
+  },
+  "bp.emotion.trained.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -22.08835341365462
+  },
+  "bp.emotion.trained.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -14.65863453815261
+  },
+  "bp.emotion.trained.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -9.437751004016064
+  },
+  "bp.emotion.trained.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -19.879518072289155
+  },
+  "bp.emotion.trained.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -15.863453815261044
+  },
+  "bp.emotion.trained.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -10.441767068273093
+  },
+  "bp.emotion.trained.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -21.285140562248998
+  },
+  "bp.emotion.trained.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -17.06827309236948
+  },
+  "bp.emotion.trained.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.646586345381527
+  },
+  "bp.emotion.trained.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -22.289156626506024
+  },
+  "bp.emotion.trained.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -27.91164658634538
+  },
+  "bp.emotion.trained.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -22.48995983935743
+  },
+  "bp.emotion.trained.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -33.13253012048193
+  },
+  "bp.emotion.trained.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -16.06425702811245
+  },
+  "bp.emotion.trained.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.04417670682731
+  },
+  "bp.emotion.trained.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -21.285140562248998
+  },
+  "bp.emotion.trained.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 13.052208835341366
+  },
+  "bp.emotion.trained.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 17.8714859437751
+  },
+  "bp.emotion.trained.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.emotion.trained.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 8.032128514056225
+  },
+  "bp.politeness.nli.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 6.425702811244979
+  },
+  "bp.politeness.nli.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 11.04417670682731
+  },
+  "bp.politeness.nli.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0504
+  },
+  "bp.politeness.nli.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.6064257028112447
+  },
+  "bp.politeness.nli.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 25.702811244979916
+  },
+  "bp.politeness.nli.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 32.1285140562249
+  },
+  "bp.politeness.nli.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.politeness.nli.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 19.477911646586346
+  },
+  "bp.politeness.nli.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 7.630522088353414
+  },
+  "bp.politeness.nli.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 12.851405622489958
+  },
+  "bp.politeness.nli.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.041999999999999996
+  },
+  "bp.politeness.nli.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.4096385542168677
+  },
+  "bp.politeness.nli.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 7.630522088353414
+  },
+  "bp.politeness.nli.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 12.650602409638553
+  },
+  "bp.politeness.nli.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.018000000000000002
+  },
+  "bp.politeness.nli.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.8112449799196786
+  },
+  "bp.politeness.nli.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -2.610441767068273
+  },
+  "bp.politeness.nli.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.0080321285140563
+  },
+  "bp.politeness.nli.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.5952
+  },
+  "bp.politeness.nli.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.228915662650602
+  },
+  "bp.politeness.nli.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.413654618473896
+  },
+  "bp.politeness.nli.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.8072289156626504
+  },
+  "bp.politeness.nli.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.5952
+  },
+  "bp.politeness.nli.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.433734939759036
+  },
+  "bp.politeness.nli.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 11.646586345381527
+  },
+  "bp.politeness.nli.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 17.675702811244907
+  },
+  "bp.politeness.nli.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0028
+  },
+  "bp.politeness.nli.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.622489959839357
+  },
+  "bp.politeness.nli.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.4056224899598393
+  },
+  "bp.politeness.nli.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.8232931726907635
+  },
+  "bp.politeness.nli.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.5952
+  },
+  "bp.politeness.nli.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.2128514056224895
+  },
+  "bp.politeness.trained.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.646586345381527
+  },
+  "bp.politeness.trained.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -5.8232931726907635
+  },
+  "bp.politeness.trained.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0016
+  },
+  "bp.politeness.trained.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -17.46987951807229
+  },
+  "bp.politeness.trained.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 7.630522088353414
+  },
+  "bp.politeness.trained.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 12.851405622489958
+  },
+  "bp.politeness.trained.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0084
+  },
+  "bp.politeness.trained.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.4096385542168677
+  },
+  "bp.politeness.trained.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -10.441767068273093
+  },
+  "bp.politeness.trained.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -4.618473895582329
+  },
+  "bp.politeness.trained.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0024000000000000002
+  },
+  "bp.politeness.trained.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -16.265060240963855
+  },
+  "bp.politeness.trained.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -10.441767068273093
+  },
+  "bp.politeness.trained.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -4.618473895582329
+  },
+  "bp.politeness.trained.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.001
+  },
+  "bp.politeness.trained.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -16.265060240963855
+  },
+  "bp.politeness.trained.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -20.682730923694777
+  },
+  "bp.politeness.trained.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -14.457831325301203
+  },
+  "bp.politeness.trained.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.politeness.trained.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -26.907630522088354
+  },
+  "bp.politeness.trained.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -21.485943775100402
+  },
+  "bp.politeness.trained.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -15.261044176706829
+  },
+  "bp.politeness.trained.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.politeness.trained.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -27.510040160642568
+  },
+  "bp.politeness.trained.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -6.425702811244979
+  },
+  "bp.politeness.trained.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -0.8032128514056224
+  },
+  "bp.politeness.trained.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.032
+  },
+  "bp.politeness.trained.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -12.048192771084338
+  },
+  "bp.politeness.trained.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -16.666666666666664
+  },
+  "bp.politeness.trained.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -10.843373493975903
+  },
+  "bp.politeness.trained.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0008
+  },
+  "bp.politeness.trained.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -22.48995983935743
+  },
+  "bp.power.nli.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.0
+  },
+  "bp.power.nli.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 6.4
+  },
+  "bp.power.nli.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.power.nli.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -2.1999999999999997
+  },
+  "bp.power.nli.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 9.4
+  },
+  "bp.power.nli.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 14.000000000000002
+  },
+  "bp.power.nli.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0016
+  },
+  "bp.power.nli.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.6
+  },
+  "bp.power.nli.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 8.0
+  },
+  "bp.power.nli.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 12.4
+  },
+  "bp.power.nli.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0028
+  },
+  "bp.power.nli.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 3.4000000000000004
+  },
+  "bp.power.nli.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.6
+  },
+  "bp.power.nli.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.0
+  },
+  "bp.power.nli.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.power.nli.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.0
+  },
+  "bp.power.nli.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -0.6
+  },
+  "bp.power.nli.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.6000000000000005
+  },
+  "bp.power.nli.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.power.nli.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.000000000000001
+  },
+  "bp.power.nli.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.2
+  },
+  "bp.power.nli.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.6
+  },
+  "bp.power.nli.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.power.nli.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.200000000000001
+  },
+  "bp.power.nli.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.0
+  },
+  "bp.power.nli.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 7.8
+  },
+  "bp.power.nli.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.3324
+  },
+  "bp.power.nli.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0
+  },
+  "bp.power.nli.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.6
+  },
+  "bp.power.nli.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 6.2
+  },
+  "bp.power.nli.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.power.nli.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.0
+  },
+  "bp.power.trained.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -5.800000000000001
+  },
+  "bp.power.trained.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.2
+  },
+  "bp.power.trained.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.256
+  },
+  "bp.power.trained.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.600000000000001
+  },
+  "bp.power.trained.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.6
+  },
+  "bp.power.trained.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 7.6
+  },
+  "bp.power.trained.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.power.trained.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -4.2
+  },
+  "bp.power.trained.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.2
+  },
+  "bp.power.trained.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 6.0
+  },
+  "bp.power.trained.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.power.trained.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -5.6000000000000005
+  },
+  "bp.power.trained.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.199999999999999
+  },
+  "bp.power.trained.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.4000000000000001
+  },
+  "bp.power.trained.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.10799999999999998
+  },
+  "bp.power.trained.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -12.8
+  },
+  "bp.power.trained.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -8.4
+  },
+  "bp.power.trained.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -2.4
+  },
+  "bp.power.trained.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.07
+  },
+  "bp.power.trained.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -14.799999999999999
+  },
+  "bp.power.trained.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -11.0
+  },
+  "bp.power.trained.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -5.2
+  },
+  "bp.power.trained.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0016
+  },
+  "bp.power.trained.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -16.8
+  },
+  "bp.power.trained.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.8
+  },
+  "bp.power.trained.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.0
+  },
+  "bp.power.trained.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.6072
+  },
+  "bp.power.trained.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -9.6
+  },
+  "bp.power.trained.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -6.2
+  },
+  "bp.power.trained.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0
+  },
+  "bp.power.trained.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.256
+  },
+  "bp.power.trained.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -12.2
+  },
+  "bp.toxicity.nli.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.0
+  },
+  "bp.toxicity.nli.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.004999999999927
+  },
+  "bp.toxicity.nli.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.nli.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -4.0
+  },
+  "bp.toxicity.nli.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.3999999999999995
+  },
+  "bp.toxicity.nli.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 9.2
+  },
+  "bp.toxicity.nli.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.4718
+  },
+  "bp.toxicity.nli.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -0.2
+  },
+  "bp.toxicity.nli.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.6
+  },
+  "bp.toxicity.nli.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.800000000000001
+  },
+  "bp.toxicity.nli.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.nli.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -2.4
+  },
+  "bp.toxicity.nli.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.6
+  },
+  "bp.toxicity.nli.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.800000000000001
+  },
+  "bp.toxicity.nli.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.nli.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -2.4
+  },
+  "bp.toxicity.nli.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.4
+  },
+  "bp.toxicity.nli.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 10.6
+  },
+  "bp.toxicity.nli.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.3584
+  },
+  "bp.toxicity.nli.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.2
+  },
+  "bp.toxicity.nli.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 3.8
+  },
+  "bp.toxicity.nli.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 9.0
+  },
+  "bp.toxicity.nli.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.7729999999999999
+  },
+  "bp.toxicity.nli.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.4000000000000001
+  },
+  "bp.toxicity.nli.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.2
+  },
+  "bp.toxicity.nli.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 8.6
+  },
+  "bp.toxicity.nli.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.4718
+  },
+  "bp.toxicity.nli.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -0.2
+  },
+  "bp.toxicity.nli.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.2
+  },
+  "bp.toxicity.nli.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.3999999999999995
+  },
+  "bp.toxicity.nli.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.nli.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.8
+  },
+  "bp.toxicity.trained.decider.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.4000000000000001
+  },
+  "bp.toxicity.trained.decider.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.8
+  },
+  "bp.toxicity.trained.decider.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.decider.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.6
+  },
+  "bp.toxicity.trained.jev.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 3.0
+  },
+  "bp.toxicity.trained.jev.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 8.799999999999999
+  },
+  "bp.toxicity.trained.jev.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.jev.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -2.6
+  },
+  "bp.toxicity.trained.kevlarge.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.2
+  },
+  "bp.toxicity.trained.kevlarge.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 6.2
+  },
+  "bp.toxicity.trained.kevlarge.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.kevlarge.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -5.800000000000001
+  },
+  "bp.toxicity.trained.kevsmall.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 0.2
+  },
+  "bp.toxicity.trained.kevsmall.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 6.2
+  },
+  "bp.toxicity.trained.kevsmall.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.kevsmall.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -5.800000000000001
+  },
+  "bp.toxicity.trained.layaen.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 4.0
+  },
+  "bp.toxicity.trained.layaen.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 10.0
+  },
+  "bp.toxicity.trained.layaen.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.layaen.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -2.0
+  },
+  "bp.toxicity.trained.layaml.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.4
+  },
+  "bp.toxicity.trained.layaml.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 8.0
+  },
+  "bp.toxicity.trained.layaml.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.layaml.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.4000000000000004
+  },
+  "bp.toxicity.trained.nimble.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 2.8000000000000003
+  },
+  "bp.toxicity.trained.nimble.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 8.6
+  },
+  "bp.toxicity.trained.nimble.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.nimble.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -3.0
+  },
+  "bp.toxicity.trained.thisthat.diff": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -1.2
+  },
+  "bp.toxicity.trained.thisthat.hi": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 5.0
+  },
+  "bp.toxicity.trained.thisthat.holm": {
+    "fmt": ".2g",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": 1.0
+  },
+  "bp.toxicity.trained.thisthat.lo": {
+    "fmt": ".1f",
+    "note": null,
+    "source": "results/baseline_paired.json",
+    "value": -7.3999999999999995
   },
   "cutoff.date": {
     "fmt": null,
@@ -41152,6 +44596,144 @@
     "note": null,
     "source": "results/paired.json",
     "value": 0.002458900322096724
+  },
+  "pos.calibration.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 5
+  },
+  "pos.calibration.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 4
+  },
+  "pos.cost.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 5
+  },
+  "pos.cost.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 9
+  },
+  "pos.families.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 3
+  },
+  "pos.families.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 10
+  },
+  "pos.identical.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 4
+  },
+  "pos.identical.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 11
+  },
+  "pos.llm.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 12
+  },
+  "pos.llm.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 1
+  },
+  "pos.models.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 3
+  },
+  "pos.models.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 4
+  },
+  "pos.nstudies": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 15
+  },
+  "pos.outofscope.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 3
+  },
+  "pos.outofscope.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 2
+  },
+  "pos.selective.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 3
+  },
+  "pos.selective.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 3
+  },
+  "pos.stress.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 0
+  },
+  "pos.stress.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 8
+  },
+  "pos.trained.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 2
+  },
+  "pos.trained.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 3
+  },
+  "pos.uncertainty.full": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 8
+  },
+  "pos.uncertainty.partial": {
+    "fmt": "d",
+    "note": null,
+    "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
+    "value": 2
   },
   "rp.done.descvsjev.acc": {
     "fmt": ".3f",

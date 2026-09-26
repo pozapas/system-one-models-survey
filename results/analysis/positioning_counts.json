@@ -1,0 +1,61 @@
+{
+ "source": "benchmark/eaai/positioning_evidence.csv (via shared/src/t15_positioning.py)",
+ "nstudies": 15,
+ "columns": {
+  "models": {
+   "full": 3,
+   "partial": 4,
+   "absent": 8
+  },
+  "families": {
+   "full": 3,
+   "partial": 10,
+   "absent": 2
+  },
+  "trained": {
+   "full": 2,
+   "partial": 3,
+   "absent": 10
+  },
+  "llm": {
+   "full": 12,
+   "partial": 1,
+   "absent": 2
+  },
+  "calibration": {
+   "full": 5,
+   "partial": 4,
+   "absent": 6
+  },
+  "selective": {
+   "full": 3,
+   "partial": 3,
+   "absent": 9
+  },
+  "outofscope": {
+   "full": 3,
+   "partial": 2,
+   "absent": 10
+  },
+  "cost": {
+   "full": 5,
+   "partial": 9,
+   "absent": 1
+  },
+  "stress": {
+   "full": 0,
+   "partial": 8,
+   "absent": 7
+  },
+  "identical": {
+   "full": 4,
+   "partial": 11,
+   "absent": 0
+  },
+  "uncertainty": {
+   "full": 8,
+   "partial": 2,
+   "absent": 5
+  }
+ }
+}

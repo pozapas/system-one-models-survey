@@ -359,6 +359,27 @@ def collect_revision():
     lb = load("laya_budget.json")
     if lb:
         _collect_laya_budget(lb)
+    # mean D3 macro-F1 of the baselines in percent, comparable with e1.*.dthree.macrofone
+    for tag in ("bgesmalllrd3", "nlidebertav3base"):
+        ks = [f"bl.{tag}.d3{t}.macrof1" for t in
+              ("convgoawry", "wikicorpus", "emotion", "wikipoliteness")]
+        if all(k in N for k in ks):
+            radd(f"bl.{tag}.dthree.macrofone",
+                 100 * float(np.mean([N[k]["value"] for k in ks])),
+                 "results/baselines.json (mean of the four D3 tasks)", fmt=".1f")
+    bp = load("baseline_paired.json")
+    if bp:
+        # bp.<cond>.<nli|trained>.<model>.{diff,lo,hi,holm}: src/a14_baseline_paired.py
+        src = "results/baseline_paired.json"
+        for key, res in bp.items():
+            cond, base = key.split("|")
+            cs = CSLUG.get(cond, cond.replace("_", ""))
+            for m, v in res.items():
+                p = f"bp.{cs}.{base}.{SLUG.get(m, m)}"
+                radd(f"{p}.diff", v["diff"], src, fmt=".1f")
+                radd(f"{p}.lo", v["lo"], src, fmt=".1f")
+                radd(f"{p}.hi", v["hi"], src, fmt=".1f")
+                radd(f"{p}.holm", v["holm"], src, fmt=".2g")
     rp = load("render_paired.json")
     if rp:
         # rp.<done|dtwo>.<comparison>.{diff,lo,hi,p}: src/a13_render_paired.py
@@ -941,6 +962,20 @@ def collect():
     add("cutoff.date", "24 September 2026", "shared/ledger/PROTOCOL.md")
     collect_params_revision()
     collect_revision()
+    collect_positioning()
+
+
+def collect_positioning():
+    """Coverage counts of the positioning table (t15), written by t15_positioning.py
+    from the coded evidence file benchmark/eaai/positioning_evidence.csv."""
+    d = load("positioning_counts.json")
+    if not d:
+        return
+    src = "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)"
+    add("pos.nstudies", d["nstudies"], src, fmt="d")
+    for col, v in d["columns"].items():
+        add(f"pos.{col}.full", v["full"], src, fmt="d")
+        add(f"pos.{col}.partial", v["partial"], src, fmt="d")
 
 
 def emit_tex():

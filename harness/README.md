@@ -1,6 +1,6 @@
 # Harness
 
-This folder holds the same-harness evaluation of the benchmark paper, *Six Decision Models, One Harness*. Every model receives the same semantic request in the TypeSafe `/v1/systemone` wire format, with the same state, question and option texts in the same order. The rendering into tokens is each model's own, and `results/analysis/rendering_examples.json` shows it for every family.
+This folder holds the same-harness evaluation of the benchmark paper, *Benchmarking System One decision models against trained classifiers and language models for automated decision gates*. Every model receives the same semantic request in the TypeSafe `/v1/systemone` wire format, with the same state, question and option texts in the same order. The rendering into tokens is each model's own, and `results/analysis/rendering_examples.json` shows it for every family.
 
 ## Layout
 

@@ -18,11 +18,11 @@ MANU = os.path.join(BASE, "manuscript")
 OUT = os.path.join(BASE, "submission")
 
 HIGHLIGHTS = [
-    "Eight decision-model checkpoints, a generator and baselines under one harness",
-    "Classifiers trained on the task's data beat all decision models on intents",
-    "A stored temperature fitted on few options inflates error with 150 options",
-    "Swapping yes/no flips half of hosted workflow answers, under 10% for 4 of 5 decoders",
-    "An intent-trained first stage matches hosted accuracy at under half its cost",
+    "Decision models, trained classifiers and an LLM compared under matched conditions",
+    "Trained classifiers lead on intents; four decision models top zero-shot NLI on 5 of 6",
+    "A stored temperature fitted on few options raises calibration error with 150 options",
+    "Option names and rendering shift some models strongly and others barely",
+    "In-scope risk thresholds do not control out-of-scope acceptance; check it separately",
 ]
 
 
@@ -63,7 +63,7 @@ def run():
     with open(os.path.join(OUT, "abstract.txt"), "w", encoding="utf-8") as fh:
         fh.write(ab + "\n")
 
-    shutil.copy(os.path.join(MANU, "main.pdf"), os.path.join(OUT, "manuscript_anonymized.pdf"))
+    shutil.copy(os.path.join(MANU, "main.pdf"), os.path.join(OUT, "manuscript.pdf"))
     shutil.copy(os.path.join(MANU, "title_page.pdf"), os.path.join(OUT, "title_page.pdf"))
     shutil.copy(os.path.join(MANU, "title_page.tex"), os.path.join(OUT, "title_page.tex"))
 
@@ -74,7 +74,7 @@ def run():
         shutil.copy(os.path.join(MANU, "figures", name + ".pdf"),
                     os.path.join(OUT, f"figure_{name}.pdf"))
 
-    src = os.path.join(OUT, "latex_source_anonymized.zip")
+    src = os.path.join(OUT, "latex_source.zip")
     keep_ext = (".tex", ".bib", ".bbl", ".cls", ".sty", ".bst", ".pdf")
     with zipfile.ZipFile(src, "w", zipfile.ZIP_DEFLATED) as z:
         for root, _, files in os.walk(MANU):
@@ -92,7 +92,8 @@ def run():
         names = z.namelist()
     # The code and data statement cites the repository by its real address until the
     # owner swaps in an anonymized mirror, so the repository name is not checked here.
-    for bad in ("Rafe", "Subasish", "txstate"):
+    # Neurocomputing uses single anonymized review, so author names are expected.
+    for bad in ():
         with zipfile.ZipFile(src) as z:
             for n in z.namelist():
                 if n.endswith((".tex", ".bbl")):

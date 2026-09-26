@@ -1,0 +1,179 @@
+"""Write the positioning table of the literature review (t15) and its coverage counts.
+
+Input: benchmark/eaai/positioning_evidence.csv, one coded cell per study and criterion
+(F full, P partial, A absent) with a verbatim supporting quotation, its location and a
+one-line justification. The key this_study holds the benchmark reported here.
+
+Thirteen coded criteria are shown in eleven columns. Several decision models (c01) and
+hosted and open models together (c02) share the models column, since c02 presupposes
+two models, and option count (c10) and option naming or rendering (c11) share the
+stress column. A shared cell is full when both criteria are full, empty when both are
+absent, and half otherwise. Held-out selective risk (c07) and out-of-scope rejection
+(c08) keep separate columns, because merging them would hide the studies that are full
+on one of the two. The two edge orchestration papers of one group (li2026replacing,
+li2026fast) share one row, which takes the higher code of the two for each criterion.
+
+Row groups follow the two groups of the related-work section: evaluations that compare
+several decision models, a single decision model evaluated against language models,
+and applications or domain benchmarks built around one decision model.
+
+Outputs
+  results/positioning_counts.json   coverage counts over the prior-study rows, read by
+                                    collect_numbers.py into the labels pos.*
+  benchmark/eaai/manuscript/tables/t15_positioning.tex
+
+Run this script, then collect_numbers.py, then compile.
+"""
+import csv
+import json
+import os
+
+import common as C
+
+BASE = os.path.dirname(C.ROOT)
+CSV_PATH = os.path.join(BASE, "benchmark", "eaai", "positioning_evidence.csv")
+TEX_PATH = os.path.join(BASE, "benchmark", "eaai", "manuscript", "tables", "t15_positioning.tex")
+
+# Row groups by study type; a tuple of keys is one merged row.
+GROUPS = [
+    ("Multi-model evaluations", [
+        "ibrahim2026evaluating", "sun2026typesafe", "typeddecisions2026dataset",
+        "robbalian2026rev"]),
+    ("Single decision model against language models", [
+        "li2026jevasajudge", "huang2026can", "cheng2026thisthatmodel", "ren2026openjev"]),
+    ("Applications", [
+        "zhang2026same", "deng2026jev", "rafe2026calibrated", ("li2026fast", "li2026replacing"),
+        "wu2026reflex", "yu2026visual", "jiang2026jevmem"]),
+]
+THIS = "this_study"
+
+# (label slug, coded criteria, header lines)
+COLUMNS = [
+    ("models", ["c01", "c02"], ["Several models,", "hosted and open"]),
+    ("families", ["c03"], ["Several", "task families"]),
+    ("trained", ["c04"], ["Trained", "classifier"]),
+    ("llm", ["c05"], ["Generative", "LLM"]),
+    ("calibration", ["c06"], ["Held-out", "calibration"]),
+    ("selective", ["c07"], ["Held-out", "selective risk"]),
+    ("outofscope", ["c08"], ["Out-of-scope", "rejection"]),
+    ("cost", ["c09"], ["Cost with", "hardware"]),
+    ("stress", ["c10", "c11"], ["Option count", "and naming"]),
+    ("identical", ["c12"], ["Identical", "requests"]),
+    ("uncertainty", ["c13"], ["Paired or", "clustered intervals"]),
+]
+HEADER_GROUPS = [("two", "Scope"), ("two", "Baselines"), ("four", "Measures"),
+                 ("", "Stress"), ("two", "Design")]
+WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven",
+         8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen"}
+RANK = {"A": 0, "P": 1, "F": 2}
+GLYPH = {"F": r"\symfull", "P": r"\symhalf", "A": r"\symnone"}
+STUDY_W, CELL_W = 0.2080, 0.0720          # fractions of \linewidth; 0.208 + 11 * 0.072 = 1
+
+
+def load_codes():
+    codes = {}
+    for r in csv.DictReader(open(CSV_PATH, encoding="utf-8")):
+        codes.setdefault(r["key"], {})[r["criterion"][:3]] = r["code"]
+    return codes
+
+
+def merged_cell(codes, keys, crits):
+    """Code of one table cell: the higher code over merged studies, then the pair rule."""
+    per_crit = [max((codes[k][c] for k in keys), key=RANK.get) for c in crits]
+    if len(per_crit) == 1:
+        return per_crit[0]
+    if all(x == "F" for x in per_crit):
+        return "F"
+    if all(x == "A" for x in per_crit):
+        return "A"
+    return "P"
+
+
+def row_keys(entry):
+    return list(entry) if isinstance(entry, tuple) else [entry]
+
+
+def main():
+    codes = load_codes()
+    prior = [row_keys(e) for _, entries in GROUPS for e in entries]
+    counts = {}
+    for slug, crits, _ in COLUMNS:
+        cells = [merged_cell(codes, keys, crits) for keys in prior]
+        counts[slug] = {"full": cells.count("F"), "partial": cells.count("P"),
+                        "absent": cells.count("A")}
+    out = {"source": "benchmark/eaai/positioning_evidence.csv (via shared/src/t15_positioning.py)",
+           "nstudies": len(prior), "columns": counts}
+    with open(os.path.join(C.RESULTS, "positioning_counts.json"), "w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=1)
+
+    ncol = len(COLUMNS) + 1
+    L = [r"% Generated by shared/src/t15_positioning.py from benchmark/eaai/positioning_evidence.csv.",
+         r"% Do not edit by hand. Coverage counts are num-macros (labels pos.*) from numbers.tex.",
+         r"% Needs paper4a_tables.sty and graphicx.",
+         r"\tablestyle",
+         r"\setlength{\tabcolsep}{2pt}%",
+         r"\providecommand{\poshead}[2]{\rotatebox{90}{\shortstack[l]{#1\\#2}\hspace{3pt}}}%",
+         # coverage cell: a bar of the full (dark) and partial (light) shares of the prior
+         # rows, drawn from the same pos.* macros that print the counts under it
+         r"\providecommand{\posbar}[1]{\begin{tikzpicture}[baseline=-0.2ex]"
+         r"\pgfmathsetlengthmacro{\posw}{0.78\linewidth}"
+         r"\pgfmathsetmacro{\posf}{\csname cdnum@pos.#1.full\endcsname"
+         r"/\csname cdnum@pos.nstudies\endcsname}"
+         r"\pgfmathsetmacro{\posp}{\csname cdnum@pos.#1.partial\endcsname"
+         r"/\csname cdnum@pos.nstudies\endcsname}"
+         r"\fill[accent] (0,0) rectangle ({\posf*\posw},1.2ex);"
+         r"\fill[accent!35] ({\posf*\posw},0) rectangle ({(\posf+\posp)*\posw},1.2ex);"
+         r"\draw[accent!55, line width=0.3pt] (0,0) rectangle (\posw,1.2ex);"
+         r"\end{tikzpicture}}%",
+         r"\providecommand{\poscount}[1]{\posbar{#1}\newline"
+         r"\num{pos.#1.full}\,/\,\num{pos.#1.partial}}%",
+         r"\begin{tabular}{P{%.4f}%s}" % (STUDY_W, ("Q{%.4f}" % CELL_W) * len(COLUMNS)),
+         r"\toprule"]
+    top = [r"\hdtop{}"]
+    spans, col = [], 2
+    for word, label in HEADER_GROUPS:
+        if word:
+            top.append(r"\hdgroup{%s}{%s}" % (word, label))
+            n = [k for k, v in WORDS.items() if v == word][0]
+        else:
+            top.append(r"\hdtop{%s}" % label)
+            n = 1
+        spans.append(f"{col}-{col + n - 1}")
+        col += n
+    L.append(r"\headrow " + " & ".join(top) + r" \\")
+    L.append(r"\bandrules{%s}" % ",".join(spans))
+    sub = [r"\hdsub{Study}"] + [r"\hdsub{\poshead{%s}{%s}}" % tuple(h) for _, _, h in COLUMNS]
+    L.append(r"\headrow " + " & ".join(sub) + r" \\")
+    L.append(r"\midrule")
+    for label, entries in GROUPS:
+        L.append(r"\groupspan{%s}{%s}" % (WORDS[ncol], label))
+        for e in entries:
+            keys = row_keys(e)
+            cells = [GLYPH[merged_cell(codes, keys, crits)] for _, crits, _ in COLUMNS]
+            L.append(r"\citet{%s} & " % ",".join(keys) + " & ".join(cells) + r" \\")
+    L.append(r"\midrule")
+    L.append(r"Prior studies, full\,/\,partial & "
+             + " & ".join(r"\poscount{%s}" % slug for slug, _, _ in COLUMNS) + r" \\")
+    L.append(r"\midrule")
+    cells = [GLYPH[merged_cell(codes, [THIS], crits)] for _, crits, _ in COLUMNS]
+    L.append(r"This study & " + " & ".join(cells) + r" \\")
+    L.append(r"\bottomrule")
+    L.append(r"\end{tabular}")
+    L.append(
+        r"\tablenote{\symfull\ full, \symhalf\ partial and \symnone\ absent, each coded from the"
+        r" study's own text. The first column combines several decision models with hosted and"
+        r" open models in one study, and the stress column combines option count with option"
+        r" naming or rendering. Each combined cell is full when both criteria are full, empty"
+        r" when both are absent and half otherwise. The two orchestration papers of Li et al."
+        r" share one row with the higher code of each criterion. The coverage row counts the"
+        r" \num{pos.nstudies} prior rows that meet each criterion fully and partly. The"
+        r" supplementary evidence file gives the criteria and, for every cell, a supporting"
+        r" quotation or, for an absent cell without one, the search terms that found nothing.}")
+    with open(TEX_PATH, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(L) + "\n")
+    print(f"wrote {TEX_PATH}")
+    print(json.dumps(out["columns"]))
+
+
+if __name__ == "__main__":
+    main()

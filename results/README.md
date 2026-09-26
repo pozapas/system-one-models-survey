@@ -1,6 +1,6 @@
 # Results
 
-This folder holds the results of the benchmark paper, *Six Decision Models, One Harness*.
+This folder holds the results of the benchmark paper, *Benchmarking System One decision models against trained classifiers and language models for automated decision gates*.
 
 | Path | Contents |
 |---|---|
