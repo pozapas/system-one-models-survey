@@ -1,0 +1,25 @@
+name: decider
+repo: https://github.com/Mapika/decider
+revision_sha: 5f91c011f05fa4b685f0845281a0805a56eb0169
+author: Mapika
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'Independent open reproduction of the System One model class: 2B, 4B and 35B-MoE models on Qwen3.5
+  bases returning a one-pass probability distribution over Choice/Score/Noul questions.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- decider-2b (Qwen3.5-2B-Base)
+- decider-4b (Qwen3.5-4B-Base)
+- decider-35b-a3b (Qwen3.5-35B-A3B-Base MoE)
+key_claims:
+- excerpt: This is an independent project. It is not affiliated with or endorsed by TypeSafe AI.
+  verbatim: true
+- excerpt: The training mixture is public datasets plus data labelled by a local Qwen3.5-27B teacher
+  verbatim: true
+- excerpt: Nothing was distilled from Jev.
+  verbatim: true

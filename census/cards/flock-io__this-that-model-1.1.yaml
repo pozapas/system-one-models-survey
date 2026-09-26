@@ -1,0 +1,111 @@
+name: this-that-model-1.1
+name_src:
+  quote: '# this-that-model-1.1'
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+hf_id: flock-io/this-that-model-1.1
+hf_id_src:
+  quote: flock-io/this-that-model-1.1
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+revision_sha: fc083c82bd5872abfeaf0d44cf7482324efce87d
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+vendor_or_author: FLock.io
+vendor_or_author_src:
+  quote: github.com/FLock-io/this-that-model
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+release_date: '2026-09-22'
+release_date_src:
+  quote: (HF API createdAt for flock-io/this-that-model-1.1)
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+availability_and_license: Open weights, MIT
+availability_and_license_src:
+  quote: 'license: mit'
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+backbone: 'base_model: decider-2b (Qwen3.5-style hybrid, 18 of 24 layers DeltaNet linear attention, 6
+  full attention)'
+backbone_src:
+  quote: Architecture:** Qwen3.5-style hybrid, 18 of 24 layers DeltaNet linear attention, 6 full attention
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+parameter_count: 1.88B (safetensors.total 1,881,825,088)
+parameter_count_src:
+  quote: '**Parameters:** 1.88 B'
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+decision_head: Not independently described in this card beyond inheriting decider-2b's letter-logit readout
+decision_head_src:
+  quote: '**Parameters:** 1.88 B'
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+training_objective: Not disclosed in this card
+training_objective_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+training_data: Not itemized in this card; datasets field lists limberc/this-that-spatial-bench as the
+  benchmark
+training_data_src:
+  quote: "datasets:\n  - limberc/this-that-spatial-bench"
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+primitives: choice-style typed decisions (Question objects with declared options)
+primitives_src:
+  quote: 1.1 keeps everything 1.0 did and adds the decisions 1.0 could not make
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+state_modality: text (policy text with nested rules/exceptions)
+state_modality_src:
+  quote: where a policy has an exception and the exception has an exception
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+context_length: not disclosed in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+cardinality_limit: not disclosed in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+latency_with_hardware: 30.9 ms per question on a consumer GPU, zero generated tokens, by this card's own
+  statement; this-that-model-1.2's own comparison table instead measures 1.1 at 50.3 ms under its harness
+  -- an internal inconsistency between the self-reported and comparatively measured figures
+latency_with_hardware_src:
+  quote: '**Latency:** 30.9 ms per question on a consumer GPU, zero generated tokens'
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+serving_temperature: not disclosed in this card
+serving_temperature_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+calibration_as_shipped: not disclosed by this card directly; this-that-model-1.2's card reports 1.1 scoring
+  1.000 accuracy / 0.003 Brier / 0.023 NLL on a 68-question frozen third-party cohort
+calibration_as_shipped_src:
+  quote: this-that-model-1.1 | 1.000 | 0.003 | 0.023
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+disclosed_failure_modes: Reads rules written in the negative (an exclusion) as though they named the eligible
+  set, at 0.88 mean confidence, per this-that-model-1.2's card describing the fix
+disclosed_failure_modes_src:
+  quote: '1.1 read a rule such as `bays without chilled handling are
+
+    ineligible` as though it named the *eligible* set'
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+evaluation_protocol_published: Benchmark named (limberc/this-that-spatial-bench) but no protocol detail
+  given in this card itself
+evaluation_protocol_published_src:
+  quote: '**Benchmark:** [limberc/this-that-spatial-bench]'
+  url: https://huggingface.co/flock-io/this-that-model-1.0/raw/3d927195c4f9845efe66c5715883a7a0f42b1239/README.md
+source_urls:
+- https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md
+- https://github.com/FLock-io/this-that-model
+source_urls_src:
+  quote: '**Inference code:** [github.com/FLock-io/this-that-model]'
+  url: https://huggingface.co/flock-io/this-that-model-1.1/raw/fc083c82bd5872abfeaf0d44cf7482324efce87d/README.md

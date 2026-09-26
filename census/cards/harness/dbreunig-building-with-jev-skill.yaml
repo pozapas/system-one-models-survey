@@ -1,0 +1,17 @@
+name: building-with-jev-skill
+repo: https://github.com/dbreunig/building-with-jev-skill
+revision_sha: 04fe3666c6b8b8abfec1271c0e581c823a181f6d
+author: dbreunig
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: unknown
+category: integration
+what_it_does: A skill for writing and improving programs that call Jev, TypeSafe's System One model
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: It targets `jev-1.13`.
+  verbatim: true

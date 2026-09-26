@@ -1,0 +1,27 @@
+name: lev
+repo: https://github.com/jlt-commons/lev
+revision_sha: 1309c1f0f46bc7d8410496b513d175d12bd1225c
+author: jlt-commons
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Jolt implementation of Laya non-autoregressive System 1 decision engine
+primitives_supported: []
+models_supported:
+- Qwen3.5-4B
+- Qwen
+- Qwen2
+- Gemma
+- ModernBERT-large
+- mmBERT-base
+- MiniCPM5-2B
+key_claims:
+- excerpt: These use one forward pass covers all of a call's questions, at roughly 100 ms on   a laptop
+    CPU, and the probabilities are calibrated.
+  verbatim: true
+- excerpt: On the   adversarial authored144 set in [bench/](bench/README.md), Qwen3.5-4B   answers 95%
+    without thinking, in Jev mode at ~170 ms a question, against   the encoders' 61 to 67%.
+  verbatim: true
+- excerpt: MiniCPM5-2B reaches the same 95% by thinking   first, in seconds.
+  verbatim: true

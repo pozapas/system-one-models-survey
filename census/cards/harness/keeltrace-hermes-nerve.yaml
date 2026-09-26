@@ -1,0 +1,23 @@
+name: hermes-nerve
+repo: https://github.com/keeltrace/hermes-nerve
+revision_sha: 375f17872bb59c2de1e7102e9bc7471774150c62
+author: keeltrace
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: Nerve is a supervisory nervous system for Hermes agents, adding typed System One decisions,
+  ranking, verification, token-aware oversight, and an opt-in tool gate powered by TypeSafe Jev or Open
+  Source Laya
+primitives_supported: []
+models_supported: []
+key_claims:
+- excerpt: Nerve is an asynchronous System-1 supervisory layer for Hermes Agent.
+  verbatim: true
+- excerpt: '`0.2.2` promotes the validated dev17 RC and preserves dev16 controller-completion while correcting
+    budget authority from live release evidence: Nerve/Reflex is a watchdog and forecaster, while the
+    main Hermes orchestrator/reviewer'
+  verbatim: true
+- excerpt: Dev17 validates that architecture across hosted Jev plus self-hosted Laya and OpenJev Reflex
+    backends.
+  verbatim: true

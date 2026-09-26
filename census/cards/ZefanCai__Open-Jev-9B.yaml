@@ -1,0 +1,115 @@
+name: Open-Jev-9B
+name_src:
+  quote: '# Open-Jev-9B'
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+hf_id: ZefanCai/Open-Jev-9B
+hf_id_src:
+  quote: ZefanCai/Open-Jev-9B
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+revision_sha: 47e966881e489511c0c7f5633a9e1960a676a551
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+vendor_or_author: Zefan Cai
+vendor_or_author_src:
+  quote: https://github.com/Zefan-Cai/Open-Jev
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+release_date: '2026-09-20'
+release_date_src:
+  quote: (HF API createdAt for ZefanCai/Open-Jev-9B)
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+availability_and_license: Open weights (LoRA adapter + head), Apache-2.0 for the adapter/head, MIT for
+  the Open-Jev source code
+availability_and_license_src:
+  quote: The trained adapter and head are released under **Apache-2.0**
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+backbone: Qwen/Qwen3.5-9B, pinned revision c202236235762e1c871ad0ccb60c8ee5ba337b9a
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-9B'
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+parameter_count: LoRA rank 8, alpha 16, plus a scalar head; adapter-only, no merged safetensors total
+  reported
+parameter_count_src:
+  quote: LoRA rank 8, alpha 16; scalar head initialized from the pretrained Yes-minus-No readout and trained
+    jointly with LoRA.
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+decision_head: Scalar decision head initialized from the pretrained Yes-minus-No readout and trained jointly
+  with the LoRA adapter
+decision_head_src:
+  quote: scalar head initialized from the pretrained Yes-minus-No readout and trained jointly with LoRA.
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+training_objective: 20,204 optimizer steps, global batch 4, 80,816 consumed training rows, one full pass
+  over the frozen release-v2 training split
+training_objective_src:
+  quote: '20,204 optimizer steps with global batch 4: **80,816 consumed training rows**, one full pass
+    over the frozen `release-v2` training split.'
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+training_data: release-v2 frozen training split (80,816 rows consumed for this checkpoint); a redistributable
+  public projection has 79,116 rows, excluding 1,700 wikispeedia-v1 records pending redistribution permission
+training_data_src:
+  quote: 80,816 consumed training rows
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+primitives: Choice, Noul, Score
+primitives_src:
+  quote: '**Choice:** probabilities over the supplied candidate set'
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+state_modality: caller-supplied candidates / text state
+state_modality_src:
+  quote: Open-Jev scores caller-supplied candidates directly
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+context_length: not disclosed as a fixed token limit in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+latency_with_hardware: not disclosed as a ms figure in this card
+latency_with_hardware_src:
+  quote: none found
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+serving_temperature: Saved temperature 1.8969118766347646, fitted only on 512 calibration rows
+serving_temperature_src:
+  quote: 'Saved temperature: `1.8969118766347646`; fitted only on 512 calibration rows.'
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+calibration_as_shipped: 'Test split (10,532 rows): hard accuracy 97.54%, expected accuracy 94.72%, ECE
+  0.007707; OOD split (15,920 rows): hard accuracy 91.97%, expected accuracy 90.40%, ECE 0.037398'
+calibration_as_shipped_src:
+  quote: Test | 10,532 | 9,799 / 10,046 | 97.54% | 94.72% | 0.130947 | 0.039113 | 0.007707 |
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+disclosed_failure_modes: Card explicitly states synthetic held-out decision metrics do not establish broad
+  real-world reliability, closed-loop browser/game/flight success, or a calibrated probability guarantee
+  outside the evaluated distribution; temperature fitted on only 512 calibration rows
+disclosed_failure_modes_src:
+  quote: Synthetic held-out decision metrics do not establish broad real-world reliability, closed-loop
+    browser/game/flight success, or a calibrated probability guarantee outside the evaluated distribution.
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+evaluation_protocol_published: Yes; 26,452 held-out records (10,532 test + 15,920 OOD), zero missing/duplicate/failed
+  records, five inference-file hashes matched to the published weights, full machine-readable results
+  in evaluation/full-data.json
+evaluation_protocol_published_src:
+  quote: zero missing, duplicate, or failed inference records
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+source_urls:
+- https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md
+- https://github.com/Zefan-Cai/Open-Jev
+source_urls_src:
+  quote: the [Open-Jev loader](https://github.com/Zefan-Cai/Open-Jev)
+  url: https://huggingface.co/ZefanCai/Open-Jev-9B/raw/47e966881e489511c0c7f5633a9e1960a676a551/README.md

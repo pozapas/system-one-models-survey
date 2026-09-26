@@ -1,0 +1,27 @@
+name: open-spark-jev
+repo: https://github.com/abhishek085/open-spark-jev
+revision_sha: 30ac6d89b7fa36c644cf86aac68f35c1d276a919
+author: abhishek085
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Open-source, local decision models inspired by TypeSafe’s Jev and System One - built on
+  Qwen3 for NVIDIA DGX Spark.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen3
+- Qwen3.5-4B
+key_claims:
+- excerpt: The model it builds and releases is **`spark-s1`**.
+  verbatim: true
+- excerpt: '> **State + typed questions → structured decisions + probabilities** The project currently
+    supports three decision primitives: Several typed questions can be answered from the same state: the
+    state'
+  verbatim: true
+- excerpt: '> **This is still an early-stage project.** The current release (`v6`) trains on 11,792 code/LLM-labelled
+    decision rows across 49 Jev-style task packs — far more than the original ~1,000-row'
+  verbatim: true

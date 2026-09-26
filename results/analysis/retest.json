@@ -1,0 +1,372 @@
+{
+  "decider-2b": {
+    "_overall": {
+      "max_flip_rate": 0.0,
+      "median_flip_rate": 0.0
+    },
+    "d1_neutral": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 200,
+      "pairs": 1
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    }
+  },
+  "jev-1.13.0": {
+    "_overall": {
+      "max_flip_rate": 0.08333333333333333,
+      "median_flip_rate": 0.01740294511378849
+    },
+    "d1_calib": {
+      "flip_rate": 0.021777777777777774,
+      "identical_share": 0.2833333333333334,
+      "mean_abs_dtop": 0.01595995510662177,
+      "n": 1500,
+      "pairs": 3
+    },
+    "d1_native": {
+      "flip_rate": 0.021666666666666667,
+      "identical_share": 0.2771666666666666,
+      "mean_abs_dtop": 0.015474680134680134,
+      "n": 2000,
+      "pairs": 3
+    },
+    "d1_neutral": {
+      "flip_rate": 0.016000000000000004,
+      "identical_share": 0.25,
+      "mean_abs_dtop": 0.01515929292929293,
+      "n": 200,
+      "pairs": 10
+    },
+    "d2_hier_dom": {
+      "flip_rate": 0.024444444444444446,
+      "identical_share": 0.40444444444444444,
+      "mean_abs_dtop": 0.017754769921436587,
+      "n": 600,
+      "pairs": 3
+    },
+    "d2_hier_int": {
+      "flip_rate": 0.0011111111111111111,
+      "identical_share": 0.7433333333333333,
+      "mean_abs_dtop": 0.006045454545454546,
+      "n": 600,
+      "pairs": 3
+    },
+    "d2_k150": {
+      "flip_rate": 0.025833333333333333,
+      "identical_share": 0.5,
+      "mean_abs_dtop": 0.015389646464646467,
+      "n": 800,
+      "pairs": 3
+    },
+    "d2_k20": {
+      "flip_rate": 0.0,
+      "identical_share": 0.8533333333333334,
+      "mean_abs_dtop": 0.003354208754208754,
+      "n": 600,
+      "pairs": 3
+    },
+    "d2_k5": {
+      "flip_rate": 0.0033333333333333335,
+      "identical_share": 0.9277777777777777,
+      "mean_abs_dtop": 0.0013333333333333333,
+      "n": 600,
+      "pairs": 3
+    },
+    "d2_k50": {
+      "flip_rate": 0.005555555555555556,
+      "identical_share": 0.8116666666666666,
+      "mean_abs_dtop": 0.004213131313131312,
+      "n": 600,
+      "pairs": 3
+    },
+    "d3_conv_go_awry": {
+      "flip_rate": 0.006666666666666667,
+      "identical_share": 0.5833333333333334,
+      "mean_abs_dtop": 0.007093333333333334,
+      "n": 500,
+      "pairs": 3
+    },
+    "d3_emotion": {
+      "flip_rate": 0.01740294511378849,
+      "identical_share": 0.35876840696117807,
+      "mean_abs_dtop": 0.01686233148080538,
+      "n": 498,
+      "pairs": 3
+    },
+    "d3_wiki_corpus": {
+      "flip_rate": 0.021333333333333333,
+      "identical_share": 0.35600000000000004,
+      "mean_abs_dtop": 0.01728,
+      "n": 500,
+      "pairs": 3
+    },
+    "d3_wiki_politeness": {
+      "flip_rate": 0.03078982597054886,
+      "identical_share": 0.1887550200803213,
+      "mean_abs_dtop": 0.018655362189498738,
+      "n": 498,
+      "pairs": 3
+    },
+    "e2_d1_k01": {
+      "flip_rate": 0.017777777777777778,
+      "identical_share": 0.33,
+      "mean_abs_dtop": 0.015077777777777775,
+      "n": 600,
+      "pairs": 3
+    },
+    "e2_d1_kny": {
+      "flip_rate": 0.015555555555555553,
+      "identical_share": 0.33111111111111113,
+      "mean_abs_dtop": 0.015333333333333332,
+      "n": 600,
+      "pairs": 3
+    },
+    "e2_d1_krand": {
+      "flip_rate": 0.02,
+      "identical_share": 0.3238888888888889,
+      "mean_abs_dtop": 0.015166666666666663,
+      "n": 600,
+      "pairs": 3
+    },
+    "e2_d1_kswap": {
+      "flip_rate": 0.08333333333333333,
+      "identical_share": 0.13333333333333333,
+      "mean_abs_dtop": 0.026155555555555557,
+      "n": 600,
+      "pairs": 3
+    },
+    "e2_d3_conv_go_awry_k01": {
+      "flip_rate": 0.004,
+      "identical_share": 0.6093333333333333,
+      "mean_abs_dtop": 0.00672,
+      "n": 500,
+      "pairs": 3
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.004,
+      "identical_share": 0.61,
+      "mean_abs_dtop": 0.006839999999999999,
+      "n": 500,
+      "pairs": 3
+    },
+    "e2_d3_conv_go_awry_krand": {
+      "flip_rate": 0.008,
+      "identical_share": 0.648,
+      "mean_abs_dtop": 0.006226666666666668,
+      "n": 500,
+      "pairs": 3
+    },
+    "e2_d3_conv_go_awry_kswap": {
+      "flip_rate": 0.016,
+      "identical_share": 0.17200000000000001,
+      "mean_abs_dtop": 0.018640000000000004,
+      "n": 500,
+      "pairs": 3
+    },
+    "e2_d3_wiki_corpus_k01": {
+      "flip_rate": 0.02,
+      "identical_share": 0.33466666666666667,
+      "mean_abs_dtop": 0.016733333333333333,
+      "n": 500,
+      "pairs": 3
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.018666666666666668,
+      "identical_share": 0.34933333333333333,
+      "mean_abs_dtop": 0.016573333333333332,
+      "n": 500,
+      "pairs": 3
+    },
+    "e2_d3_wiki_corpus_krand": {
+      "flip_rate": 0.017333333333333336,
+      "identical_share": 0.326,
+      "mean_abs_dtop": 0.017186666666666666,
+      "n": 500,
+      "pairs": 3
+    },
+    "e2_d3_wiki_corpus_kswap": {
+      "flip_rate": 0.037333333333333336,
+      "identical_share": 0.11666666666666668,
+      "mean_abs_dtop": 0.027399999999999997,
+      "n": 500,
+      "pairs": 3
+    }
+  },
+  "kev-0.8b": {
+    "_overall": {
+      "max_flip_rate": 0.0,
+      "median_flip_rate": 0.0
+    },
+    "d1_neutral": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 200,
+      "pairs": 1
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    }
+  },
+  "kev-9b": {
+    "_overall": {
+      "max_flip_rate": 0.0,
+      "median_flip_rate": 0.0
+    },
+    "d1_neutral": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 200,
+      "pairs": 1
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    }
+  },
+  "laya-en": {
+    "_overall": {
+      "max_flip_rate": 0.0,
+      "median_flip_rate": 0.0
+    },
+    "d1_neutral": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 200,
+      "pairs": 1
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    }
+  },
+  "laya-ml": {
+    "_overall": {
+      "max_flip_rate": 0.0,
+      "median_flip_rate": 0.0
+    },
+    "d1_neutral": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 200,
+      "pairs": 1
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    }
+  },
+  "nimble-9b": {
+    "_overall": {
+      "max_flip_rate": 0.0,
+      "median_flip_rate": 0.0
+    },
+    "d1_neutral": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 200,
+      "pairs": 1
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    }
+  },
+  "this-that-1.0": {
+    "_overall": {
+      "max_flip_rate": 0.0,
+      "median_flip_rate": 0.0
+    },
+    "d1_neutral": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 200,
+      "pairs": 1
+    },
+    "e2_d3_conv_go_awry_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    },
+    "e2_d3_wiki_corpus_kny": {
+      "flip_rate": 0.0,
+      "identical_share": 1.0,
+      "mean_abs_dtop": 0.0,
+      "n": 500,
+      "pairs": 1
+    }
+  }
+}

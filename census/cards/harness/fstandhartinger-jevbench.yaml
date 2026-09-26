@@ -1,0 +1,29 @@
+name: jevbench
+repo: https://github.com/fstandhartinger/jevbench
+revision_sha: 2fa63fa3226cb369795525ed011800f57dcbd894
+author: fstandhartinger
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'JevBench, Benchmark Heaven''s independent public benchmark for Jev-class decision models: bounded
+  rubric decisions scored on Intelligence, Calibration, Speed and Cost axes; not affiliated with TypeSafe.'
+primitives_supported:
+- choice
+models_supported:
+- Jev 1.13.0
+- JevK5 v0.2.0
+- Hopper
+- Winnow-12B Q8
+- reflex 4B
+- Von 1.2
+- many others on the live board
+key_claims:
+- excerpt: JevBench is Benchmark Heaven's own benchmark. It is not affiliated with or endorsed by TypeSafe AI, whose
+    Jev model is one of the systems measured here.
+  verbatim: true
+- excerpt: Jev 1.13.0 (TypeSafe AI) | 63.29
+  verbatim: true
+- excerpt: The official score blends 20% chance-corrected Intelligence from 308 fresh sealed decisions with 80%
+    of the v1.3.0 Intelligence axis.
+  verbatim: true

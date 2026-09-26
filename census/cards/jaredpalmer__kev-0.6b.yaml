@@ -1,0 +1,110 @@
+name: Kev-0.6B (Qwen3)
+name_src:
+  quote: '# Kev-0.6B (Qwen3)'
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+hf_id: jaredpalmer/kev-0.6b
+hf_id_src:
+  quote: jaredpalmer/kev-0.6b
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+revision_sha: see fetch_log.csv / meta_raw for this repo's pinned sha
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+vendor_or_author: Jared Palmer
+vendor_or_author_src:
+  quote: jaredpalmer/kev-0.6b
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+release_date: '2026-09-19'
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+availability_and_license: Open weights (LoRA adapter), Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+backbone: Qwen/Qwen3-0.6B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3-0.6B-Base'
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+parameter_count: LoRA adapter (r=16) on Qwen3-0.6B-Base; superseded by Kev-0.8B in the family lineup
+parameter_count_src:
+  quote: LoRA adapter (r=16) plus a pointer head
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+decision_head: Pointer head reading option logits from the LoRA-adapted base in one forward pass, no text
+  generation (same family recipe as Kev-0.8B/4B/9B)
+decision_head_src:
+  quote: a probability distribution per question out, in one forward pass. No text generation.
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+training_objective: Cross-entropy on the option distribution, same decision-v6/v7 family recipe as the
+  other Kev sizes
+training_objective_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+training_data: Same family public-dataset mixture as the other Kev sizes (see Kev-9B card); this card's
+  own compact note not independently re-verified line by line
+training_data_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+primitives: choice, noul, score
+primitives_src:
+  quote: typed decision (choice / noul / score)
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+state_modality: one document (text/JSON state)
+state_modality_src:
+  quote: one document (the *state*)
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+context_length: not disclosed as a fixed token limit in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+latency_with_hardware: compact card; brief only asked to note this model's existence, not measure it in
+  detail here
+latency_with_hardware_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+serving_temperature: not independently re-verified for this sibling; see Kev-9B (T=2.30) and Kev-0.8B
+  (T=2.35 current / T=2.41 prior) for confirmed family values
+serving_temperature_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+calibration_as_shipped: not independently re-verified for this sibling in this compact pass
+calibration_as_shipped_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+disclosed_failure_modes: It is a LoRA adapter (r=16) plus a pointer head on `Qwen/Qwen3-0.6B-Base`, and
+  it serves TypeSafe's public `/v1/systemone` contract.
+disclosed_failure_modes_src:
+  quote: It is a LoRA adapter (r=16) plus a pointer head on `Qwen/Qwen3-0.6B-Base`, and it serves TypeSafe's
+    public `/v1/systemone` contract.
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+evaluation_protocol_published: Yes, per the shared Kev family protocol (development partitions select
+  models, locked test read once); see github.com/jaredpalmer/kev
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+source_urls:
+- https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md
+- https://github.com/jaredpalmer/kev
+source_urls_src:
+  quote: jaredpalmer/kev-0.6b
+  url: https://huggingface.co/jaredpalmer/kev-0.6b/raw/dece6dba8d43f0f7ded45e9f5b9df12474d90843/README.md

@@ -1,0 +1,28 @@
+name: openjev
+repo: https://github.com/S1LV3RJ1NX/openjev
+revision_sha: 91847b4c678f7d9330d8f3475e24c72c7fef73c2
+author: S1LV3RJ1NX
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'Open System One models: typed decisions with calibrated probabilities, trainable on your
+  own data. No text generation.'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported:
+- Qwen3
+- ModernBERT
+key_claims:
+- excerpt: The default architecture is a rank-16 LoRA adapter on Qwen3-1.7B.** It won the architecture
+    ablation against the ModernBERT encoder on all seven held-out benchmarks, 29.6x chance against 17.2x,
+    including
+  verbatim: true
+- excerpt: Start with the [general LoRA adapter](https://huggingface.co/s1lv3rj1nx/openjev-general-lora).
+  verbatim: true
+- excerpt: 'One measurement went the other way and it is worth knowing before you trust the benchmarks:
+    run zero-shot on our real router task, the encoder is better (intent 0.601'
+  verbatim: true

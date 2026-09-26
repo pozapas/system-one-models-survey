@@ -1,0 +1,21 @@
+name: laya-go
+repo: https://github.com/neko233-com/laya-go
+revision_sha: 4618ea77265f042a33e07a8ab0f5fdecc95d88bd
+author: neko233-com
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: 'Laya — open horizontal System 1 decision models: Go server + agent CLI/MCP replacing JEV
+  (non-autoregressive structured prediction)'
+primitives_supported: []
+models_supported: []
+key_claims:
+- excerpt: English | [中文](README.zh.md)  Open horizontal **System 1** decision models for agents.
+  verbatim: true
+- excerpt: How to use:** run `laya-deploy` (default `0.0.0.0:7710`).
+  verbatim: true
+- excerpt: '---   **Deploy host (Administrator PowerShell):**  ```powershell git clone https://github.com/neko233-com/laya-go.git
+    cd laya-go .\deploy\install-service.ps1 -Port 7710 ```  Service `LayaDeploy` listens on `0.0.0.0:7710`
+    (model API + admin UI in one process).'
+  verbatim: true

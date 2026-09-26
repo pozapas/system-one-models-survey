@@ -1,0 +1,32 @@
+name: typed-decisions
+repo: https://github.com/kotoba-lang/typed-decisions
+revision_sha: e4ed807630c061179a6834d77e18c43227e4f19d
+author: kotoba-lang
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: open_model_training
+what_it_does: Jev-shaped typed-decision model (state + Choice/Score/Noul questions -> calibrated probabilities,
+  one pass) on ModernBERT / DeBERTa / LLaDA-MoE, with measured latency, accuracy, calibration and training
+  cost
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- ModernBERT
+- ModernBERT-large
+- DeBERTa
+- LLaDA-MoE
+- LLaDA
+key_claims:
+- excerpt: 'Decisions and the measured record: superproject ADR `adr-2609181600-typed-decisions-jev-shape-modernbert-vs-llada-moe`.'
+  verbatim: true
+- excerpt: 'Nearest repos and the boundary: `kotoba-lang/dllm-qwen38` (block-diffusion adaptation of an
+    AR model; here the dLLM is used as-is with LoRA, nothing about diffusion training is new), `kotoba-lang/murakumo`
+    (serves GGUFs;'
+  verbatim: true
+- excerpt: '``` state + { q1: Choice(instr, [opt...]), q2: Score(instr, [level...]), q3: Noul(instr) }
+    -> { q1: {choice, probabilities, confidence}, q2: {score, probabilities, confidence}, q3: {noul} }
+    ``` Every kind'
+  verbatim: true

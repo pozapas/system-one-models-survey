@@ -1,0 +1,25 @@
+name: laya-mlx
+repo: https://github.com/mizorewww/laya-mlx
+revision_sha: 0a859518634112655cb97c745dbf04f5191aaf13
+author: mizorewww
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No
+  text generation, PyTorch, or cloud API.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- ModernBERT-large
+- mmBERT-base
+key_claims:
+- excerpt: Open-weight typed decisions, running natively on Apple Silicon.**  **13.4 ms** median end-to-end
+    for a short English typed decision.
+  verbatim: true
+- excerpt: 7.4 ms** with the multilingual checkpoint.
+  verbatim: true
+- excerpt: 0 output tokens.** Local MLX inference, with no PyTorch, Transformers runtime, or cloud API.
+  verbatim: true

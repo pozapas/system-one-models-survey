@@ -1,0 +1,777 @@
+{
+  "assumptions": {
+    "gpu": null,
+    "jev_usd_per_mtok_input": 0.042,
+    "l4_units_per_hour": 4.8,
+    "usd_per_compute_unit": 0.0999,
+    "usd_per_gpu_hour": 0.47952
+  },
+  "comparator-open": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), batched generation, time amortized per request",
+      "decisions": 2000,
+      "input_tokens_per_decision": 404.4725,
+      "latency_mode": "batched_amortized",
+      "mean_s": 0.9948438173532489,
+      "p50_s": 0.9948438173532486,
+      "p95_s": 0.9948438173532486,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.026502639294290548
+    },
+    "d2_k150": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), batched generation, time amortized per request",
+      "decisions": 800,
+      "input_tokens_per_decision": 1384.0275,
+      "latency_mode": "batched_amortized",
+      "mean_s": 1.1503100901842118,
+      "p50_s": 1.1490795259475708,
+      "p95_s": 1.1523610305786134,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.15322130401253703
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), batched generation, time amortized per request",
+      "decisions": 600,
+      "input_tokens_per_decision": 287.91333333333336,
+      "latency_mode": "batched_amortized",
+      "mean_s": 0.7326909633477527,
+      "p50_s": 0.7572996382713317,
+      "p95_s": 0.7572996382713317,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.09759443631792065
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), batched generation, time amortized per request",
+      "decisions": 500,
+      "input_tokens_per_decision": 368.938,
+      "latency_mode": "batched_amortized",
+      "mean_s": 0.2898895993232727,
+      "p50_s": 0.2898895993232727,
+      "p95_s": 0.2898895993232727,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.03861329462985992
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), batched generation, time amortized per request",
+      "decisions": 498,
+      "input_tokens_per_decision": 207.63052208835342,
+      "latency_mode": "batched_amortized",
+      "mean_s": 0.2532335515003128,
+      "p50_s": 0.2532335515003128,
+      "p95_s": 0.2532335515003128,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.03373070905984167
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), batched generation, time amortized per request",
+      "decisions": 500,
+      "input_tokens_per_decision": 439.44,
+      "latency_mode": "batched_amortized",
+      "mean_s": 0.3436376724243164,
+      "p50_s": 0.3436376724243164,
+      "p95_s": 0.3436376724243164,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.04577253796691895
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), batched generation, time amortized per request",
+      "decisions": 498,
+      "input_tokens_per_decision": 189.4859437751004,
+      "latency_mode": "batched_amortized",
+      "mean_s": 0.16382759019552942,
+      "p50_s": 0.16382759019552942,
+      "p95_s": 0.16382759019552942,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.02182183501404452
+    }
+  },
+  "decider-2b": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 2000,
+      "input_tokens_per_decision": 162.773,
+      "latency_mode": "single_request",
+      "mean_s": 0.40968574999999996,
+      "p50_s": 0.4264,
+      "p95_s": 0.6009249999999999,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.010914028379999998
+    },
+    "d2_k150": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 800,
+      "input_tokens_per_decision": 1576.01125,
+      "latency_mode": "single_request",
+      "mean_s": 0.15131450000000002,
+      "p50_s": 0.149,
+      "p95_s": 0.1536,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.0201550914
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 223.89833333333334,
+      "latency_mode": "single_request",
+      "mean_s": 0.06994233333333334,
+      "p50_s": 0.067,
+      "p95_s": 0.0696,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.009316318799999999
+    },
+    "d2_k5": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 72.84166666666667,
+      "latency_mode": "single_request",
+      "mean_s": 0.06885183333333332,
+      "p50_s": 0.066,
+      "p95_s": 0.0675,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.009171064199999999
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 269.39,
+      "latency_mode": "single_request",
+      "mean_s": 0.074693,
+      "p50_s": 0.0673,
+      "p95_s": 0.07080499999999999,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.0099491076
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 109.59839357429719,
+      "latency_mode": "single_request",
+      "mean_s": 0.06981104417670683,
+      "p50_s": 0.0663,
+      "p95_s": 0.0678,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.00929883108433735
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 340.42,
+      "latency_mode": "single_request",
+      "mean_s": 0.0742114,
+      "p50_s": 0.0675,
+      "p95_s": 0.07321,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.009884958479999999
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 89.39156626506023,
+      "latency_mode": "single_request",
+      "mean_s": 0.06987329317269077,
+      "p50_s": 0.0665,
+      "p95_s": 0.0683,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.00930712265060241
+    }
+  },
+  "jev-1.13.0": {
+    "d1_neutral": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 2000,
+      "input_tokens_per_decision": 189.268,
+      "mean_s": 0.14526675,
+      "p50_s": 0.13815,
+      "p95_s": 0.1825299999999997,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.007949256
+    },
+    "d2_k150": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 800,
+      "input_tokens_per_decision": 2608.0875,
+      "mean_s": 0.15740774999999999,
+      "p50_s": 0.1483,
+      "p95_s": 0.21192499999999997,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.10953967499999999
+    },
+    "d2_k20": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 600,
+      "input_tokens_per_decision": 589.5183333333333,
+      "mean_s": 0.14636533333333332,
+      "p50_s": 0.1373,
+      "p95_s": 0.211305,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.02475977
+    },
+    "d2_k5": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 600,
+      "input_tokens_per_decision": 366.61333333333334,
+      "mean_s": 0.16824016666666666,
+      "p50_s": 0.13865,
+      "p95_s": 0.20848999999999993,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.01539776
+    },
+    "d3_conv_go_awry": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 500,
+      "input_tokens_per_decision": 548.47,
+      "mean_s": 0.14365219999999998,
+      "p50_s": 0.1336,
+      "p95_s": 0.197805,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.023035740000000002
+    },
+    "d3_emotion": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 498,
+      "input_tokens_per_decision": 410.82730923694777,
+      "mean_s": 0.1462367469879518,
+      "p50_s": 0.13605,
+      "p95_s": 0.20975,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.017254746987951812
+    },
+    "d3_wiki_corpus": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 500,
+      "input_tokens_per_decision": 621.684,
+      "mean_s": 0.15034340000000002,
+      "p50_s": 0.13924999999999998,
+      "p95_s": 0.21284999999999996,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.026110728000000003
+    },
+    "d3_wiki_politeness": {
+      "basis": "recorded input tokens x 0.042 USD per million",
+      "decisions": 498,
+      "input_tokens_per_decision": 370.8815261044177,
+      "mean_s": 0.15347550200803214,
+      "p50_s": 0.14100000000000001,
+      "p95_s": 0.229405,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.015577024096385542
+    }
+  },
+  "jev_total": {
+    "input_tokens": 27670449,
+    "usd": 1.162158858
+  },
+  "kev-0.8b": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 2000,
+      "input_tokens_per_decision": 101.719,
+      "latency_mode": "single_request",
+      "mean_s": 0.09312150000000001,
+      "p50_s": 0.08445,
+      "p95_s": 0.12476999999999994,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.00248075676
+    },
+    "d2_k150": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 800,
+      "input_tokens_per_decision": 1266.01125,
+      "latency_mode": "single_request",
+      "mean_s": 0.074782375,
+      "p50_s": 0.0728,
+      "p95_s": 0.0744,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.00996101235
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 173.89833333333334,
+      "latency_mode": "single_request",
+      "mean_s": 0.06778483333333334,
+      "p50_s": 0.0651,
+      "p95_s": 0.0671,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.0090289398
+    },
+    "d2_k5": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 57.84166666666667,
+      "latency_mode": "single_request",
+      "mean_s": 0.066634,
+      "p50_s": 0.064,
+      "p95_s": 0.06611,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.008875648800000002
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 257.39,
+      "latency_mode": "single_request",
+      "mean_s": 0.08893999999999999,
+      "p50_s": 0.0657,
+      "p95_s": 0.06860499999999999,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.011846807999999999
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 93.59839357429719,
+      "latency_mode": "single_request",
+      "mean_s": 0.06817730923694777,
+      "p50_s": 0.0651,
+      "p95_s": 0.066915,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.009081217590361446
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 328.42,
+      "latency_mode": "single_request",
+      "mean_s": 0.07023399999999999,
+      "p50_s": 0.0663,
+      "p95_s": 0.07,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.009355168799999999
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 76.39156626506023,
+      "latency_mode": "single_request",
+      "mean_s": 0.06783433734939757,
+      "p50_s": 0.0648,
+      "p95_s": 0.0663,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.009035533734939757
+    }
+  },
+  "kev-9b": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 2000,
+      "input_tokens_per_decision": 101.719,
+      "latency_mode": "single_request",
+      "mean_s": 0.55150375,
+      "p50_s": 0.59015,
+      "p95_s": 0.7984649999999996,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.014692059899999999
+    },
+    "d2_k150": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 800,
+      "input_tokens_per_decision": 1266.01125,
+      "latency_mode": "single_request",
+      "mean_s": 0.430325375,
+      "p50_s": 0.4281,
+      "p95_s": 0.4351,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.057319339950000006
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 173.89833333333334,
+      "latency_mode": "single_request",
+      "mean_s": 0.10442066666666666,
+      "p50_s": 0.1019,
+      "p95_s": 0.1038,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.013908832799999998
+    },
+    "d2_k5": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 57.84166666666667,
+      "latency_mode": "single_request",
+      "mean_s": 0.09089233333333334,
+      "p50_s": 0.0882,
+      "p95_s": 0.09060499999999999,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.0121068588
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 257.39,
+      "latency_mode": "single_request",
+      "mean_s": 0.175406,
+      "p50_s": 0.1016,
+      "p95_s": 0.2592749999999998,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.023364079200000002
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 93.59839357429719,
+      "latency_mode": "single_request",
+      "mean_s": 0.09285020080321287,
+      "p50_s": 0.0898,
+      "p95_s": 0.0911,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.012367646746987954
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 328.42,
+      "latency_mode": "single_request",
+      "mean_s": 0.15706979999999998,
+      "p50_s": 0.1114,
+      "p95_s": 0.2853499999999999,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.020921697359999998
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 76.39156626506023,
+      "latency_mode": "single_request",
+      "mean_s": 0.09195863453815262,
+      "p50_s": 0.0887,
+      "p95_s": 0.0911,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.012248890120481928
+    }
+  },
+  "laya-en": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 2000,
+      "input_tokens_per_decision": 290.599,
+      "latency_mode": "single_request",
+      "mean_s": 0.05872475,
+      "p50_s": 0.0596,
+      "p95_s": 0.08004999999999995,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.00156442734
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 147.625,
+      "latency_mode": "single_request",
+      "mean_s": 0.03467366666666667,
+      "p50_s": 0.0338,
+      "p95_s": 0.0349,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.004618532400000001
+    },
+    "d2_k5": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 57.041666666666664,
+      "latency_mode": "single_request",
+      "mean_s": 0.032280833333333335,
+      "p50_s": 0.0313,
+      "p95_s": 0.0332,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.004299807000000001
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 216.486,
+      "latency_mode": "single_request",
+      "mean_s": 0.0350672,
+      "p50_s": 0.0339,
+      "p95_s": 0.036,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.00467095104
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 92.94377510040161,
+      "latency_mode": "single_request",
+      "mean_s": 0.034525100401606425,
+      "p50_s": 0.0334,
+      "p95_s": 0.034714999999999996,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.004598743373493975
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 270.412,
+      "latency_mode": "single_request",
+      "mean_s": 0.0352444,
+      "p50_s": 0.0341,
+      "p95_s": 0.036105,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.00469455408
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 77.70883534136546,
+      "latency_mode": "single_request",
+      "mean_s": 0.03375461847389559,
+      "p50_s": 0.0328,
+      "p95_s": 0.0345,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.0044961151807228926
+    }
+  },
+  "laya-ml": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 2000,
+      "input_tokens_per_decision": 305.7375,
+      "latency_mode": "single_request",
+      "mean_s": 0.03354925,
+      "p50_s": 0.0319,
+      "p95_s": 0.03811499999999999,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.00089375202
+    },
+    "d2_k150": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 800,
+      "input_tokens_per_decision": 621.01375,
+      "latency_mode": "single_request",
+      "mean_s": 0.035560625000000005,
+      "p50_s": 0.035,
+      "p95_s": 0.0363,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.004736675250000001
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 157.79666666666665,
+      "latency_mode": "single_request",
+      "mean_s": 0.028592833333333338,
+      "p50_s": 0.0279,
+      "p95_s": 0.0287,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.003808565400000001
+    },
+    "d2_k5": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "input_tokens_per_decision": 56.845,
+      "latency_mode": "single_request",
+      "mean_s": 0.026569333333333334,
+      "p50_s": 0.0257,
+      "p95_s": 0.0273,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.0035390352
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 233.964,
+      "latency_mode": "single_request",
+      "mean_s": 0.02855,
+      "p50_s": 0.0276,
+      "p95_s": 0.0295,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.00380286
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 89.27710843373494,
+      "latency_mode": "single_request",
+      "mean_s": 0.028346184738955824,
+      "p50_s": 0.0274,
+      "p95_s": 0.0287,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.003775711807228916
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "input_tokens_per_decision": 310.336,
+      "latency_mode": "single_request",
+      "mean_s": 0.028620400000000004,
+      "p50_s": 0.0277,
+      "p95_s": 0.0296,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.0038122372800000006
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "input_tokens_per_decision": 75.66867469879519,
+      "latency_mode": "single_request",
+      "mean_s": 0.02723253012048193,
+      "p50_s": 0.0265,
+      "p95_s": 0.0277,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.003627373012048193
+    }
+  },
+  "nimble-9b": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 2000,
+      "latency_mode": "single_request",
+      "mean_s": 1.9972895,
+      "p50_s": 2.0561499999999997,
+      "p95_s": 2.4663,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.05320779228
+    },
+    "d2_k150": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 800,
+      "latency_mode": "single_request",
+      "mean_s": 1.680748,
+      "p50_s": 1.6786,
+      "p95_s": 1.683905,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.22387563359999998
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "latency_mode": "single_request",
+      "mean_s": 0.28933416666666667,
+      "p50_s": 0.2867,
+      "p95_s": 0.293105,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.03853931099999999
+    },
+    "d2_k5": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "latency_mode": "single_request",
+      "mean_s": 0.1499415,
+      "p50_s": 0.1471,
+      "p95_s": 0.15070999999999998,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.019972207799999996
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "latency_mode": "single_request",
+      "mean_s": 0.22254300000000002,
+      "p50_s": 0.18,
+      "p95_s": 0.34564,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.0296427276
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "latency_mode": "single_request",
+      "mean_s": 0.1757206827309237,
+      "p50_s": 0.17275000000000001,
+      "p95_s": 0.18053,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.023405994939759037
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "latency_mode": "single_request",
+      "mean_s": 0.25349900000000003,
+      "p50_s": 0.19445,
+      "p95_s": 0.4687599999999997,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.0337660668
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "latency_mode": "single_request",
+      "mean_s": 0.15386767068273094,
+      "p50_s": 0.1475,
+      "p95_s": 0.170405,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.02049517373493976
+    }
+  },
+  "this-that-1.0": {
+    "d1_neutral": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 2000,
+      "latency_mode": "single_request",
+      "mean_s": 0.07539075,
+      "p50_s": 0.0708,
+      "p95_s": 0.07360499999999999,
+      "requests": 400,
+      "usd_per_1000_decisions": 0.0020084095800000003
+    },
+    "d2_k150": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 800,
+      "latency_mode": "single_request",
+      "mean_s": 0.154147125,
+      "p50_s": 0.15215,
+      "p95_s": 0.1559,
+      "requests": 800,
+      "usd_per_1000_decisions": 0.020532397050000005
+    },
+    "d2_k20": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "latency_mode": "single_request",
+      "mean_s": 0.072642,
+      "p50_s": 0.0698,
+      "p95_s": 0.0714,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.0096759144
+    },
+    "d2_k5": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 600,
+      "latency_mode": "single_request",
+      "mean_s": 0.070623,
+      "p50_s": 0.0677,
+      "p95_s": 0.0699,
+      "requests": 600,
+      "usd_per_1000_decisions": 0.009406983600000002
+    },
+    "d3_conv_go_awry": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "latency_mode": "single_request",
+      "mean_s": 0.0741076,
+      "p50_s": 0.06955,
+      "p95_s": 0.0735,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.009871132319999998
+    },
+    "d3_emotion": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "latency_mode": "single_request",
+      "mean_s": 0.07037008032128514,
+      "p50_s": 0.067,
+      "p95_s": 0.0685,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.009373294698795179
+    },
+    "d3_wiki_corpus": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 500,
+      "latency_mode": "single_request",
+      "mean_s": 0.0742276,
+      "p50_s": 0.0685,
+      "p95_s": 0.07390499999999998,
+      "requests": 500,
+      "usd_per_1000_decisions": 0.009887116320000002
+    },
+    "d3_wiki_politeness": {
+      "basis": "GPU seconds x 0.480 USD per hour (Colab compute units), one request at a time",
+      "decisions": 498,
+      "latency_mode": "single_request",
+      "mean_s": 0.0709086345381526,
+      "p50_s": 0.0673,
+      "p95_s": 0.0698,
+      "requests": 498,
+      "usd_per_1000_decisions": 0.009445030120481928
+    }
+  }
+}

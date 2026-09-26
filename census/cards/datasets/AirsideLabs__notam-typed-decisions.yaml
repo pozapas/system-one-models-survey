@@ -1,0 +1,68 @@
+name: NOTAM typed decisions
+name_src:
+  quote: '# NOTAM typed decisions'
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+hf_id: AirsideLabs/notam-typed-decisions
+hf_id_src:
+  quote: '# NOTAM typed decisions'
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+revision_sha: see meta_raw for pinned sha, fetched 2026-09-24
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+vendor_or_author: AirsideLabs
+vendor_or_author_src:
+  quote: 'pretty_name: NOTAM typed decisions'
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+release_date: see meta_raw createdAt
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+availability_and_license: cc-by-4.0
+availability_and_license_src:
+  quote: 'license: cc-by-4.0'
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+purpose: Frozen, hashed evaluation suites for typed decisions about NOTAMs (aviation notices), so any
+  model can be scored on the same rows with the same per-class breakdown
+purpose_src:
+  quote: Frozen, hashed evaluation suites for **typed decisions about NOTAMs**
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+size_and_splits: Multiple suite files of 4,241 rows each (e.g. deel_notam_subject_test_short.jsonl, deel_notam_subject_test.jsonl,
+  deel_notam_subject_test_desc.jsonl), a 13-class DEEL-AI subject task among them
+size_and_splits_src:
+  quote: '| `suites/deel_notam_subject_test_short.jsonl` | 4,241 |'
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+label_construction: Built from an existing DEEL-AI labelled subject task; not teacher-labelled by this
+  dataset's authors
+label_construction_src:
+  quote: DEEL-AI 13-class subject task, test split, one choice per row
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+teacher_model: not established in this compact pass
+teacher_model_src:
+  quote: none found
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+teacher_self_agreement: not established in this compact pass
+teacher_self_agreement_src:
+  quote: none found
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+other_reference_points: not established in this compact pass; compact card, minor dataset
+other_reference_points_src:
+  quote: none found
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+evaluation_protocol_published: not established in this compact pass; compact card, minor dataset
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+disclosed_caveats: not established in this compact pass; compact card, minor dataset
+disclosed_caveats_src:
+  quote: none found
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+source_urls:
+- https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md
+source_urls_src:
+  quote: '# NOTAM typed decisions'
+  url: https://huggingface.co/datasets/AirsideLabs/notam-typed-decisions/raw/70392f206e8d52ad4a2ce93e7719b0c10f46c3a1/README.md

@@ -1,0 +1,29 @@
+name: jevals
+repo: https://github.com/openlayer-ai/jevals
+revision_sha: a15f28faf64d7a2476f8e63bcf385ce2651a8f8b
+author: openlayer-ai
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: 'Agent evals and guardrails as Jev decisions: one request per trace, a fraction of a cent,
+  fast enough for the agent loop. Runs locally with Kev or Laya.'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported:
+- Qwen3
+- ModernBERT
+key_claims:
+- excerpt: '``` ```python from jevals import evaluate from jevals.agent import ToolChoice, UsedToolResult,
+    Grounded, StayedInScope from jevals.quality import AnswerRelevancy, Completeness from jevals.security
+    import IndirectInjection, PHI r = evaluate( {"messages": messages, "tools":'
+  verbatim: true
+- excerpt: 'r.usage # 1 request · 1,388 tokens · $0.00006 · 0.33s ``` That''s one HTTP request for all
+    eight, and those are the numbers Jev returned for the trace'
+  verbatim: true
+- excerpt: At that price you sample 1%, run it nightly, and the results never get anywhere near the request
+    path.
+  verbatim: true

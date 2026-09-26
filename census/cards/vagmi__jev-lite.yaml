@@ -1,0 +1,115 @@
+name: jev-lite (vagmi)
+name_src:
+  quote: '# jev-lite'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+hf_id: vagmi/jev-lite
+hf_id_src:
+  quote: vagmi/jev-lite
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+revision_sha: 90b23bc26c53f5a897684456893b2b7edeb90297
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+vendor_or_author: vagmi (independent)
+vendor_or_author_src:
+  quote: vagmi/jev-lite
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+release_date: '2026-09-19'
+release_date_src:
+  quote: (HF API createdAt for vagmi/jev-lite)
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+availability_and_license: Open weights (QLoRA adapter), Gemma license (use restrictions apply)
+availability_and_license_src:
+  quote: 'license: gemma'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+backbone: google/gemma-4-E4B-it, QLoRA 4-bit NF4 base with bf16 compute
+backbone_src:
+  quote: QLoRA on `google/gemma-4-E4B-it`, 4-bit NF4 base with bf16 compute.
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+parameter_count: 34.9M trainable (0.44%) of 7.98B total
+parameter_count_src:
+  quote: trainable params | 34.9M of 7.98B (0.44%) |
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+decision_head: No separate trained head; answer read from logits at the option-letter tokens (label-token
+  readout), softmaxed over the declared options
+decision_head_src:
+  quote: the answer is read from the logits at the option letters
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+training_objective: Soft-label cross-entropy over option letters, distilled from a teacher; options shuffled
+  every epoch except for ordinal score levels
+training_objective_src:
+  quote: objective | soft-label cross-entropy over option letters |
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+training_data: 23,632 rows across 301 tasks (13,492 choice, 6,368 noul, 3,772 score); soft labels from
+  Qwen3.6-35B-A3B read at the answer token with option order reversed and averaged to cancel position
+  bias
+training_data_src:
+  quote: '23,632 rows across 301 tasks: 13,492 choice, 6,368 noul, 3,772 score.'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+primitives: choice, score, noul
+primitives_src:
+  quote: 'It implements the three [TypeSafe](https://docs.typesafe.ai) primitives:'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+state_modality: text state plus a typed question
+state_modality_src:
+  quote: 'reads a
+
+    state, reads a typed question about it'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+context_length: not disclosed as a fixed token limit in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+latency_with_hardware: not disclosed as a per-request ms figure; trained in ~1h40m on one RTX 4090 (24
+  GB)
+latency_with_hardware_src:
+  quote: hardware | one RTX 4090 (24 GB), ~1h40m |
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+confidence_definition: 'choice: the probability of the selected option (p_max)'
+confidence_definition_src:
+  quote: '**choice** — the probability of the selected option (`p_max`)'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+serving_temperature: Not a single shipped default; card reports a single temperature of 1.4 fitted in
+  one robustness check, trading accuracy for calibration (ECE roughly doubling 0.036 to 0.069 in a related
+  setting)
+serving_temperature_src:
+  quote: A single temperature of 1.4, fitted on
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+calibration_as_shipped: Overall ECE 0.019 on 1,898 held-out rows (accuracy 0.816); ECE fell from 0.086
+  to 0.019 over training while accuracy stayed flat from step 250 onward
+calibration_as_shipped_src:
+  quote: 'ECE fell 0.086 → 0.019: the model did not learn to be right more often, it learned to be'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+disclosed_failure_modes: Score answers off by 0.216 levels on average (mean absolute error of the expected
+  level); a single fitted temperature trades AUROC for ECE in at least one measured setting
+disclosed_failure_modes_src:
+  quote: Score answers are off by **0.216 levels** on average
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+evaluation_protocol_published: Yes; held out 31 Super-NaturalInstructions tasks never seen, 78 synthetic
+  states never seen, and SST-2 held out entirely, 1,898 rows total
+evaluation_protocol_published_src:
+  quote: 'Evaluated on 1,898 held-out rows — 31 Super-NaturalInstructions **tasks** the model never
+
+    saw'
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+source_urls:
+- https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md
+source_urls_src:
+  quote: vagmi/jev-lite
+  url: https://huggingface.co/vagmi/jev-lite/raw/90b23bc26c53f5a897684456893b2b7edeb90297/README.md

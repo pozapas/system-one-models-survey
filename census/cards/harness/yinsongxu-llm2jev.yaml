@@ -1,0 +1,27 @@
+name: LLM2Jev
+repo: https://github.com/Yinsongxu/LLM2Jev
+revision_sha: 9223f4eb05a0cef05980f70d182d0e0d89e7840f
+author: Yinsongxu
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Turn local language models into Jev-style structured decision models. Get results from text
+  and images with prefill alone—no token-by-token decoding required.
+primitives_supported:
+- choice
+- score
+- noul
+- binary
+models_supported:
+- Qwen3
+key_claims:
+- excerpt: Get results from text and images with prefill alone—no token-by-token decoding required.**   >
+    LLM2Jev is an independent open-source project.
+  verbatim: true
+- excerpt: '- **September 23** - **[MLX backend](docs/usage.md#offline-python-api):** added text and image
+    scoring, candidate batching, bounded prefix reuse, and a compatible System One HTTP service.'
+  verbatim: true
+- excerpt: '- **September 22** - **[Multimodal inputs](docs/multimodal.md):** added text-and-image requests
+    for SGLang, Transformers, and the System One HTTP API.'
+  verbatim: true

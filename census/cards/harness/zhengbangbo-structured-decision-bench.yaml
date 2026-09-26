@@ -1,0 +1,26 @@
+name: structured-decision-bench
+repo: https://github.com/zhengbangbo/structured-decision-bench
+revision_sha: 20600354062bf667d223bb8c50bfcb9f22eb648d
+author: zhengbangbo
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: unknown
+category: evaluation
+what_it_does: Jev vs Laya CoreML vs Qwen3 8B
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen3
+- Qwen
+key_claims:
+- excerpt: '[中文说明](README.zh-CN.md)      All 24 Laya inputs fit the ANE export, ranging from 42 to 70
+    prepared tokens per question against its 96-token limit.'
+  verbatim: true
+- excerpt: 'Qwen produced valid structured output on every request; one low-probability candidate fell
+    outside Ollama''s top-20 logprobs and is disclosed as `probability_truncations: 1`.'
+  verbatim: true
+- excerpt: 'The 24-case dataset was repeated ten times for each model: 240 cases per model and 720 total
+    case executions.'
+  verbatim: true

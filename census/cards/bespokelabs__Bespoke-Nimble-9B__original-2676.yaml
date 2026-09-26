@@ -1,0 +1,137 @@
+name: Bespoke-Nimble-9B (revision original-2676, superseded 2026-09-24)
+name_src:
+  quote: revision="original-2676"
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/bd792f44ec8e265be861bfcdf4e05967ffe0e858/README.md
+hf_id: bespokelabs/Bespoke-Nimble-9B
+hf_id_src:
+  quote: bespokelabs/Bespoke-Nimble-9B
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+revision_sha: e93fabce8fcee46e7e8b45e2d955b8a4f0035917 (returned by GET /api/models/bespokelabs/Bespoke-Nimble-9B/revision/original-2676);
+  note the repo's own /refs endpoint lists a different targetCommit for the original-2676 tag, fe33f82b94b17ed4e325932f37d4e63b8a7abe29
+  -- both are recorded here as an unresolved discrepancy in the served metadata
+revision_sha_src:
+  quote: (HF API /revision/original-2676 response, fetched 2026-09-24)
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+vendor_or_author: Bespoke Labs
+vendor_or_author_src:
+  quote: bespokelabs/Bespoke-Nimble-9B
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+release_date: 2026-09-18 (repo created; this revision's own lastModified is 2026-09-23)
+release_date_src:
+  quote: (HF API createdAt/lastModified for this revision)
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+availability_and_license: Open weights (LoRA adapter), Apache-2.0
+availability_and_license_src:
+  quote: '**License:** [Apache 2.0](./LICENSE).'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+backbone: Qwen/Qwen3.5-9B (base), adapter relation, pinned revision c202236235762e1c871ad0ccb60c8ee5ba337b9a
+backbone_src:
+  quote: '"base_model_name_or_path": "Qwen/Qwen3.5-9B"'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/adapter_config.json
+parameter_count: LoRA r=16, alpha=32, 22,831,072 nonzero LoRA-B elements reported in provenance.json;
+  adapter-only, no merged safetensors total
+parameter_count_src:
+  quote: '"nonzero_lora_B_elements": 22831072'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/provenance.json
+decision_head: Scores allowed answer tokens directly from the LoRA-adapted base; no reasoning or free-form
+  generation
+decision_head_src:
+  quote: It scores the allowed answer tokens directly; the evaluated workflow does not generate reasoning
+    or free-form answers.
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+training_objective: Cross entropy over allowed answer-token logits
+training_objective_src:
+  quote: '"loss": "Cross entropy over allowed answer-token logits"'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/training_summary.json
+training_data: 2,676 full training rows (2,422 inner-training + 254 inner-validation); prior GPT-5.6 curated
+  release plus 1,000 GPT-5.6 Luna and 1,000 Claude Sonnet 5 examples, synthetic and model-checked, not
+  human-reviewed
+training_data_src:
+  quote: '"data_provenance": "Prior GPT-5.6 curated release plus 1000 GPT-5.6 Luna and 1000 Claude Sonnet
+    5 examples; labels are synthetic and model-checked, not human-reviewed."'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/training_summary.json
+primitives: boolean/noul, choice (enum), score (rubric levels)
+primitives_src:
+  quote: "choice\": {\n        \"count\": 146"
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/evaluation_summary.json
+state_modality: text/JSON context passed to score()
+state_modality_src:
+  quote: context="The store accepts returns within 30 days. This item was bought 12 days ago."
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+context_length: 2,048 tokens; prompts exceeding this are rejected rather than truncated (this revision,
+  before the 2026-09-24 update raised the limit to 8,192)
+context_length_src:
+  quote: Prompts exceeding 2,048 tokens are rejected rather than truncated.
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+cardinality_limit: up to 26 choices per field in this revision (raised to 255 in the 2026-09-24 update)
+cardinality_limit_src:
+  quote: Each field supports at most 26 choices.
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+latency_with_hardware: not disclosed as a ms figure in this revision's own card; training took place on
+  an NVIDIA H100 SXM 80GB (final fit) after tuning on an L40S
+latency_with_hardware_src:
+  quote: '"final_fit_gpu": "NVIDIA H100 SXM 80GB"'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/training_summary.json
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+serving_temperature: T = 2.179, per the current (main) card's own statement not to reuse it; this revision's
+  own README and JSON siblings do not themselves restate the number
+serving_temperature_src:
+  quote: do not reuse the older model’s 2.179 calibration
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/bd792f44ec8e265be861bfcdf4e05967ffe0e858/README.md
+calibration_as_shipped: 'evaluation_summary.json reports accuracy/NLL/Brier (not ECE) for three checkpoints
+  on a 324-item held-out set: ''Fresh 9B'' (untrained ablation) 66.05% acc / Brier 0.551; ''Previous 9B''
+  83.95% acc / Brier 0.226; ''Expanded-data 9B'' 90.12% acc / Brier 0.152; Jev 1.13.0 is reported only
+  on a 100-item subset at 92.00% acc / Brier 0.128'
+calibration_as_shipped_src:
+  quote: '"accuracy": 0.9012345679012346,'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/evaluation_summary.json
+disclosed_failure_modes: Superseded by the 2026-09-24 checkpoint; requires the exact pinned upstream Qwen3.5-9B
+  revision; full base weights not duplicated in the repo
+disclosed_failure_modes_src:
+  quote: The full base weights are not duplicated here.
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+evaluation_protocol_published: Yes, via evaluation_summary.json, training_summary.json and provenance.json
+  siblings with per-checkpoint accuracy/NLL/Brier on 324 and 100-item held-out splits and a GPU reload
+  verification (adapter/base max logit difference 0.0)
+evaluation_protocol_published_src:
+  quote: '"adapter_max_logit_difference": 0.0,'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/provenance.json
+source_urls:
+- https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+- https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/evaluation_summary.json
+- https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/training_summary.json
+- https://github.com/bespokelabsai/nimble
+source_urls_src:
+  quote: 'More info: https://github.com/bespokelabsai/nimble'
+  url: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B/raw/e93fabce8fcee46e7e8b45e2d955b8a4f0035917/README.md
+
+# Curator resolution, 2026-09-24. This supersedes the calibration_as_shipped reading above.
+curator_resolution:
+  note: >-
+    The GitHub README (bespokelabsai/nimble, main, accessed 2026-09-24) identifies the released
+    original checkpoint as revision 93ec5d6ff1a9cd31d6cc0e0c58d312465d36de7c (tag original-2676). It
+    reports 292/324 = 90.12% reference-label agreement against Jev 1.13.0 at 302/324 = 93.21%. It also
+    states that the reference labels are synthetic and that the 324 items form 162 pairs from six source
+    families. The HF evaluation_summary.json names this same checkpoint "Expanded-data 9B" (292/324).
+    "Previous 9B" (83.95%) is an earlier internal checkpoint.
+  calibration_as_shipped: >-
+    Served at T=2.179 (fitted 2026-09-22). ECE, with ten groups by top probability: on the second set of
+    300 examples it goes 0.128 -> 0.066; on the 324-item held-out set it goes 0.052 -> 0.054. On the 64
+    rating questions it rises from 0.105 to 0.177.
+  calibration_as_shipped_src: "Second set (300) | Expected calibration error | 0.128 | 0.066 ... Held-out set (324) | Expected calibration error | 0.052 | 0.054 -- https://github.com/bespokelabsai/nimble/blob/main/README.md"
+  eval_src: "| **Bespoke-Nimble-9B** | **292/324** | **90.12%** | ... | Jev 1.13.0 | 302/324 | 93.21% | ... The reference labels are synthetic. -- https://github.com/bespokelabsai/nimble/blob/main/README.md"

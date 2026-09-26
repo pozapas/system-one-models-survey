@@ -1,0 +1,26 @@
+name: sysone-bench
+repo: https://github.com/instax-dutta/sysone-bench
+revision_sha: 1ac3650a65e3783ac9615f26b02bc7c1d5ad3b23
+author: instax-dutta
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: First independent head-to-head benchmark of System One decision models (Laya vs Jev) on
+  byte-identical inputs
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen
+- Qwen2
+key_claims:
+- excerpt: The first independent head-to-head benchmark of System One decision models on byte-identical
+    inputs.** Laya (open weights, Apache-2.0) and Jev (TypeSafe, closed API) answer the exact same states
+    and typed
+  verbatim: true
+- excerpt: Laya is the `convaiinnovations/laya` English checkpoint on a local M2 CPU.
+  verbatim: true
+- excerpt: Jev is pinned `jev-1.13.0` through the TypeSafe API.
+  verbatim: true

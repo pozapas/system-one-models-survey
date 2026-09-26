@@ -1,0 +1,27 @@
+name: JevEmbed
+repo: https://github.com/HITsz-TMG/JevEmbed
+revision_sha: 6b4533496abaad53cbdc74b11dde116783429b92
+author: HITsz-TMG
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: integration
+what_it_does: Meet JevEmbed — turn embeddings into decisions. Choose, score, and judge with your choice
+  of embedding model.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen
+- Qwen3
+- Qwen3-8B
+key_claims:
+- excerpt: '- **September 24, 2026:** JevEmbed now supports [CLM-v0.1-8B](https://huggingface.co/Contrastive-LM/CLM-v0.1-8B)
+    for Choice, Score, and Noul decisions.'
+  verbatim: true
+- excerpt: '- **September 24, 2026:** [JevEmbed-Data](https://huggingface.co/datasets/HIT-TMG/JevEmbed-Data)
+    is available for fine-tuning, with 1.67 million labeled Choice, Score, and Noul questions.'
+  verbatim: true
+- excerpt: Use Python 3.10–3.12 for the tested model stack.
+  verbatim: true

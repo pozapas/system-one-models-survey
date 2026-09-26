@@ -1,0 +1,23 @@
+name: jevcal
+repo: https://github.com/abhixhek/jevcal
+revision_sha: ae8f3144d69c9cb0e5e0a2c17f70b9d14714cb9f
+author: abhixhek
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'Stop guessing confidence thresholds: calibrate, threshold, and drift-check typed decision
+  models (TypeSafe Jev) against an LLM teacher.'
+primitives_supported:
+- choice
+- noul
+models_supported: []
+key_claims:
+- excerpt: '``` $ jevcal demo # bundled example, built-in simulator, no API key question threshold handled
+    accepted acc all acc ECE status is_urgent 0.994 21.2% 100.0% 94.5% 3.5% ok department'
+  verbatim: true
+- excerpt: 'Read the output as the kind of answer you get: `department` can run 81% on the fast model
+    at 96% accuracy, while the 97% target on `is_urgent` is so'
+  verbatim: true
+- excerpt: Python 3.10+.
+  verbatim: true

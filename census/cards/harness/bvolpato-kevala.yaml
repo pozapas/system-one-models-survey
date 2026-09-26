@@ -1,0 +1,31 @@
+name: kevala
+repo: https://github.com/bvolpato/kevala
+revision_sha: 6e1754e1a3e73999e2f265fae939d2d06994fa6c
+author: bvolpato
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 'Decision models (Laya, Kev) in any web page: a zero-dependency Rust engine compiled to
+  WebAssembly, with WebGPU kernels. One import, no server.'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported:
+- Qwen3.5
+- Gemma 4
+- Gemma
+- ModernBERT-large
+key_claims:
+- excerpt: kevala runs [Laya](https://huggingface.co/convaiinnovations/laya), [Bruv](https://github.com/bvolpato/bruv),
+    [Kev](https://github.com/jaredpalmer/kev), frozen Qwen3.5 models, and [Gemma 4](docs/gemma4.md) with
+    [SemIf option scoring](docs/models.md#how-semif-scoring-works) inside the browser.
+  verbatim: true
+- excerpt: The first load downloads a pinned int8 pack of the model from [Hugging Face](https://huggingface.co/bvolpato/kevala-packs)
+    (or Bruv's [0.8B](https://huggingface.co/bvolpato/bruv1-0.8b) and [4B](https://huggingface.co/bvolpato/bruv1-4b)
+    repositories) and keeps it in the browser, so there is
+  verbatim: true
+- excerpt: Laya and Kev-0.8B also support conversion from the original checkpoint in the browser.
+  verbatim: true

@@ -1,0 +1,31 @@
+name: Laya4j
+repo: https://github.com/githubMJ/Laya4j
+revision_sha: 5870cc933ec92ca1e9d7e5cae08a9c8552550988
+author: githubMJ
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: unknown
+category: local_server
+what_it_does: ' Laya4j is a pure-Java 17+ SDK that ports the Laya System 1 decision framework — originally
+  a Python research project — into a production-grade, deployable  inference library running entirely
+  on Apache 2.0 multilingual checkpoints via ONNX Runtime and HuggingFace Hub.'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+- ordinal
+models_supported:
+- mmBERT-base
+key_claims:
+- excerpt: Java SDK for [Laya](https://github.com/NandhaKishorM/laya) System 1 decision models — fast,
+    non-autoregressive, calibrated decisions in a single forward pass via ONNX Runtime.
+  verbatim: true
+- excerpt: '```java LayaPredictor p = LayaPredictor.single(     Path.of("models/laya-decision-multilingual-mmbert-base-v0.3.5-1c5edc1.onnx"),     Path.of("models/tokenizer"),     "multilingual");  Map<String,
+    Decision> r = p.predict(state, Presets.triage()); r.forEach((k, v) -> System.out.println(k + ": "
+    + v)); ```  ---   ```xml ```  Requires **Java 17+**.'
+  verbatim: true
+- excerpt: '---   ```bash git clone https://github.com/githubMJ/Laya4j.git cd Laya4j  mvn test  mvn -Pdemo
+    test-compile exec:java ```  The demo includes a Python-alignment check (4 fixed cases, expected diff
+    = 0.0000).'
+  verbatim: true

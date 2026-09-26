@@ -1,0 +1,23 @@
+name: tev1
+repo: https://github.com/togethercomputer/tev1
+revision_sha: 1dde7782382c9f49d627153759b8d1deab426ce0
+author: togethercomputer
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: MIT
+category: open_model_training
+what_it_does: 'Together AI''s fine-tune of Qwen3.5-4B into a decision-answering model (tev1-4B-experimental): given
+  context, a question and 2-24 options, it returns one answer letter.'
+primitives_supported:
+- choice
+models_supported:
+- Qwen3.5-4B
+- tev1-4B-experimental
+key_claims:
+- excerpt: 'We fine-tuned Qwen3.5-4B on Together AI to make decisions: give it context, a question, and 2–24 options,
+    and it returns one answer letter.'
+  verbatim: true
+- excerpt: combines 37,840 unique training examples with 4,568 validation examples
+  verbatim: true
+- excerpt: 'Saved results: 880/1,000 main decisions and 300/300 policy-transfer decisions.'
+  verbatim: true

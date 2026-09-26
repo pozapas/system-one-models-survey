@@ -1,0 +1,31 @@
+name: snapjudge
+repo: https://github.com/Micha0827/snapjudge
+revision_sha: 80012ca2abe8d000798e2dc7d717171058f1e6db
+author: Micha0827
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Typed decisions (choice / score / yes-no) from local Qwen models on Apple Silicon. Probabilities
+  come straight from the logits, no text generation. TypeSafe-compatible HTTP API, runs on MLX.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen
+- Qwen3.6-35B
+- Qwen3.5-4B
+- Qwen3.5-9B
+- Qwen3.8-27B
+- Qwen3.6
+- Qwen3.8
+key_claims:
+- excerpt: The HTTP API follows the [TypeSafe System One](https://docs.typesafe.ai/api) format (`POST
+    /v1/systemone`, Choice / Score / Noul), so the same client code can talk to Jev or to your own machine.
+  verbatim: true
+- excerpt: 'Snap Run, benchmark mode with a 0.5 s budget: each obstacle reaches the model only as a sentence.'
+  verbatim: true
+- excerpt: Qwen3.6-35B-A3B on an M2 Max, recorded in real time.*  > **Independent project, not affiliated
+    with TypeSafe.** Jev and TypeSafe are names of their > respective owners.
+  verbatim: true

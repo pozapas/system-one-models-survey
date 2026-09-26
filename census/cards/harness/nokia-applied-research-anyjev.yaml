@@ -1,0 +1,28 @@
+name: AnyJev
+repo: https://github.com/nokia-applied-research/AnyJev
+revision_sha: a59a69eaa91e62dc9b42924f8491f76d1b1972ea
+author: nokia-applied-research
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 'Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training.
+  (continue updating)'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen3-8B
+- Qwen
+- Qwen3
+key_claims:
+- excerpt: English** · [简体中文](README.zh-CN.md) · [🚀 Usage](#-usage) · [📊 Results](#-results) · [🧭 Roadmap](#-roadmap)
+    · [📖 Levels contract](docs/levels.md) > [!TIP] > **🆕 L2 has landed.** A closed-form head per question,
+    solved
+  verbatim: true
+- excerpt: Accuracy moves by 6 points, but the share of traffic you can safely automate goes from **7.7%
+    to 52.0%**, a 6.8× difference on this task (a point estimate at
+  verbatim: true
+- excerpt: With raw logits a "0.9" is not trustworthy enough to act on, so everything goes to a human.
+  verbatim: true

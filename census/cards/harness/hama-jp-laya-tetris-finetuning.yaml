@@ -1,0 +1,24 @@
+name: laya-tetris-finetuning
+repo: https://github.com/hama-jp/laya-tetris-finetuning
+revision_sha: 2f56a70caaec44e1dcdb192620eab0abddfdc02b
+author: hama-jp
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'Fine-tuning 421M Laya for real-time Tetris decisions: code, reproduction guide and experiment
+  results'
+primitives_supported:
+- score
+models_supported:
+- Gemma
+- ModernBERT-large
+key_claims:
+- excerpt: Fine-tuning a 421M decision model to select placements in a real-time falling-block simulator.
+  verbatim: true
+- excerpt: 'Jevのように「状態と選択肢を受け取り、判断を返す」役割を、公開モデル **Laya** で試した実験です。Jevの重みや内部実装を複製したものではありません。教師はJevではなく、下記の盤面評価式です。
+    紹介動画: https://youtu.be/SUyEc48b_HQ ゲーム側が置ける位置を列挙し、置いた後の穴・高さ・消去数などを計算します。モデルはテキストで渡された候補から1つを選びます。画面画像から操作を学習する実験ではありません。
+    LayaはModernBERT-largeのエンコーダーと2層のTransformer判断ヘッドを持つ約421Mパラメーターのモデルです。文章を逐次生成せず、候補の確率分布を1回の前向き計算で返します。
+    教師の評価式は次の通りです。 ```text score = 3 × 消去ライン数 − 穴の数 − 0.1 × 各列の高さの合計 − 0.3 × 隣接列の高さの差の絶対値の合計 − 50 × ゲームオーバー
+    教師分布'
+  verbatim: true

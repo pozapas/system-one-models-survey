@@ -1,0 +1,23 @@
+name: laya.axera
+repo: https://github.com/AXERA-TECH/laya.axera
+revision_sha: 01e86fa6fc5bf99e7a426c131125e8c758cd2ac7
+author: AXERA-TECH
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 'Laya typed-decision models for AX8850/NPU3: ONNX export, task-aware calibration, Pulsar2
+  build, and board validation.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- ModernBERT-large
+- mmBERT-base
+key_claims:
+- excerpt: 本仓库提供 [Laya](https://github.com/NandhaKishorM/laya) 三套 typed-decision 模型在 AX650 / NPU3 上的完整转换流程，包括上游源码与权重准备、静态
+    ONNX 导出、任务相关量化校准、Pulsar2 编译和板端结果验证。 仓库只维护复现流程所需的脚本和说明。上游权重、ONNX、校准张量、Pulsar2 配置、AXModel、manifest 和推理结果均由脚本生成，不纳入
+    Git。可直接运行的 AXModel 与示例程序发布在 [AXERA-TECH/Laya](https://huggingface.co/AXERA-TECH/Laya)。 Laya 是非生成式的快速决策模型。输入由一份文本或
+    JSON `state` 和一个 typed question 组成，一次模型前向输出一个结构化判断： 它适合客服分流、退款与流失判断、安全事件处置、RAG 片段过滤和
+  verbatim: true

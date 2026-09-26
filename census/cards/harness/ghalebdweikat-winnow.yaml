@@ -1,0 +1,22 @@
+name: winnow
+repo: https://github.com/GhalebDweikat/winnow
+revision_sha: 51d80b945c74c8384bc47fa817179f668289afd8
+author: GhalebDweikat
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: 'A calibrated context sieve for Claude Code: every tool result is judged by a System One
+  model before it enters context.'
+primitives_supported:
+- noul (yes/no)
+models_supported: []
+key_claims:
+- excerpt: The *adapter* is TypeSafe's `system-one-adapter` package, which answers the same questions
+    by prompting Claude Haiku 4.5; it is not calibrated, but it lets the whole pipeline run today.
+  verbatim: true
+- excerpt: '``` Read big.py ──► Claude Code ──► tool.call hook ──► winnow │ split into ~25-line blocks
+    ◄─────────────────────────┘ one call to the judge: "is block N needed for the current'
+  verbatim: true
+- excerpt: '[winnow] Full text cached as key a1b2c3d4e5f6.'
+  verbatim: true

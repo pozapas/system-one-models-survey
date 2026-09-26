@@ -1,0 +1,163 @@
+analysis,row_id,role,include,reason,record,group,subset,a_field,a_pattern,a_stage,b_row,b_field,b_pattern,expr,ref_override,fit
+r1Gap,L456,estimate,yes,Nimble card 324-item contrastive holdout; Nimble vs Jev on the same items; revision original-2676; developer self-report (D4 high),nimble324,accuracy,primary,value,,,,comparator_value,,b-a,synthetic contrastive labels (study note; ledger row codes human_adjudicated),
+r1Gap,L460,estimate,yes,Nimble card 13 public subsets pooled macro accuracy; same records for both models; raw Nimble probabilities,nimble13,accuracy,primary,value,,,,comparator_value,,b-a,,
+r1Gap,L464,context,yes,civil_comments is one of the 13 subsets already pooled in L460; shown for the per-subset spread only,nimbleCivil,accuracy,,value,^([\d.]+) \(Nimble\),,,value,vs ([\d.]+) \(Jev\),a-b,,
+r1Gap,L230,estimate,yes,Cheng 2250-question released benchmark; Jev answers captured by a third party on the identical subset; own model trained on the benchmark families (D4 high),cheng2250,accuracy,primary,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L225,context,yes,"Cheng 68-question NanoJev-recorded cohort; Jev replies recorded by a third party (contradicted_claims 21); the 18-point gap rests on 12 questions (rob.csv D2), so the 2250-item set on the same kind of items is the study estimate",cheng68,accuracy,,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L022,estimate,yes,Ibrahim & Zaki open-ecosystem grid; best open model (SemIf-4B) vs Jev under each system's released code; the only parity-graded head-to-head (D4 low),ibrOpenBest,macroF1,primary,value,,,,comparator_value,,a-b,,
+r1Gap,L023,context,yes,Ibrahim & Zaki grid; Bespoke-Nimble-9B measured independently (compare with its own card),ibrOpenNimble,macroF1,,value,,,,comparator_value,,a-b,,
+r1Gap,L020,context,yes,Ibrahim & Zaki grid; decider-0.8b,ibrOpenDecider08,macroF1,,value,,,,comparator_value,,a-b,,
+r1Gap,L021,context,yes,Ibrahim & Zaki grid; decider-2b,ibrOpenDecider2,macroF1,,value,,,,comparator_value,,a-b,,
+r1Gap,L019,context,yes,Ibrahim & Zaki grid; Laya-0.4B,ibrOpenLaya,macroF1,,value,,,,comparator_value,,a-b,,
+r1Gap,L017,context,yes,Ibrahim & Zaki grid; Qwen3-0.6B-RLCD,ibrOpenRlcd,macroF1,,value,,,,comparator_value,,a-b,,
+r1Gap,L495,estimate,yes,Rev card 975-item frozen public holdout; best open (Rev-Qwen3.8-27B) vs hosted Jev on the same items; developer self-report (D4 high),rev975,accuracy,primary,value,,,,comparator_value,,a-b,,
+r1Gap,L499,estimate,yes,Rev card JevBench 231 public items; developer's own run with the board's scoring,revJevBench,accuracy,primary,value,^([\d.]+) \(Rev-27B\),,,value,vs ([\d.]+) \(Jev\),a-b,,
+r1Gap,L500,estimate,yes,Rev card Decision Index 19 benchmarks; developer's own run,revDecisionIndex,score,primary,value,^([\d.]+) \(Rev-27B\),,,value,vs ([\d.]+) \(Jev\),a-b,,
+r1Gap,L496,context,yes,Rev card; smallest open model Rev-Qwen3.5-4B vs hosted Jev on the 975-item holdout (used for the Pareto check with its own cost and latency),rev4b,accuracy,,value,,,,comparator_value,,a-b,,
+r1Gap,L466,estimate,yes,Laya card typed-decisions split; fine-tuned laya vs Jev; the Jev figure is LocalLLaMA's published run reused on the card (not a same-harness run),layaTypedDecisions,accuracy,primary,value,,,,comparator_value,^([\d.]+) /,100*(a-b),,
+r1Gap,L465,context,yes,Laya card; zero-shot English checkpoint on typed-decisions (untuned counterpart of L466),layaZeroShot,accuracy,,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L474,context,no,Banking77 comparison uses different label sets (72 vs 77 labels) so the items are not the same,layaBanking77,accuracy,,,,,,,,a,,
+r1Gap,L475,estimate,yes,Kev card in-distribution development set; same frozen items for every row,kevInDist,accuracy,primary,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L476,estimate,yes,Kev card out-of-domain transfer-v4 development set; same frozen items,kevOod,accuracy,primary,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L483,estimate,yes,Kev card MMLU-Pro transfer-v9 set (separate from transfer-v4),kevMmluPro,accuracy,primary,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L482,context,yes,Kev card per-source MMLU subset; per-source rows break down the aggregate sets and would double count,kevMmlu,accuracy,,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L484,context,yes,Kev card per-source deadline subset (raw Kev without the date preprocessor); per-source row,kevDeadline,accuracy,,value,^([\d.]+) \(raw\),,,comparator_value,,100*(a-b),,
+r1Gap,L028,estimate,yes,Sun & Xu aligned arm (no/yes names); open marker head vs hosted Jev on the same 1200 decisions; AUROC scale,sunAligned,AUROC,primary,comparator_value,,,L033,comparator_value,,100*(a-b),,
+r1Gap,L033,context,yes,Sun & Xu swapped arm; open marker head vs hosted Jev under the polarity swap (robustness contrast),sunSwapped,AUROC,,value,,,L028,value,,100*(b-a),,
+r1Gap,L513,context,yes,LocalLLaMA typed-decisions; meraGPT Decider 1 is a proprietary hosted decision model (not an open replica),localllamaDecider,accuracy,,value,,,,comparator_value,,100*(a-b),,
+r1Gap,L519,context,yes,LocalLLaMA typed-decisions; ModernBERT-base specialist fitted on the train split of the same workflows (card: not comparable to generalists),localllamaModernbert,accuracy,,value,,,,comparator_value,,100*(a-b),,
+r1Readout,L417,context,yes,Yu et al. within-backbone contrast; typed decision head vs answer SFT on the same 4B backbone (macro accuracy points),yuHeadVsSft,accuracy,,value,,,,comparator_value,^([\d.]+) \(,100*(a-b),,
+r1Readout,L249,context,yes,Ren et al. matched ablation; typed readout vs label-token generative fine-tune on the same Qwen3 backbone (AUROC points),renReadout,AUROC,,value,,,,comparator_value,,100*(b-a),,
+r2JevEce,L006,estimate,yes,Ibrahim & Zaki Jev median evaluation-task ECE; primary 15 equal-width bins; recalibrated value is the scalar temperature fit on pilot tasks (transferred fit),ibrJev,equal-width 15 bins,primary,value,,raw,L900,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2JevEce,L079,estimate,yes,Rafe & Das pooled raw ECE with exact discrete-grid estimator; Platt on held-out split (in-domain fit); survey authors' own paper,rafeJevPlatt,exact discrete-grid (unbinned),primary,value,,raw,L080,value,,a,,in-domain (held-out split of the same corpus)
+r2JevEce,L079,context,yes,Rafe & Das isotonic recalibration of the same raw record (second method; not a second study value),rafeJevIsotonic,exact discrete-grid (unbinned),,value,,raw,L081,value,,a,,in-domain (held-out split of the same corpus)
+r2JevEce,L487,estimate,yes,Archer Hume 1200-item MMLU sample; 10 equal-width bins on probabilities rounded to 2 decimals,archerJev,equal-width 10 bins,primary,value,,raw,,,,a,,
+r2JevEce,L515,estimate,yes,LocalLLaMA typed-decisions test split; ECE against LLM-teacher soft gold; binning not stated,localllamaJev,not specified,primary,value,,raw,,,,a,,
+r2JevEce,L469,context,no,Laya card repeats LocalLLaMA's published Jev ECE 0.144 (same run; counted once under grey_localllama_typed_decisions),layaJevCopy,not specified,,comparator_value,,raw,,,,a,,
+r2JevEce,L477,estimate,yes,Kev card transfer-v4 out-of-domain set; Jev ECE measured by the Kev developer; binning not stated,kevJevOod,not specified,primary,comparator_value,,raw,,,,a,,
+r2JevEce,L485,estimate,yes,Kev card scienthoon's 900 support tickets; Jev ECE on the external suite; binning not stated,kevJevScienthoon,not specified,primary,comparator_value,,raw,,,,a,,
+r2JevEce,L463,estimate,yes,Nimble public-benchmark doc; Jev ECE on boolq (300); binning not stated,nimbleJevBoolq,not specified,primary,value,([\d.]+) \(Jev\),raw,,,,a,,
+r2JevEce,L426,context,yes,REFLEX ECE is computed on autonomous (non-escalated) decisions only; truncated by the confidence gate; binning not stated,reflexJev,not specified,,value,,raw,,,,a,,
+r2JevEce,L453,context,yes,KITE p3 contract ECE is calibration of predicted human response probabilities and the contract was selected on this value (development studies),kiteJev,not specified,,value,,raw,,,,a,,
+r2JevEce,L009,context,yes,Ibrahim & Zaki per-task extreme (empathy),ibrJevEmpathy,equal-width 15 bins,,value,,raw,,,,a,,
+r2JevEce,L012,context,yes,Ibrahim & Zaki per-task extreme (Indian English dialect),ibrJevDialect,equal-width 15 bins,,value,,raw,,,,a,,
+r2JevEce,L025,context,yes,Ibrahim & Zaki 14-task open-ecosystem subset (same study; not a second value),ibrJev14,equal-width 15 bins,,value,,raw,,,,a,,
+r2JevEce,L902,context,yes,Ibrahim & Zaki binning sensitivity (10 equal-width bins),ibrJevBin10,equal-width 10 bins,sensitivity,value,,raw,,,,a,,
+r2JevEce,L903,context,yes,Ibrahim & Zaki binning sensitivity (20 equal-width bins),ibrJevBin20,equal-width 20 bins,sensitivity,value,,raw,,,,a,,
+r2JevEce,L901,context,yes,Ibrahim & Zaki binning sensitivity (15 equal-mass bins),ibrJevMass15,equal-mass 15 bins,sensitivity,value,,raw,,,,a,,
+r2JevEce,L094,context,yes,Rafe & Das resolution-floor bound on attainable ECE from the two-decimal grid (maximum over variables); a bound not an estimate,rafeFloor,exact discrete-grid (unbinned),,value,,bound,,,,a,,
+r2JevEce,L608,estimate,yes,Guo et al. RLCDAlignBench generic Noul; median per-benchmark ECE over 31 benchmarks; same estimand as Ibrahim & Zaki (median over tasks); binning not named; labels mix rule scorers and LLM judges,guoJevMedianPerBenchmark,not specified,primary,value,,raw,,,,a,,
+r2JevEce,L607,context,yes,Guo et al. pooled ECE over the same 31 benchmarks; within-study contrast with the per-benchmark median (a different estimand; not a second study value),guoJevPooled,not specified,,value,,raw,,,,a,,
+r2JevEce,L608,context,yes,Guo et al. median per-benchmark ECE expected under perfect calibration (simulation null); finite-sample floor of the per-benchmark estimand,guoJevNull,not specified,,comparator_value,,null,,,,a,,
+r2JevEce,L630,context,no,dos Santos et al. quote TypeSafe-reported ECE from an undisclosed vendor set (secondary citation; the paper itself says the values cannot be compared); not a measurement,,,,,,,,,,,,
+r2OpenEce,L477,estimate,yes,Kev-9B out-of-domain; raw logits vs served temperature T=2.30 fitted on in-distribution rows (transferred fit),kevOod,not specified,primary,excerpt,out-of-domain ECE \| [\d.]+ \| [\d.]+ \| ([\d.]+) \|,raw,,value,,a,,transferred (in-distribution to out-of-domain)
+r2OpenEce,L485,context,yes,Kev-9B on scienthoon's tickets after the delta fine-tune; stage of calibration not stated,kevScienthoon,not specified,,value,^([\d.]+),raw,,,,a,,
+r2OpenEce,L470,estimate,yes,Laya English internal calibration evaluation; one temperature per question type and option count refit on held-out data (in-domain fit),layaEn,not specified,primary,comparator_value,,raw,,value,,a,,in-domain (held-out refit per question type)
+r2OpenEce,L471,estimate,yes,laya-multilingual internal calibration evaluation; in-domain temperature refit,layaMulti,not specified,primary,comparator_value,,raw,,value,,a,,in-domain (held-out refit per question type)
+r2OpenEce,L469,context,yes,Laya English as shipped on typed-decisions (LLM-teacher gold),layaTd,not specified,,value,,raw,,,,a,,
+r2OpenEce,L457,estimate,yes,Nimble second set (300); temperature 2.179 (revision original-2676),nimble300,not specified,primary,comparator_value,,raw,,value,,a,,unstated
+r2OpenEce,L458,estimate,yes,Nimble 324-item holdout; the same temperature leaves ECE essentially unchanged (contradicted_claims 11),nimble324,not specified,primary,comparator_value,,raw,,value,,a,,unstated
+r2OpenEce,L463,context,yes,Nimble on boolq at T=1.0,nimbleBoolq,not specified,,value,^([\d.]+) \(Nimble\),raw,,,,a,,
+r2OpenEce,L237,estimate,yes,JevLite 3-seed ensemble; ECE reported after temperature fit on validation; raw not reported,jevLite,equal-width (bins not stated),primary,value,,recal,,,,a/100,,in-domain (validation split)
+r2OpenEce,L024,estimate,yes,decider-0.8b median ECE on the 14-task open-ecosystem grid (independent measurement),decider08,equal-width 15 bins,primary,value,,raw,,,,a,,
+r2OpenEce,L904,estimate,yes,Qwen3-0.6B-RLCD median ECE before and after pilot-task temperature (transferred fit),rlcd06,equal-width 15 bins,primary,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2OpenEce,L515,context,yes,meraGPT Decider 1 (proprietary hosted decision model) on typed-decisions,deciderOne,not specified,,comparator_value,,raw,,,,a,,
+r2OpenEce,L933,context,yes,"LocalLLaMA know-nothing Prior (label frequencies from train); lowest ECE on the card, showing ECE alone can reward a model with no information",localllamaPrior,not specified,,value,,raw,,,,a,,
+r2OpenEce,L631,context,no,dos Santos et al. quote the Laya card ECE (secondary citation of L470; would double count),,,,,,,,,,,,
+r2Cbw,L008,estimate,yes,Empathy task; accuracy in the >=0.9-confidence subset minus the full-task base rate (78% of items above 0.9),cbwEmpathy,accuracy minus base rate,,value,,,,comparator_value,,a-b,,
+r2Cbw,L009,estimate,yes,Empathy task ECE (15 equal-width bins),cbwEmpathyEce,ECE,,value,,,,,,a,,
+r2Cbw,L472,estimate,yes,Laya English checkpoint on Khmer (MASSIVE); accuracy,cbwKhmerAcc,accuracy,,value,,,,,,a,,
+r2Cbw,L472,estimate,yes,Laya English checkpoint on Khmer; stated confidence,cbwKhmerConf,confidence,,excerpt,at ([\d.]+) confidence,,,,,a,,
+r2Cbw,L028,estimate,yes,Sun & Xu open marker head; AUROC under the no/yes polarity swap (below chance; ranking inverted),cbwPolarityMarker,AUROC,,value,,,,,,a,,
+r2Cbw,L033,estimate,yes,Sun & Xu hosted Jev; AUROC under the polarity swap (toward chance),cbwPolarityJev,AUROC,,value,,,,,,a,,
+r2Cbw,L034,estimate,yes,Sun & Xu hosted Jev flip rate per hundred under the swap,cbwPolarityJevFlip,flip rate,,value,,,,,,a,,
+r2Cbw,L489,estimate,yes,Archer Hume MMLU top confidence bin; predicted minus observed accuracy (pp),cbwTopBin,gap pp,,value,,,,,,a,,
+r2Cbw,L489,estimate,yes,Archer Hume top bin predicted accuracy,cbwTopBinPred,predicted pct,,excerpt,predicted ([\d.]+)%,,,,,a,,
+r2Cbw,L489,estimate,yes,Archer Hume top bin observed accuracy,cbwTopBinObs,observed pct,,excerpt,observed ([\d.]+)%,,,,,a,,
+r2Cbw,L480,estimate,yes,Kev card; Jev confident-error rate out of domain (p>=0.9 and wrong),cbwKevJevConfErr,confident error pct,,comparator_value,,,,,,a,,
+r2Cbw,L069,context,yes,Li et al. judge; Jev accuracy at q<0.6 (confidence orders the errors),cbwLiLowConf,accuracy pct,,value,,,,comparator_value,,a,,
+r2Cbw,L070,context,yes,Li et al. judge; Jev accuracy at q>=0.9,cbwLiHighConf,accuracy pct,,value,,,,comparator_value,,a,,
+r3Retained,L071,estimate,yes,Li et al. frozen two-order policy with GPT-6 Astra fallback at tau=0.9 (threshold frozen on 96 pilot pairs); cascade accuracy over fallback-alone accuracy,liJudgeGpt6,accuracy ratio,primary,value,,,,comparator_value,,a/b,,
+r3Retained,L014,estimate,yes,Ibrahim & Zaki cascade to the frontier partner Gemini 3.8 Flash at t=0.8 (one of six thresholds reported),ibrGemini08,accuracy ratio,primary,value,,,,comparator_value,,a/b,,
+r3Retained,L016,context,yes,Ibrahim & Zaki cascade to Haiku 4.5 (best closed model under the price cap),ibrHaiku05,accuracy ratio,,value,,,,comparator_value,,a/b,,
+r3Retained,L015,context,yes,Ibrahim & Zaki cascade to Gemma 4 31B (cheap partner),ibrGemma05,accuracy ratio,,value,,,,comparator_value,,a/b,,
+r3Retained,L912,estimate,yes,REFLEX tau=0.5 on external tau^2-bench against strong-only B0; the operating point that reports fees (paired difference unresolved),reflexTau,success ratio,primary,value,,,,comparator_value,,a/b,,
+r3Retained,L424,context,yes,REFLEX tau=0.5 on REFLEX-Sim held-out tasks against strong-only B0 (paper's primary point; reports strong calls not fees),reflexSim,success ratio,,value,,,,comparator_value,,a/b,,
+r3Retained,L913,context,yes,B3 cheap generative cascade with self-escalation on tau^2-bench against B0 (counter-evidence),b3Tau,success ratio,,value,,,,comparator_value,,a/b,,
+r3Retained,L446,context,yes,KITE fixed sparse-anchor hybrid vs flagship direct audit; error metric so ratio is comparator MAE over hybrid MAE,kiteEpstein,error ratio,,value,,,L447,value,,b/a,,
+r3FeeFrac,L909,estimate,yes,Li et al. share of the GPT-6 fallback fee (reported usage; 62.2% conservative bound),liJudgeGpt6,fee fraction,primary,value,,,,,,a/100,,
+r3FeeFrac,L905,estimate,yes,Ibrahim & Zaki median cascade cost fraction with Gemini 3.8 Flash at t=0.8 (Table 18 baseline prices),ibrGemini08,fee fraction,primary,value,,,,,,a,,
+r3FeeFrac,L906,context,yes,Ibrahim & Zaki Haiku 4.5 partner at t=0.5,ibrHaiku05,fee fraction,,value,,,,,,a,,
+r3FeeFrac,L907,context,yes,Ibrahim & Zaki Gemma 4 31B partner at t=0.5 (cheap partner; small saving),ibrGemma05,fee fraction,,value,,,,,,a,,
+r3FeeFrac,L908,context,yes,Ibrahim & Zaki Gemma 4 31B partner at t=0.8; the cascade costs more than the partner alone (counter-evidence),ibrGemma08,fee fraction,,value,,,,,,a,,
+r3FeeFrac,L911,estimate,yes,REFLEX tau=0.5 cost per episode over B0 cost per episode on tau^2-bench,reflexTau,fee fraction,primary,value,,,,comparator_value,,a/b,,
+r3FeeFrac,L432,context,yes,B3 cheap generative cascade cost per episode over B0 cost per episode (counter-evidence),b3Tau,fee fraction,,value,,,L911,comparator_value,,a/b,,
+r3StrongFrac,L910,estimate,yes,Li et al. share of pairs escalated to GPT-6 (1 minus the accept share),liJudgeGpt6,escalated share,primary,value,,,,,,1-a/100,,
+r3StrongFrac,L425,estimate,yes,REFLEX-Sim strong-model calls relative to strong-only (1 minus GMR),reflexSim,escalated share,primary,value,,,,,,1-a/100,,
+r3StrongFrac,L428,context,yes,REFLEX E6 cross-family run (Qwen3.8-Max),reflexE6Qwen,escalated share,,value,,,,,,1-a/100,,
+r3StrongFrac,L429,context,yes,REFLEX E6 cross-family run (Kimi K3; fails the non-inferiority criterion),reflexE6Kimi,escalated share,,value,,,,,,1-a/100,,
+r3StrongFrac,L430,context,yes,REFLEX E6 cross-family run (DeepSeek-V4-Pro),reflexE6Deepseek,escalated share,,value,,,,,,1-a/100,,
+r3StrongFrac,L446,context,yes,KITE fixed anchor share of application states (not confidence-gated),kiteEpstein,anchor share,,n,\(([\d.]+)% of,,,,,a/100,,
+r3Context,L092,context,yes,Rafe & Das held-out review budget at 90% precision; a deferral-to-human budget set by a precision target (contradicted_claims 19); the ledger records no cascade experiment,rafeBudget,review budget,,value,,,,,,a/100,,
+r3Context,L437,context,yes,Ma et al. JEV plus GPT-6 planner vs JEV-only; hierarchical planning not confidence escalation; quality multiple of JEV-only,maStarQuality,quality multiple vs Jev-only,,value,,,,comparator_value,,a/b,,
+r3Context,L442,context,yes,Ma et al. cost per game of JEV plus GPT-6 over JEV-only,maStarCost,cost multiple vs Jev-only,,value,,,,comparator_value,,a/b,,
+r3Context,L620,context,no,"dos Santos et al. pentest harness with and without TypeSafe; one run per arm, no intervals, harness changed between runs (RoB D2 and D3 high); not a confidence-gated escalation",,,,,,,,,,,,
+gapJevBest,L001,estimate,yes,Ibrahim & Zaki median macro-F1 deficit to the per-task best LLM (an oracle comparator chosen per task),ibrGap,macroF1,primary,value,,,,,,-a,,
+gapJevBest,L066,estimate,yes,Li et al. RewardBench (preference) human-adjudicated accuracy difference vs GPT-6 Astra; n in the ledger is the number of adjudicated disagreements,liJudgeRewardBench,accuracy,primary,value,,,,,,a,,
+gapJevBest,L067,estimate,yes,Li et al. JudgeBench (difficult correctness) human-adjudicated accuracy difference vs GPT-6 Astra,liJudgeJudgeBench,accuracy,primary,value,,,,,,a,,
+gapJevBest,L068,estimate,yes,Li et al. HaluEval (grounded factuality) human-adjudicated accuracy difference vs GPT-6 Astra,liJudgeHaluEval,accuracy,primary,value,,,,,,a,,
+gapJevBest,L089,estimate,yes,Rafe & Das paired F1 difference against the best frontier arm (Claude Fable 5.1); survey authors' own paper,rafeGap,F1,primary,value,,,,,,-100*a,,
+gapJevBest,L101,estimate,yes,Zhang et al. ContractNLI official test; Jev vs the most accurate model (Gemini 3.1 Pro Preview),zhangGap,accuracy,primary,value,,,,comparator_value,,b-a,,
+gapJevBest,L400,estimate,yes,Deng et al. semantic accuracy; Jev ties the frontier configurations at 100 (ceiling),dengGap,accuracy,primary,value,,,,comparator_value,,a-b,,
+gapJevBest,L451,estimate,yes,KITE SocSci210 marginal distance to human responses; Jev vs GPT-6 Astra (lower is better; sign oriented so negative means Jev worse),kiteGap,distance,primary,value,^([\d.]+) /,,,value,/ ([\d.]+) \(,b-a,,
+gapJevBest,L216,context,yes,li2026fast cloud update scenarios; comparator DeepSeek v4.1 flash is not a frontier model (sensitivity; li cluster),liFastCloud,accuracy,sensitivity,value,,,,comparator_value,,a-b,,
+gapJevBest,L220,context,yes,li2026fast real image service; DeepSeek comparator (sensitivity; li cluster),liFastImage,accuracy,sensitivity,cost_or_latency,^\d+/1080 \(([\d.]+)%\),,,cost_or_latency,vs \d+/1080 \(([\d.]+)%\),a-b,,
+gapJevBest,L204,context,yes,li2026replacing real OCR service; DeepSeek comparator (sensitivity; li cluster),liReplacingOcr,accuracy,sensitivity,value,,,,comparator_value,,a-b,,
+gapJevBest,L131,context,yes,Huang et al. RadEvalExpert shared 200-pair subset total-error Kendall tau vs RadMatch (local 27B LLM pipeline; not frontier),huangGap,kendall tau,sensitivity,value,,,,comparator_value,,b-a,,
+gapJevBest,L273,context,yes,Robitza test-1 subset PLCC vs MOS against the best LLM ensemble of a prior paper (published figure not a rerun),robitzaGap,PLCC,sensitivity,value,,,,comparator_value,,a-b,,
+gapJevBest,L503,context,yes,TypeSafe evals (vendor; model-consensus reference) Jev vs Claude Sonnet 5 at equal accuracy; not human-labelled,vendorEvalsGap,accuracy,,comparator_value,^([\d.]+),,,value,,a-b,,
+gapJevBest,L613,context,yes,"Guo et al. StrongREJECT human set; Jev vs GPT-4o-mini reference scorer on the same 1360 responses; kappa against human labels; comparator not frontier (sensitivity, own metric group)",guoKappa,kappa,sensitivity,value,,,,comparator_value,,a-b,,
+costRatio,L005,estimate,yes,Ibrahim & Zaki median ratio of per-task best LLM cost to Jev cost,ibrCost,cost ratio,primary,value,,,,,,a,,
+costRatio,L059,estimate,yes,Li et al. matched 120-decision panel; GPT-6 Astra fee over Jev fee,liJudgeCost,cost ratio,primary,value,,,,comparator_value,,b/a,,
+costRatio,L101,estimate,yes,Zhang et al. cost per contract of the most accurate model (Gemini 3.1 Pro Preview) over Jev's,zhangCost,cost ratio,primary,cost_or_latency,^\$([\d.]+) USD/contract,,L098,value,,a/b,,
+costRatio,L405,estimate,yes,Deng et al. cost per 1000 responses of GPT-5.6 Sol (lowest-cost tied comparator; all tie on accuracy) over Jev's,dengCost,cost ratio,primary,value,,,,comparator_value,,b/a,,
+costRatio,L223,estimate,yes,li2026fast cloud block billed fees; DeepSeek over Jev (comparator cheaper; li cluster),liFastCost,cost ratio,primary,value,,,,comparator_value,,b/a,,
+costRatio,L211,estimate,yes,li2026replacing Study B fees per correct completion; lower end of the reported reduction range converted to a ratio (li cluster),liReplacingCostB,cost ratio,primary,value,^([\d.]+)-,,,,,1/(1-a/100),,
+costRatio,L210,context,yes,li2026replacing Study A fees per operational completion combine live API calls with modeled execution on a simulated edge topology (study note); treated as context like the Rafe list-price scenario,liReplacingCostA,cost ratio,,value,^([\d.]+)-,,,,,1/(1-a/100),,
+costRatio,L451,estimate,yes,KITE cost per 1000 predictions; GPT-6 Astra lower bound over Jev upper bound (conservative bound of both ranges),kiteCost,cost ratio,primary,cost_or_latency,Astra \$([\d.]+)-,,,cost_or_latency,"Jev \$[\d.]+-([\d.]+)/1,000",a/b,,
+costRatio,L086,context,yes,Rafe & Das mid-tier frontier list-price scenario (a projection not a measurement on the same work),rafeCostScenario,cost ratio,,value,,,,comparator_value,,a/b,,
+costRatio,L503,context,yes,TypeSafe evals (vendor) Claude Sonnet 5 cost per case over Jev's on the vendor's workflows,vendorEvalsCost,cost ratio,,cost_or_latency,^\$([\d.]+)/case,,L502,cost_or_latency,^\$([\d.]+)/case,a/b,,
+costRatio,L494,context,yes,Rev card; open Rev-Qwen3.5-4B cost per 1000 answers over hosted Jev's (open replica not an LLM comparator),revCost,cost ratio,,cost_or_latency,"\$([\d.]+) per 1,000",,L496,cost_or_latency,"^[\d.]+ ms, \$([\d.]+) per 1,000",b/a,,
+costRatio,L617,estimate,yes,Guo et al. pooled list-price cost of the benchmarks own API LLM judges over Jev on the same 19 benchmarks,guoCost,cost ratio,primary,value,,,,,,a,,
+costRatio,L618,context,yes,"Guo et al. conservative repricing (every judge at GPT-4o-mini rates, Jev generic question only); sensitivity",guoCostConservative,cost ratio,,value,,,,,,a,,
+speedRatio,L061,estimate,yes,Li et al. matched panel median latency; GPT-6 Astra over Jev,liJudgeSpeed,latency ratio,primary,value,,,,comparator_value,,b/a,,
+speedRatio,L403,estimate,yes,Deng et al. median latency; GPT-5.6 Sol over Jev,dengSpeed,latency ratio,primary,value,,,,comparator_value,,b/a,,
+speedRatio,L101,estimate,yes,Zhang et al. median response time; Gemini 3.1 Pro Preview over Jev,zhangSpeed,latency ratio,primary,cost_or_latency,median ([\d.]+) s,,L099,value,,a/b,,
+speedRatio,L212,estimate,yes,li2026fast cloud block median latency; DeepSeek over Jev (li cluster),liFastSpeed,latency ratio,primary,value,,,,comparator_value,,b/a,,
+speedRatio,L200,estimate,yes,li2026replacing Study A block 1 median latency; DeepSeek over Jev (li cluster),liReplacingSpeed,latency ratio,primary,value,,,,comparator_value,,b/a,,
+speedRatio,L494,context,yes,Rev card; open Rev-Qwen3.5-4B latency over hosted Jev's (the open replica is faster),revSpeed,latency ratio,,cost_or_latency,^(\d+) ms,,L496,cost_or_latency,^(\d+) ms,b/a,,
+speedRatio,L511,context,no,Vercel p95 figure exists only in X posts with no protocol (contradicted_claims 4 and 12); listed in f06 as not counted,vercelSpeed,latency ratio,,,,,,,,a,,
+speedRatio,L632,context,no,dos Santos et al. Jev latency is quoted from vendor documentation against an LLM range observed in one run; secondary and not on the same work,,,,,,,,,,,,
+speedRatio,L633,context,no,dos Santos et al. Laya latency quoted from the Laya card (secondary),,,,,,,,,,,,
+typeErrors,L044,estimate,yes,Sun & Xu type-error rate across all conditions (percent),sunTypeErr,type errors,primary,value,,,,,,a,,
+typeErrors,L026,estimate,yes,Ibrahim & Zaki invalid answers across 23703 decision-model calls,ibrInvalid,type errors,primary,value,,,,,,a,,
+r2LlmTemp,L914,comparator,yes,Ibrahim & Zaki LLM baseline Llama 4 Scout median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmllama4Scout,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L915,comparator,yes,Ibrahim & Zaki LLM baseline Claude Fable 5.1 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmfable51,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L916,comparator,yes,Ibrahim & Zaki LLM baseline Llama 4 Maverick median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmllama4Maverick,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L917,comparator,yes,Ibrahim & Zaki LLM baseline Gemini 3.1 Pro Preview median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgemini31Pro,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L918,comparator,yes,Ibrahim & Zaki LLM baseline Gemini 3.8 Flash median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgemini38Flash,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L919,comparator,yes,Ibrahim & Zaki LLM baseline Qwen3 235B A22B median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmqwen3235b,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L920,comparator,yes,Ibrahim & Zaki LLM baseline Claude Opus 5 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmopus5,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L921,comparator,yes,Ibrahim & Zaki LLM baseline Gemini 3.5 Flash-Lite median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgemini35FlashLite,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L922,comparator,yes,Ibrahim & Zaki LLM baseline Claude Sonnet 5 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmsonnet5,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L923,comparator,yes,Ibrahim & Zaki LLM baseline GPT-OSS 120B median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgptOss120b,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L924,comparator,yes,Ibrahim & Zaki LLM baseline GPT-5.6 Terra median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgpt56Terra,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L925,comparator,yes,Ibrahim & Zaki LLM baseline Gemma 4 31B median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgemma431b,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L926,comparator,yes,Ibrahim & Zaki LLM baseline Kimi K2.6 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmkimiK26,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L927,comparator,yes,Ibrahim & Zaki LLM baseline DeepSeek V3.2 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmdeepseekV32,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L928,comparator,yes,Ibrahim & Zaki LLM baseline Mistral Medium 3.5 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmmistralMedium35,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L929,comparator,yes,Ibrahim & Zaki LLM baseline GPT-5.6 Sol median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgpt56Sol,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L930,comparator,yes,Ibrahim & Zaki LLM baseline Claude Haiku 4.5 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmhaiku45,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L931,comparator,yes,Ibrahim & Zaki LLM baseline GPT-5.6 Luna median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmgpt56Luna,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L932,comparator,yes,Ibrahim & Zaki LLM baseline GLM 5.3 median ECE after the same pilot-task temperature fit; compared with Jev's scaled ECE,llmglm53,equal-width 15 bins,,comparator_value,,raw,,value,,a,,transferred (pilot tasks to evaluation tasks)
+r2LlmTemp,L006,estimate,yes,Jev median ECE before and after the same pilot-task temperature fit (reference point for the LLM comparison),jev,equal-width 15 bins,,value,,raw,L900,value,,a,,transferred (pilot tasks to evaluation tasks)

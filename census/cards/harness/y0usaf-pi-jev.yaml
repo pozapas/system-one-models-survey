@@ -1,0 +1,24 @@
+name: pi-jev
+repo: https://github.com/y0usaf/pi-jev
+revision_sha: 80a80f32ad281f3d905429edfe0e5b8d7977d82a
+author: y0usaf
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: 'TypeSafe Jev as a decision layer for the Pi coding agent: a measured tool-call gate plus
+  jev_ask for typed, calibrated answers'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: '```bash pi install npm:@y0usaf/pi-jev ```  The extension needs an API key.'
+  verbatim: true
+- excerpt: All four go in one request, so a judgement costs one round trip of roughly 300 ms instead of
+    four.
+  verbatim: true
+- excerpt: Every error path fails open.** A missing key, a timeout, a 429, or a malformed response produces
+    no verdict and the tool call proceeds.
+  verbatim: true

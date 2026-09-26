@@ -1,0 +1,22 @@
+name: laya-mps
+repo: https://github.com/afshinm/laya-mps
+revision_sha: cdbf19e1aa5bd763ce4777d7a915849510514349
+author: afshinm
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: Run Jev-style typed decisions locally on your Mac with low RAM usage and fast responses.**
+    Laya delivers typed decisions with ~32 ms median latency using ~2.1 GiB RAM on
+  verbatim: true
+- excerpt: '- Apple Silicon Mac (M1 or newer), macOS 14+.'
+  verbatim: true
+- excerpt: uv installs Python 3.12 if needed.
+  verbatim: true

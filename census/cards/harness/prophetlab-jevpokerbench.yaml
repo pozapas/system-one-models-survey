@@ -1,0 +1,20 @@
+name: JevPokerBench
+repo: https://github.com/Prophetlab/JevPokerBench
+revision_sha: 549983a59104eee12cf7055cbc0b1793b0adb773
+author: Prophetlab
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'ProphetLab''s Texas Hold''em benchmark and playground for decision models: cash and SNG
+  leaderboards, live replays, and bring-your-own-agent tables.'
+primitives_supported: []
+models_supported: []
+key_claims:
+- excerpt: Open the hosted platform at [JevPokerBench Online](https://123.56.23.73/pokerbench/).
+  verbatim: true
+- excerpt: 'To play online:  1.'
+  verbatim: true
+- excerpt: An invitation enables a **lifetime CNY 5 hosted DeepSeek allowance per account**, not a recurring
+    allowance.
+  verbatim: true

@@ -1,0 +1,27 @@
+name: pi-jev
+repo: https://github.com/TheoOliveira/pi-jev
+revision_sha: 3c6d6c5b8ef3fb583b2d1d71ad04bae07bf616d9
+author: TheoOliveira
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: Semantic tool routing and typed System One decisions for the Pi coding agent using TypeSafe
+  Jev
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+- binary
+models_supported: []
+key_claims:
+- excerpt: '- **Automatic Mode (opt-in)**: `--jev-auto` / `PI_JEV_AUTO=1` / `/jev auto on` routes tools
+    and suggests skills before every prompt.'
+  verbatim: true
+- excerpt: '- **Automatic Model Mode (opt-in)**: `--jev-auto-model` / `PI_JEV_AUTO_MODEL=1` / `/jev auto-model
+    on` selects fast, balanced, reasoning, long-context, or vision models per prompt.'
+  verbatim: true
+- excerpt: '- **Tool Call Guard (opt-in)**: `--jev-tool-guard` / `PI_JEV_TOOL_GUARD=1` / `/jev tool-guard
+    on` intercepts tool calls with Jev to detect hallucinations and enhance failed results.'
+  verbatim: true

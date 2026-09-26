@@ -1,0 +1,28 @@
+name: laya-web
+repo: https://github.com/r4ai/laya-web
+revision_sha: 72c3d681ef288e6107bf2ea5a110f371efe6db0b
+author: r4ai
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Laya typed decisions in the browser with ONNX Runtime WebGPU and Wasm
+primitives_supported:
+- choice
+- score
+- noul
+- binary
+- ordinal
+models_supported: []
+key_claims:
+- excerpt: 'Laya evaluates structured decisions (**typed decisions**) directly over input state or text
+    without generating free-form text: - **Categorical Choice (`choice`)**: Selects the best option from
+    discrete candidate labels -'
+  verbatim: true
+- excerpt: 'Hosting the agent inside a dedicated Web Worker isolates heavy tensor computation from the
+    UI: ```mermaid flowchart TD subgraph Host ["Browser Environment"] subgraph Main ["Main Thread (UI)"]
+    App["Web Application"]'
+  verbatim: true
+- excerpt: Serve model assets and ONNX Runtime Web Wasm binaries from your static file server (see the
+    [Vite example](https://github.com/r4ai/laya-web/blob/main/examples/minimal/vite.config.ts)).
+  verbatim: true

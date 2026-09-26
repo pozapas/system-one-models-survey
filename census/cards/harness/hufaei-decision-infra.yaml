@@ -1,0 +1,22 @@
+name: decision-infra
+repo: https://github.com/hufaei/decision-infra
+revision_sha: 8a6e0269e97bf86235d3e9bf6390c1dc53490cc5
+author: hufaei
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Jev-compatible decision gateway for hosted Jev and local Reflex, SemIf, and Laya models
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen
+- Qwen3.5-4B
+key_claims:
+- excerpt: 一份 Jev-compatible `/v1/systemone` contract，切换托管 Jev 与三个本地决策模型。** [快速开始](#两分钟接入-jev) · [运行环境](#运行环境)
+    · [资源预算](#资源性能与功耗预算) · [API contract](docs/api.md) · [架构](docs/architecture.md) Decision Infra 是一层很薄的基础设施：业务只提交状态、问题和可选模型
+    ID；网关负责校验、精确路由和统一错误。它不包含 Agent 框架、业务工作流或模型权重。 - 一份稳定 contract：`choice`、`score`、`noul`。 - 四个明确入口：Jev、Reflex、SemIf、Laya
+    Multilingual。 -
+  verbatim: true

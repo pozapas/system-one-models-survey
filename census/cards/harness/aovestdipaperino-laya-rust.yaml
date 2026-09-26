@@ -1,0 +1,29 @@
+name: laya-rust
+repo: https://github.com/aovestdipaperino/laya-rust
+revision_sha: 5104bf2a42287382cb867edfe74732f6d823795a
+author: aovestdipaperino
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Pure-Rust inference for the Laya non-autoregressive typed-decision model (ModernBERT-large
+  + RL decision head), on candle
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- ModernBERT-large
+key_claims:
+- excerpt: 'The root checkpoint is Apache-2.0 and ungated, so no token is needed: ```sh mkdir -p models/laya-base/encoder
+    models/laya-base/tokenizer B=https://huggingface.co/convaiinnovations/laya/resolve/main for f in model.safetensors
+    encoder/config.json tokenizer/tokenizer.json \ tokenizer/tokenizer_config.json rl_agent_config.json;
+    do curl'
+  verbatim: true
+- excerpt: '`typed-decisions/` is the fine-tuned one, marked `"fine_tuned": true` with temperatures near
+    1.0 rather than near 2.0, and it is the sensible default for typed decisions.'
+  verbatim: true
+- excerpt: '```sh cargo build --release ./target/release/laya \ --state-file examples/ticket.txt \ --questions
+    examples/questions.json ``` ```json { "model": "rl-agent", "answers": { "department": { "type": "choice",
+    "choice": "billing", "probabilities": { "billing": 0.9641, "technical":'
+  verbatim: true

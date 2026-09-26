@@ -1,0 +1,27 @@
+name: dohnuts.cpp
+repo: https://github.com/DreamBlooms/dohnuts.cpp
+revision_sha: 60d247e5362e233fac94bdf19b74c9f7bf395704
+author: DreamBlooms
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: The same decisions, on CPU. System One model that can run on your Personal Computer.
+primitives_supported:
+- choice
+- score
+- noul
+- binary
+models_supported:
+- Qwen3.5
+key_claims:
+- excerpt: It runs the released Qwen3.5-0.8B base with the merged Dohnuts LoRA, scores candidate markers
+    with the scalar decision head, and returns probabilities from a single forward pass.
+  verbatim: true
+- excerpt: The same binary also runs two related decision models, `decider-0.8b` and `kev-0.8b`, through
+    profiles (see [Other decision models](#other-decision-models)).
+  verbatim: true
+- excerpt: 'Serve the model: ```sh build/dohnuts-cli --server --port 8080 \ --model work/dohnuts-Q8_0.gguf
+    --head work/head.f32 \ --metadata models/dohnuts-0.1.0/dohnuts.json ``` Route a support request and
+    check whether it asks for a refund'
+  verbatim: true

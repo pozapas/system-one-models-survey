@@ -1,0 +1,22 @@
+name: pi-typesafe
+repo: https://github.com/DevMortimer/pi-typesafe
+revision_sha: 2dd46f8562d43b2de6f0856c42e6e9748be3ff9e
+author: DevMortimer
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: 'TypeSafe decisions for Pi: batched evaluation tool, terminal playground, and typed API
+  for extension authors'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: '```bash pi install npm:pi-typesafe ```  Then, inside Pi:  1.'
+  verbatim: true
+- excerpt: Requires Pi 0.85 or newer and Node.js 22.19 or newer.
+  verbatim: true
+- excerpt: For automated or headless runs, set `PI_TYPESAFE_ENABLED=1` explicitly.
+  verbatim: true

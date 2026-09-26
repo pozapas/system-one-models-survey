@@ -1,0 +1,31 @@
+name: laya-lab
+repo: https://github.com/Alevsk/laya-lab
+revision_sha: 96d314b1b8cb5cc8d0eec85322ef11d01ebd649e
+author: Alevsk
+created: '2026-09-23'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: Self-hosted bootstrap of the Laya decision engine, with six runnable scenarios that measure
+  what it can and cannot do on Apple Silicon
+primitives_supported:
+- choice
+- score
+- noul
+- ordinal
+models_supported:
+- ModernBERT-large
+- mmBERT-base
+key_claims:
+- excerpt: A self-hosted, reproducible setup of **[Laya](https://github.com/NandhaKishorM/laya)** — a
+    non-autoregressive "System 1" decision engine — plus runnable scenarios that show what it can and
+    cannot do.
+  verbatim: true
+- excerpt: '```python agent.predict(ticket, { "department": {"type": "choice", "instructions": "Who handles
+    this?", "criteria": {...}}, "urgency": {"type": "score", "instructions": "How urgent?", "criteria":
+    [...]}, "churn_risk": {"type": "noul", "instructions": "Might they cancel?"}, }) ```'
+  verbatim: true
+- excerpt: '--- ``` Makefile every workflow below pyproject.toml uv project; laya installed editable from
+    ./upstream uv.lock pinned, reproducible resolution LICENSE / NOTICE MIT for this lab; Laya itself
+    stays Apache-2.0'
+  verbatim: true

@@ -1,0 +1,23 @@
+name: laya-decision-api
+repo: https://github.com/bmw8080/laya-decision-api
+revision_sha: fccfcf5c3279a9510dd4a2c503dfada5bce02e48
+author: bmw8080
+created: '2026-09-24'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 把本地 System-1 决策模型（Laya）包成 HTTP 服务：意图分类 / 工单分派 / LLM 路由 / 内容审核，离线零 token、不生成文字；Apple Silicon(MLX)
+  与 Linux(torch) 双后端；可导出 OpenAPI 3.0/3.1；Java/TS/Python 零依赖 SDK。
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: 把本地 System-1 决策模型（Laya）包成 **一份版本化契约 + 一个 HTTP 服务 + 跨语言 SDK**： 交「情境 + 要判断的问题」，回「结论 + 把握程度」。**离线、零
+    token、不生成文字**。 > **English** — A production-shaped HTTP service around the Laya local (non-autoregressive,
+  verbatim: true
+- excerpt: '> Apache-2.0.'
+  verbatim: true
+- excerpt: See [docs/sdk.md](https://github.com/bmw8080/laya-decision-api/blob/main/docs/sdk.md) and [docs/api-semantics.md](https://github.com/bmw8080/laya-decision-api/blob/main/docs/api-semantics.md).
+  verbatim: true

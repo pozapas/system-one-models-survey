@@ -1,0 +1,27 @@
+name: jevmlx
+repo: https://github.com/bnsd55/jevmlx
+revision_sha: 7e0d746081b88412ccd7d84a5ffdcf9d61b36904
+author: bnsd55
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Jev-style parallel constrained decisions for any MLX model on Apple Silicon. Typed, schema-valid
+  JSON in one forward pass.
+primitives_supported:
+- choice
+- noul (yes/no)
+- ordinal
+models_supported:
+- Qwen2
+key_claims:
+- excerpt: '```bash git clone https://github.com/bnsd55/jevmlx && cd jevmlx && ./setup.sh jevmlx decide
+    --preset support_triage --json # one decision, CLI jevmlx serve --model fast --port 8000 # HTTP server
+    curl -s'
+  verbatim: true
+- excerpt: First use of a model alias downloads weights (~2 GB `fast`, ~4.5 GB `quality`).
+  verbatim: true
+- excerpt: '```bash pip install git+https://github.com/bnsd55/jevmlx # library uv tool install git+https://github.com/bnsd55/jevmlx
+    # CLI only git clone https://github.com/bnsd55/jevmlx && cd jevmlx && ./setup.sh # dev ``` A full
+    Hub id also'
+  verbatim: true

@@ -1,0 +1,27 @@
+name: open-jev-typed-decision-engine
+repo: https://github.com/intikhab49/open-jev-typed-decision-engine
+revision_sha: 5977431afb6a9272e034f63c3ec7f0ee5395df59
+author: intikhab49
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'Open reproduction of TypeSafe Jev: a 150M typed decision engine (noul/choice/score in one
+  non-autoregressive pass, calibrated confidence). 0.697 vs Jev''s 0.727, 2.5x better calibrated, 4x faster,
+  free. Trains on a Colab T4 in 30 min.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- ModernBERT
+key_claims:
+- excerpt: A 150M encoder that answers arbitrary typed questions about a state in one forward pass, with
+    calibrated confidence.
+  verbatim: true
+- excerpt: 0.03 behind TypeSafe Jev on its own benchmark, 2.5× better calibrated, 4× faster, $0.** [Results](#results)
+    · [How it works](#how-it-works) · [Quick start](#quick-start) · [What we learned](#what-the-runs-actually-proved)
+    · [Limitations](#limitations) ---
+  verbatim: true
+- excerpt: $0.042/1M input, output tokens free, ~239 ms per call.
+  verbatim: true

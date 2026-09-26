@@ -1,0 +1,25 @@
+name: laya
+repo: https://github.com/ganeshdipdumbare/laya
+revision_sha: ec4b51a77846dd4e4f6c7072fb40044d87df1684
+author: ganeshdipdumbare
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: unknown
+category: local_server
+what_it_does: 'Self-hosted HTTP server for Laya: typed decisions (choice, score, true/false) with calibrated
+  probabilities in one forward pass. Runs locally in Docker — no API key, data stays on the machine.'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+- extract
+models_supported: []
+key_claims:
+- excerpt: The first run downloads a checkpoint (~0.9–1.7 GB) and can take several minutes.
+  verbatim: true
+- excerpt: '```sh docker compose up -d --build ``` Poll until the checkpoint is resident (`/healthz` is
+    **503** while loading, **200** once warm): ```sh until curl -sf localhost:8080/healthz; do sleep 2;'
+  verbatim: true
+- excerpt: Body cap is 1 MiB.
+  verbatim: true

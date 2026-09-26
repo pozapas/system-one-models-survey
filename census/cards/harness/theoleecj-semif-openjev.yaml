@@ -1,0 +1,27 @@
+name: SemIf-OpenJev
+repo: https://github.com/TheoLeeCJ/SemIf-OpenJev
+revision_sha: 23cf1f39fc9534fe81437200959b6dfc7106e45a
+author: TheoLeeCJ
+created: '2026-09-15'
+access_date: '2026-09-24'
+license: MIT
+category: open_model_training
+what_it_does: Independent, unaffiliated project (formerly named OpenJev, renamed SemIf) reproducing Jev's typed-decision
+  interface pattern with open models, reading option probabilities directly from a frozen model with no generation.
+primitives_supported:
+- choice
+- noul
+models_supported:
+- MiniCPM5-2B
+- Qwen3.5-4B
+- Qwen3.8-27B (EXL3 bridge)
+key_claims:
+- excerpt: SemIf was formerly called OpenJev. It is not affiliated with or endorsed by TypeSafe.
+  verbatim: true
+- excerpt: This project reproduces that interface pattern with open models; it does not reproduce Jev's undisclosed
+    model or training.
+  verbatim: true
+- excerpt: Added per-workload temperature calibration and calibrated prediction outputs
+  verbatim: true
+note_for_report: Matches the 'SemIf-4B' local MLX model referenced in the Ibrahim & Zaki replication package's run_local_semif.py;
+  the repo's own history confirms SemIf and OpenJev are the same project under different names.

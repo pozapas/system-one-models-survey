@@ -1,0 +1,22 @@
+name: laya.cpp
+repo: https://github.com/lkarlslund/laya.cpp
+revision_sha: e1c6e7832189d36903e90c6fe3b8b1fece7f6f17
+author: lkarlslund
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: C++ inference for Laya typed decisions - supports CUDA, Vulkan, Core ML, CPU
+primitives_supported:
+- noul
+- binary
+models_supported: []
+key_claims:
+- excerpt: '[Binary releases](https://github.com/lkarlslund/laya.cpp/releases) provide Windows and Linux
+    x64 CUDA/Vulkan executables plus a macOS arm64 Core ML executable.'
+  verbatim: true
+- excerpt: Latest paired comparisons against matching-precision Python, using 250 fixed questions across
+    all three models at batch sizes 1, 2, 4 and 8.
+  verbatim: true
+- excerpt: Higher is better; **1× means equal throughput**.
+  verbatim: true

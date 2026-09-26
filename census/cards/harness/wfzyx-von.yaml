@@ -1,0 +1,26 @@
+name: von
+repo: https://github.com/wfzyx/von
+revision_sha: 1d86116dcc7604d7a6022858447c2d92f18a50f7
+author: wfzyx
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Open-source, non-autoregressive System One decision model (Von) with calibrated discrete, probabilistic
+  and ordinal inference in sub-25ms; v1.2 adds order-invariant option scoring.
+primitives_supported:
+- choice
+- score
+- ordinal
+models_supported:
+- Von 1.1
+- Von 1.2
+key_claims:
+- excerpt: 'On JevBench''s option-order diagnostic, 49.5% of its hard-tier answers changed when the same options
+    were shuffled (reference models: 0–5%).'
+  verbatim: true
+- excerpt: each option's tokens attend only to the premise and to themselves — never to another option — and every
+    option's rotary position restarts at the end of the premise
+  verbatim: true
+- excerpt: easy (48) | 93.8% | 100.0%
+  verbatim: true

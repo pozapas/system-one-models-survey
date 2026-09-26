@@ -1,0 +1,25 @@
+name: laya-fast
+repo: https://github.com/DJLougen/laya-fast
+revision_sha: 3a9d534642cadb54c4cdb531f9abfa694acbefc8
+author: DJLougen
+created: '2026-09-23'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 'Apple Silicon runtime for Laya: Neural Engine + GPU router for typed decisions'
+primitives_supported:
+- choice
+- score
+- noul (yes/no)
+models_supported:
+- ModernBERT-large
+key_claims:
+- excerpt: An independent Apple Silicon runtime for [Convai Innovations' Laya](https://huggingface.co/convaiinnovations/laya),
+    a 421M ModernBERT-large typed-decision model released under Apache-2.0.
+  verbatim: true
+- excerpt: This repository's MLX model and request API are ports of the Apache-2.0 Laya reference implementation.
+  verbatim: true
+- excerpt: '`ane/ane_model.py` is adapted from [mizorewww/laya-coreml](https://github.com/mizorewww/laya-coreml)''s
+    ANE prototype under Apache-2.0; this project modifies it for the English checkpoint and adds the fixed-bucket
+    export/runtime/router.'
+  verbatim: true

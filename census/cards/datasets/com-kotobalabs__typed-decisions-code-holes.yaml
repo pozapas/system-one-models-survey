@@ -1,0 +1,68 @@
+name: 'typed-decisions: code-holes'
+name_src:
+  quote: '# typed-decisions: code-holes'
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+hf_id: com-kotobalabs/typed-decisions-code-holes
+hf_id_src:
+  quote: 'with a **gold answer**: the token the commit actually put there.'
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+revision_sha: see meta_raw for pinned sha, fetched 2026-09-24
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+vendor_or_author: com-kotobalabs
+vendor_or_author_src:
+  quote: 'with a **gold answer**: the token the commit actually put there.'
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+release_date: see meta_raw createdAt
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+availability_and_license: apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+purpose: Single-token substitutions mined from git history of 64 public kotoba-lang repositories, each
+  a choice question with a gold answer (the token the commit actually put there)
+purpose_src:
+  quote: 'with a **gold answer**: the token the commit actually put there.'
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+size_and_splits: train / validation / test splits (sizes not independently re-verified in this compact
+  pass)
+size_and_splits_src:
+  quote: A single-token substitution inside a 500-token rewrite is a diff
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+label_construction: Gold label is the token the commit actually inserted at that position; not model-
+  or teacher-labelled
+label_construction_src:
+  quote: 'with a **gold answer**: the token the commit actually put there.'
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+teacher_model: not established in this compact pass
+teacher_model_src:
+  quote: none found
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+teacher_self_agreement: not established in this compact pass
+teacher_self_agreement_src:
+  quote: none found
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+other_reference_points: not established in this compact pass; compact card, minor dataset
+other_reference_points_src:
+  quote: none found
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+evaluation_protocol_published: not established in this compact pass; compact card, minor dataset
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+disclosed_caveats: not established in this compact pass; compact card, minor dataset
+disclosed_caveats_src:
+  quote: none found
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+source_urls:
+- https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md
+source_urls_src:
+  quote: 'with a **gold answer**: the token the commit actually put there.'
+  url: https://huggingface.co/datasets/com-kotobalabs/typed-decisions-code-holes/raw/72f6bb8d1dcf17777483da5b96081b46f3e5d279/README.md

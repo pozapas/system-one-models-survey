@@ -1,0 +1,22 @@
+name: jev-benchmarks
+repo: https://github.com/AbdelStark/jev-benchmarks
+revision_sha: 0d610cc53e79bcbec691312b0c4adb4a0e371642
+author: AbdelStark
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: evaluation
+what_it_does: 'Probability-aware evaluation for typed decision models: calibration, selective risk, latency,
+  and reproducible benchmarks.'
+primitives_supported:
+- choice
+- score
+models_supported: []
+key_claims:
+- excerpt: 'The first study compares [TypeSafe Jev](https://typesafe.ai/) with [`fastino/gliner2.5-multi-v1`](https://huggingface.co/fastino/gliner2.5-multi-v1)
+    on their shared capability: zero-shot, single-label text classification with per-label probabilities.'
+  verbatim: true
+- excerpt: 'Three hundred held-out examples, 100 per condition:   The result is deliberately mixed.'
+  verbatim: true
+- excerpt: Jev has a clear accuracy and Brier-score advantage on AG News and Banking77/BTZSC.
+  verbatim: true

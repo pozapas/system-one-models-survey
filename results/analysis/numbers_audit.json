@@ -1,0 +1,7 @@
+{
+  "document_pass_tokens_scanned": 1003,
+  "document_pass_unmatched": 7,
+  "labeled_values_available": 12379,
+  "rule": "the source pass must be empty; the document pass is advisory",
+  "source_pass_hand_typed_numbers": 0
+}

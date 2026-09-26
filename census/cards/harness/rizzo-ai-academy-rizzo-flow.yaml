@@ -1,0 +1,26 @@
+name: rizzo-flow
+repo: https://github.com/Rizzo-AI-Academy/rizzo-flow
+revision_sha: f36358387945fb09296c0999b62a305d29fe1e39
+author: Rizzo-AI-Academy
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 'The open, local take on Jev: typed decisions from an LLM, without generating a single token'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported: []
+key_claims:
+- excerpt: 140 moves in 25.6 s (≈ 5.5 per second), about <b>150 ms per decision</b> round trip, <b>0 generated
+    tokens</b>.<br /> Spark-X2.5-4B at 8 bit on an RTX 5060 Ti,
+  verbatim: true
+- excerpt: '```bash git clone https://github.com/Rizzo-AI-Academy/rizzo-flow && cd rizzo-flow uv sync
+    --locked # seconds: four small Python packages uv run rizzo download # llama.cpp for this machine
+    + Spark-X2.5-4B Q8_0 (~4.4'
+  verbatim: true
+- excerpt: '`uv run rizzo download --size 1.7b` fetches a 1.8 GB model that is fine for a first look and
+    [much less accurate](#results-so-far) afterwards.'
+  verbatim: true

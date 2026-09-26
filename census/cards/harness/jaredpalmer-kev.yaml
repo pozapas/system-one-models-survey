@@ -1,0 +1,25 @@
+name: kev
+repo: https://github.com/jaredpalmer/kev
+revision_sha: 30c619b0527501cfdd448cb6eb9887e2af454603
+author: jaredpalmer
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Small Jev-like decision models (0.8B, 4B, 9B) built on Qwen3.5 that you can train yourself; kev.serve
+  runs a local server exposing the same API shape as TypeSafe's System One.
+primitives_supported:
+- choice (noul)
+- choice
+- score
+models_supported:
+- Qwen3.5-0.8B
+- Qwen3.5-4B
+- Qwen3.5-9B
+key_claims:
+- excerpt: The API matches TypeSafe's System One, so you can point their Python SDK at your local server.
+  verbatim: true
+- excerpt: uv run --extra serve python -m kev.serve --run jaredpalmer/kev-4b --port 8009
+  verbatim: true
+- excerpt: 'curl -s localhost:8009/v1/systemone -H ''content-type: application/json'' -d ''{'
+  verbatim: true

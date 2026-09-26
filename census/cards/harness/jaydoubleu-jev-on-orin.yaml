@@ -1,0 +1,29 @@
+name: jev-on-orin
+repo: https://github.com/JayDoubleu/jev-on-orin
+revision_sha: 66b5c976d717f7cc088f272768a39947873cc3c5
+author: JayDoubleu
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: evaluation
+what_it_does: 'Open-source Jev-style typed decisions on a Jetson AGX Orin: benchmarks and a 4.5x faster
+  Nimble scorer'
+primitives_supported:
+- choice
+- score
+models_supported:
+- Qwen3.5-9B
+- Qwen3.5-4B
+- Gemma 26B
+- Gemma
+- ModernBERT-large
+- ModernBERT
+- DeBERTa
+key_claims:
+- excerpt: 'Open-source Jev-style typed decisions on an NVIDIA Jetson AGX Orin 64 GB: which projects run,
+    how fast, how well, and a tuned Nimble scorer that makes the best one'
+  verbatim: true
+- excerpt: All on the Orin's integrated GPU, bf16, transformers 5.17, torch 2.8.0 built for sm_87.
+  verbatim: true
+- excerpt: For scale, the projects above quote the real Jev API at roughly 100 to 300 ms per call.
+  verbatim: true

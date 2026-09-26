@@ -1,0 +1,26 @@
+name: laya
+repo: https://github.com/receptron/laya
+revision_sha: 6478649e723122ca24bbf5fb69ed1010023c9750
+author: receptron
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript
+  via ONNX Runtime
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported:
+- ModernBERT
+key_claims:
+- excerpt: Run **[Laya](https://huggingface.co/convaiinnovations/laya)** — the open-source, Jev-compatible
+    _System 1 decision model_ by Convai Innovations — from Node.js / TypeScript.
+  verbatim: true
+- excerpt: '```sh npm install @receptron/laya ```  Node.js 20 or newer.'
+  verbatim: true
+- excerpt: The ONNX weights (about 1.7 GB, fp32) are downloaded from Hugging Face on first use and cached
+    under `~/.cache/receptron-laya` (override with `LAYA_CACHE`).
+  verbatim: true

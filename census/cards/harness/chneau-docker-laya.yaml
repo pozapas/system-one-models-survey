@@ -1,0 +1,22 @@
+name: docker-laya
+repo: https://github.com/chneau/docker-laya
+revision_sha: 579f5885c27f6b1469b0aa3c4d004d7ed13fc78b
+author: chneau
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: 'Dockerized FastAPI service for Laya typed-decision predictions: multi-checkpoint routing,
+  API-key/Basic auth, presets and bulk inference.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: Built and published for `linux/amd64` and `linux/arm64`.
+  verbatim: true
+- excerpt: '- 🛡️ **Non-Root**: runs as unprivileged `appuser` (uid `10001`).'
+  verbatim: true
+- excerpt: '- 📦 **Multi-Architecture**: supports both `linux/amd64` and `linux/arm64`.'
+  verbatim: true

@@ -1,0 +1,25 @@
+name: agent-jev
+repo: https://github.com/malevrigns/agent-jev
+revision_sha: a965ca8ff06ccabc0c796dca5447b55cc2069cee
+author: malevrigns
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'AgentJev-0.6B - a fast ''System One'' decision model for AI Agents: feed it any unstructured
+  state (diffs, traces, logs) and structured questions, get calibrated probability distributions back
+  in one ~50ms forward pass. Zero output-token decoding.'
+primitives_supported:
+- choice
+- score
+models_supported:
+- Qwen
+- Qwen3
+key_claims:
+- excerpt: 'Weights: <a href="https://huggingface.co/aimeigaoshou/agent-jev">https://huggingface.co/aimeigaoshou/agent-jev</a>    &nbsp;&nbsp;·&nbsp;&nbsp;   &nbsp;&nbsp;·&nbsp;&nbsp;   &nbsp;&nbsp;·&nbsp;&nbsp;   &nbsp;&nbsp;·&nbsp;&nbsp;   &nbsp;&nbsp;·&nbsp;&nbsp;   &nbsp;&nbsp;·&nbsp;&nbsp;   &nbsp;&nbsp;·&nbsp;&nbsp;  AgentJev-0.6B
+    does not write.'
+  verbatim: true
+- excerpt: The usual answer is to ask a 27B–70B model to talk its way to a boolean, then parse the talk.
+  verbatim: true
+- excerpt: '---   The backbone is Qwen3-0.6B with the language-model head removed.'
+  verbatim: true

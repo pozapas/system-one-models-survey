@@ -1,0 +1,28 @@
+name: Kev
+repo: https://github.com/arjun988/Kev
+revision_sha: 959da16ee364722ba06daeac392df96c011c67b4
+author: arjun988
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Open-source System One decision engine. Typed choice / score / noul with calibrated probabilities.
+  Self-host with Ollama or any OpenAI-compatible model. Apache-2.0.
+primitives_supported:
+- choice
+- score
+- noul
+- ordinal
+models_supported: []
+key_claims:
+- excerpt: '--- ```bash npm install @kev-ai/sdk npm install -g @kev-ai/server @kev-ai/cli ``` ```bash
+    kev-server # http://127.0.0.1:3000 (+ /playground/) kev demo kev health ``` LangChain / LlamaIndex:
+    `@kev-ai/sdk/langchain` · `@kev-ai/sdk/llamaindex` PyPI'
+  verbatim: true
+- excerpt: '---  ```bash curl -s http://127.0.0.1:3000/v1/systemone \   -H ''Content-Type: application/json''
+    \   -d ''{     "state": "Charged twice.'
+  verbatim: true
+- excerpt: 'I am furious.", "questions": { "topic": { "type": "choice", "instructions": "Which team?",
+    "criteria": { "billing": "charges and refunds", "technical": "bugs and outages" } }, "escalate": {
+    "type": "noul", "instructions":'
+  verbatim: true

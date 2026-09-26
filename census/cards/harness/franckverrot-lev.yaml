@@ -1,0 +1,25 @@
+name: lev
+repo: https://github.com/franckverrot/lev
+revision_sha: c48a945dbf629998d7458dcc5c16f58df964db94
+author: franckverrot
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Jev-style decision model based on LFM2.5-350M
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen
+- LFM2.5-350M
+key_claims:
+- excerpt: lev's a clone of [kev](https://github.com/jaredpalmer/kev), Jared Palmer's Jev-style decision
+    model, with the Qwen backbone replaced by LiquidAI's [LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M).
+  verbatim: true
+- excerpt: '- Weights: [franckverrot/lev-350m](https://huggingface.co/franckverrot/lev-350m) - Demo: [huggingface.co/spaces/franckverrot/lev](https://huggingface.co/spaces/franckverrot/lev)  The
+    architecture follows Archer Hume''s reconstruction of TypeSafe''s Jev in [Jev''s Architecture Unmasked](https://archerhume.com/posts/jevs-architecture-unmasked).'
+  verbatim: true
+- excerpt: Requires Python 3.12+, [uv](https://docs.astral.sh/uv/), and Node 20+ for the playground.
+  verbatim: true

@@ -1,0 +1,21 @@
+name: metask-jev
+repo: https://github.com/wayfind/metask-jev
+revision_sha: 7d318a469f5f9db42061e4cee183e97e4d0dd9b7
+author: wayfind
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: unknown
+category: open_model_training
+what_it_does: 'Metask-Jev: calibrated typed-decision models (Jev-class). Single forward pass, candidate-logit
+  readout. metask-jev-4b beats Bespoke Nimble-9B and Jev on JevBench.'
+primitives_supported:
+- choice
+- score
+models_supported:
+- Qwen3.5-4B
+- Qwen3.5
+key_claims:
+- excerpt: 探索最优开放权重的 typed-decision（Jev-class）模型：给定 state + bounded rubric，单次前向输出每个选项的校准概率。无生成、无解析。 参照：Bespoke
+    Nimble-9B 74.8% / 63.5（第14名）；Jev 1.13.0 76.0% / 75.3（第2名）。 ```bash git clone https://github.com/Raymond1122/metask-jev
+    && cd metask-jev pip install -r inference/requirements.txt python inference/demo.py --model
+  verbatim: true

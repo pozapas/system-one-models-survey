@@ -1,0 +1,28 @@
+name: Jev-Compatible
+repo: https://github.com/David-Lolly/Jev-Compatible
+revision_sha: e52e963d85392fbf7a4490f2c58152eed4af4f45
+author: David-Lolly
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: unknown
+category: local_server
+what_it_does: Turn your existing SGLang / vLLM deployment into a Jev-compatible decision service. No training.
+  No model changes. 把你现有的 SGLang / vLLM 部署变成一个兼容 Jev 的决策服务。无需任何修改。无需训练。无需更改模型。
+primitives_supported:
+- choice
+- score
+- noul
+- binary
+- ordinal
+models_supported:
+- Qwen3.8-27B
+key_claims:
+- excerpt: '``` Test environment: ```text GPU: 4 × NVIDIA L20 Model: Qwen3.8-27B Inference Engine: SGLang
+    Tensor Parallel: 4 Chat Completion: thinking = enabled stream = false temperature = 0 Runs:'
+  verbatim: true
+- excerpt: Ordinary Chat Completion generated on average 212 output tokens, of which 185 were reasoning
+    tokens; Jev Decision Service generates no chain of thought and performs only one candidate scoring
+  verbatim: true
+- excerpt: 'Final:  ```text Chat Completion    1282.3 ms Decision Gateway    232.1 ms ```  In this test
+    environment, the end-to-end latency of the Decision Gateway is about `1/5.5` of Chat Completion.'
+  verbatim: true

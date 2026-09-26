@@ -1,0 +1,273 @@
+{
+ "_d2_permutations": {
+  "p1": "the original d2_k5/k20/k50/k150 files, random.Random(_seed) stream of s00_freeze_inputs.d2_all",
+  "p2": {
+   "conditions": [
+    "d2_k5_p2",
+    "d2_k20_p2",
+    "d2_k50_p2",
+    "d2_k150_p2"
+   ],
+   "seed": "20260924-d2perm-p2"
+  },
+  "p3": {
+   "conditions": [
+    "d2_k5_p3",
+    "d2_k20_p3",
+    "d2_k50_p3",
+    "d2_k150_p3"
+   ],
+   "seed": "20260924-d2perm-p3"
+  },
+  "rule": "same 600 in-scope items as d2_k5; per item one shuffle of the sorted 150 intents; K keeps the gold plus the first K-1 non-gold intents in permutation order; keys o1..oK; in-scope items only (no out-of-scope rows at K=150)",
+  "script": "src/s00c_freeze_permutations.py"
+ },
+ "_retest_subset": {
+  "condition": "d1_neutral",
+  "item_ids": [
+   "agent_trace_observability_000011",
+   "agent_trace_observability_000020",
+   "agent_trace_observability_000028",
+   "agent_trace_observability_000048",
+   "agent_trace_observability_000054",
+   "agent_trace_observability_000057",
+   "agent_trace_observability_000058",
+   "agent_trace_observability_000072",
+   "agent_trace_observability_000077",
+   "agent_trace_observability_000094",
+   "customer_service_000019",
+   "customer_service_000027",
+   "customer_service_000031",
+   "customer_service_000045",
+   "customer_service_000046",
+   "customer_service_000064",
+   "customer_service_000075",
+   "customer_service_000084",
+   "customer_service_000090",
+   "customer_service_000096",
+   "invoice_processing_000000",
+   "invoice_processing_000002",
+   "invoice_processing_000006",
+   "invoice_processing_000019",
+   "invoice_processing_000020",
+   "invoice_processing_000024",
+   "invoice_processing_000032",
+   "invoice_processing_000047",
+   "invoice_processing_000055",
+   "invoice_processing_000090",
+   "security_incidents_000025",
+   "security_incidents_000032",
+   "security_incidents_000033",
+   "security_incidents_000038",
+   "security_incidents_000063",
+   "security_incidents_000065",
+   "security_incidents_000067",
+   "security_incidents_000071",
+   "security_incidents_000078",
+   "security_incidents_000079"
+  ]
+ },
+ "_seed": 20260924,
+ "_sources": {
+  "d1": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions revision c76749ec58bd8c3d2ea706b31c333a9059c38f90",
+  "d2": "https://github.com/clinc/oos-eval data/data_full.json and domains.json, commit 828f8093932c8fe6ca7936c3d2e52903b1c523de"
+ },
+ "d1_calib": {
+  "decisions": 1500,
+  "file": "d1_calib.jsonl",
+  "requests": 300,
+  "sha256": "e361865af906b14d76ef284a5bc59f66077e05b992783c435d649bbe74b3b93c"
+ },
+ "d1_native": {
+  "decisions": 2000,
+  "file": "d1_native.jsonl",
+  "requests": 400,
+  "sha256": "81614b52b78203cff75bf3824d0c2a10dc3a42588c7c97012c237d6a19952ba9"
+ },
+ "d1_neutral": {
+  "decisions": 2000,
+  "file": "d1_neutral.jsonl",
+  "requests": 400,
+  "sha256": "013fd3993a5d3e4e77cd267161d6333a202a35ca0daa2342abaf945f8548b591"
+ },
+ "d2_hier_dom": {
+  "decisions": 600,
+  "file": "d2_hier_dom.jsonl",
+  "requests": 600,
+  "sha256": "1179c57be59709f4dc9cd61719d6b805212834fd68d74196cdb342a40478f39d"
+ },
+ "d2_hier_int": {
+  "decisions": 600,
+  "file": "d2_hier_int.jsonl",
+  "requests": 600,
+  "sha256": "061bc29738de013edcfe9f7ccbbd978dc0687d963922c517b53ea5f8c65c0c4d"
+ },
+ "d2_k150": {
+  "decisions": 800,
+  "file": "d2_k150.jsonl",
+  "requests": 800,
+  "sha256": "b41706d09f2bd228463d50b5e1cd81d45c7da2fd3abaa5ce7fd869aaabd9a1ec"
+ },
+ "d2_k150_p2": {
+  "decisions": 600,
+  "file": "d2_k150_p2.jsonl",
+  "requests": 600,
+  "sha256": "63895898108c914543632b545acbe480ee07018a34c1eb59abc76e97ad161218"
+ },
+ "d2_k150_p3": {
+  "decisions": 600,
+  "file": "d2_k150_p3.jsonl",
+  "requests": 600,
+  "sha256": "d7c5116a65aa02b272cc74911555d024062080ffa8ffe5bbefe29b52085a8cc3"
+ },
+ "d2_k20": {
+  "decisions": 600,
+  "file": "d2_k20.jsonl",
+  "requests": 600,
+  "sha256": "d35c78e0a0541bc911268db6b56f4d644335ee76b1c907d4f9857a56b1041c98"
+ },
+ "d2_k20_p2": {
+  "decisions": 600,
+  "file": "d2_k20_p2.jsonl",
+  "requests": 600,
+  "sha256": "a9b3641f6901134d5d125b8dbf1ccdb3de8166bd8abe8538c71c0f9eefcfb7a5"
+ },
+ "d2_k20_p3": {
+  "decisions": 600,
+  "file": "d2_k20_p3.jsonl",
+  "requests": 600,
+  "sha256": "d6b9d8f31634b9d91fe6bae0c9260ffc28c2c04ecc4ffd2deb75d8befb92b3a3"
+ },
+ "d2_k5": {
+  "decisions": 600,
+  "file": "d2_k5.jsonl",
+  "requests": 600,
+  "sha256": "e0dbee0ded6b07ab9fd8b372287561c640f39ac436bb5782bcd24f6bea71d8a2"
+ },
+ "d2_k50": {
+  "decisions": 600,
+  "file": "d2_k50.jsonl",
+  "requests": 600,
+  "sha256": "7fd1cc8f33e947e01ca7136df96164ef09b7d5ea0ac65572a948df6ef9dfbb08"
+ },
+ "d2_k50_p2": {
+  "decisions": 600,
+  "file": "d2_k50_p2.jsonl",
+  "requests": 600,
+  "sha256": "a69ee019b078160e53954ebfafed27d45c08e702a4d12137b3e04d970b7e56a8"
+ },
+ "d2_k50_p3": {
+  "decisions": 600,
+  "file": "d2_k50_p3.jsonl",
+  "requests": 600,
+  "sha256": "065b475d9621fbb18e460f57e1a92ecbbcd68643f432e7ce9429bd0fbe224bc3"
+ },
+ "d2_k5_p2": {
+  "decisions": 600,
+  "file": "d2_k5_p2.jsonl",
+  "requests": 600,
+  "sha256": "84ee31be3d6b888201a60429489d81d7a2e5c34ae8353a2f905d097167122e65"
+ },
+ "d2_k5_p3": {
+  "decisions": 600,
+  "file": "d2_k5_p3.jsonl",
+  "requests": 600,
+  "sha256": "48228b0bbc8a7b255ab71f7de3598e0b449e7ad98bfa47920894c60a20bdd475"
+ },
+ "d3_conv_go_awry": {
+  "decisions": 500,
+  "file": "d3_conv_go_awry.jsonl",
+  "requests": 500,
+  "sha256": "de3ef7269832338cee4c271d23b9a4a18ea9919d55937bb1eb26612ee29fe712"
+ },
+ "d3_emotion": {
+  "decisions": 498,
+  "file": "d3_emotion.jsonl",
+  "requests": 498,
+  "sha256": "ccd5a620b9269d577a0f9672351b0eaa1b2f03fd0527eadaf9884e3078cc9f9b"
+ },
+ "d3_wiki_corpus": {
+  "decisions": 500,
+  "file": "d3_wiki_corpus.jsonl",
+  "requests": 500,
+  "sha256": "8b24c2f580b834d61971029eb4b8af94fc58d186b4673f3fe2a57b33557436d3"
+ },
+ "d3_wiki_politeness": {
+  "decisions": 498,
+  "file": "d3_wiki_politeness.jsonl",
+  "requests": 498,
+  "sha256": "a98b22a9efbac95da3dca46eaa40f5ac0b3f024527aa823f8e73446f74596e68"
+ },
+ "e2_d1_k01": {
+  "decisions": 600,
+  "file": "e2_d1_k01.jsonl",
+  "requests": 400,
+  "sha256": "9ea1cf5240cb73e4b795a10663afb687fc65228ef9cce5690ecb9d212fa0bf98"
+ },
+ "e2_d1_kny": {
+  "decisions": 600,
+  "file": "e2_d1_kny.jsonl",
+  "requests": 400,
+  "sha256": "73b0ebcfcfb734ac73f4c1f1e501b1f964344907d5114584c17b3878a79aa1f6"
+ },
+ "e2_d1_krand": {
+  "decisions": 600,
+  "file": "e2_d1_krand.jsonl",
+  "requests": 400,
+  "sha256": "4ae671a3e091c14e78dca097ea7cb590690ae898d7d54d5e1423f51af7401803"
+ },
+ "e2_d1_kswap": {
+  "decisions": 600,
+  "file": "e2_d1_kswap.jsonl",
+  "requests": 400,
+  "sha256": "106ab580a8274a88c9e504c688c8d0d1da232b3846f4d6ce55de6e55085c3ca8"
+ },
+ "e2_d3_conv_go_awry_k01": {
+  "decisions": 500,
+  "file": "e2_d3_conv_go_awry_k01.jsonl",
+  "requests": 500,
+  "sha256": "cf178f09d2a23b949b963cf527b1a8c55af6285196609edb3c79adbf8a02b728"
+ },
+ "e2_d3_conv_go_awry_kny": {
+  "decisions": 500,
+  "file": "e2_d3_conv_go_awry_kny.jsonl",
+  "requests": 500,
+  "sha256": "f3615a1592e3aad413ee0fa58d00d63635e9b2439d89aad2ed4755afd66c8c4f"
+ },
+ "e2_d3_conv_go_awry_krand": {
+  "decisions": 500,
+  "file": "e2_d3_conv_go_awry_krand.jsonl",
+  "requests": 500,
+  "sha256": "287bf4c6ba1e0c5af8f782869fa2bd5f01ba3a47de5613678801209b44e0802e"
+ },
+ "e2_d3_conv_go_awry_kswap": {
+  "decisions": 500,
+  "file": "e2_d3_conv_go_awry_kswap.jsonl",
+  "requests": 500,
+  "sha256": "329c2641487bf27954e5150fc05ec5652a7bcccd609402c6b4ee15a19b6e74a0"
+ },
+ "e2_d3_wiki_corpus_k01": {
+  "decisions": 500,
+  "file": "e2_d3_wiki_corpus_k01.jsonl",
+  "requests": 500,
+  "sha256": "a778a5c5904bb1234aaf256d593275c29ebfdc6460e25d0ad974b68dcb0d9bda"
+ },
+ "e2_d3_wiki_corpus_kny": {
+  "decisions": 500,
+  "file": "e2_d3_wiki_corpus_kny.jsonl",
+  "requests": 500,
+  "sha256": "01147e9e891551699ea9bcda03e890758e11aa16e7f90ea6a72b4409ae81eaa6"
+ },
+ "e2_d3_wiki_corpus_krand": {
+  "decisions": 500,
+  "file": "e2_d3_wiki_corpus_krand.jsonl",
+  "requests": 500,
+  "sha256": "f8ea689c90b1fe52e9748b93371fa28531c2bb5d1ec9f76a050601b2d063e9e6"
+ },
+ "e2_d3_wiki_corpus_kswap": {
+  "decisions": 500,
+  "file": "e2_d3_wiki_corpus_kswap.jsonl",
+  "requests": 500,
+  "sha256": "0c3248232c3fcb39aa3eb5ba32d91a09d2d587f6b9b43ae8a39ff6ff90656d22"
+ }
+}

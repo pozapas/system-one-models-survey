@@ -1,0 +1,24 @@
+name: stuntdouble
+repo: https://github.com/ReallyArtificial/stuntdouble
+revision_sha: fb9f08ec37a4fa62f80a8aeceac1cdcbcb02de29
+author: ReallyArtificial
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Drop-in /v1/systemone proxy that shadows Jev with local decision models (Kev, Laya) and
+  reports whether you can swap
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: 'It also gives open-model authors a way to prove their models on real workloads, and it has
+    already caught a concrete disagreement: on the jev-by-example cases, two small models'
+  verbatim: true
+- excerpt: Find out whether a local decision model can replace Jev on your traffic before you switch.**  stuntdouble
+    is a drop-in proxy for TypeSafe's `/v1/systemone` API.
+  verbatim: true
+- excerpt: Node 20.17+.
+  verbatim: true

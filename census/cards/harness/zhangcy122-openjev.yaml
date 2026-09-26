@@ -1,0 +1,33 @@
+name: OpenJev
+repo: https://github.com/zhangcy122/OpenJev
+revision_sha: 20e1fa465908727ee9b93135f8ff6c6da719e748
+author: zhangcy122
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: local_server
+what_it_does: 'OpenJev: Open-source alternative to TypeSafe Jev. Typed probabilistic decision API (Choice,
+  Noul, Score) powered by open LLMs & constrained logprob calibration.'
+primitives_supported:
+- choice
+- score
+- noul
+- binary
+- ordinal
+- extract
+models_supported:
+- Qwen3
+- Qwen3.6-35B
+- Qwen3-4B
+- Gemma 4
+key_claims:
+- excerpt: '> **Production-Grade Source-Available Alternative to TypeSafe Jev**   > Transform modern open-weight
+    LLMs (Qwen3, DeepSeek-V4.1, Gemma 4, gpt-oss) into high-throughput, typed probabilistic decision services
+    (System 1 Decisions).'
+  verbatim: true
+- excerpt: '``` Incoming State & Questions            │            ▼ ┌───────────────────────────────────────────────────────────┐
+    │                    OpenJevPro Engine                      │ │                                                           │
+    │  1.'
+  verbatim: true
+- excerpt: Schema Enforcement (vLLM Guided Decoding / Grammar)   │ │  2.
+  verbatim: true

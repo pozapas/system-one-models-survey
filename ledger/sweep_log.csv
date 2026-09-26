@@ -1,0 +1,31 @@
+source,query,run_timestamp_utc,n_hits,retries,note
+arXiv,all:Jev,2026-09-24T14:14:13.474964Z,16,0,OK
+arXiv,"all:""System One model""",2026-09-24T14:14:20.489551Z,3,0,OK
+arXiv,"all:""System One models""",2026-09-24T14:14:24.052347Z,3,0,OK
+arXiv,"all:""decision model"" AND all:typed",2026-09-24T14:14:31.339510Z,3,0,OK
+arXiv,"all:""typed decision""",2026-09-24T14:14:35.099592Z,5,0,OK
+arXiv,all:Laya AND all:calibrat*,2026-09-24T14:15:19.989255Z,0,4,Empty response
+arXiv,all:Kev AND all:decision,2026-09-24T14:15:54.226441Z,1,0,OK
+arXiv,all:Nimble AND all:decision,2026-09-24T14:16:41.483815Z,0,4,Empty response
+arXiv,all:TypeSafe,2026-09-24T14:17:26.042530Z,0,4,Empty response
+arXiv,"all:""decision models"" AND all:calibration",2026-09-24T14:17:29.465578Z,2,0,OK
+arXiv,"abs:""typed probabilistic""",2026-09-24T14:18:20.668551Z,0,4,Empty response
+arXiv,"all:""decision model"" AND all:Jev",2026-09-24T14:18:39.626288Z,6,0,OK
+arXiv,all:jev-1.13,2026-09-24T14:19:39.327228Z,0,4,Empty response
+arXiv,all:RLCD,2026-09-24T14:20:23.734128Z,0,4,Empty response
+arXiv,"all:""calibrated decisions""",2026-09-24T14:20:27.141450Z,1,0,OK
+arXiv,force_include (id_list),2026-09-24T14:20:30.649577Z,16,0,16 unresolved
+OpenAlex,cites:2609.24052,2026-09-24T14:20:34.836533Z,TBD,0,Found 0 citing works
+OpenAlex,cites:2609.23986,2026-09-24T14:20:34.836533Z,TBD,0,Found 0 citing works
+Semantic Scholar,citations:2609.24052,2026-09-24T14:20:37.674678Z,TBD,0,Found 0 citing works
+Semantic Scholar,citations:2609.23986,2026-09-24T14:20:37.674678Z,TBD,0,Found 0 citing works
+arxiv,"RERUN 8 queries (laya,nimble,typesafe,typedprob,jev113,rlcd,sysone_any,decmodels)",2026-09-24T14:53:16Z,,5,"NO-FEED on every attempt: machine-wide arXiv 429 during full-text downloads; status UNRESOLVED, retry scheduled"
+websearch,"site:arxiv.org Laya/RLCD; ""System One"" Jev; decision models Jev Nimble Kev",2026-09-24T14:53:16Z,0 new,0,cross-check: all 2609.* hits already in candidates.csv; no new study. Stream-3 precedent noted: arXiv 2601.13284 (calibration-aware RL for decision-making LLMs)
+arXiv,all:Laya AND all:calibrat* [curl rerun],2026-09-25T04:08:19Z,0,3,OK; 0 not previously screened
+arXiv,all:Nimble AND all:decision [curl rerun],2026-09-25T04:08:32Z,0,0,OK; 0 not previously screened
+arXiv,all:TypeSafe [curl rerun],2026-09-25T04:08:40Z,2,0,OK; 2 not previously screened
+arXiv,"abs:""typed probabilistic"" [curl rerun]",2026-09-25T04:08:45Z,0,0,OK; 0 not previously screened
+arXiv,"all:""jev-1.13"" [curl rerun]",2026-09-25T04:08:49Z,0,0,OK; 0 not previously screened
+arXiv,all:RLCD [curl rerun],2026-09-25T04:08:56Z,2,0,OK; 2 not previously screened
+arXiv,"all:""System One"" AND all:decision [curl rerun]",2026-09-25T04:09:01Z,6,0,OK; 2 not previously screened
+arXiv,"all:""decision models"" AND all:LLM [curl rerun]",2026-09-25T04:09:05Z,2,0,OK; 1 not previously screened

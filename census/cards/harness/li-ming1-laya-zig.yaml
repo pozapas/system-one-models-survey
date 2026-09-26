@@ -1,0 +1,23 @@
+name: laya-zig
+repo: https://github.com/li-ming1/laya-zig
+revision_sha: a722335308d05d640946f484838f45e160a46670
+author: li-ming1
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 'A from-scratch, dependency-free Zig CPU runtime for the Laya System-1 decision model: tokenizer
+  + mmBERT-base encoder + decision head in one binary, no Python/torch/BLAS. Work in progress, see README.'
+primitives_supported:
+- binary
+models_supported:
+- mmBERT-base
+key_claims:
+- excerpt: It runs end to end and the forward pass is checked against an > independent reference implementation,
+    and it has had two serious performance > passes (see *Measured* —
+  verbatim: true
+- excerpt: A from-scratch Zig runtime for the [Laya](https://github.com/NandhaKishorM/laya) System-1 decision
+    model (`convaiinnovations/laya-multilingual`, 322M).
+  verbatim: true
+- excerpt: 'Laya is a **System-1 decision model**: one forward pass, non-autoregressive, no text generation.'
+  verbatim: true

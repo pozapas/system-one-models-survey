@@ -1,0 +1,70 @@
+name: typed-decisions (pngwn / nanodiff)
+name_src:
+  quote: '# typed-decisions'
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+hf_id: pngwn/typed-decisions
+hf_id_src:
+  quote: pngwn/typed-decisions
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+revision_sha: see meta_raw for pinned sha, fetched 2026-09-24
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+vendor_or_author: pngwn
+vendor_or_author_src:
+  quote: pngwn/typed-decisions
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+release_date: see meta_raw createdAt
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+availability_and_license: cc-by-sa-4.0
+availability_and_license_src:
+  quote: 'license: cc-by-sa-4.0'
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+purpose: Typed-decision corpus for training a masked-diffusion LM (the LLaDA recipe, nanodiff-350m-base)
+  to emit calibrated discrete decisions instead of text
+purpose_src:
+  quote: A typed-decision corpus for training a masked-diffusion LM to emit **calibrated
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+size_and_splits: Synthetic and MMLU-Pro-derived examples assigned to splits by md5 hash of id; MMLU-Pro
+  choice rows are a partition of its public test split only, so absolute accuracies are not comparable
+  across studies
+size_and_splits_src:
+  quote: Synthetic and MMLU-Pro examples are assigned by an md5 hash of their id.
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+label_construction: Gold severity label is the bucket of a latent draw, not the model's posterior; a v2
+  companion corpus (pngwn/typed-decisions-v2) later fixed a disclosed synthetic-domain label/oracle inversion
+  in v1
+label_construction_src:
+  quote: The gold severity label is the bucket of the latent draw, **not** the posterior
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+teacher_model: not established in this compact pass
+teacher_model_src:
+  quote: none found
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+teacher_self_agreement: not established in this compact pass
+teacher_self_agreement_src:
+  quote: none found
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+other_reference_points: not established in this compact pass; compact card, minor dataset
+other_reference_points_src:
+  quote: none found
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+evaluation_protocol_published: not established in this compact pass; compact card, minor dataset
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+disclosed_caveats: not established in this compact pass; compact card, minor dataset
+disclosed_caveats_src:
+  quote: none found
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+source_urls:
+- https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md
+source_urls_src:
+  quote: pngwn/typed-decisions
+  url: https://huggingface.co/datasets/pngwn/typed-decisions/raw/ccc60827116873886f36baf3e9125a2ea91cce6b/README.md

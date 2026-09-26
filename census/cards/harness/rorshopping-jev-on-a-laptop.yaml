@@ -1,0 +1,28 @@
+name: jev-on-a-laptop
+repo: https://github.com/rorshopping/jev-on-a-laptop
+revision_sha: 5821d910610331a695f5185a6ad1d6b514e8a62f
+author: rorshopping
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: evaluation
+what_it_does: 'Unofficial study: Jev-style parallel typed decisions on stock 1.5B-8B models on an Apple
+  Silicon laptop. Benchmarks, research notes, and a Hugging Face Space demo.'
+primitives_supported:
+- choice
+models_supported:
+- Qwen
+- Qwen2
+- Qwen3-8B
+key_claims:
+- excerpt: Not affiliated with TypeSafe AI.** This is a hands-on study of the *parallel constrained decoding*
+    idea behind [Jev](https://typesafe.ai/) — the "System One" model launched by Diogo Almeida's TypeSafe
+    AI
+  verbatim: true
+- excerpt: 'The interesting claim: **a 1.5B model that cannot reliably write 28-field JSON can still make
+    28 schema-valid decisions in ~0.4 s.** ``` [context + schema] ──► prefill (once) ──►'
+  verbatim: true
+- excerpt: 'field N       └───────────┴──── one batched forward pass ────────┘                           │               slice
+    logits → softmax → pick value + probability ```  Engine: [`harshatheg/Qwen-2.5-1B-RLCD`](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)
+    (Apache-2.0, cloned at setup, **not** vendored here).'
+  verbatim: true

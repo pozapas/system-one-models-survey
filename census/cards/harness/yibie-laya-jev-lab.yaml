@@ -1,0 +1,23 @@
+name: laya-jev-lab
+repo: https://github.com/yibie/laya-jev-lab
+revision_sha: 30ba64dceb7da058b306c104a571f1242dbd582b
+author: yibie
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'Independent measurements of typed-decision models: Jev (TypeSafe API) vs Laya (open weights),
+  and a local-first cascade that matches Jev''s accuracy at 1.8x the speed'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: Measured comparisons of typed-decision models — **Jev** (TypeSafe, closed API) vs **Laya**
+    (Convai, open weights) — plus a working **cascade** that matches Jev's accuracy at ~1.8× the speed.
+  verbatim: true
+- excerpt: Everything here was run on an Apple M4 Max (macOS 27, Python 3.14, MLX 0.32.2).
+  verbatim: true
+- excerpt: 'This repo is an independent attempt to answer three practical questions:  1.'
+  verbatim: true

@@ -1,0 +1,227 @@
+repo,sha,created,stars,license,category,parent_model,note
+yibie/awesome-jev,70522eac9aef78207460c8f85ce8f17f05fe9f9c,2026-09-17,1588,,directory_or_seo,,awesome-list of Jev projects/integrations
+v-modal/awesome-jev-tools,f117e0c368d6e293bf5fdf99244a1173a6dc2ae0,2026-09-19,709,,directory_or_seo,,curated list of Jev tools
+wfzyx/von,1d86116dcc7604d7a6022858447c2d92f18a50f7,2026-09-18,619,Apache-2.0,open_model_training,von,"open non-autoregressive decision model, order-invariant option scoring (v1.2)"
+AbdelStark/awesome-typesafe-jev,bd81e694b6ba52ecdd5f2bcd4d8cfa3022730b1b,2026-09-17,507,MIT,directory_or_seo,,source-backed field guide / awesome list
+cobanov/awesome-jev,f6a7d5b7b2e28e37d8b9d200adaae8eb2e87b4a5,2026-09-18,384,CC0-1.0,directory_or_seo,,curated list of Jev projects
+Mapika/decider,5f91c011f05fa4b685f0845281a0805a56eb0169,2026-09-16,356,Apache-2.0,open_model_training,decider,System One-style model family fine-tuned from Qwen3.5
+OmniJev/awesome-jev-gallery,f8fd0f08cea152e9ab543cb6889548866f28a872,2026-09-17,301,NOASSERTION,directory_or_seo,,gallery of papers/reproductions/evaluations
+malevrigns/agent-jev,a965ca8ff06ccabc0c796dca5447b55cc2069cee,2026-09-21,289,Apache-2.0,open_model_training,,"AgentJev-0.6B, a trained System One decision model for agents"
+kydlikebtc/awesome-jev,53a566cf496be929f14ab43d26eb83c860cff243,2026-09-22,270,NOASSERTION,directory_or_seo,,evidence-graded index of Jev examples
+0xNatoshi/jev-codex-router,8701ef788aa8cb0948f299538747fb01029d32b8,2026-09-17,267,MIT,integration,,per-turn model/reasoning routing for Codex driven by Jev
+hellogumbo/awesome-jev,438569614cafef8aef78935e8ddf747d87715816,2026-09-17,182,CC0-1.0,directory_or_seo,,community directory of Jev projects
+HarnessRouter/SystemOneHarness,ab8e8f08b4a6268c0633a474423d556599ee06a4,2026-09-19,158,Apache-2.0,integration,,third-party harness/router for System One models
+kshetrajna12/reflex,231f896d818a62b94fec305ed553df1088486dcb,2026-09-17,135,MIT,open_model_training,,"small open decision model, Jev/System One re-creation on Qwen3.5"
+valentynkit/awesome-jev-typesafe,58cd19d73e9148f2e26dc85b6323ee81837e1666,2026-09-18,132,CC0-1.0,directory_or_seo,,awesome list for Jev
+dbreunig/building-with-jev-skill,04fe3666c6b8b8abfec1271c0e581c823a181f6d,2026-09-17,132,,integration,,agent skill for writing programs that call Jev
+kraayenjon/awesome-jev,22570dcd8662ae039860a1dfad7d7aec4aff8e15,2026-09-18,131,NOASSERTION,directory_or_seo,,curated list of Jev use cases/SDKs
+jexp/neo4jev,d157bbe496eb91813475156942bef1c6badfb342,2026-09-16,130,MIT,application,,Jev navigating a Neo4j graph via classifier over relationships
+GhalebDweikat/winnow,51d80b945c74c8384bc47fa817179f668289afd8,2026-09-16,81,MIT,integration,,context sieve for Claude Code judged by a System One model
+Liuziyu77/Valen,c5e8c45fea163962b896d7d9d3bde0c706e76ee6,2026-09-23,62,Apache-2.0,open_model_training,,trainable Jev-like multimodal (vision) decision model
+bilune/jev-design,70d1fae7cf58fdc894051dcdc658eddd3ba4084d,2026-09-20,55,,application,,dashboard UI generated at runtime by Jev
+ikermoel/open-alternative-jev,4a85df1831b537343c9e133b5150fa3a3b1ce98e,2026-09-18,53,Apache-2.0,local_server,,decision layer giving typed calibrated decisions from any open-weights LLM
+iapp-technology/openthai-systemone,5d04bcca0c58bd10e7dac2d3d369d8f760bea6cf,2026-09-20,47,Apache-2.0,open_model_training,,"open Thai+English System One decision model, 0.8B"
+peterfriese/jev-foundation-models,22931967b9f04afe532eb67fb068253c4b0be8aa,2026-09-21,43,Apache-2.0,integration,,Swift bridge integrating Jev into Apple's Foundation Models framework
+alvarobartt/sys1,3dfd9166bd14fc492f46ebe983a5f3c72abff52a,2026-09-22,34,NOASSERTION,local_server,,"System One compatible API for open decision models, written in Rust"
+sgoedecke/system-one,ebde2a2db7067b920dfe51e9ce785613e66613d5,2026-09-17,33,,local_server,,"batched single-token choice inference for open LMs, TypeSafe-compatible"
+zadescoxp/Jev-Trades,01fb18e4484d626f03345eaff2b93b641677b786,2026-09-17,30,Apache-2.0,application,,trading bot built on Jev
+PsiACE/dohnuts,e22b01cba0f83c0b4e8fe065f946d775c0336a4c,2026-09-21,27,Apache-2.0,open_model_training,,small multimodal System One models for direct decisions
+wh000wh000/awesome-jev-live,00c415d9aae5a52f12f1a0c24c84288dfc264cfd,2026-09-18,23,NOASSERTION,directory_or_seo,,"evidence-graded, auto-rebuilt index of the Jev ecosystem"
+bodepudimuneendra-netizen/laya-jev-GraphRAG,a0fcdaa029ac9c337d97552e271c205af374ad18,2026-09-23,23,Apache-2.0,application,laya,agentic GraphRAG engine using swappable Laya/Jev decisions
+sorrycc/typesafe-snake,8bf3f7c261ad35ece3345a02d21ba638ddfaf87f,2026-09-17,22,,application,,"Snake auto-played by Jev, one choice per tick"
+aliaihub/awesome-jev-usecases,055f16a00a4a108af0a7e25b3bae474ada63b441,2026-09-17,18,NOASSERTION,directory_or_seo,,evidence-backed use cases and guidance for Jev
+parth-kp/jev-mail-classifier,db96194723a7d057a4c7b54cc9b56d0dc3cc6d07,2026-09-19,17,MIT,application,,inbox classifier using Jev
+abhishek085/open-spark-jev,30ac6d89b7fa36c644cf86aac68f35c1d276a919,2026-09-20,15,Apache-2.0,open_model_training,,open local decision models built on Qwen3 for NVIDIA DGX Spark
+ChristianAlexander/laya_ex,99f9ce73692e2df6cb0e3928b1f1a88553677c44,2026-09-20,15,Apache-2.0,integration,laya,Elixir library wrapping Laya
+jaredpalmer/kev,30c619b0527501cfdd448cb6eb9887e2af454603,2026-09-17,6608,Apache-2.0,open_model_training,kev,trains and serves a Jev-like model family; kev.serve implements /v1/systemone
+nokia-applied-research/AnyJev,a59a69eaa91e62dc9b42924f8491f76d1b1972ea,2026-09-21,465,Apache-2.0,local_server,,"turns any LLM into a Jev-style decision model with typed decisions and real probabilities, no training"
+receptron/laya,6478649e723122ca24bbf5fb69ed1010023c9750,2026-09-19,390,MIT,local_server,laya,runs Laya (open-source Jev-compatible decision model) from Node.js/TypeScript via ONNX Runtime
+Yinsongxu/LLM2Jev,9223f4eb05a0cef05980f70d182d0e0d89e7840f,2026-09-19,309,Apache-2.0,local_server,,turns local language models into Jev-style structured decision models via prefill alone
+FBddcz/embodied-jev,f08de2e4e20d6cd69fea9c57ac1062c3ef510f1e,2026-09-20,222,MIT,application,,"MuJoCo robot decision workbench using MiniCPM5-2B, Jev and compatible model APIs"
+fstandhartinger/jevbench,2fa63fa3226cb369795525ed011800f57dcbd894,2026-09-19,116,MIT,evaluation,,"JevBench, a public benchmark/leaderboard for Jev-class decision models"
+keltokhy/jgrep,5727fe33a5fee418c8c725ddc4ed3cc2f760caae,2026-09-18,82,MIT,application,,grep-like CLI tool filtering lines by meaning via Jev
+fazlerocks/jevmail,f6f20af9c2805efd924c29cbea59547e72c558fc,2026-09-19,74,MIT,application,,Gmail triage app using Jev
+realZachi/typesafe-adblock,7e067d243d87b7fe4d511653c0ddcd77b9beee18,2026-09-17,74,MIT,application,,Chrome extension ad-detector using Jev
+hyperspaceai/jevcache,a211d13e3f1338e31ffa870a4749966e2a858b29,2026-09-18,72,,integration,,decision cache / memoization layer for Jev-class models
+bnsd55/jevmlx,7e0d746081b88412ccd7d84a5ffdcf9d61b36904,2026-09-17,60,MIT,local_server,,parallel constrained decisions for any MLX model on Apple Silicon
+ThinkFlowLab/system1-agents,ae4c31947f99f940fd4867a140a14c7260927412,2026-09-22,57,Apache-2.0,application,laya,"System 1 models (Jev/Laya/Cua-S1) as agent brains for browser/computer use, games, robotics"
+angel291592/Intent-Router,8cd0faf23c8ba5ebc315fe92346c09badec8528a,2026-09-22,57,MIT,integration,,intent compiler / input layer for typed-decision routers
+obie/ruby_decision_model,f79a890ce4eaa8f83d8220727319ee7b11416e01,2026-09-18,50,MIT,integration,,Ruby client for decision models such as Jev
+1Panel-dev/laya-server,4914ee362ffb990dcd7cac7a8359ced4b29c4626,2026-09-23,44,Apache-2.0,local_server,laya,"self-hosted API/web UI for Laya, Jev-API compatible"
+togethercomputer/tev1,1dde7782382c9f49d627153759b8d1deab426ce0,2026-09-23,44,MIT,open_model_training,,open-weight Jev-inspired decision model finetuned on Qwen3.5-4B (Together Computer)
+zwliJay/jev-forge,6cf0dfe3b811d623331c0cc8b1c00ff13614772e,2026-09-19,36,NOASSERTION,open_model_training,,open training and inference stack for Jev-style decision models
+PromptEngineer48/laya-vs-jev-arena,b02d19a6659a04142c94efd187caac5e6950fec0,2026-09-21,29,MIT,evaluation,laya,"Laya vs Jev arena (Snake, Mortal-Kombat-style fight)"
+rorshopping/jev-on-a-laptop,5821d910610331a695f5185a6ad1d6b514e8a62f,2026-09-16,24,NOASSERTION,evaluation,,unofficial study benchmarking Jev-style decisions on small models on a laptop
+HITsz-TMG/JevEmbed,6b4533496abaad53cbdc74b11dde116783429b92,2026-09-22,23,Apache-2.0,integration,,turns embeddings into typed decisions
+0xBakeer/arbiter,5a178dd964811df4c5d8b2f2984d1cc8021a8bb9,2026-09-20,23,MIT,local_server,laya,serves typed-decision models (Laya or custom) with a Jev-compatible API
+nexibeo/jev-cookbook,c1238b8529d0d275d54bc6eb4c39d4f39062238f,2026-09-19,23,MIT,application,,third-party (unofficial) recipe collection for Jev use cases
+chy4pro/jev-for-chrome,c792c61679631be67131bdc1bbb43bc2f60780bb,2026-09-18,21,MIT,application,,"Chrome extension driving the active tab via Jev, community port"
+mattn/go-jev,85f5994cb5136ff5360dd904b65253469dc95d2e,2026-09-23,19,MIT,integration,,Go SDK and CLI for Jev
+leesk212/JEV-CPU,b49b5bf5776af78495fa4900996042726f8e7c10,2026-09-19,18,MIT,local_server,semif,"runs SemIf (Jev-style) decisions on CPU, no GPU"
+vinilana/live-jev,cd13ab0a7b58ca9b6749a78aed2a729153fa6910,2026-09-18,17,,application,,2D autonomous car simulation driven by Jev
+zjunlp/JevLoop,f4aab740ae945004265624b2f0531aa8351f5d15,2026-09-20,17,Apache-2.0,integration,,agent loop where decisions don't require an LLM call
+AbdelStark/jev-benchmarks,0d610cc53e79bcbec691312b0c4adb4a0e371642,2026-09-17,17,Apache-2.0,evaluation,,"probability-aware evaluation: calibration, selective risk, latency benchmarks"
+jiawei686/jev-ultrafast-mcp,6b2e275a98a4429c2f91135f67092fb5cf062f8a,2026-09-19,15,MIT,integration,,MCP browser-automation tool driven by a decision model
+stefw/lkclean,85b2882cbf527e6915f43638efb933db52d0f836,2026-09-19,15,MIT,application,,Chrome extension cleaning LinkedIn feed via Jev
+Prophetlab/JevPokerBench,549983a59104eee12cf7055cbc0b1793b0adb773,2026-09-21,11,MIT,evaluation,,Texas Hold'em benchmark/playground for decision models
+okooo5km/jev,2d4c4a0b6b481b2cbb744d269be5d9a987344b74,2026-09-18,10,Apache-2.0,integration,,unofficial CLI and Agent Skill for Jev
+abhixhek/jevcal,ae8f3144d69c9cb0e5e0a2c17f70b9d14714cb9f,2026-09-18,10,MIT,evaluation,,calibrate/threshold/drift-check typed decision models against an LLM teacher
+AbdelStark/lejudge-jev-jepa,b2e578fb4d0ca0826ca1669bbd4bd73cdbca8ec5,2026-09-22,9,MIT,application,,JEPA world-model planning judged by a decision model
+yibie/laya-jev-lab,30ba64dceb7da058b306c104a571f1242dbd582b,2026-09-20,9,MIT,evaluation,laya,independent measurements of Jev vs Laya
+mattt/AnyDecisionModel,b5435332153ced5d8a503a06af699de2fb3968eb,2026-09-21,9,Apache-2.0,integration,,Swift package for typed decisions across local MLX and Jev API
+KranzL/Jevflake,8a795979263bf4a59c7267e6204f1de0e5ab32f6,2026-09-20,9,MIT,integration,,dbt package/Terraform module querying Jev from Snowflake
+poiuyjie/jev_project_context,52b06f6fc4ebe2ac91d504ffa90bd3eeb9245359,2026-09-22,9,MIT,integration,,agent long-term-memory skill with optional Jev decision layer
+ckaraca/awesome-jev,d890033d4a7b8e06ff7879c21382afe0bf7bb840,2026-09-19,9,CC0-1.0,directory_or_seo,,curated list of Jev tools/integrations/experiments
+24601/Augustus,125507c8600a5ab9ea4214cc16804c1c4f8486a6,2026-09-18,9,MIT,integration,,agent skill for building/evaluating decision-model systems
+arjun988/Kev,959da16ee364722ba06daeac392df96c011c67b4,2026-09-22,9,Apache-2.0,open_model_training,kev,"open-source System One decision engine, self-host with Ollama (name collision with jaredpalmer/kev, unrelated project)"
+dannote/jev_nx,ecbe265083a9bacdbce16dd8fece6e25fbe571f2,2026-09-21,8,Apache-2.0,local_server,,open decision models as an in-process Jev backend on Nx
+ChenneyZhuang/laya-browser-agent,389db681168fc990134b1f2bf3a279b1bfd9cf8b,2026-09-21,8,Apache-2.0,application,laya,local browser-agent using Laya decisions
+nibzard/decision-model-benchmark,8404980de041f38c2f5cc84cc4a617345091bf40,2026-09-18,7,,evaluation,,"independent reproducible benchmark of Jev, LLMs and baselines"
+theyashwanthsai/jevals,1fc8d52bd3eed0a66b6641460f4a60720e30547c,2026-09-18,7,MIT,evaluation,,LLM agent eval framework graded by a calibrated decision model
+rawwerks/one-system,cca696bf01f8df7c1b0d4dcdc7fec0a0d66d3d35,2026-09-21,7,MIT,integration,,unifies local and hosted decision models behind a single TypeSafe-style API
+anessbelbati/jev-rerank-bench,1645876cc264ccb676795095abfdc6dad47e37ff,2026-09-16,7,MIT,evaluation,,Jev vs rerankers benchmark across 14 datasets
+ljwwwiop/JEV-mini,b4d5869bf75385a2ebc7a7a764dc4f0be342212b,2026-09-22,6,Apache-2.0,open_model_training,,minimal project training a fast decision-making model
+gtaras7/typesafe-jev,024b0e4572aa97ac7766a04321b106282be64c55,2026-09-17,6,MIT,application,,CV-screening tool using Jev
+AIAnytime/jev-crash-course,123e42094c12642e87f09a9554ddf566c4256b74,2026-09-22,6,MIT,application,,collection of small learning demos/projects for Jev
+David-Lolly/Jev-Compatible,e52e963d85392fbf7a4490f2c58152eed4af4f45,2026-09-21,5,,local_server,,turns an SGLang/vLLM deployment into a Jev-compatible decision service
+zhangxaochen/dsh-jev,b672902c82f2599b92ad75ecc9f7b9118955f815,2026-09-18,5,MIT,integration,,Jev plugin suite for DeepSeek Harness
+sting8k/qwen-jev-like,45aeb5ab0ab0927dc5b591039076d47b2000d9c1,2026-09-22,5,MIT,open_model_training,,turns Qwen-series models into Jev-like typed-decision engines
+lbotinelly/jev-little-airways,d6ec286c7821f41228bce9b33381546e4fca9bff,2026-09-17,5,MIT,evaluation,,show-and-tell capability study for Jev
+oldmoldycake/jev_vampire_survivors,dae83d82593a13b882bf0abd5f481b5219357f64,2026-09-18,5,MIT,application,,game plugin: Jev plays Vampire Survivors
+hgqimo/JevRanker,d1a5f165da0b49beed2ac6534fd39b22b63c29ae,2026-09-22,5,MIT,integration,,Jev-style decision models as a reranking compare-oracle (BlitzRank)
+kotoba-lang/typed-decisions,e4ed807630c061179a6834d77e18c43227e4f19d,2026-09-18,5,NOASSERTION,open_model_training,,Jev-shaped model on ModernBERT/DeBERTa/LLaDA-MoE with measured training cost
+emirbartu/jev-for-all,b0e6ba2261ccd78bf03192dd45397202e53f3171,2026-09-19,5,MIT,integration,,wires Jev decisions into arbitrary agent coding harnesses
+NicolaiLassen/open-bonsai-jev,dabe4f4a45c255edc72e49b5fc434df22a3e11ee,2026-09-20,5,MIT,open_model_training,,openjev mechanism applied to Bonsai's 1.75-bit 27B weights
+DreamBlooms/dohnuts.cpp,60d247e5362e233fac94bdf19b74c9f7bf395704,2026-09-21,5,Apache-2.0,local_server,,CPU port of the Dohnuts System One model
+brida-ai/reflexbench,0c3535de20124d278502c6d5e261916876ecfadd,2026-09-23,5,Apache-2.0,evaluation,,open benchmark/eval harness for System One models
+chris-wozniczek/jev-voice-control,981b65366eef508b8cbcdb9184d3e9032bed68dc,2026-09-18,4,MIT,application,,macOS voice-control app using Jev
+simxnherrera/jevr,3a907192ab20f162fa55335c59778ad76275b567,2026-09-18,4,NOASSERTION,integration,,native R client for Jev
+epergaboni/jevseo,2ed1fbbaf90f86715dd489e5fe39416fa4879f17,2026-09-21,4,MIT,application,,SEO/AEO/GEO judgment tool powered by Jev
+franckverrot/lev,c48a945dbf629998d7458dcc5c16f58df964db94,2026-09-21,4,Apache-2.0,open_model_training,,Jev-style decision model based on LFM2.5-350M
+sarathi-aiml/jevsql,ba46b8b400a1e13dfa468bbfce2f370cf9d01972,2026-09-21,4,,application,,text-to-SQL tool using typed Jev decisions instead of generated SQL
+blingdivinity/jevseek,dcfde20210b9a9017cc70bf779b82e0fc5772301,2026-09-22,4,MIT,application,,uses Jev as a token-choice sampler for DeepSeek generation
+soderlind/ai-provider-for-jev,2756c8437025f5e60aabec8d2cf1346978674344,2026-09-18,4,,integration,,WordPress connector for Jev
+Mrlyk/jev-browser,8ab75375d420986b181a441f05e32094b63ea483,2026-09-19,4,Apache-2.0,application,,browser-automation CLI powered by Jev
+Eurekaleo/awesome-jev-survey,07476174d7a9fb26761146bcb852b0a336aceb6c,2026-09-23,4,MIT,directory_or_seo,,evidence survey of Jev-like typed decision models with a searchable literature site
+shamazharikh/qwen-rlcd,d41a9aa2f3317f99e82c835dafaac424c6cfdca7,2026-09-16,4,,open_model_training,,Jev-style calibrated decision model (Choice/Score/Noul) on Qwen3.5-0.8B
+akash-kamat/system-one-gemma,cc75aa8042dec965003210fdba033fee8759735e,2026-09-17,4,,open_model_training,,open-source Jev-style System One model on Gemma 3 270M with a scoring head
+instax-dutta/sysone-bench,1ac3650a65e3783ac9615f26b02bc7c1d5ad3b23,2026-09-21,4,MIT,evaluation,laya,first independent head-to-head benchmark of Laya vs Jev on byte-identical inputs
+0x7067/jev-browse,acd4da77438fc68318581ee62a9d6a6437924b63,2026-09-18,3,MIT,application,,browser automation with Jev as the decision model
+vtrivedy/jev-plays-games,59c72a0159c371f3529c03d488cc8a45717bb9e6,2026-09-18,3,,application,,"Chess, Connect Four and other games played by Jev"
+schacon/jev-tests,1954b8c8062174804992518335a9c1846c347d3c,2026-09-22,3,,evaluation,laya,"macOS demos comparing typed decision models (FluidUse/laya, Jev, Kev, Claude)"
+qingshungLI/everything-about-jev,014723d5b52db5f194d0d094103eaaf3475f1cab,2026-09-21,3,MIT,directory_or_seo,,"overview/index of Jev, TypeSafe AI's System One model"
+shivpratapsinghpanwar/edgefront_JEV,e9bc4d04d61dfd464fbe205960a3815f2fe426ce,2026-09-21,3,MIT,evaluation,,"measures whether a small local model can match a hosted decision model on accuracy, latency, calibration and cost"
+harrymunro/jev-laya-benchmark,0f977d20641e347bffee05745fed265858930489,2026-09-21,3,MIT,evaluation,laya,speed and accuracy benchmark: Jev API vs local Laya MLX model
+hosseintoussi/jev-flappy-bird,f7d313edb362360038efed8fef0135e98bfd8392,2026-09-19,3,MIT,application,,live demo of Jev playing Flappy Bird
+NandhaKishorM/laya,23a17522aa4942da6cce53a995a275760320b691,2026-09-18,22295,Apache-2.0,open_model_training,laya,"open non-autoregressive multilingual decision model, pip-installable, with serve/mcp/langchain extras"
+mizorewww/laya-mlx,0a859518634112655cb97c745dbf04f5191aaf13,2026-09-19,6155,Apache-2.0,local_server,laya,native MLX runtime for Laya typed decision models on Apple Silicon
+mizorewww/laya-coreml,4619e0483f07adf39068532e85b42ec2347edb83,2026-09-19,1409,Apache-2.0,local_server,laya,local Laya typed decisions on Apple Core ML and Neural Engine
+Heman10x-NGU/openJev-verdict-2.0,bff28567cff463b833bf044f351a8b7945d53e07,2026-09-19,283,NOASSERTION,open_model_training,verdict,"151M non-autoregressive decision engine, v2.0 successor repo to Heman10x-NGU/Verdict-open-jev"
+wdobry/laya-playground,5a825ba0472a460830bc937907d43262a87410f8,2026-09-20,153,MIT,application,laya,website/games/benchmark/skill demo playground for Laya
+FluidInference/FluidUse,e0d4215ae395a877e9d11bbb75bb26413137ab05,2026-09-21,152,Apache-2.0,application,laya,local computer-use app on Apple Silicon driven by laya
+virajbhartiya/laya-vs-jev,28541781c863fcdf20348e5bb3a2073d672fffe6,2026-09-21,95,Apache-2.0,evaluation,laya,Laya vs Jev comparison (T-Rex game) with live metrics
+lkarlslund/laya.cpp,e1c6e7832189d36903e90c6fe3b8b1fece7f6f17,2026-09-20,86,MIT,local_server,laya,C++ inference runtime for Laya (CUDA/Vulkan/CoreML/CPU)
+openlayer-ai/jevals,a15f28faf64d7a2476f8e63bcf385ce2651a8f8b,2026-09-20,82,MIT,integration,,agent evals/guardrails-as-decisions middleware using Jev
+r33drichards/laya-vision,d30b2f1490e4267badc2c7540389e9f3e4d6a2f5,2026-09-19,46,Apache-2.0,open_model_training,laya,"Laya extended with image inputs, SmolVLM-256M backbone"
+anthonyli/laya-pilot,5acef3f6731bc059add57b999f3c8835d9af7cf9,2026-09-23,38,MIT,application,laya,Playwright-based Excel test-case generator using Laya
+bladedevoff/stuntd,43f22f6f9fb7fe90f054482f87668f93546327c0,2026-09-23,23,Apache-2.0,local_server,,"local proxy learning app decisions, Jev/OpenAI compatible"
+keeltrace/hermes-nerve,375f17872bb59c2de1e7102e9bc7471774150c62,2026-09-18,22,MIT,integration,,supervisory layer adding typed System One decisions to Hermes agents
+afshinm/laya-mps,cdbf19e1aa5bd763ce4777d7a915849510514349,2026-09-21,19,MIT,local_server,laya,run Laya locally on Mac (MPS) with low RAM usage
+codejunkie99/keel,9f7fcf1f5008a0c804f9715676790c7b1ea409b6,2026-09-22,12,MIT,application,laya,local-first macOS coding workspace using Laya/Jev
+apiplant/laya-rs,1bf420283f1516b57d41f038779af46d7bbc472f,2026-09-19,8,Apache-2.0,local_server,laya,from-scratch Rust reimplementation/inference of Laya (candle)
+aovestdipaperino/laya-rust,5104bf2a42287382cb867edfe74732f6d823795a,2026-09-20,8,Apache-2.0,local_server,laya,pure-Rust inference for Laya (candle)
+jlt-commons/lev,1309c1f0f46bc7d8410496b513d175d12bd1225c,2026-09-19,8,Apache-2.0,local_server,laya,Jolt-based implementation/runtime of the Laya decision engine
+bvolpato/kevala,6e1754e1a3e73999e2f265fae939d2d06994fa6c,2026-09-21,7,Apache-2.0,local_server,laya,zero-dependency WASM engine running Laya/Kev in any web page
+PerryLink/dsh-laya,cb1259a33d36bfd28899947afd9bd328541635e3,2026-09-21,6,Apache-2.0,integration,laya,Laya exposed as a Cordis service for DeepSeek Harness
+githubMJ/Laya4j,5870cc933ec92ca1e9d7e5cae08a9c8552550988,2026-09-21,6,,local_server,laya,pure-Java 17+ SDK/runtime porting Laya inference via ONNX
+xuancuongdoo/laya-ultrafast,9991e590164095f28ee1b7b94df6aafe6c38123a,2026-09-23,6,MIT,application,laya,local browser AI agent demo (Google Flights) driven by Laya
+glukicov/laya_router,a2278d9690676a6232098f1c0cbaf44e9f727e95,2026-09-20,5,Apache-2.0,integration,laya,model-routing using Laya as the System 1 router
+DJLougen/laya-fast,3a9d534642cadb54c4cdb531f9abfa694acbefc8,2026-09-23,5,Apache-2.0,local_server,laya,Apple Silicon (Neural Engine + GPU) runtime for Laya
+cv/laya-plays-smb3,cf627420999d782620082751ad0ecca6ac408deb,2026-09-20,5,,application,laya,Laya plays Super Mario Bros 3 demo
+MstyAI/laya-onnx,f4a0a63ad0a4d728107e341f9e4d842aeb33e432,2026-09-20,4,Apache-2.0,local_server,laya,runs Laya typed decision models locally with ONNX Runtime and Go
+li-ming1/laya-zig,a722335308d05d640946f484838f45e160a46670,2026-09-21,4,Apache-2.0,local_server,laya,"from-scratch, dependency-free Zig CPU runtime for the Laya decision model"
+b0xtch/laya-candle,b940914a8c4980b29f45b510692bb235710b5568,2026-09-20,4,Apache-2.0,local_server,laya,native Rust inference for Laya via Candle with optimized Metal kernels
+F0Rextasy/omp-laya-judge,ca8939ac5437ba0cad285d8cef00f3cc04367791,2026-09-21,4,NOASSERTION,integration,laya,local Laya MCP server + skill for the oh-my-pi coding agent
+jinlio/mjbrain,196891e51782107bb9ca887c4e4facb24bfc8378,2026-09-22,4,Apache-2.0,application,laya,real-time mahjong decision advisor fine-tuned from Laya
+ljw98/Laya,ddf4e0dfb110abe483b23d0d7283e83a8623284f,2026-09-23,3,,local_server,laya,"Laya Console, a typed-decisions web UI"
+zhengbangbo/structured-decision-bench,20600354062bf667d223bb8c50bfcb9f22eb648d,2026-09-21,3,,evaluation,laya,benchmark comparing Jev vs Laya CoreML vs Qwen3 8B
+kevinbadi/laya-decision-brain,d727e3a11a6a9bd3d84850c177d602baef86977b,2026-09-22,4,,application,laya,Laya survey lab and Snake-cabinet demo
+r4ai/laya-web,72c3d681ef288e6107bf2ea5a110f371efe6db0b,2026-09-20,3,Apache-2.0,local_server,laya,Laya typed decisions in the browser via ONNX Runtime WebGPU/Wasm
+neko233-com/laya-go,4618ea77265f042a33e07a8ab0f5fdecc95d88bd,2026-09-21,3,MIT,local_server,laya,"Go server + agent CLI/MCP replacing Jev, running Laya decision models"
+aovestdipaperino/laya-pong,cf9b200dba53d2eb448de120e9b5e28c96ee4ea1,2026-09-20,3,NOASSERTION,application,laya,browser Pong game whose paddle is decided by Laya
+myxamediyar/chunklaya,5584c9e2e09ddeeca273c61e8d54ac60609493c1,2026-09-19,3,Apache-2.0,integration,laya,"long-input harness for Laya: chunk, detect, aggregate"
+jiayylu/jev-as-quant,f6803234d34fc6253974d6871e2fe6380544ffb8,2026-09-22,3,Apache-2.0,application,laya,typed decisions (Laya/Jev) as the judgment layer of a quant research stack
+stiermid/laya-serve,6d0090a236b43961cbba6895cfbd1705fcefca33,2026-09-22,2,Apache-2.0,local_server,laya,Jev-compatible HTTP server for Laya System One decision models
+wsargent/laya-mcp,ea1fab1a480f69a1bcb7f591dd33c30b5ff3c4c4,2026-09-20,2,,integration,laya,local MCP server exposing laya-mlx typed-decision inference
+AXERA-TECH/laya.axera,01e86fa6fc5bf99e7a426c131125e8c758cd2ac7,2026-09-22,2,Apache-2.0,local_server,laya,Laya typed-decision models ported to AX8850/NPU3 hardware
+allenporter/home-assistant-laya,14974b1c57d504c9988cb305ad5476868dc4d56b,2026-09-20,2,Apache-2.0,integration,laya,Home Assistant conversation agent based on Laya
+MIt9/laya-cli,3830661aac32a37bad05f10b0570df6dd99846f3,2026-09-22,2,NOASSERTION,integration,laya,ergonomic CLI for Laya typed decisions for humans and agents
+wangmiaozero/laya-router-skill,3f85267f05a8f9fc39aedc35ef8cb7ab2c195298,2026-09-21,2,NOASSERTION,integration,laya,cross-platform Laya decision-routing skill for coding agents
+zxrneu/laya-snake,a43a2a5440407ed76ab3c0bdadad4d35d3d6018d,2026-09-21,2,,application,laya,autonomous Snake AI powered by Laya
+lcbkmm/laya-thalamus,2fe8b64301e795e07f771f29378005c50dfc8d13,2026-09-24,2,NOASSERTION,integration,laya,System1 decision orchestrator for AI agents built on Laya
+Zuhair-01/laya-windows,f63d9a17c4e5f5ca6e18da38e3d6764a0d000eef,2026-09-22,2,Apache-2.0,local_server,laya,Windows port of Laya (ONNX Runtime + DirectML)
+jexp/watfile,d49ce5e3ba02a581b045aa679264921c74dc2ba4,2026-09-20,2,,application,,file categorization/sorting tool using Jev or a local calibrated decision model
+cnrai/openpave-jev,6bb3f63866fe55acb878665e8e1f764750233ede,2026-09-24,2,MIT,integration,laya,PAVE skill for non-autoregressive decision models (Jev/Laya/TypeSafe)
+janmejai2002/gutcheck,04a2474a22d8a14f3065d6c42a40738b268b6bf8,2026-09-23,2,Apache-2.0,integration,,calibrated System-1 decisions plus per-prompt skill/MCP tool leasing
+dockndevai/mac-attack,c279aa1f4d98c5439138b679c971c59b387bbd0f,2026-09-22,2,,application,laya,novelty macOS app/screensaver using Laya for harmless toy decisions
+tzt-company/decision-making,2b0a2c02d7c22580bfe8d38ff80e420a104bfaa9,2026-09-23,1,,application,laya,Laya System 1 decision-desk demo scenario
+bmw8080/laya-decision-api,fccfcf5c3279a9510dd4a2c503dfada5bce02e48,2026-09-24,1,Apache-2.0,local_server,laya,"packages local Laya as an HTTP service (multi-backend, multi-SDK)"
+actuallyrizzn/decision-systems-bakeoff,91313193acee70aa38e814050a2350a9e9292456,2026-09-22,1,NOASSERTION,evaluation,laya,Flybrain/Jev/Laya decision bakeoff on locked public rows
+2nugu/laya-ko-decision-onnx,9cf64e4615d8a5cd591728284975065026d90489,2026-09-23,1,Apache-2.0,open_model_training,laya,Korean fine-tuned Laya model with training pipeline and ONNX export
+hufaei/decision-infra,8a6e0269e97bf86235d3e9bf6390c1dc53490cc5,2026-09-22,1,MIT,local_server,,Jev-compatible decision gateway for hosted Jev and local models
+tedliou/decision-model-playground,195fdb98d517b146fa890c459836ceea94566a72,2026-09-19,1,,application,laya,local playground comparing Laya and Jev with article recommendations
+tahby/LayaKit,89f768b0bda9df9dbfc2269a497d94f8e0dff32a,2026-09-20,1,Apache-2.0,local_server,laya,Swift package running Laya on-device via Core ML
+yangshun2005/laya-cn,c8dc26cc98813ed8ec40e0e77bad5782debdbd63,2026-09-22,1,Apache-2.0,mirror_or_fork,laya,Chinese localization/fork of the Laya README
+biplovgautam/LayaStudio,acf9c10820906e9be48c9f1dab667cb00cfce4b5,2026-09-22,1,Apache-2.0,open_model_training,laya,fine-tunes Laya on your own data on your own Mac
+ganeshdipdumbare/laya,ec4b51a77846dd4e4f6c7072fb40044d87df1684,2026-09-22,1,,local_server,laya,"self-hosted HTTP server for Laya (Docker, no API key)"
+Adkid-Zephyr/chinese-workflow-decision-bench,b694dc6dbcba12c5bcf8d51b60ec48ff6ab87d57,2026-09-21,1,MIT,evaluation,laya,"Feishu message classification benchmark, Jev vs Laya"
+47thtechcorner/RayCodes_LayaAI,62a7a3fd1c724a91c88c14db284adcc8a9e87de8,2026-09-24,1,,application,laya,marketing-titled Laya demo running real-time Pong AI
+adamjen/laya-cuda,148026a6ff9510fd38fd8ffe016f832ac640c70a,2026-09-23,1,Apache-2.0,local_server,laya,CUDA benchmark harness / RTX 3090 runtime port of Laya
+Sunny-commit/OpenDecision,cd4cfdeda3ec8fbcc0d383db7acdb12c280eaeb1,2026-09-23,1,Apache-2.0,integration,laya,"typed decision layer for AI agents built on Laya (name collision with deepanwadhwa/OpenDecision, unrelated project)"
+chinna250801/agent-decision-firewall,d31571de51d27dc046f318ffd48e52ee473417b5,2026-09-23,1,Apache-2.0,integration,,decision firewall / evaluation harness gating AI agent actions
+MIt9/building-with-laya-skill,3249ac19c7725e3aeb18189c2224d1d78d6b8127,2026-09-23,1,,integration,laya,"agent skill for writing programs with Laya, ported from the Jev skill"
+azalio/doomLaya,b25edd318325d179682f668f0985d33e518feef7,2026-09-22,1,Apache-2.0,application,laya,Laya and Jev play FreeDoom demo
+ajayjha1/laya-studio-node,5f8bba20502cacf3db9d17ec4c9f33811e728011,2026-09-24,1,MIT,integration,laya,Node.js/TypeScript toolkit using Laya as a decision layer
+Ashfaqbs/laya-adk-toolkit,1524aa2f063dfffbbd870a3bc4af13fb25c28553,2026-09-23,1,Apache-2.0,integration,laya,Google ADK tools exposing Laya's decision engine
+hama-jp/laya-tetris-finetuning,2f56a70caaec44e1dcdb192620eab0abddfdc02b,2026-09-20,1,Apache-2.0,open_model_training,laya,fine-tunes 421M Laya for real-time Tetris decisions
+andragon3110/laya-mcp,50a9cbdd1cf7bb0520c4caaf64f2a9a64823f1ae,2026-09-20,1,MIT,integration,laya,MCP server exposing Laya's typed-decision tools
+chneau/docker-laya,579f5885c27f6b1469b0aa3c4d004d7ed13fc78b,2026-09-20,1,MIT,local_server,laya,Dockerized FastAPI service for Laya predictions
+PerryLink/laya-mcp,2a38644c92b321e68822a3da887d85bff1fc4f0e,2026-09-21,1,Apache-2.0,integration,laya,MCP server for Laya typed decisions
+xixi3548942758-design/laya-ternary-lite,61c3a3d83af11d3d1cc875f6f3c7e22780980cd3,2026-09-23,1,Apache-2.0,open_model_training,laya,1.58-bit ternary quantization of the Laya decision model
+antonellof/laya-vs-dijkstra,4bdad79dc8f5c192a3e61b51baee73e31dab468d,2026-09-24,1,Apache-2.0,evaluation,laya,Laya typed decisions vs Dijkstra on seeded mazes
+chrisns/laya-mac-serve,675e99cb893252dedb8c93869211732712a59d08,2026-09-21,1,MIT,local_server,laya,serves Laya from a macOS menu-bar app with OpenAI-compatible endpoint
+Alevsk/laya-lab,96d314b1b8cb5cc8d0eec85322ef11d01ebd649e,2026-09-23,1,MIT,evaluation,laya,self-hosted bootstrap with runnable scenarios measuring Laya's capability
+surajvs2710-stack/god-llm-decisions,4bf0c17de0df086cfd5aab07d86eab583c719d80,2026-09-23,1,NOASSERTION,integration,laya,fuses Laya + Jev into one confidence-weighted verdict
+miniongk/laya-mcp-mimo-desktop,7e65a4ed80ede3918441e993314b6e8dc4835f40,2026-09-22,1,MIT,integration,laya,bridges Laya into MiMo Desktop via local MCP
+osamabinIaggin/laya-micro,686fc4662517bcac29e981e5b5196477d60d37e6,2026-09-22,1,MIT,open_model_training,laya,shrinks Laya (vocabulary pruning + int8) for single-board computers
+KNambiarDJsc/second-thought,f7de17f18db48d08dd8040f3885e61cbf8fe1351,2026-09-22,1,Apache-2.0,integration,,learning infrastructure abstraction over System One decision providers
+elcronos/jev-vs-open-decision-models,a1901bc3d520e73936de8d4326545c0cdcf742fb,2026-09-20,1,,evaluation,,zero-shot benchmark of Jev 1.13 vs open-weight non-generative models
+ReallyArtificial/stuntdouble,fb9f08ec37a4fa62f80a8aeceac1cdcbcb02de29,2026-09-22,1,MIT,local_server,,drop-in /v1/systemone proxy shadowing Jev with local models
+chaitin/Decis,931bda85543e0012bfffcf4ea5f6b5ffd7fbcee9,2026-09-22,2,Apache-2.0,local_server,laya,"self-hosted, Jev-compatible decision-model API with open weights (Laya, Kev)"
+bespokelabsai/nimble,62076b4f2d365b5879dafcf7f6dd072a1fe76df7,2026-09-18,1719,,open_model_training,nimble,"open recipe (data, model, training code) for a Jev-like decision model"
+Rizzo-AI-Academy/rizzo-flow,f36358387945fb09296c0999b62a305d29fe1e39,2026-09-21,406,Apache-2.0,local_server,,"open, local take on Jev: typed decisions from an LLM without generating a token"
+y0usaf/pi-jev,80a80f32ad281f3d905429edfe0e5b8d7977d82a,2026-09-16,144,MIT,integration,,Jev as a decision layer / tool-call gate for the Pi coding agent
+AppitStudio/awesome-jev,17306107c6e2811492ffbc4c638eddfc43e71e62,2026-09-18,83,NOASSERTION,directory_or_seo,,curated Jev resources and examples
+allebee/jevk5,0571ef373722dd10cace82c81580d7b675fe6b53,2026-09-22,77,Apache-2.0,open_model_training,,"open-weight alternative to Jev, Apache-2.0 weights and code"
+SAGAR-TAMANG/sarvam-jev,b0b9babe50ef56c90830391b63dff26ce179acc9,2026-09-18,57,,local_server,,generation-free inference technique turning sarvam-1 into a Jev-style engine
+sharziki/semdecide,33cf5c03c50e02e59df3f3ea81f0650f6b791545,2026-09-16,55,MIT,integration,,typed semantic decisions for Unix pipelines and CI
+r-ms/mini-jev,ca612198bfb69f538f029a4615f6d0a18b4f814c,2026-09-17,53,MIT,evaluation,,preregistered experiment reading option-letter logits on a frozen Qwen3-4B
+TheoOliveira/pi-jev,3c6d6c5b8ef3fb583b2d1d71ad04bae07bf616d9,2026-09-17,46,MIT,integration,,semantic tool routing / typed decisions for the Pi coding agent via Jev
+DevMortimer/pi-typesafe,2dd46f8562d43b2de6f0856c42e6e9748be3ff9e,2026-09-16,45,MIT,integration,,"batched eval tool, playground and typed API for Pi extension authors"
+intikhab49/open-jev-typed-decision-engine,5977431afb6a9272e034f63c3ec7f0ee5395df59,2026-09-19,43,Apache-2.0,open_model_training,,"open 150M reproduction of Jev, trainable on a Colab T4"
+tacticocc/Jevbridge,d4e8f7d483b8a5649218970eedbaf4f4a1e1e832,2026-09-18,41,MIT,integration,,ACP/MCP adapter bridging Jev with other coding-agent LLMs
+mithalouni/system-one-open,77f1f7cccf8aa752e0ed7edcc8d2094bac707bdc,2026-09-17,35,NOASSERTION,open_model_training,,open replica of Jev on Gemma 4 E2B / Gemma 3 270M
+nico-martin/open-jev,52667199e8a55553e1865a41f43fcb7d4dd92779,2026-09-20,33,MIT,local_server,,browser-focused TypeScript library for typed decisions
+hawkymisc/typed-decision-bert,f0994cd4c91e7516f0e2a8d9e04b71107c309642,2026-09-21,31,MIT,open_model_training,,unofficial BERT-style encoder decision engine behind a typed-decision API
+zhangcy122/OpenJev,20e1fa465908727ee9b93135f8ff6c6da719e748,2026-09-20,27,NOASSERTION,local_server,,open-source alternative to Jev via open LLMs + constrained logprob calibration
+AkashPriyadarshii/jev-superpowers,556d30aefc65252ad891249d3b903a394ee5414c,2026-09-18,21,MIT,integration,,software-development framework upgraded with Jev typed decisions
+rhighs/jev-code,2a915a266957d504e6e7dad28f3b5743bbbc2add,2026-09-17,20,,application,,interactive TypeScript coding CLI powered by Jev
+chenmingtang830/jevgraph,87f23023b3695cb0f58e0dd33c765e22341ece59,2026-09-20,19,Apache-2.0,application,,knowledge-graph construction tool using Jev relation decisions
+Ray-Hughes/jevalyn,0567d10169be4e41c6b99751c2de01dd9bd0de27,2026-09-20,19,MIT,integration,,Rails-native wrapper around the Jev System One API
+emnlmn/snap,546ddc9692daa10560a5227cbaeee341bc449c46,2026-09-23,19,,local_server,,"local, deterministic, Jev-compatible typed decisions"
+sqliteai/blink,18d6ce836cadfd14f04feef8bba952f50da660db,2026-09-22,14,Apache-2.0,open_model_training,,open-source System One model with embeddable C runtime and WASM (SQLite AI)
+Micha0827/snapjudge,80012ca2abe8d000798e2dc7d717171058f1e6db,2026-09-18,12,MIT,local_server,,typed decisions from local Qwen models on Apple Silicon (MLX)
+S1LV3RJ1NX/openjev,91847b4c678f7d9330d8f3475e24c72c7fef73c2,2026-09-20,10,Apache-2.0,open_model_training,,"open System One models, trainable on your own data"
+metask-ai/metask-jev,6cce2276d7898a9ed0122afbc49d0f0b74ccda98,2026-09-21,2,,open_model_training,,"own trained decision model, metask-jev-4b, claims to beat Bespoke Nimble-9B and Jev on JevBench"
+JayDoubleu/jev-on-orin,66b5c976d717f7cc088f272768a39947873cc3c5,2026-09-20,0,Apache-2.0,evaluation,,benchmarks of Jev-style decisions on a Jetson AGX Orin
+wayfind/metask-jev,7d318a469f5f9db42061e4cee183e97e4d0dd9b7,2026-09-21,0,,open_model_training,,"near-duplicate description of metask-ai/metask-jev; unclear relationship, likely a copy"

@@ -1,0 +1,109 @@
+name: decider-0.8b
+name_src:
+  quote: '# decider-0.8b'
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+hf_id: Mapika/decider-0.8b
+hf_id_src:
+  quote: Mapika/decider-0.8b
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+revision_sha: see meta_raw for this repo's pinned sha, fetched 2026-09-24
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+vendor_or_author: Mapika
+vendor_or_author_src:
+  quote: https://github.com/Mapika/decider
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+release_date: '2026-09-19'
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+availability_and_license: Open weights, Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+backbone: Qwen/Qwen3.5-0.8B-Base
+backbone_src:
+  quote: Qwen/Qwen3.5-0.8B-Base
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+parameter_count: 752,393,024 total (safetensors.total)
+parameter_count_src:
+  quote: (HF API safetensors.total, fetched 2026-09-24)
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+decision_head: 'Letter-logit readout, same recipe as decider-2b: hidden state at each answer slot projected
+  with option-letter LM-head rows, softmaxed, divided by a stored temperature'
+decision_head_src:
+  quote: the letter logits at an answer slot, softmaxed over the options
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+training_objective: Same supervised (v1-v8) cross-entropy proper-scoring-rule recipe as decider-2b; the
+  35B-a3b and 4B v1 sizes have no RL stage per the family table on the decider-2b card
+training_objective_src:
+  quote: no RL stage
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+training_data: Same ~95 public decision-dataset mixture as decider-2b (family README); not independently
+  re-verified for this sibling in this compact pass
+training_data_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+primitives: noul, choice, score
+primitives_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+state_modality: string, object or array state
+state_modality_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+context_length: up to 32k tokens (state plus questions), per the shared decider family README
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+cardinality_limit: 2 to 255 options per question, per the shared decider family README
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+latency_with_hardware: compact card; not independently re-measured here beyond the family comparison table
+  on the decider-2b card
+latency_with_hardware_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+confidence_definition: same TypeSafe-style formula as decider-2b, per the shared family README
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+serving_temperature: one temperature fitted on in-task data (it came out at 1.03 for both
+serving_temperature_src:
+  quote: one temperature fitted on in-task data (it came out at 1.03 for both
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+calibration_as_shipped: in-task accuracy / ECE, 69 tasks | 0.776 / 0.032 | 0.809 / 0.030 |
+calibration_as_shipped_src:
+  quote: in-task accuracy / ECE, 69 tasks | 0.776 / 0.032 | 0.809 / 0.030 |
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+disclosed_failure_modes: Same family limitations as decider-2b (English only, rules embedded in question
+  text not followed, array-position lookups least accurate); not independently re-verified line by line
+  for this sibling
+disclosed_failure_modes_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+evaluation_protocol_published: Yes, per the shared decider family protocol (94 public tasks, 15-bin ECE);
+  see the decider-2b card and github.com/Mapika/decider
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+source_urls:
+- https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md
+- https://github.com/Mapika/decider
+source_urls_src:
+  quote: Mapika/decider-0.8b
+  url: https://huggingface.co/Mapika/decider-0.8b/raw/a0a01d6f8135298f400a8c856b355793012ae971/README.md

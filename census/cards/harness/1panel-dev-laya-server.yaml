@@ -1,0 +1,25 @@
+name: laya-server
+repo: https://github.com/1Panel-dev/laya-server
+revision_sha: 4914ee362ffb990dcd7cac7a8359ced4b29c4626
+author: 1Panel-dev
+created: '2026-09-23'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: A self-hosted API and web interface for Laya’s structured decision models, compatible with
+  the TypeSafe Jev API format.
+primitives_supported:
+- noul
+models_supported: []
+key_claims:
+- excerpt: '```sh docker run -d --name laya-server --init --restart unless-stopped \ -p 8080:8080 \ -v
+    laya-data:/data \ -e LAYA_ADMIN_USERNAME=admin \ -e LAYA_ADMIN_PASSWORD=''change-this-admin-password''
+    \ 1panel/laya-server:latest ``` Replace the sample password with'
+  verbatim: true
+- excerpt: To use a domain name, configure HTTPS on a reverse proxy and forward requests to port 8080
+    on the server.
+  verbatim: true
+- excerpt: '```sh curl -X POST http://YOUR_SERVER_IP:8080/v1/systemone \ -H ''Authorization: Bearer YOUR_API_KEY''
+    \ -H ''Content-Type: application/json'' \ -d ''{"state":{"message":"I was charged twice"},"questions":{"refund":{"type":"noul","instructions":"Does
+    the customer ask for a refund?"}}}'' ``` Successful responses'
+  verbatim: true

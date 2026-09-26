@@ -1,0 +1,21 @@
+name: skills
+repo: https://github.com/typesafe-ai/skills
+revision_sha: ''
+author: typesafe-ai
+created: '2026-09-04'
+access_date: '2026-09-24'
+license: MIT
+category: vendor_cookbook
+what_it_does: 'Official TypeSafe agent-skills repo: installable Claude Code / skills.sh skill that helps an agent
+  design TypeSafe workflows, find current docs/cookbooks, and compose typed judgments in code.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Jev (via TypeSafe API)
+key_claims:
+- excerpt: 'Agent skills for building with TypeSafe: typed decisions and probabilities from System One models.'
+  verbatim: true
+- excerpt: Design TypeSafe workflows, find current docs and cookbooks, and compose typed judgments in code
+  verbatim: true

@@ -1,0 +1,26 @@
+name: jevk5
+repo: https://github.com/allebee/jevk5
+revision_sha: 0571ef373722dd10cace82c81580d7b675fe6b53
+author: allebee
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'JevK5: open-weight alternative to TypeSafe Jev. Typed decisions with probabilities in one
+  forward pass; Apache-2.0 weights and code.'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported:
+- Qwen3.5-4B
+- Qwen3.6-27B
+key_claims:
+- excerpt: JevK5 is an independent, Apache-2.0 open-source alternative to TypeSafe's Jev for typed decisions.
+  verbatim: true
+- excerpt: The [weights](https://huggingface.co/alibiserikbay/JevK5) run on your own GPU, and the server
+    accepts the TypeSafe-style `/v1/systemone` request shape.
+  verbatim: true
+- excerpt: JevK5 is not affiliated with TypeSafe AI.
+  verbatim: true

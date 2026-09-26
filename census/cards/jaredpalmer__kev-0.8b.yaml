@@ -1,0 +1,115 @@
+name: Kev-0.8B
+name_src:
+  quote: '# Kev-0.8B'
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+hf_id: jaredpalmer/kev-0.8b
+hf_id_src:
+  quote: jaredpalmer/kev-0.8b
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+revision_sha: 9a45d25eb2ab761841196625383fa1dff0e56c1e
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+vendor_or_author: Jared Palmer
+vendor_or_author_src:
+  quote: jaredpalmer/kev-0.8b
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+release_date: '2026-09-18'
+release_date_src:
+  quote: (HF API createdAt for jaredpalmer/kev-0.8b)
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+availability_and_license: Open weights (LoRA adapter), Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+backbone: Qwen/Qwen3.5-0.8B-Base
+backbone_src:
+  quote: plus a pointer head on `Qwen/Qwen3.5-0.8B-Base`
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+parameter_count: LoRA adapter r=16, 11.3M trainable parameters, on Qwen3.5-0.8B-Base
+parameter_count_src:
+  quote: It is a LoRA adapter (r=16, 11.3M trainable parameters) plus a pointer head on `Qwen/Qwen3.5-0.8B-Base`
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+decision_head: Pointer head reading option logits from the LoRA-adapted base in one forward pass, no text
+  generation
+decision_head_src:
+  quote: a probability distribution per question out, in one forward pass. No text generation.
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+training_objective: 'This version (2026-09-24): the night2-du checkpoint plus one joint epoch (lr 2e-5,
+  seed 1) on 16,539 documents/skills/devtools records mixed with 6,000 replayed decision-v7 records'
+training_objective_src:
+  quote: The `night2-du` Kev-0.8B (below) plus one epoch (lr 2e-5, seed 1) on 16,539 records trained together,
+    mixed with 6,000 replayed `decision-v7` records
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+training_data: documents-v1 (5,219 real CFPB complaint narratives, 7,488 questions), hard-v1 (6,000 programmatic
+  skill records), devtools-v1 (5,320 developer-tooling decisions), joint round-15 training
+training_data_src:
+  quote: '`documents-v1` train holds 5,219 real US consumer-finance complaint narratives (CFPB, up to
+    ~7k tokens) with 7,488 questions'
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+primitives: choice, noul, score
+primitives_src:
+  quote: typed decision (choice / noul / score)
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+state_modality: one document (real consumer-finance complaint narratives, developer-tooling text, policy
+  documents)
+state_modality_src:
+  quote: 5,219 real US consumer-finance complaint narratives (CFPB, up to ~7k tokens)
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+context_length: not disclosed as a fixed token limit in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+latency_with_hardware: not disclosed as a per-request ms figure in this card
+latency_with_hardware_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+serving_temperature: T = 2.35 for the current (2026-09-24) checkpoint; the prior night2-du checkpoint
+  served at T = 2.41
+serving_temperature_src:
+  quote: Kev-0.8B (this version, T = 2.35)** | `night2-du` Kev-0.8B (T = 2.41)
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+calibration_as_shipped: The fitted temperature moved 2.41 to 2.35 between the previous and current checkpoint;
+  out-of-domain ECE as served is 0.049 (current) vs 0.054 (night2-du)
+calibration_as_shipped_src:
+  quote: The fitted temperature moved 2.41 → 2.35 (raw out-of-domain Brier 0.481 on development, 0.416
+    on the locked test)
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+disclosed_failure_modes: When2Call tool-routing accuracy fell below chance after training (0.260->0.167
+  dev); prompt-injection detection flat vs Jev's 0.893; devtools labels are the public datasets' own,
+  not adjudicated for this suite
+disclosed_failure_modes_src:
+  quote: Do not use this checkpoint for tool-call routing.
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+evaluation_protocol_published: Yes; six registered rounds (7-15) with pre-registered guards, locked test
+  reads, and a research log on the research/overnight-r6 branch
+evaluation_protocol_published_src:
+  quote: the registration and every read are in `PLAN.md` rounds 9, 11, 12, 13 and 15 on the `research/overnight-r6`
+    branch
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+source_urls:
+- https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md
+- https://github.com/jaredpalmer/kev
+source_urls_src:
+  quote: github.com/jaredpalmer/kev
+  url: https://huggingface.co/jaredpalmer/kev-0.8b/raw/9a45d25eb2ab761841196625383fa1dff0e56c1e/README.md

@@ -1,0 +1,28 @@
+name: reflex
+repo: https://github.com/kshetrajna12/reflex
+revision_sha: 231f896d818a62b94fec305ed553df1088486dcb
+author: kshetrajna12
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: MIT
+category: open_model_training
+what_it_does: 'A small open decision model: state + typed questions -> calibrated probabilities. A Jev
+  / System One re-creation on Qwen3.5.'
+primitives_supported:
+- choice
+- score
+- noul (yes/no)
+models_supported:
+- Qwen3.5
+- Qwen3.5-4B
+- Qwen
+- Qwen3.8-27B
+key_claims:
+- excerpt: It is an open re-creation of [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev),
+    the "System One" model TypeSafe released in September 2026, built on top of a normal open-weights
+    model ([Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) by default).
+  verbatim: true
+- excerpt: ->  payments 99.9%   account 0.04%   other 0.04% question   escalate?
+  verbatim: true
+- excerpt: ->  yes 90% question   how urgent (0-2)?
+  verbatim: true

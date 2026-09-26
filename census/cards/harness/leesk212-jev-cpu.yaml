@@ -1,0 +1,26 @@
+name: JEV-CPU
+repo: https://github.com/leesk212/JEV-CPU
+revision_sha: b49b5bf5776af78495fa4900996042726f8e7c10
+author: leesk212
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Run SemIf (Jev-style semantic-if decisions) on a CPU — no GPU. Reads typed option probabilities
+  straight from an open model in one forward pass, plus a web UI.
+primitives_supported:
+- choice
+- extract
+models_supported:
+- Qwen3
+- Qwen
+key_claims:
+- excerpt: Semantic ifs from open models — on a laptop CPU, no GPU.** *A CPU port of [SemIf](https://github.com/TheoLeeCJ/SemIf)
+    (formerly OpenJev), with a web UI.* 📄 **[Read the full technical report
+  verbatim: true
+- excerpt: The upstream project targets a CUDA GPU holding a 4B BF16 model.
+  verbatim: true
+- excerpt: '---   SemIf forces a GPU in exactly **one place** — `src/semif_phase1/core.py` → `load_causal_model()`:  ```python
+    if not torch.cuda.is_available() or torch.cuda.device_count() != 1:     raise ValueError("Expose exactly
+    one CUDA GPU ...") ...'
+  verbatim: true

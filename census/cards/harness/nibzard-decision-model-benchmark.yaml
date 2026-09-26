@@ -1,0 +1,21 @@
+name: decision-model-benchmark
+repo: https://github.com/nibzard/decision-model-benchmark
+revision_sha: 8404980de041f38c2f5cc84cc4a617345091bf40
+author: nibzard
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: unknown
+category: evaluation
+what_it_does: 'Independent, reproducible benchmark: a decision model (jev), eight constrained LLMs, and
+  deterministic baselines on typed decisions - accuracy, calibration, latency, cost, failure modes'
+primitives_supported:
+- choice
+models_supported: []
+key_claims:
+- excerpt: Five suites, 60 cells, $28.34 of measured provider spend, every raw log published.
+  verbatim: true
+- excerpt: Latency covers one request for these (v1) cells.
+  verbatim: true
+- excerpt: The full tables — coverage, calibration, macro-F1, flip rate, per-attempt logs — are in [`results/v2/v2.md`](results/v2/v2.md),
+    the corrected report of record.
+  verbatim: true

@@ -1,0 +1,22 @@
+name: jev-tests
+repo: https://github.com/schacon/jev-tests
+revision_sha: 1954b8c8062174804992518335a9c1846c347d3c
+author: schacon
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: unknown
+category: evaluation
+what_it_does: 'macOS demos comparing typed decision models: FluidUse (laya, CUA-S1-FORMS), Jev, Kev and
+  Claude'
+primitives_supported:
+- choice
+- noul (yes/no)
+- rating
+models_supported: []
+key_claims:
+- excerpt: CUA-S1-FORMS (706K parameters) for form filling, laya (322M) for general   typed questions.
+  verbatim: true
+- excerpt: '- **Claude** (`claude-opus-5`), in one demo, as a general-model baseline.'
+  verbatim: true
+- excerpt: '- An Apple silicon Mac on macOS 14 or later, with Swift 6.'
+  verbatim: true

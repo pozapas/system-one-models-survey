@@ -1,0 +1,25 @@
+name: edgefront_JEV
+repo: https://github.com/shivpratapsinghpanwar/edgefront_JEV
+revision_sha: e9bc4d04d61dfd464fbe205960a3815f2fe426ce
+author: shivpratapsinghpanwar
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: Do you need a hosted decision model, or does a small local model match it? Measure accuracy,
+  latency, calibration and cost on your own task.
+primitives_supported:
+- choice
+- score
+models_supported: []
+key_claims:
+- excerpt: '```bash pip install edgefront edgefront bench --task synthetic --backends rules,stub ``` Hosted
+    "typed decision" models return a label plus calibrated probabilities in 70–500 ms for a fraction of
+    an'
+  verbatim: true
+- excerpt: Add your own by writing a `TaskSpec` loader — `src/edgefront/tasks/synthetic.py` is the template,
+    and `src/edgefront/tasks/banking77.py` shows how to wrap a HuggingFace dataset.
+  verbatim: true
+- excerpt: The hosted model wins, decisively — by 45 points — and it is also better calibrated and cheaper.**
+    This is the opposite of the project's original hypothesis, and it
+  verbatim: true

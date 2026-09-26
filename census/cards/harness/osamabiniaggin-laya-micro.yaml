@@ -1,0 +1,28 @@
+name: laya-micro
+repo: https://github.com/osamabinIaggin/laya-micro
+revision_sha: 686fc4662517bcac29e981e5b5196477d60d37e6
+author: osamabinIaggin
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: MIT
+category: open_model_training
+what_it_does: 'Shrink Convai''s Laya typed-decision model to run on single-board computers: BPE-merge-closed
+  vocabulary pruning plus block-wise int8, evaluated on human-labelled robot commands with majority-class
+  baselines.'
+primitives_supported:
+- choice
+- score
+- noul
+- ordinal
+models_supported:
+- Gemma
+- ModernBERT-large
+- mmBERT-base
+key_claims:
+- excerpt: Shrinks Convai Innovations' [Laya](https://github.com/NandhaKishorM/laya) decision model so
+    it runs comfortably on a single-board computer such as a Raspberry Pi 5, without losing accuracy.
+  verbatim: true
+- excerpt: Apple M3 Pro, CPU, 165 labelled robot commands, `--shape flat`, 4 threads.
+  verbatim: true
+- excerpt: '"Action acc" is top-1 accuracy at picking one of 27 robot actions, or none.'
+  verbatim: true

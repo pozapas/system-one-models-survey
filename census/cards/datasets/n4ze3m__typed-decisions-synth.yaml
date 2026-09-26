@@ -1,0 +1,68 @@
+name: Typed Decisions Synth
+name_src:
+  quote: '# Typed Decisions Synth'
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+hf_id: n4ze3m/typed-decisions-synth
+hf_id_src:
+  quote: n4ze3m/typed-decisions-synth
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+revision_sha: see meta_raw for pinned sha, fetched 2026-09-24
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+vendor_or_author: n4ze3m
+vendor_or_author_src:
+  quote: n4ze3m/typed-decisions-synth
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+release_date: see meta_raw createdAt
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+availability_and_license: mit
+availability_and_license_src:
+  quote: 'license: mit'
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+purpose: Synthetic dataset built for Hmm (a small open model answering questions about data with probabilities
+  instead of text)
+purpose_src:
+  quote: It has 7,414 cases with 25,859 questions across 149 domains and workflows.
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+size_and_splits: 7,414 cases with 25,859 questions across 149 domains and workflows; train / validation
+  splits
+size_and_splits_src:
+  quote: It has 7,414 cases with 25,859 questions across 149 domains and workflows.
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+label_construction: Everything is written and labelled by an LLM and was not human-checked, per the card's
+  own note; every question carries a soft label (a probability for every option)
+label_construction_src:
+  quote: '**Note**: Everything here is written and labelled by an LLM. Nobody checked it.'
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+teacher_model: not established in this compact pass
+teacher_model_src:
+  quote: none found
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+teacher_self_agreement: not established in this compact pass
+teacher_self_agreement_src:
+  quote: none found
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+other_reference_points: not established in this compact pass; compact card, minor dataset
+other_reference_points_src:
+  quote: none found
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+evaluation_protocol_published: not established in this compact pass; compact card, minor dataset
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+disclosed_caveats: not established in this compact pass; compact card, minor dataset
+disclosed_caveats_src:
+  quote: none found
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+source_urls:
+- https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md
+source_urls_src:
+  quote: n4ze3m/typed-decisions-synth
+  url: https://huggingface.co/datasets/n4ze3m/typed-decisions-synth/raw/5ece89a225b23c4cd5c4bab5735a0819d61dd7d5/README.md

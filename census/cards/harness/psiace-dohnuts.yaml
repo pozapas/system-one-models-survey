@@ -1,0 +1,23 @@
+name: dohnuts
+repo: https://github.com/PsiACE/dohnuts
+revision_sha: e22b01cba0f83c0b4e8fe065f946d775c0336a4c
+author: PsiACE
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Dohnuts builds small multimodal models for direct decisions. -> System One model
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: That is our take on System 1.
+  verbatim: true
+- excerpt: The 0.8B model runs locally on a consumer GPU.
+  verbatim: true
+- excerpt: '[Model](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B) · [Model card](MODEL_CARD.md) ·
+    [Documentation](docs/README.md) · [Benchmarks](docs/figures/README.md) Route a support request and
+    check whether it asks for a refund in the same call: ```python from dohnuts.predictor import Predictor'
+  verbatim: true

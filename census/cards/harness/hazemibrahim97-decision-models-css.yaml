@@ -1,0 +1,35 @@
+name: decision-models-css
+repo: https://github.com/hazemibrahim97/decision-models-css
+revision_sha: ''
+author: hazemibrahim97
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'Replication package for ''Evaluating Decision Models for Text Annotation in Computational Social
+  Science'' (arXiv 2609.24574): collection/analysis scripts and per-call records evaluating Jev, open decision models,
+  and 19 LLM baselines on 18 CSS tasks.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Jev (via OpenRouter decisions endpoint)
+- Von (wfzyx/von)
+- Verdict (Heman10x-NGU/Verdict-open-jev)
+- OpenDecision (PyPI 0.1.1)
+- Kev (jaredpalmer/kev)
+- SemIf-4B
+- Laya 0.4B
+- decider-0.8b/2b
+- Bespoke-Nimble-9B
+- Gemini 3.8 Flash (structured-output control)
+- 19 LLM baselines
+key_claims:
+- excerpt: 'Open decision systems run through each system''s own released code: Von from wfzyx/von (SDK 1.0.1, weights
+    1.1.0); Verdict from Heman10x-NGU/Verdict-open-jev (commit 30f1556'
+  verbatim: true
+- excerpt: OpenDecision from PyPI (OpenDecision==0.1.1); Kev from jaredpalmer/kev (commit 557598f, served with kev.serve
+  verbatim: true
+- excerpt: The design, hypotheses, task grid, and correction procedure were pre-registered at AsPredicted (#312,511).
+  verbatim: true

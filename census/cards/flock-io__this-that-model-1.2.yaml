@@ -1,0 +1,109 @@
+name: this-that-model-1.2
+name_src:
+  quote: '# this-that-model-1.2'
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+hf_id: flock-io/this-that-model-1.2
+hf_id_src:
+  quote: flock-io/this-that-model-1.2
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+revision_sha: c4d1c30b8d512d278726de439b8cc81fccc70c8f
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+vendor_or_author: FLock.io
+vendor_or_author_src:
+  quote: github.com/FLock-io/this-that-model
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+release_date: '2026-09-23'
+release_date_src:
+  quote: (HF API createdAt for flock-io/this-that-model-1.2)
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+availability_and_license: Open weights, MIT
+availability_and_license_src:
+  quote: 'license: mit'
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+backbone: 'base_model: decider-2b (Qwen3.5-style hybrid DeltaNet/attention); tags include deltanet, linear-attention'
+backbone_src:
+  quote: "tags:\n  - typed-decision\n  - structured-output\n  - calibration\n  - decision-making\n  -\
+    \ deltanet\n  - linear-attention"
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+parameter_count: 1.88B (safetensors.total 1,881,825,088)
+parameter_count_src:
+  quote: this-that-model-1.2** | **0.878** | **0** | **31.4 ms**
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+decision_head: Reads a policy rule however it is phrased, including negated/exclusion phrasing; card gives
+  no evidence of an independently trained head beyond the decider-2b lineage
+decision_head_src:
+  quote: 1.2 can apply it however the rule happens to be written
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+training_objective: Not disclosed in this card
+training_objective_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+training_data: Not itemized in this card; datasets field lists limberc/this-that-complex-decisions
+training_data_src:
+  quote: "datasets:\n  - limberc/this-that-complex-decisions"
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+primitives: choice-style typed decisions (Question objects with declared options)
+primitives_src:
+  quote: Question("Which bay is assigned?", ["bay-a", "bay-b", "hold in transit"]),
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+state_modality: JSON state (e.g. bay assignment records) plus policy text
+state_modality_src:
+  quote: '{"bays": {"bay-a": {"free": 7, "distance_m": 40, "handling": "chilled"},'
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+context_length: not disclosed in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+latency_with_hardware: 31.4 ms, 0 generated tokens, on the ten-system standings table
+latency_with_hardware_src:
+  quote: this-that-model-1.2** | **0.878** | **0** | **31.4 ms**
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+serving_temperature: not disclosed in this card
+serving_temperature_src:
+  quote: none found
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+calibration_as_shipped: 'On the 68-question frozen third-party cohort: accuracy 0.985, Brier 0.009, NLL
+  0.047 (1.2 misses one of 68 that 1.1 got right)'
+calibration_as_shipped_src:
+  quote: '**0.985** | **0.009** | **0.047**'
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+disclosed_failure_modes: Composed (multi-step) decisions and rules written in the negative were 1.1's
+  weak points; 1.2 regresses slightly on sim_event_ood calibration (qL2 0.0253 to 0.0274) while improving
+  sim_local_ood
+disclosed_failure_modes_src:
+  quote: 1.1 scored 0.0253 and 0.0203. The second improves; the first is a small regression
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+evaluation_protocol_published: Yes; a public benchmark (1,710 complex decisions, ten systems), a depth-ladder
+  composed-decision set (242 questions), an eleven-phrasing rule-reading set, and a 68-question frozen
+  third-party cohort
+evaluation_protocol_published_src:
+  quote: Accuracy on 1,710 complex decisions, ten systems
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+source_urls:
+- https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md
+- https://github.com/FLock-io/this-that-model
+source_urls_src:
+  quote: pip install git+https://github.com/FLock-io/this-that-model
+  url: https://huggingface.co/flock-io/this-that-model-1.2/raw/c4d1c30b8d512d278726de439b8cc81fccc70c8f/README.md

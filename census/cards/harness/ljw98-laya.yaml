@@ -1,0 +1,27 @@
+name: Laya
+repo: https://github.com/ljw98/Laya
+revision_sha: ddf4e0dfb110abe483b23d0d7283e83a8623284f
+author: ljw98
+created: '2026-09-23'
+access_date: '2026-09-24'
+license: unknown
+category: local_server
+what_it_does: 'Laya Console: typed decisions web UI'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- ModernBERT-large
+- mmBERT
+key_claims:
+- excerpt: 基于 [Laya](https://github.com/NandhaKishorM/laya)（非自回归 System 1 决策模型）的本地 Web 控制台：粘贴一段文本，提出一道类型化问题，一次前向得到答案与置信度。  -
+    **仓库**：[ljw98/Laya](https://github.com/ljw98/Laya) - **Docker 镜像名**：`heizicao/laya`（本地构建标签） - **默认端口**：`8787`
+    - **模型权重**：不进 git，从 GitHub Releases 或 Hugging Face 下载   ```text .
+  verbatim: true
+- excerpt: '├── index.html / app.css / app.js # Web 界面 ├── server.py # Flask API ├── download_models.py
+    # 模型下载（Release / HF） ├── Dockerfile / docker-compose.yml ├── requirements.txt ├── examples/demo_cli.py
+    #'
+  verbatim: true
+- excerpt: 选择模型（单模型驻留，切换时自动加载 / 卸载） 2.
+  verbatim: true

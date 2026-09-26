@@ -1,0 +1,25 @@
+name: laya-vs-dijkstra
+repo: https://github.com/antonellof/laya-vs-dijkstra
+revision_sha: 4bdad79dc8f5c192a3e61b51baee73e31dab468d
+author: antonellof
+created: '2026-09-24'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: evaluation
+what_it_does: Laya MLX typed decisions vs Dijkstra on seeded weighted mazes, side-by-side replay on Apple
+  Silicon
+primitives_supported:
+- choice
+- noul
+- noul (yes/no)
+models_supported: []
+key_claims:
+- excerpt: 'Requirements: an Apple Silicon Mac, macOS 14+, and [uv](https://docs.astral.sh/uv/).'
+  verbatim: true
+- excerpt: '```bash git clone https://github.com/antonellof/laya-vs-dijkstra cd laya-vs-dijkstra uv run
+    laya-vs-dijkstra ```  The first run downloads the `aac6fef/laya-multilingual-mlx` checkpoint (about
+    650 MB) from Hugging Face once.'
+  verbatim: true
+- excerpt: '```bash uv run laya-vs-dijkstra --seeds 7,8,9 --kinds maze,rooms # more maps uv run laya-vs-dijkstra
+    --width 61 --height 41 # bigger maps uv run laya-vs-dijkstra --optimize # MLX compile +'
+  verbatim: true

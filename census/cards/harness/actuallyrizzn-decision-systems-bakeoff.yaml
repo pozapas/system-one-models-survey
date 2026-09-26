@@ -1,0 +1,22 @@
+name: decision-systems-bakeoff
+repo: https://github.com/actuallyrizzn/decision-systems-bakeoff
+revision_sha: 91313193acee70aa38e814050a2350a9e9292456
+author: actuallyrizzn
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: evaluation
+what_it_does: Reproduce Flybrain · Jev · Laya decision bakeoff on locked public rows
+primitives_supported:
+- choice
+- score
+models_supported: []
+key_claims:
+- excerpt: 'Sept 2026 · Decision Science Corp This repository is the **prescription and the runners**
+    for that bakeoff: locked questions, locked test checksums, scoring contract, Jev / Laya arms, and'
+  verbatim: true
+- excerpt: English checkpoint on the three short benches; multilingual checkpoint with a longer window
+    on the 150-intent menu so the model can actually see all 151 options.
+  verbatim: true
+- excerpt: No fine-tune on SST-2, CLINC, or bug titles.
+  verbatim: true

@@ -1,0 +1,25 @@
+name: Jevbridge
+repo: https://github.com/tacticocc/Jevbridge
+revision_sha: d4e8f7d483b8a5649218970eedbaf4f4a1e1e832
+author: tacticocc
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: ACP and MCP adapter that bridges TypeSafe Jev with any LLM — computer use and typed decisions
+  alongside Codex, Claude, Grok, and OpenCode.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: '[![TypeScript][TypeScript]][TypeScript-url] * [![Node.js][Node.js]][Node.js-url] * [![TypeSafe][TypeSafe]][TypeSafe-url]
+    * [![ACP][ACP]][ACP-url]      Jevbridge is a zero-dependency Node 22 library plus MCP and ACP stdio
+    binaries.'
+  verbatim: true
+- excerpt: 'Node.js 22 or newer * Git * Optional: a [TypeSafe API key](https://console.typesafe.ai/settings/keys)
+    * Optional: an LLM key (`XAI_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, or `OPENCODE_API_KEY`)   1.'
+  verbatim: true
+- excerpt: 'After a release is published:    ```sh    npm install -g @tactico/jevbridge    ``` 2.'
+  verbatim: true

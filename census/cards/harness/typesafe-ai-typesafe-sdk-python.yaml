@@ -1,0 +1,21 @@
+name: typesafe-sdk-python
+repo: https://github.com/typesafe-ai/typesafe-sdk-python
+revision_sha: 0ffd094c72ed9445223060b24ffd7a56aa781fb4
+author: typesafe-ai
+created: '2026-09-04'
+access_date: '2026-09-24'
+license: MIT
+category: vendor_sdk
+what_it_does: 'Official Python SDK for TypeSafe AI''s System One API (Jev): TypeSafeClient with typed Choice/Score/Noul
+  question helpers.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Jev (via TypeSafe API)
+key_claims:
+- excerpt: Python SDK for TypeSafe AI.
+  verbatim: true
+- excerpt: 'with TypeSafeClient() as client: response = client.system_one('
+  verbatim: true

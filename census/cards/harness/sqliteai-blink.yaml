@@ -1,0 +1,25 @@
+name: blink
+repo: https://github.com/sqliteai/blink
+revision_sha: 18d6ce836cadfd14f04feef8bba952f50da660db
+author: sqliteai
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Embeddable, dependency-free C99 one-pass typed-decision model (also builds to a 66KB WebAssembly module)
+  implementing Jev's decision-request interface with zero-allocation scoring.
+primitives_supported:
+- choice
+- score
+models_supported:
+- blink-tiny
+key_claims:
+- excerpt: The runtime is C99 with no dependencies beyond libc and libm. Weights are mapped read-only and never
+    copied. Scoring performs zero allocations
+  verbatim: true
+- excerpt: The same sources build to a 66 KB WebAssembly module that runs unchanged in browsers and in Node, with
+    no file system and no server
+  verbatim: true
+- excerpt: Where the answer requires reading — natural language inference, binding a name to the right sentence
+    — it is at or a little above chance, and a frozen 4B model is far ahead.
+  verbatim: true

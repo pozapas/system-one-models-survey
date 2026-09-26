@@ -1,0 +1,28 @@
+name: laya-ko-decision-onnx
+repo: https://github.com/2nugu/laya-ko-decision-onnx
+revision_sha: 9cf64e4615d8a5cd591728284975065026d90489
+author: 2nugu
+created: '2026-09-23'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Korean fine-tuned Laya decision model. Includes PyTorch training pipeline and ONNX export
+  scripts for Rust integration.
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+- ordinal
+models_supported:
+- mmBERT-base
+key_claims:
+- excerpt: Same API, same 322 M parameters, same single forward pass — it just answers Korean typed decisions
+    far better.
+  verbatim: true
+- excerpt: Weights:** [`2nugu/laya-ko`](https://huggingface.co/) · **License:** Apache-2.0  > 라야(Laya)가
+    한국어를 잘 못하길래 튜닝해 보았습니다.
+  verbatim: true
+- excerpt: 'Every option in a question gets its own `[MASK]` marker, the head scores those markers, and
+    the scores are softmaxed **over that question''s options only**: ``` [CLS] <type> question:'
+  verbatim: true

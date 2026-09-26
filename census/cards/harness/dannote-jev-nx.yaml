@@ -1,0 +1,23 @@
+name: jev_nx
+repo: https://github.com/dannote/jev_nx
+revision_sha: ecbe265083a9bacdbce16dd8fece6e25fbe571f2
+author: dannote
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Open decision models as a Jev backend, running in-process on Nx
+primitives_supported: []
+models_supported:
+- ModernBERT-large
+key_claims:
+- excerpt: This package runs them where your Elixir code runs and answers a `Jev.Server` exactly as Jev
+    does, so the same `handle_answer/3` clauses, thresholds, and telemetry apply whichever model answered.
+  verbatim: true
+- excerpt: '```elixir children = [ {Nx.Serving, serving: Jev.Nx.serving(Jev.Nx.Laya), name: MyApp.Laya,
+    batch_size: 16} ] config :jev, backend: Jev.Nx config :jev_nx, serving: MyApp.Laya ``` Or per request,
+    which is how a cascade'
+  verbatim: true
+- excerpt: 'On an Apple M5, servings warm, medians from `mix run bench/runtimes.exs` (Benchee, 10 seconds
+    per runtime) and deviations from `mix run bench/accuracy.exs`: Metal is worth the jump, and its'
+  verbatim: true

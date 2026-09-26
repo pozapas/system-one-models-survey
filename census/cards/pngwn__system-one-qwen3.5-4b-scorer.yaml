@@ -1,0 +1,113 @@
+name: System One scorer (pngwn, Qwen3.5-4B)
+name_src:
+  quote: '# System One scorer — Qwen/Qwen3.5-4B-Base + scalar scoring head'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+hf_id: pngwn/system-one-qwen3.5-4b-scorer
+hf_id_src:
+  quote: 'Training code: [`system_one.py`](./system_one.py) in this repository.'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+revision_sha: e6464dce15f013c2ef641593a85cc6afcdaea928
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+vendor_or_author: pngwn (independent)
+vendor_or_author_src:
+  quote: 'Training code: [`system_one.py`](./system_one.py) in this repository.'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+release_date: '2026-09-16'
+release_date_src:
+  quote: (HF API createdAt for pngwn/system-one-qwen3.5-4b-scorer)
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+availability_and_license: Open weights (LoRA adapter), CC-BY-NC-4.0
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+backbone: Qwen/Qwen3.5-4B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B-Base'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+parameter_count: 30.5M trainable of 4.24B (LoRA r=16 over all linear projections plus a new scalar score
+  head)
+parameter_count_src:
+  quote: 30.5M trainable of 4.24B)
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+decision_head: Sequence-classification head scoring each (state, question, option) triple; per-question
+  logits softmaxed; new scalar `score` head added on top of LoRA
+decision_head_src:
+  quote: 'Each (state, question, option) triple is scored by a sequence-classification head and
+
+    the per-question logits are softmaxed.'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+training_objective: Not itemized beyond the scoring-head/LoRA description in the portion of the card fetched;
+  temperature fitted on a validation split (T=1.75)
+training_objective_src:
+  quote: temperature 1.75 fitted on val.
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+training_data: Not itemized by source/size in the portion of the card fetched (evaluation covers ag_news,
+  banking77, go_emotions, tickets_*, mmlu, yelp_score)
+training_data_src:
+  quote: none found
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+primitives: yes/no (noul-style), choice, numeric score
+primitives_src:
+  quote: unstructured state plus a set of typed questions (yes/no, Choice, numeric Score)
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+state_modality: unstructured text state
+state_modality_src:
+  quote: unstructured state plus a set of typed questions
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+context_length: not disclosed in the portion of the card fetched
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+cardinality_limit: evaluated with option sets uncapped at evaluation time (no fixed training-time cap
+  stated)
+cardinality_limit_src:
+  quote: option sets **uncapped at evaluation**
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+latency_with_hardware: not disclosed as a ms figure in the portion of the card fetched
+latency_with_hardware_src:
+  quote: none found
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+confidence_definition: not disclosed as an explicit formula in the portion of the card fetched
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+serving_temperature: T = 1.75, fitted on the validation split
+serving_temperature_src:
+  quote: held-out test split, option sets **uncapped at evaluation**, temperature 1.75 fitted on val.
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+calibration_as_shipped: Raw head ECE 0.135 -> 0.044 at T=1.75 on the held-out test (n=576), about 2x better
+  than the prompted Qwen3.5-4B-Base baseline (ECE 0.093) at similar accuracy
+calibration_as_shipped_src:
+  quote: 'Temperature scaling cuts ECE from 0.135 to 0.044 — about 2× better calibrated than the
+
+    prompted baseline'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+disclosed_failure_modes: Held-out per-task accuracy is uneven (tickets_queue 0.234, tickets_priority 0.469)
+  even though overall ECE is low; the prompted baseline is not measured on the same rows for every task
+disclosed_failure_modes_src:
+  quote: The baseline row is **not** measured on the same rows
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+evaluation_protocol_published: Yes; a held-out test split (n=576, 9 task families) and a validation split
+  (n=537) with per-task accuracy/ECE/Brier tables
+evaluation_protocol_published_src:
+  quote: Held-out test split, option sets **uncapped at evaluation**, temperature 1.75 fitted on val.
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+source_urls:
+- https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md
+source_urls_src:
+  quote: 'Training code: [`system_one.py`](./system_one.py) in this repository.'
+  url: https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer/raw/e6464dce15f013c2ef641593a85cc6afcdaea928/README.md

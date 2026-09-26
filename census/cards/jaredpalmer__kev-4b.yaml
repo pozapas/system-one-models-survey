@@ -1,0 +1,112 @@
+name: Kev-4B
+name_src:
+  quote: '# Kev-4B'
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+hf_id: jaredpalmer/kev-4b
+hf_id_src:
+  quote: jaredpalmer/kev-4b
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+revision_sha: 139fdd94f1b6a6ad80cc15e08fcb99cac885a101
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+vendor_or_author: Jared Palmer
+vendor_or_author_src:
+  quote: jaredpalmer/kev-4b
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+release_date: '2026-09-19'
+release_date_src:
+  quote: (HF API createdAt for jaredpalmer/kev-4b)
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+availability_and_license: Open weights (LoRA adapter), Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+backbone: Qwen/Qwen3.5-4B-Base
+backbone_src:
+  quote: plus a pointer head on `Qwen/Qwen3.5-4B-Base`
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+parameter_count: LoRA adapter r=16, 33.8M trainable parameters, on Qwen3.5-4B-Base
+parameter_count_src:
+  quote: It is a LoRA adapter (r=16, 33.8M trainable parameters) plus a pointer head on `Qwen/Qwen3.5-4B-Base`
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+decision_head: Pointer head reading option logits from the LoRA-adapted base in one forward pass, no text
+  generation
+decision_head_src:
+  quote: a probability distribution per question out, in one forward pass. No text generation.
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+training_objective: Cross-entropy on the option distribution, LoRA r=16, plus a delta fine-tune on date/abstention
+  records (lr 2e-5, 9 minutes)
+training_objective_src:
+  quote: pointer head from scratch; cross-entropy on the option distribution
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+training_data: 'decision-v7: 10,000 public records (1,000 per source), 896 policy minimal-pair records,
+  1,680 rule-structure records, plus the shared delta set'
+training_data_src:
+  quote: 10,000 public records (1,000 per source), 896 policy minimal-pair records over nine template
+    families, 1,680 records from 60 randomly generated rule structures in four rendering styles
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+primitives: choice, noul, score
+primitives_src:
+  quote: typed decision (choice / noul / score)
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+state_modality: one document (text/JSON state)
+state_modality_src:
+  quote: one document (the *state*)
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+context_length: not disclosed as a fixed token limit in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+latency_with_hardware: not disclosed as a per-request ms figure; training took 56 min on one H100 (peak
+  24.6 GB); 4B bf16 needs ~9 GB of GPU memory for serving
+latency_with_hardware_src:
+  quote: 4B bf16 needs ~9 GB of GPU memory for serving; training took 56 min on one H100 (peak 24.6 GB)
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+serving_temperature: Card confirms a fitted temperature is applied by default (as in the rest of the Kev
+  family) but this card's own text does not restate the numeric value; see Kev-9B (T=2.30) and Kev-0.8B
+  (T=2.35) cards for confirmed sibling values
+serving_temperature_src:
+  quote: What the delta cost
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+calibration_as_shipped: Delta fine-tune raised scienthoon's ECE from 0.086 to 0.116; MMLU-Pro fell 0.500
+  to 0.490 after the delta
+calibration_as_shipped_src:
+  quote: scienthoon's ECE rose 0.086 → 0.116
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+disclosed_failure_modes: Knowledge gap vs Jev set by the base model; date arithmetic weak without date_facts;
+  coverage at <=5% error trails Jev
+disclosed_failure_modes_src:
+  quote: What the delta cost
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+evaluation_protocol_published: Yes; development partitions select models, locked test read once, suite/code
+  hashes recorded
+evaluation_protocol_published_src:
+  quote: Frozen suite `evals/v7/decision-v7`
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+source_urls:
+- https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md
+- https://github.com/jaredpalmer/kev
+source_urls_src:
+  quote: github.com/jaredpalmer/kev
+  url: https://huggingface.co/jaredpalmer/kev-4b/raw/139fdd94f1b6a6ad80cc15e08fcb99cac885a101/README.md

@@ -1,0 +1,26 @@
+name: open-bonsai-jev
+repo: https://github.com/NicolaiLassen/open-bonsai-jev
+revision_sha: dabe4f4a45c255edc72e49b5fc434df22a3e11ee
+author: NicolaiLassen
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: MIT
+category: open_model_training
+what_it_does: 'openjev''s mechanism, Bonsai''s weights: typed decisions read straight from one forward
+  pass of a 1.75-bit 27B model. Credit to TheoLeeCJ (SemIf/OpenJev) and PrismML.'
+primitives_supported:
+- choice
+- score
+models_supported:
+- Qwen3.5-4B
+- Bonsai
+key_claims:
+- excerpt: '```console $ ./openjev/score.sh -q "Is the user angry?" --state ''{"msg":"this is broken AGAIN
+    and nobody replies"}'' {"choice": "true", "probabilities": {"true": 0.991651, "false": 0.008349},
+    "label_mass": 0.994205, "prompt_tokens": 112, "forward_s": 1.852,'
+  verbatim: true
+- excerpt: '[PrismML](https://prismml.com)** built **Bonsai**, the low-bit models that make it cheap:
+    a 27B in 5.95 GB, and a usable one in 0.25 GB.'
+  verbatim: true
+- excerpt: Apache 2.0, used exactly as published here, with nothing retrained or requantized.
+  verbatim: true

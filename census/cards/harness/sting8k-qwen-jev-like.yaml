@@ -1,0 +1,28 @@
+name: qwen-jev-like
+repo: https://github.com/sting8k/qwen-jev-like
+revision_sha: 45aeb5ab0ab0927dc5b591039076d47b2000d9c1
+author: sting8k
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: MIT
+category: open_model_training
+what_it_does: Turn Qwen-series models into jev-like typed-decision engines
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen
+- Qwen3.8-27B
+- Qwen3.5-9B
+- Qwen3.5-4B
+- Bonsai
+key_claims:
+- excerpt: '- **Not Jev.** Jev 1.13 is one column in the tables, measured through OpenRouter like any
+    other model.'
+  verbatim: true
+- excerpt: '[harshatheg](https://github.com/harshatheg) reproduced the idea on a 1B Qwen the same night:
+    score the options from the logits, never decode.'
+  verbatim: true
+- excerpt: '`max_tokens=1`, temperature 0; read the log-probability of each allowed value at its position.'
+  verbatim: true

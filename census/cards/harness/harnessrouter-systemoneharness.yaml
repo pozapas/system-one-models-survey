@@ -1,0 +1,26 @@
+name: SystemOneHarness
+repo: https://github.com/HarnessRouter/SystemOneHarness
+revision_sha: ab8e8f08b4a6268c0633a474423d556599ee06a4
+author: HarnessRouter
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: integration
+what_it_does: The system one Harness for system one models
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: 's1 run --env order:ship_fastest_gift ``` This runs the built-in order fulfilment environment
+    against the live model: ```text goal: Order B-220 is a gift: note it, then ship it by'
+  verbatim: true
+- excerpt: 'model: ~typesafe/jev-latest 0 add_note(note=''gift'') p=0.96 241 ms 1 pick_item(item=''scarf'')
+    p=1.00 269 ms 2 pack() p=0.99 166 ms 3 choose_carrier(carrier=''express'') p=0.98 151 ms 4 ship()
+    p=0.93 152 ms status=completed reason=environment_terminal'
+  verbatim: true
+- excerpt: '```text ┌──────────────────────────────────────────────────────────┐ │ controller │ goal ────►
+    │ observe ─► compile ─► encode ─► decide ─► gate ─► execute │ ────► trace │ ▲ │ │ │ └──────────────
+    environment'
+  verbatim: true

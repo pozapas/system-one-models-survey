@@ -1,0 +1,24 @@
+name: laya-vs-jev
+repo: https://github.com/virajbhartiya/laya-vs-jev
+revision_sha: 28541781c863fcdf20348e5bb3a2073d672fffe6
+author: virajbhartiya
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: evaluation
+what_it_does: 'Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics
+  and replay recording'
+primitives_supported:
+- choice
+models_supported: []
+key_claims:
+- excerpt: Requires an Apple Silicon Mac, Python 3.11+, [uv](https://docs.astral.sh/uv/), and a TypeSafe
+    API key for Jev.
+  verbatim: true
+- excerpt: '```bash git clone https://github.com/virajbhartiya/laya-vs-jev.git cd laya-vs-jev uv sync
+    --extra demo --extra trex --extra dev uv run --extra demo hf download aac6fef/laya-multilingual-mlx
+    \ --local-dir models/hub/laya-multilingual-mlx cp .env.example .env uv run'
+  verbatim: true
+- excerpt: 'For a local-only game without an API key: ```bash uv run --extra trex laya-trex --players
+    laya --course random --round-seconds 0 ``` A deterministic physics planner labels the moves, and'
+  verbatim: true

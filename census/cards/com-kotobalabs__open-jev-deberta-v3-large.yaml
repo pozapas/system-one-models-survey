@@ -1,0 +1,119 @@
+name: open-jev-deberta-v3-large
+name_src:
+  quote: '# open-jev-deberta-v3-large'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+hf_id: com-kotobalabs/open-jev-deberta-v3-large
+hf_id_src:
+  quote: com-kotobalabs/open-jev-deberta-v3-large
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+revision_sha: 19bf9a64815add579fbf6c907bef584d9277a8e4
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+vendor_or_author: kotoba-lang
+vendor_or_author_src:
+  quote: '[kotoba-lang/typed-decisions](https://github.com/kotoba-lang/typed-decisions)'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+release_date: '2026-09-18'
+release_date_src:
+  quote: (HF API createdAt for com-kotobalabs/open-jev-deberta-v3-large)
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+availability_and_license: Open weights, Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+backbone: microsoft/deberta-v3-large
+backbone_src:
+  quote: 'base_model: microsoft/deberta-v3-large'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+parameter_count: 434,012,160 total (safetensors.total)
+parameter_count_src:
+  quote: none found
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+decision_head: 3-layer scoring head reading [mean(question tokens); mean(option tokens); product] per
+  option, softmaxed within each question's option group
+decision_head_src:
+  quote: 'For each option the head scores
+
+    `[mean(question tokens); mean(option tokens); product]`; a softmax **within each question''s option
+    group**'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+training_objective: Cross-entropy + Brier loss; gold-preserving question augmentation (option shuffling,
+  paraphrase templates, distractor dropping, level relabelling, noul negation with flipped gold) at p=0.7
+training_objective_src:
+  quote: 'Loss was cross-entropy + Brier; training used
+
+    gold-preserving question augmentation'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+training_data: 'Public gold labels only, no synthetic answers, no teacher model: mteb/banking77, SetFit/sst5,
+  google/boolq; 18,000 train states / 42,000 questions, 1 epoch, seed 2, one H100 (229s, about $0.25)'
+training_data_src:
+  quote: 18,000 train states / 42,000 questions, 1 epoch, seed 2, one H100 (229 s, ≈ $0.25).
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+primitives: choice (up to 255 options), score (2-10 ordered levels), noul
+primitives_src:
+  quote: (`choice` over up to 255 options / `score` over 2–10 ordered levels / `noul` yes-no)
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+state_modality: text state (customer message, review sentence, passage)
+state_modality_src:
+  quote: customer message
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+context_length: 512 tokens total; state is cut to 256 tokens
+context_length_src:
+  quote: 'Context: 512 tokens total (state is cut to 256 tokens).'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+cardinality_limit: up to 255 options declared per choice question
+cardinality_limit_src:
+  quote: '`choice` over up to 255 options'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+latency_with_hardware: 'CPU fp32 on an M1 Max: 1.8s for 4 questions; H100 bf16: 28 ms end-to-end for 10
+  questions on one state (25 ms forward), 518 questions/s'
+latency_with_hardware_src:
+  quote: 'H100 bf16: 28 ms end-to-end for 10 questions on one state (25 ms forward), 518 questions/s at'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+price: not disclosed as an inference price; training cost was about $0.25 (229s on one H100)
+price_src:
+  quote: one H100 (229 s, ≈ $0.25).
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+confidence_definition: Max probability after temperature scaling on the validation split
+confidence_definition_src:
+  quote: Confidence is the max probability after temperature scaling on the validation split
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+serving_temperature: A post-hoc temperature fitted on a validation split, stored in open_jev_config.json;
+  numeric value not restated in the portion of the card fetched
+serving_temperature_src:
+  quote: 'the post-hoc temperature
+
+    (fitted on a validation split)'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+calibration_as_shipped: In-domain accuracy 0.854, Brier 0.213, ECE 0.022; on OOD questions confidence
+  is over-confident by about 0.03 mean and should be re-calibrated on the user's own data
+calibration_as_shipped_src:
+  quote: "in-domain ECE\n  0.022); on OOD questions it is over-confident by ~0.03 mean and should be re-calibrated\
+    \ on your data."
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+disclosed_failure_modes: English only; 512-token context; three public domains only (banking support,
+  movie reviews, Wikipedia yes/no); OOD over-confidence of about 0.03 mean
+disclosed_failure_modes_src:
+  quote: English only; 512-token context; three public domains (banking support, movie reviews, Wikipedia
+    yes/no).
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+evaluation_protocol_published: Yes; test (1,500 states / 3,508 questions) and OOD (4,012 never-seen questions
+  on the same states) splits, three-seed replication (in-domain 0.847 +/- 0.005, OOD 0.678 +/- 0.012)
+evaluation_protocol_published_src:
+  quote: 'Three seeds of this configuration: in-domain 0.847 ± 0.005, OOD 0.678 ± 0.012.'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+source_urls:
+- https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md
+- https://github.com/kotoba-lang/typed-decisions
+source_urls_src:
+  quote: '[kotoba-lang/typed-decisions](https://github.com/kotoba-lang/typed-decisions)'
+  url: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large/raw/19bf9a64815add579fbf6c907bef584d9277a8e4/README.md

@@ -1,0 +1,26 @@
+name: jev-rerank-bench
+repo: https://github.com/anessbelbati/jev-rerank-bench
+revision_sha: 1645876cc264ccb676795095abfdc6dad47e37ff
+author: anessbelbati
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'Can a decision model beat dedicated rerankers? TypeSafe Jev vs Cohere Rerank 4 vs ZeroEntropy
+  zerank-2 vs a chat-model baseline: 14 datasets, every raw API response, bootstrap ranges on every gap.'
+primitives_supported:
+- choice
+- noul (yes/no)
+models_supported:
+- Qwen
+- Qwen2
+key_claims:
+- excerpt: 'The write-up:** [Jev vs Cohere Rerank 4 Pro vs zerank-2: reranker benchmark](https://anessbelbati.com/blog/i-gave-jev-a-rerankers-job)
+    walks through the results, the negation test and the Qwen follow-up.'
+  verbatim: true
+- excerpt: The ranking average put **Jev's rubric at 0.692 and Cohere Pro at 0.691**, without establishing
+    a winner.
+  verbatim: true
+- excerpt: Jev did better on the negation test than the rerankers; the open-weight Open-Jev 9B, run afterwards
+    in its own block, reads negation better than Jev asked the same way
+  verbatim: true

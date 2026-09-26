@@ -1,0 +1,25 @@
+name: Decis
+repo: https://github.com/chaitin/Decis
+revision_sha: 931bda85543e0012bfffcf4ea5f6b5ffd7fbcee9
+author: chaitin
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Self-hosted, Jev-compatible decision-model API — one /v1/systemone endpoint, open weights
+  (Laya, kev), one Docker image per engine.
+primitives_supported:
+- choice
+- noul
+models_supported: []
+key_claims:
+- excerpt: It implements the [TypeSafe System One API](https://docs.typesafe.ai/api) — the `/v1/systemone`
+    contract the official `typesafe-sdk` already speaks — so pointing the SDK at your own host is the
+    whole migration.
+  verbatim: true
+- excerpt: '- **Runs out of the box.** Three commands and you have an engine answering `/v1/systemone`   and
+    a playground to try it in.'
+  verbatim: true
+- excerpt: '- **A playground with three games.** Snake, dino and tetris, each one deciding through a   real
+    `/v1/systemone` call.'
+  verbatim: true

@@ -1,0 +1,26 @@
+name: openJev-verdict-2.0
+repo: https://github.com/Heman10x-NGU/openJev-verdict-2.0
+revision_sha: bff28567cff463b833bf044f351a8b7945d53e07
+author: Heman10x-NGU
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: open_model_training
+what_it_does: Later, more-starred repo from the same author as Verdict-open-jev; bundles the original 151M Verdict
+  model plus a second, specialized 'Verdict 2.0' architecture for typed software workflows.
+primitives_supported:
+- choice
+- score
+- noul (binary)
+models_supported:
+- Verdict (151M, ModernBERT+GLiClass)
+- Verdict 2.0
+key_claims:
+- excerpt: Calibrated 151M Non-Autoregressive Decision Engine beating TypeSafe Jev & Laya on LocalLLaMA/typed-decisions
+    (77.10% acc, 0.0636 Brier, 0.0144 ECE)
+  verbatim: true
+- excerpt: These are inference fixes, not a retrain. The weights are byte-identical to the published checkpoint.
+    Measured on the 231 public JevBench tasks.
+  verbatim: true
+note_for_report: Not the repo named in the Ibrahim & Zaki replication package (that is Heman10x-NGU/Verdict-open-jev);
+  this is a later, separate repo from the same author, with 283 stars vs 96.

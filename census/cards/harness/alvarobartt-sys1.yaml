@@ -1,0 +1,24 @@
+name: sys1
+repo: https://github.com/alvarobartt/sys1
+revision_sha: 3dfd9166bd14fc492f46ebe983a5f3c72abff52a
+author: alvarobartt
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: local_server
+what_it_does: System One compatible API for open decision models, written in Rust.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: src="https://github.com/user-attachments/assets/8b2774a7-6439-422e-bbd3-3fdd85117c5d"     alt="System
+    One"     width="1200"   />     System One compatible API for open decision models, e.g.
+  verbatim: true
+- excerpt: '- `tokio`, `axum` and `serde`, the usual suspects - System One compatible API Spec - `candle`
+    with [`tokenizers` release candidate](https://huggingface.co/blog/tokenizers-v1)!'
+  verbatim: true
+- excerpt: '- Dynamic, token-based batching - Support for ModernBert with Laya custom decision heads -
+    CPU, CUDA and Metal (MPS) supported - ~14ms per query on NVIDIA RTX Pro 6000'
+  verbatim: true

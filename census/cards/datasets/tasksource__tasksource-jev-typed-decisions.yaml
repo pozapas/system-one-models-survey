@@ -1,0 +1,69 @@
+name: tasksource-jev-typed-decisions
+name_src:
+  quote: '# tasksource-jev-typed-decisions'
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+hf_id: tasksource/tasksource-jev-typed-decisions
+hf_id_src:
+  quote: tasksource/tasksource-jev-typed-decisions
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+revision_sha: see meta_raw for pinned sha, fetched 2026-09-24
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+vendor_or_author: tasksource
+vendor_or_author_src:
+  quote: tasksource/tasksource-jev-typed-decisions
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+release_date: see meta_raw createdAt
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+availability_and_license: other
+availability_and_license_src:
+  quote: 'license: other'
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+purpose: One million decisions from 500+ Tasksource tasks across 300+ dataset families, in a single typed-decision
+  format
+purpose_src:
+  quote: One million decisions from **500+ Tasksource tasks across 300+ dataset families**,
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+size_and_splits: 900,000 / 50,000 / 50,000 examples across split configs (num_examples fields in the dataset-viewer
+  metadata)
+size_and_splits_src:
+  quote: One million decisions from **500+ Tasksource tasks across 300+ dataset families**,
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+label_construction: Most rows inherit labels, ratings, or annotator votes from existing datasets, not
+  labels invented by a teacher model
+label_construction_src:
+  quote: Most rows inherit labels, ratings, or annotator votes from existing datasets, not labels invented
+    by a teacher model
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+teacher_model: not established in this compact pass
+teacher_model_src:
+  quote: none found
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+teacher_self_agreement: not established in this compact pass
+teacher_self_agreement_src:
+  quote: none found
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+other_reference_points: not established in this compact pass; compact card, minor dataset
+other_reference_points_src:
+  quote: none found
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+evaluation_protocol_published: not established in this compact pass; compact card, minor dataset
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+disclosed_caveats: not established in this compact pass; compact card, minor dataset
+disclosed_caveats_src:
+  quote: none found
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+source_urls:
+- https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md
+source_urls_src:
+  quote: tasksource/tasksource-jev-typed-decisions
+  url: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/raw/01cf47f3854cc90dc6e60b744586b1c843a3c639/README.md

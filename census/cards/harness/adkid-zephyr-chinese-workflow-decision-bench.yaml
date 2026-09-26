@@ -1,0 +1,20 @@
+name: chinese-workflow-decision-bench
+repo: https://github.com/Adkid-Zephyr/chinese-workflow-decision-bench
+revision_sha: b694dc6dbcba12c5bcf8d51b60ec48ff6ab87d57
+author: Adkid-Zephyr
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'Feishu message classification benchmark: 64 synthetic scenarios, reusable classifier adapters,
+  and audited Jev vs Laya results.'
+primitives_supported:
+- choice
+models_supported: []
+key_claims:
+- excerpt: 简体中文** · [English](README.en.md) 一个面向 Feishu（飞书）消息场景的可复用分类 benchmark。固定输入、提示与标签，分别报告分类质量、误生成任务和真实调用延迟。Jev与Laya是首批参测模型。
+    [完整成绩](RESULTS.md) · [原因分析与环境排查](docs/ANALYSIS.md) · [接入其他分类器](docs/ADDING_MODELS.md) · [竖版 SVG](assets/xiaohongshu-scorecard-3x4.svg)
+    > 已做小规模环境复查：8例 × 2种提示，CPU与MPS的16次标签和返回概率一致；权重哈希匹配。不能据此证明Jev的预训练更强，详见分析报告。 **本项目与飞书官方无关联，未测试飞书平台本身。这是场景化合成诊断集，不是真实群聊转储，不是通用模型排行榜，也不是独立第三方盲测。**
+    数据和标签由 AI 辅助编写，没有独立多人标注。此前的12例探索影响了测试设计；本仓库64例及所有提示在这次调用模型前冻结，未依据结果修改标签。两种模型均使用同一份请求内容。 单选择题：直接四选一。四问组合：分别判断相关性、行动、紧急性、资料价值，再由固定规则分类。
+    64 个合成场景，准确率取首次冻结结果。Laya 为 M4 GPU 本地运行，Jev
+  verbatim: true

@@ -1,0 +1,24 @@
+name: ruby_decision_model
+repo: https://github.com/obie/ruby_decision_model
+revision_sha: f79a890ce4eaa8f83d8220727319ee7b11416e01
+author: obie
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: Ruby client for decision models such as Typesafe Jev
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported: []
+key_claims:
+- excerpt: '```ruby gem "ruby_decision_model" ``` ```ruby require "ruby_decision_model" client = RubyDecisionModel::Client.new
+    response = client.ask( state: { title: "Server returns 500 on checkout", reporter: "support" }, questions:
+    { "urgent" => RubyDecisionModel::Questions.noul("Is'
+  verbatim: true
+- excerpt: The default model is `typesafe/jev-1.13`.
+  verbatim: true
+- excerpt: '```ruby client = RubyDecisionModel::Client.new(provider: :typesafe) ```  Requests go to `https://api.typesafe.ai/v1/systemone`.'
+  verbatim: true

@@ -1,0 +1,26 @@
+name: JEV-mini
+repo: https://github.com/ljwwwiop/JEV-mini
+revision_sha: b4d5869bf75385a2ebc7a7a764dc4f0be342212b
+author: ljwwwiop
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: JEV-mini is a minimal learning project to train a fast decision-making model.
+primitives_supported:
+- choice
+- score
+- noul
+- rating
+- extract
+models_supported:
+- Qwen
+- Qwen3
+key_claims:
+- excerpt: Requires Python >=3.10.
+  verbatim: true
+- excerpt: Prepare local Qwen3-0.6B weights and your training data before running.
+  verbatim: true
+- excerpt: This is a real tool-selection sample from validation at step 500, with all original fields
+    and prediction results preserved.
+  verbatim: true

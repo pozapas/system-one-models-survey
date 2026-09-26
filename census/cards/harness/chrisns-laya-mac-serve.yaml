@@ -1,0 +1,22 @@
+name: laya-mac-serve
+repo: https://github.com/chrisns/laya-mac-serve
+revision_sha: 675e99cb893252dedb8c93869211732712a59d08
+author: chrisns
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Serve the Laya decision engine from a macOS menu bar app with an OpenAI-compatible endpoint
+  for n8n
+primitives_supported:
+- choice
+- noul
+- extract
+models_supported: []
+key_claims:
+- excerpt: Point the n8n **Text Classifier** node at it and classify emails on your own Mac.
+  verbatim: true
+- excerpt: It answers typed questions in one forward pass of about 40 ms.
+  verbatim: true
+- excerpt: '- Translates each n8n classification request into Laya typed questions.'
+  verbatim: true

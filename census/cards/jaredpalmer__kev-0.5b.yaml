@@ -1,0 +1,111 @@
+name: Kev-0.5B
+name_src:
+  quote: '# Kev-0.5B'
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+hf_id: jaredpalmer/kev-0.5b
+hf_id_src:
+  quote: jaredpalmer/kev-0.5b
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+revision_sha: see fetch_log.csv / meta_raw for this repo's pinned sha
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+vendor_or_author: Jared Palmer
+vendor_or_author_src:
+  quote: jaredpalmer/kev-0.5b
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+release_date: '2026-09-18'
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+availability_and_license: Open weights (LoRA adapter), Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+backbone: Qwen/Qwen2.5-0.5B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen2.5-0.5B'
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+parameter_count: Trainable parameters 9.3M (LoRA 8.8M + head 0.46M), 1.9% of the backbone; LoRA rank 16,
+  alpha 32, on all 24 layers
+parameter_count_src:
+  quote: Trainable parameters | 9.3M (LoRA 8.8M + head 0.46M), 1.9% of the backbone |
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+decision_head: LoRA adapter plus a small pointer head on top of Qwen2.5-0.5B; card states it reproduces
+  the architecture Archer Hume inferred for Jev
+decision_head_src:
+  quote: It is a LoRA adapter plus a small pointer head on top of `Qwen/Qwen2.5-0.5B`.
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+training_objective: Cross-entropy on the option distribution, same decision-v6/v7 family recipe as the
+  other Kev sizes
+training_objective_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+training_data: Same family public-dataset mixture as the other Kev sizes (see Kev-9B card); this card's
+  own compact note not independently re-verified line by line
+training_data_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+primitives: choice, noul, score
+primitives_src:
+  quote: typed decision (choice / noul / score)
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+state_modality: one document (text/JSON state)
+state_modality_src:
+  quote: one document (the *state*)
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+context_length: not disclosed as a fixed token limit in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+latency_with_hardware: compact card; brief only asked to note this model's existence, not measure it in
+  detail here
+latency_with_hardware_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+serving_temperature: not independently re-verified for this sibling; see Kev-9B (T=2.30) and Kev-0.8B
+  (T=2.35 current / T=2.41 prior) for confirmed family values
+serving_temperature_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+calibration_as_shipped: not independently re-verified for this sibling in this compact pass
+calibration_as_shipped_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+disclosed_failure_modes: Kev-0.5B is a **decision model**. It takes one document (the *state*) and a set
+  of typed questions, and returns a probability distribution for each question in one forward pass.
+disclosed_failure_modes_src:
+  quote: Kev-0.5B is a **decision model**. It takes one document (the *state*) and a set of typed questions,
+    and returns a probability distribution for each question in one forward pass.
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+evaluation_protocol_published: Yes, per the shared Kev family protocol (development partitions select
+  models, locked test read once); see github.com/jaredpalmer/kev
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+source_urls:
+- https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md
+- https://github.com/jaredpalmer/kev
+source_urls_src:
+  quote: jaredpalmer/kev-0.5b
+  url: https://huggingface.co/jaredpalmer/kev-0.5b/raw/9ce2fd39db3a397c89733f94af948e3d1fdfffcd/README.md

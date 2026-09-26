@@ -1,0 +1,68 @@
+name: this-that-spatial-bench
+name_src:
+  quote: '# spatial-decisions'
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+hf_id: limberc/this-that-spatial-bench
+hf_id_src:
+  quote: spatial-reasoning
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+revision_sha: see meta_raw for pinned sha, fetched 2026-09-24
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+vendor_or_author: limberc
+vendor_or_author_src:
+  quote: spatial-reasoning
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+release_date: see meta_raw createdAt
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+availability_and_license: mit
+availability_and_license_src:
+  quote: 'license: mit'
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+purpose: The benchmark named on the this-that-model 1.0/1.1 cards; spatial and logical two-option decision
+  families, each label-balanced by construction
+purpose_src:
+  quote: spatial-reasoning
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+size_and_splits: Multiple families with n items each, one test split; one family (stochastic) has a real
+  probability target rather than a discrete label
+size_and_splits_src:
+  quote: Under a noisy actuator of stated reliability, will the executed move be safe?
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+label_construction: Items are bucketed by answer and balanced by construction; one family's gold is a
+  computed probability from a simulated actuator, not a human or teacher label
+label_construction_src:
+  quote: the true distribution over `options`. One-hot for the deterministic families
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+teacher_model: not established in this compact pass
+teacher_model_src:
+  quote: none found
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+teacher_self_agreement: not established in this compact pass
+teacher_self_agreement_src:
+  quote: none found
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+other_reference_points: not established in this compact pass; compact card, minor dataset
+other_reference_points_src:
+  quote: none found
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+evaluation_protocol_published: not established in this compact pass; compact card, minor dataset
+evaluation_protocol_published_src:
+  quote: none found
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+disclosed_caveats: not established in this compact pass; compact card, minor dataset
+disclosed_caveats_src:
+  quote: none found
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+source_urls:
+- https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md
+source_urls_src:
+  quote: spatial-reasoning
+  url: https://huggingface.co/datasets/limberc/this-that-spatial-bench/raw/423c49f4ad2b8d200b38e845fdf046ba6b37d46b/README.md

@@ -1,0 +1,210 @@
+{
+  "_doc": "License audit written by shared/src/b03_licenses.py on 2026-09-25. datasets is a list, one entry per benchmark dataset (D1, D2, four D3 tasks), each with license_at_snapshot (the license in force at the snapshot the benchmark evaluated), quote_at_snapshot (verbatim from the primary source), redistribution (what the license allows for the text) and recommendation (ship text or ship reconstruction scripts). d1_license_history lists the YAML license field of the D1 dataset card at every repository commit.",
+  "d1_license_history": [
+    {
+      "cc_by_mentions": [],
+      "commit": "f7a2487edd7a043a5441a5e9ccc7fe5ddbd9ebe8",
+      "date": "2026-09-25T07:49:05+00:00",
+      "title": "Leaderboard: add Featherless Simple Jev (Qwen3.6-35B-A3B classifier), 0.716 acc, measured on the 400-case test split",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "c76749ec58bd8c3d2ea706b31c333a9059c38f90",
+      "date": "2026-09-22T11:57:46+00:00",
+      "title": "Latency footnote: say exactly how it was measured",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "811ea6ceb616ba2d234f11cd1eb7a428dabd9e42",
+      "date": "2026-09-22T11:57:33+00:00",
+      "title": "Leaderboard: Decider 1 beats Jev on accuracy, latency and price",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "e9e70d43798469c40b28365e0e9bccf9725634fa",
+      "date": "2026-09-22T11:57:04+00:00",
+      "title": "Leaderboard: meraGPT Decider 1 is state of the art (0.768 accuracy, KL 0.096)",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "ea9306458d6e9563628369a3d1e72e362fb381d2",
+      "date": "2026-09-18T03:24:21+00:00",
+      "title": "Replace the estimated System One row with a measured Jev 1.13.0 result",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "b17c8f9a571ae91d7463ef3cf0ba0c1e14725264",
+      "date": "2026-09-17T09:23:53+00:00",
+      "title": "card: point usage examples at the canonical org path",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "26059bf4dfd1309573ced049487f93defeedb83c",
+      "date": "2026-09-17T08:19:33+00:00",
+      "title": "card: explain each reference row, add ceilings and a saturation estimate",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "669f8bb949973c7b370d96a23830906349745e00",
+      "date": "2026-09-17T08:14:31+00:00",
+      "title": "card: correct the prior baseline, which had been fitted on the benchmark",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "c247d7aa963de102cd5b3eb53369081b0655bf69",
+      "date": "2026-09-17T08:12:21+00:00",
+      "title": "card: add Adaptive Classifier specialist baselines (MiniLM and ModernBERT)",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "a8b1159bf48f5d6d57b4e408b82b28ddadbc6b4a",
+      "date": "2026-09-16T23:25:19+00:00",
+      "title": "rewrite dataset card",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "bbc21f100df0312e6b8aa7499590b16da50559eb",
+      "date": "2026-09-16T23:25:18+00:00",
+      "title": "remove build-time audit from the published dataset",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "468b1461d59e01d6404e1cf37431da962acd43a0",
+      "date": "2026-09-16T23:12:33+00:00",
+      "title": "full dataset: 400-case benchmark (test) + 1200-case training split, verified disjoint",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "d5391f51767fe1c6cf78478e4bd2f9ef9e3f3617",
+      "date": "2026-09-16T08:42:03+00:00",
+      "title": "card: specialist vs generalist evaluation modes",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "783b899c699493d1d9bed3e4d4203c6b2249af01",
+      "date": "2026-09-16T08:19:08+00:00",
+      "title": "benchmark-only: single test split of 400; add measured score reference points",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "5fbd30d345bdf7a8d177b0d7b08fcd93456771ac",
+      "date": "2026-09-16T08:16:16+00:00",
+      "title": "card: remove personal attribution from citation",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [],
+      "commit": "3443369efcd42f986cb2112a4660aa3ed6f8d6a4",
+      "date": "2026-09-16T07:42:34+00:00",
+      "title": "typed-decisions: 400 cases, 2000 typed decisions across 4 workflows",
+      "yaml_license": "apache-2.0"
+    },
+    {
+      "cc_by_mentions": [
+        "no README.md (RemoteEntryNotFoundError)"
+      ],
+      "commit": "a9f7840fa35b50a2bf3656176d1a3114a2a5f293",
+      "date": "2026-09-16T07:42:28+00:00",
+      "title": "initial commit",
+      "yaml_license": null
+    }
+  ],
+  "data_licenses_md_check": {
+    "claim": "Apache-2.0 on the current dataset card (CC BY 4.0 at the revision used)",
+    "file": "companion/DATA_LICENSES.md",
+    "verdict": "incorrect: apache-2.0 at the revision used (c76749ec) and at every other revision"
+  },
+  "datasets": [
+    {
+      "any_revision_cc_by": false,
+      "current_head": "f7a2487edd7a043a5441a5e9ccc7fe5ddbd9ebe8",
+      "dataset": "D1 LocalLLaMA/typed-decisions",
+      "finding": "the dataset card declares apache-2.0 at the pinned revision and at every revision of the repository; no revision declares CC BY 4.0. The manuscript's Apache-2.0 is correct and companion/DATA_LICENSES.md, which says CC BY 4.0 at the revision used, is wrong",
+      "license_at_snapshot": "apache-2.0",
+      "license_current": "apache-2.0",
+      "license_files_in_repo_at_snapshot": [],
+      "quote_at_snapshot": "license: apache-2.0  (README.md YAML front matter at c76749ec58)",
+      "recommendation": "the repository may ship the D1 text; ship it with the Apache-2.0 notice and a statement that option keys were renamed, and keep the reconstruction script (s00_freeze_inputs.py) as the primary route",
+      "redistribution": "permitted under Apache-2.0 with attribution, a copy of the license and a notice of changes; the benchmark's d1_* inputs rename option keys (a modification), which must be stated",
+      "snapshot": "c76749ec58bd8c3d2ea706b31c333a9059c38f90"
+    },
+    {
+      "dataset": "D2 CLINC-150 (clinc/oos-eval)",
+      "github_license_api": "NOASSERTION (GitHub does not parse the CC text, the file itself is CC BY 3.0)",
+      "hf_mirror": {
+        "repo": "clinc/clinc_oos",
+        "yaml_license": "- cc-by-3.0"
+      },
+      "license_at_snapshot": "CC BY 3.0 Unported",
+      "license_current": "CC BY 3.0 Unported (LICENSE unchanged at head: True)",
+      "quote_at_snapshot": "Creative Commons Legal Code Attribution 3.0  (LICENSE file at 828f8093)",
+      "readme_mentions_license": false,
+      "recommendation": "the repository may ship the 800 D2 texts with attribution; the reconstruction script is sufficient and smaller",
+      "redistribution": "permitted with attribution (CC BY 3.0, section 4b) and a note of changes (the benchmark adds a fixed option permutation and neutral keys)",
+      "snapshot": "828f8093932c8fe6ca7936c3d2e52903b1c523de"
+    },
+    {
+      "dataset": "D3 conv_go_awry (Conversations Gone Awry, ConvoKit)",
+      "intermediate_source": "github.com/SALT-NLP/LLMs_for_CSS at 55183a64d7, css_data/<task>/test.json",
+      "intermediate_source_license": "none declared (GitHub license API HTTP 404; no LICENSE file in the tree)",
+      "license_at_snapshot": "not stated by the corpus page; text is Wikipedia talk-page content, which Wikipedia publishes under CC BY-SA",
+      "question_wording_source": "github.com/hazemibrahim97/decision-models-css at 311956c2d1, license MIT (covers the code and prompts, not the task data)",
+      "quote_at_snapshot": "no license statement on convokit.cornell.edu/documentation/awry.html (HTTP 200, read 2026-09-25)",
+      "recommendation": "ship reconstruction scripts (s00b_prepare_d3.py) rather than the text",
+      "redistribution": "not explicitly granted by the corpus; CC BY-SA of the underlying Wikipedia text would require attribution and share-alike"
+    },
+    {
+      "dataset": "D3 wiki_corpus (Wikipedia Talk Pages, Echoes of Power, ConvoKit)",
+      "intermediate_source": "github.com/SALT-NLP/LLMs_for_CSS at 55183a64d7, css_data/<task>/test.json",
+      "intermediate_source_license": "none declared (GitHub license API HTTP 404; no LICENSE file in the tree)",
+      "license_at_snapshot": "CC BY-SA 4.0",
+      "question_wording_source": "github.com/hazemibrahim97/decision-models-css at 311956c2d1, license MIT (covers the code and prompts, not the task data)",
+      "quote_at_snapshot": "This dataset is governed by the CC BY-SA license v4.0",
+      "recommendation": "shipping the text would put those files under CC BY-SA 4.0; ship the reconstruction script instead",
+      "redistribution": "permitted with attribution and share-alike (derived files must carry CC BY-SA 4.0)"
+    },
+    {
+      "dataset": "D3 wiki_politeness (Stanford Politeness Corpus, Wikipedia, ConvoKit)",
+      "intermediate_source": "github.com/SALT-NLP/LLMs_for_CSS at 55183a64d7, css_data/<task>/test.json",
+      "intermediate_source_license": "none declared (GitHub license API HTTP 404; no LICENSE file in the tree)",
+      "license_at_snapshot": "CC BY 4.0",
+      "question_wording_source": "github.com/hazemibrahim97/decision-models-css at 311956c2d1, license MIT (covers the code and prompts, not the task data)",
+      "quote_at_snapshot": "ConvoKit\u2019s Stanford Politeness Corpus is governed by the CC BY license v4.0",
+      "recommendation": "may ship with attribution; the reconstruction script is the consistent route for all four D3 tasks",
+      "redistribution": "permitted with attribution"
+    },
+    {
+      "dataset": "D3 emotion (CARER, dair-ai/emotion)",
+      "intermediate_source": "github.com/SALT-NLP/LLMs_for_CSS at 55183a64d7, css_data/<task>/test.json",
+      "intermediate_source_license": "none declared (GitHub license API HTTP 404; no LICENSE file in the tree)",
+      "license_at_snapshot": "other: The dataset should be used for educational and research purposes only.",
+      "license_current_same_text": true,
+      "question_wording_source": "github.com/hazemibrahim97/decision-models-css at 311956c2d1, license MIT (covers the code and prompts, not the task data)",
+      "quote_at_snapshot": "The dataset should be used for educational and research purposes only.",
+      "recommendation": "do not ship the tweet text; ship item ids (row indices of dair-ai/emotion unsplit) and the reconstruction script",
+      "redistribution": "not granted: the card restricts use to education and research and gives no redistribution terms",
+      "snapshot": "dair-ai/emotion cab853a1dbdf4c42c2b3ef2173804746df8825fe (cached); items via Ziems et al. test.json",
+      "yaml_license_current": [
+        "other"
+      ],
+      "yaml_license_snapshot": [
+        "other"
+      ]
+    }
+  ],
+  "summary": "D1 typed-decisions is Apache-2.0 at the evaluated revision c76749ec and at every revision; DATA_LICENSES.md's CC BY 4.0 note is wrong. D2 CLINC-150 is CC BY 3.0 (LICENSE file at 828f8093). D3: wiki_politeness CC BY 4.0, wiki_corpus CC BY-SA 4.0, conv_go_awry has no corpus-level license statement (Wikipedia text, CC BY-SA), emotion is restricted to educational and research use with no redistribution terms, and the intermediate SALT-NLP/LLMs_for_CSS repository declares no license. D1 and D2 text may be shipped with attribution; for D3 the repository should ship the reconstruction script and item ids rather than the text."
+}

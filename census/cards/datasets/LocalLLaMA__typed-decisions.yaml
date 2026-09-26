@@ -1,0 +1,87 @@
+name: typed-decisions
+name_src:
+  quote: '# Typed Decisions'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+hf_id: LocalLLaMA/typed-decisions
+hf_id_src:
+  quote: LocalLLaMA/typed-decisions
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+revision_sha: c76749ec58bd8c3d2ea706b31c333a9059c38f90
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+vendor_or_author: LocalLLaMA (independent)
+vendor_or_author_src:
+  quote: LocalLLaMA/typed-decisions
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+release_date: '2026-09-16'
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+availability_and_license: Open, Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+purpose: Benchmark for typed probabilistic decisions over shared state; primitives follow TypeSafe's noul/choice/score
+purpose_src:
+  quote: 'The schema follows the System One primitives used by
+
+    [TypeSafe AI](https://typesafe.ai): `noul`, `choice` and `score`.'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+size_and_splits: 4 workflows (agent_trace_observability, customer_service, invoice_processing, security_incidents),
+  each 300 train / 100 test cases, 5 questions per case; test split totals 400 cases / 2,000 decisions
+size_and_splits_src:
+  quote: '| `agent_trace_observability` | Assess an agent run to decide whether human review is needed,
+    and how urgent it is. | 300 | 100 |'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+label_construction: Latent factors sampled per case, state rendered (free text or structured per artefact
+  type), then labelled by a teacher endpoint sampled 3 times per case at temperature 0.7; gold is the
+  mean of the sampled distributions (soft labels)
+label_construction_src:
+  quote: 'Label it with a teacher endpoint, sampled 3 times per case at
+
+    temperature 0.7. The gold is the mean of the sampled
+
+    distributions.'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+teacher_model: A teacher endpoint of roughly 4B-class capability (not named more specifically in this
+  card)
+teacher_model_src:
+  quote: 'Gold is the mean of three samples from a teacher endpoint of roughly 4B-class
+
+    capability.'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+teacher_self_agreement: 0.735 (a fresh teacher sample scored against gold built from the other samples),
+  measured on the 1600-case set; read as the practical accuracy ceiling on this benchmark
+teacher_self_agreement_src:
+  quote: '| Teacher self-agreement | 0.735 | a fresh teacher sample scored against gold built from the
+    others |'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+other_reference_points: Majority baseline 0.520; a model fitted to the latent factors that generated each
+  case, cross-validated ('perfect scenario understanding') 0.704
+other_reference_points_src:
+  quote: '| Majority baseline | 0.520 | ignore the input, always guess the commonest label |'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+evaluation_protocol_published: Yes; a public leaderboard table (accuracy, KL from gold, Brier, latency,
+  price) is scored on the test split, and quality checks (state diversity, label balance, gold-input tracking)
+  are described before release
+evaluation_protocol_published_src:
+  quote: 'Scored on the `test` split: 400 cases, 2,000 decisions.'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+disclosed_caveats: A score above the teacher self-agreement ceiling means a model has learned the teacher's
+  quirks rather than the task; option descriptions in `criteria` are part of the input and stripping them
+  changes the task
+disclosed_caveats_src:
+  quote: 'A score much above 0.75 means a model has learned the
+
+    teacher''s quirks rather than the task.'
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+source_urls:
+- https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md
+source_urls_src:
+  quote: LocalLLaMA/typed-decisions
+  url: https://huggingface.co/datasets/LocalLLaMA/typed-decisions/raw/c76749ec58bd8c3d2ea706b31c333a9059c38f90/README.md

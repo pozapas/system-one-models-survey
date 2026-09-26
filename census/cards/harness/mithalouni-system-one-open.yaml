@@ -1,0 +1,30 @@
+name: system-one-open
+repo: https://github.com/mithalouni/system-one-open
+revision_sha: 77f1f7cccf8aa752e0ed7edcc8d2094bac707bdc
+author: mithalouni
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: open_model_training
+what_it_does: 'Open replica of TypeSafe''s Jev: typed calibrated decisions in one forward pass, on Gemma
+  4 E2B / Gemma 3 270M (Modal)'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen
+- Gemma 4
+- Gemma 3 270M
+- Gemma
+key_claims:
+- excerpt: State in, typed calibrated decisions out, one forward pass, no decoding.** An open replica
+    of TypeSafe's [Jev](https://typesafe.ai) built on Gemma 4 E2B (attention LoRA) and Gemma 3 270M, trained
+  verbatim: true
+- excerpt: 'Full report with baselines and caveats: https://claude.ai/artifact/8xJE6T4ovza9JwAFpMbQay   Base
+    URL: https://mithalouni--jev-serve-e2b-full-server-web.modal.run  (scales to zero; first request after
+    idle takes ~60 s).'
+  verbatim: true
+- excerpt: The base model played Doom zero-shot but stood still in Mario ("noop" ~77%); Jev played it
+    zero-shot.
+  verbatim: true

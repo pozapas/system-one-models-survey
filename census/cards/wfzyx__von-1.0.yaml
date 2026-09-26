@@ -1,0 +1,126 @@
+name: Von 1.2
+name_src:
+  quote: '# Von 1.2'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+hf_id: wfzyx/von-1.0
+hf_id_src:
+  quote: Previously published as `wfzyx/von-1.0`.
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+revision_sha: 5df8185a4f2327ad0a7cd117cc4f701ac557b9ae
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+vendor_or_author: wfzyx (independent)
+vendor_or_author_src:
+  quote: https://github.com/wfzyx/von
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+release_date: '2026-09-19'
+release_date_src:
+  quote: (HF API createdAt for wfzyx/von-1.0)
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+availability_and_license: Open weights, Apache-2.0
+availability_and_license_src:
+  quote: '**License:** Apache-2.0'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+backbone: ModernBERT-large, 395M backbone + Option-Marker scoring head
+backbone_src:
+  quote: '**Size:** 395M (ModernBERT-large backbone + Option-Marker scoring head)'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+parameter_count: 395M (safetensors.total 394,781,696)
+parameter_count_src:
+  quote: '**Size:** 395M (ModernBERT-large backbone + Option-Marker scoring head)'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+decision_head: 'Option-Marker head: every candidate option gets a [MASK] marker scored by a small head;
+  in v1.2 an option''s tokens attend only to the shared premise and its own tokens, positions restart
+  per option, making each option''s logit a function of (premise, that option) alone'
+decision_head_src:
+  quote: 'Each option
+
+    gets a `[MASK]` marker whose final hidden state is scored by a small head.'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+training_objective: 1.2 was retrained from the 1.1 weights under the new order-invariant attention mask
+  and recovers 1.1's accuracy on every public tier
+training_objective_src:
+  quote: '1.2 was retrained from the 1.1
+
+    weights under the new mask and recovers 1.1''s accuracy on every public tier.'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+training_data: Not itemized by source/size in the portion of the card fetched
+training_data_src:
+  quote: none found
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+primitives: choice-style decisions (declared options scored in one pass); noul with a fitted context-free
+  prior correction
+primitives_src:
+  quote: Zero-shot Noul (no criteria given) uses a fitted context-free prior correction
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+state_modality: text state
+state_modality_src:
+  quote: 'state="Order #123 was never delivered and the customer is asking for their money back."'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+context_length: 8192 tokens; reads its premise accurately out to ~2048 tokens per a marker-distance probe
+context_length_src:
+  quote: '**Context:** 8192 tokens'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+cardinality_limit: not disclosed as a fixed cap in the portion of the card fetched
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+latency_with_hardware: not disclosed as a ms figure in the portion of the card fetched
+latency_with_hardware_src:
+  quote: none found
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+price: not disclosed; open weights
+price_src:
+  quote: none found
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+confidence_definition: Produced by an input-conditioned temperature map, a bounded linear function of
+  the option-distribution entropy, the state length, and the option count, not a single global temperature
+confidence_definition_src:
+  quote: 'Confidence is produced by an
+
+    input-conditioned temperature map — a bounded linear function of the option-distribution
+
+    entropy, the state length, and the option count'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+serving_temperature: Not a single scalar; served via an input-conditioned calibration map (calibration_map
+  in marker_calibration.json) rather than one fitted temperature value
+serving_temperature_src:
+  quote: 'stored in `marker_calibration.json`
+
+    as `calibration_map`.'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+calibration_as_shipped: 'On JevBench public items (ece_top_label): easy tier accuracy 100.0%/ECE 0.109,
+  standard 63.9%/ECE 0.045, hard 36.9%/ECE 0.089; map fitted in-sample on the 231 public items, split-half
+  validation gives Calibration axis 67.6 vs in-sample 77.4'
+calibration_as_shipped_src:
+  quote: easy | 100.0% | 89.1% | 0.109 |
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+disclosed_failure_modes: English only; not generative; near-chance on long multi-hop legal/policy reasoning,
+  not for unsupervised high-stakes contract adjudication; calibration fitted on public benchmark data
+  may drift on different domains
+disclosed_failure_modes_src:
+  quote: "Near-chance on long multi-hop legal/policy reasoning; do not use it unsupervised\n  for high-stakes\
+    \ contract adjudication."
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+evaluation_protocol_published: 'Yes; JevBench public splits via the official harness, with an order-invariance
+  diagnostic (1.1: 49.5% hard-tier answers flipped on reorder vs 1.2: 0.0%)'
+evaluation_protocol_published_src:
+  quote: 'on JevBench''s option-order diagnostic,
+
+    **49.5%** of Von 1.1''s hard-tier answers changed when the options were reordered'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+source_urls:
+- https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md
+- https://github.com/wfzyx/von
+source_urls_src:
+  quote: '**Repo:** https://github.com/wfzyx/von'
+  url: https://huggingface.co/wfzyx/von-1.0/raw/5df8185a4f2327ad0a7cd117cc4f701ac557b9ae/README.md

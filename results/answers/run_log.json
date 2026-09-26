@@ -1,0 +1,50 @@
+{
+  "start": "2026-09-24T18:29:52.389333Z",
+  "models": {
+    "laya-en": {
+      "smoke_s_per_request_incl_load": 2.866490125656128,
+      "estimated_full_run_min_upper": 598.9053369204204
+    },
+    "laya-ml": {
+      "smoke_s_per_request_incl_load": 2.667263984680176,
+      "estimated_full_run_min_upper": 557.2803551991781
+    },
+    "kev-0.8b": {
+      "smoke_s_per_request_incl_load": 10.573983407020568,
+      "estimated_full_run_min_upper": 2209.2575998401644
+    },
+    "decider-2b": {
+      "smoke_s_per_request_incl_load": 4.58962574005127,
+      "estimated_full_run_min_upper": 958.9258046213786
+    },
+    "kev-9b": {
+      "smoke_s_per_request_incl_load": 14.67690658569336,
+      "estimated_full_run_min_upper": 3066.495015970866
+    },
+    "nimble-9b": {
+      "smoke_s_per_request_incl_load": 19.911899733543397,
+      "estimated_full_run_min_upper": 4160.259584328333
+    }
+  },
+  "gpu": "NVIDIA L4, 580.82.07",
+  "end": "2026-09-24T22:39:16.991728Z",
+  "status": {
+    "laya-en": "DONE",
+    "laya-ml": "DONE",
+    "kev-0.8b": "DONE",
+    "decider-2b": "DONE",
+    "this-that-1.0": "MISSING",
+    "kev-9b": "DONE",
+    "nimble-9b": "DONE",
+    "comparator-open": "ERROR"
+  },
+  "env_versions": {
+    "laya": {},
+    "kev_decider_tt": {},
+    "kev9b": {
+      "error": "[Errno 2] No such file or directory: '/content/envs/kev9b/bin/python'"
+    },
+    "nimble": {},
+    "vllm_env": {}
+  }
+}

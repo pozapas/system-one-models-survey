@@ -1,0 +1,23 @@
+name: qwen-rlcd
+repo: https://github.com/shamazharikh/qwen-rlcd
+revision_sha: d41a9aa2f3317f99e82c835dafaac424c6cfdca7
+author: shamazharikh
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: unknown
+category: open_model_training
+what_it_does: Jev-style calibrated decision model (Choice/Score/Noul) on Qwen3.5-0.8B
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen3.5
+- Qwen
+key_claims:
+- excerpt: '---   The implementation targets **`Qwen/Qwen3.5-0.8B-Base`**.'
+  verbatim: true
+- excerpt: Current scope is **inference only**; training and fine-tuning (PLAN.md M2) are on hold.
+  verbatim: true
+- excerpt: Environment:** the dev box is 2× RTX 2080 Ti (11 GB, sm75).
+  verbatim: true

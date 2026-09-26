@@ -1,0 +1,116 @@
+name: Laya
+name_src:
+  quote: '# Laya'
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+hf_id: convaiinnovations/laya
+hf_id_src:
+  quote: convaiinnovations/laya
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+revision_sha: 55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-09-24)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+vendor_or_author: Convai Innovations
+vendor_or_author_src:
+  quote: Apache 2.0 · Convai Innovations
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+release_date: '2026-09-18'
+release_date_src:
+  quote: (HF API createdAt for convaiinnovations/laya)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+availability_and_license: Open weights, Apache-2.0
+availability_and_license_src:
+  quote: Apache 2.0 · Convai Innovations
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+backbone: ModernBERT-large, 395M, bidirectional, fully fine-tuned
+backbone_src:
+  quote: ModernBERT-large (395M, bidirectional, fully fine-tuned) + a decision head trained from scratch
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+parameter_count: 421M total (safetensors.total 421,293,830)
+parameter_count_src:
+  quote: ModernBERT-large | 421M | 512 | English text, guardrails, email triage
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+decision_head: 2 transformer layers, an option-marker scorer, and an act/escalate head, trained from scratch;
+  every option scored at its own [MASK] token, softmaxed over that question's options
+decision_head_src:
+  quote: 2 transformer layers, an option-marker scorer, and an act/escalate head. 421M total.
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+training_objective: 'RLCD: policy reports a distribution, reward is a strictly proper scoring rule (log
+  + spherical, plus ranked probability score for ordinal questions), REINFORCE with group-mean baseline
+  (GRPO-style)'
+training_objective_src:
+  quote: the reward is a strictly proper scoring rule (log + spherical, plus ranked probability score
+    for ordinal questions)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+training_data: Not itemized by source/size in the card beyond the RLCD training description and the separate
+  typed-decisions fine-tuning split
+training_data_src:
+  quote: RLCD (Reinforcement Learning for Calibrated Decisions)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+primitives: choice, score, noul
+primitives_src:
+  quote: '"department": {"type": "choice", "instructions": "Which department should handle this?",'
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+state_modality: text, email, ticket, or JSON
+state_modality_src:
+  quote: Give it a **state** (text, email, ticket, or JSON)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+context_length: 512 tokens (head_max_len = 192)
+context_length_src:
+  quote: 512 tokens per question for English (`head_max_len = 192`)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+cardinality_limit: not disclosed as a fixed cap; accuracy degrades sharply above ~20 options at default
+  settings (Banking77, 77 options, scores 0.425)
+cardinality_limit_src:
+  quote: On Banking77, Jev scores 0.870 (on 72 labels) while Laya scores 0.425 (on 77 labels at default
+    256-token head budget)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+latency_with_hardware: 39.5 ms p50 for 1 question on a Tesla T4 GPU (English checkpoint)
+latency_with_hardware_src:
+  quote: '| 1 | 39.5 ms | **32.8 ms** |'
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+price: $0 self-hosted (open weights)
+price_src:
+  quote: Cost | $0.042 / 1M tokens | **$0 self-hosted** | 100% free
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+confidence_definition: not disclosed as a formula in this card beyond the reported probabilities themselves
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+serving_temperature: not disclosed as a single shipped default; card describes per-(question type, option
+  count) temperature refitting as a user step, not a stated default serving value
+serving_temperature_src:
+  quote: Refitting one temperature per (question type, option count) moves mean ECE **0.466 → 0.081**
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+calibration_as_shipped: Raw ECE 0.466; refitting one temperature per (question type, option count) moves
+  mean ECE to 0.081
+calibration_as_shipped_src:
+  quote: Refitting one temperature per (question type, option count) moves mean ECE **0.466 → 0.081**
+    (`laya`)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+disclosed_failure_modes: Base checkpoint near chance zero-shot on typed-decisions (0.362); Khmer collapses
+  to 0.000 accuracy at 0.952 confidence; noul can follow its label tokens instead of the state; action.act_probability
+  carries no usable signal (AUROC 0.30); high-cardinality choice questions lose accuracy under the default
+  token budget
+disclosed_failure_modes_src:
+  quote: Khmer scores **0.000 accuracy at 0.952 confidence**
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+evaluation_protocol_published: Yes; BENCHMARKS.md on GitHub and a typed-decisions in-card table (400 cases,
+  2,000 decisions) with Jev figures marked as third-party published, not measured by Laya's authors
+evaluation_protocol_published_src:
+  quote: Jev figures are **third-party published, never measured here** (no TypeSafe API access)
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+source_urls:
+- https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md
+- https://github.com/NandhaKishorM/laya
+source_urls_src:
+  quote: '**GitHub:** https://github.com/NandhaKishorM/laya'
+  url: https://huggingface.co/convaiinnovations/laya/raw/55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851/README.md

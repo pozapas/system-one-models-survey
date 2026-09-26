@@ -1,0 +1,116 @@
+name: Kev-9B
+name_src:
+  quote: '# Kev-9B'
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+hf_id: jaredpalmer/kev-9b
+hf_id_src:
+  quote: jaredpalmer/kev-9b
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+revision_sha: 2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+vendor_or_author: Jared Palmer
+vendor_or_author_src:
+  quote: jaredpalmer/kev-9b
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+release_date: '2026-09-19'
+release_date_src:
+  quote: (HF API createdAt for jaredpalmer/kev-9b)
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+availability_and_license: Open weights (LoRA adapter), Apache-2.0
+availability_and_license_src:
+  quote: Apache-2.0 for the adapter and head; the Qwen3.5 base is Apache-2.0
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+backbone: Qwen/Qwen3.5-9B-Base, hybrid of 24 Gated DeltaNet (linear attention) layers and 8 full-attention
+  layers
+backbone_src:
+  quote: 'Base model**: Qwen3.5-9B-Base, a hybrid of 24 Gated DeltaNet (linear attention) layers and 8
+    full-attention layers'
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+parameter_count: LoRA adapter r=16, 45.4M trainable parameters, on Qwen3.5-9B-Base
+parameter_count_src:
+  quote: It is a LoRA adapter (r=16, 45.4M trainable parameters) plus a pointer head on `Qwen/Qwen3.5-9B-Base`
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+decision_head: Pointer head on top of the LoRA-adapted base; option letters/pointer read from the hidden
+  state, no free-text generation
+decision_head_src:
+  quote: one document (the *state*) and a set of typed questions in, a probability distribution per question
+    out, in one forward pass. No text generation.
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+training_objective: Cross-entropy on the option distribution, LoRA r=16 alpha=32, lr 5e-5 (OneCycle),
+  plus a 15-minute delta fine-tune (lr 2e-5, one epoch) on additional date/abstention records
+training_objective_src:
+  quote: pointer head from scratch; cross-entropy on the option distribution; lr 5e-5 (OneCycle)
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+training_data: 'decision-v7: 10,000 public records (1,000 per source), 896 policy minimal-pair records,
+  1,680 rule-structure records, plus a delta of 1,425 generated date/abstention records mixed with 2,000
+  replayed records'
+training_data_src:
+  quote: 10,000 public records (1,000 per source), 896 policy minimal-pair records over nine template
+    families, 1,680 records from 60 randomly generated rule structures in four rendering styles
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+primitives: choice, noul, score (task type text-classification, typed decision choice / noul / score)
+primitives_src:
+  quote: 'name: typed decision (choice / noul / score) }'
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+state_modality: one document (text/JSON state)
+state_modality_src:
+  quote: one document (the *state*) and a set of typed questions in
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+context_length: not disclosed as a fixed token limit in this card
+context_length_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+cardinality_limit: not disclosed as a fixed cap in this card
+cardinality_limit_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+latency_with_hardware: not disclosed as a per-request ms figure; training took 91 min on one H100 (peak
+  39.5 GB); slow on Apple Silicon (no MPS kernel for DeltaNet)
+latency_with_hardware_src:
+  quote: training took 91 min on one H100 (peak 39.5 GB)
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+confidence_definition: not disclosed as an explicit formula in this card
+confidence_definition_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+serving_temperature: T = 2.30, fitted on this checkpoint's in-distribution development rows by minimizing
+  NLL; divides the pointer head's logits at inference by default
+serving_temperature_src:
+  quote: the built-in temperature (T = 2.30) fixes most of it without changing any answer
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+calibration_as_shipped: Out-of-domain ECE 0.106 raw -> 0.042 as served (T=2.30); confident errors out
+  of domain fall from 8.7% raw to 4.0% as served
+calibration_as_shipped_src:
+  quote: out-of-domain ECE | 0.121 | 0.105 | 0.106 | **0.042** | 0.049 |
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+disclosed_failure_modes: Slow on Mac (no MPS kernel for DeltaNet, ~2s vs 0.3s on Kev-8B); knowledge gap
+  vs Jev on MMLU/MMLU-Pro set by the base model; date arithmetic weak without the date_facts preprocessor;
+  coverage at <=5% error 0.45-0.62 against Jev's 0.70
+disclosed_failure_modes_src:
+  quote: The DeltaNet kernels have no MPS implementation; PyTorch falls back to reference code
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+evaluation_protocol_published: Yes; development partitions select models, locked test partitions are read
+  once per candidate, every number carries suite hash/code hashes/git commit in result.json
+evaluation_protocol_published_src:
+  quote: the locked test partition is read at most once per candidate (`runs/locked/kev-9b-night2-du-ungated/`
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+source_urls:
+- https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md
+- https://github.com/jaredpalmer/kev
+source_urls_src:
+  quote: 'Code, suites, every trial with hashes and paired bootstraps: [github.com/jaredpalmer/kev]'
+  url: https://huggingface.co/jaredpalmer/kev-9b/raw/2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c/README.md

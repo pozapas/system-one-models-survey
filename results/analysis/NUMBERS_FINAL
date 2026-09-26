@@ -1,0 +1,6 @@
+written 2026-09-24T22:59:14-05:00, checksum refreshed 2026-09-24 after a provenance-string edit (no value changed)
+all models present: jev-1.13.0, laya-en, laya-ml, kev-0.8b, kev-9b, decider-2b, this-that-1.0, nimble-9b, comparator-open (Qwen3-14B-AWQ)
+numbers.json sha256 4f6687a76806069e873d42ac341336c29b9bf5866523dad4ce7a0527151f340c
+label scheme frozen; later changes only add labels (since the first FINAL: p.pninetyfive, e2.decoderheads.kswap.maxflips, e2.jev.neutralnames.maxflips)
+revision labels rv.* were added on 2026-09-25 (no existing value changed), together with p.comp.*, p.tgrid.*, p.boot.*, ov.* (clinc_overlap.json), e3p.* (e3_permutations.json), 52 lit.* labels from new ledger rows and 16 n.* labels for the new d2 permutation inputs; all 5012 earlier labels keep identical value and fmt
+2026-09-26: Colab revision answers added (d2 permutations p2/p3 for every open model and the comparator, this-that-1.0-desc, open-model D3 retests); labels bl.*, lb.*, rp.* added; e3p.* and rv.fail.* counts updated to include the new files; no earlier label of the original study changed value.

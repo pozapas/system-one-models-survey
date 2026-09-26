@@ -1,0 +1,26 @@
+name: jev-superpowers
+repo: https://github.com/AkashPriyadarshii/jev-superpowers
+revision_sha: 556d30aefc65252ad891249d3b903a394ee5414c
+author: AkashPriyadarshii
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: Systematic software development framework for AI coding agents upgraded with TypeSafe Jev
+  System One typed decisions
+primitives_supported: []
+models_supported:
+- ModernBERT-large
+key_claims:
+- excerpt: 'Keywords: typesafe-ai, jev, laya, open-weights, superpowers, agentic-skills, claude-code,
+    coding-agents, system-one, software-engineering, zero-hallucination, git-jev, jev-scout --> **Systematic
+    agentic software development upgraded with TypeSafe Jev System One typed decisions & open-weight'
+  verbatim: true
+- excerpt: Every architectural fork, dependency selection, shell command, and completion check is gated
+    by sub-second deterministic mathematical judgments—available via **TypeSafe AI Cloud** (`jev-1.13.0`)
+    or **100% offline via Laya** (`convaiinnovations/laya`, Apache-2.0).
+  verbatim: true
+- excerpt: 'Choose the execution profile that fits your operational requirements: ``` ┌────────────────────────┐
+    │ jev-superpowers │ │ (git-jev, limpet, axi) │ └───────────┬────────────┘ │ ┌───────────────────────┴───────────────────────┐
+    ▼ ▼ [Option A: Cloud Jev] [Option'
+  verbatim: true

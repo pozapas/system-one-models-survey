@@ -1,0 +1,27 @@
+name: openthai-systemone
+repo: https://github.com/iapp-technology/openthai-systemone
+revision_sha: 5d04bcca0c58bd10e7dac2d3d369d8f760bea6cf
+author: iapp-technology
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'OpenThai-SystemOne: open Thai + English System One decision model (0.8B, 256-way slot head,
+  Apache-2.0)'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen3.5
+key_claims:
+- excerpt: 'Open-source Thai + English **System One decision model**: a Qwen3.5-0.8B text tower whose
+    LM head is replaced by a **256-way slot softmax**, continued-pretrained on Thai, and trained to answer'
+  verbatim: true
+- excerpt: The request/response contract mirrors TypeSafe AI's `POST /v1/systemone` (Jev), so SDK code
+    written for TypeSafe can point at this model.
+  verbatim: true
+- excerpt: '```bash pip install "git+https://github.com/iapp-technology/openthai-systemone" # or: pip
+    install openthai-systemone ``` ```python from openthai_systemone import SystemOneClient, Choice, Score,
+    Noul client = SystemOneClient("iapp/OpenThai-SystemOne") # CUDA, MPS or CPU resp = client.system_one('
+  verbatim: true

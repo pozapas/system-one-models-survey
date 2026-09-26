@@ -1,0 +1,24 @@
+name: LayaStudio
+repo: https://github.com/biplovgautam/LayaStudio
+revision_sha: acf9c10820906e9be48c9f1dab667cb00cfce4b5
+author: biplovgautam
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: Fine-tune Laya typed-decision models on your own data, on your own Mac — and prove the result
+  is better before you ship it.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: 'For the decisions *your* product makes, a small model you tuned yourself can beat a general
+    hosted API: more accurate on your labels, ~10× faster because there is no'
+  verbatim: true
+- excerpt: 'But the public checkpoints are general-purpose: on one product''s own decisions they are often
+    fast and *not accurate enough*, the same pattern the community reports (Banking77 goes from ~51%'
+  verbatim: true
+- excerpt: 'Requirements: an Apple silicon Mac (M1 or newer), macOS 14+, Python 3.11+.'
+  verbatim: true

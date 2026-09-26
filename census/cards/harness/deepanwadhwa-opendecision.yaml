@@ -1,0 +1,26 @@
+name: OpenDecision
+repo: https://github.com/deepanwadhwa/OpenDecision
+revision_sha: 20b2a78f9822130322125c0345976a12a87c76a4
+author: deepanwadhwa
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'Open-source equivalent of TypeSafe''s Jev: Python API, FastAPI server and a TypeSafe-SDK-compatible
+  endpoint providing Choice, Noul, Score and Relation over a ModernBERT zero-shot backend.'
+primitives_supported:
+- choice
+- noul
+- score
+- relation
+models_supported:
+- MoritzLaurer/ModernBERT-large-zeroshot-v2.0
+key_claims:
+- excerpt: OpenDecision is the open-source equivalent of TypeSafe's Jev.
+  verbatim: true
+- excerpt: 'Jev and OpenDecision use the same core pattern: state plus typed questions in, structured answers out.
+    Both provide Choice, Noul, and Score.'
+  verbatim: true
+note_for_report: Published to PyPI as `OpenDecision`, matching the `OpenDecision==0.1.1` dependency named in the
+  Ibrahim & Zaki replication package. A distinct, much smaller repo, Sunny-commit/OpenDecision (1 star), is an unrelated
+  project with the same name.

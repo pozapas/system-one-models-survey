@@ -1,0 +1,26 @@
+name: laya-vs-jev-arena
+repo: https://github.com/PromptEngineer48/laya-vs-jev-arena
+revision_sha: b02d19a6659a04142c94efd187caac5e6950fec0
+author: PromptEngineer48
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'Laya (open source, local) vs TypeSafe Jev (API): two AI models race in Snake and fight
+  in a Mortal-Kombat-style arena. Every move is a real model decision.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: '- **Laya** — open source, Apache 2.0, runs **locally** on your machine · [GitHub](https://github.com/NandhaKishorM/laya)
+    · [Hugging Face](https://huggingface.co/convaiinnovations/laya) - **Jev** — TypeSafe''s closed model,
+    runs over their **API** · [announcement](https://typesafe.ai/blog/introducing-system-one-models-and-jev)'
+  verbatim: true
+- excerpt: From the **Prompt Engineer 48** YouTube video.
+  verbatim: true
+- excerpt: '---   ```bash docker run -d --name arena --restart unless-stopped -p 80:8732 --cpus 1 --memory
+    512m -e TYPESAFE_API_KEY=your_key_here ghcr.io/promptengineer48/laya-vs-jev-arena:latest ```  Open
+    `http://YOUR_SERVER_IP`.'
+  verbatim: true

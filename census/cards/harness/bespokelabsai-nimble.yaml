@@ -1,0 +1,25 @@
+name: nimble
+repo: https://github.com/bespokelabsai/nimble
+revision_sha: ''
+author: bespokelabsai
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: unknown
+category: open_model_training
+what_it_does: 'Open recipe (data, model, training code) for Bespoke-Nimble-9B, a Jev-like decision model: reads
+  a prompt once and scores one answer token per question, no reasoning generated.'
+primitives_supported:
+- choice
+- noul
+models_supported:
+- Bespoke-Nimble-9B (Qwen3.5-9B LoRA)
+key_claims:
+- excerpt: On 324 held-out examples, Bespoke-Nimble-9B matches 90.1% of the reference labels, compared with 66.4%
+    for its base model and 93.2% for Jev 1.13.0.
+  verbatim: true
+- excerpt: Note that we did not distill from Jev. The point of the repository is to show how to curate data, how
+    to train, and to serve such a model
+  verbatim: true
+- excerpt: now contains the latest checkpoint, with an 8,192-token context and up to 255 choices per field. Its
+    default is T=1.0
+  verbatim: true

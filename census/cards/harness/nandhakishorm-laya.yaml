@@ -1,0 +1,26 @@
+name: laya
+repo: https://github.com/NandhaKishorM/laya
+revision_sha: 23a17522aa4942da6cce53a995a275760320b691
+author: NandhaKishorM
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'Multilingual, non-autoregressive System 1 decision engine: typed choice, score and yes/no decisions
+  over 100+ languages in one forward pass, trained with RL against strictly proper scoring rules (RLCD).'
+primitives_supported:
+- choice
+- score
+- noul (yes/no)
+models_supported:
+- laya (ModernBERT-class encoder)
+- laya-multilingual
+key_claims:
+- excerpt: Multilingual, non-autoregressive System 1 decision engine.** Typed decisions over 100+ languages in a
+    single forward pass — 33 ms — trained with reinforcement learning against strictly proper scoring rules
+  verbatim: true
+- excerpt: laya-multilingual reads up to 8,192 tokens with max_len=8192.
+  verbatim: true
+- excerpt: 16 to 18 of 20 requests were answered correctly with up to about 4,000 tokens of text before them; beyond
+    that results vary (8 to 17 of 20)
+  verbatim: true

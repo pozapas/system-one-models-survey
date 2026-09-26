@@ -1,0 +1,29 @@
+name: sarvam-jev
+repo: https://github.com/SAGAR-TAMANG/sarvam-jev
+revision_sha: b0b9babe50ef56c90830391b63dff26ce179acc9
+author: SAGAR-TAMANG
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: unknown
+category: local_server
+what_it_does: 'Generation-free typed decisions on Indic LLMs. An open Jev-style inference engine on sarvam-1:
+  constrained logit readout instead of autoregressive JSON. Runs client-side in the browser.'
+primitives_supported:
+- score
+models_supported:
+- Qwen
+- Qwen3
+- Qwen3.5-4B
+- sarvam-1
+- sarvam-
+- sarvam
+- sarvam1
+- MiniCPM5-2B
+key_claims:
+- excerpt: 'The point of doing it on Sarvam is the tokenizer: sarvam-1 encodes Devanagari at roughly 4
+    characters per token where Qwen-class tokenizers are 2–4× worse.'
+  verbatim: true
+- excerpt: Phase 0 is done.
+  verbatim: true
+- excerpt: 144 authored decisions, 3 options each, one RTX 3060, sarvam-1 in BF16.
+  verbatim: true

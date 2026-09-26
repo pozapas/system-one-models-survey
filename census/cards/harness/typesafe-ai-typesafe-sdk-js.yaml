@@ -1,0 +1,21 @@
+name: typesafe-sdk-js
+repo: https://github.com/typesafe-ai/typesafe-sdk-js
+revision_sha: ''
+author: typesafe-ai
+created: '2026-09-04'
+access_date: '2026-09-24'
+license: MIT
+category: vendor_sdk
+what_it_does: Official JavaScript/TypeScript SDK for TypeSafe AI's System One API (Jev), Node.js 20+, ESM/CommonJS/TypeScript
+  declarations.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Jev (via TypeSafe API)
+key_claims:
+- excerpt: JavaScript and TypeScript SDK for TypeSafe AI.
+  verbatim: true
+- excerpt: Answer types are inferred from your questions. The package includes ESM, CommonJS, and TypeScript declarations.
+  verbatim: true

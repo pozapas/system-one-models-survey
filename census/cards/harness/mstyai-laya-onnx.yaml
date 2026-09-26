@@ -1,0 +1,23 @@
+name: laya-onnx
+repo: https://github.com/MstyAI/laya-onnx
+revision_sha: f4a0a63ad0a4d728107e341f9e4d842aeb33e432
+author: MstyAI
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Run Laya typed decision models locally with ONNX Runtime and Go.
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported: []
+key_claims:
+- excerpt: 'Supported platforms:  - macOS on Apple Silicon and Intel - Linux on ARM64 and x86-64 with
+    glibc  Windows and musl-based Linux distributions such as Alpine are not supported yet.'
+  verbatim: true
+- excerpt: Measured September 20, 2026.
+  verbatim: true
+- excerpt: We used 50 labeled support cases with three questions each, repeated five times after warm-up.
+  verbatim: true

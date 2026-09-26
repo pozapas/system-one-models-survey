@@ -1,0 +1,60 @@
+{
+  "by_model": {
+    "comparator-open": {
+      "acc_all": 0.463855421686747,
+      "acc_unseen": 0.47435897435897434,
+      "n_unseen": 468
+    },
+    "decider-2b": {
+      "acc_all": 0.8032128514056225,
+      "acc_unseen": 0.8034188034188035,
+      "n_unseen": 468
+    },
+    "jev-1.13.0": {
+      "acc_all": 0.5040160642570282,
+      "acc_unseen": 0.5106837606837606,
+      "n_unseen": 468
+    },
+    "kev-0.8b": {
+      "acc_all": 0.5160642570281124,
+      "acc_unseen": 0.5256410256410257,
+      "n_unseen": 468
+    },
+    "kev-9b": {
+      "acc_all": 0.5281124497991968,
+      "acc_unseen": 0.5384615384615384,
+      "n_unseen": 468
+    },
+    "laya-en": {
+      "acc_all": 0.5040160642570282,
+      "acc_unseen": 0.5213675213675214,
+      "n_unseen": 468
+    },
+    "laya-ml": {
+      "acc_all": 0.39558232931726905,
+      "acc_unseen": 0.405982905982906,
+      "n_unseen": 468
+    },
+    "nimble-9b": {
+      "acc_all": 0.5140562248995983,
+      "acc_unseen": 0.5256410256410257,
+      "n_unseen": 468
+    },
+    "this-that-1.0": {
+      "acc_all": 0.8052208835341366,
+      "acc_unseen": 0.8055555555555556,
+      "n_unseen": 468
+    }
+  },
+  "documented_sources": " (from each model's card or repository, accessed 2026-09-24):\n    decider-2b      trains on dair-ai/emotion (train split) and clinc/clinc_oos (train split),\n                    among about 95 public tasks (Mapika/decider, decider/data/core.py)\n    this-that-1.0   adapted from decider-2b, so it inherits that exposure\n    kev-*           ten public sources (banking77, boolq, ag_news, multi_nli, sst5, yelp, trec,\n                    dbpedia_14, amazon_reviews_multi_en, imdb); none of D1 to D3\n    nimble-9b       released training file bespokelabsai/nimble data/train.jsonl, checked below\n    laya-*, jev     training data not released\n\n",
+  "emotion_items": 498,
+  "emotion_items_in_dair_train": 30,
+  "nimble_train_overlap": {
+    "d1_neutral": 0,
+    "d2_k150": 1,
+    "d3_conv_go_awry": 0,
+    "d3_emotion": 0,
+    "d3_wiki_corpus": 0,
+    "d3_wiki_politeness": 0
+  }
+}

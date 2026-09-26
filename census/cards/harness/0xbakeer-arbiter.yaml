@@ -1,0 +1,24 @@
+name: arbiter
+repo: https://github.com/0xBakeer/arbiter
+revision_sha: 5a178dd964811df4c5d8b2f2984d1cc8021a8bb9
+author: 0xBakeer
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: Serve typed-decision (System 1) models — Laya or your own — on NVIDIA GPUs or Apple Silicon,
+  with a Jev-compatible API and coding-agent integrations
+primitives_supported:
+- choice
+- score
+models_supported: []
+key_claims:
+- excerpt: 'Read the story behind it: [My cat woke me at five on a Sunday, so I built a local Jev](https://blog.0xbakeer.com/my-cat-woke-me-at-five-on-a-sunday-so-i-built-a-local-jev-1350583cddc6?sharedUserId=0xbakeer)
+    What it does with a state and a set'
+  verbatim: true
+- excerpt: On one GB10 with the card to itself it answers a single question in **20.9 ms** and fifty questions
+    in one call in **152 ms**, measured end-to-end over HTTP;
+  verbatim: true
+- excerpt: It uses about 5 GB of GPU memory, which is little enough to sit next to a large language model
+    on the same card.
+  verbatim: true

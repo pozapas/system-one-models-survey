@@ -1,0 +1,26 @@
+name: Verdict-open-jev
+repo: https://github.com/Heman10x-NGU/Verdict-open-jev
+revision_sha: 30f15564821626ca5c1ad5b2638c4eb7078787dd
+author: Heman10x-NGU
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: open_model_training
+what_it_does: 'OpenJev (Verdict): open, post-trained 151M non-autoregressive decision model on a ModernBERT+GLiClass
+  backbone, inspired by Jev, calibrated with RLCD + Brier loss.'
+primitives_supported:
+- choice
+- score
+- noul (binary)
+models_supported:
+- Verdict (rlcd-modernbert-151m)
+key_claims:
+- excerpt: Instead of generating free-form conversational text that software must parse and validate, OpenJev accepts
+    unstructured input context and evaluates multiple typed questions in a single non-autoregressive forward pass.
+  verbatim: true
+- excerpt: It returns discrete choices, ordinal scores, and binary probabilities with mathematically calibrated
+    confidence values in under 35 milliseconds.
+  verbatim: true
+note_for_report: This is the exact repo (commit 30f1556) named as 'Verdict' in the Ibrahim & Zaki replication package's
+  setup instructions. A separate, more-starred repo by the same owner, Heman10x-NGU/openJev-verdict-2.0, is a later
+  v2.0 successor (see its own card).

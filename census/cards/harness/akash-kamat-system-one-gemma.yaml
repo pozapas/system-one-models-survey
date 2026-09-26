@@ -1,0 +1,29 @@
+name: system-one-gemma
+repo: https://github.com/akash-kamat/system-one-gemma
+revision_sha: cc75aa8042dec965003210fdba033fee8759735e
+author: akash-kamat
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: unknown
+category: open_model_training
+what_it_does: Open-source Jev-style System One decision model. Gemma 3 270M with a scoring head — fast,
+  calibrated decisions in a single forward pass. No text generation. Inspired by TypeSafe.ai's Jev.
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+- binary
+- extract
+models_supported:
+- Gemma 3 270M
+- Gemma
+key_claims:
+- excerpt: 200x faster.
+  verbatim: true
+- excerpt: 200x cheaper.**  An open-source implementation of the **System One** scoring architecture,
+    inspired by [TypeSafe.ai's Jev model](https://typesafe.ai) — the AI that famously [plays Doom in real-time](https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711).
+  verbatim: true
+- excerpt: I used **Google's Gemma 3 270M** — one of the smallest LLMs available (268M parameters) — because
+    that's all I could run locally with no GPU.
+  verbatim: true

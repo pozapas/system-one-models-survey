@@ -1,0 +1,27 @@
+name: system-one
+repo: https://github.com/sgoedecke/system-one
+revision_sha: ebde2a2db7067b920dfe51e9ce785613e66613d5
+author: sgoedecke
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: unknown
+category: local_server
+what_it_does: Batched single-token choice inference for open language models, compatible with TypeSafe
+primitives_supported:
+- choice
+models_supported:
+- Qwen
+- Qwen2
+- Qwen3-8B
+key_claims:
+- excerpt: '```  ```python from system_one import SystemOne from typesafe_sdk import Choice  engine =
+    SystemOne.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct") result = engine.system_one(     state="My
+    shoes arrived in the wrong size.'
+  verbatim: true
+- excerpt: 'Can I exchange them?", questions={ "team": Choice( instructions="Which team should handle
+    this?", criteria={ "returns": "Exchanges, refunds, wrong or damaged items", "shipping": "Delivery
+    status, delays, lost packages", "billing": "Charges, invoices,'
+  verbatim: true
+- excerpt: https://github.com/user-attachments/assets/07938d1f-3c2a-4067-8c4b-9e2160e93162  Here it is
+    playing Freedoom MAP0.
+  verbatim: true

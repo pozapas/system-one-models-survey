@@ -1,0 +1,27 @@
+name: laya-coreml
+repo: https://github.com/mizorewww/laya-coreml
+revision_sha: 4619e0483f07adf39068532e85b42ec2347edb83
+author: mizorewww
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Local Laya typed decisions on Apple Core ML and Neural Engine. Validated ports, ~5 ms short
+  decisions on M3 Max, reproducible speed and energy benchmarks.
+primitives_supported:
+- choice
+- score
+- noul
+- ordinal
+models_supported: []
+key_claims:
+- excerpt: Core ML, Neural Engine, zero generated tokens.**  [PyPI](https://pypi.org/project/laya-coreml/)
+    · [Hugging Face weights](https://huggingface.co/aac6fef/laya-multilingual-coreml-ane) · [中文](https://github.com/mizorewww/laya-coreml/blob/main/README.zh-CN.md)  A
+    real Laya model plays Snake locally, with visible probabilities, score, length, latency and safety
+    interventions.
+  verbatim: true
+- excerpt: The GIF replays a recorded Core ML run at **1× speed**.
+  verbatim: true
+- excerpt: The complete active Snake loop sustained **49.1–50.0 decisions/s** across three uncapped 600-step
+    episodes, with zero deaths and two safety interventions.
+  verbatim: true

@@ -1,0 +1,4 @@
+written 2026-09-24T20:32:36-05:00
+models present: jev-1.13.0 and all seven open decision-model checkpoints (laya-en, laya-ml, kev-0.8b, kev-9b, decider-2b, this-that-1.0, nimble-9b)
+comparator-open pending (second Colab run); e6 keys for the comparator absent until then
+label scheme frozen

@@ -1,0 +1,24 @@
+name: laya-cuda
+repo: https://github.com/adamjen/laya-cuda
+revision_sha: 148026a6ff9510fd38fd8ffe016f832ac640c70a
+author: adamjen
+created: '2026-09-23'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: CUDA benchmark harness + RTX 3090 matrix for the Laya typed-decision checkpoints (ported
+  from mizorewww/laya-mlx)
+primitives_supported: []
+models_supported: []
+key_claims:
+- excerpt: CUDA/NVIDIA benchmark harness for the [Laya](https://github.com/NandhaKishorM/laya) typed-decision
+    checkpoints, with the full benchmark matrix measured on an RTX 3090.
+  verbatim: true
+- excerpt: Ported from [`mizorewww/laya-mlx`](https://github.com/mizorewww/laya-mlx) (repo @ `0a85951`,
+    upstream PyTorch package @ `573e5b62`), which benchmarked the same checkpoints on Apple Silicon (MLX
+    / torch-mps).
+  verbatim: true
+- excerpt: '``` benchmarks/ ├── common.py # platform-neutral environment() + reference loader (device
+    passthrough) ├── worker.py # per-question timing worker: mlx | torch-mps | torch-cuda backends ├──
+    run.py # matrix runner:'
+  verbatim: true

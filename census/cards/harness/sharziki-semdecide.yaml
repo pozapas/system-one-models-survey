@@ -1,0 +1,24 @@
+name: semdecide
+repo: https://github.com/sharziki/semdecide
+revision_sha: 33cf5c03c50e02e59df3f3ea81f0650f6b791545
+author: sharziki
+created: '2026-09-16'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: Typed semantic decisions for Unix pipelines and CI, powered by TypeSafe AI Jev.
+primitives_supported:
+- score
+- noul (yes/no)
+- binary
+models_supported: []
+key_claims:
+- excerpt: '```bash printf ''%s'' ''Login from a new country, followed by payout changes.'' \ ``` ```text
+    TRUE probability=0.860 threshold=0.700 ``` Exact string rules cannot express concepts such as: - “This'
+  verbatim: true
+- excerpt: SemDecide requires Python 3.10 or newer.
+  verbatim: true
+- excerpt: '```bash pipx install https://github.com/sharziki/semdecide/releases/download/v0.2.1/semdecide-0.2.1-py3-none-any.whl
+    uv tool install https://github.com/sharziki/semdecide/releases/download/v0.2.1/semdecide-0.2.1-py3-none-any.whl
+    ```  SemDecide is not yet published on PyPI.'
+  verbatim: true

@@ -1,0 +1,25 @@
+name: laya-candle
+repo: https://github.com/b0xtch/laya-candle
+revision_sha: b940914a8c4980b29f45b510692bb235710b5568
+author: b0xtch
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Native Rust inference for Laya typed decision models with Candle and optimized Metal kernels.
+primitives_supported:
+- choice
+- score
+- noul
+- ordinal
+models_supported: []
+key_claims:
+- excerpt: Use Rust 1.95 (pinned in `rust-toolchain.toml`) and a native C/C++ build toolchain.
+  verbatim: true
+- excerpt: 'Clone the source and run with CPU float32, the default backend: ```sh git clone https://github.com/b0xtch/laya-candle.git
+    cd laya-candle cargo run --release -- predict \ --model convaiinnovations/laya \ --state-file examples/state.json
+    --questions'
+  verbatim: true
+- excerpt: The final scorer and calibration remain float32, but reduced precision can change probabilities
+    and close decisions.
+  verbatim: true

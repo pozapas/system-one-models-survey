@@ -1,0 +1,4381 @@
+{
+  "comparator-open|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.7980769230769231,
+    "accuracy": 0.68,
+    "accuracy_ci": [
+      0.657,
+      0.7035
+    ],
+    "aurc_scaled": 0.24603107400199556,
+    "aurc_shipped": 0.2558928843693274,
+    "brier": 0.4925728889965939,
+    "brier_scaled": 0.49449619612199647,
+    "brier_soft": 0.20038643369094666,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.7116666666666667,
+        "ece_scaled": 0.11105004991675416,
+        "ece_shipped": 0.12078337939933266,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.7783333333333333,
+        "ece_scaled": 0.06598155308472588,
+        "ece_shipped": 0.1268333333333335,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.5825,
+        "ece_scaled": 0.14791915435748365,
+        "ece_shipped": 0.13301216089395557,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.001,
+    "coverage_at_1pct_scaled": 0.003,
+    "coverage_at_5pct": 0.001,
+    "coverage_at_5pct_scaled": 0.003,
+    "distinct_prob_values": 102,
+    "ece_raw": 0.11673872750051349,
+    "ece_scaled": 0.09070789393683903,
+    "ece_scaled_ci": [
+      0.07749062500320007,
+      0.1145721994094252
+    ],
+    "ece_shipped": 0.11673872750051349,
+    "ece_shipped_ci": [
+      0.08885507990859598,
+      0.13284187690323945
+    ],
+    "mean_confidence": 0.7495797087414946,
+    "model": "comparator-open",
+    "murphy_scaled": {
+      "brier_top": 0.2239464386067785,
+      "reliability": 0.015176006539625135,
+      "residual": 0.0007904320671533738,
+      "resolution": 0.009620000000000002,
+      "uncertainty": 0.2176
+    },
+    "murphy_shipped": {
+      "brier_top": 0.22318559338032617,
+      "reliability": 0.016040074648762975,
+      "residual": -0.0003644812684368004,
+      "resolution": 0.010090000000000002,
+      "uncertainty": 0.2176
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.0211167901328275,
+    "nll_scaled": 0.9543349361448233,
+    "rep": 1,
+    "review_budget_at_1pct": 0.999,
+    "review_budget_at_5pct": 0.999,
+    "share_conf_ge_0_9": 0.26,
+    "soft_accuracy": 0.5552903768706221,
+    "temperature": {
+      "choice": 1.2329514112674325,
+      "noul": 2.0390757370654606,
+      "score": 2.38045648955743
+    },
+    "threshold_at_1pct": 0.9595959595959598,
+    "threshold_at_5pct": 0.9595959595959598
+  },
+  "comparator-open|d2_k150": {
+    "acc_when_conf_ge_0_9": 0.7588028169014085,
+    "accuracy": 0.7283333333333334,
+    "accuracy_ci": [
+      0.695,
+      0.765
+    ],
+    "aurc_scaled": 0.2544405581946597,
+    "aurc_shipped": 0.23761069386421066,
+    "brier": 0.4940433583137775,
+    "brier_scaled": 0.4585671861233546,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.015,
+    "coverage_at_1pct_scaled": 0.011666666666666667,
+    "coverage_at_5pct": 0.015,
+    "coverage_at_5pct_scaled": 0.011666666666666667,
+    "distinct_prob_values": 20,
+    "ece_raw": 0.20372205387205414,
+    "ece_scaled": 0.0962685533295739,
+    "ece_scaled_ci": [
+      0.0688331224588367,
+      0.12681423230695735
+    ],
+    "ece_shipped": 0.20372205387205414,
+    "ece_shipped_ci": [
+      0.16682723484848513,
+      0.23691374579124605
+    ],
+    "mean_confidence": 0.9320553872053874,
+    "model": "comparator-open",
+    "murphy_scaled": {
+      "brier_top": 0.19314677531463978,
+      "reliability": 0.01365497098706445,
+      "residual": -0.005480417894646872,
+      "resolution": 0.012891666666666668,
+      "uncertainty": 0.19786388888888887
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2281372373397272,
+      "reliability": 0.044638750042796195,
+      "residual": -0.0033626238141800657,
+      "resolution": 0.011002777777777776,
+      "uncertainty": 0.19786388888888887
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 2.234391849113753,
+    "nll_scaled": 1.5846631663208905,
+    "rep": 1,
+    "review_budget_at_1pct": 0.985,
+    "review_budget_at_5pct": 0.985,
+    "share_conf_ge_0_9": 0.9466666666666667,
+    "temperature": {
+      "crossfit_folds": [
+        1.9616730890813334,
+        1.9616730890813334,
+        1.8872086202957774,
+        1.9616730890813334,
+        1.8872086202957774
+      ]
+    },
+    "threshold_at_1pct": 0.9595959595959597,
+    "threshold_at_5pct": 0.9595959595959597
+  },
+  "comparator-open|d2_oos": {
+    "auroc_in_vs_oos": 0.6004625,
+    "mean_conf_in": 0.9320553872053874,
+    "mean_conf_oos": 0.8449787878787878,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.76
+  },
+  "comparator-open|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": 0.5957446808510638,
+    "accuracy": 0.554,
+    "accuracy_ci": [
+      0.512,
+      0.598
+    ],
+    "aurc_scaled": 0.4619590082796638,
+    "aurc_shipped": 0.4224109139676448,
+    "brier": 0.6670799999999999,
+    "brier_scaled": 0.49674833424199877,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.004,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.004,
+    "distinct_prob_values": 15,
+    "ece_raw": 0.29200000000000004,
+    "ece_scaled": 0.06143791045610779,
+    "ece_scaled_ci": [
+      0.051173881184206585,
+      0.11668502241558462
+    ],
+    "ece_shipped": 0.29200000000000004,
+    "ece_shipped_ci": [
+      0.249795,
+      0.33340250000000005
+    ],
+    "macro_f1": 0.4680318131288794,
+    "mean_confidence": 0.8460000000000001,
+    "model": "comparator-open",
+    "murphy_scaled": {
+      "brier_top": 0.2483741671209994,
+      "reliability": 0.006027973807183652,
+      "residual": -1.3806686184225647e-05,
+      "resolution": 0.004724,
+      "uncertainty": 0.247084
+    },
+    "murphy_shipped": {
+      "brier_top": 0.33353999999999995,
+      "reliability": 0.09481139999999999,
+      "residual": 0.0006885999999999282,
+      "resolution": 0.009044,
+      "uncertainty": 0.247084
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.9453449859837962,
+    "nll_scaled": 0.6899064840977901,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.376,
+    "temperature": {
+      "crossfit_folds": [
+        5.577096343452579,
+        8.87337466195722,
+        7.900756027133283,
+        6.510810237370065,
+        11.634182658748713
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "comparator-open|d3_emotion": {
+    "acc_when_conf_ge_0_9": 0.5,
+    "accuracy": 0.463855421686747,
+    "accuracy_ci": [
+      0.42168674698795183,
+      0.5080321285140562
+    ],
+    "aurc_scaled": 0.4898250367906287,
+    "aurc_shipped": 0.49190885375623444,
+    "brier": 0.7380695546780598,
+    "brier_scaled": 0.7193771347261918,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.002008032128514056,
+    "coverage_at_1pct_scaled": 0.002008032128514056,
+    "coverage_at_5pct": 0.002008032128514056,
+    "coverage_at_5pct_scaled": 0.002008032128514056,
+    "distinct_prob_values": 114,
+    "ece_raw": 0.13567618546287946,
+    "ece_scaled": 0.07026228821784608,
+    "ece_scaled_ci": [
+      0.05383949999167416,
+      0.1234192073373422
+    ],
+    "ece_shipped": 0.13567618546287946,
+    "ece_shipped_ci": [
+      0.09957143346347702,
+      0.17931773602037682
+    ],
+    "macro_f1": 0.45902102400146494,
+    "mean_confidence": 0.5738282163859946,
+    "model": "comparator-open",
+    "murphy_scaled": {
+      "brier_top": 0.24849270180156874,
+      "reliability": 0.00659166144526749,
+      "residual": -0.000510237407816444,
+      "resolution": 0.006282291694439425,
+      "uncertainty": 0.2486935694585571
+    },
+    "murphy_shipped": {
+      "brier_top": 0.26364460385185806,
+      "reliability": 0.023344880189629647,
+      "residual": -0.0020787699038727347,
+      "resolution": 0.0063150758924559805,
+      "uncertainty": 0.2486935694585571
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.5764847423863675,
+    "nll_scaled": 1.5279061227632411,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9979919678714859,
+    "review_budget_at_5pct": 0.9979919678714859,
+    "share_conf_ge_0_9": 0.004016064257028112,
+    "temperature": {
+      "crossfit_folds": [
+        1.4393713460023037,
+        1.4393713460023037,
+        1.496165291045017,
+        1.496165291045017,
+        1.4393713460023037
+      ]
+    },
+    "threshold_at_1pct": 0.9405940594059405,
+    "threshold_at_5pct": 0.9405940594059405
+  },
+  "comparator-open|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": 0.6345381526104418,
+    "accuracy": 0.576,
+    "accuracy_ci": [
+      0.534,
+      0.618
+    ],
+    "aurc_scaled": 0.3645253004553534,
+    "aurc_shipped": 0.3672209307332537,
+    "brier": 0.63828,
+    "brier_scaled": 0.4832932470887153,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 12,
+    "ece_raw": 0.2844,
+    "ece_scaled": 0.06382776621685338,
+    "ece_scaled_ci": [
+      0.057928108010691405,
+      0.11847835269548859
+    ],
+    "ece_shipped": 0.2844,
+    "ece_shipped_ci": [
+      0.24233499999999997,
+      0.32345499999999994
+    ],
+    "macro_f1": 0.5472484666245238,
+    "mean_confidence": 0.8604,
+    "model": "comparator-open",
+    "murphy_scaled": {
+      "brier_top": 0.24164662354435765,
+      "reliability": 0.006093119354245575,
+      "residual": 0.00019350419011207598,
+      "resolution": 0.008864,
+      "uncertainty": 0.244224
+    },
+    "murphy_shipped": {
+      "brier_top": 0.31914,
+      "reliability": 0.08502399999999997,
+      "residual": -0.0009239999999999804,
+      "resolution": 0.009184000000000001,
+      "uncertainty": 0.244224
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.9138176653218584,
+    "nll_scaled": 0.6762027101344404,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.498,
+    "temperature": {
+      "crossfit_folds": [
+        4.253643494592419,
+        5.16172308083615,
+        5.577096343452579,
+        4.965785761120654,
+        5.365391590559451
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "comparator-open|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": 0.8813559322033898,
+    "accuracy": 0.6526104417670683,
+    "accuracy_ci": [
+      0.6103915662650603,
+      0.6947791164658634
+    ],
+    "aurc_scaled": 0.30294100978454463,
+    "aurc_shipped": 0.2999004182003381,
+    "brier": 0.5240861578137435,
+    "brier_scaled": 0.5085050236128309,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 30,
+    "ece_raw": 0.11662123017544711,
+    "ece_scaled": 0.09804726979077966,
+    "ece_scaled_ci": [
+      0.0698297170869868,
+      0.14389758780101425
+    ],
+    "ece_shipped": 0.11662123017544711,
+    "ece_shipped_ci": [
+      0.09350217469946388,
+      0.1662446923892707
+    ],
+    "macro_f1": 0.6329251126126126,
+    "mean_confidence": 0.7541583918089942,
+    "model": "comparator-open",
+    "murphy_scaled": {
+      "brier_top": 0.22849014454559907,
+      "reliability": 0.012891700649302834,
+      "residual": 0.00035379181859768183,
+      "resolution": 0.011465400985961712,
+      "uncertainty": 0.22671005306366027
+    },
+    "murphy_shipped": {
+      "brier_top": 0.23875127584395722,
+      "reliability": 0.024998116671752675,
+      "residual": 0.001480394644706784,
+      "resolution": 0.014437288536162517,
+      "uncertainty": 0.22671005306366027
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 0.9377830137294374,
+    "nll_scaled": 0.8863714641317164,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.11847389558232932,
+    "temperature": {
+      "crossfit_folds": [
+        1.7466523247656862,
+        1.6165644385045435,
+        1.6165644385045435,
+        1.496165291045017,
+        1.815570798387511
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "decider-2b|d1_native": {
+    "acc_when_conf_ge_0_9": 0.8307692307692308,
+    "accuracy": 0.5935,
+    "accuracy_ci": [
+      0.5689875,
+      0.6185
+    ],
+    "aurc_scaled": 0.27808719667017656,
+    "aurc_shipped": 0.2785599955916487,
+    "brier": 0.5534604644630062,
+    "brier_scaled": 0.5301594719514546,
+    "brier_soft": 0.211578569070584,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.5633333333333334,
+        "ece_scaled": 0.05432692002262624,
+        "ece_shipped": 0.1292000609533645,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.6633333333333333,
+        "ece_scaled": 0.08086945604693824,
+        "ece_shipped": 0.1534389339744225,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.56375,
+        "ece_scaled": 0.0587830810344554,
+        "ece_shipped": 0.06941461550320706,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.03,
+    "coverage_at_1pct_scaled": 0.0225,
+    "coverage_at_5pct": 0.064,
+    "coverage_at_5pct_scaled": 0.063,
+    "distinct_prob_values": 5923,
+    "ece_raw": 0.13623599859273225,
+    "ece_scaled": 0.04234686247152452,
+    "ece_scaled_ci": [
+      0.03342246931837709,
+      0.07073837529142463
+    ],
+    "ece_shipped": 0.09036556053039256,
+    "ece_shipped_ci": [
+      0.07830380165820573,
+      0.11854760102247669
+    ],
+    "mean_confidence": 0.6723827109713814,
+    "model": "decider-2b",
+    "murphy_scaled": {
+      "brier_top": 0.22429138669078078,
+      "reliability": 0.0028005034410057868,
+      "residual": -0.000771616750224996,
+      "resolution": 0.018995249999999998,
+      "uncertainty": 0.24125775
+    },
+    "murphy_shipped": {
+      "brier_top": 0.23740254105344713,
+      "reliability": 0.013877723172779006,
+      "residual": -0.0003226821193318685,
+      "resolution": 0.017410250000000002,
+      "uncertainty": 0.24125775
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.9619376825374533,
+    "nll_scaled": 0.9161155361341088,
+    "rep": 1,
+    "review_budget_at_1pct": 0.97,
+    "review_budget_at_5pct": 0.9359999999999999,
+    "share_conf_ge_0_9": 0.1625,
+    "soft_accuracy": 0.5063606588640418,
+    "temperature": {
+      "choice": 1.7466523247656862,
+      "noul": 2.38045648955743,
+      "score": 1.056134114916527
+    },
+    "threshold_at_1pct": 0.9918994718808779,
+    "threshold_at_5pct": 0.9798141743520653
+  },
+  "decider-2b|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.80625,
+    "accuracy": 0.5875,
+    "accuracy_ci": [
+      0.563,
+      0.6125
+    ],
+    "aurc_scaled": 0.28196275251296943,
+    "aurc_shipped": 0.28293994873698247,
+    "brier": 0.5551397288184798,
+    "brier_scaled": 0.5324966108858328,
+    "brier_soft": 0.21265125777974817,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.5433333333333333,
+        "ece_scaled": 0.049914484873375464,
+        "ece_shipped": 0.11699871290642883,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.6633333333333333,
+        "ece_scaled": 0.08089643283563328,
+        "ece_shipped": 0.15533752935195566,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.56375,
+        "ece_scaled": 0.06125542603284583,
+        "ece_shipped": 0.06949131422977686,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.039,
+    "coverage_at_1pct_scaled": 0.0055,
+    "coverage_at_5pct": 0.059,
+    "coverage_at_5pct_scaled": 0.051,
+    "distinct_prob_values": 5929,
+    "ece_raw": 0.1388534213298921,
+    "ece_scaled": 0.03634391752202316,
+    "ece_scaled_ci": [
+      0.026959503144261612,
+      0.06432208446160086
+    ],
+    "ece_shipped": 0.09419896992774435,
+    "ece_shipped_ci": [
+      0.0795105346206187,
+      0.11660188831843904
+    ],
+    "mean_confidence": 0.669450172236856,
+    "model": "decider-2b",
+    "murphy_scaled": {
+      "brier_top": 0.22360641381029966,
+      "reliability": 0.0019662121331659333,
+      "residual": -0.0003422983228662524,
+      "resolution": 0.020361250000000004,
+      "uncertainty": 0.24234375
+    },
+    "murphy_shipped": {
+      "brier_top": 0.23709395081095985,
+      "reliability": 0.013193829867475712,
+      "residual": -0.000652379056515856,
+      "resolution": 0.01779125,
+      "uncertainty": 0.24234375
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.9670098439537319,
+    "nll_scaled": 0.9235804206751247,
+    "rep": 1,
+    "review_budget_at_1pct": 0.961,
+    "review_budget_at_5pct": 0.9410000000000001,
+    "share_conf_ge_0_9": 0.16,
+    "soft_accuracy": 0.5035274915123726,
+    "temperature": {
+      "choice": 1.7466523247656862,
+      "noul": 2.38045648955743,
+      "score": 1.056134114916527
+    },
+    "threshold_at_1pct": 0.9869640598236554,
+    "threshold_at_5pct": 0.9737074456965845
+  },
+  "decider-2b|d2_k150": {
+    "acc_when_conf_ge_0_9": 0.9774011299435028,
+    "accuracy": 0.86,
+    "accuracy_ci": [
+      0.831625,
+      0.8866666666666667
+    ],
+    "aurc_scaled": 0.03267342251074601,
+    "aurc_shipped": 0.03271058411878714,
+    "brier": 0.2093795202561501,
+    "brier_scaled": 0.20823322522226098,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.295,
+    "coverage_at_1pct_scaled": 0.2783333333333333,
+    "coverage_at_5pct": 0.75,
+    "coverage_at_5pct_scaled": 0.7583333333333333,
+    "distinct_prob_values": 5977,
+    "ece_raw": 0.034578653677837544,
+    "ece_scaled": 0.02530648171577182,
+    "ece_scaled_ci": [
+      0.018033190800415048,
+      0.0520353594910463
+    ],
+    "ece_shipped": 0.03527110775443073,
+    "ece_shipped_ci": [
+      0.02239857615143501,
+      0.062199799479340706
+    ],
+    "mean_confidence": 0.8357810374312383,
+    "model": "decider-2b",
+    "murphy_scaled": {
+      "brier_top": 0.08838282287897777,
+      "reliability": 0.001338148616789265,
+      "residual": -0.0007886590711448371,
+      "resolution": 0.032566666666666674,
+      "uncertainty": 0.12040000000000001
+    },
+    "murphy_shipped": {
+      "brier_top": 0.08954828679703387,
+      "reliability": 0.002334126131481868,
+      "residual": -0.00034139489000355183,
+      "resolution": 0.03284444444444445,
+      "uncertainty": 0.12040000000000001
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 0.5712453875340328,
+    "nll_scaled": 0.5684841891193577,
+    "rep": 1,
+    "review_budget_at_1pct": 0.7050000000000001,
+    "review_budget_at_5pct": 0.25,
+    "share_conf_ge_0_9": 0.59,
+    "temperature": {
+      "crossfit_folds": [
+        0.9403702978599706,
+        0.9403702978599706,
+        0.9403702978599706,
+        0.9403702978599706,
+        0.9046741489544204
+      ]
+    },
+    "threshold_at_1pct": 0.9821051784931228,
+    "threshold_at_5pct": 0.7518390541012033
+  },
+  "decider-2b|d2_oos": {
+    "auroc_in_vs_oos": 0.8847,
+    "mean_conf_in": 0.8357810374312383,
+    "mean_conf_oos": 0.41695161026835703,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.075
+  },
+  "decider-2b|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": 0.526431718061674,
+    "accuracy": 0.514,
+    "accuracy_ci": [
+      0.47,
+      0.558
+    ],
+    "aurc_scaled": 0.4164266858790705,
+    "aurc_shipped": 0.3828080457629587,
+    "brier": 0.8941724981106169,
+    "brier_scaled": 0.49836603916706046,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.008,
+    "coverage_at_1pct_scaled": 0.004,
+    "coverage_at_5pct": 0.008,
+    "coverage_at_5pct_scaled": 0.004,
+    "distinct_prob_values": 223,
+    "ece_raw": 0.46030927210279565,
+    "ece_scaled": 0.08057931491569212,
+    "ece_scaled_ci": [
+      0.05782336692716461,
+      0.13147683981084787
+    ],
+    "ece_shipped": 0.4442303953986067,
+    "ece_shipped_ci": [
+      0.39862778723648185,
+      0.48899895306126484
+    ],
+    "macro_f1": 0.3731652831590406,
+    "mean_confidence": 0.9582303953986065,
+    "model": "decider-2b",
+    "murphy_scaled": {
+      "brier_top": 0.24918301958353026,
+      "reliability": 0.0077376446650460964,
+      "residual": 0.00012537491848416127,
+      "resolution": 0.008484,
+      "uncertainty": 0.249804
+    },
+    "murphy_shipped": {
+      "brier_top": 0.44708624905530847,
+      "reliability": 0.20848829214277267,
+      "residual": 0.0019179569125358231,
+      "resolution": 0.013124,
+      "uncertainty": 0.249804
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 1.8507377714917626,
+    "nll_scaled": 0.6914934081959294,
+    "rep": 1,
+    "review_budget_at_1pct": 0.992,
+    "review_budget_at_5pct": 0.992,
+    "share_conf_ge_0_9": 0.908,
+    "temperature": {
+      "crossfit_folds": [
+        16.481486619787315,
+        19.999999999999996,
+        19.999999999999996,
+        19.999999999999996,
+        19.999999999999996
+      ]
+    },
+    "threshold_at_1pct": 0.9976656671530176,
+    "threshold_at_5pct": 0.9976656671530176
+  },
+  "decider-2b|d3_emotion": {
+    "acc_when_conf_ge_0_9": 0.9291338582677166,
+    "accuracy": 0.8032128514056225,
+    "accuracy_ci": [
+      0.7690763052208835,
+      0.8353413654618473
+    ],
+    "aurc_scaled": 0.07863305919791093,
+    "aurc_shipped": 0.07667397942963182,
+    "brier": 0.28618392162709266,
+    "brier_scaled": 0.285853812962347,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.20080321285140562,
+    "coverage_at_1pct_scaled": 0.07429718875502007,
+    "coverage_at_5pct": 0.3273092369477912,
+    "coverage_at_5pct_scaled": 0.3795180722891566,
+    "distinct_prob_values": 2743,
+    "ece_raw": 0.08063736984304433,
+    "ece_scaled": 0.0337567887988888,
+    "ece_scaled_ci": [
+      0.028719273658956424,
+      0.07913547587842652
+    ],
+    "ece_shipped": 0.04280043302404645,
+    "ece_shipped_ci": [
+      0.02892765188372146,
+      0.08286356399361729
+    ],
+    "macro_f1": 0.7997536658059067,
+    "mean_confidence": 0.834001448109849,
+    "model": "decider-2b",
+    "murphy_scaled": {
+      "brier_top": 0.133689044692873,
+      "reliability": 0.001982773881080872,
+      "residual": 0.0008268346999980025,
+      "resolution": 0.02718253063067778,
+      "uncertainty": 0.1580619667424719
+    },
+    "murphy_shipped": {
+      "brier_top": 0.13368760731576723,
+      "reliability": 0.002918230878246117,
+      "residual": 0.0004062914444877552,
+      "resolution": 0.02769888174943853,
+      "uncertainty": 0.1580619667424719
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 0.543195997425863,
+    "nll_scaled": 0.5440157218467135,
+    "rep": 1,
+    "review_budget_at_1pct": 0.7991967871485943,
+    "review_budget_at_5pct": 0.6726907630522088,
+    "share_conf_ge_0_9": 0.5100401606425703,
+    "temperature": {
+      "crossfit_folds": [
+        1.0978064901843114,
+        1.056134114916527,
+        1.1411231517562042,
+        1.056134114916527,
+        1.056134114916527
+      ]
+    },
+    "threshold_at_1pct": 0.9765976599495586,
+    "threshold_at_5pct": 0.9514029329508082
+  },
+  "decider-2b|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": 0.5757575757575758,
+    "accuracy": 0.534,
+    "accuracy_ci": [
+      0.49,
+      0.578
+    ],
+    "aurc_scaled": 0.4434569408353583,
+    "aurc_shipped": 0.43533952694671313,
+    "brier": 0.6060642500745888,
+    "brier_scaled": 0.4964130228722687,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.006,
+    "coverage_at_1pct_scaled": 0.004,
+    "coverage_at_5pct": 0.006,
+    "coverage_at_5pct_scaled": 0.004,
+    "distinct_prob_values": 149,
+    "ece_raw": 0.2694048789452346,
+    "ece_scaled": 0.05522543717007815,
+    "ece_scaled_ci": [
+      0.04624730863011029,
+      0.10902375854132719
+    ],
+    "ece_shipped": 0.2280887945121956,
+    "ece_shipped_ci": [
+      0.18667706775068418,
+      0.2654783575382383
+    ],
+    "macro_f1": 0.4800940739649856,
+    "mean_confidence": 0.7487510756007262,
+    "model": "decider-2b",
+    "murphy_scaled": {
+      "brier_top": 0.24820651143613434,
+      "reliability": 0.004082126090679209,
+      "residual": 0.00016438534545512584,
+      "resolution": 0.004884000000000002,
+      "uncertainty": 0.248844
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3030321250372944,
+      "reliability": 0.061742152880229655,
+      "residual": 0.00044997215706471527,
+      "resolution": 0.008004,
+      "uncertainty": 0.248844
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.855533141749914,
+    "nll_scaled": 0.6895589606828186,
+    "rep": 1,
+    "review_budget_at_1pct": 0.994,
+    "review_budget_at_5pct": 0.994,
+    "share_conf_ge_0_9": 0.132,
+    "temperature": {
+      "crossfit_folds": [
+        6.263662010487687,
+        7.034747001938761,
+        8.87337466195722,
+        8.212499834488593,
+        9.223495535416513
+      ]
+    },
+    "threshold_at_1pct": 0.9759182239232724,
+    "threshold_at_5pct": 0.9759182239232724
+  },
+  "decider-2b|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": 0.7692307692307693,
+    "accuracy": 0.463855421686747,
+    "accuracy_ci": [
+      0.41967871485943775,
+      0.5040160642570282
+    ],
+    "aurc_scaled": 0.43974355644352925,
+    "aurc_shipped": 0.44795259411694105,
+    "brier": 0.7065446664762802,
+    "brier_scaled": 0.6140032875855604,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.008032128514056224,
+    "coverage_at_1pct_scaled": 0.006024096385542169,
+    "coverage_at_5pct": 0.008032128514056224,
+    "coverage_at_5pct_scaled": 0.006024096385542169,
+    "distinct_prob_values": 1413,
+    "ece_raw": 0.2927408222420264,
+    "ece_scaled": 0.06470633204613925,
+    "ece_scaled_ci": [
+      0.050168686011955115,
+      0.11404035955084943
+    ],
+    "ece_shipped": 0.2363328982586069,
+    "ece_shipped_ci": [
+      0.19876469144040798,
+      0.28160698423127295
+    ],
+    "macro_f1": 0.40529376688433344,
+    "mean_confidence": 0.7001883199453538,
+    "model": "decider-2b",
+    "murphy_scaled": {
+      "brier_top": 0.24090833624127528,
+      "reliability": 0.0050677851904283085,
+      "residual": -0.0006761279098939366,
+      "resolution": 0.012176890497816197,
+      "uncertainty": 0.2486935694585571
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3030067790591706,
+      "reliability": 0.06835717997957212,
+      "residual": 0.0006614013908844418,
+      "resolution": 0.01470537176984308,
+      "uncertainty": 0.2486935694585571
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.2167798704554091,
+    "nll_scaled": 1.0152076052070158,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9919678714859438,
+    "review_budget_at_5pct": 0.9919678714859438,
+    "share_conf_ge_0_9": 0.0783132530120482,
+    "temperature": {
+      "crossfit_folds": [
+        3.1210972900141476,
+        2.6735013998394153,
+        2.8886429294545617,
+        3.002621457816346,
+        2.7789909887462745
+      ]
+    },
+    "threshold_at_1pct": 0.9742683526095616,
+    "threshold_at_5pct": 0.9742683526095616
+  },
+  "jev-1.13.0|d1_native": {
+    "acc_when_conf_ge_0_9": 0.9163568773234201,
+    "accuracy": 0.7355,
+    "accuracy_ci": [
+      0.7139875,
+      0.7565124999999999
+    ],
+    "aurc_scaled": 0.11178672060139933,
+    "aurc_shipped": 0.13040641182451718,
+    "brier": 0.36565012056932966,
+    "brier_scaled": 0.35462899782638363,
+    "brier_soft": 0.14857721323189355,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.7333333333333333,
+        "ece_scaled": 0.04633331933964502,
+        "ece_shipped": 0.04253518518518517,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.7816666666666666,
+        "ece_scaled": 0.06236013683080743,
+        "ece_shipped": 0.09356666666666667,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.7025,
+        "ece_scaled": 0.03429489309407135,
+        "ece_shipped": 0.10505820707070712,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.1555,
+    "coverage_at_5pct_scaled": 0.3565,
+    "distinct_prob_values": 126,
+    "ece_raw": 0.03793878787878785,
+    "ece_scaled": 0.02382524414008214,
+    "ece_scaled_ci": [
+      0.0203680839384416,
+      0.04712774044205556
+    ],
+    "ece_shipped": 0.03793878787878785,
+    "ece_shipped_ci": [
+      0.03204688762626261,
+      0.06316999621212115
+    ],
+    "mean_confidence": 0.7559248484848485,
+    "model": "jev-1.13.0",
+    "murphy_scaled": {
+      "brier_top": 0.16022348351878513,
+      "reliability": 0.0007800853962589717,
+      "residual": -0.00027910187747381965,
+      "resolution": 0.03481725000000001,
+      "uncertainty": 0.19453974999999998
+    },
+    "murphy_shipped": {
+      "brier_top": 0.16662328642995614,
+      "reliability": 0.0021090546212121173,
+      "residual": -0.00036826819125596044,
+      "resolution": 0.029657249999999996,
+      "uncertainty": 0.19453974999999998
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.6789435461170857,
+    "nll_scaled": 0.625147116835102,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 0.8445,
+    "share_conf_ge_0_9": 0.269,
+    "soft_accuracy": 0.582035222399966,
+    "temperature": {
+      "choice": 1.0160436093826042,
+      "noul": 0.6638017591829355,
+      "score": 1.6165644385045435
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": 0.96
+  },
+  "jev-1.13.0|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.9216417910447762,
+    "accuracy": 0.7315,
+    "accuracy_ci": [
+      0.71,
+      0.7525
+    ],
+    "aurc_scaled": 0.11630352945311456,
+    "aurc_shipped": 0.13521569172535916,
+    "brier": 0.3706521291500867,
+    "brier_scaled": 0.3593396989176457,
+    "brier_soft": 0.14997389376338843,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.7183333333333334,
+        "ece_scaled": 0.05139390415652598,
+        "ece_shipped": 0.04293956228956236,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.7866666666666666,
+        "ece_scaled": 0.057724337995489455,
+        "ece_shipped": 0.08508333333333336,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.7,
+        "ece_scaled": 0.03435467240762223,
+        "ece_shipped": 0.10192588383838383,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.1305,
+    "coverage_at_5pct_scaled": 0.3555,
+    "distinct_prob_values": 124,
+    "ece_raw": 0.033446010101010074,
+    "ece_scaled": 0.031949418638820296,
+    "ece_scaled_ci": [
+      0.024350372802303476,
+      0.05261354168022069
+    ],
+    "ece_shipped": 0.033446010101010074,
+    "ece_shipped_ci": [
+      0.026543654040404027,
+      0.05782033080808077
+    ],
+    "mean_confidence": 0.7533822727272728,
+    "model": "jev-1.13.0",
+    "murphy_scaled": {
+      "brier_top": 0.16377531304851783,
+      "reliability": 0.0014609664100830786,
+      "residual": -0.0007681533615652436,
+      "resolution": 0.03332525,
+      "uncertainty": 0.19640775
+    },
+    "murphy_shipped": {
+      "brier_top": 0.17043907033465974,
+      "reliability": 0.0016625323407560427,
+      "residual": -8.096200609628013e-05,
+      "resolution": 0.02755025,
+      "uncertainty": 0.19640775
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.6887134315100599,
+    "nll_scaled": 0.6325992786086652,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 0.8694999999999999,
+    "share_conf_ge_0_9": 0.268,
+    "soft_accuracy": 0.5818270579832983,
+    "temperature": {
+      "choice": 1.0160436093826042,
+      "noul": 0.6638017591829355,
+      "score": 1.6165644385045435
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": 0.97
+  },
+  "jev-1.13.0|d2_k150": {
+    "acc_when_conf_ge_0_9": 0.9648033126293996,
+    "accuracy": 0.9133333333333333,
+    "accuracy_ci": [
+      0.8899583333333333,
+      0.935
+    ],
+    "aurc_scaled": 0.019675882917820027,
+    "aurc_shipped": 0.021527372561861678,
+    "brier": 0.13124196483352038,
+    "brier_scaled": 0.13498273614590078,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.5283333333333333,
+    "coverage_at_1pct_scaled": 0.5283333333333333,
+    "coverage_at_5pct": 0.9266666666666666,
+    "coverage_at_5pct_scaled": 0.92,
+    "distinct_prob_values": 123,
+    "ece_raw": 0.03238383838383842,
+    "ece_scaled": 0.03194748098477689,
+    "ece_scaled_ci": [
+      0.020758086655702473,
+      0.05465294838873445
+    ],
+    "ece_shipped": 0.03238383838383842,
+    "ece_shipped_ci": [
+      0.018273947811447852,
+      0.049857554713804736
+    ],
+    "mean_confidence": 0.9294531986531986,
+    "model": "jev-1.13.0",
+    "murphy_scaled": {
+      "brier_top": 0.06146312119161792,
+      "reliability": 0.0032077625104351528,
+      "residual": -0.0031335302077061325,
+      "resolution": 0.01776666666666667,
+      "uncertainty": 0.07915555555555556
+    },
+    "murphy_shipped": {
+      "brier_top": 0.05869076502397715,
+      "reliability": 0.0017462062499291494,
+      "residual": -0.001888774559285343,
+      "resolution": 0.02032222222222222,
+      "uncertainty": 0.07915555555555556
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 0.38985663105413737,
+    "nll_scaled": 0.35134296640387724,
+    "rep": 1,
+    "review_budget_at_1pct": 0.4716666666666667,
+    "review_budget_at_5pct": 0.07333333333333336,
+    "share_conf_ge_0_9": 0.805,
+    "temperature": {
+      "crossfit_folds": [
+        1.384733280535745,
+        1.384733280535745,
+        1.4393713460023037,
+        1.384733280535745,
+        1.4393713460023037
+      ]
+    },
+    "threshold_at_1pct": 1.0,
+    "threshold_at_5pct": 0.66
+  },
+  "jev-1.13.0|d2_oos": {
+    "auroc_in_vs_oos": 0.9213708333333334,
+    "mean_conf_in": 0.9294531986531986,
+    "mean_conf_oos": 0.5499383838383838,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.125
+  },
+  "jev-1.13.0|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": 0.5964467005076142,
+    "accuracy": 0.558,
+    "accuracy_ci": [
+      0.516,
+      0.6
+    ],
+    "aurc_scaled": 0.4013154335147055,
+    "aurc_shipped": 0.38769661795133764,
+    "brier": 0.7382552,
+    "brier_scaled": 0.4876587565040244,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 93,
+    "ece_raw": 0.36524,
+    "ece_scaled": 0.08425544798127665,
+    "ece_scaled_ci": [
+      0.05826691874972149,
+      0.12494601868208906
+    ],
+    "ece_shipped": 0.36524,
+    "ece_shipped_ci": [
+      0.32589049999999997,
+      0.4023884999999998
+    ],
+    "macro_f1": 0.4824816526866461,
+    "mean_confidence": 0.9232400000000001,
+    "model": "jev-1.13.0",
+    "murphy_scaled": {
+      "brier_top": 0.2438293782520122,
+      "reliability": 0.011581263893620127,
+      "residual": -0.0004318856416079264,
+      "resolution": 0.013956,
+      "uncertainty": 0.246636
+    },
+    "murphy_shipped": {
+      "brier_top": 0.36912760000000006,
+      "reliability": 0.13594018400000002,
+      "residual": -0.0014925839999999635,
+      "resolution": 0.011956000000000001,
+      "uncertainty": 0.246636
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 1.8097926604841605,
+    "nll_scaled": 0.680979249628704,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.788,
+    "temperature": {
+      "crossfit_folds": [
+        13.581970059911411,
+        15.85585477890119,
+        16.481486619787315,
+        15.85585477890119,
+        19.999999999999996
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "jev-1.13.0|d3_emotion": {
+    "acc_when_conf_ge_0_9": 0.6929460580912863,
+    "accuracy": 0.5040160642570282,
+    "accuracy_ci": [
+      0.46184738955823296,
+      0.5461847389558233
+    ],
+    "aurc_scaled": 0.32694337794205464,
+    "aurc_shipped": 0.3239911372135485,
+    "brier": 0.748752873098352,
+    "brier_scaled": 0.6206019811789331,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 118,
+    "ece_raw": 0.3139432477384284,
+    "ece_scaled": 0.07296436959689537,
+    "ece_scaled_ci": [
+      0.055896722950758086,
+      0.11959187031858985
+    ],
+    "ece_shipped": 0.3139432477384284,
+    "ece_shipped_ci": [
+      0.2776434424566955,
+      0.3550643533730883
+    ],
+    "macro_f1": 0.4944622135404688,
+    "mean_confidence": 0.8179593119954566,
+    "model": "jev-1.13.0",
+    "murphy_scaled": {
+      "brier_top": 0.2179092018393767,
+      "reliability": 0.00789465407282113,
+      "residual": -0.0004321369314199963,
+      "resolution": 0.03953718652990785,
+      "uncertainty": 0.24998387122788343
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3186201558196873,
+      "reliability": 0.11398759430136984,
+      "residual": 0.0008279553384961114,
+      "resolution": 0.046179265048062086,
+      "uncertainty": 0.24998387122788343
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 2.9449526208135905,
+    "nll_scaled": 1.3006364387534124,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.4839357429718876,
+    "temperature": {
+      "crossfit_folds": [
+        5.16172308083615,
+        5.16172308083615,
+        5.365391590559451,
+        5.365391590559451,
+        5.365391590559451
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "jev-1.13.0|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": 0.63003663003663,
+    "accuracy": 0.608,
+    "accuracy_ci": [
+      0.568,
+      0.64805
+    ],
+    "aurc_scaled": 0.37494096226765833,
+    "aurc_shipped": 0.3663901861356293,
+    "brier": 0.6126844000000001,
+    "brier_scaled": 0.48057219728852235,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 101,
+    "ece_raw": 0.24681999999999998,
+    "ece_scaled": 0.0690296668183071,
+    "ece_scaled_ci": [
+      0.050310531329329104,
+      0.12050122501877727
+    ],
+    "ece_shipped": 0.24681999999999998,
+    "ece_shipped_ci": [
+      0.2062945,
+      0.28908149999999994
+    ],
+    "macro_f1": 0.5795795795795796,
+    "mean_confidence": 0.85482,
+    "model": "jev-1.13.0",
+    "murphy_scaled": {
+      "brier_top": 0.24028609864426118,
+      "reliability": 0.006599307874594694,
+      "residual": 0.0007267907696665021,
+      "resolution": 0.0053760000000000014,
+      "uncertainty": 0.238336
+    },
+    "murphy_shipped": {
+      "brier_top": 0.30634220000000006,
+      "reliability": 0.07495901999999999,
+      "residual": 0.0016231800000001129,
+      "resolution": 0.008576,
+      "uncertainty": 0.238336
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 1.1663043031158173,
+    "nll_scaled": 0.6752304221157877,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.546,
+    "temperature": {
+      "crossfit_folds": [
+        7.900756027133283,
+        7.034747001938761,
+        10.767687244066977,
+        8.212499834488593,
+        9.587431291116433
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "jev-1.13.0|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": 0.8818897637795275,
+    "accuracy": 0.6566265060240963,
+    "accuracy_ci": [
+      0.6144578313253012,
+      0.7008534136546185
+    ],
+    "aurc_scaled": 0.19584738729357515,
+    "aurc_shipped": 0.19618037225255897,
+    "brier": 0.4700309236947791,
+    "brier_scaled": 0.45886032591472276,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.04216867469879518,
+    "coverage_at_1pct_scaled": 0.04216867469879518,
+    "coverage_at_5pct": 0.08433734939759036,
+    "coverage_at_5pct_scaled": 0.09839357429718876,
+    "distinct_prob_values": 101,
+    "ece_raw": 0.08514056224899598,
+    "ece_scaled": 0.047687907792476156,
+    "ece_scaled_ci": [
+      0.03843584325156028,
+      0.09866100217884906
+    ],
+    "ece_shipped": 0.08514056224899598,
+    "ece_shipped_ci": [
+      0.06257028112449804,
+      0.13485090361445776
+    ],
+    "macro_f1": 0.6450945555847681,
+    "mean_confidence": 0.7338554216867471,
+    "model": "jev-1.13.0",
+    "murphy_scaled": {
+      "brier_top": 0.19910663264005418,
+      "reliability": 0.0034250148539438697,
+      "residual": 0.0002615702490231797,
+      "resolution": 0.030048090073596566,
+      "uncertainty": 0.2254681376106837
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2051004016064257,
+      "reliability": 0.009591003770182764,
+      "residual": -0.0015465811818703434,
+      "resolution": 0.028412158592570423,
+      "uncertainty": 0.2254681376106837
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 0.8099229998148517,
+    "nll_scaled": 0.7758407781092206,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9578313253012049,
+    "review_budget_at_5pct": 0.9156626506024097,
+    "share_conf_ge_0_9": 0.25502008032128515,
+    "temperature": {
+      "crossfit_folds": [
+        1.555200181207607,
+        1.4393713460023037,
+        1.496165291045017,
+        1.4393713460023037,
+        1.6165644385045435
+      ]
+    },
+    "threshold_at_1pct": 1.0,
+    "threshold_at_5pct": 0.99
+  },
+  "kev-0.8b|d1_native": {
+    "acc_when_conf_ge_0_9": 1.0,
+    "accuracy": 0.4605,
+    "accuracy_ci": [
+      0.4364875,
+      0.486
+    ],
+    "aurc_scaled": 0.3717621231559183,
+    "aurc_shipped": 0.3862649187015379,
+    "brier": 0.6058086189122214,
+    "brier_scaled": 0.6002306314879584,
+    "brier_soft": 0.1956242924564017,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.5083333333333333,
+        "ece_scaled": 0.05637401355404757,
+        "ece_shipped": 0.07409004176694928,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.525,
+        "ece_scaled": 0.10452966873962588,
+        "ece_shipped": 0.127495814731193,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.37625,
+        "ece_scaled": 0.06292378798630373,
+        "ece_shipped": 0.06985707092736612,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.0225,
+    "coverage_at_1pct_scaled": 0.025,
+    "coverage_at_5pct": 0.0245,
+    "coverage_at_5pct_scaled": 0.03,
+    "distinct_prob_values": 7047,
+    "ece_raw": 0.15412514692658827,
+    "ece_scaled": 0.06565601907365481,
+    "ece_scaled_ci": [
+      0.04895636663254347,
+      0.08481743006419482
+    ],
+    "ece_shipped": 0.05192414907916063,
+    "ece_shipped_ci": [
+      0.04407261399963146,
+      0.0762655042016719
+    ],
+    "mean_confidence": 0.4726572627882276,
+    "model": "kev-0.8b",
+    "murphy_scaled": {
+      "brier_top": 0.22123239157405034,
+      "reliability": 0.005819205556521842,
+      "residual": -0.0013443139824715344,
+      "resolution": 0.031682249999999995,
+      "uncertainty": 0.24843975000000001
+    },
+    "murphy_shipped": {
+      "brier_top": 0.224287361809821,
+      "reliability": 0.00427953454194271,
+      "residual": -0.0010196727321217236,
+      "resolution": 0.02741225,
+      "uncertainty": 0.24843975000000001
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.0609562139272612,
+    "nll_scaled": 1.0492171398882875,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9775,
+    "review_budget_at_5pct": 0.9755,
+    "share_conf_ge_0_9": 0.015,
+    "soft_accuracy": 0.42153684271569264,
+    "temperature": {
+      "choice": 0.8055119959700594,
+      "noul": 1.7466523247656862,
+      "score": 0.6386040615382055
+    },
+    "threshold_at_1pct": 0.8763722717899273,
+    "threshold_at_5pct": 0.8715843007079649
+  },
+  "kev-0.8b|d1_neutral": {
+    "acc_when_conf_ge_0_9": 1.0,
+    "accuracy": 0.451,
+    "accuracy_ci": [
+      0.426,
+      0.4765
+    ],
+    "aurc_scaled": 0.37495875682830887,
+    "aurc_shipped": 0.3908617590404014,
+    "brier": 0.6079062756106925,
+    "brier_scaled": 0.6024965138930906,
+    "brier_soft": 0.1973151191736096,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.475,
+        "ece_scaled": 0.07478706642886257,
+        "ece_shipped": 0.09074032441492993,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.5266666666666666,
+        "ece_scaled": 0.1028441272910096,
+        "ece_shipped": 0.1258277044810277,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.37625,
+        "ece_scaled": 0.06295627537483708,
+        "ece_shipped": 0.06087921208839767,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.0205,
+    "coverage_at_1pct_scaled": 0.0245,
+    "coverage_at_5pct": 0.0225,
+    "coverage_at_5pct_scaled": 0.03,
+    "distinct_prob_values": 7049,
+    "ece_raw": 0.16125056629536366,
+    "ece_scaled": 0.07027939074792368,
+    "ece_scaled_ci": [
+      0.05138316691129754,
+      0.09207720809759722
+    ],
+    "ece_shipped": 0.05997466650441693,
+    "ece_shipped_ci": [
+      0.04834248908802827,
+      0.08275890857429556
+    ],
+    "mean_confidence": 0.4708318886350952,
+    "model": "kev-0.8b",
+    "murphy_scaled": {
+      "brier_top": 0.21882700316351708,
+      "reliability": 0.006628431493956346,
+      "residual": -0.000766428330439245,
+      "resolution": 0.034634,
+      "uncertainty": 0.24759899999999999
+    },
+    "murphy_shipped": {
+      "brier_top": 0.22156320282529712,
+      "reliability": 0.005656036564520036,
+      "residual": -0.00034283373922289195,
+      "resolution": 0.031348999999999995,
+      "uncertainty": 0.24759899999999999
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.0649690524851976,
+    "nll_scaled": 1.053348424930801,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9795,
+    "review_budget_at_5pct": 0.9775,
+    "share_conf_ge_0_9": 0.0125,
+    "soft_accuracy": 0.4145763397423591,
+    "temperature": {
+      "choice": 0.8055119959700594,
+      "noul": 1.7466523247656862,
+      "score": 0.6386040615382055
+    },
+    "threshold_at_1pct": 0.8763722717899273,
+    "threshold_at_5pct": 0.8715843007079649
+  },
+  "kev-0.8b|d2_k150": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.685,
+    "accuracy_ci": [
+      0.65,
+      0.7216666666666667
+    ],
+    "aurc_scaled": 0.12269450551492639,
+    "aurc_shipped": 0.12766164528784035,
+    "brier": 0.522374586731418,
+    "brier_scaled": 0.4485532162405683,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.041666666666666664,
+    "coverage_at_1pct_scaled": 0.021666666666666667,
+    "coverage_at_5pct": 0.22166666666666668,
+    "coverage_at_5pct_scaled": 0.23666666666666666,
+    "distinct_prob_values": 12566,
+    "ece_raw": 0.09047658187380112,
+    "ece_scaled": 0.08691530172327072,
+    "ece_scaled_ci": [
+      0.06732632135430376,
+      0.1173316899369211
+    ],
+    "ece_shipped": 0.2543701665980237,
+    "ece_shipped_ci": [
+      0.22738268944550918,
+      0.2884408634030421
+    ],
+    "mean_confidence": 0.4306298334019763,
+    "model": "kev-0.8b",
+    "murphy_scaled": {
+      "brier_top": 0.15432470952145394,
+      "reliability": 0.00995213890694313,
+      "residual": -0.0009885404966002709,
+      "resolution": 0.07041388888888889,
+      "uncertainty": 0.21577499999999997
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2265333063361914,
+      "reliability": 0.07722445086844194,
+      "residual": 0.00022552213441615065,
+      "resolution": 0.06669166666666666,
+      "uncertainty": 0.21577499999999997
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 1.4952427795186345,
+    "nll_scaled": 1.3350472360512902,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9583333333333334,
+    "review_budget_at_5pct": 0.7783333333333333,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        0.6899936941099433,
+        0.6899936941099433,
+        0.6899936941099433,
+        0.6899936941099433,
+        0.6638017591829355
+      ]
+    },
+    "threshold_at_1pct": 0.7925923371282337,
+    "threshold_at_5pct": 0.6135252900626403
+  },
+  "kev-0.8b|d2_oos": {
+    "auroc_in_vs_oos": 0.7607833333333334,
+    "mean_conf_in": 0.4306298334019763,
+    "mean_conf_oos": 0.25461478409232813,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.0
+  },
+  "kev-0.8b|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.53,
+    "accuracy_ci": [
+      0.482,
+      0.574
+    ],
+    "aurc_scaled": 0.46008525829358626,
+    "aurc_shipped": 0.4156427247463971,
+    "brier": 0.5588516365818197,
+    "brier_scaled": 0.4988509248586699,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.006,
+    "coverage_at_1pct_scaled": 0.002,
+    "coverage_at_5pct": 0.006,
+    "coverage_at_5pct_scaled": 0.002,
+    "distinct_prob_values": 1000,
+    "ece_raw": 0.3407369511578801,
+    "ece_scaled": 0.042836152999408884,
+    "ece_scaled_ci": [
+      0.038189746831040164,
+      0.10531587903225682
+    ],
+    "ece_shipped": 0.18299908289806768,
+    "ece_shipped_ci": [
+      0.14802898181891797,
+      0.22813884717960417
+    ],
+    "macro_f1": 0.40797396093132,
+    "mean_confidence": 0.7129990828980677,
+    "model": "kev-0.8b",
+    "murphy_scaled": {
+      "brier_top": 0.24942546242933494,
+      "reliability": 0.0030801649766932673,
+      "residual": 0.0003852974526416808,
+      "resolution": 0.0031400000000000004,
+      "uncertainty": 0.2491
+    },
+    "murphy_shipped": {
+      "brier_top": 0.27942581829090984,
+      "reliability": 0.03650103006137517,
+      "residual": 0.0007247882295347008,
+      "resolution": 0.006900000000000002,
+      "uncertainty": 0.2491
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.7637830397966794,
+    "nll_scaled": 0.6920391043269818,
+    "rep": 1,
+    "review_budget_at_1pct": 0.994,
+    "review_budget_at_5pct": 0.994,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        3.37225767657376,
+        6.767710306856467,
+        5.16172308083615,
+        4.253643494592419,
+        7.600845912731769
+      ]
+    },
+    "threshold_at_1pct": 0.8714498505695244,
+    "threshold_at_5pct": 0.8714498505695244
+  },
+  "kev-0.8b|d3_emotion": {
+    "acc_when_conf_ge_0_9": 1.0,
+    "accuracy": 0.5160642570281124,
+    "accuracy_ci": [
+      0.4738955823293173,
+      0.5582831325301204
+    ],
+    "aurc_scaled": 0.3594305990572363,
+    "aurc_shipped": 0.3601135200198815,
+    "brier": 0.6443127620087045,
+    "brier_scaled": 0.6440354906569198,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.01606425702811245,
+    "coverage_at_1pct_scaled": 0.018072289156626505,
+    "coverage_at_5pct": 0.01606425702811245,
+    "coverage_at_5pct_scaled": 0.018072289156626505,
+    "distinct_prob_values": 2965,
+    "ece_raw": 0.20201363456226748,
+    "ece_scaled": 0.07433696920322588,
+    "ece_scaled_ci": [
+      0.055044111537462595,
+      0.12464273479655696
+    ],
+    "ece_shipped": 0.07289696703485386,
+    "ece_shipped_ci": [
+      0.05877354159657478,
+      0.12930478264710424
+    ],
+    "macro_f1": 0.5124756409195708,
+    "mean_confidence": 0.4806018359450492,
+    "model": "kev-0.8b",
+    "murphy_scaled": {
+      "brier_top": 0.23453253320581785,
+      "reliability": 0.008696720256414964,
+      "residual": 9.284106185267205e-05,
+      "resolution": 0.02399896775858454,
+      "uncertainty": 0.24974193964613475
+    },
+    "murphy_shipped": {
+      "brier_top": 0.23475562514548587,
+      "reliability": 0.009477753512276995,
+      "residual": -0.00047329630384546073,
+      "resolution": 0.023990771709080407,
+      "uncertainty": 0.24974193964613475
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.3270250773080576,
+    "nll_scaled": 1.3272452536657848,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9839357429718876,
+    "review_budget_at_5pct": 0.9839357429718876,
+    "share_conf_ge_0_9": 0.014056224899598393,
+    "temperature": {
+      "crossfit_folds": [
+        0.9403702978599706,
+        0.9403702978599706,
+        0.9774749263248849,
+        0.9774749263248849,
+        0.9774749263248849
+      ]
+    },
+    "threshold_at_1pct": 0.8927649004294105,
+    "threshold_at_5pct": 0.8927649004294105
+  },
+  "kev-0.8b|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.52,
+    "accuracy_ci": [
+      0.47795,
+      0.564
+    ],
+    "aurc_scaled": 0.49694619463494,
+    "aurc_shipped": 0.45363018063654226,
+    "brier": 0.5546359702008248,
+    "brier_scaled": 0.501118469016797,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 998,
+    "ece_raw": 0.29560635122371587,
+    "ece_scaled": 0.06402529001191856,
+    "ece_scaled_ci": [
+      0.051324496044630206,
+      0.1253769912745089
+    ],
+    "ece_shipped": 0.1526367506049714,
+    "ece_shipped_ci": [
+      0.11772495909281266,
+      0.20005558798490952
+    ],
+    "macro_f1": 0.4369792057653329,
+    "mean_confidence": 0.6726367506049714,
+    "model": "kev-0.8b",
+    "murphy_scaled": {
+      "brier_top": 0.2505592345083985,
+      "reliability": 0.004942875564747808,
+      "residual": 1.6358943650707225e-05,
+      "resolution": 0.004,
+      "uncertainty": 0.2496
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2773179851004124,
+      "reliability": 0.03196170607840607,
+      "residual": 0.00047627902200630956,
+      "resolution": 0.004720000000000001,
+      "uncertainty": 0.2496
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.7568316103468772,
+    "nll_scaled": 0.6942802687040227,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        7.31232028817039,
+        19.999999999999996,
+        6.510810237370065,
+        10.35894935846242,
+        4.595941938093925
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "kev-0.8b|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.4759036144578313,
+    "accuracy_ci": [
+      0.42771084337349397,
+      0.5180722891566265
+    ],
+    "aurc_scaled": 0.4516581061397088,
+    "aurc_shipped": 0.45936264702601237,
+    "brier": 0.6388928641187814,
+    "brier_scaled": 0.6128195126451804,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.010040160642570281,
+    "coverage_at_1pct_scaled": 0.014056224899598393,
+    "coverage_at_5pct": 0.010040160642570281,
+    "coverage_at_5pct_scaled": 0.014056224899598393,
+    "distinct_prob_values": 1492,
+    "ece_raw": 0.3226331394004177,
+    "ece_scaled": 0.04204253974196557,
+    "ece_scaled_ci": [
+      0.0442973374845009,
+      0.10886925890252772
+    ],
+    "ece_shipped": 0.12532780997597487,
+    "ece_shipped_ci": [
+      0.09553724007897534,
+      0.17700707903644416
+    ],
+    "macro_f1": 0.43122886591567866,
+    "mean_confidence": 0.6012314244338062,
+    "model": "kev-0.8b",
+    "murphy_scaled": {
+      "brier_top": 0.24545871094945693,
+      "reliability": 0.003652177973868202,
+      "residual": -0.0004760668113140132,
+      "resolution": 0.007136764416900451,
+      "uncertainty": 0.2494193642038032
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2629606027110369,
+      "reliability": 0.01962932480591993,
+      "residual": 0.0004397116400566836,
+      "resolution": 0.006527797938742925,
+      "uncertainty": 0.2494193642038032
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.0374439815926226,
+    "nll_scaled": 1.0058219289376906,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9899598393574297,
+    "review_budget_at_5pct": 0.9899598393574297,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        1.7466523247656862,
+        1.496165291045017,
+        1.6803499738588674,
+        1.7466523247656862,
+        1.6803499738588674
+      ]
+    },
+    "threshold_at_1pct": 0.8168363736082154,
+    "threshold_at_5pct": 0.8168363736082154
+  },
+  "kev-9b|d1_native": {
+    "acc_when_conf_ge_0_9": 0.954337899543379,
+    "accuracy": 0.7215,
+    "accuracy_ci": [
+      0.6969875,
+      0.7435
+    ],
+    "aurc_scaled": 0.14983048845166794,
+    "aurc_shipped": 0.14811450717706465,
+    "brier": 0.41058349388487125,
+    "brier_scaled": 0.40007550121361146,
+    "brier_soft": 0.10653180506478935,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.6966666666666667,
+        "ece_scaled": 0.06374192256254466,
+        "ece_shipped": 0.1044207374685666,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.8066666666666666,
+        "ece_scaled": 0.06298702233205147,
+        "ece_shipped": 0.0692546927999721,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.67625,
+        "ece_scaled": 0.06582090068385052,
+        "ece_shipped": 0.1157377434596269,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.022,
+    "coverage_at_1pct_scaled": 0.05,
+    "coverage_at_5pct": 0.117,
+    "coverage_at_5pct_scaled": 0.151,
+    "distinct_prob_values": 7056,
+    "ece_raw": 0.08703018526325591,
+    "ece_scaled": 0.04526100654738412,
+    "ece_scaled_ci": [
+      0.04013279262549314,
+      0.07085029883695537
+    ],
+    "ece_shipped": 0.094454578400808,
+    "ece_shipped_ci": [
+      0.07422179429549217,
+      0.11514713603667315
+    ],
+    "mean_confidence": 0.627045421599192,
+    "model": "kev-9b",
+    "murphy_scaled": {
+      "brier_top": 0.18224417304298765,
+      "reliability": 0.003759458682621873,
+      "residual": 0.0007322143603657738,
+      "resolution": 0.023185249999999998,
+      "uncertainty": 0.20093775
+    },
+    "murphy_shipped": {
+      "brier_top": 0.18930587899483564,
+      "reliability": 0.011606008792623657,
+      "residual": -0.0003976297977880128,
+      "resolution": 0.02284025,
+      "uncertainty": 0.20093775
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.7334992896453032,
+    "nll_scaled": 0.7070720008535609,
+    "rep": 1,
+    "review_budget_at_1pct": 0.978,
+    "review_budget_at_5pct": 0.883,
+    "share_conf_ge_0_9": 0.1095,
+    "soft_accuracy": 0.5784614687933795,
+    "temperature": {
+      "choice": 0.7749350240912262,
+      "noul": 0.9046741489544204,
+      "score": 0.6386040615382055
+    },
+    "threshold_at_1pct": 0.9802780717421625,
+    "threshold_at_5pct": 0.8914082430145672
+  },
+  "kev-9b|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.9585253456221198,
+    "accuracy": 0.712,
+    "accuracy_ci": [
+      0.688,
+      0.734
+    ],
+    "aurc_scaled": 0.15434113393601223,
+    "aurc_shipped": 0.15289929783326256,
+    "brier": 0.4154965752986747,
+    "brier_scaled": 0.40564476536207744,
+    "brier_soft": 0.10895188341995844,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.6683333333333333,
+        "ece_scaled": 0.06376722138322094,
+        "ece_shipped": 0.09237248121683464,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.8033333333333333,
+        "ece_scaled": 0.06166677899531809,
+        "ece_shipped": 0.06589898410891809,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.67625,
+        "ece_scaled": 0.06942384847776972,
+        "ece_shipped": 0.11578685177286567,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.0225,
+    "coverage_at_1pct_scaled": 0.0375,
+    "coverage_at_5pct": 0.1165,
+    "coverage_at_5pct_scaled": 0.1525,
+    "distinct_prob_values": 7028,
+    "ece_raw": 0.09246551684860838,
+    "ece_scaled": 0.04658338863078348,
+    "ece_scaled_ci": [
+      0.03518726477681105,
+      0.06884651549247307
+    ],
+    "ece_shipped": 0.08711644250100845,
+    "ece_shipped_ci": [
+      0.06838530944303127,
+      0.10818948346383457
+    ],
+    "mean_confidence": 0.6248835574989916,
+    "model": "kev-9b",
+    "murphy_scaled": {
+      "brier_top": 0.18347486728590878,
+      "reliability": 0.00304775920225031,
+      "residual": -9.289191634154204e-05,
+      "resolution": 0.024536,
+      "uncertainty": 0.20505600000000002
+    },
+    "murphy_shipped": {
+      "brier_top": 0.18999911150710216,
+      "reliability": 0.009982025852909093,
+      "residual": -0.0002679143458069466,
+      "resolution": 0.024770999999999998,
+      "uncertainty": 0.20505600000000002
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.740910661176685,
+    "nll_scaled": 0.7157451255731933,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9775,
+    "review_budget_at_5pct": 0.8835,
+    "share_conf_ge_0_9": 0.1085,
+    "soft_accuracy": 0.5735233009767117,
+    "temperature": {
+      "choice": 0.7749350240912262,
+      "noul": 0.9046741489544204,
+      "score": 0.6386040615382055
+    },
+    "threshold_at_1pct": 0.9803608424928133,
+    "threshold_at_5pct": 0.891548293148851
+  },
+  "kev-9b|d2_k150": {
+    "acc_when_conf_ge_0_9": 1.0,
+    "accuracy": 0.85,
+    "accuracy_ci": [
+      0.8216666666666667,
+      0.8783333333333333
+    ],
+    "aurc_scaled": 0.04194780712940339,
+    "aurc_shipped": 0.048674362237283955,
+    "brier": 0.4018551180770666,
+    "brier_scaled": 0.23280508789471777,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.225,
+    "coverage_at_1pct_scaled": 0.2816666666666667,
+    "coverage_at_5pct": 0.6116666666666667,
+    "coverage_at_5pct_scaled": 0.7083333333333334,
+    "distinct_prob_values": 12390,
+    "ece_raw": 0.05132803385170581,
+    "ece_scaled": 0.04603403297256315,
+    "ece_scaled_ci": [
+      0.030928053140451755,
+      0.07606484691825634
+    ],
+    "ece_shipped": 0.37706412671747547,
+    "ece_shipped_ci": [
+      0.35067373852852235,
+      0.4067693379156756
+    ],
+    "mean_confidence": 0.4729358732825246,
+    "model": "kev-9b",
+    "murphy_scaled": {
+      "brier_top": 0.10512656964638019,
+      "reliability": 0.004995999106249628,
+      "residual": 0.000297237206797224,
+      "resolution": 0.027666666666666662,
+      "uncertainty": 0.1275
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2652712374637382,
+      "reliability": 0.15895076605566266,
+      "residual": -0.0016239730363689087,
+      "resolution": 0.019555555555555548,
+      "uncertainty": 0.1275
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 1.1616467392472891,
+    "nll_scaled": 0.5936474883820634,
+    "rep": 1,
+    "review_budget_at_1pct": 0.775,
+    "review_budget_at_5pct": 0.3883333333333333,
+    "share_conf_ge_0_9": 0.008333333333333333,
+    "temperature": {
+      "crossfit_folds": [
+        0.46857368474644656,
+        0.48706241468668304,
+        0.46857368474644656,
+        0.46857368474644656,
+        0.46857368474644656
+      ]
+    },
+    "threshold_at_1pct": 0.7254061781249873,
+    "threshold_at_5pct": 0.38266335131535545
+  },
+  "kev-9b|d2_oos": {
+    "auroc_in_vs_oos": 0.9334666666666667,
+    "mean_conf_in": 0.4729358732825246,
+    "mean_conf_oos": 0.08470688043342875,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.0
+  },
+  "kev-9b|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": 0.6363636363636364,
+    "accuracy": 0.53,
+    "accuracy_ci": [
+      0.484,
+      0.572
+    ],
+    "aurc_scaled": 0.4396498872413536,
+    "aurc_shipped": 0.39828787102322194,
+    "brier": 0.63115275796762,
+    "brier_scaled": 0.495756926858923,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.002,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.002,
+    "distinct_prob_values": 1000,
+    "ece_raw": 0.3990027522274444,
+    "ece_scaled": 0.07522645520687168,
+    "ece_scaled_ci": [
+      0.05858132582693286,
+      0.12953904000026364
+    ],
+    "ece_shipped": 0.2699591700044814,
+    "ece_shipped_ci": [
+      0.2286077051895074,
+      0.3153706324230172
+    ],
+    "macro_f1": 0.4106583072100314,
+    "mean_confidence": 0.7999591700044814,
+    "model": "kev-9b",
+    "murphy_scaled": {
+      "brier_top": 0.2478784634294615,
+      "reliability": 0.007515495346728847,
+      "residual": 8.296808273264289e-05,
+      "resolution": 0.008820000000000001,
+      "uncertainty": 0.2491
+    },
+    "murphy_shipped": {
+      "brier_top": 0.31557637898381,
+      "reliability": 0.07519104268288258,
+      "residual": 0.0009053363009274285,
+      "resolution": 0.009619999999999998,
+      "uncertainty": 0.2491
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.8885780807194101,
+    "nll_scaled": 0.6889290489944225,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.154,
+    "temperature": {
+      "crossfit_folds": [
+        4.965785761120654,
+        7.900756027133283,
+        7.034747001938761,
+        5.797154429302134,
+        9.587431291116433
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "kev-9b|d3_emotion": {
+    "acc_when_conf_ge_0_9": 1.0,
+    "accuracy": 0.5281124497991968,
+    "accuracy_ci": [
+      0.4859437751004016,
+      0.572289156626506
+    ],
+    "aurc_scaled": 0.30998903380825804,
+    "aurc_shipped": 0.3088331590259461,
+    "brier": 0.6187668834316777,
+    "brier_scaled": 0.6190637452102573,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.050200803212851405,
+    "coverage_at_1pct_scaled": 0.050200803212851405,
+    "coverage_at_5pct": 0.05220883534136546,
+    "coverage_at_5pct_scaled": 0.05622489959839357,
+    "distinct_prob_values": 2973,
+    "ece_raw": 0.19653835558373242,
+    "ece_scaled": 0.05081106555564546,
+    "ece_scaled_ci": [
+      0.045397788114692667,
+      0.10780744748706089
+    ],
+    "ece_shipped": 0.05717834303560602,
+    "ece_shipped_ci": [
+      0.04303290667287297,
+      0.10591322362522697
+    ],
+    "macro_f1": 0.5265304464879461,
+    "mean_confidence": 0.5005420428534599,
+    "model": "kev-9b",
+    "murphy_scaled": {
+      "brier_top": 0.22197254663721666,
+      "reliability": 0.004223601402623899,
+      "residual": -0.0025879124000273424,
+      "resolution": 0.02887283253166752,
+      "uncertainty": 0.24920969016628763
+    },
+    "murphy_shipped": {
+      "brier_top": 0.22165502813780097,
+      "reliability": 0.004279818833251984,
+      "residual": -0.0002807205372672428,
+      "resolution": 0.031553760324471394,
+      "uncertainty": 0.24920969016628763
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.286403238520764,
+    "nll_scaled": 1.2873798457328776,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9497991967871486,
+    "review_budget_at_5pct": 0.9477911646586346,
+    "share_conf_ge_0_9": 0.04216867469879518,
+    "temperature": {
+      "crossfit_folds": [
+        0.9046741489544204,
+        0.9046741489544204,
+        0.9774749263248849,
+        0.9403702978599706,
+        0.9403702978599706
+      ]
+    },
+    "threshold_at_1pct": 0.8803649720008148,
+    "threshold_at_5pct": 0.8792360025861501
+  },
+  "kev-9b|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": 0.8333333333333334,
+    "accuracy": 0.594,
+    "accuracy_ci": [
+      0.552,
+      0.638
+    ],
+    "aurc_scaled": 0.34756185001202156,
+    "aurc_shipped": 0.33824218375776854,
+    "brier": 0.5086343928930607,
+    "brier_scaled": 0.4759165293393108,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.018,
+    "coverage_at_1pct_scaled": 0.03,
+    "coverage_at_5pct": 0.018,
+    "coverage_at_5pct_scaled": 0.03,
+    "distinct_prob_values": 1000,
+    "ece_raw": 0.25903412808343657,
+    "ece_scaled": 0.03742983788337607,
+    "ece_scaled_ci": [
+      0.03807142019599402,
+      0.09836996168619228
+    ],
+    "ece_shipped": 0.11952762953469614,
+    "ece_shipped_ci": [
+      0.09186167753315103,
+      0.17067335564242672
+    ],
+    "macro_f1": 0.5589238611327183,
+    "mean_confidence": 0.7135276295346962,
+    "model": "kev-9b",
+    "murphy_scaled": {
+      "brier_top": 0.23795826466965536,
+      "reliability": 0.0020095054173447477,
+      "residual": -0.0007312407476894045,
+      "resolution": 0.004483999999999998,
+      "uncertainty": 0.24116400000000002
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2543171964465304,
+      "reliability": 0.019384124276882922,
+      "residual": -0.00030692783035252136,
+      "resolution": 0.0059240000000000004,
+      "uncertainty": 0.24116400000000002
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.7108140998974536,
+    "nll_scaled": 0.6680088844764864,
+    "rep": 1,
+    "review_budget_at_1pct": 0.982,
+    "review_budget_at_5pct": 0.982,
+    "share_conf_ge_0_9": 0.048,
+    "temperature": {
+      "crossfit_folds": [
+        2.203163877471799,
+        2.38045648955743,
+        2.7789909887462745,
+        2.203163877471799,
+        2.6735013998394153
+      ]
+    },
+    "threshold_at_1pct": 0.9431439861912037,
+    "threshold_at_5pct": 0.9431439861912037
+  },
+  "kev-9b|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": 1.0,
+    "accuracy": 0.4759036144578313,
+    "accuracy_ci": [
+      0.43172690763052207,
+      0.5200803212851406
+    ],
+    "aurc_scaled": 0.3887652509208719,
+    "aurc_shipped": 0.39540084670832076,
+    "brier": 0.6350206740770454,
+    "brier_scaled": 0.6037045072052986,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.024096385542168676,
+    "coverage_at_1pct_scaled": 0.018072289156626505,
+    "coverage_at_5pct": 0.024096385542168676,
+    "coverage_at_5pct_scaled": 0.018072289156626505,
+    "distinct_prob_values": 1493,
+    "ece_raw": 0.32558418032201375,
+    "ece_scaled": 0.09375174172664619,
+    "ece_scaled_ci": [
+      0.07385315259245322,
+      0.13996034394115248
+    ],
+    "ece_shipped": 0.15044435964476652,
+    "ece_shipped_ci": [
+      0.11800508683065176,
+      0.19760906851776439
+    ],
+    "macro_f1": 0.43779463861233814,
+    "mean_confidence": 0.6263479741025978,
+    "model": "kev-9b",
+    "murphy_scaled": {
+      "brier_top": 0.23694886271765575,
+      "reliability": 0.01241173157784623,
+      "residual": -0.0009493043982611582,
+      "resolution": 0.02393292866573251,
+      "uncertainty": 0.2494193642038032
+    },
+    "murphy_shipped": {
+      "brier_top": 0.25591558370777084,
+      "reliability": 0.027587178636263785,
+      "residual": -0.0015576698403854672,
+      "resolution": 0.0195332892919107,
+      "uncertainty": 0.2494193642038032
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.0674104729885856,
+    "nll_scaled": 0.9976311402855351,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9759036144578314,
+    "review_budget_at_5pct": 0.9759036144578314,
+    "share_conf_ge_0_9": 0.006024096385542169,
+    "temperature": {
+      "crossfit_folds": [
+        2.203163877471799,
+        1.815570798387511,
+        2.0390757370654606,
+        2.1195324973521417,
+        1.9616730890813334
+      ]
+    },
+    "threshold_at_1pct": 0.8210747713666711,
+    "threshold_at_5pct": 0.8210747713666711
+  },
+  "laya-en|d1_native": {
+    "acc_when_conf_ge_0_9": 0.5,
+    "accuracy": 0.3585,
+    "accuracy_ci": [
+      0.3324875,
+      0.383
+    ],
+    "aurc_scaled": 0.5842197794351206,
+    "aurc_shipped": 0.5944031770868801,
+    "brier": 0.7498398703707237,
+    "brier_scaled": 0.6776780267757411,
+    "brier_soft": 0.31561520299835555,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.285,
+        "ece_scaled": 0.07963371857885929,
+        "ece_shipped": 0.16830666549332624,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.4816666666666667,
+        "ece_scaled": 0.09752886727523594,
+        "ece_shipped": 0.1844467705736558,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.32125,
+        "ece_scaled": 0.09057406815237316,
+        "ece_shipped": 0.20151057642648626,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.0005,
+    "coverage_at_1pct_scaled": 0.0005,
+    "coverage_at_5pct": 0.0005,
+    "coverage_at_5pct_scaled": 0.0005,
+    "distinct_prob_values": 6809,
+    "ece_raw": 0.2686459519150723,
+    "ece_scaled": 0.06293743546699468,
+    "ece_scaled_ci": [
+      0.04969828717412148,
+      0.08774166200445385
+    ],
+    "ece_shipped": 0.17769394044770204,
+    "ece_shipped_ci": [
+      0.15604783134787378,
+      0.20336395091082632
+    ],
+    "mean_confidence": 0.5361939404477021,
+    "model": "laya-en",
+    "murphy_scaled": {
+      "brier_top": 0.22457153869624544,
+      "reliability": 0.005580867449554229,
+      "residual": -0.0006168287533087624,
+      "resolution": 0.010370250000000004,
+      "uncertainty": 0.22997774999999998
+    },
+    "murphy_shipped": {
+      "brier_top": 0.265735110154612,
+      "reliability": 0.04287071450214337,
+      "residual": 6.895652468641433e-06,
+      "resolution": 0.007120250000000002,
+      "uncertainty": 0.22997774999999998
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.323093065105259,
+    "nll_scaled": 1.197283743561035,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9995,
+    "review_budget_at_5pct": 0.9995,
+    "share_conf_ge_0_9": 0.012,
+    "soft_accuracy": 0.34651121447899763,
+    "temperature": {
+      "choice": 5.16172308083615,
+      "noul": 19.999999999999996,
+      "score": 2.1195324973521417
+    },
+    "threshold_at_1pct": 0.9999837875366211,
+    "threshold_at_5pct": 0.9999837875366211
+  },
+  "laya-en|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.5238095238095238,
+    "accuracy": 0.3665,
+    "accuracy_ci": [
+      0.342,
+      0.3895125
+    ],
+    "aurc_scaled": 0.5880724450143793,
+    "aurc_shipped": 0.6027324674242196,
+    "brier": 0.7410377122377872,
+    "brier_scaled": 0.676953919708865,
+    "brier_soft": 0.30559969144593957,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.31,
+        "ece_scaled": 0.08623556612539619,
+        "ece_shipped": 0.10751027669149402,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.4816666666666667,
+        "ece_scaled": 0.09753344659895821,
+        "ece_shipped": 0.18679147245983285,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.3225,
+        "ece_scaled": 0.09179212138978628,
+        "ece_shipped": 0.20521604552364717,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.0005,
+    "coverage_at_1pct_scaled": 0.0005,
+    "coverage_at_5pct": 0.0005,
+    "coverage_at_5pct_scaled": 0.0005,
+    "distinct_prob_values": 6795,
+    "ece_raw": 0.23201343383162407,
+    "ece_scaled": 0.06831940531549967,
+    "ece_scaled_ci": [
+      0.05600033171519605,
+      0.09234825955026023
+    ],
+    "ece_shipped": 0.15589605777559562,
+    "ece_shipped_ci": [
+      0.14150026792713116,
+      0.18257037481840493
+    ],
+    "mean_confidence": 0.5179285598706759,
+    "model": "laya-en",
+    "murphy_scaled": {
+      "brier_top": 0.230744367960223,
+      "reliability": 0.006715637670732763,
+      "residual": -0.0006037697105097661,
+      "resolution": 0.007545250000000002,
+      "uncertainty": 0.23217775
+    },
+    "murphy_shipped": {
+      "brier_top": 0.26843978567255283,
+      "reliability": 0.04133382988722657,
+      "residual": -0.0002515442146737157,
+      "resolution": 0.00482025,
+      "uncertainty": 0.23217775
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.2939635458389585,
+    "nll_scaled": 1.195018738206743,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9995,
+    "review_budget_at_5pct": 0.9995,
+    "share_conf_ge_0_9": 0.0105,
+    "soft_accuracy": 0.35805512716625687,
+    "temperature": {
+      "choice": 5.16172308083615,
+      "noul": 19.999999999999996,
+      "score": 2.1195324973521417
+    },
+    "threshold_at_1pct": 0.9999837875366211,
+    "threshold_at_5pct": 0.9999837875366211
+  },
+  "laya-en|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.568,
+    "accuracy_ci": [
+      0.526,
+      0.614
+    ],
+    "aurc_scaled": 0.4381516608305811,
+    "aurc_shipped": 0.41863622677121015,
+    "brier": 0.49795833915070103,
+    "brier_scaled": 0.49538409949479817,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.002,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.002,
+    "distinct_prob_values": 709,
+    "ece_raw": 0.1177650262194872,
+    "ece_scaled": 0.041685708155373445,
+    "ece_scaled_ci": [
+      0.04397591677450926,
+      0.10380452146257918
+    ],
+    "ece_shipped": 0.06549717442349201,
+    "ece_shipped_ci": [
+      0.04857966516565123,
+      0.11700311257445892
+    ],
+    "macro_f1": 0.5356356631810677,
+    "mean_confidence": 0.6010958516007616,
+    "model": "laya-en",
+    "murphy_scaled": {
+      "brier_top": 0.2476920497473991,
+      "reliability": 0.0025428586213243113,
+      "residual": 0.0010691911260747866,
+      "resolution": 0.0012959999999999994,
+      "uncertainty": 0.245376
+    },
+    "murphy_shipped": {
+      "brier_top": 0.24897916957535052,
+      "reliability": 0.006414131199441554,
+      "residual": 0.001045038375908941,
+      "resolution": 0.0038559999999999996,
+      "uncertainty": 0.245376
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.6927737900581195,
+    "nll_scaled": 0.6888007211819664,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        1.6803499738588674,
+        2.1195324973521417,
+        1.6165644385045435,
+        1.8872086202957774,
+        3.37225767657376
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "laya-en|d3_emotion": {
+    "acc_when_conf_ge_0_9": 0.6199261992619927,
+    "accuracy": 0.5040160642570282,
+    "accuracy_ci": [
+      0.46184738955823296,
+      0.5462349397590361
+    ],
+    "aurc_scaled": 0.3561002541327323,
+    "aurc_shipped": 0.35661593761472365,
+    "brier": 0.7921712370956546,
+    "brier_scaled": 0.6457387500141868,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.02208835341365462,
+    "coverage_at_1pct_scaled": 0.018072289156626505,
+    "coverage_at_5pct": 0.02208835341365462,
+    "coverage_at_5pct_scaled": 0.018072289156626505,
+    "distinct_prob_values": 2678,
+    "ece_raw": 0.3272270576852234,
+    "ece_scaled": 0.06942171737300487,
+    "ece_scaled_ci": [
+      0.048155475907129465,
+      0.11018222399214397
+    ],
+    "ece_shipped": 0.32722398020114396,
+    "ece_shipped_ci": [
+      0.28618702976153837,
+      0.36557840794511914
+    ],
+    "macro_f1": 0.4979488403228621,
+    "mean_confidence": 0.8312400444581721,
+    "model": "laya-en",
+    "murphy_scaled": {
+      "brier_top": 0.22686853865901405,
+      "reliability": 0.0054049662016752,
+      "residual": -0.0018566471967878806,
+      "resolution": 0.026663651573756705,
+      "uncertainty": 0.24998387122788343
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3426213286172721,
+      "reliability": 0.11989716244434451,
+      "residual": 0.0007415417978763883,
+      "resolution": 0.028001246852832194,
+      "uncertainty": 0.24998387122788343
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 2.027148138506841,
+    "nll_scaled": 1.3486454764689644,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9779116465863453,
+    "review_budget_at_5pct": 0.9779116465863453,
+    "share_conf_ge_0_9": 0.5441767068273092,
+    "temperature": {
+      "crossfit_folds": [
+        2.7789909887462745,
+        2.8886429294545617,
+        2.8886429294545617,
+        2.8886429294545617,
+        2.7789909887462745
+      ]
+    },
+    "threshold_at_1pct": 0.9995681590067192,
+    "threshold_at_5pct": 0.9995681590067192
+  },
+  "laya-en|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.508,
+    "accuracy_ci": [
+      0.464,
+      0.554
+    ],
+    "aurc_scaled": 0.48737666240389177,
+    "aurc_shipped": 0.46109491883522663,
+    "brier": 0.5134993064874431,
+    "brier_scaled": 0.5006160824135402,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.004,
+    "coverage_at_1pct_scaled": 0.002,
+    "coverage_at_5pct": 0.004,
+    "coverage_at_5pct_scaled": 0.002,
+    "distinct_prob_values": 801,
+    "ece_raw": 0.14869219124515137,
+    "ece_scaled": 0.049366929181514786,
+    "ece_scaled_ci": [
+      0.047081226471121104,
+      0.10965536513666385
+    ],
+    "ece_shipped": 0.09022307667579209,
+    "ece_shipped_ci": [
+      0.06626197330979906,
+      0.1386233684480102
+    ],
+    "macro_f1": 0.5073615405565612,
+    "mean_confidence": 0.5884083721096897,
+    "model": "laya-en",
+    "murphy_scaled": {
+      "brier_top": 0.2503080412067701,
+      "reliability": 0.0034854256553133066,
+      "residual": 2.2615551456772742e-05,
+      "resolution": 0.0031360000000000008,
+      "uncertainty": 0.249936
+    },
+    "murphy_shipped": {
+      "brier_top": 0.25674965324372157,
+      "reliability": 0.011169062499236524,
+      "residual": -0.00017940925551496179,
+      "resolution": 0.004176000000000001,
+      "uncertainty": 0.249936
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.7079110800082418,
+    "nll_scaled": 0.6937792212388332,
+    "rep": 1,
+    "review_budget_at_1pct": 0.996,
+    "review_budget_at_5pct": 0.996,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        5.16172308083615,
+        2.5720161612211325,
+        7.034747001938761,
+        6.263662010487687,
+        4.965785761120654
+      ]
+    },
+    "threshold_at_1pct": 0.8178674334923198,
+    "threshold_at_5pct": 0.8178674334923198
+  },
+  "laya-en|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.37349397590361444,
+    "accuracy_ci": [
+      0.3293172690763052,
+      0.41169678714859437
+    ],
+    "aurc_scaled": 0.5941556020808891,
+    "aurc_shipped": 0.5897961444762043,
+    "brier": 0.7252492259586987,
+    "brier_scaled": 0.6596828142943336,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 1489,
+    "ece_raw": 0.31670085475621235,
+    "ece_scaled": 0.0662558466336972,
+    "ece_scaled_ci": [
+      0.04558036993294532,
+      0.11592940033055771
+    ],
+    "ece_shipped": 0.19048032781205024,
+    "ece_shipped_ci": [
+      0.15521751798126512,
+      0.23199804354489725
+    ],
+    "macro_f1": 0.29266535692445605,
+    "mean_confidence": 0.5639743037156646,
+    "model": "laya-en",
+    "murphy_scaled": {
+      "brier_top": 0.2334287442406501,
+      "reliability": 0.005972128821715576,
+      "residual": 0.0002268801513335139,
+      "resolution": 0.006766490599723703,
+      "uncertainty": 0.23399622586732471
+    },
+    "murphy_shipped": {
+      "brier_top": 0.2718647197743844,
+      "reliability": 0.04518328262407614,
+      "residual": 0.000126236756897935,
+      "resolution": 0.007441025473914344,
+      "uncertainty": 0.23399622586732471
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.1971157164923456,
+    "nll_scaled": 1.0874439313688236,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        4.4214814854862485,
+        3.64362939713395,
+        4.4214814854862485,
+        4.777286157969195,
+        4.092176578932024
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "laya-ml|d1_native": {
+    "acc_when_conf_ge_0_9": 0.5031578947368421,
+    "accuracy": 0.351,
+    "accuracy_ci": [
+      0.328,
+      0.37351249999999997
+    ],
+    "aurc_scaled": 0.5491045510530352,
+    "aurc_shipped": 0.5564715176277655,
+    "brier": 0.8906652747166658,
+    "brier_scaled": 0.6812340878338146,
+    "brier_soft": 0.46275395687683296,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.29333333333333333,
+        "ece_scaled": 0.09537124459344709,
+        "ece_shipped": 0.3635710451475031,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.49833333333333335,
+        "ece_scaled": 0.06019346086420569,
+        "ece_shipped": 0.3735868666212385,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.28375,
+        "ece_scaled": 0.06405520984025566,
+        "ece_shipped": 0.22699278762041297,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.0035,
+    "coverage_at_1pct_scaled": 0.0035,
+    "coverage_at_5pct": 0.0035,
+    "coverage_at_5pct_scaled": 0.0035,
+    "distinct_prob_values": 6751,
+    "ece_raw": 0.3119444885787877,
+    "ece_scaled": 0.04820687128173925,
+    "ece_scaled_ci": [
+      0.038109890616758416,
+      0.07510082924723653
+    ],
+    "ece_shipped": 0.31194448857878765,
+    "ece_shipped_ci": [
+      0.29136588426047916,
+      0.33314742621164894
+    ],
+    "mean_confidence": 0.6629444885787876,
+    "model": "laya-ml",
+    "murphy_scaled": {
+      "brier_top": 0.21630321766375427,
+      "reliability": 0.0034390867853308946,
+      "residual": -0.0017408691215766159,
+      "resolution": 0.013194000000000004,
+      "uncertainty": 0.227799
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3387296101685575,
+      "reliability": 0.12053504082121831,
+      "residual": -0.0005854306526608122,
+      "resolution": 0.009019000000000003,
+      "uncertainty": 0.227799
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.8225005110481034,
+    "nll_scaled": 1.2104934021510105,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9965,
+    "review_budget_at_5pct": 0.9965,
+    "share_conf_ge_0_9": 0.2375,
+    "soft_accuracy": 0.3384942499594094,
+    "temperature": {
+      "choice": 5.797154429302134,
+      "noul": 19.999999999999996,
+      "score": 4.4214814854862485
+    },
+    "threshold_at_1pct": 0.9999998246898575,
+    "threshold_at_5pct": 0.9999998246898575
+  },
+  "laya-ml|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.5073529411764706,
+    "accuracy": 0.349,
+    "accuracy_ci": [
+      0.328,
+      0.3705
+    ],
+    "aurc_scaled": 0.5548352107660248,
+    "aurc_shipped": 0.5526175547472794,
+    "brier": 0.8527868188962939,
+    "brier_scaled": 0.679133758094128,
+    "brier_soft": 0.42517728626633333,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.2866666666666667,
+        "ece_scaled": 0.046245962330398196,
+        "ece_shipped": 0.25344241967598685,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.49833333333333335,
+        "ece_scaled": 0.060190607310781394,
+        "ece_shipped": 0.3735806154847766,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.28375,
+        "ece_scaled": 0.06153771628498944,
+        "ece_shipped": 0.22701339500055295,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.009,
+    "coverage_at_1pct_scaled": 0.0075,
+    "coverage_at_5pct": 0.0115,
+    "coverage_at_5pct_scaled": 0.01,
+    "distinct_prob_values": 6818,
+    "ece_raw": 0.27891226854845025,
+    "ece_scaled": 0.04428625477618907,
+    "ece_scaled_ci": [
+      0.03285679265315576,
+      0.07093940123688025
+    ],
+    "ece_shipped": 0.27891226854845025,
+    "ece_shipped_ci": [
+      0.25772637681222027,
+      0.30040539372313235
+    ],
+    "mean_confidence": 0.6279122685484503,
+    "model": "laya-ml",
+    "murphy_scaled": {
+      "brier_top": 0.21604252095024976,
+      "reliability": 0.002470743828356921,
+      "residual": -0.0012182228781071336,
+      "resolution": 0.012409000000000003,
+      "uncertainty": 0.22719899999999998
+    },
+    "murphy_shipped": {
+      "brier_top": 0.313857259214473,
+      "reliability": 0.09632246434491155,
+      "residual": 1.9794869561440276e-05,
+      "resolution": 0.009684,
+      "uncertainty": 0.22719899999999998
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.617818987130278,
+    "nll_scaled": 1.2039741468222083,
+    "rep": 1,
+    "review_budget_at_1pct": 0.991,
+    "review_budget_at_5pct": 0.9885,
+    "share_conf_ge_0_9": 0.204,
+    "soft_accuracy": 0.3385932591769084,
+    "temperature": {
+      "choice": 5.797154429302134,
+      "noul": 19.999999999999996,
+      "score": 4.4214814854862485
+    },
+    "threshold_at_1pct": 0.9953332281502302,
+    "threshold_at_5pct": 0.9944234490394592
+  },
+  "laya-ml|d2_k150": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.005,
+    "accuracy_ci": [
+      0.0,
+      0.011666666666666667
+    ],
+    "aurc_scaled": 0.9982154239754228,
+    "aurc_shipped": 0.9976636524831313,
+    "brier": 0.9985382016694416,
+    "brier_scaled": 0.9933745059245174,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 15502,
+    "ece_raw": 0.0307726203888262,
+    "ece_scaled": 0.009642693395241646,
+    "ece_scaled_ci": [
+      0.007489487630782997,
+      0.01487066579252222
+    ],
+    "ece_shipped": 0.030772620388826194,
+    "ece_shipped_ci": [
+      0.027595731868480588,
+      0.039293316755785616
+    ],
+    "mean_confidence": 0.03297780296264693,
+    "model": "laya-ml",
+    "murphy_scaled": {
+      "brier_top": 0.004985397873076793,
+      "reliability": 0.0001241603070724202,
+      "residual": 1.2645489326154613e-07,
+      "resolution": 0.00011388888888888892,
+      "uncertainty": 0.004975
+    },
+    "murphy_shipped": {
+      "brier_top": 0.008311192431648157,
+      "reliability": 0.0018708284559789171,
+      "residual": 0.001579252864558128,
+      "resolution": 0.00011388888888888892,
+      "uncertainty": 0.004975
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 5.159919721456289,
+    "nll_scaled": 5.013662820196247,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        19.999999999999996,
+        19.999999999999996,
+        15.253971718046875,
+        6.510810237370065,
+        19.999999999999996
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "laya-ml|d2_oos": {
+    "auroc_in_vs_oos": 0.54845,
+    "mean_conf_in": 0.03297780296264693,
+    "mean_conf_oos": 0.02570764280572628,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.0
+  },
+  "laya-ml|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": 0.6964285714285714,
+    "accuracy": 0.552,
+    "accuracy_ci": [
+      0.508,
+      0.59405
+    ],
+    "aurc_scaled": 0.40899926253314717,
+    "aurc_shipped": 0.3984691575331625,
+    "brier": 0.5644621548677471,
+    "brier_scaled": 0.49181337601358255,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.002,
+    "coverage_at_1pct_scaled": 0.002,
+    "coverage_at_5pct": 0.002,
+    "coverage_at_5pct_scaled": 0.002,
+    "distinct_prob_values": 782,
+    "ece_raw": 0.17349754090994338,
+    "ece_scaled": 0.07992270238463417,
+    "ece_scaled_ci": [
+      0.059325974781685,
+      0.13209770804751716
+    ],
+    "ece_shipped": 0.17349754090994338,
+    "ece_shipped_ci": [
+      0.1459337804083779,
+      0.22660751185089664
+    ],
+    "macro_f1": 0.5333333333333333,
+    "mean_confidence": 0.7185292737353474,
+    "model": "laya-ml",
+    "murphy_scaled": {
+      "brier_top": 0.24590668800679127,
+      "reliability": 0.008059850783669519,
+      "residual": -7.316277687824391e-05,
+      "resolution": 0.009376,
+      "uncertainty": 0.247296
+    },
+    "murphy_shipped": {
+      "brier_top": 0.28223107743387355,
+      "reliability": 0.04166758106983063,
+      "residual": 0.00032349636404294113,
+      "resolution": 0.007056,
+      "uncertainty": 0.247296
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.8053817651386864,
+    "nll_scaled": 0.6848903441261136,
+    "rep": 1,
+    "review_budget_at_1pct": 0.998,
+    "review_budget_at_5pct": 0.998,
+    "share_conf_ge_0_9": 0.112,
+    "temperature": {
+      "crossfit_folds": [
+        4.4214814854862485,
+        5.797154429302134,
+        4.595941938093925,
+        4.777286157969195,
+        6.510810237370065
+      ]
+    },
+    "threshold_at_1pct": 0.9982073491805895,
+    "threshold_at_5pct": 0.9982073491805895
+  },
+  "laya-ml|d3_emotion": {
+    "acc_when_conf_ge_0_9": 0.562962962962963,
+    "accuracy": 0.39558232931726905,
+    "accuracy_ci": [
+      0.3534136546184739,
+      0.4397590361445783
+    ],
+    "aurc_scaled": 0.5252549064008833,
+    "aurc_shipped": 0.5162198401879714,
+    "brier": 0.8398410159579082,
+    "brier_scaled": 0.7441706305623915,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.002008032128514056,
+    "coverage_at_1pct_scaled": 0.002008032128514056,
+    "coverage_at_5pct": 0.002008032128514056,
+    "coverage_at_5pct_scaled": 0.002008032128514056,
+    "distinct_prob_values": 2936,
+    "ece_raw": 0.2692340112274816,
+    "ece_scaled": 0.07085105954242595,
+    "ece_scaled_ci": [
+      0.06330333565577259,
+      0.13018679721567605
+    ],
+    "ece_shipped": 0.26923401122748153,
+    "ece_shipped_ci": [
+      0.23169036407192442,
+      0.3141009777306012
+    ],
+    "macro_f1": 0.3660335363800676,
+    "mean_confidence": 0.6648163405447506,
+    "model": "laya-ml",
+    "murphy_scaled": {
+      "brier_top": 0.23489600999644908,
+      "reliability": 0.011277803374008919,
+      "residual": 0.0023060190968275107,
+      "resolution": 0.0177847625235801,
+      "uncertainty": 0.23909695004919274
+    },
+    "murphy_shipped": {
+      "brier_top": 0.31579784610215267,
+      "reliability": 0.09360886151741742,
+      "residual": -0.00021819515463034067,
+      "resolution": 0.01668977030982713,
+      "uncertainty": 0.23909695004919274
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.939809268153034,
+    "nll_scaled": 1.5588619385373368,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9979919678714859,
+    "review_budget_at_5pct": 0.9979919678714859,
+    "share_conf_ge_0_9": 0.2710843373493976,
+    "temperature": {
+      "crossfit_folds": [
+        2.5720161612211325,
+        2.7789909887462745,
+        2.6735013998394153,
+        2.6735013998394153,
+        2.38045648955743
+      ]
+    },
+    "threshold_at_1pct": 0.9997204666141113,
+    "threshold_at_5pct": 0.9997204666141113
+  },
+  "laya-ml|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": 0.4666666666666667,
+    "accuracy": 0.482,
+    "accuracy_ci": [
+      0.44,
+      0.528
+    ],
+    "aurc_scaled": 0.4871378937984838,
+    "aurc_shipped": 0.48351861267968316,
+    "brier": 0.6090492505017798,
+    "brier_scaled": 0.5002228402225325,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.002,
+    "coverage_at_1pct_scaled": 0.002,
+    "coverage_at_5pct": 0.002,
+    "coverage_at_5pct_scaled": 0.002,
+    "distinct_prob_values": 721,
+    "ece_raw": 0.21736895539122786,
+    "ece_scaled": 0.039751157390701536,
+    "ece_scaled_ci": [
+      0.04412162889956541,
+      0.10404784794977362
+    ],
+    "ece_shipped": 0.21736895539122786,
+    "ece_shipped_ci": [
+      0.17974487197801825,
+      0.2632201178935075
+    ],
+    "macro_f1": 0.4497767240683382,
+    "mean_confidence": 0.6993689553912278,
+    "model": "laya-ml",
+    "murphy_scaled": {
+      "brier_top": 0.2501114201112663,
+      "reliability": 0.0030844125219350615,
+      "residual": 2.7007589331218274e-05,
+      "resolution": 0.0026760000000000017,
+      "uncertainty": 0.249676
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3045246252508899,
+      "reliability": 0.057598391121643,
+      "residual": 0.00016623412924693381,
+      "resolution": 0.0029159999999999993,
+      "uncertainty": 0.249676
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 0.8425128863500411,
+    "nll_scaled": 0.6933692115713078,
+    "rep": 1,
+    "review_budget_at_1pct": 0.998,
+    "review_budget_at_5pct": 0.998,
+    "share_conf_ge_0_9": 0.06,
+    "temperature": {
+      "crossfit_folds": [
+        19.999999999999996,
+        19.999999999999996,
+        19.999999999999996,
+        19.999999999999996,
+        16.481486619787315
+      ]
+    },
+    "threshold_at_1pct": 0.993902438359971,
+    "threshold_at_5pct": 0.993902438359971
+  },
+  "laya-ml|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": null,
+    "accuracy": 0.3654618473895582,
+    "accuracy_ci": [
+      0.3192771084337349,
+      0.41365461847389556
+    ],
+    "aurc_scaled": 0.6495151391578757,
+    "aurc_shipped": 0.6407361667343716,
+    "brier": 0.7145587013936802,
+    "brier_scaled": 0.6627276970550142,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 1491,
+    "ece_raw": 0.16310165860851072,
+    "ece_scaled": 0.031071142268107955,
+    "ece_scaled_ci": [
+      0.040469702793217356,
+      0.10159335105258674
+    ],
+    "ece_shipped": 0.16310165860851072,
+    "ece_shipped_ci": [
+      0.1322323135170703,
+      0.21502284236045582
+    ],
+    "macro_f1": 0.31994951320609216,
+    "mean_confidence": 0.5285635059980689,
+    "model": "laya-ml",
+    "murphy_scaled": {
+      "brier_top": 0.23340944137821137,
+      "reliability": 0.0023579185962722625,
+      "residual": 0.00017864350974830523,
+      "resolution": 0.0010266062199786774,
+      "uncertainty": 0.2318994854921695
+    },
+    "murphy_shipped": {
+      "brier_top": 0.26884837816957446,
+      "reliability": 0.03923171986335715,
+      "residual": -0.0004038318175430544,
+      "resolution": 0.0018789953684091333,
+      "uncertainty": 0.2318994854921695
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.1698304210812072,
+    "nll_scaled": 1.091840563678119,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.0,
+    "temperature": {
+      "crossfit_folds": [
+        3.5053184170735157,
+        4.4214814854862485,
+        4.253643494592419,
+        5.365391590559451,
+        3.936838894573223
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "nimble-9b|d1_native": {
+    "acc_when_conf_ge_0_9": 0.9159159159159159,
+    "accuracy": 0.691,
+    "accuracy_ci": [
+      0.6695,
+      0.7130124999999999
+    ],
+    "aurc_scaled": 0.1480349420995342,
+    "aurc_shipped": 0.146126514914307,
+    "brier": 0.42006891544430713,
+    "brier_scaled": 0.4192582022607087,
+    "brier_soft": 0.16370964282165112,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.6316666666666667,
+        "ece_scaled": 0.0733251594966368,
+        "ece_shipped": 0.07110492802645545,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.8216666666666667,
+        "ece_scaled": 0.024567915402142593,
+        "ece_shipped": 0.04420250870850193,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.6375,
+        "ece_scaled": 0.04477632930024964,
+        "ece_shipped": 0.047246495656491104,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.0565,
+    "coverage_at_1pct_scaled": 0.009,
+    "coverage_at_5pct": 0.1845,
+    "coverage_at_5pct_scaled": 0.153,
+    "distinct_prob_values": 5344,
+    "ece_raw": 0.04273754634781371,
+    "ece_scaled": 0.034402618483756586,
+    "ece_scaled_ci": [
+      0.027163362118830896,
+      0.05791335040648548
+    ],
+    "ece_shipped": 0.04273754634781371,
+    "ece_shipped_ci": [
+      0.03248026611869043,
+      0.06597586703912879
+    ],
+    "mean_confidence": 0.7337375463478137,
+    "model": "nimble-9b",
+    "murphy_scaled": {
+      "brier_top": 0.1781304562383142,
+      "reliability": 0.0017785439543344657,
+      "residual": -0.0006380877160202802,
+      "resolution": 0.036529,
+      "uncertainty": 0.21351900000000001
+    },
+    "murphy_shipped": {
+      "brier_top": 0.17892406616050052,
+      "reliability": 0.0027783755919047366,
+      "residual": 0.0001056905685957732,
+      "resolution": 0.037479000000000005,
+      "uncertainty": 0.21351900000000001
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.7809786857476558,
+    "nll_scaled": 0.7640332256288795,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9435,
+    "review_budget_at_5pct": 0.8155,
+    "share_conf_ge_0_9": 0.333,
+    "soft_accuracy": 0.558271880933122,
+    "temperature": {
+      "choice": 1.6803499738588674,
+      "noul": 1.555200181207607,
+      "score": 1.2816005488831999
+    },
+    "threshold_at_1pct": 0.9934467979863817,
+    "threshold_at_5pct": 0.9764039607222703
+  },
+  "nimble-9b|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.9075757575757576,
+    "accuracy": 0.6855,
+    "accuracy_ci": [
+      0.6625,
+      0.71
+    ],
+    "aurc_scaled": 0.15421671164479056,
+    "aurc_shipped": 0.1533236114459764,
+    "brier": 0.43047916399545294,
+    "brier_scaled": 0.4261284920226872,
+    "brier_soft": 0.17188834826438126,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.6383333333333333,
+        "ece_scaled": 0.08249775509506294,
+        "ece_shipped": 0.0755353231745471,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.815,
+        "ece_scaled": 0.022501794729417865,
+        "ece_shipped": 0.05301244593111817,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.62375,
+        "ece_scaled": 0.05731259924774716,
+        "ece_shipped": 0.06579158961541541,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.013,
+    "coverage_at_1pct_scaled": 0.0165,
+    "coverage_at_5pct": 0.203,
+    "coverage_at_5pct_scaled": 0.173,
+    "distinct_prob_values": 5419,
+    "ece_raw": 0.05713426391358088,
+    "ece_scaled": 0.026198754008692163,
+    "ece_scaled_ci": [
+      0.020654352272827147,
+      0.05270096055317393
+    ],
+    "ece_shipped": 0.05713426391358088,
+    "ece_shipped_ci": [
+      0.04073816033295703,
+      0.07805791073304243
+    ],
+    "mean_confidence": 0.7385046232463148,
+    "model": "nimble-9b",
+    "murphy_scaled": {
+      "brier_top": 0.18094965167275423,
+      "reliability": 0.0010632058922552404,
+      "residual": -0.00016105421950102228,
+      "resolution": 0.03554225,
+      "uncertainty": 0.21558975
+    },
+    "murphy_shipped": {
+      "brier_top": 0.18368622516690938,
+      "reliability": 0.004220940842292705,
+      "residual": -0.0004172156753833034,
+      "resolution": 0.03570725000000001,
+      "uncertainty": 0.21558975
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 0.7971334380255901,
+    "nll_scaled": 0.7733158419228855,
+    "rep": 1,
+    "review_budget_at_1pct": 0.987,
+    "review_budget_at_5pct": 0.7969999999999999,
+    "share_conf_ge_0_9": 0.33,
+    "soft_accuracy": 0.5586622156081233,
+    "temperature": {
+      "choice": 1.6803499738588674,
+      "noul": 1.555200181207607,
+      "score": 1.2816005488831999
+    },
+    "threshold_at_1pct": 0.997199073032879,
+    "threshold_at_5pct": 0.9708306067982383
+  },
+  "nimble-9b|d2_k150": {
+    "acc_when_conf_ge_0_9": 0.9269776876267748,
+    "accuracy": 0.86,
+    "accuracy_ci": [
+      0.8316666666666667,
+      0.8850416666666666
+    ],
+    "aurc_scaled": 0.04261421303430245,
+    "aurc_shipped": 0.041745574443812467,
+    "brier": 0.2204321279696605,
+    "brier_scaled": 0.214563527924058,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.18,
+    "coverage_at_1pct_scaled": 0.15666666666666668,
+    "coverage_at_5pct": 0.655,
+    "coverage_at_5pct_scaled": 0.6666666666666666,
+    "distinct_prob_values": 3494,
+    "ece_raw": 0.06884180990124746,
+    "ece_scaled": 0.03662037995598702,
+    "ece_scaled_ci": [
+      0.024097730749214816,
+      0.06638722109363356
+    ],
+    "ece_shipped": 0.06884180990124746,
+    "ece_shipped_ci": [
+      0.045315282044236765,
+      0.09295706065687628
+    ],
+    "mean_confidence": 0.9286683851713845,
+    "model": "nimble-9b",
+    "murphy_scaled": {
+      "brier_top": 0.08970921235137197,
+      "reliability": 0.0026660948020610356,
+      "residual": -0.003234660228466857,
+      "resolution": 0.030122222222222213,
+      "uncertainty": 0.12040000000000001
+    },
+    "murphy_shipped": {
+      "brier_top": 0.09485737836558718,
+      "reliability": 0.007265780075720854,
+      "residual": -0.0030195128212447825,
+      "resolution": 0.029788888888888893,
+      "uncertainty": 0.12040000000000001
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 0.6441176575058044,
+    "nll_scaled": 0.6087421317061653,
+    "rep": 1,
+    "review_budget_at_1pct": 0.8200000000000001,
+    "review_budget_at_5pct": 0.345,
+    "share_conf_ge_0_9": 0.8216666666666667,
+    "temperature": {
+      "crossfit_folds": [
+        1.2329514112674325,
+        1.2329514112674325,
+        1.2329514112674325,
+        1.1861489790021118,
+        1.2329514112674325
+      ]
+    },
+    "threshold_at_1pct": 0.9979204431674825,
+    "threshold_at_5pct": 0.9742219408832214
+  },
+  "nimble-9b|d2_oos": {
+    "auroc_in_vs_oos": 0.92315,
+    "mean_conf_in": 0.9286683851713845,
+    "mean_conf_oos": 0.5199540544985083,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.12
+  },
+  "nimble-9b|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": 0.5843023255813954,
+    "accuracy": 0.556,
+    "accuracy_ci": [
+      0.516,
+      0.6
+    ],
+    "aurc_scaled": 0.41933375647778054,
+    "aurc_shipped": 0.3967501624035077,
+    "brier": 0.7368657611979494,
+    "brier_scaled": 0.49173466058302184,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 117,
+    "ece_raw": 0.34506364772882236,
+    "ece_scaled": 0.050336345412943975,
+    "ece_scaled_ci": [
+      0.04438523066159915,
+      0.11043173532997168
+    ],
+    "ece_shipped": 0.34506364772882236,
+    "ece_shipped_ci": [
+      0.29901746037625976,
+      0.38550194420094275
+    ],
+    "macro_f1": 0.46522518355784237,
+    "mean_confidence": 0.9010636477288224,
+    "model": "nimble-9b",
+    "murphy_scaled": {
+      "brier_top": 0.24586733029151092,
+      "reliability": 0.003593122907961963,
+      "residual": 0.0005142073835489591,
+      "resolution": 0.005104000000000002,
+      "uncertainty": 0.246864
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3684328805989747,
+      "reliability": 0.12567371662473398,
+      "residual": 0.0009191639742407443,
+      "resolution": 0.005023999999999999,
+      "uncertainty": 0.246864
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 1.356694414174202,
+    "nll_scaled": 0.6849627086576632,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.688,
+    "temperature": {
+      "crossfit_folds": [
+        8.212499834488593,
+        12.093238018140864,
+        11.634182658748713,
+        9.965727029294602,
+        14.117880173237479
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "nimble-9b|d3_emotion": {
+    "acc_when_conf_ge_0_9": 0.6594827586206896,
+    "accuracy": 0.5140562248995983,
+    "accuracy_ci": [
+      0.46987951807228917,
+      0.5562248995983936
+    ],
+    "aurc_scaled": 0.33026285334404976,
+    "aurc_shipped": 0.32833751309042714,
+    "brier": 0.7468996002059554,
+    "brier_scaled": 0.627841871388632,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.008032128514056224,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.008032128514056224,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 2641,
+    "ece_raw": 0.286714771270374,
+    "ece_scaled": 0.05029398860421799,
+    "ece_scaled_ci": [
+      0.044826525001628384,
+      0.10631103180480239
+    ],
+    "ece_shipped": 0.286714771270374,
+    "ece_shipped_ci": [
+      0.24781741518836908,
+      0.3279719487711015
+    ],
+    "macro_f1": 0.5108005625941417,
+    "mean_confidence": 0.8007709961699724,
+    "model": "nimble-9b",
+    "murphy_scaled": {
+      "brier_top": 0.21984669396462606,
+      "reliability": 0.003610827328651591,
+      "residual": -0.00036605123960950503,
+      "resolution": 0.03320050466598794,
+      "uncertainty": 0.24980242254157192
+    },
+    "murphy_shipped": {
+      "brier_top": 0.3102147197096604,
+      "reliability": 0.09299724331058755,
+      "residual": -0.0008638284120082163,
+      "resolution": 0.03172111773049085,
+      "uncertainty": 0.24980242254157192
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.7943488557988958,
+    "nll_scaled": 1.3036138835854068,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9919678714859438,
+    "review_budget_at_5pct": 0.9919678714859438,
+    "share_conf_ge_0_9": 0.46586345381526106,
+    "temperature": {
+      "crossfit_folds": [
+        2.38045648955743,
+        2.47438326906432,
+        2.5720161612211325,
+        2.47438326906432,
+        2.5720161612211325
+      ]
+    },
+    "threshold_at_1pct": 0.9982321978783263,
+    "threshold_at_5pct": 0.9982321978783263
+  },
+  "nimble-9b|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": 0.5808383233532934,
+    "accuracy": 0.554,
+    "accuracy_ci": [
+      0.512,
+      0.596
+    ],
+    "aurc_scaled": 0.47344647894210323,
+    "aurc_shipped": 0.44732957565019643,
+    "brier": 0.7426202987996801,
+    "brier_scaled": 0.49602305269876995,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.0,
+    "coverage_at_1pct_scaled": 0.0,
+    "coverage_at_5pct": 0.0,
+    "coverage_at_5pct_scaled": 0.0,
+    "distinct_prob_values": 85,
+    "ece_raw": 0.3370033162957276,
+    "ece_scaled": 0.06445402986059387,
+    "ece_scaled_ci": [
+      0.05976870479998895,
+      0.12773376759304594
+    ],
+    "ece_shipped": 0.3370033162957276,
+    "ece_shipped_ci": [
+      0.2974562197326247,
+      0.37802224452264294
+    ],
+    "macro_f1": 0.4700545154682294,
+    "mean_confidence": 0.8910033162957277,
+    "model": "nimble-9b",
+    "murphy_scaled": {
+      "brier_top": 0.24801152634938498,
+      "reliability": 0.006725648960121035,
+      "residual": 0.0002058773892639476,
+      "resolution": 0.006004000000000002,
+      "uncertainty": 0.247084
+    },
+    "murphy_shipped": {
+      "brier_top": 0.37131014939984003,
+      "reliability": 0.12894540505294005,
+      "residual": 0.0008047443468999771,
+      "resolution": 0.005524000000000003,
+      "uncertainty": 0.247084
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 1.2722274946228895,
+    "nll_scaled": 0.6892014968715403,
+    "rep": 1,
+    "review_budget_at_1pct": 1.0,
+    "review_budget_at_5pct": 1.0,
+    "share_conf_ge_0_9": 0.668,
+    "temperature": {
+      "crossfit_folds": [
+        10.767687244066977,
+        12.570406538480192,
+        17.807781882593453,
+        13.066402919187544,
+        15.253971718046875
+      ]
+    },
+    "threshold_at_1pct": null,
+    "threshold_at_5pct": null
+  },
+  "nimble-9b|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": 0.78125,
+    "accuracy": 0.5160642570281124,
+    "accuracy_ci": [
+      0.4738955823293173,
+      0.5622489959839357
+    ],
+    "aurc_scaled": 0.3362849723110237,
+    "aurc_shipped": 0.3342999510537539,
+    "brier": 0.6180025847004805,
+    "brier_scaled": 0.5724438795917823,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.008032128514056224,
+    "coverage_at_1pct_scaled": 0.006024096385542169,
+    "coverage_at_5pct": 0.008032128514056224,
+    "coverage_at_5pct_scaled": 0.006024096385542169,
+    "distinct_prob_values": 1078,
+    "ece_raw": 0.16974931494394876,
+    "ece_scaled": 0.07655725262127094,
+    "ece_scaled_ci": [
+      0.06404800635483267,
+      0.127623298661022
+    ],
+    "ece_shipped": 0.16974931494394876,
+    "ece_shipped_ci": [
+      0.13417276315558116,
+      0.21808753036831557
+    ],
+    "macro_f1": 0.4862656139178551,
+    "mean_confidence": 0.6858135719720613,
+    "model": "nimble-9b",
+    "murphy_scaled": {
+      "brier_top": 0.22597396109305326,
+      "reliability": 0.008355404099843276,
+      "residual": -0.0004086538911437787,
+      "resolution": 0.031714728761781004,
+      "uncertainty": 0.24974193964613475
+    },
+    "murphy_shipped": {
+      "brier_top": 0.24894376123272532,
+      "reliability": 0.03198140725909195,
+      "residual": 0.0002735579733055271,
+      "resolution": 0.0330531436458069,
+      "uncertainty": 0.24974193964613475
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 1.0963850414820586,
+    "nll_scaled": 0.9510563019209991,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9919678714859438,
+    "review_budget_at_5pct": 0.9919678714859438,
+    "share_conf_ge_0_9": 0.1285140562248996,
+    "temperature": {
+      "crossfit_folds": [
+        2.6735013998394153,
+        2.2900951398765637,
+        2.2900951398765637,
+        2.38045648955743,
+        2.38045648955743
+      ]
+    },
+    "threshold_at_1pct": 0.9780884609612482,
+    "threshold_at_5pct": 0.9780884609612482
+  },
+  "this-that-1.0|d1_native": {
+    "acc_when_conf_ge_0_9": 0.7766497461928934,
+    "accuracy": 0.5995,
+    "accuracy_ci": [
+      0.578,
+      0.621
+    ],
+    "aurc_scaled": 0.24601671320005494,
+    "aurc_shipped": 0.2568006259174608,
+    "brier": 0.5753493936970967,
+    "brier_scaled": 0.5079839853668231,
+    "brier_soft": 0.272328187779134,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.595,
+        "ece_scaled": 0.05668243412375604,
+        "ece_shipped": 0.21276460320284582,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.72,
+        "ece_scaled": 0.04432878204760119,
+        "ece_shipped": 0.12853344288804466,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.5125,
+        "ece_scaled": 0.07198551368801046,
+        "ece_shipped": 0.25024148706531435,
+        "n": 800
+      }
+    },
+    "condition": "d1_native",
+    "coverage_at_1pct": 0.027,
+    "coverage_at_1pct_scaled": 0.0165,
+    "coverage_at_5pct": 0.0365,
+    "coverage_at_5pct_scaled": 0.046,
+    "distinct_prob_values": 5286,
+    "ece_raw": 0.2011133413658963,
+    "ece_scaled": 0.04018754719923797,
+    "ece_scaled_ci": [
+      0.029684760493506372,
+      0.06380186895262446
+    ],
+    "ece_shipped": 0.2011133413658963,
+    "ece_shipped_ci": [
+      0.18256629075177314,
+      0.2219854075773083
+    ],
+    "mean_confidence": 0.8006133413658962,
+    "model": "this-that-1.0",
+    "murphy_scaled": {
+      "brier_top": 0.21250042981961823,
+      "reliability": 0.0020798018738759478,
+      "residual": -0.0006018720542577127,
+      "resolution": 0.02907725,
+      "uncertainty": 0.24009975
+    },
+    "murphy_shipped": {
+      "brier_top": 0.25777317968376773,
+      "reliability": 0.04378137519858611,
+      "residual": -4.569551481836687e-05,
+      "resolution": 0.026062249999999995,
+      "uncertainty": 0.24009975
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.134747604278823,
+    "nll_scaled": 0.8846731399022695,
+    "rep": 1,
+    "review_budget_at_1pct": 0.973,
+    "review_budget_at_5pct": 0.9635,
+    "share_conf_ge_0_9": 0.394,
+    "soft_accuracy": 0.5183731684598721,
+    "temperature": {
+      "choice": 2.47438326906432,
+      "noul": 2.1195324973521417,
+      "score": 2.1195324973521417
+    },
+    "threshold_at_1pct": 0.9998239762927973,
+    "threshold_at_5pct": 0.9996503744570101
+  },
+  "this-that-1.0|d1_neutral": {
+    "acc_when_conf_ge_0_9": 0.7954239569313594,
+    "accuracy": 0.597,
+    "accuracy_ci": [
+      0.5759875,
+      0.618
+    ],
+    "aurc_scaled": 0.23622550363352923,
+    "aurc_shipped": 0.24566801682563105,
+    "brier": 0.5636029027624055,
+    "brier_scaled": 0.5009322259136696,
+    "brier_soft": 0.2621926364888107,
+    "by_type": {
+      "choice": {
+        "accuracy": 0.5766666666666667,
+        "ece_scaled": 0.07037661560808192,
+        "ece_shipped": 0.20952805833371893,
+        "n": 600
+      },
+      "noul": {
+        "accuracy": 0.73,
+        "ece_scaled": 0.04890963593970289,
+        "ece_shipped": 0.11032810367334527,
+        "n": 600
+      },
+      "score": {
+        "accuracy": 0.5125,
+        "ece_scaled": 0.0781399015638954,
+        "ece_shipped": 0.2509707355767232,
+        "n": 800
+      }
+    },
+    "condition": "d1_neutral",
+    "coverage_at_1pct": 0.0365,
+    "coverage_at_1pct_scaled": 0.008,
+    "coverage_at_5pct": 0.043,
+    "coverage_at_5pct_scaled": 0.0385,
+    "distinct_prob_values": 5424,
+    "ece_raw": 0.19634514283280857,
+    "ece_scaled": 0.040381564388330626,
+    "ece_scaled_ci": [
+      0.030559862028017474,
+      0.05961395482170093
+    ],
+    "ece_shipped": 0.19634514283280857,
+    "ece_shipped_ci": [
+      0.17722998234964493,
+      0.2164410429971942
+    ],
+    "mean_confidence": 0.7933451428328085,
+    "model": "this-that-1.0",
+    "murphy_scaled": {
+      "brier_top": 0.20743725665195456,
+      "reliability": 0.0026433764321108005,
+      "residual": -0.0008811197801562309,
+      "resolution": 0.034916,
+      "uncertainty": 0.240591
+    },
+    "murphy_shipped": {
+      "brier_top": 0.25059526536223653,
+      "reliability": 0.04150547463651653,
+      "residual": -0.0004002092742799723,
+      "resolution": 0.031101,
+      "uncertainty": 0.240591
+    },
+    "n_answered": 2000,
+    "n_decisions": 2000,
+    "n_scored": 2000,
+    "nll": 1.0896995626415016,
+    "nll_scaled": 0.8759767080360251,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9635,
+    "review_budget_at_5pct": 0.957,
+    "share_conf_ge_0_9": 0.3715,
+    "soft_accuracy": 0.5160515033432036,
+    "temperature": {
+      "choice": 2.47438326906432,
+      "noul": 2.1195324973521417,
+      "score": 2.1195324973521417
+    },
+    "threshold_at_1pct": 0.9994933815362738,
+    "threshold_at_5pct": 0.9992531180727183
+  },
+  "this-that-1.0|d2_k150": {
+    "acc_when_conf_ge_0_9": 0.9586956521739131,
+    "accuracy": 0.8633333333333333,
+    "accuracy_ci": [
+      0.836625,
+      0.8916666666666667
+    ],
+    "aurc_scaled": 0.03500502337625055,
+    "aurc_shipped": 0.03264575985574135,
+    "brier": 0.20776513317767958,
+    "brier_scaled": 0.20294329458233382,
+    "condition": "d2_k150",
+    "coverage_at_1pct": 0.105,
+    "coverage_at_1pct_scaled": 0.06,
+    "coverage_at_5pct": 0.78,
+    "coverage_at_5pct_scaled": 0.7933333333333333,
+    "distinct_prob_values": 3187,
+    "ece_raw": 0.054758234804834625,
+    "ece_scaled": 0.023313471352363842,
+    "ece_scaled_ci": [
+      0.0189884193334815,
+      0.05303545359393506
+    ],
+    "ece_shipped": 0.054758234804834625,
+    "ece_shipped_ci": [
+      0.03461206154134339,
+      0.07687476262475151
+    ],
+    "mean_confidence": 0.9147043555367383,
+    "model": "this-that-1.0",
+    "murphy_scaled": {
+      "brier_top": 0.0849389790380338,
+      "reliability": 0.0012072689841547892,
+      "residual": -0.0011571788350099171,
+      "resolution": 0.0331,
+      "uncertainty": 0.11798888888888892
+    },
+    "murphy_shipped": {
+      "brier_top": 0.08919016780545852,
+      "reliability": 0.005768196175848018,
+      "residual": -0.0006335839259450915,
+      "resolution": 0.033933333333333336,
+      "uncertainty": 0.11798888888888892
+    },
+    "n_answered": 800,
+    "n_decisions": 800,
+    "n_in_scope": 600,
+    "n_scored": 600,
+    "nll": 0.646391146176091,
+    "nll_scaled": 0.5905307086408604,
+    "rep": 1,
+    "review_budget_at_1pct": 0.895,
+    "review_budget_at_5pct": 0.21999999999999997,
+    "share_conf_ge_0_9": 0.7666666666666667,
+    "temperature": {
+      "crossfit_folds": [
+        1.3321692581618314,
+        1.384733280535745,
+        1.3321692581618314,
+        1.384733280535745,
+        1.3321692581618314
+      ]
+    },
+    "threshold_at_1pct": 0.9999648582187679,
+    "threshold_at_5pct": 0.8851532696223328
+  },
+  "this-that-1.0|d2_oos": {
+    "auroc_in_vs_oos": 0.8599833333333333,
+    "mean_conf_in": 0.9147043555367383,
+    "mean_conf_oos": 0.5694353682642113,
+    "n_in": 600,
+    "n_oos": 200,
+    "share_oos_conf_ge_0_9": 0.22
+  },
+  "this-that-1.0|d3_conv_go_awry": {
+    "acc_when_conf_ge_0_9": 0.5222929936305732,
+    "accuracy": 0.516,
+    "accuracy_ci": [
+      0.472,
+      0.56005
+    ],
+    "aurc_scaled": 0.3872301890130624,
+    "aurc_shipped": 0.3872301890130624,
+    "brier": 0.9358631083253329,
+    "brier_scaled": 0.5010449976996754,
+    "condition": "d3_conv_go_awry",
+    "coverage_at_1pct": 0.006,
+    "coverage_at_1pct_scaled": 0.006,
+    "coverage_at_5pct": 0.006,
+    "coverage_at_5pct_scaled": 0.006,
+    "distinct_prob_values": 273,
+    "ece_raw": 0.4655469343018142,
+    "ece_scaled": 0.10461258902174005,
+    "ece_scaled_ci": [
+      0.07949588774283048,
+      0.15197171121443198
+    ],
+    "ece_shipped": 0.4655469343018142,
+    "ece_shipped_ci": [
+      0.42098988302744644,
+      0.5082952420863418
+    ],
+    "macro_f1": 0.3772644927536232,
+    "mean_confidence": 0.9815469343018142,
+    "model": "this-that-1.0",
+    "murphy_scaled": {
+      "brier_top": 0.2505224988498377,
+      "reliability": 0.015022513719914334,
+      "residual": -0.00010001487007665899,
+      "resolution": 0.014144000000000002,
+      "uncertainty": 0.249744
+    },
+    "murphy_shipped": {
+      "brier_top": 0.46793155416266646,
+      "reliability": 0.23034424103926926,
+      "residual": 0.0019873131233972274,
+      "resolution": 0.014144000000000002,
+      "uncertainty": 0.249744
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 2.9870308934448495,
+    "nll_scaled": 0.694154565355323,
+    "rep": 1,
+    "review_budget_at_1pct": 0.994,
+    "review_budget_at_5pct": 0.994,
+    "share_conf_ge_0_9": 0.942,
+    "temperature": {
+      "crossfit_folds": [
+        19.999999999999996,
+        19.999999999999996,
+        19.999999999999996,
+        19.999999999999996,
+        19.999999999999996
+      ]
+    },
+    "threshold_at_1pct": 0.9999724643075296,
+    "threshold_at_5pct": 0.9999724643075296
+  },
+  "this-that-1.0|d3_emotion": {
+    "acc_when_conf_ge_0_9": 0.9120879120879121,
+    "accuracy": 0.8052208835341366,
+    "accuracy_ci": [
+      0.7710843373493976,
+      0.8373493975903614
+    ],
+    "aurc_scaled": 0.07319478122195322,
+    "aurc_shipped": 0.06716317481230376,
+    "brier": 0.29206716156868756,
+    "brier_scaled": 0.2688888044946639,
+    "condition": "d3_emotion",
+    "coverage_at_1pct": 0.0783132530120482,
+    "coverage_at_1pct_scaled": 0.04618473895582329,
+    "coverage_at_5pct": 0.4979919678714859,
+    "coverage_at_5pct_scaled": 0.4497991967871486,
+    "distinct_prob_values": 1710,
+    "ece_raw": 0.11073293854322432,
+    "ece_scaled": 0.03862486025528145,
+    "ece_scaled_ci": [
+      0.028904016200758862,
+      0.07864524758945822
+    ],
+    "ece_shipped": 0.11073293854322432,
+    "ece_shipped_ci": [
+      0.08079629210780592,
+      0.14103836665001168
+    ],
+    "macro_f1": 0.802459365484811,
+    "mean_confidence": 0.9159538220773609,
+    "model": "this-that-1.0",
+    "murphy_scaled": {
+      "brier_top": 0.12311808580883636,
+      "reliability": 0.002605324531035022,
+      "residual": -0.0005101057003151915,
+      "resolution": 0.0358173452765245,
+      "uncertainty": 0.15684021225464104
+    },
+    "murphy_shipped": {
+      "brier_top": 0.13746536984484303,
+      "reliability": 0.01820257536849759,
+      "residual": 0.0015904725355209426,
+      "resolution": 0.039167890313816525,
+      "uncertainty": 0.15684021225464104
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 0.6260056697338197,
+    "nll_scaled": 0.513262955159284,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9216867469879518,
+    "review_budget_at_5pct": 0.5020080321285141,
+    "share_conf_ge_0_9": 0.7309236947791165,
+    "temperature": {
+      "crossfit_folds": [
+        1.7466523247656862,
+        1.7466523247656862,
+        1.8872086202957774,
+        1.6803499738588674,
+        1.6803499738588674
+      ]
+    },
+    "threshold_at_1pct": 0.999815363045309,
+    "threshold_at_5pct": 0.992020420038905
+  },
+  "this-that-1.0|d3_wiki_corpus": {
+    "acc_when_conf_ge_0_9": 0.5821596244131455,
+    "accuracy": 0.53,
+    "accuracy_ci": [
+      0.48595,
+      0.572
+    ],
+    "aurc_scaled": 0.4471188963161048,
+    "aurc_shipped": 0.43906115683121966,
+    "brier": 0.6916695295294575,
+    "brier_scaled": 0.4967495236761601,
+    "condition": "d3_wiki_corpus",
+    "coverage_at_1pct": 0.006,
+    "coverage_at_1pct_scaled": 0.004,
+    "coverage_at_5pct": 0.006,
+    "coverage_at_5pct_scaled": 0.004,
+    "distinct_prob_values": 183,
+    "ece_raw": 0.29596965580411794,
+    "ece_scaled": 0.03698036238777989,
+    "ece_scaled_ci": [
+      0.036910485927722114,
+      0.09774950716209169
+    ],
+    "ece_shipped": 0.29596965580411794,
+    "ece_shipped_ci": [
+      0.25477981716067843,
+      0.3376420277902152
+    ],
+    "macro_f1": 0.4953594543869369,
+    "mean_confidence": 0.8259696558041177,
+    "model": "this-that-1.0",
+    "murphy_scaled": {
+      "brier_top": 0.24837476183808002,
+      "reliability": 0.0019262098901169928,
+      "residual": 0.00032855194796305165,
+      "resolution": 0.00298,
+      "uncertainty": 0.2491
+    },
+    "murphy_shipped": {
+      "brier_top": 0.34583476476472874,
+      "reliability": 0.0989561106423365,
+      "residual": -4.134587760773467e-05,
+      "resolution": 0.0021799999999999996,
+      "uncertainty": 0.2491
+    },
+    "n_answered": 500,
+    "n_decisions": 500,
+    "n_scored": 500,
+    "nll": 1.1531606886641765,
+    "nll_scaled": 0.6899092411191079,
+    "rep": 1,
+    "review_budget_at_1pct": 0.994,
+    "review_budget_at_5pct": 0.994,
+    "share_conf_ge_0_9": 0.426,
+    "temperature": {
+      "crossfit_folds": [
+        10.767687244066977,
+        12.570406538480192,
+        17.131804307370974,
+        13.581970059911411,
+        16.481486619787315
+      ]
+    },
+    "threshold_at_1pct": 0.9980732652189156,
+    "threshold_at_5pct": 0.9980732652189156
+  },
+  "this-that-1.0|d3_wiki_politeness": {
+    "acc_when_conf_ge_0_9": 0.4261168384879725,
+    "accuracy": 0.41365461847389556,
+    "accuracy_ci": [
+      0.3694277108433735,
+      0.4538654618473895
+    ],
+    "aurc_scaled": 0.5298152336460933,
+    "aurc_shipped": 0.5235568429062445,
+    "brier": 0.9899930878447131,
+    "brier_scaled": 0.6463005482156027,
+    "condition": "d3_wiki_politeness",
+    "coverage_at_1pct": 0.008032128514056224,
+    "coverage_at_1pct_scaled": 0.006024096385542169,
+    "coverage_at_5pct": 0.008032128514056224,
+    "coverage_at_5pct_scaled": 0.006024096385542169,
+    "distinct_prob_values": 1388,
+    "ece_raw": 0.4521426534522108,
+    "ece_scaled": 0.07017677766273353,
+    "ece_scaled_ci": [
+      0.05520570369674144,
+      0.11888449463111116
+    ],
+    "ece_shipped": 0.4521426534522108,
+    "ece_shipped_ci": [
+      0.41648606849067465,
+      0.4997975162608443
+    ],
+    "macro_f1": 0.3279373929700775,
+    "mean_confidence": 0.8652100698128473,
+    "model": "this-that-1.0",
+    "murphy_scaled": {
+      "brier_top": 0.24246882634627323,
+      "reliability": 0.00604886381826653,
+      "residual": -0.00012704181589950903,
+      "resolution": 0.005997470745205229,
+      "uncertainty": 0.24254447508911145
+    },
+    "murphy_shipped": {
+      "brier_top": 0.47350285053811325,
+      "reliability": 0.2397365714633903,
+      "residual": 0.0014525342997044888,
+      "resolution": 0.010230730314093028,
+      "uncertainty": 0.24254447508911145
+    },
+    "n_answered": 498,
+    "n_decisions": 498,
+    "n_scored": 498,
+    "nll": 2.1524284242722613,
+    "nll_scaled": 1.0663400811074213,
+    "rep": 1,
+    "review_budget_at_1pct": 0.9919678714859438,
+    "review_budget_at_5pct": 0.9919678714859438,
+    "share_conf_ge_0_9": 0.5843373493975904,
+    "temperature": {
+      "crossfit_folds": [
+        9.223495535416513,
+        7.600845912731769,
+        8.536544262327643,
+        8.87337466195722,
+        7.600845912731769
+      ]
+    },
+    "threshold_at_1pct": 0.9979729718382973,
+    "threshold_at_5pct": 0.9979729718382973
+  }
+}

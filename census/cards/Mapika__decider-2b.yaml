@@ -1,0 +1,123 @@
+name: decider-2b
+name_src:
+  quote: '# decider-2b: typed decisions with calibrated probabilities in one forward pass'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+hf_id: Mapika/decider-2b
+hf_id_src:
+  quote: Mapika/decider-2b
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+revision_sha: d61c1c16089572df5d180329b9fea4997a90090c
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+vendor_or_author: Mapika
+vendor_or_author_src:
+  quote: https://github.com/Mapika/decider
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+release_date: '2026-09-16'
+release_date_src:
+  quote: (HF API createdAt for Mapika/decider-2b)
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+availability_and_license: Open weights, Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+backbone: Qwen/Qwen3.5-2B-Base (1.9B parameters)
+backbone_src:
+  quote: 'Base model: [Qwen/Qwen3.5-2B-Base](https://huggingface.co/Qwen/Qwen3.5-2B-Base) (1.9B parameters)'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+parameter_count: 1.9B base (safetensors.total 1,881,825,088 for this repo's weights)
+parameter_count_src:
+  quote: (1.9B parameters)
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+decision_head: 'Letter-logit readout: hidden state at each answer slot projected with the option-letter
+  rows of the LM head and softmaxed over valid letters, divided by a stored temperature; no separate trained
+  classification head'
+decision_head_src:
+  quote: The hidden state at each slot is projected with the option-letter rows of the LM head and softmaxed
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+training_objective: 'Supervised stages v1-v8: cross-entropy proper scoring rule on ~95 public decision
+  datasets; RL stage v8-v10: PPO clipped surrogate + proper log score + rendering-consistency term + KL
+  constraint to v8, no gold labels'
+training_objective_src:
+  quote: 384 optimizer steps at a peak learning rate of 1e-6 (cosine, 16 warm-up steps)
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+training_data: ~95 public decision datasets, agent trajectories (AgentGym), web element choice (Mind2Web),
+  teacher-written custom questions, game states; RL stage adds live MiniWoB++, minesweeper and grid-game
+  rollouts, no gold labels
+training_data_src:
+  quote: a mixture of about 95 public decision datasets, agent trajectories, web element choice, game
+    states and teacher-written custom questions
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+primitives: noul, choice, score
+primitives_src:
+  quote: '* **noul**: probability of "yes".'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+state_modality: string, object or array, up to 32k tokens with the questions
+state_modality_src:
+  quote: The state may be a string, object or array (up to 32k tokens with the questions)
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+context_length: up to 32k tokens (state plus questions)
+context_length_src:
+  quote: up to 32k tokens with the questions
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+cardinality_limit: 2 to 255 options per question; more than 10 options use one label token per option
+cardinality_limit_src:
+  quote: A question can have 2 to 255 options (more than 10 options use one label token per option
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+latency_with_hardware: 'On one NVIDIA B300 (decider-ai 1.2.1): 3.2 ms single request with CUDA graphs
+  + torch.compile; 4 ms per request with CUDA graphs on one GPU per the family table; 134 ms p50 at 64
+  concurrent HTTP clients (436 req/s)'
+latency_with_hardware_src:
+  quote: single request, CUDA graphs + torch.compile (helper default) | 3.2 ms |
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+price: not disclosed in dollar terms; open weights, self-hostable
+price_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+confidence_definition: TypeSafe's definition, (n·x_p_max - 1)/(n - 1) for n options (choice); 1 minus
+  the expected distance from the most likely level divided by the mean distance of the levels from scale
+  middle, floored at 0 (score)
+confidence_definition_src:
+  quote: '`confidence` (TypeSafe''s definition, `(n·x_p_max − 1)/(n − 1)` for n options)'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+probability_grid: not disclosed as a fixed discretization; probabilities are continuous per-option softmax
+  outputs
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+serving_temperature: T = 1.30, the stored temperature for decider-2b v10 fitted on in-task data
+serving_temperature_src:
+  quote: 1.30 is the stored temperature
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+calibration_as_shipped: decider-2b v10, rebuilt-set in-task ECE 0.037 (67 tasks), held-out ECE 0.084 (28
+  tasks), at T=1.30
+calibration_as_shipped_src:
+  quote: '**decider-2b v10 (this repository), rebuilt set, T=1.30** | 0.805 / 0.474 / 0.037 | 0.755 /
+    0.622 / 0.084 |'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+disclosed_failure_modes: Knowledge-heavy MMLU/MedQA/ARC improve little over the base model; English only;
+  terse-bucket routing regressed vs v9 (59% vs 86% on held-out terse names); rules embedded in the question
+  text are not followed; picking a record by array position is the least accurate input shape (0.51 vs
+  0.70 by key); full label sets cost accuracy vs 10 sampled options; question order in packed rows changes
+  up to 12% of answers; tweet_hate stays near chance
+disclosed_failure_modes_src:
+  quote: Rules written into the question ("fill if empty, otherwise skip") are not followed at this size
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+evaluation_protocol_published: Yes; 94 public tasks (69 in-task, 24-28 held-out), 15-bin ECE, per-task
+  tables, live-browser and Bespoke-suite comparisons, GitHub reproduction scripts and per-version history
+evaluation_protocol_published_src:
+  quote: '**94 public tasks, original protocol.**'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+source_urls:
+- https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md
+- https://github.com/Mapika/decider
+source_urls_src:
+  quote: 'Code, data registry, training scripts and the recipe are at
+
+    https://github.com/Mapika/decider'
+  url: https://huggingface.co/Mapika/decider-2b/raw/d61c1c16089572df5d180329b9fea4997a90090c/README.md

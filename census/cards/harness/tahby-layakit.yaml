@@ -1,0 +1,27 @@
+name: LayaKit
+repo: https://github.com/tahby/LayaKit
+revision_sha: 89f768b0bda9df9dbfc2269a497d94f8e0dff32a
+author: tahby
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: A Swift package that runs one Laya typed decision per call on-device via Core ML — no Python
+  at runtime.
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported: []
+key_claims:
+- excerpt: '- macOS 15+ - Apple silicon - Xcode 26+ Add LayaKit as a SwiftPM dependency: ```swift .package(url:
+    "https://github.com/<org>/LayaKit", from: "1.0.0") ``` ```swift .target( name: "YourTarget", dependencies:
+    [.product(name: "LayaKit", package:'
+  verbatim: true
+- excerpt: '- `--bench N`: after printing the answer, run `N` additional `predict` calls and print p50/p90/mean
+    latency (ms) to stderr.'
+  verbatim: true
+- excerpt: 'Measured with `laya-cli --bench 100` on an Apple M5 Pro, macOS 27.0:   The first `predict`
+    call is excluded from these numbers because `LayaAgent.init` performs a warm-up call.'
+  verbatim: true

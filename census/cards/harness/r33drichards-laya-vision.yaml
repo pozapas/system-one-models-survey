@@ -1,0 +1,29 @@
+name: laya-vision
+repo: https://github.com/r33drichards/laya-vision
+revision_sha: d30b2f1490e4267badc2c7540389e9f3e4d6a2f5
+author: r33drichards
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 'Image inputs for Laya: calibrated, non-generative typed decisions over images + text (SmolVLM-256M
+  backbone)'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported:
+- ModernBERT
+- SmolVLM-256M
+key_claims:
+- excerpt: '```python import laya from PIL import Image agent = laya.load_vlm("thaitea/laya-vision") result
+    = agent.predict( {"image": Image.open("photo.jpg"), "note": "customer says it arrived broken"}, {
+    "damage": {"type": "score", "instructions": "How much damage'
+  verbatim: true
+- excerpt: '- **In your browser:** <https://r33drichards.github.io/laya-vision/demo/> runs a model on
+    your own GPU with WebGPU (or WASM on the CPU); no server, and the image never leaves the page.'
+  verbatim: true
+- excerpt: '- **Try it:** [thaitea/laya-vision-demo](https://huggingface.co/spaces/thaitea/laya-vision-demo),
+    a Space on free CPU, about 3 s per image.'
+  verbatim: true

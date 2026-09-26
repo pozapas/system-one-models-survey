@@ -1,0 +1,23 @@
+name: system-one-adapter-python
+repo: https://github.com/typesafe-ai/system-one-adapter-python
+revision_sha: ''
+author: typesafe-ai
+created: '2026-09-04'
+access_date: '2026-09-24'
+license: MIT
+category: vendor_sdk
+what_it_does: 'Official adapter: a drop-in replacement for typesafe_sdk''s system_one evaluation API, backed by
+  third-party LLM APIs (OpenAI, Anthropic, Gemini) instead of Jev, for cost/speed/intelligence comparison.'
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- OpenAI-compatible providers
+- Anthropic
+- Gemini
+key_claims:
+- excerpt: A drop-in replacement for typesafe_sdk's system_one evaluation API, backed by LLM APIs instead of TypeSafe.
+  verbatim: true
+- excerpt: Useful for comparing TypeSafe against an LLM on cost/speed/intelligence.
+  verbatim: true

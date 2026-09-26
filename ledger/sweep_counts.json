@@ -1,0 +1,32 @@
+{
+  "values": {
+    "sweep.arxivQueries": {
+      "text": "23",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.uniqueArxiv": {
+      "text": "22",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.includedArxiv": {
+      "text": "19",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.excludedArxiv": {
+      "text": "3",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.studiesTotal": {
+      "text": "27",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.studiesGrey": {
+      "text": "8",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.ledgerRows": {
+      "text": "394",
+      "source": "shared/ledger/sweep_counts.json"
+    }
+  }
+}

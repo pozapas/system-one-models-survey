@@ -1,0 +1,114 @@
+name: Decision-1.0-Sol-2B
+name_src:
+  quote: '# Decision-1.0-Sol-2B'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+hf_id: llm-semantic-router/Decision-1.0-Sol-2B
+hf_id_src:
+  quote: '"model": "Decision-1.0-Sol-2B",'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+revision_sha: 0665a41108e8f0b33a9515c98311c45947b99399
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+vendor_or_author: llm-semantic-router
+vendor_or_author_src:
+  quote: https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+release_date: '2026-09-21'
+release_date_src:
+  quote: (HF API createdAt for llm-semantic-router/Decision-1.0-Sol-2B)
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+availability_and_license: Open weights, Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+backbone: Adapted from Qwen3.5-2B; causal Qwen3.5 text backbone combining gated linear and full attention
+backbone_src:
+  quote: A causal Qwen3.5 text backbone combines gated linear and full attention.
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+parameter_count: 2B (base Qwen3.5-2B, finetune relation); no merged safetensors total reported by the
+  HF API for this repo
+parameter_count_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+decision_head: Shared candidate head reads candidate endpoints and the final query vector; each question
+  uses one forward pass, questions run independently in batches of eight
+decision_head_src:
+  quote: A shared candidate head reads candidate endpoints and the final query vector. Each question uses
+    one forward pass; questions run independently in batches of eight.
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+training_objective: Not itemized by loss/recipe in the portion of the card fetched
+training_objective_src:
+  quote: none found
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+training_data: Not itemized by source/size in the portion of the card fetched
+training_data_src:
+  quote: none found
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+primitives: Choice (2-255 actions), Noul, Score (2-10 ordered rubric descriptions)
+primitives_src:
+  quote: '**Choice** | Route a request or choose among 2–255 actions. | Selected ID + distribution |'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+state_modality: text state
+state_modality_src:
+  quote: Customer reports a duplicate charge and asks for a refund.
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+context_length: 16,384 tokens for the complete state, question and candidates combined; overflow is rejected
+context_length_src:
+  quote: The complete state, question and candidates must fit 16,384 tokens; overflow is rejected.
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+cardinality_limit: 2 to 255 actions for Choice questions
+cardinality_limit_src:
+  quote: Route a request or choose among 2–255 actions.
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+latency_with_hardware: Measured by question count at a fixed 499 input tokens per question, thirty measurements
+  per point across six independently loaded processes on an AMD gfx942 GPU; full p50/p95 figures in a
+  linked file, not restated as a single number in this card's own prose
+latency_with_hardware_src:
+  quote: Thirty measurements per point across six independently loaded processes on an otherwise idle
+    AMD gfx942 GPU.
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+price: not disclosed
+price_src:
+  quote: none found
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+confidence_definition: not disclosed as an explicit formula in the portion of the card fetched; card states
+  confidence does not guarantee correctness
+confidence_definition_src:
+  quote: confidence does not guarantee correctness
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+serving_temperature: not disclosed in the portion of the card fetched
+serving_temperature_src:
+  quote: none found
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+calibration_as_shipped: not disclosed as a numeric ECE/Brier in the portion of the card fetched; card
+  reports task accuracy only (66.32% weighted accuracy across 3,766 decisions and 54 tasks)
+calibration_as_shipped_src:
+  quote: '**66.32% weighted accuracy** across 3,766 decisions and 54 tasks.'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+disclosed_failure_modes: AMD gfx942 is validated; CPU/MPS are unsupported and NVIDIA is unqualified; evaluates
+  supplied evidence without live retrieval
+disclosed_failure_modes_src:
+  quote: AMD gfx942 is validated; CPU/MPS are unsupported and NVIDIA is unqualified.
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+evaluation_protocol_published: Yes; a 54-task, 3,766-decision suite with weighted sub-scores (Decisions
+  30%, Composition 25%, Reading 15%, Inference 15%, Transfer 15%) and a published cross-model table including
+  Jev, Kev-9B/4B/0.8B, decider, and both Laya checkpoints
+evaluation_protocol_published_src:
+  quote: 'Overall weights: Decisions **30%**, Composition **25%**, Reading **15%**, Inference **15%**,
+    Transfer **15%**.'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+source_urls:
+- https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md
+- https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9
+source_urls_src:
+  quote: '[Decision family](https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9)'
+  url: https://huggingface.co/llm-semantic-router/Decision-1.0-Sol-2B/raw/0665a41108e8f0b33a9515c98311c45947b99399/README.md

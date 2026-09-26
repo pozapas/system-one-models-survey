@@ -1,0 +1,32 @@
+name: open-jev
+repo: https://github.com/nico-martin/open-jev
+revision_sha: 52667199e8a55553e1865a41f43fcb7d4dd92779
+author: nico-martin
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: MIT
+category: local_server
+what_it_does: 'open-jev is a browser-focused TypeScript library for typed decisions: one piece of text
+  (the state) plus any number of typed questions go in, and one forward pass returns a calibrated probability
+  distribution per question. Nothing is generated, so an answer'
+primitives_supported:
+- choice
+- score
+- noul
+- noul (yes/no)
+models_supported:
+- Qwen3
+- Qwen3-4B
+- DeBERTa
+key_claims:
+- excerpt: '```ts import { OpenJev, choice, score, noul } from "open-jev"; const info = await OpenJev.info({
+    dtype: "q4f16" }); console.log(info.isCached, info.downloadSize, info.device, info.dtype); const jev
+    = await OpenJev.load({ model: "kev-0.6b",'
+  verbatim: true
+- excerpt: I want my money back now."; const [area, sentiment, refund] = await jev.decide(state, [ choice("Which
+    product area is the message about?", [ "fees & charges", "refund & dispute", "card",
+  verbatim: true
+- excerpt: '| "very positive" sentiment.score; // 0.91 (expected level index, may fall between levels)
+    refund.answer; // true refund.probability; // 0.88 (p(yes)) ``` Answers are fully typed: option literals
+    flow from'
+  verbatim: true

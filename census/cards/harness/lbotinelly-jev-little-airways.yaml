@@ -1,0 +1,22 @@
+name: jev-little-airways
+repo: https://github.com/lbotinelly/jev-little-airways
+revision_sha: d6ec286c7821f41228bce9b33381546e4fca9bff
+author: lbotinelly
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: A show-and-tell capability study for Jev, TypeSafe's System One decision model.
+primitives_supported: []
+models_supported: []
+key_claims:
+- excerpt: 'A toy archipelago where the planes actually think.** A show-and-tell capability study for
+    [Jev](https://typesafe.ai), TypeSafe''s System One decision model: **visuals by GPT-6 Astra** through
+    the [Dream Loop](#how-the-presentation-was-made) skill, **simulation'
+  verbatim: true
+- excerpt: '> Each airplane only has information about itself and its surroundings (plus nearby > traffic)
+    — and all decisions come back from the model as typed probabilities with >'
+  verbatim: true
+- excerpt: https://github.com/user-attachments/assets/3edd2a58-b86f-4e79-9756-282cd60ce3c3  ---   A golden-hour
+    island world in a glass dome.
+  verbatim: true

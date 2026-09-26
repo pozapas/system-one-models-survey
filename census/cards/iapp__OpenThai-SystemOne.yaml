@@ -1,0 +1,114 @@
+name: OpenThai-SystemOne
+name_src:
+  quote: '# OpenThai-SystemOne'
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+hf_id: iapp/OpenThai-SystemOne
+hf_id_src:
+  quote: iapp/OpenThai-SystemOne
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+revision_sha: f3709948b5e3cc9606a57e74ba62b7a639d17dd3
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+vendor_or_author: iApp / OpenThaiGPT
+vendor_or_author_src:
+  quote: client = SystemOneClient("iapp/OpenThai-SystemOne")
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+release_date: '2026-09-20'
+release_date_src:
+  quote: (HF API createdAt for iapp/OpenThai-SystemOne)
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+availability_and_license: Open weights, Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+backbone: Qwen/Qwen3.5-0.8B-Base text tower (24 layers, hybrid Gated-DeltaNet/attention, 262k context),
+  vision encoder removed, continued-pretrained on ~5B Thai tokens
+backbone_src:
+  quote: 'Backbone: text tower of [Qwen/Qwen3.5-0.8B-Base]'
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+parameter_count: 752,674,883 total (safetensors.total, BF16)
+parameter_count_src:
+  quote: none found
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+decision_head: 248k-token LM head replaced by a 256-way slot head; options introduced by control tokens,
+  hidden state at <|ts_answer|> projected to 256 logits, softmaxed; slot 255 is abstain
+decision_head_src:
+  quote: The 248k-token LM head is **replaced by a 256-way slot head**
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+training_objective: ~2-3M decision examples converted from public classification/NLI/QA/rating/agent/tool-selection
+  datasets plus synthetic Thai/English decisions, then a calibration stage (Brier loss + per-type temperature)
+training_objective_src:
+  quote: then a short calibration stage (Brier loss + per-type temperature)
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+training_data: ~5B tokens continued Thai pretraining (web, Wikipedia, parallel Thai-English, machine-state
+  text); ~2-3M decision examples converted from public datasets plus synthetic Thai/English decision tasks
+training_data_src:
+  quote: continued-pretrained on ~5B tokens of Thai
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+primitives: choice (up to 255 options), score (2-10 ordered levels), noul
+primitives_src:
+  quote: '| `choice` | instructions + up to **255 options**'
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+state_modality: any text or JSON
+state_modality_src:
+  quote: Given a *state* (any text or JSON)
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+context_length: not restated as a specific serving limit beyond the 262k-context backbone
+context_length_src:
+  quote: 262k context
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+cardinality_limit: 255 options (slot 255 reserved for abstain)
+cardinality_limit_src:
+  quote: Slot 255 is *abstain* (none of the options fit)
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+latency_with_hardware: '~40 ms on an H100 for a 3-question Thai ticket (166 tokens); 154 ms on a MacBook
+  M3 Max (MPS); 170-220 ms per request including network from a laptop over the internet; batch-1, 255
+  options, H100 shared with a training job: 44-48 ms'
+latency_with_hardware_src:
+  quote: the model itself takes ~40 ms on an H100.
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+price: not disclosed; open weights
+price_src:
+  quote: none found
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+confidence_definition: not disclosed as an explicit formula; card reports a `confidence` output field
+  alongside `choice`/`score`/`probabilities` without giving its formula
+confidence_definition_src:
+  quote: '`choice`, `probabilities`, `confidence`'
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+serving_temperature: 'v0.3 learned temperatures: choice 1.055, noul 1.047, score 1.008'
+serving_temperature_src:
+  quote: 'v0.3 learned temperatures: choice 1.055, noul 1.047, score 1.008'
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+calibration_as_shipped: English public-bench median ECE 0.15; Thai topic/NLI and Wongnai scoring ECE ≤
+  0.05; summary-relevance score head badly miscalibrated at ECE 0.79
+calibration_as_shipped_src:
+  quote: our score head is badly miscalibrated (ECE 0.79)
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+disclosed_failure_modes: Small model, recommends routing low-confidence cases to a bigger model or human;
+  English calibration weaker than Thai (median ECE 0.15 vs ≤ 0.05); temperature scaling cannot fix sets
+  where accuracy itself is low (wisesight, squad2, summeval-relevance)
+disclosed_failure_modes_src:
+  quote: 'English calibration is weaker than Thai (median ECE 0.15 vs ≤ 0.05): the training mix is Thai-heavy
+    by design.'
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+evaluation_protocol_published: Yes; before/after calibration tables by dataset and type, a version history
+  (v0.1-v0.3) with step counts and re-calibration notes, and a public English bench with per-set ECE
+evaluation_protocol_published_src:
+  quote: Before/after on the same sources (before = SFT checkpoint, 150–300-item smoke slices; after =
+    calibrated checkpoint, full slices
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+source_urls:
+- https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md
+source_urls_src:
+  quote: iapp/OpenThai-SystemOne
+  url: https://huggingface.co/iapp/OpenThai-SystemOne/raw/f3709948b5e3cc9606a57e74ba62b7a639d17dd3/README.md

@@ -1,0 +1,24 @@
+name: jev-codex-router
+repo: https://github.com/0xNatoshi/jev-codex-router
+revision_sha: 8701ef788aa8cb0948f299538747fb01029d32b8
+author: 0xNatoshi
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: MIT
+category: integration
+what_it_does: 'Per-turn model & reasoning routing for Codex, driven by Jev (TypeSafe System One): picks
+  the model, thinking depth and speed mode for every turn.'
+primitives_supported:
+- choice
+- score
+models_supported: []
+key_claims:
+- excerpt: 'Historical simulation: ≈ −60 % vs full Astra** on 237 turns under the old policy.'
+  verbatim: true
+- excerpt: '``` Codex ──▶ Codex Router (:4202) ├─ native models ──────────────▶ ChatGPT backend (your
+    plan) └─ "jev/auto" ─▶ LiteLLM ─▶ API forwarder │ ▼ jev_server.py (127.0.0.1:4319) ├─ compact decision
+    state'
+  verbatim: true
+- excerpt: Policy `split-v11-native-first-fallback` judges remaining work rather than inheriting a completed
+    review's category.
+  verbatim: true

@@ -1,0 +1,24 @@
+name: laya-ternary-lite
+repo: https://github.com/xixi3548942758-design/laya-ternary-lite
+revision_sha: 61c3a3d83af11d3d1cc875f6f3c7e22780980cd3
+author: xixi3548942758-design
+created: '2026-09-23'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: open_model_training
+what_it_does: 1.58-bit ternary quantization of the Laya decision model -- 9.17x smaller, 81.2% agreement
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Bonsai
+key_claims:
+- excerpt: Laya 决策模型的 1.58-bit 三值量化实现** 把 421M 参数的 [Laya](https://huggingface.co/convaiinnovations/laya)
+    从 FP16 压到 **1.738 bit/weight**，体积缩小 **9.17x**，推理显存压到 **78.8 MiB**。 --- > 测试集：64 个 state / 149 个问题，与量化校准集**不同
+    seed**，避免过拟合。 > 硬件：GTX 1650 4GB
+  verbatim: true
+- excerpt: 'Please refund the duplicate today or we will cancel our plan." } questions = { "department":
+    { "type": "choice", "instructions": "Which department should handle this request?", "criteria": {"billing":
+    "invoices,'
+  verbatim: true

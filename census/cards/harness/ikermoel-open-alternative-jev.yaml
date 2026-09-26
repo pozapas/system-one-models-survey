@@ -1,0 +1,28 @@
+name: open-alternative-jev
+repo: https://github.com/ikermoel/open-alternative-jev
+revision_sha: 4a85df1831b537343c9e133b5150fa3a3b1ce98e
+author: ikermoel
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: 'Open-source alternative to TypeSafe''s Jev: a System One style model layer that gives typed,
+  calibrated decisions from any open-weights LLM in one forward pass (HF + vLLM), with honest benchmarks'
+primitives_supported:
+- choice
+models_supported:
+- Qwen3.6-27B
+- Qwen3.5-4B
+- Qwen
+- Qwen3
+- Qwen3.5-2B
+key_claims:
+- excerpt: Python package `open-alternative-jev`, import name `so1` ("System One").
+  verbatim: true
+- excerpt: '> **Beats Jev on the community benchmark, with no training.** On `LocalLLaMA/typed-decisions`
+    (400 cases, 2,000 > typed decisions), a stock Qwen3.6-27B through this library scores **73.7 % accuracy,
+    KL'
+  verbatim: true
+- excerpt: 'Jev 1.13.0, measured by the benchmark''s authors through TypeSafe''s API on > 2026-09-18:
+    **72.7 %, KL 1.44, ECE 0.144, 710 ms per case**.'
+  verbatim: true

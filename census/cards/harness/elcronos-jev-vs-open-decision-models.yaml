@@ -1,0 +1,22 @@
+name: jev-vs-open-decision-models
+repo: https://github.com/elcronos/jev-vs-open-decision-models
+revision_sha: a1901bc3d520e73936de8d4326545c0cdcf742fb
+author: elcronos
+created: '2026-09-20'
+access_date: '2026-09-24'
+license: unknown
+category: evaluation
+what_it_does: 'Zero-shot benchmark of TypeSafe Jev 1.13 (decision model) vs open-weight non-generative
+  models PrismNLI-0.4B and Laya: frozen protocol, raw predictions, calibration, latency, report'
+primitives_supported: []
+models_supported: []
+key_claims:
+- excerpt: 'This repository measures how well three "decision" systems classify short English texts when
+    they are given nothing but the text and a list of label names: **Jev 1.13** (TypeSafe''s'
+  verbatim: true
+- excerpt: 'We ran them under one frozen protocol on four public datasets, then added supervised reference
+    models and a label-efficiency study to answer the question a practitioner actually has: *is'
+  verbatim: true
+- excerpt: 'On the two emotion datasets nobody is good: all three are below the 0.817 > majority-class
+    baseline on `daily_dialog`, and PrismNLI''s 0.725-vs-0.587 lead on `dair-ai/emotion` > comes on the'
+  verbatim: true

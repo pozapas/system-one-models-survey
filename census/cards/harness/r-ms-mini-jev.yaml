@@ -1,0 +1,28 @@
+name: mini-jev
+repo: https://github.com/r-ms/mini-jev
+revision_sha: ca612198bfb69f538f029a4615f6d0a18b4f814c
+author: r-ms
+created: '2026-09-17'
+access_date: '2026-09-24'
+license: MIT
+category: evaluation
+what_it_does: 'mini-Jev: what a Jev-style typed-decision interface looks like on a frozen Qwen3-4B — read
+  the option letter''s logits instead of generating JSON. Preregistered experiment, results, teaching
+  bench.'
+primitives_supported:
+- choice
+- extract
+models_supported:
+- Qwen3-4B
+- Qwen
+key_claims:
+- excerpt: Measured on Qwen3-4B.**  TypeSafe's [Jev](https://typesafe.ai) is trained for typed decisions
+    without open generation.
+  verbatim: true
+- excerpt: Everything here runs on `Qwen/Qwen3-4B-Instruct-2507` (bf16, greedy) with [xgrammar](https://github.com/mlc-ai/xgrammar)
+    for constrained generation and [CLINC150](https://huggingface.co/datasets/clinc/clinc_oos) as the
+    task.
+  verbatim: true
+- excerpt: The experiment was preregistered (`PREREG.md`, amendments v1.1–v1.3) and every number below
+    is recomputed from the stored run records.
+  verbatim: true

@@ -1,0 +1,88 @@
+name: Laya vs Jev (laya-jev-benchmark)
+name_src:
+  quote: '# Laya vs Jev'
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+hf_id: Luni/laya-jev-benchmark
+hf_id_src:
+  quote: TypeSafe released **Jev** on 15 September 2026
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+revision_sha: d75081b2a4b2ad772793d6a7f5f5b4fdca00d557
+revision_sha_src:
+  quote: (HF API sha, fetched 2026-09-24)
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+vendor_or_author: Luni (independent)
+vendor_or_author_src:
+  quote: I ran both on Benchmarks where Jev has published Numbers.
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+release_date: '2026-09-19'
+release_date_src:
+  quote: (HF API createdAt)
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+access_date: '2026-09-24'
+access_date_src:
+  quote: census fetch date
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+availability_and_license: Open, Apache-2.0
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+purpose: Independent third-party re-measurement of Laya against Jev's own published numbers, run on the
+  author's own hardware, to check whether Laya's card comparisons (measured on different benchmarks) hold
+  up on shared benchmarks
+purpose_src:
+  quote: 'Laya''s Model Card claims 83.8% against Jev''s 67.8% and calls it a "+16.0%
+
+    Advantage". Those two Numbers are from two different Benchmarks, so the
+
+    Comparison says nothing.'
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+size_and_splits: 'Phishing: AreLit/PhishNChips, 2,000 emails (1,000 phishing / 1,000 legitimate); typed-decisions:
+  LocalLLaMA/typed-decisions, 400 cases / 2,000 decisions; a separate latency sweep at 1/10/50/100 questions
+  per pass'
+size_and_splits_src:
+  quote: '`AreLit/PhishNChips`, 2000 Emails, 1000 Phishing and 1000 legitimate.'
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+label_construction: Uses existing gold labels of the source benchmarks (PhishNChips, LocalLLaMA/typed-decisions);
+  Jev figures on these benchmarks are quoted as third-party published, not independently measured by this
+  author
+label_construction_src:
+  quote: 'Everything below is measured except the Rows marked "published", which are
+
+    quoted.'
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+teacher_model: Not applicable; not a teacher-labelled training corpus, this is a re-measurement using
+  an existing benchmark's own gold labels
+teacher_model_src:
+  quote: none found
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+teacher_self_agreement: Not applicable to this benchmark directly; reports LocalLLaMA/typed-decisions'
+  own teacher self-agreement ceiling of 0.735 when re-measuring on that benchmark
+teacher_self_agreement_src:
+  quote: Teacher Self-Agreement | 0.735 |
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+other_reference_points: On typed-decisions, Laya raw scores 0.360 accuracy / 0.175 ECE; Laya fine-tuned
+  on the task scores 0.767 accuracy / 0.212 ECE (exceeding the 0.735 teacher ceiling); Jev 1.13.0 (published)
+  0.727 accuracy / 0.144 ECE
+other_reference_points_src:
+  quote: Laya fine-tuned on this Task | **0.767** | 0.212 | 16.4 |
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+evaluation_protocol_published: Yes; measured on one RTX 5090 (fp16, after warmup) with a latency-by-batch-size
+  table; a Platt-calibration half-split methodology is described for the phishing task
+evaluation_protocol_published_src:
+  quote: 'One RTX 5090. Everything below is measured except the Rows marked "published", which are
+
+    quoted.'
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+disclosed_caveats: Author notes temperature scaling cannot fix a pure classification-threshold problem
+  (no bias term), so Platt scaling was used instead of temperature scaling for the phishing task; notes
+  the fine-tuned typed-decisions score exceeding the teacher ceiling should not be read as better understanding
+disclosed_caveats_src:
+  quote: 'Temperature Scaling cannot do this. It has no Bias Term, so it moves Confidence
+
+    toward 0.5 but never across it.'
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+source_urls:
+- https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md
+source_urls_src:
+  quote: One RTX 5090.
+  url: https://huggingface.co/datasets/Luni/laya-jev-benchmark/raw/d75081b2a4b2ad772793d6a7f5f5b4fdca00d557/README.md

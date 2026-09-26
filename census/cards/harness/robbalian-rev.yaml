@@ -1,0 +1,36 @@
+name: rev
+repo: https://github.com/robbalian/rev
+revision_sha: 7090e4458075865853cdc791b81436d580a7dc73
+author: robbalian
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: MIT
+category: open_model_training
+what_it_does: Trains 3 open LoRA+pointer-head decision models on Qwen (4B, 9B, 27B) that beat hosted Jev on accuracy,
+  speed and (4B/9B) cost on a 975-question public benchmark.
+primitives_supported:
+- choice
+- score
+models_supported:
+- Qwen3.5-4B
+- Qwen3.5-9B
+- Qwen3.8-27B
+key_claims:
+- excerpt: Rev is a set of 3 decision models built on Qwen that beat Jev on accuracy and speed on a 975-question
+    public benchmark.
+  verbatim: true
+- excerpt: Same with input length. Our method gets slower while theirs is flat, indicating either constant-state
+    prefill or prefill that is so fast it's drowned by other overhead.
+  verbatim: true
+  marked_as: inference
+- excerpt: Hosted Jev does prompt caching on repeated questions which reduced their latency.
+  verbatim: true
+  marked_as: inference
+- excerpt: Jev is flat in the number of questions. Ours grows, but the 4B and 9B answer 20 questions in half Jev's
+    time
+  verbatim: true
+  marked_as: inference
+note_for_report: README contains NO claim of a 'causal decoder with shared KV prefix', 'isolated question branches',
+  'joint option processing', or 'ECE 0.031 on 1,200 MMLU items'. Its actual reverse-engineering content is limited
+  to latency-flatness observations (constant-state prefill hypothesis, prompt caching). The specific claim attributed
+  to this repo in the planning brief is not supported by the repository.

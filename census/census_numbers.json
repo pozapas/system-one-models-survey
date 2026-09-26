@@ -1,0 +1,116 @@
+{
+  "values": {
+    "hf.hitsScreened": {
+      "text": "513",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.totalRowsScreened": {
+      "text": "522",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.searchPaginated": {
+      "text": "yes",
+      "source": "shared/census/paginated_postlaunch.csv"
+    },
+    "hf.t1Count": {
+      "text": "104",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2Count": {
+      "text": "256",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.dCount": {
+      "text": "54",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.xCount": {
+      "text": "108",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.formatConversion": {
+      "text": "142",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.quantization": {
+      "text": "9",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.finetuneDomain": {
+      "text": "6",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.finetuneLanguage": {
+      "text": "10",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.merge": {
+      "text": "4",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.other": {
+      "text": "85",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t1.distinctBackboneFamilies": {
+      "text": "15",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t1.releaseDateSpan": {
+      "text": "2026-09-16 to 2026-09-24",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t1.withDisclosedCalibrationFigure": {
+      "text": "95",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t1.apacheOrMitLicense": {
+      "text": "93",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent1": {
+      "text": "convaiinnovations/laya: 122",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent2": {
+      "text": "convaiinnovations/laya-multilingual: 25",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent3": {
+      "text": "convaiinnovations/laya-typed-decisions: 10",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent4": {
+      "text": "jaredpalmer/kev-4b: 8",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent5": {
+      "text": "Mapika/decider-2b: 7",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent6": {
+      "text": "Mapika/decider-0.8b: 5",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent7": {
+      "text": "jaredpalmer/kev-0.5b: 4",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent8": {
+      "text": "jaredpalmer/kev-0.8b: 4",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent9": {
+      "text": "JackFram/decider-2b: 3",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t2.topParent10": {
+      "text": "jaredpalmer/kev-0.6b: 3",
+      "source": "shared/census/census_screened.csv"
+    },
+    "hf.t1Families": {
+      "text": "68",
+      "source": "shared/census/census_screened.csv (family rule in curation script)"
+    }
+  }
+}

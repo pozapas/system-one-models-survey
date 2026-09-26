@@ -1,0 +1,49 @@
+{
+  "values": {
+    "gh.countApplication": {
+      "text": "47",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "47 of the 226 screened GitHub repositories were classified as application."
+    },
+    "gh.countDirectoryOrSeo": {
+      "text": "15",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "15 of the 226 screened GitHub repositories were classified as directory or seo."
+    },
+    "gh.countEvaluation": {
+      "text": "25",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "25 of the 226 screened GitHub repositories were classified as evaluation."
+    },
+    "gh.countIntegration": {
+      "text": "54",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "54 of the 226 screened GitHub repositories were classified as integration."
+    },
+    "gh.countLocalServer": {
+      "text": "48",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "48 of the 226 screened GitHub repositories were classified as local server."
+    },
+    "gh.countMirrorOrFork": {
+      "text": "1",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "1 of the 226 screened GitHub repositories were classified as mirror or fork."
+    },
+    "gh.countOpenModelTraining": {
+      "text": "36",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "36 of the 226 screened GitHub repositories were classified as open model training."
+    },
+    "gh.countTotal": {
+      "text": "226",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "226 GitHub repositories were screened from the source==github rows of prefiltered.csv."
+    },
+    "gh.countCreatedSince20260915": {
+      "text": "226",
+      "source": "shared/census/census_github_screened.csv",
+      "note": "226 of the 226 screened GitHub repositories were created on or after 2026-09-15 (the Jev 1.13 release date)."
+    }
+  }
+}

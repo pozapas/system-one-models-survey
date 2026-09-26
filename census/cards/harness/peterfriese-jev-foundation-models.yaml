@@ -1,0 +1,29 @@
+name: jev-foundation-models
+repo: https://github.com/peterfriese/jev-foundation-models
+revision_sha: 22931967b9f04afe532eb67fb068253c4b0be8aa
+author: peterfriese
+created: '2026-09-21'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: integration
+what_it_does: A lightweight, native Swift 6 bridge integrating TypeSafe AI's Jev System One decision model
+  into Apple's Foundation Models framework.
+primitives_supported:
+- choice
+- score
+- noul
+- binary
+- ordinal
+- extract
+models_supported: []
+key_claims:
+- excerpt: A lightweight, native Swift 6 bridge integrating **TypeSafe AI's Jev** System One decision
+    model into Apple's **Foundation Models** framework.
+  verbatim: true
+- excerpt: Evaluate strongly typed `@Generable` structs and enums against application state in **40–150ms**
+    with zero hallucinations, calibrated probabilities, and full Apple Intelligence API compatibility.
+  verbatim: true
+- excerpt: 'Rather than generating prose word-by-word, Jev evaluates typed questions directly against
+    state in a single feed-forward pass: --- Add `jev-foundation-models` to your `Package.swift` or via
+    Xcode (**File > Add'
+  verbatim: true

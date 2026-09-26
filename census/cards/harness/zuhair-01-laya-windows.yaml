@@ -1,0 +1,27 @@
+name: laya-windows
+repo: https://github.com/Zuhair-01/laya-windows
+revision_sha: f63d9a17c4e5f5ca6e18da38e3d6764a0d000eef
+author: Zuhair-01
+created: '2026-09-22'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Windows port of Laya typed-decision AI (ONNX Runtime + DirectML) — Core ML/Apple Neural
+  Engine alternative with first-class Arabic support. No text generation, no hallucination, runs on any
+  DX12 GPU.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported: []
+key_claims:
+- excerpt: Laya Windows** ports the same > Laya typed-decision model (no text generation, just calibrated
+    `choice`/`score`/`noul` > probabilities) onto ONNX Runtime + DirectML, so it runs on any Windows PC
+  verbatim: true
+- excerpt: Laya Windows** ports the same idea onto **ONNX Runtime + DirectML**, Microsoft's cross-vendor
+    GPU inference stack, so it runs on **any DirectX 12 GPU** (NVIDIA, AMD, Intel, integrated) with
+  verbatim: true
+- excerpt: '```python import laya agent = laya.load("convaiinnovations/laya-multilingual") result = agent.predict(
+    "تم خصم المبلغ مرتين من حسابي، الرجاء استرجاع الفرق بأسرع وقت", { "refund": {"type": "noul", "instructions":
+    "Does the customer request'
+  verbatim: true

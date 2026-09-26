@@ -1,0 +1,31 @@
+name: laya-rs
+repo: https://github.com/apiplant/laya-rs
+revision_sha: 1bf420283f1516b57d41f038779af46d7bbc472f
+author: apiplant
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: Apache-2.0
+category: local_server
+what_it_does: Rust reimplementation of Laya, a sub-35ms non-autoregressive typed-decision engine (ModernBERT
+  encoder + RLCD-trained decision head), built from scratch on candle.
+primitives_supported:
+- choice
+- score
+- noul
+- binary
+models_supported:
+- ModernBERT
+- ModernBERT-large
+- mmBERT-base
+key_claims:
+- excerpt: 'A from-scratch Rust reimplementation of [Laya](https://laya.convaiinnovations.com/), Convai
+    Innovations'' sub-35ms, non-autoregressive "System 1" decision engine: give it a **state** (text,
+    email, ticket, or JSON) and typed **questions** (`choice` / `score`'
+  verbatim: true
+- excerpt: This port targets the published `convaiinnovations/laya` checkpoint family (ModernBERT-large
+    / mmBERT-base backbones + a from-scratch decision head) and reimplements the full stack natively on
+    [candle](https://github.com/huggingface/candle), with no PyTorch/Python dependency
+  verbatim: true
+- excerpt: '- **Decision head** — type embedding, 2-layer transformer, option-marker scoring, act head
+    —   vectorized and autograd-friendly, so the same code path serves both fast inference and training.'
+  verbatim: true

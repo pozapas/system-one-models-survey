@@ -1,0 +1,996 @@
+{
+  "_doc": "Conventional baselines written by shared/src/b01_baselines.py. Top-level keys are model tags; each holds description, model_id, revision, params, size_mb_fp32, training_data, calibration and one entry per condition. A condition entry has n (scored decisions; for d2_k150 the 600 in-scope items), acc and acc_ci (95% percentile interval, 1000 cluster bootstrap resamples of items, metrics.cluster_boot), ece_shipped (T = 1 output, 10 equal-mass bins, metrics.ece), ece_scaled (after the temperature named in temperature_rule: CLINC validation split for D2, d1_calib per question type for D1, five-fold cross-fitting by item for D3), ece_scaled_crossfit (the a01 cross-fitting rule on every condition, comparable with e1_main.json), brier (multi-class, shipped), nll, cov5 (largest coverage with at most 5% risk, shipped confidence; cov5_scaled after scaling), aurc, auroc_oos (d2_k150 only: in-scope versus the 200 out-of-scope items by top probability), softacc (D1: teacher probability of the chosen option, as in a01), macro_f1 (D3), latency_ms_p50_gpu (batch 1, fp32, NVIDIA T1000), latency_ms_per_item_gpu_batched, latency_ms_p50_cpu (batch 1, fp32) and latency_unit (item, state, or decision of K entailment pairs). Unused keys are null. Answer files in the harness format are in answers_dir; probs are the T = 1 outputs and raw.probs_scaled holds the scaled ones where one temperature applies.",
+  "_hardware": {
+    "cpu_dtype": "fp32",
+    "cpu_threads": 32,
+    "gpu": "NVIDIA T1000 8GB",
+    "gpu_dtype": "fp32",
+    "note": "fp32 on the GPU: on this Turing TU117 card without tensor cores fp16 inference and mixed-precision training measured 3 to 4 times slower than fp32"
+  },
+  "bert-base-clinc": {
+    "answers_dir": "shared/answers/baseline-bert-base-clinc",
+    "calibration": {
+      "T": 0.8372954576579902,
+      "method": "one temperature by NLL (metrics.fit_T grid) on the 3000 in-scope CLINC validation rows, 150-way distribution"
+    },
+    "d2_k150": {
+      "acc": 0.94,
+      "acc_ci": [
+        0.9216666666666666,
+        0.9583333333333334
+      ],
+      "aurc": 0.010556688664625403,
+      "aurc_scaled": 0.010542138337728496,
+      "auroc_oos": 0.9753666666666667,
+      "brier": 0.09034698845020799,
+      "brier_scaled": 0.0924759590395516,
+      "cov5": 0.9783333333333334,
+      "cov5_scaled": 0.9783333333333334,
+      "ece_scaled": 0.02940946593790899,
+      "ece_scaled_crossfit": 0.02543564308000201,
+      "ece_shipped": 0.02809942798176865,
+      "latency_ms_p50_cpu": 15.501049987506121,
+      "latency_ms_p50_gpu": 6.13465000060387,
+      "latency_ms_per_item_gpu_batched": 2.398726562205411,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "n_oos": 200,
+      "nll": 0.26212935892043143,
+      "nll_scaled": 0.256544057765769,
+      "softacc": null,
+      "temperature": 0.8372954576579902,
+      "temperature_rule": "CLINC validation split"
+    },
+    "d2_k20": {
+      "acc": 0.9833333333333333,
+      "acc_ci": [
+        0.9716666666666667,
+        0.9916666666666667
+      ],
+      "aurc": 0.0005705843013427586,
+      "aurc_scaled": 0.000556126894945505,
+      "auroc_oos": null,
+      "brier": 0.029645238638896357,
+      "brier_scaled": 0.028023720482997613,
+      "cov5": 1.0,
+      "cov5_scaled": 1.0,
+      "ece_scaled": 0.004187259814973443,
+      "ece_scaled_crossfit": 0.0008687142912873648,
+      "ece_shipped": 0.012128418026587831,
+      "latency_ms_p50_cpu": 15.501049987506121,
+      "latency_ms_p50_gpu": 6.13465000060387,
+      "latency_ms_per_item_gpu_batched": 2.398726562205411,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 0.06915385656018164,
+      "nll_scaled": 0.06340289210596725,
+      "softacc": null,
+      "temperature": 0.8372954576579902,
+      "temperature_rule": "CLINC validation split"
+    },
+    "d2_k5": {
+      "acc": 0.9933333333333333,
+      "acc_ci": [
+        0.9866666666666667,
+        0.9983333333333333
+      ],
+      "aurc": 8.408450186925316e-05,
+      "aurc_scaled": 7.84155512325084e-05,
+      "auroc_oos": null,
+      "brier": 0.009842595553940686,
+      "brier_scaled": 0.009204070163848695,
+      "cov5": 1.0,
+      "cov5_scaled": 1.0,
+      "ece_scaled": 0.002568771588999963,
+      "ece_scaled_crossfit": 0.0016846256087072803,
+      "ece_shipped": 0.005640976070112314,
+      "latency_ms_p50_cpu": 15.501049987506121,
+      "latency_ms_p50_gpu": 6.13465000060387,
+      "latency_ms_per_item_gpu_batched": 2.398726562205411,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 0.01981336972497031,
+      "nll_scaled": 0.01690825981124251,
+      "softacc": null,
+      "temperature": 0.8372954576579902,
+      "temperature_rule": "CLINC validation split"
+    },
+    "d2_k50": {
+      "acc": 0.9683333333333334,
+      "acc_ci": [
+        0.9533333333333334,
+        0.9816666666666667
+      ],
+      "aurc": 0.0019537725568914985,
+      "aurc_scaled": 0.002022247834656275,
+      "auroc_oos": null,
+      "brier": 0.05337590715395663,
+      "brier_scaled": 0.05295367695206787,
+      "cov5": 1.0,
+      "cov5_scaled": 1.0,
+      "ece_scaled": 0.007059877017451598,
+      "ece_scaled_crossfit": 0.006517180714009052,
+      "ece_shipped": 0.012428008945935275,
+      "latency_ms_p50_cpu": 15.501049987506121,
+      "latency_ms_p50_gpu": 6.13465000060387,
+      "latency_ms_per_item_gpu_batched": 2.398726562205411,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 0.1366194319230785,
+      "nll_scaled": 0.13110127098447635,
+      "softacc": null,
+      "temperature": 0.8372954576579902,
+      "temperature_rule": "CLINC validation split"
+    },
+    "description": "bert-base-uncased fine-tuned as a 151-way CLINC classifier (150 intents + out-of-scope), fp32 AdamW (weight decay 0.01), batch 32, dynamic padding, max 64 tokens, linear warm-up 10%; served distribution = softmax over the offered intents",
+    "hyperparameter_selection": {
+      "criterion": "CLINC validation in-scope accuracy, ties by NLL",
+      "grid": [
+        {
+          "epoch": 1,
+          "lr": 3e-05,
+          "val_acc": 0.8502834278092698,
+          "val_nll": 2.2922403812408447
+        },
+        {
+          "epoch": 2,
+          "lr": 3e-05,
+          "val_acc": 0.9499833277759253,
+          "val_nll": 0.7396129965782166
+        },
+        {
+          "epoch": 3,
+          "lr": 3e-05,
+          "val_acc": 0.9633211070356785,
+          "val_nll": 0.3594048023223877
+        },
+        {
+          "epoch": 4,
+          "lr": 3e-05,
+          "val_acc": 0.9643214404801601,
+          "val_nll": 0.2898293435573578
+        },
+        {
+          "epoch": 1,
+          "lr": 5e-05,
+          "val_acc": 0.9063021007002334,
+          "val_nll": 1.1141934394836426
+        },
+        {
+          "epoch": 2,
+          "lr": 5e-05,
+          "val_acc": 0.9609869956652217,
+          "val_nll": 0.2669181525707245
+        },
+        {
+          "epoch": 3,
+          "lr": 5e-05,
+          "val_acc": 0.9686562187395799,
+          "val_nll": 0.1710726022720337
+        },
+        {
+          "epoch": 4,
+          "lr": 5e-05,
+          "val_acc": 0.9669889963321107,
+          "val_nll": 0.16791988909244537
+        }
+      ],
+      "selected": {
+        "epoch": 3,
+        "lr": 5e-05,
+        "val_acc": 0.9686562187395799,
+        "val_nll": 0.1710726022720337
+      },
+      "train_minutes": 20.05799380540848
+    },
+    "model_id": "bert-base-uncased",
+    "params": 109598359,
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "size_mb_fp32": 418.1,
+    "training_data": {
+      "dropped_texts": [
+        "absolutely!",
+        "that's incorrect!",
+        "goodbye!",
+        "hola",
+        "hey what's up",
+        "hey what's up"
+      ],
+      "overlap_after_filter": {
+        "exact": 0,
+        "normalized": 0
+      },
+      "source": "clinc/oos-eval data_oos_plus.json at 828f8093, train + oos_train (the rows of clinc/clinc_oos plus train, which decider-2b trains on)",
+      "train_dropped_normalized_match_to_test": 5,
+      "train_rows": 15245,
+      "val_dropped_normalized_match_to_test": 1,
+      "val_rows": 3099
+    }
+  },
+  "bge-small-lr-clinc": {
+    "answers_dir": "shared/answers/baseline-bge-small-lr-clinc",
+    "calibration": {
+      "T": 0.7749350240912262,
+      "method": "as bert-base-clinc"
+    },
+    "d2_k150": {
+      "acc": 0.9483333333333334,
+      "acc_ci": [
+        0.93,
+        0.965
+      ],
+      "aurc": 0.005267995308662047,
+      "aurc_scaled": 0.005166327780018208,
+      "auroc_oos": 0.9550083333333333,
+      "brier": 0.07626633990075361,
+      "brier_scaled": 0.07517287996245413,
+      "cov5": 0.995,
+      "cov5_scaled": 0.995,
+      "ece_scaled": 0.01090867082076942,
+      "ece_scaled_crossfit": 0.008801450296488548,
+      "ece_shipped": 0.017480110247299296,
+      "latency_ms_p50_cpu": 8.750599983613938,
+      "latency_ms_p50_gpu": 6.574350001756102,
+      "latency_ms_per_item_gpu_batched": 0.8556124998904124,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "n_oos": 200,
+      "nll": 0.16918498350740918,
+      "nll_scaled": 0.16104145321004354,
+      "softacc": null,
+      "temperature": 0.7749350240912262,
+      "temperature_rule": "CLINC validation split"
+    },
+    "d2_k20": {
+      "acc": 0.9933333333333333,
+      "acc_ci": [
+        0.9866666666666667,
+        0.9983333333333333
+      ],
+      "aurc": 0.0003394673601198455,
+      "aurc_scaled": 0.00034324189192909643,
+      "auroc_oos": null,
+      "brier": 0.013044185403722992,
+      "brier_scaled": 0.01239586420244425,
+      "cov5": 1.0,
+      "cov5_scaled": 1.0,
+      "ece_scaled": 0.0032057156699631384,
+      "ece_scaled_crossfit": 0.003926833600607516,
+      "ece_shipped": 0.007549652348226532,
+      "latency_ms_p50_cpu": 8.750599983613938,
+      "latency_ms_p50_gpu": 6.574350001756102,
+      "latency_ms_per_item_gpu_batched": 0.8556124998904124,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 0.031097927907384762,
+      "nll_scaled": 0.029392636432832367,
+      "softacc": null,
+      "temperature": 0.7749350240912262,
+      "temperature_rule": "CLINC validation split"
+    },
+    "d2_k5": {
+      "acc": 0.9966666666666667,
+      "acc_ci": [
+        0.9916666666666667,
+        1.0
+      ],
+      "aurc": 8.337970691893904e-06,
+      "aurc_scaled": 8.337970691893904e-06,
+      "auroc_oos": null,
+      "brier": 0.00357097418804763,
+      "brier_scaled": 0.003724946831160371,
+      "cov5": 1.0,
+      "cov5_scaled": 1.0,
+      "ece_scaled": 0.0012073054355562166,
+      "ece_scaled_crossfit": 0.002516386821537731,
+      "ece_shipped": 0.00028730038303060863,
+      "latency_ms_p50_cpu": 8.750599983613938,
+      "latency_ms_p50_gpu": 6.574350001756102,
+      "latency_ms_per_item_gpu_batched": 0.8556124998904124,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 0.006457887904493992,
+      "nll_scaled": 0.005556750343604085,
+      "softacc": null,
+      "temperature": 0.7749350240912262,
+      "temperature_rule": "CLINC validation split"
+    },
+    "d2_k50": {
+      "acc": 0.985,
+      "acc_ci": [
+        0.9733333333333334,
+        0.9933333333333333
+      ],
+      "aurc": 0.0008106020204820713,
+      "aurc_scaled": 0.0008127242368542168,
+      "auroc_oos": null,
+      "brier": 0.027845829403576,
+      "brier_scaled": 0.026600771030497572,
+      "cov5": 1.0,
+      "cov5_scaled": 1.0,
+      "ece_scaled": 0.0026096366415341967,
+      "ece_scaled_crossfit": 0.0026718556896842107,
+      "ece_shipped": 0.012755265119280757,
+      "latency_ms_p50_cpu": 8.750599983613938,
+      "latency_ms_p50_gpu": 6.574350001756102,
+      "latency_ms_per_item_gpu_batched": 0.8556124998904124,
+      "latency_unit": "item",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 0.06287354359145851,
+      "nll_scaled": 0.05775409691518786,
+      "softacc": null,
+      "temperature": 0.7749350240912262,
+      "temperature_rule": "CLINC validation split"
+    },
+    "description": "BAAI/bge-small-en-v1.5 CLS embeddings (L2-normalized, fp32) + multinomial logistic regression over 151 classes (fp32 encoder)",
+    "hyperparameter_selection": {
+      "C": 100.0,
+      "criterion": "CLINC validation in-scope accuracy",
+      "grid": [
+        1.0,
+        10.0,
+        100.0,
+        1000.0,
+        10000.0
+      ],
+      "val_acc": 0.9693231077025676
+    },
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "params": 33418135,
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "size_mb_fp32": 127.5,
+    "training_data": {
+      "dropped_texts": [
+        "absolutely!",
+        "that's incorrect!",
+        "goodbye!",
+        "hola",
+        "hey what's up",
+        "hey what's up"
+      ],
+      "overlap_after_filter": {
+        "exact": 0,
+        "normalized": 0
+      },
+      "source": "as bert-base-clinc",
+      "train_dropped_normalized_match_to_test": 5,
+      "train_rows": 15245,
+      "val_dropped_normalized_match_to_test": 1,
+      "val_rows": 3099
+    }
+  },
+  "bge-small-lr-d1": {
+    "answers_dir": "shared/answers/baseline-bge-small-lr-d1",
+    "calibration": {
+      "method": "one temperature per question type fitted on d1_calib (metrics.fit_T), the a01 rule"
+    },
+    "d1_calib": {
+      "acc": 0.736,
+      "acc_ci": [
+        0.7073333333333334,
+        0.762
+      ],
+      "aurc": 0.1433895967412051,
+      "aurc_scaled": 0.13941855479185047,
+      "auroc_oos": null,
+      "brier": 0.40764534821393206,
+      "brier_scaled": 0.37073630732662105,
+      "by_type": {
+        "choice": {
+          "acc": 0.7333333333333333,
+          "n": 450
+        },
+        "noul": {
+          "acc": 0.7955555555555556,
+          "n": 450
+        },
+        "score": {
+          "acc": 0.6933333333333334,
+          "n": 600
+        }
+      },
+      "cov5": 0.14933333333333335,
+      "cov5_scaled": 0.09866666666666667,
+      "ece_scaled": 0.0339894217353319,
+      "ece_scaled_crossfit": 0.03598564819596509,
+      "ece_shipped": 0.14725677573753998,
+      "latency_ms_p50_cpu": 17.743450007401407,
+      "latency_ms_p50_gpu": 8.77934999880381,
+      "latency_ms_per_item_gpu_batched": 17.766951562407485,
+      "latency_unit": "state (5 decisions)",
+      "macro_f1": null,
+      "n": 1500,
+      "nll": 0.712717532044892,
+      "nll_scaled": 0.6382270062239984,
+      "softacc": 0.5849689079133924,
+      "temperature": {
+        "choice": 0.5062806630483135,
+        "noul": 0.5910418470405774,
+        "score": 0.5062806630483135
+      },
+      "temperature_rule": "d1_calib, one temperature per question type"
+    },
+    "d1_native": {
+      "acc": 0.7015,
+      "acc_ci": [
+        0.6785,
+        0.7235
+      ],
+      "aurc": 0.16457420940329198,
+      "aurc_scaled": 0.1635728370834762,
+      "auroc_oos": null,
+      "brier": 0.42428107678026866,
+      "brier_scaled": 0.4000532933461784,
+      "by_type": {
+        "choice": {
+          "acc": 0.67,
+          "n": 600
+        },
+        "noul": {
+          "acc": 0.7833333333333333,
+          "n": 600
+        },
+        "score": {
+          "acc": 0.66375,
+          "n": 800
+        }
+      },
+      "cov5": 0.0515,
+      "cov5_scaled": 0.071,
+      "ece_scaled": 0.03249616058754684,
+      "ece_scaled_crossfit": 0.028955698257138743,
+      "ece_shipped": 0.11344606824268756,
+      "latency_ms_p50_cpu": 17.743450007401407,
+      "latency_ms_p50_gpu": 8.77934999880381,
+      "latency_ms_per_item_gpu_batched": 17.766951562407485,
+      "latency_unit": "state (5 decisions)",
+      "macro_f1": null,
+      "n": 2000,
+      "nll": 0.7323845249140609,
+      "nll_scaled": 0.6789875166932318,
+      "softacc": 0.5631196279835565,
+      "temperature": {
+        "choice": 0.5062806630483135,
+        "noul": 0.5910418470405774,
+        "score": 0.5062806630483135
+      },
+      "temperature_rule": "d1_calib, one temperature per question type"
+    },
+    "d1_neutral": {
+      "acc": 0.7015,
+      "acc_ci": [
+        0.6785,
+        0.7235
+      ],
+      "aurc": 0.16457420940329198,
+      "aurc_scaled": 0.1635728370834762,
+      "auroc_oos": null,
+      "brier": 0.42428107678026866,
+      "brier_scaled": 0.4000532933461784,
+      "by_type": {
+        "choice": {
+          "acc": 0.67,
+          "n": 600
+        },
+        "noul": {
+          "acc": 0.7833333333333333,
+          "n": 600
+        },
+        "score": {
+          "acc": 0.66375,
+          "n": 800
+        }
+      },
+      "cov5": 0.0515,
+      "cov5_scaled": 0.071,
+      "ece_scaled": 0.03249616058754684,
+      "ece_scaled_crossfit": 0.028955698257138743,
+      "ece_shipped": 0.11344606824268756,
+      "latency_ms_p50_cpu": 17.743450007401407,
+      "latency_ms_p50_gpu": 8.77934999880381,
+      "latency_ms_per_item_gpu_batched": 17.766951562407485,
+      "latency_unit": "state (5 decisions)",
+      "macro_f1": null,
+      "n": 2000,
+      "nll": 0.7323845249140609,
+      "nll_scaled": 0.6789875166932318,
+      "softacc": 0.5631196279835565,
+      "temperature": {
+        "choice": 0.5062806630483135,
+        "noul": 0.5910418470405774,
+        "score": 0.5062806630483135
+      },
+      "temperature_rule": "d1_calib, one temperature per question type"
+    },
+    "description": "one soft-label logistic regression per workflow x question (20 models) on [bge-small-en-v1.5 CLS embedding of the JSON state, TF-IDF word uni- and bigrams]",
+    "model_id": "BAAI/bge-small-en-v1.5",
+    "params": 33360000,
+    "params_note": "encoder parameters; the 20 regressions add about 20 x 5 x (384 + TF-IDF vocabulary) weights",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "size_mb_fp32": 127.3,
+    "training_data": {
+      "C_by_question": {
+        "agent_trace_observability|action": 30.0,
+        "agent_trace_observability|needs_review": 100.0,
+        "agent_trace_observability|outcome": 100.0,
+        "agent_trace_observability|risk": 30.0,
+        "agent_trace_observability|urgency": 30.0,
+        "customer_service|action": 30.0,
+        "customer_service|category": 1000.0,
+        "customer_service|churn_risk": 300.0,
+        "customer_service|needs_human": 3000.0,
+        "customer_service|urgency": 300.0,
+        "invoice_processing|discrepancy_severity": 10.0,
+        "invoice_processing|disposition": 10.0,
+        "invoice_processing|duplicate": 0.3,
+        "invoice_processing|matches_order": 10.0,
+        "invoice_processing|urgency": 30.0,
+        "security_incidents|credential_compromise": 30.0,
+        "security_incidents|disposition": 100.0,
+        "security_incidents|severity": 300.0,
+        "security_incidents|true_positive": 30.0,
+        "security_incidents|urgency": 100.0
+      },
+      "excluded": "the 300 d1_calib states and all d1_neutral states",
+      "n_states": 900,
+      "source": "LocalLLaMA/typed-decisions train split at c76749ec, soft teacher labels",
+      "states_truncated_at_512_tokens": {
+        "eval": 13,
+        "train": 8
+      }
+    }
+  },
+  "nli-deberta-v3-base": {
+    "answers_dir": "shared/answers/baseline-nli-deberta-v3-base",
+    "calibration": {
+      "T_d2": 1.555200181207607,
+      "d1": "per question type on d1_calib (a01 rule)",
+      "d2": "one temperature on 600 CLINC validation in-scope rows (four per intent), 150-way",
+      "d3": "five-fold cross-fitting by item (a01 rule)",
+      "val_acc_d2": 0.5266666666666666
+    },
+    "d1_calib": {
+      "acc": 0.442,
+      "acc_ci": [
+        0.4146666666666667,
+        0.472
+      ],
+      "aurc": 0.49994622886980256,
+      "aurc_scaled": 0.48000184362132403,
+      "auroc_oos": null,
+      "brier": 0.8573426918897344,
+      "brier_scaled": 0.644560716443153,
+      "by_type": {
+        "choice": {
+          "acc": 0.37333333333333335,
+          "n": 450
+        },
+        "noul": {
+          "acc": 0.5355555555555556,
+          "n": 450
+        },
+        "score": {
+          "acc": 0.42333333333333334,
+          "n": 600
+        }
+      },
+      "cov5": 0.0013333333333333333,
+      "cov5_scaled": 0.0006666666666666666,
+      "ece_scaled": 0.09863902563600863,
+      "ece_scaled_crossfit": 0.13064562710300914,
+      "ece_shipped": 0.3437759420726992,
+      "latency_ms_p50_cpu": 5341.567499999655,
+      "latency_ms_p50_gpu": 598.4498000179883,
+      "latency_ms_per_item_gpu_batched": 781.4789609909058,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": null,
+      "n": 1500,
+      "nll": 2.8879071742570157,
+      "nll_scaled": 1.11412516985097,
+      "softacc": 0.39537909515513303,
+      "temperature": {
+        "choice": 6.025895449453982,
+        "noul": 19.999999999999996,
+        "score": 3.1210972900141476
+      },
+      "temperature_rule": "d1_calib, one temperature per question type"
+    },
+    "d1_native": {
+      "acc": 0.411,
+      "acc_ci": [
+        0.3865,
+        0.437
+      ],
+      "aurc": 0.525417538261706,
+      "aurc_scaled": 0.5019767529542736,
+      "auroc_oos": null,
+      "brier": 0.8844448871686119,
+      "brier_scaled": 0.649195868070093,
+      "by_type": {
+        "choice": {
+          "acc": 0.3433333333333333,
+          "n": 600
+        },
+        "noul": {
+          "acc": 0.5083333333333333,
+          "n": 600
+        },
+        "score": {
+          "acc": 0.38875,
+          "n": 800
+        }
+      },
+      "cov5": 0.0,
+      "cov5_scaled": 0.002,
+      "ece_scaled": 0.09141422107673057,
+      "ece_scaled_crossfit": 0.11090667421644974,
+      "ece_shipped": 0.37335092784271323,
+      "latency_ms_p50_cpu": 5341.567499999655,
+      "latency_ms_p50_gpu": 598.4498000179883,
+      "latency_ms_per_item_gpu_batched": 781.4789609909058,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": null,
+      "n": 2000,
+      "nll": 2.986292506362036,
+      "nll_scaled": 1.1142388113398225,
+      "softacc": 0.3826353975322604,
+      "temperature": {
+        "choice": 6.025895449453982,
+        "noul": 19.999999999999996,
+        "score": 3.1210972900141476
+      },
+      "temperature_rule": "d1_calib, one temperature per question type"
+    },
+    "d1_neutral": {
+      "acc": 0.411,
+      "acc_ci": [
+        0.3865,
+        0.437
+      ],
+      "aurc": 0.525417538261706,
+      "aurc_scaled": 0.5019767529542736,
+      "auroc_oos": null,
+      "brier": 0.8844448871686119,
+      "brier_scaled": 0.649195868070093,
+      "by_type": {
+        "choice": {
+          "acc": 0.3433333333333333,
+          "n": 600
+        },
+        "noul": {
+          "acc": 0.5083333333333333,
+          "n": 600
+        },
+        "score": {
+          "acc": 0.38875,
+          "n": 800
+        }
+      },
+      "cov5": 0.0,
+      "cov5_scaled": 0.002,
+      "ece_scaled": 0.09141422107673057,
+      "ece_scaled_crossfit": 0.11090667421644974,
+      "ece_shipped": 0.37335092784271323,
+      "latency_ms_p50_cpu": 5341.567499999655,
+      "latency_ms_p50_gpu": 598.4498000179883,
+      "latency_ms_per_item_gpu_batched": 781.4789609909058,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": null,
+      "n": 2000,
+      "nll": 2.986292506362036,
+      "nll_scaled": 1.1142388113398225,
+      "softacc": 0.3826353975322604,
+      "temperature": {
+        "choice": 6.025895449453982,
+        "noul": 19.999999999999996,
+        "score": 3.1210972900141476
+      },
+      "temperature_rule": "d1_calib, one temperature per question type"
+    },
+    "d2_k150": {
+      "acc": 0.5066666666666667,
+      "acc_ci": [
+        0.47,
+        0.545
+      ],
+      "aurc": 0.2351170923570225,
+      "aurc_scaled": 0.2313138142915977,
+      "auroc_oos": 0.6188916666666666,
+      "brier": 0.6531831989745825,
+      "brier_scaled": 0.6624069604600623,
+      "cov5": 0.21,
+      "cov5_scaled": 0.17666666666666667,
+      "ece_scaled": 0.13301249208198765,
+      "ece_scaled_crossfit": 0.15408554826369739,
+      "ece_shipped": 0.09400089696094197,
+      "latency_ms_p50_cpu": 13169.272700004512,
+      "latency_ms_p50_gpu": 3140.014499978861,
+      "latency_ms_per_item_gpu_batched": 3298.865904510021,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": null,
+      "n": 600,
+      "n_oos": 200,
+      "nll": 2.4886085392637636,
+      "nll_scaled": 2.1552373060815366,
+      "softacc": null,
+      "temperature": 1.555200181207607,
+      "temperature_rule": "CLINC validation rows"
+    },
+    "d2_k20": {
+      "acc": 0.735,
+      "acc_ci": [
+        0.7016666666666667,
+        0.77
+      ],
+      "aurc": 0.10709153337283342,
+      "aurc_scaled": 0.10095855258408451,
+      "auroc_oos": null,
+      "brier": 0.4095943373104004,
+      "brier_scaled": 0.3778116347711036,
+      "cov5": 0.34,
+      "cov5_scaled": 0.38666666666666666,
+      "ece_scaled": 0.06314326095260414,
+      "ece_scaled_crossfit": 0.0339295638797184,
+      "ece_shipped": 0.14803501385059892,
+      "latency_ms_p50_cpu": 2003.7224999978207,
+      "latency_ms_p50_gpu": 500.8493999775965,
+      "latency_ms_per_item_gpu_batched": null,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 1.080955315894184,
+      "nll_scaled": 0.8659399358891634,
+      "softacc": null,
+      "temperature": 1.555200181207607,
+      "temperature_rule": "CLINC validation rows"
+    },
+    "d2_k5": {
+      "acc": 0.915,
+      "acc_ci": [
+        0.8933333333333333,
+        0.9367083333333333
+      ],
+      "aurc": 0.015273446608872553,
+      "aurc_scaled": 0.015107213758094352,
+      "auroc_oos": null,
+      "brier": 0.13894147598332632,
+      "brier_scaled": 0.13602467208081945,
+      "cov5": 0.8816666666666667,
+      "cov5_scaled": 0.885,
+      "ece_scaled": 0.017885644707684105,
+      "ece_scaled_crossfit": 0.021194185433477876,
+      "ece_shipped": 0.03784443802527785,
+      "latency_ms_p50_cpu": 590.3088999912143,
+      "latency_ms_p50_gpu": 176.57949999556877,
+      "latency_ms_per_item_gpu_batched": null,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 0.3204519897320062,
+      "nll_scaled": 0.2748189154292827,
+      "softacc": null,
+      "temperature": 1.555200181207607,
+      "temperature_rule": "CLINC validation rows"
+    },
+    "d2_k50": {
+      "acc": 0.6316666666666667,
+      "acc_ci": [
+        0.595,
+        0.67
+      ],
+      "aurc": 0.17186150270077558,
+      "aurc_scaled": 0.15518360648244575,
+      "auroc_oos": null,
+      "brier": 0.5463906361272242,
+      "brier_scaled": 0.5082158028488684,
+      "cov5": 0.21166666666666667,
+      "cov5_scaled": 0.2683333333333333,
+      "ece_scaled": 0.07070632789283937,
+      "ece_scaled_crossfit": 0.06550567130793045,
+      "ece_shipped": 0.15752370647721156,
+      "latency_ms_p50_cpu": 4727.761249989271,
+      "latency_ms_p50_gpu": 1126.271449989872,
+      "latency_ms_per_item_gpu_batched": null,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": null,
+      "n": 600,
+      "nll": 1.6720581662933451,
+      "nll_scaled": 1.3703144668893243,
+      "softacc": null,
+      "temperature": 1.555200181207607,
+      "temperature_rule": "CLINC validation rows"
+    },
+    "d3_conv_go_awry": {
+      "acc": 0.514,
+      "acc_ci": [
+        0.472,
+        0.56
+      ],
+      "aurc": 0.5260269218978992,
+      "aurc_scaled": 0.5260269218978992,
+      "auroc_oos": null,
+      "brier": 0.763262972509386,
+      "brier_scaled": 0.5068056216452298,
+      "cov5": 0.0,
+      "cov5_scaled": 0.0,
+      "ece_scaled": 0.08055150074999953,
+      "ece_scaled_crossfit": 0.08055150074999953,
+      "ece_shipped": 0.31109593986006157,
+      "latency_ms_p50_cpu": 1063.0325499805622,
+      "latency_ms_p50_gpu": 211.77300001727417,
+      "latency_ms_per_item_gpu_batched": 294.6014175415039,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": 0.46522651948292026,
+      "n": 500,
+      "nll": 1.5920938726043632,
+      "nll_scaled": 0.7000888703341483,
+      "softacc": null,
+      "temperature": {
+        "crossfit_folds": [
+          19.999999999999996,
+          19.999999999999996,
+          19.999999999999996,
+          19.999999999999996,
+          19.999999999999996
+        ]
+      },
+      "temperature_rule": "five-fold cross-fitting by item on the condition itself"
+    },
+    "d3_emotion": {
+      "acc": 0.6506024096385542,
+      "acc_ci": [
+        0.6123995983935743,
+        0.6907630522088354
+      ],
+      "aurc": 0.15594411743298411,
+      "aurc_scaled": 0.15620008828627852,
+      "auroc_oos": null,
+      "brier": 0.5624314087956429,
+      "brier_scaled": 0.4631783806104337,
+      "cov5": 0.21285140562248997,
+      "cov5_scaled": 0.2469879518072289,
+      "ece_scaled": 0.04096114327659017,
+      "ece_scaled_crossfit": 0.04096114327659017,
+      "ece_shipped": 0.23711757966233662,
+      "latency_ms_p50_cpu": 1367.76930000633,
+      "latency_ms_p50_gpu": 304.9468000244815,
+      "latency_ms_per_item_gpu_batched": 235.62031673140316,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": 0.6484775961294226,
+      "n": 498,
+      "nll": 1.6432096672369287,
+      "nll_scaled": 0.9580299075417358,
+      "softacc": null,
+      "temperature": {
+        "crossfit_folds": [
+          3.002621457816346,
+          3.1210972900141476,
+          3.1210972900141476,
+          3.1210972900141476,
+          3.002621457816346
+        ]
+      },
+      "temperature_rule": "five-fold cross-fitting by item on the condition itself"
+    },
+    "d3_wiki_corpus": {
+      "acc": 0.514,
+      "acc_ci": [
+        0.47,
+        0.558
+      ],
+      "aurc": 0.46281485025448815,
+      "aurc_scaled": 0.46281485025448815,
+      "auroc_oos": null,
+      "brier": 0.8735897367870921,
+      "brier_scaled": 0.503164349428055,
+      "cov5": 0.0,
+      "cov5_scaled": 0.0,
+      "ece_scaled": 0.05208841747138321,
+      "ece_scaled_crossfit": 0.05208841747138321,
+      "ece_shipped": 0.41273565116763183,
+      "latency_ms_p50_cpu": 2335.858750011539,
+      "latency_ms_p50_gpu": 355.29874998610467,
+      "latency_ms_per_item_gpu_batched": 381.03601932525635,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": 0.440708160136992,
+      "n": 500,
+      "nll": 2.2033634646324707,
+      "nll_scaled": 0.6963641105518954,
+      "softacc": null,
+      "temperature": {
+        "crossfit_folds": [
+          19.999999999999996,
+          19.999999999999996,
+          19.999999999999996,
+          19.999999999999996,
+          19.999999999999996
+        ]
+      },
+      "temperature_rule": "five-fold cross-fitting by item on the condition itself"
+    },
+    "d3_wiki_politeness": {
+      "acc": 0.39959839357429716,
+      "acc_ci": [
+        0.3534136546184739,
+        0.4397590361445783
+      ],
+      "aurc": 0.5678997494816693,
+      "aurc_scaled": 0.5555430037330671,
+      "auroc_oos": null,
+      "brier": 0.9324221195113216,
+      "brier_scaled": 0.6500179468408495,
+      "cov5": 0.004016064257028112,
+      "cov5_scaled": 0.006024096385542169,
+      "ece_scaled": 0.04828550329164564,
+      "ece_scaled_crossfit": 0.04828550329164564,
+      "ece_shipped": 0.39590311198512695,
+      "latency_ms_p50_cpu": 732.5714500038885,
+      "latency_ms_p50_gpu": 172.54679999314249,
+      "latency_ms_per_item_gpu_batched": 148.8592284750268,
+      "latency_unit": "decision (K pairs)",
+      "macro_f1": 0.36400300271809244,
+      "n": 498,
+      "nll": 2.1622539250976804,
+      "nll_scaled": 1.0718715038745907,
+      "softacc": null,
+      "temperature": {
+        "crossfit_folds": [
+          11.1925528906391,
+          9.223495535416513,
+          10.767687244066977,
+          10.767687244066977,
+          9.965727029294602
+        ]
+      },
+      "temperature_rule": "five-fold cross-fitting by item on the condition itself"
+    },
+    "description": "zero-shot entailment classifier, no task training; premise = state text + newline + instructions, hypothesis = option rubric (template 'This text is about {}.' for rubrics under five words without a final period), softmax over options of entailment log-odds",
+    "model_id": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+    "params": 183831552,
+    "revision": "8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8",
+    "size_mb_fp32": 701.3,
+    "training_data": "none for these tasks (public NLI and zero-shot training mixture of the checkpoint)",
+    "truncation": {
+      "d1_calib": {
+        "premises": 1500,
+        "truncated": 32
+      },
+      "d1_native": {
+        "premises": 2000,
+        "truncated": 35
+      },
+      "d1_neutral": {
+        "premises": 2000,
+        "truncated": 35
+      },
+      "d2_k150": {
+        "premises": 800,
+        "truncated": 0
+      },
+      "d3_conv_go_awry": {
+        "premises": 500,
+        "truncated": 28
+      },
+      "d3_emotion": {
+        "premises": 498,
+        "truncated": 0
+      },
+      "d3_wiki_corpus": {
+        "premises": 500,
+        "truncated": 73
+      },
+      "d3_wiki_politeness": {
+        "premises": 498,
+        "truncated": 0
+      }
+    }
+  }
+}

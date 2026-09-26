@@ -1,0 +1,23 @@
+name: jevcache
+repo: https://github.com/hyperspaceai/jevcache
+revision_sha: a211d13e3f1338e31ffa870a4749966e2a858b29
+author: hyperspaceai
+created: '2026-09-18'
+access_date: '2026-09-24'
+license: unknown
+category: integration
+what_it_does: A decision cache for TypeSafe Jev-class models — memoize decisions so repeats are free,
+  deterministic, and shareable. One 2 MB binary.
+primitives_supported:
+- binary
+models_supported: []
+key_claims:
+- excerpt: '```bash curl -fsSL jevcache.sh/install | sh ```  Installs a single static binary (~2–3 MB,
+    no runtime) for macOS/Linux, arm64 or x64.'
+  verbatim: true
+- excerpt: The installer verifies a SHA-256 checksum before installing.
+  verbatim: true
+- excerpt: '```bash jevcache demo # try it in one command (no setup) jevcache decide --schema support.route
+    --state ticket.json # decide (cache on miss) jevcache recall --schema support.route --state ticket.json
+    #'
+  verbatim: true

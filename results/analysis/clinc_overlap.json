@@ -1,0 +1,2163 @@
+{
+ "_doc": "CLINC-150 (D2) and emotion (D3) exposure audit written by shared/src/b02_clinc_overlap.py. counts[split] gives, for our 800 D2 test texts, the number of items with at least one matching row in that split: exact string, normalized (lower-case, punctuation removed, whitespace collapsed), near_dup_char (character 5-gram Jaccard >= 0.8 on normalized text) and near_dup_tok (word-set Jaccard >= 0.9); near-duplicate counts include exact and normalized matches, and *_in_scope / *_oos split them by our 600 in-scope and 200 out-of-scope items. Split keys are <variant>/<split> for the four oos-eval JSON files at commit 828f8093, hf_plus/<split> for clinc/clinc_oos config plus on the hub, and decider_temperature_fit_rows for the rebuilt 1500-row CLINC evaluation subsample decider-2b's temperature was fitted on. Test splits contain our items by construction, so they also have a *_other_rows entry that excludes the item's own row. emotion holds the same structure for the 498 d3_emotion items. card_quotes hold verbatim excerpts (quote) and our reading (note); hub_checks records what the Hugging Face hub publishes. In this public copy the emotion example texts (text, closest_char5, closest_token) are set to null because the dataset's terms do not grant redistribution; item_id identifies each example.",
+ "card_quotes": [
+  {
+   "quote": "\"In-task\" means the test splits of the training datasets; \"held-out\" means datasets never seen in training",
+   "source": "Mapika/decider-2b model card (README.md at d61c1c16)"
+  },
+  {
+   "quote": "Large label sets sub-sampled to 10 options; one temperature fitted on in-task data and stored in `decider_config.json`.",
+   "source": "Mapika/decider-2b model card (README.md at d61c1c16)"
+  },
+  {
+   "quote": "fine-tune it with cross-entropy, a proper scoring rule, on a mixture of about 95 public decision datasets",
+   "source": "Mapika/decider-2b model card (README.md at d61c1c16)"
+  },
+  {
+   "quote": "One epoch on a mixture of public decision datasets (intent detection, ticket routing, topic classification, sentiment, emotion, moderation, NLI, ...",
+   "source": "Mapika/decider-2b model card (README.md at d61c1c16)"
+  },
+  {
+   "quote": "Full label sets cost accuracy against 10 sampled options: CLINC 151-way 0.88 against 0.98",
+   "source": "Mapika/decider-2b model card (README.md at d61c1c16)"
+  },
+  {
+   "quote": "\"temperature\": 1.3",
+   "source": "Mapika/decider-2b decider_config.json (d61c1c16)"
+  },
+  {
+   "quote": "tr, ev = _split_pair(\"clinc/clinc_oos\", \"plus\", \"train\", \"test\")",
+   "source": "Mapika/decider decider/data/core.py (main, a5120cc)"
+  },
+  {
+   "quote": "tr, ev = _split_pair(\"dair-ai/emotion\", \"split\", \"train\", \"test\")",
+   "source": "Mapika/decider decider/data/core.py (main, a5120cc)"
+  },
+  {
+   "quote": "TRAIN_CAP = 20000     # per task / EVAL_CAP = 1500       # per task / SEED = 0; _sub(ds, n): ds.shuffle(seed=seed).select(range(n))",
+   "source": "Mapika/decider decider/data/core.py (main, a5120cc)"
+  },
+  {
+   "quote": "Post-hoc temperature is fitted on in-task data and tested on held-out tasks.",
+   "source": "Mapika/decider docs/HISTORY.md (main, a5120cc)"
+  },
+  {
+   "quote": "# temperature scaling: fit on in-task eval sets, report held-out",
+   "source": "Mapika/decider decider/report.py (main, a5120cc)"
+  },
+  {
+   "note": "formats() builds this component from the training examples only (by_task is filled from `train`)",
+   "quote": "wide        full native label sets (CLINC 151, Banking 77, ...)",
+   "source": "Mapika/decider decider/data/mixture.py (main, a5120cc)"
+  },
+  {
+   "quote": "Adapted from `decider-2b` (Apache-2.0) against a strictly proper scoring rule",
+   "source": "flock-io/this-that-model-1.0 model card"
+  },
+  {
+   "note": "the card's datasets field names only limberc/this-that-spatial-bench; no other training or temperature-fitting data is named and the decider-2b version adapted is not stated",
+   "quote": "base_model: decider-2b",
+   "source": "flock-io/this-that-model-1.0 model card (YAML)"
+  },
+  {
+   "quote": "The whole adaptation is a single scalar λ applied as θ(λ) = θ₀ + λΔ",
+   "source": "flock-io/this-that-model-1.0 model card"
+  },
+  {
+   "note": "Neither card uses the words 'evaluation half'; the decider-2b card says the temperature was fitted on in-task data, which it defines as the test splits of the training datasets.",
+   "quote": null,
+   "source": "note"
+  }
+ ],
+ "conclusion": "Training exposure: decider-2b trains on clinc/clinc_oos plus train and dair-ai/emotion split train. Of our 800 D2 test texts, 0 occur verbatim, 5 after normalization, 20 as character 5-gram near-duplicates (Jaccard >= 0.8) and 12 as token near-duplicates (Jaccard >= 0.9) in that training split. Temperature-fitting exposure: decider-2b's card defines in-task data as the test splits of its training datasets and fits one temperature on it; the published loader keeps 1500 rows of clinc_oos plus test (shuffle seed 0). Rebuilding that subsample puts 201 of our 800 items inside it (160 in-scope, 41 out-of-scope; 218.2 expected by chance). This is established for the public loader code as released (core.py unchanged across its three commits) and the cached clinc_oos revision, and the label of every item inside agrees with its CLINC label. It cannot be established from public material that the released v10 temperature (1.3 in decider_config.json) was fitted with this exact code state and dataset revision, because the fitting run and its row list are not published. The fit pooled the in-task evaluation sets of all tasks (67 in the rebuilt regression set, at most 1500 rows each) with label sets sub-sampled to 10 options, so our items would enter one scalar temperature as a small share of the pool. The exposure concerns the stored temperature only: D2 accuracy does not depend on it, and the benchmark's scaled ECE for D2 refits T by five-fold cross-fitting on our items. this-that-model-1.0 is adapted from decider-2b and inherits the training exposure of the parent version it started from; its card names no other data, and it serves temperature 1.0 (no stored temperature), so decider-2b's temperature-fitting exposure does not carry over to its served probabilities. Neither training mixture is published on the hub (Mapika publishes only Mapika/decision-index-results); the one dataset this-that names, limberc/this-that-spatial-bench, is a grid and game-state benchmark with 0 D2 and 0 emotion text matches. Emotion: 30 of 498 d3_emotion items are verbatim in dair-ai/emotion split train (decider-2b training data), 32 counting character near-duplicates; 1 of 498 are in decider-2b's emotion temperature-fitting rows. All 498 item ids are row indices of dair-ai/emotion unsplit, the source of Ziems et al.'s test file, which is why a few items also fall in the split train, validation and test sets.",
+ "counts": {
+  "data_full/oos_test": {
+   "exact": 200,
+   "exact_in_scope": 0,
+   "exact_oos": 200,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you tell me how to solve simple algebraic equations with one variable",
+     "closest_token": "can you tell me how to solve simple algebraic equations with one variable",
+     "exact": true,
+     "item_id": "oos_0002",
+     "normalized": true,
+     "text": "can you tell me how to solve simple algebraic equations with one variable",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "is the earth flat",
+     "closest_token": "is the earth flat",
+     "exact": true,
+     "item_id": "oos_0016",
+     "normalized": true,
+     "text": "is the earth flat",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "has there been anything breaking this afternoon",
+     "closest_token": "has there been anything breaking this afternoon",
+     "exact": true,
+     "item_id": "oos_0021",
+     "normalized": true,
+     "text": "has there been anything breaking this afternoon",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "what are yahoo's top stories right now",
+     "closest_token": "what are yahoo's top stories right now",
+     "exact": true,
+     "item_id": "oos_0022",
+     "normalized": true,
+     "text": "what are yahoo's top stories right now",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you auto-pilot the car",
+     "closest_token": "can you auto-pilot the car",
+     "exact": true,
+     "item_id": "oos_0026",
+     "normalized": true,
+     "text": "can you auto-pilot the car",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 200,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 200,
+   "near_dup_tok": 200,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 200,
+   "normalized": 200,
+   "normalized_in_scope": 0,
+   "normalized_oos": 200
+  },
+  "data_full/oos_test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_full/oos_train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_full/oos_val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_full/test": {
+   "exact": 600,
+   "exact_in_scope": 600,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can i do a reservation at sammy's crab shack",
+     "closest_token": "can i do a reservation at sammy's crab shack",
+     "exact": true,
+     "item_id": "accept_reservations_00",
+     "normalized": true,
+     "text": "can i do a reservation at sammy's crab shack",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "tell me if taco bell takes reservations",
+     "closest_token": "tell me if taco bell takes reservations",
+     "exact": true,
+     "item_id": "accept_reservations_21",
+     "normalized": true,
+     "text": "tell me if taco bell takes reservations",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "will we have to make reservations for roca",
+     "closest_token": "will we have to make reservations for roca",
+     "exact": true,
+     "item_id": "accept_reservations_26",
+     "normalized": true,
+     "text": "will we have to make reservations for roca",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "eleven madison park takes reservations right",
+     "closest_token": "eleven madison park takes reservations right",
+     "exact": true,
+     "item_id": "accept_reservations_29",
+     "normalized": true,
+     "text": "eleven madison park takes reservations right",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you help me unlock my bank account",
+     "closest_token": "can you help me unlock my bank account",
+     "exact": true,
+     "item_id": "account_blocked_04",
+     "normalized": true,
+     "text": "can you help me unlock my bank account",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 600,
+   "near_dup_char_in_scope": 600,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 600,
+   "near_dup_tok_in_scope": 600,
+   "near_dup_tok_oos": 0,
+   "normalized": 600,
+   "normalized_in_scope": 600,
+   "normalized_oos": 0
+  },
+  "data_full/test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.72,
+     "closest_char5": "how much cash do i have in my bank accounts",
+     "closest_token": "how much cash do i have in my bank accounts",
+     "exact": false,
+     "item_id": "balance_17",
+     "normalized": false,
+     "text": "how much cash do i have in my various bank accounts",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.855,
+     "closest_char5": "i really need you to find me a hotel with good reviews in phoenix",
+     "closest_token": "i really need you to find me a hotel with good reviews in phoenix",
+     "exact": false,
+     "item_id": "book_hotel_10",
+     "normalized": false,
+     "text": "i need you to find me a hotel with good reviews in phoenix",
+     "token_jaccard": 0.929
+    },
+    {
+     "char5_jaccard": 0.841,
+     "closest_char5": "i have to cancel my reservation after all, please",
+     "closest_token": "i have to cancel my reservation after all, please",
+     "exact": false,
+     "item_id": "cancel_reservation_19",
+     "normalized": false,
+     "text": "i have to cancel my reservation after all",
+     "token_jaccard": 0.889
+    },
+    {
+     "char5_jaccard": 0.837,
+     "closest_char5": "cancel my reservation for dinner tonight",
+     "closest_token": "cancel my reservation for dinner tonight",
+     "exact": false,
+     "item_id": "cancel_reservation_20",
+     "normalized": false,
+     "text": "cancel my reservation for dinner tonight, please",
+     "token_jaccard": 0.857
+    },
+    {
+     "char5_jaccard": 0.857,
+     "closest_char5": "cancel my reservation for dinner this saturday",
+     "closest_token": "cancel my reservation for dinner this saturday",
+     "exact": false,
+     "item_id": "cancel_reservation_23",
+     "normalized": false,
+     "text": "cancel my reservation for dinner this saturday, please",
+     "token_jaccard": 0.875
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 14,
+   "near_dup_char_in_scope": 14,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 13,
+   "near_dup_tok_in_scope": 13,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_full/train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.774,
+     "closest_char5": "what is the status of my application for the credit card",
+     "closest_token": "what is the status of my application for the credit card",
+     "exact": false,
+     "item_id": "application_status_01",
+     "normalized": false,
+     "text": "what exactly is the status of my application for the credit card",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.811,
+     "closest_char5": "could you please cancel my reservation for 5 at red robin",
+     "closest_token": "could you please cancel my reservation for 5 at red robin",
+     "exact": false,
+     "item_id": "cancel_reservation_13",
+     "normalized": false,
+     "text": "please cancel my reservation for 5 at red robin",
+     "token_jaccard": 0.818
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is the carry-on policy say for flights on delta airlines",
+     "closest_token": "what is the carry-on policy say for flights on delta airlines",
+     "exact": false,
+     "item_id": "carry_on_13",
+     "normalized": false,
+     "text": "what is the carry-on policy for flights on delta airlines",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.548,
+     "closest_char5": "where am i located currently",
+     "closest_token": "where am i located currently",
+     "exact": false,
+     "item_id": "current_location_10",
+     "normalized": false,
+     "text": "where am i currently located",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.897,
+     "closest_char5": "15 days from today, what will the date be",
+     "closest_token": "15 days from today, what will the date be",
+     "exact": false,
+     "item_id": "date_16",
+     "normalized": false,
+     "text": "in 5 days from today, what will the date be",
+     "token_jaccard": 0.727
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 20,
+   "near_dup_char_in_scope": 20,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 12,
+   "near_dup_tok_in_scope": 12,
+   "near_dup_tok_oos": 0,
+   "normalized": 5,
+   "normalized_in_scope": 5,
+   "normalized_oos": 0
+  },
+  "data_full/val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "hey what's up",
+     "closest_token": "hey what's up",
+     "exact": false,
+     "item_id": "greeting_10",
+     "normalized": true,
+     "text": "hey, what's up",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.741,
+     "closest_char5": "how much pto have i used",
+     "closest_token": "how much pto have i used so far",
+     "exact": false,
+     "item_id": "pto_used_27",
+     "normalized": false,
+     "text": "so far how much pto have i used",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is your given name",
+     "closest_token": "what is your given name",
+     "exact": false,
+     "item_id": "what_is_your_name_24",
+     "normalized": false,
+     "text": "ai, what is your given name",
+     "token_jaccard": 0.833
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 2,
+   "near_dup_char_in_scope": 2,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 2,
+   "near_dup_tok_in_scope": 2,
+   "near_dup_tok_oos": 0,
+   "normalized": 1,
+   "normalized_in_scope": 1,
+   "normalized_oos": 0
+  },
+  "data_imbalanced/oos_test": {
+   "exact": 200,
+   "exact_in_scope": 0,
+   "exact_oos": 200,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you tell me how to solve simple algebraic equations with one variable",
+     "closest_token": "can you tell me how to solve simple algebraic equations with one variable",
+     "exact": true,
+     "item_id": "oos_0002",
+     "normalized": true,
+     "text": "can you tell me how to solve simple algebraic equations with one variable",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "is the earth flat",
+     "closest_token": "is the earth flat",
+     "exact": true,
+     "item_id": "oos_0016",
+     "normalized": true,
+     "text": "is the earth flat",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "has there been anything breaking this afternoon",
+     "closest_token": "has there been anything breaking this afternoon",
+     "exact": true,
+     "item_id": "oos_0021",
+     "normalized": true,
+     "text": "has there been anything breaking this afternoon",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "what are yahoo's top stories right now",
+     "closest_token": "what are yahoo's top stories right now",
+     "exact": true,
+     "item_id": "oos_0022",
+     "normalized": true,
+     "text": "what are yahoo's top stories right now",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you auto-pilot the car",
+     "closest_token": "can you auto-pilot the car",
+     "exact": true,
+     "item_id": "oos_0026",
+     "normalized": true,
+     "text": "can you auto-pilot the car",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 200,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 200,
+   "near_dup_tok": 200,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 200,
+   "normalized": 200,
+   "normalized_in_scope": 0,
+   "normalized_oos": 200
+  },
+  "data_imbalanced/oos_test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_imbalanced/oos_train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_imbalanced/oos_val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_imbalanced/test": {
+   "exact": 600,
+   "exact_in_scope": 600,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can i do a reservation at sammy's crab shack",
+     "closest_token": "can i do a reservation at sammy's crab shack",
+     "exact": true,
+     "item_id": "accept_reservations_00",
+     "normalized": true,
+     "text": "can i do a reservation at sammy's crab shack",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "tell me if taco bell takes reservations",
+     "closest_token": "tell me if taco bell takes reservations",
+     "exact": true,
+     "item_id": "accept_reservations_21",
+     "normalized": true,
+     "text": "tell me if taco bell takes reservations",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "will we have to make reservations for roca",
+     "closest_token": "will we have to make reservations for roca",
+     "exact": true,
+     "item_id": "accept_reservations_26",
+     "normalized": true,
+     "text": "will we have to make reservations for roca",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "eleven madison park takes reservations right",
+     "closest_token": "eleven madison park takes reservations right",
+     "exact": true,
+     "item_id": "accept_reservations_29",
+     "normalized": true,
+     "text": "eleven madison park takes reservations right",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you help me unlock my bank account",
+     "closest_token": "can you help me unlock my bank account",
+     "exact": true,
+     "item_id": "account_blocked_04",
+     "normalized": true,
+     "text": "can you help me unlock my bank account",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 600,
+   "near_dup_char_in_scope": 600,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 600,
+   "near_dup_tok_in_scope": 600,
+   "near_dup_tok_oos": 0,
+   "normalized": 600,
+   "normalized_in_scope": 600,
+   "normalized_oos": 0
+  },
+  "data_imbalanced/test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.72,
+     "closest_char5": "how much cash do i have in my bank accounts",
+     "closest_token": "how much cash do i have in my bank accounts",
+     "exact": false,
+     "item_id": "balance_17",
+     "normalized": false,
+     "text": "how much cash do i have in my various bank accounts",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.855,
+     "closest_char5": "i really need you to find me a hotel with good reviews in phoenix",
+     "closest_token": "i really need you to find me a hotel with good reviews in phoenix",
+     "exact": false,
+     "item_id": "book_hotel_10",
+     "normalized": false,
+     "text": "i need you to find me a hotel with good reviews in phoenix",
+     "token_jaccard": 0.929
+    },
+    {
+     "char5_jaccard": 0.841,
+     "closest_char5": "i have to cancel my reservation after all, please",
+     "closest_token": "i have to cancel my reservation after all, please",
+     "exact": false,
+     "item_id": "cancel_reservation_19",
+     "normalized": false,
+     "text": "i have to cancel my reservation after all",
+     "token_jaccard": 0.889
+    },
+    {
+     "char5_jaccard": 0.837,
+     "closest_char5": "cancel my reservation for dinner tonight",
+     "closest_token": "cancel my reservation for dinner tonight",
+     "exact": false,
+     "item_id": "cancel_reservation_20",
+     "normalized": false,
+     "text": "cancel my reservation for dinner tonight, please",
+     "token_jaccard": 0.857
+    },
+    {
+     "char5_jaccard": 0.857,
+     "closest_char5": "cancel my reservation for dinner this saturday",
+     "closest_token": "cancel my reservation for dinner this saturday",
+     "exact": false,
+     "item_id": "cancel_reservation_23",
+     "normalized": false,
+     "text": "cancel my reservation for dinner this saturday, please",
+     "token_jaccard": 0.875
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 14,
+   "near_dup_char_in_scope": 14,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 13,
+   "near_dup_tok_in_scope": 13,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_imbalanced/train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.811,
+     "closest_char5": "could you please cancel my reservation for 5 at red robin",
+     "closest_token": "could you please cancel my reservation for 5 at red robin",
+     "exact": false,
+     "item_id": "cancel_reservation_13",
+     "normalized": false,
+     "text": "please cancel my reservation for 5 at red robin",
+     "token_jaccard": 0.818
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is the carry-on policy say for flights on delta airlines",
+     "closest_token": "what is the carry-on policy say for flights on delta airlines",
+     "exact": false,
+     "item_id": "carry_on_13",
+     "normalized": false,
+     "text": "what is the carry-on policy for flights on delta airlines",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.548,
+     "closest_char5": "where am i located currently",
+     "closest_token": "where am i located currently",
+     "exact": false,
+     "item_id": "current_location_10",
+     "normalized": false,
+     "text": "where am i currently located",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "goodbye!",
+     "closest_token": "goodbye!",
+     "exact": false,
+     "item_id": "goodbye_12",
+     "normalized": true,
+     "text": "goodbye",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "hey what's up",
+     "closest_token": "hey what's up",
+     "exact": false,
+     "item_id": "greeting_10",
+     "normalized": true,
+     "text": "hey, what's up",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 13,
+   "near_dup_char_in_scope": 13,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 11,
+   "near_dup_tok_in_scope": 11,
+   "near_dup_tok_oos": 0,
+   "normalized": 5,
+   "normalized_in_scope": 5,
+   "normalized_oos": 0
+  },
+  "data_imbalanced/val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "hey what's up",
+     "closest_token": "hey what's up",
+     "exact": false,
+     "item_id": "greeting_10",
+     "normalized": true,
+     "text": "hey, what's up",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.741,
+     "closest_char5": "how much pto have i used",
+     "closest_token": "how much pto have i used so far",
+     "exact": false,
+     "item_id": "pto_used_27",
+     "normalized": false,
+     "text": "so far how much pto have i used",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is your given name",
+     "closest_token": "what is your given name",
+     "exact": false,
+     "item_id": "what_is_your_name_24",
+     "normalized": false,
+     "text": "ai, what is your given name",
+     "token_jaccard": 0.833
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 2,
+   "near_dup_char_in_scope": 2,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 2,
+   "near_dup_tok_in_scope": 2,
+   "near_dup_tok_oos": 0,
+   "normalized": 1,
+   "normalized_in_scope": 1,
+   "normalized_oos": 0
+  },
+  "data_oos_plus/oos_test": {
+   "exact": 200,
+   "exact_in_scope": 0,
+   "exact_oos": 200,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you tell me how to solve simple algebraic equations with one variable",
+     "closest_token": "can you tell me how to solve simple algebraic equations with one variable",
+     "exact": true,
+     "item_id": "oos_0002",
+     "normalized": true,
+     "text": "can you tell me how to solve simple algebraic equations with one variable",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "is the earth flat",
+     "closest_token": "is the earth flat",
+     "exact": true,
+     "item_id": "oos_0016",
+     "normalized": true,
+     "text": "is the earth flat",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "has there been anything breaking this afternoon",
+     "closest_token": "has there been anything breaking this afternoon",
+     "exact": true,
+     "item_id": "oos_0021",
+     "normalized": true,
+     "text": "has there been anything breaking this afternoon",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "what are yahoo's top stories right now",
+     "closest_token": "what are yahoo's top stories right now",
+     "exact": true,
+     "item_id": "oos_0022",
+     "normalized": true,
+     "text": "what are yahoo's top stories right now",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you auto-pilot the car",
+     "closest_token": "can you auto-pilot the car",
+     "exact": true,
+     "item_id": "oos_0026",
+     "normalized": true,
+     "text": "can you auto-pilot the car",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 200,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 200,
+   "near_dup_tok": 200,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 200,
+   "normalized": 200,
+   "normalized_in_scope": 0,
+   "normalized_oos": 200
+  },
+  "data_oos_plus/oos_test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_oos_plus/oos_train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_oos_plus/oos_val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_oos_plus/test": {
+   "exact": 600,
+   "exact_in_scope": 600,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can i do a reservation at sammy's crab shack",
+     "closest_token": "can i do a reservation at sammy's crab shack",
+     "exact": true,
+     "item_id": "accept_reservations_00",
+     "normalized": true,
+     "text": "can i do a reservation at sammy's crab shack",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "tell me if taco bell takes reservations",
+     "closest_token": "tell me if taco bell takes reservations",
+     "exact": true,
+     "item_id": "accept_reservations_21",
+     "normalized": true,
+     "text": "tell me if taco bell takes reservations",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "will we have to make reservations for roca",
+     "closest_token": "will we have to make reservations for roca",
+     "exact": true,
+     "item_id": "accept_reservations_26",
+     "normalized": true,
+     "text": "will we have to make reservations for roca",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "eleven madison park takes reservations right",
+     "closest_token": "eleven madison park takes reservations right",
+     "exact": true,
+     "item_id": "accept_reservations_29",
+     "normalized": true,
+     "text": "eleven madison park takes reservations right",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you help me unlock my bank account",
+     "closest_token": "can you help me unlock my bank account",
+     "exact": true,
+     "item_id": "account_blocked_04",
+     "normalized": true,
+     "text": "can you help me unlock my bank account",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 600,
+   "near_dup_char_in_scope": 600,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 600,
+   "near_dup_tok_in_scope": 600,
+   "near_dup_tok_oos": 0,
+   "normalized": 600,
+   "normalized_in_scope": 600,
+   "normalized_oos": 0
+  },
+  "data_oos_plus/test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.72,
+     "closest_char5": "how much cash do i have in my bank accounts",
+     "closest_token": "how much cash do i have in my bank accounts",
+     "exact": false,
+     "item_id": "balance_17",
+     "normalized": false,
+     "text": "how much cash do i have in my various bank accounts",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.855,
+     "closest_char5": "i really need you to find me a hotel with good reviews in phoenix",
+     "closest_token": "i really need you to find me a hotel with good reviews in phoenix",
+     "exact": false,
+     "item_id": "book_hotel_10",
+     "normalized": false,
+     "text": "i need you to find me a hotel with good reviews in phoenix",
+     "token_jaccard": 0.929
+    },
+    {
+     "char5_jaccard": 0.841,
+     "closest_char5": "i have to cancel my reservation after all, please",
+     "closest_token": "i have to cancel my reservation after all, please",
+     "exact": false,
+     "item_id": "cancel_reservation_19",
+     "normalized": false,
+     "text": "i have to cancel my reservation after all",
+     "token_jaccard": 0.889
+    },
+    {
+     "char5_jaccard": 0.837,
+     "closest_char5": "cancel my reservation for dinner tonight",
+     "closest_token": "cancel my reservation for dinner tonight",
+     "exact": false,
+     "item_id": "cancel_reservation_20",
+     "normalized": false,
+     "text": "cancel my reservation for dinner tonight, please",
+     "token_jaccard": 0.857
+    },
+    {
+     "char5_jaccard": 0.857,
+     "closest_char5": "cancel my reservation for dinner this saturday",
+     "closest_token": "cancel my reservation for dinner this saturday",
+     "exact": false,
+     "item_id": "cancel_reservation_23",
+     "normalized": false,
+     "text": "cancel my reservation for dinner this saturday, please",
+     "token_jaccard": 0.875
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 14,
+   "near_dup_char_in_scope": 14,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 13,
+   "near_dup_tok_in_scope": 13,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_oos_plus/train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.774,
+     "closest_char5": "what is the status of my application for the credit card",
+     "closest_token": "what is the status of my application for the credit card",
+     "exact": false,
+     "item_id": "application_status_01",
+     "normalized": false,
+     "text": "what exactly is the status of my application for the credit card",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.811,
+     "closest_char5": "could you please cancel my reservation for 5 at red robin",
+     "closest_token": "could you please cancel my reservation for 5 at red robin",
+     "exact": false,
+     "item_id": "cancel_reservation_13",
+     "normalized": false,
+     "text": "please cancel my reservation for 5 at red robin",
+     "token_jaccard": 0.818
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is the carry-on policy say for flights on delta airlines",
+     "closest_token": "what is the carry-on policy say for flights on delta airlines",
+     "exact": false,
+     "item_id": "carry_on_13",
+     "normalized": false,
+     "text": "what is the carry-on policy for flights on delta airlines",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.548,
+     "closest_char5": "where am i located currently",
+     "closest_token": "where am i located currently",
+     "exact": false,
+     "item_id": "current_location_10",
+     "normalized": false,
+     "text": "where am i currently located",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.897,
+     "closest_char5": "15 days from today, what will the date be",
+     "closest_token": "15 days from today, what will the date be",
+     "exact": false,
+     "item_id": "date_16",
+     "normalized": false,
+     "text": "in 5 days from today, what will the date be",
+     "token_jaccard": 0.727
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 20,
+   "near_dup_char_in_scope": 20,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 12,
+   "near_dup_tok_in_scope": 12,
+   "near_dup_tok_oos": 0,
+   "normalized": 5,
+   "normalized_in_scope": 5,
+   "normalized_oos": 0
+  },
+  "data_oos_plus/val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "hey what's up",
+     "closest_token": "hey what's up",
+     "exact": false,
+     "item_id": "greeting_10",
+     "normalized": true,
+     "text": "hey, what's up",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.741,
+     "closest_char5": "how much pto have i used",
+     "closest_token": "how much pto have i used so far",
+     "exact": false,
+     "item_id": "pto_used_27",
+     "normalized": false,
+     "text": "so far how much pto have i used",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is your given name",
+     "closest_token": "what is your given name",
+     "exact": false,
+     "item_id": "what_is_your_name_24",
+     "normalized": false,
+     "text": "ai, what is your given name",
+     "token_jaccard": 0.833
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 2,
+   "near_dup_char_in_scope": 2,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 2,
+   "near_dup_tok_in_scope": 2,
+   "near_dup_tok_oos": 0,
+   "normalized": 1,
+   "normalized_in_scope": 1,
+   "normalized_oos": 0
+  },
+  "data_small/oos_test": {
+   "exact": 200,
+   "exact_in_scope": 0,
+   "exact_oos": 200,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you tell me how to solve simple algebraic equations with one variable",
+     "closest_token": "can you tell me how to solve simple algebraic equations with one variable",
+     "exact": true,
+     "item_id": "oos_0002",
+     "normalized": true,
+     "text": "can you tell me how to solve simple algebraic equations with one variable",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "is the earth flat",
+     "closest_token": "is the earth flat",
+     "exact": true,
+     "item_id": "oos_0016",
+     "normalized": true,
+     "text": "is the earth flat",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "has there been anything breaking this afternoon",
+     "closest_token": "has there been anything breaking this afternoon",
+     "exact": true,
+     "item_id": "oos_0021",
+     "normalized": true,
+     "text": "has there been anything breaking this afternoon",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "what are yahoo's top stories right now",
+     "closest_token": "what are yahoo's top stories right now",
+     "exact": true,
+     "item_id": "oos_0022",
+     "normalized": true,
+     "text": "what are yahoo's top stories right now",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you auto-pilot the car",
+     "closest_token": "can you auto-pilot the car",
+     "exact": true,
+     "item_id": "oos_0026",
+     "normalized": true,
+     "text": "can you auto-pilot the car",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 200,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 200,
+   "near_dup_tok": 200,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 200,
+   "normalized": 200,
+   "normalized_in_scope": 0,
+   "normalized_oos": 200
+  },
+  "data_small/oos_test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_small/oos_train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_small/oos_val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [],
+   "n_items": 800,
+   "near_dup_char": 0,
+   "near_dup_char_in_scope": 0,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 0,
+   "near_dup_tok_in_scope": 0,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_small/test": {
+   "exact": 600,
+   "exact_in_scope": 600,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can i do a reservation at sammy's crab shack",
+     "closest_token": "can i do a reservation at sammy's crab shack",
+     "exact": true,
+     "item_id": "accept_reservations_00",
+     "normalized": true,
+     "text": "can i do a reservation at sammy's crab shack",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "tell me if taco bell takes reservations",
+     "closest_token": "tell me if taco bell takes reservations",
+     "exact": true,
+     "item_id": "accept_reservations_21",
+     "normalized": true,
+     "text": "tell me if taco bell takes reservations",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "will we have to make reservations for roca",
+     "closest_token": "will we have to make reservations for roca",
+     "exact": true,
+     "item_id": "accept_reservations_26",
+     "normalized": true,
+     "text": "will we have to make reservations for roca",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "eleven madison park takes reservations right",
+     "closest_token": "eleven madison park takes reservations right",
+     "exact": true,
+     "item_id": "accept_reservations_29",
+     "normalized": true,
+     "text": "eleven madison park takes reservations right",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you help me unlock my bank account",
+     "closest_token": "can you help me unlock my bank account",
+     "exact": true,
+     "item_id": "account_blocked_04",
+     "normalized": true,
+     "text": "can you help me unlock my bank account",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 600,
+   "near_dup_char_in_scope": 600,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 600,
+   "near_dup_tok_in_scope": 600,
+   "near_dup_tok_oos": 0,
+   "normalized": 600,
+   "normalized_in_scope": 600,
+   "normalized_oos": 0
+  },
+  "data_small/test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.72,
+     "closest_char5": "how much cash do i have in my bank accounts",
+     "closest_token": "how much cash do i have in my bank accounts",
+     "exact": false,
+     "item_id": "balance_17",
+     "normalized": false,
+     "text": "how much cash do i have in my various bank accounts",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.855,
+     "closest_char5": "i really need you to find me a hotel with good reviews in phoenix",
+     "closest_token": "i really need you to find me a hotel with good reviews in phoenix",
+     "exact": false,
+     "item_id": "book_hotel_10",
+     "normalized": false,
+     "text": "i need you to find me a hotel with good reviews in phoenix",
+     "token_jaccard": 0.929
+    },
+    {
+     "char5_jaccard": 0.841,
+     "closest_char5": "i have to cancel my reservation after all, please",
+     "closest_token": "i have to cancel my reservation after all, please",
+     "exact": false,
+     "item_id": "cancel_reservation_19",
+     "normalized": false,
+     "text": "i have to cancel my reservation after all",
+     "token_jaccard": 0.889
+    },
+    {
+     "char5_jaccard": 0.837,
+     "closest_char5": "cancel my reservation for dinner tonight",
+     "closest_token": "cancel my reservation for dinner tonight",
+     "exact": false,
+     "item_id": "cancel_reservation_20",
+     "normalized": false,
+     "text": "cancel my reservation for dinner tonight, please",
+     "token_jaccard": 0.857
+    },
+    {
+     "char5_jaccard": 0.857,
+     "closest_char5": "cancel my reservation for dinner this saturday",
+     "closest_token": "cancel my reservation for dinner this saturday",
+     "exact": false,
+     "item_id": "cancel_reservation_23",
+     "normalized": false,
+     "text": "cancel my reservation for dinner this saturday, please",
+     "token_jaccard": 0.875
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 14,
+   "near_dup_char_in_scope": 14,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 13,
+   "near_dup_tok_in_scope": 13,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "data_small/train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.774,
+     "closest_char5": "what is the status of my application for the credit card",
+     "closest_token": "what is the status of my application for the credit card",
+     "exact": false,
+     "item_id": "application_status_01",
+     "normalized": false,
+     "text": "what exactly is the status of my application for the credit card",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.811,
+     "closest_char5": "could you please cancel my reservation for 5 at red robin",
+     "closest_token": "could you please cancel my reservation for 5 at red robin",
+     "exact": false,
+     "item_id": "cancel_reservation_13",
+     "normalized": false,
+     "text": "please cancel my reservation for 5 at red robin",
+     "token_jaccard": 0.818
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is the carry-on policy say for flights on delta airlines",
+     "closest_token": "what is the carry-on policy say for flights on delta airlines",
+     "exact": false,
+     "item_id": "carry_on_13",
+     "normalized": false,
+     "text": "what is the carry-on policy for flights on delta airlines",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.548,
+     "closest_char5": "where am i located currently",
+     "closest_token": "where am i located currently",
+     "exact": false,
+     "item_id": "current_location_10",
+     "normalized": false,
+     "text": "where am i currently located",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "hey what's up",
+     "closest_token": "hey what's up",
+     "exact": false,
+     "item_id": "greeting_10",
+     "normalized": true,
+     "text": "hey, what's up",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 10,
+   "near_dup_char_in_scope": 10,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 9,
+   "near_dup_tok_in_scope": 9,
+   "near_dup_tok_oos": 0,
+   "normalized": 3,
+   "normalized_in_scope": 3,
+   "normalized_oos": 0
+  },
+  "data_small/val": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "hey what's up",
+     "closest_token": "hey what's up",
+     "exact": false,
+     "item_id": "greeting_10",
+     "normalized": true,
+     "text": "hey, what's up",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.741,
+     "closest_char5": "how much pto have i used",
+     "closest_token": "how much pto have i used so far",
+     "exact": false,
+     "item_id": "pto_used_27",
+     "normalized": false,
+     "text": "so far how much pto have i used",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is your given name",
+     "closest_token": "what is your given name",
+     "exact": false,
+     "item_id": "what_is_your_name_24",
+     "normalized": false,
+     "text": "ai, what is your given name",
+     "token_jaccard": 0.833
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 2,
+   "near_dup_char_in_scope": 2,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 2,
+   "near_dup_tok_in_scope": 2,
+   "near_dup_tok_oos": 0,
+   "normalized": 1,
+   "normalized_in_scope": 1,
+   "normalized_oos": 0
+  },
+  "decider_temperature_fit_rows": {
+   "exact": 201,
+   "exact_in_scope": 160,
+   "exact_oos": 41,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can i do a reservation at sammy's crab shack",
+     "closest_token": "can i do a reservation at sammy's crab shack",
+     "exact": true,
+     "item_id": "accept_reservations_00",
+     "normalized": true,
+     "text": "can i do a reservation at sammy's crab shack",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "what caused a hold on my us bank account",
+     "closest_token": "what caused a hold on my us bank account",
+     "exact": true,
+     "item_id": "account_blocked_17",
+     "normalized": true,
+     "text": "what caused a hold on my us bank account",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "has my application for my visa card gone through",
+     "closest_token": "has my application for my visa card gone through",
+     "exact": true,
+     "item_id": "application_status_27",
+     "normalized": true,
+     "text": "has my application for my visa card gone through",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "is my apr rate above average",
+     "closest_token": "is my apr rate above average",
+     "exact": true,
+     "item_id": "apr_08",
+     "normalized": true,
+     "text": "is my apr rate above average",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "what's the current apr on my credit card",
+     "closest_token": "what's the current apr on my credit card",
+     "exact": true,
+     "item_id": "apr_20",
+     "normalized": true,
+     "text": "what's the current apr on my credit card",
+     "token_jaccard": 1.0
+    }
+   ],
+   "expected_if_independent": 218.2,
+   "items_inside": 201,
+   "items_inside_in_scope": 160,
+   "items_inside_label_agrees": 201,
+   "items_inside_oos": 41,
+   "n_items": 800,
+   "n_rows": 1500,
+   "n_rows_oos": 282,
+   "near_dup_char": 206,
+   "near_dup_char_in_scope": 165,
+   "near_dup_char_oos": 41,
+   "near_dup_tok": 204,
+   "near_dup_tok_in_scope": 163,
+   "near_dup_tok_oos": 41,
+   "normalized": 201,
+   "normalized_in_scope": 160,
+   "normalized_oos": 41
+  },
+  "hf_plus/test": {
+   "exact": 800,
+   "exact_in_scope": 600,
+   "exact_oos": 200,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can i do a reservation at sammy's crab shack",
+     "closest_token": "can i do a reservation at sammy's crab shack",
+     "exact": true,
+     "item_id": "accept_reservations_00",
+     "normalized": true,
+     "text": "can i do a reservation at sammy's crab shack",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "tell me if taco bell takes reservations",
+     "closest_token": "tell me if taco bell takes reservations",
+     "exact": true,
+     "item_id": "accept_reservations_21",
+     "normalized": true,
+     "text": "tell me if taco bell takes reservations",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "will we have to make reservations for roca",
+     "closest_token": "will we have to make reservations for roca",
+     "exact": true,
+     "item_id": "accept_reservations_26",
+     "normalized": true,
+     "text": "will we have to make reservations for roca",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "eleven madison park takes reservations right",
+     "closest_token": "eleven madison park takes reservations right",
+     "exact": true,
+     "item_id": "accept_reservations_29",
+     "normalized": true,
+     "text": "eleven madison park takes reservations right",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "can you help me unlock my bank account",
+     "closest_token": "can you help me unlock my bank account",
+     "exact": true,
+     "item_id": "account_blocked_04",
+     "normalized": true,
+     "text": "can you help me unlock my bank account",
+     "token_jaccard": 1.0
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 800,
+   "near_dup_char_in_scope": 600,
+   "near_dup_char_oos": 200,
+   "near_dup_tok": 800,
+   "near_dup_tok_in_scope": 600,
+   "near_dup_tok_oos": 200,
+   "normalized": 800,
+   "normalized_in_scope": 600,
+   "normalized_oos": 200
+  },
+  "hf_plus/test_other_rows": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.72,
+     "closest_char5": "how much cash do i have in my bank accounts",
+     "closest_token": "how much cash do i have in my bank accounts",
+     "exact": false,
+     "item_id": "balance_17",
+     "normalized": false,
+     "text": "how much cash do i have in my various bank accounts",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.855,
+     "closest_char5": "i really need you to find me a hotel with good reviews in phoenix",
+     "closest_token": "i really need you to find me a hotel with good reviews in phoenix",
+     "exact": false,
+     "item_id": "book_hotel_10",
+     "normalized": false,
+     "text": "i need you to find me a hotel with good reviews in phoenix",
+     "token_jaccard": 0.929
+    },
+    {
+     "char5_jaccard": 0.841,
+     "closest_char5": "i have to cancel my reservation after all, please",
+     "closest_token": "i have to cancel my reservation after all, please",
+     "exact": false,
+     "item_id": "cancel_reservation_19",
+     "normalized": false,
+     "text": "i have to cancel my reservation after all",
+     "token_jaccard": 0.889
+    },
+    {
+     "char5_jaccard": 0.837,
+     "closest_char5": "cancel my reservation for dinner tonight",
+     "closest_token": "cancel my reservation for dinner tonight",
+     "exact": false,
+     "item_id": "cancel_reservation_20",
+     "normalized": false,
+     "text": "cancel my reservation for dinner tonight, please",
+     "token_jaccard": 0.857
+    },
+    {
+     "char5_jaccard": 0.857,
+     "closest_char5": "cancel my reservation for dinner this saturday",
+     "closest_token": "cancel my reservation for dinner this saturday",
+     "exact": false,
+     "item_id": "cancel_reservation_23",
+     "normalized": false,
+     "text": "cancel my reservation for dinner this saturday, please",
+     "token_jaccard": 0.875
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 14,
+   "near_dup_char_in_scope": 14,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 13,
+   "near_dup_tok_in_scope": 13,
+   "near_dup_tok_oos": 0,
+   "normalized": 0,
+   "normalized_in_scope": 0,
+   "normalized_oos": 0
+  },
+  "hf_plus/train": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 0.774,
+     "closest_char5": "what is the status of my application for the credit card",
+     "closest_token": "what is the status of my application for the credit card",
+     "exact": false,
+     "item_id": "application_status_01",
+     "normalized": false,
+     "text": "what exactly is the status of my application for the credit card",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.811,
+     "closest_char5": "could you please cancel my reservation for 5 at red robin",
+     "closest_token": "could you please cancel my reservation for 5 at red robin",
+     "exact": false,
+     "item_id": "cancel_reservation_13",
+     "normalized": false,
+     "text": "please cancel my reservation for 5 at red robin",
+     "token_jaccard": 0.818
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is the carry-on policy say for flights on delta airlines",
+     "closest_token": "what is the carry-on policy say for flights on delta airlines",
+     "exact": false,
+     "item_id": "carry_on_13",
+     "normalized": false,
+     "text": "what is the carry-on policy for flights on delta airlines",
+     "token_jaccard": 0.909
+    },
+    {
+     "char5_jaccard": 0.548,
+     "closest_char5": "where am i located currently",
+     "closest_token": "where am i located currently",
+     "exact": false,
+     "item_id": "current_location_10",
+     "normalized": false,
+     "text": "where am i currently located",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.897,
+     "closest_char5": "15 days from today, what will the date be",
+     "closest_token": "15 days from today, what will the date be",
+     "exact": false,
+     "item_id": "date_16",
+     "normalized": false,
+     "text": "in 5 days from today, what will the date be",
+     "token_jaccard": 0.727
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 20,
+   "near_dup_char_in_scope": 20,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 12,
+   "near_dup_tok_in_scope": 12,
+   "near_dup_tok_oos": 0,
+   "normalized": 5,
+   "normalized_in_scope": 5,
+   "normalized_oos": 0
+  },
+  "hf_plus/validation": {
+   "exact": 0,
+   "exact_in_scope": 0,
+   "exact_oos": 0,
+   "examples": [
+    {
+     "char5_jaccard": 1.0,
+     "closest_char5": "hey what's up",
+     "closest_token": "hey what's up",
+     "exact": false,
+     "item_id": "greeting_10",
+     "normalized": true,
+     "text": "hey, what's up",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.741,
+     "closest_char5": "how much pto have i used",
+     "closest_token": "how much pto have i used so far",
+     "exact": false,
+     "item_id": "pto_used_27",
+     "normalized": false,
+     "text": "so far how much pto have i used",
+     "token_jaccard": 1.0
+    },
+    {
+     "char5_jaccard": 0.864,
+     "closest_char5": "what is your given name",
+     "closest_token": "what is your given name",
+     "exact": false,
+     "item_id": "what_is_your_name_24",
+     "normalized": false,
+     "text": "ai, what is your given name",
+     "token_jaccard": 0.833
+    }
+   ],
+   "n_items": 800,
+   "near_dup_char": 2,
+   "near_dup_char_in_scope": 2,
+   "near_dup_char_oos": 0,
+   "near_dup_tok": 2,
+   "near_dup_tok_in_scope": 2,
+   "near_dup_tok_oos": 0,
+   "normalized": 1,
+   "normalized_in_scope": 1,
+   "normalized_oos": 0
+  }
+ },
+ "emotion": {
+  "counts": {
+   "decider_temperature_fit_rows": {
+    "exact": 1,
+    "examples": [
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "350559",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     }
+    ],
+    "n_items": 498,
+    "n_rows": 1500,
+    "near_dup_char": 1,
+    "near_dup_tok": 1,
+    "normalized": 1
+   },
+   "split/test": {
+    "exact": 2,
+    "examples": [
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "350559",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "197174",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     }
+    ],
+    "n_items": 498,
+    "near_dup_char": 2,
+    "near_dup_tok": 2,
+    "normalized": 2
+   },
+   "split/train": {
+    "exact": 30,
+    "examples": [
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "117737",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "62665",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 0.81,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": false,
+      "item_id": "94033",
+      "normalized": false,
+      "text": null,
+      "token_jaccard": 0.8
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "313443",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "344717",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     }
+    ],
+    "n_items": 498,
+    "near_dup_char": 32,
+    "near_dup_tok": 31,
+    "normalized": 30
+   },
+   "split/validation": {
+    "exact": 3,
+    "examples": [
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "307326",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "382245",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "243973",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     }
+    ],
+    "n_items": 498,
+    "near_dup_char": 3,
+    "near_dup_tok": 3,
+    "normalized": 3
+   },
+   "unsplit/train_other_rows": {
+    "exact": 83,
+    "examples": [
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "62665",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "262567",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "305011",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "94033",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     },
+     {
+      "char5_jaccard": 1.0,
+      "closest_char5": null,
+      "closest_token": null,
+      "exact": true,
+      "item_id": "383575",
+      "normalized": true,
+      "text": null,
+      "token_jaccard": 1.0
+     }
+    ],
+    "n_items": 498,
+    "near_dup_char": 87,
+    "near_dup_tok": 84,
+    "normalized": 83
+   }
+  },
+  "ids_are_unsplit_row_indices": "498 of 498 item ids index a row of dair-ai/emotion unsplit whose text equals the item text",
+  "items": 498,
+  "sources": {
+   "repo": "dair-ai/emotion",
+   "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+   "splits": {
+    "split/test": 2000,
+    "split/train": 16000,
+    "split/validation": 2000,
+    "unsplit/train": 416809
+   }
+  }
+ },
+ "hub_checks": {
+  "clinc/clinc_oos_head": {
+   "commit": "155b9c710419136e17307b80d0a13e68cd46b4ec",
+   "date": "2024-01-18T14:33:10+00:00",
+   "title": "Convert dataset to Parquet (#5)"
+  },
+  "dair-ai/emotion_head": {
+   "commit": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+   "date": "2024-08-08T06:10:47+00:00",
+   "title": "Convert dataset to Parquet (#12)"
+  },
+  "flock_io_hub_datasets": [
+   "flock-io/move-code-comment",
+   "flock-io/flock-off-s1-text-2-sql",
+   "flock-io/flock-off-s1-character-roleplay",
+   "flock-io/flock-off-s1-competition"
+  ],
+  "mapika_hub_datasets": [
+   "Mapika/decision-index-results"
+  ],
+  "revision_note": "the cached clinc_oos (155b9c71) and dair-ai/emotion (cab853a1) revisions are the heads of both repositories and date from 2024, before decider's code (2026-09-17), so a 2026 loader read the same row order that the rebuilt subsample uses",
+  "spatial_bench_d2_matches": 0,
+  "spatial_bench_emotion_matches": 0,
+  "spatial_bench_note": "normalized substring search of every D2 and emotion text longer than 15 characters in test.jsonl, the only data file",
+  "spatial_bench_revision": "423c49f4ad2b8d200b38e845fdf046ba6b37d46b",
+  "this_that_revision": "3d927195c4f9845efe66c5715883a7a0f42b1239",
+  "this_that_served_temperature": 1.0
+ },
+ "sources": {
+  "data_full": {
+   "splits": {
+    "oos_test": 1000,
+    "oos_train": 100,
+    "oos_val": 100,
+    "test": 4500,
+    "train": 15000,
+    "val": 3000
+   },
+   "url": "https://github.com/clinc/oos-eval/blob/828f8093932c8fe6ca7936c3d2e52903b1c523de/data/data_full.json"
+  },
+  "data_imbalanced": {
+   "splits": {
+    "oos_test": 1000,
+    "oos_train": 100,
+    "oos_val": 100,
+    "test": 4500,
+    "train": 10525,
+    "val": 3000
+   },
+   "url": "https://github.com/clinc/oos-eval/blob/828f8093932c8fe6ca7936c3d2e52903b1c523de/data/data_imbalanced.json"
+  },
+  "data_oos_plus": {
+   "splits": {
+    "oos_test": 1000,
+    "oos_train": 250,
+    "oos_val": 100,
+    "test": 4500,
+    "train": 15000,
+    "val": 3000
+   },
+   "url": "https://github.com/clinc/oos-eval/blob/828f8093932c8fe6ca7936c3d2e52903b1c523de/data/data_oos_plus.json"
+  },
+  "data_small": {
+   "splits": {
+    "oos_test": 1000,
+    "oos_train": 100,
+    "oos_val": 100,
+    "test": 4500,
+    "train": 7500,
+    "val": 3000
+   },
+   "url": "https://github.com/clinc/oos-eval/blob/828f8093932c8fe6ca7936c3d2e52903b1c523de/data/data_small.json"
+  },
+  "decider_temperature_fit_rows": {
+   "core_py_history": "three commits (81e154e3b5 2026-09-17, e3d97e5be0 2026-09-18, 751934af6f 2026-09-19); EVAL_CAP, SEED, _sub and the CLINC loader are identical in all three",
+   "corroboration": "eval_results.json in the Mapika/decider-2b snapshot d61c1c16 reports clinc_oos n = 1500, heldout = false",
+   "datasets_version_used_here": "5.0.1",
+   "decider_repo_sha_read": "a5120cce45b9ff70964fac54ea6e8c1ac5b08c7f",
+   "rule": "clinc/clinc_oos plus test, Dataset.shuffle(seed=0).select(range(1500)), as in Mapika/decider decider/data/core.py (_split_pair, _both, _sub; EVAL_CAP=1500, SEED=0)",
+   "shuffle": "Dataset.shuffle(seed) draws np.random.default_rng(seed).permutation, which is deterministic for a given row count"
+  },
+  "hf_clinc_oos_plus": {
+   "config": "plus",
+   "repo": "clinc/clinc_oos",
+   "revision": "155b9c710419136e17307b80d0a13e68cd46b4ec",
+   "splits": {
+    "test": 5500,
+    "train": 15250,
+    "validation": 3100
+   }
+  }
+ }
+}

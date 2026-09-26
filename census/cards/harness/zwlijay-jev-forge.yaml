@@ -1,0 +1,28 @@
+name: jev-forge
+repo: https://github.com/zwliJay/jev-forge
+revision_sha: 6cf0dfe3b811d623331c0cc8b1c00ff13614772e
+author: zwliJay
+created: '2026-09-19'
+access_date: '2026-09-24'
+license: NOASSERTION
+category: open_model_training
+what_it_does: An open training and inference stack for Jev-style decision models.  Train models to score
+  dynamic candidate branches from a shared prefix, with support for high-cardinality choice, calibration,
+  and fast batched inference.
+primitives_supported:
+- choice
+- score
+- noul
+models_supported:
+- Qwen3.5
+key_claims:
+- excerpt: An end-to-end toolkit for synthesizing decision data, training calibrated candidate scorers,
+    evaluating them, and serving Jev-compatible inference for interactive web decisions.** Data synthesis
+    · training + calibration · evaluation
+  verbatim: true
+- excerpt: The 0.8B and 0.6B models share the same data and evaluation protocol; Jev-1.13 is shown as
+    a separate reference arm.
+  verbatim: true
+- excerpt: ¹ The raw-backbone row is a zero-shot scoring reference on the first 200 records of each frozen
+    split; the trained and reference arms use their recorded full evaluation sets.
+  verbatim: true
