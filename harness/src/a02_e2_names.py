@@ -82,7 +82,9 @@ def retest_floor(model):
         if len(bench.available_reps(model, cond)) >= 2:
             f, n = flips(pos_prob(model, cond, 1), pos_prob(model, cond, 2))
             out[ds] = {"flips_per_100": f, "n": n, "source": f"{cond} rep1 vs rep2"}
-    if not out and len(bench.available_reps(model, "d1_neutral")) >= 2:
+    # the typed-decisions floor falls back to the d1_neutral retest subset whenever the
+    # binary D1 naming set has no repeat of its own, also when D3 repeats exist
+    if "d1" not in out and len(bench.available_reps(model, "d1_neutral")) >= 2:
         a = {(r["item_id"], r["qid"]): int(np.argmax(r["p"]))
              for r in bench.decisions(model, "d1_neutral", 1) if not np.isnan(r["p"]).any()}
         b = {(r["item_id"], r["qid"]): int(np.argmax(r["p"]))

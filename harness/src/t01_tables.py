@@ -221,7 +221,8 @@ FAMILIES = [("Hosted", ["jev-1.13.0"]),
             ("Open, encoder head", ["laya-en", "laya-ml"]),
             ("Open, decoder head", ["kev-0.8b", "kev-9b", "decider-2b", "this-that-1.0",
                                     "nimble-9b"]),
-            ("Generative comparator", ["comparator-open"])]
+            ("Generative comparator", ["comparator-open", "comparator-open2",
+                                       "comparator-open2-ll"])]
 WORDS = {2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight",
          9: "nine", 10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen"}
 
@@ -301,6 +302,8 @@ def family_rows(models, ncols, row_fn, between=None):
         ms = [m for m in members if m in models]
         if not ms:
             continue
+        if len(ms) > 1 and fam.endswith("comparator"):
+            fam += "s"
         out.append(groupspan(ncols, fam))
         for i, m in enumerate(ms):
             if between and i:
@@ -352,7 +355,7 @@ def e_t03_headline():
     """Full width. Columns grouped by dataset: D1 (accuracy, soft accuracy), D2 (accuracy,
     out-of-scope AUROC), D3 (four task accuracies, mean macro-F1). Bold is the best value
     of each column over every row."""
-    models = DECISION_MODELS + ["comparator-open"]
+    models = DECISION_MODELS + ["comparator-open", "comparator-open2", "comparator-open2-ll"]
     cols = [("acc", "doneneutral.acc"), ("soft", "doneneutral.softacc"),
             ("acc", "dtwo.acc"), ("auroc", "oos.auroc")]
     cols += [("acc", f"{cs}.acc") for _c, cs, _l in D3_TASKS] + [("f1", "dthree.macrofone")]
@@ -381,7 +384,8 @@ def e_t03_headline():
 
     def row(m):
         ms = CN.SLUG[m]
-        return [" & ".join([mname(m)] + [ecell(f"e1.{ms}.{suf}", best) for _k, suf in cols])
+        name = "\\msw{%s}%s" % (ms, COMPARATOR_ROWS[m]) if m in COMPARATOR_ROWS else mname(m)
+        return [" & ".join([name] + [ecell(f"e1.{ms}.{suf}", best) for _k, suf in cols])
                 + " \\\\"]
 
     def bl_row(name, labs):
@@ -408,8 +412,9 @@ def e_t03_headline():
               "\\tablenote{Acc.\\ is accuracy, Soft is agreement with the teacher distribution,"
               " AUROC separates in-scope from out-of-scope inputs, and F1 is the mean macro-F1"
               " of the four D3 tasks in percent. The trained classifiers use labeled data of each"
-              " task disjoint from its test items, and the decision models and the comparator use no task"
-              " training except where Section~\\ref{sec:models} states it. Bold marks the best"
+              " task disjoint from its test items, and the decision models and the comparators use no task"
+              " training except where Section~\\ref{sec:models} states it. Qwen3-14B is the"
+              " generative comparator of the other tables. Bold marks the best"
               " value in each column over all rows, with ties bolded.}"]
     return ewrite("t03_headline.tex", lines)
 
@@ -800,11 +805,19 @@ def e_t11_paired():
     """Paired accuracy differences with Jev (rv.pd): each model minus Jev in points on
     identical decisions, with the paired cluster bootstrap interval beneath. Bold where the
     Holm-adjusted p value, at printed precision, is below HOLM_ALPHA."""
-    models = [m for m in DECISION_MODELS if m != "jev-1.13.0"] + ["comparator-open"]
+    models = ([m for m in DECISION_MODELS if m != "jev-1.13.0"]
+              + ["comparator-open", "comparator-open2", "comparator-open2-ll"])
+
+    def pref(m, cs):
+        # the second comparator's tests come from a16 (cp.*), a family of their own
+        if m in ("comparator-open2", "comparator-open2-ll"):
+            return f"cp.{cs}.{CN.SLUG[m]}"
+        return f"rv.pd.{CN.SLUG[m]}.{cs}"
+
     sig = set()
     for m in models:
         for cs, _l in TASK_COLS:
-            p = f"rv.pd.{CN.SLUG[m]}.{cs}"
+            p = pref(m, cs)
             h = printed(f"{p}.holm")
             if h is not None and h < HOLM_ALPHA:
                 sig.add(f"{p}.diff")
@@ -812,10 +825,13 @@ def e_t11_paired():
 
     def row(m):
         ms = CN.SLUG[m]
-        cells = [mname(m)]
+        cells = ["\\msw{%s}%s" % (ms, COMPARATOR_ROWS[m]) if m in COMPARATOR_ROWS else mname(m)]
         for cs, _l in TASK_COLS:
-            p = f"rv.pd.{ms}.{cs}"
-            cells.append(stack(ecell(f"{p}.diff", sig), f"{p}.diff"))
+            p = pref(m, cs)
+            lo = "lo" if p.startswith("cp.") else "difflo"
+            hi = "hi" if p.startswith("cp.") else "diffhi"
+            cells.append(stack(ecell(f"{p}.diff", sig), f"{p}.", lo, hi)
+                         if p.startswith("cp.") else stack(ecell(f"{p}.diff", sig), f"{p}.diff"))
         return [" & ".join(cells) + " \\\\"]
 
     spec = colspec([("P", 0.22)] + [("N", 0.13)] * 6)
@@ -835,8 +851,66 @@ def e_t11_paired():
               " identical decisions in percentage points, with its paired cluster bootstrap"
               " interval at \\num{p.boot.level} percent over \\num{p.boot.pairedreps} replicates"
               " beneath. Bold marks a difference that is significant after Holm correction"
-              " across the models of each dataset at the five percent level.}"]
+              " across the models of each dataset at the five percent level, where the two"
+              " Qwen3.6-27B readouts form a family of their own.}"]
     return ewrite("t11_paired.tex", lines)
+
+
+COMPARATOR_ROWS = {"comparator-open": "Qwen3-14B, verbal",
+                   "comparator-open2": "Qwen3.6-27B, verbal",
+                   "comparator-open2-ll": "Qwen3.6-27B, likelihood"}
+
+# decision model -> (backbone slug, backbone name), following bench.BACKBONE_OF
+BACKBONE_ROWS = [("kev-0.8b", "bbsmallbase", "Qwen3.5-0.8B-Base"),
+                 ("kev-9b", "bbninebase", "Qwen3.5-9B-Base"),
+                 ("nimble-9b", "bbnine", "Qwen3.5-9B"),
+                 ("decider-2b", "bbtwobase", "Qwen3.5-2B-Base"),
+                 ("this-that-1.0", "bbtwobase", "Qwen3.5-2B-Base")]
+
+
+def e_t17_backbones():
+    """Appendix. Each open decision model with a decoder head against the untuned backbone
+    it adapts (a15, bb.*): the backbone's accuracy under option-key likelihood scoring and
+    the paired difference of the decision model in points, with the interval beneath, on D1,
+    D2 and emotion, and the flips per hundred under the swapped D1 option names. Bold marks
+    a difference significant after Holm correction."""
+    cols = [("doneneutral", "acc", "doneneutral.acc"), ("dtwo", "acc", "dtwo.acc"),
+            ("emotion", "acc", "emotion.acc"), ("donekswap", "flips", "done.kswap.flips")]
+    sig = set()
+    for m, bs, _n in BACKBONE_ROWS:
+        for c, met, _b in cols:
+            p = f"bb.{CN.SLUG[m]}.{bs}.{c}.{met}"
+            h = printed(f"{p}.holm")
+            if h is not None and h < HOLM_ALPHA:
+                sig.add(f"{p}.diff")
+    E_MARKS["t17_backbones.tex"] = sorted(sig)
+    spec = colspec([("P", 0.19), ("P", 0.17)] + [("N", 0.08)] * 8)
+    lines = EAAI_HEADER + [
+        "\\tablestyle",
+        "\\begin{tabular}{%s}" % spec,
+        "\\toprule",
+        "\\headrow \\hdtop{} & \\hdtop{} & \\hdgroup{two}{D1 accuracy}"
+        " & \\hdgroup{two}{D2 accuracy} & \\hdgroup{two}{Emotion accuracy}"
+        " & \\hdgroup{two}{D1 swap flips} \\\\",
+        "\\bandrules{3-4,5-6,7-8,9-10}",
+        "\\headrow \\hdsub{Decision model} & \\hdsub{Backbone}"
+        + " & \\hdsub{Base} & \\hdsub{Diff.}" * 4 + " \\\\",
+        "\\midrule"]
+    for m, bs, bname in BACKBONE_ROWS:
+        cells = [mname(m), bname]
+        for c, met, b in cols:
+            p = f"bb.{CN.SLUG[m]}.{bs}.{c}.{met}"
+            cells += [ecell(f"bb.{bs}.{b}"), stack(ecell(f"{p}.diff", sig), f"{p}.")]
+        lines.append(" & ".join(cells) + " \\\\")
+    lines += ["\\bottomrule", "\\end{tabular}",
+              "\\tablenote{Base is the untuned backbone scored by the likelihood of each option"
+              " key, and Diff.\\ is the decision model minus its backbone on identical decisions,"
+              " in points for accuracy and in flips per hundred decisions for the swapped option"
+              " names, with its paired cluster bootstrap interval beneath. The this-that-model-1.0"
+              " checkpoint is adapted from decider-2b, so its difference spans two training"
+              " stages. Bold marks a difference significant after Holm correction at the five"
+              " percent level.}"]
+    return ewrite("t17_backbones.tex", lines)
 
 
 MANIFEST_TEMP = {"jev-1.13.0": None, "laya-en": "m.laya.temp", "laya-ml": "m.laya.temp",
@@ -855,6 +929,18 @@ def _single(counter, what, model):
     vals = list(counter)
     assert len(vals) == 1, f"{model}: {what} is not unique in run_manifest.json: {vals}"
     return json.loads(vals[0])
+
+
+def _dates(counter):
+    """The run dates of a model as one date or a first-to-last range (a model whose
+    conditions ran over several days, such as a later revision run)."""
+    d = sorted(json.loads(v) for v in counter)
+    return d[0] if len(d) == 1 else f"{d[0]} to {d[-1]}"
+
+
+def dcell(d):
+    """A date or a date range in the manifest, the range on two lines of its cell."""
+    return " to\\par ".join(_tt(x) for x in d.split(" to "))
 
 
 def e_t12_manifest():
@@ -906,7 +992,7 @@ def e_t12_manifest():
     def row(m):
         d = man[m]
         rev = _single(d["revision"], "revision", m)
-        date = _single(d["run_date"], "run_date", m)
+        date = _dates(d["run_date"])
         temp = _single(d["served_temperature"], "served_temperature", m)
         assert _single(d["model_returned"], "model_returned", m)
         tl = MANIFEST_TEMP[m]
@@ -920,9 +1006,36 @@ def e_t12_manifest():
         is_hex = bool(re.fullmatch(r"[0-9a-f]{40}", str(rev)))
         assert is_hex or m == "jev-1.13.0", (m, rev)
         return [" & ".join([mname(m), repo[m], _tt(rev[:10]) if is_hex else "--", tcell,
-                            _tt(date), env[m]]) + " \\\\"]
+                            dcell(date), env[m]]) + " \\\\"]
 
     models = DECISION_MODELS + ["comparator-open"]
+    # second revision: the larger comparator (both readouts, one checkpoint) and the untuned
+    # backbones, from the same manifest; their runtimes are the pins of
+    # build_revision2_notebook.py
+    src2 = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "build_revision2_notebook.py"), encoding="utf-8").read()
+    vllm2 = re.findall(r'^VLLM_VERSION = "([\d.]+)"', src2, re.M)
+    bbpk = re.findall(r'"torch==([\d.]+)", "transformers==([\d.]+)"', src2)
+    assert len(vllm2) == 1 and len(bbpk) == 1, (vllm2, bbpk)
+    extra = [("comparator-open2", "comparator-open2-ll"), "Qwen3.6-27B, both readouts",
+             _tt(AD.COMPARATOR2_REPO), _tt("vllm " + vllm2[0])]
+    bb_rows = [(t, AD.BACKBONE_REPOS[t]) for t in ("backbone-qwen35-0.8b-base",
+               "backbone-qwen35-2b-base", "backbone-qwen35-9b-base", "backbone-qwen35-9b")]
+    bbenv = _tt("torch " + bbpk[0][0]) + ", " + _tt("transformers " + bbpk[0][1])
+
+    def row2(tags, name, repo_cell, env_cell, tcells):
+        revs = {_single(man[t]["revision"], "revision", t) for t in tags}
+        dates = {_dates(man[t]["run_date"]) for t in tags}
+        assert len(revs) == 1 and len(dates) == 1, (tags, revs, dates)
+        rev = revs.pop()
+        assert re.fullmatch(r"[0-9a-f]{40}", rev), rev
+        return " & ".join([name, repo_cell, _tt(rev[:10]), tcells, dcell(dates.pop()),
+                           env_cell]) + " \\\\"
+
+    for t in extra[0] + tuple(t for t, _r in bb_rows):
+        temp = _single(man[t]["served_temperature"], "served_temperature", t)
+        want = "m.comparator.temp" if t == "comparator-open2" else "m.likelihood.temp"
+        assert abs(float(temp) - printed(want)) < 1e-9, (t, temp)
     spec = colspec([("P", 0.175), ("P", 0.275), ("P", 0.105), ("N", 0.06), ("P", 0.105),
                     ("P", 0.28)])
     lines = EAAI_HEADER + [
@@ -933,14 +1046,21 @@ def e_t12_manifest():
         " & \\hd{Run date} & \\hd{Runtime} \\\\",
         "\\midrule"]
     lines += family_rows(models, 6, row)
+    lines = [l.replace("{Generative comparator}", "{Generative comparators}") for l in lines]
+    lines.append(row2(extra[0], "\\msw{comptwo}" + extra[1], extra[2], extra[3],
+                      ecell("m.comparator.temp") + ", " + ecell("m.likelihood.temp")))
+    lines.append(groupspan(6, "Untuned backbones"))
+    for t, r in bb_rows:
+        lines.append(row2((t,), r.split("/")[1], _tt(r), bbenv,
+                          ecell("m.likelihood.temp")))
     lines += ["\\bottomrule", "\\end{tabular}",
               "\\tablenote{Revision is the start of the resolved commit of the weights and Temp.\\"
               " the served temperature that every answer record reports. The hosted service"
               " reports neither, and each response named the pinned model. Laya applies a"
               " temperature per question type and option count and records one as its nominal"
-              " value, and the comparator decodes greedily. Every open model and the comparator"
-              " ran on a Colab L4 GPU, and a pin written as a lower bound was resolved at"
-              " install time.}"]
+              " value, and the comparators decode greedily or read key likelihoods at a temperature"
+              " of one. Every open model except Qwen3.6-27B ran on a Colab L4 GPU, and a pin"
+              " written as a lower bound was resolved at install time.}"]
     return ewrite("t12_manifest.tex", lines)
 
 
@@ -1020,14 +1140,16 @@ def _body_labels(text):
 # EAAI tables revised past their ACL counterparts: t04 prints a dash where a model has no
 # raw arm, and t08 reads the revision cascades (rv.cas) instead of e6. They are exempt from
 # the ACL cell check below; t09 to t13 have no ACL counterpart.
-EAAI_DIVERGES = {"t03_headline.tex", "t04_calibration.tex", "t08_cascade.tex"}
+EAAI_DIVERGES = {"t03_headline.tex", "t04_calibration.tex", "t08_cascade.tex",
+                 "t11_paired.tex"}
 
 
 def eaai_main():
     load_numbers()
     paths = [e_t03_headline(), e_t04_calibration(), e_t05_cardinality(), e_t06_names(),
              e_t07_cost(), e_t08_cascade(), e_t09_calib_tasks(), e_t10_selective(),
-             e_t11_paired(), e_t12_manifest(), e_t13_gate(), e_t16_scores()]
+             e_t11_paired(), e_t12_manifest(), e_t13_gate(), e_t16_scores(),
+             e_t17_backbones()]
     import re
     used = set()
     for p in paths:

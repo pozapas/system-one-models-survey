@@ -1,5 +1,23 @@
 {
   "d1_neutral|nli": {
+    "comparator-open2": {
+      "diff": 31.35,
+      "hi": 34.300000000000004,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 28.349999999999998,
+      "n": 2000,
+      "p": 0.0001
+    },
+    "comparator-open2-ll": {
+      "diff": 32.2,
+      "hi": 35.199999999999996,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 29.25,
+      "n": 2000,
+      "p": 0.0001
+    },
     "decider-2b": {
       "diff": 17.65,
       "hi": 20.7,
@@ -66,6 +84,24 @@
     }
   },
   "d1_neutral|trained": {
+    "comparator-open2": {
+      "diff": 2.3,
+      "hi": 5.1,
+      "holm": 0.0956,
+      "holm_family": "comparators2",
+      "lo": -0.35000000000000003,
+      "n": 2000,
+      "p": 0.0956
+    },
+    "comparator-open2-ll": {
+      "diff": 3.15,
+      "hi": 5.949999999999999,
+      "holm": 0.0432,
+      "holm_family": "comparators2",
+      "lo": 0.44999999999999996,
+      "n": 2000,
+      "p": 0.0216
+    },
     "decider-2b": {
       "diff": -11.4,
       "hi": -8.55,
@@ -132,6 +168,24 @@
     }
   },
   "d2_k150|nli": {
+    "comparator-open2": {
+      "diff": 17.666666666666668,
+      "hi": 22.666666666666664,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 12.666666666666668,
+      "n": 600,
+      "p": 0.0001
+    },
+    "comparator-open2-ll": {
+      "diff": 40.5,
+      "hi": 44.666666666666664,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 36.333333333333336,
+      "n": 600,
+      "p": 0.0001
+    },
     "decider-2b": {
       "diff": 35.333333333333336,
       "hi": 39.666666666666664,
@@ -190,6 +244,24 @@
     }
   },
   "d2_k150|trained": {
+    "comparator-open2": {
+      "diff": -26.5,
+      "hi": -22.666666666666664,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": -30.333333333333336,
+      "n": 600,
+      "p": 0.0001
+    },
+    "comparator-open2-ll": {
+      "diff": -3.6666666666666665,
+      "hi": -1.3333333333333335,
+      "holm": 0.0022,
+      "holm_family": "comparators2",
+      "lo": -6.166666666666667,
+      "n": 600,
+      "p": 0.0022
+    },
     "decider-2b": {
       "diff": -8.833333333333334,
       "hi": -6.0,
@@ -248,6 +320,24 @@
     }
   },
   "d3_conv_go_awry|nli": {
+    "comparator-open2": {
+      "diff": 2.0,
+      "hi": 6.4,
+      "holm": 0.7704,
+      "holm_family": "comparators2",
+      "lo": -2.1999999999999997,
+      "n": 500,
+      "p": 0.3852
+    },
+    "comparator-open2-ll": {
+      "diff": 2.0,
+      "hi": 6.4,
+      "holm": 0.7704,
+      "holm_family": "comparators2",
+      "lo": -2.1999999999999997,
+      "n": 500,
+      "p": 0.3852
+    },
     "decider-2b": {
       "diff": 0.0,
       "hi": 4.004999999999927,
@@ -314,6 +404,24 @@
     }
   },
   "d3_conv_go_awry|trained": {
+    "comparator-open2": {
+      "diff": 0.6,
+      "hi": 6.6000000000000005,
+      "holm": 1.0,
+      "holm_family": "comparators2",
+      "lo": -5.4,
+      "n": 500,
+      "p": 0.8676
+    },
+    "comparator-open2-ll": {
+      "diff": 0.6,
+      "hi": 6.6000000000000005,
+      "holm": 1.0,
+      "holm_family": "comparators2",
+      "lo": -5.4,
+      "n": 500,
+      "p": 0.8676
+    },
     "decider-2b": {
       "diff": -1.4000000000000001,
       "hi": 4.8,
@@ -380,6 +488,24 @@
     }
   },
   "d3_emotion|nli": {
+    "comparator-open2": {
+      "diff": -25.301204819277107,
+      "hi": -20.682730923694777,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": -29.919678714859437,
+      "n": 498,
+      "p": 0.0001
+    },
+    "comparator-open2-ll": {
+      "diff": -18.67469879518072,
+      "hi": -14.056224899598394,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": -23.293172690763054,
+      "n": 498,
+      "p": 0.0001
+    },
     "decider-2b": {
       "diff": 15.261044176706829,
       "hi": 19.67871485943775,
@@ -446,6 +572,24 @@
     }
   },
   "d3_emotion|trained": {
+    "comparator-open2": {
+      "diff": -27.710843373493976,
+      "hi": -22.48995983935743,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": -32.93172690763052,
+      "n": 498,
+      "p": 0.0001
+    },
+    "comparator-open2-ll": {
+      "diff": -21.084337349397593,
+      "hi": -15.863453815261044,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": -26.305220883534137,
+      "n": 498,
+      "p": 0.0001
+    },
     "decider-2b": {
       "diff": 12.851405622489958,
       "hi": 17.670682730923694,
@@ -512,6 +656,24 @@
     }
   },
   "d3_wiki_corpus|nli": {
+    "comparator-open2": {
+      "diff": 10.2,
+      "hi": 14.399999999999999,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 6.0,
+      "n": 500,
+      "p": 0.0001
+    },
+    "comparator-open2-ll": {
+      "diff": 10.4,
+      "hi": 14.6,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 6.0,
+      "n": 500,
+      "p": 0.0001
+    },
     "decider-2b": {
       "diff": 2.0,
       "hi": 6.4,
@@ -578,6 +740,24 @@
     }
   },
   "d3_wiki_corpus|trained": {
+    "comparator-open2": {
+      "diff": 2.4,
+      "hi": 8.200000000000001,
+      "holm": 0.8076,
+      "holm_family": "comparators2",
+      "lo": -3.2,
+      "n": 500,
+      "p": 0.4324
+    },
+    "comparator-open2-ll": {
+      "diff": 2.6,
+      "hi": 8.4,
+      "holm": 0.8076,
+      "holm_family": "comparators2",
+      "lo": -3.0,
+      "n": 500,
+      "p": 0.4038
+    },
     "decider-2b": {
       "diff": -5.800000000000001,
       "hi": 0.2,
@@ -644,6 +824,24 @@
     }
   },
   "d3_wiki_politeness|nli": {
+    "comparator-open2": {
+      "diff": 25.502008032128515,
+      "hi": 31.92771084337349,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 19.076305220883537,
+      "n": 498,
+      "p": 0.0001
+    },
+    "comparator-open2-ll": {
+      "diff": 25.903614457831324,
+      "hi": 32.329317269076306,
+      "holm": 0.0002,
+      "holm_family": "comparators2",
+      "lo": 19.477911646586346,
+      "n": 498,
+      "p": 0.0001
+    },
     "decider-2b": {
       "diff": 6.425702811244979,
       "hi": 11.04417670682731,
@@ -710,6 +908,24 @@
     }
   },
   "d3_wiki_politeness|trained": {
+    "comparator-open2": {
+      "diff": 7.429718875502007,
+      "hi": 12.851405622489958,
+      "holm": 0.007,
+      "holm_family": "comparators2",
+      "lo": 2.208835341365462,
+      "n": 498,
+      "p": 0.007
+    },
+    "comparator-open2-ll": {
+      "diff": 7.83132530120482,
+      "hi": 13.253012048192772,
+      "holm": 0.0064,
+      "holm_family": "comparators2",
+      "lo": 2.610441767068273,
+      "n": 498,
+      "p": 0.0032
+    },
     "decider-2b": {
       "diff": -11.646586345381527,
       "hi": -5.8232931726907635,

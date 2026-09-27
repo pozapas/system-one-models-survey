@@ -1,43 +1,11 @@
 {
-  "comparator-open": {
+  "backbone-qwen35-0.8b-base": {
     "model_returned": {
-      "\"Qwen/Qwen3-14B-AWQ\"": 4096
+      "\"Qwen/Qwen3.5-0.8B-Base\"": 8796
     },
     "records_per_file": {
-      "d1_calib__rep1.jsonl": 300,
       "d1_neutral__rep1.jsonl": 400,
       "d2_k150__rep1.jsonl": 800,
-      "d2_k20__rep1.jsonl": 600,
-      "d3_conv_go_awry__rep1.jsonl": 500,
-      "d3_emotion__rep1.jsonl": 498,
-      "d3_wiki_corpus__rep1.jsonl": 500,
-      "d3_wiki_politeness__rep1.jsonl": 498
-    },
-    "revision": {
-      "\"31c69efc29464b6bb0aee1398b5a7b50a99340c3\"": 4096
-    },
-    "run_date": {
-      "\"2026-09-25\"": 4096
-    },
-    "served_temperature": {
-      "0.0": 4096
-    }
-  },
-  "decider-2b": {
-    "model_returned": {
-      "\"decider-v10\"": 12536
-    },
-    "records_per_file": {
-      "d1_calib__rep1.jsonl": 300,
-      "d1_native__rep1.jsonl": 400,
-      "d1_neutral__rep1.jsonl": 400,
-      "d1_neutral__rep2.jsonl": 40,
-      "d2_hier_dom__rep1.jsonl": 600,
-      "d2_hier_int__rep1.jsonl": 600,
-      "d2_k150__rep1.jsonl": 800,
-      "d2_k20__rep1.jsonl": 600,
-      "d2_k50__rep1.jsonl": 600,
-      "d2_k5__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
@@ -56,18 +24,397 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"d61c1c16089572df5d180329b9fea4997a90090c\"": 12536
+      "\"dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68\"": 8796
     },
     "run_date": {
-      "\"2026-09-24\"": 12536
+      "\"2026-09-26\"": 2698,
+      "\"2026-09-27\"": 6098
     },
     "served_temperature": {
-      "1.3": 12536
+      "1.0": 8796
+    }
+  },
+  "backbone-qwen35-2b-base": {
+    "model_returned": {
+      "\"Qwen/Qwen3.5-2B-Base\"": 8796
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"b1485b2fa6dfa1287294f269f5fb618e03d52d7c\"": 8796
+    },
+    "run_date": {
+      "\"2026-09-27\"": 8796
+    },
+    "served_temperature": {
+      "1.0": 8796
+    }
+  },
+  "backbone-qwen35-9b": {
+    "model_returned": {
+      "\"Qwen/Qwen3.5-9B\"": 8796
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"c202236235762e1c871ad0ccb60c8ee5ba337b9a\"": 8796
+    },
+    "run_date": {
+      "\"2026-09-27\"": 8796
+    },
+    "served_temperature": {
+      "1.0": 8796
+    }
+  },
+  "backbone-qwen35-9b-base": {
+    "model_returned": {
+      "\"Qwen/Qwen3.5-9B-Base\"": 8796
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"68c46c4b3498877f3ef123c856ecfde50c39f404\"": 8796
+    },
+    "run_date": {
+      "\"2026-09-27\"": 8796
+    },
+    "served_temperature": {
+      "1.0": 8796
+    }
+  },
+  "baseline-bert-base-clinc": {
+    "model_returned": {
+      "\"bert-base-uncased\"": 2600
+    },
+    "records_per_file": {
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600
+    },
+    "revision": {
+      "\"86b5e0934494bd15c9632b12f734a8a67f723594\"": 2600
+    },
+    "run_date": {
+      "\"2026-09-25\"": 2600
+    },
+    "served_temperature": {
+      "1.0": 2600
+    }
+  },
+  "baseline-bge-small-lr-clinc": {
+    "model_returned": {
+      "\"BAAI/bge-small-en-v1.5\"": 2600
+    },
+    "records_per_file": {
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600
+    },
+    "revision": {
+      "\"5c38ec7c405ec4b44b94cc5a9bb96e735b38267a\"": 2600
+    },
+    "run_date": {
+      "\"2026-09-25\"": 2600
+    },
+    "served_temperature": {
+      "1.0": 2600
+    }
+  },
+  "baseline-bge-small-lr-d1": {
+    "model_returned": {
+      "\"BAAI/bge-small-en-v1.5\"": 1100
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_native__rep1.jsonl": 400,
+      "d1_neutral__rep1.jsonl": 400
+    },
+    "revision": {
+      "\"5c38ec7c405ec4b44b94cc5a9bb96e735b38267a\"": 1100
+    },
+    "run_date": {
+      "\"2026-09-25\"": 1100
+    },
+    "served_temperature": {
+      "1.0": 1100
+    }
+  },
+  "baseline-bge-small-lr-d3": {
+    "model_returned": {
+      "\"BAAI/bge-small-en-v1.5\"": 1996
+    },
+    "records_per_file": {
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"5c38ec7c405ec4b44b94cc5a9bb96e735b38267a\"": 1996
+    },
+    "run_date": {
+      "\"2026-09-26\"": 1996
+    },
+    "served_temperature": {
+      "1.0": 1996
+    }
+  },
+  "baseline-nli-deberta-v3-base": {
+    "model_returned": {
+      "\"MoritzLaurer/deberta-v3-base-zeroshot-v2.0\"": 5696
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_native__rep1.jsonl": 400,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8\"": 5696
+    },
+    "run_date": {
+      "\"2026-09-25\"": 5696
+    },
+    "served_temperature": {
+      "1.0": 5696
+    }
+  },
+  "comparator-open": {
+    "model_returned": {
+      "\"Qwen/Qwen3-14B-AWQ\"": 10096
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"31c69efc29464b6bb0aee1398b5a7b50a99340c3\"": 10096
+    },
+    "run_date": {
+      "\"2026-09-25\"": 4096,
+      "\"2026-09-26\"": 6000
+    },
+    "served_temperature": {
+      "0.0": 10096
+    }
+  },
+  "comparator-open2": {
+    "model_returned": {
+      "\"Qwen/Qwen3.6-27B-FP8\"": 4096
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 4096
+    },
+    "run_date": {
+      "\"2026-09-27\"": 4096
+    },
+    "served_temperature": {
+      "0.0": 4096
+    }
+  },
+  "comparator-open2-b1": {
+    "model_returned": {
+      "\"Qwen/Qwen3.6-27B-FP8\"": 40
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 40
+    },
+    "revision": {
+      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 40
+    },
+    "run_date": {
+      "\"2026-09-27\"": 40
+    },
+    "served_temperature": {
+      "0.0": 40
+    }
+  },
+  "comparator-open2-ll": {
+    "model_returned": {
+      "\"Qwen/Qwen3.6-27B-FP8\"": 4096
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 4096
+    },
+    "run_date": {
+      "\"2026-09-27\"": 4096
+    },
+    "served_temperature": {
+      "1.0": 4096
+    }
+  },
+  "comparator-open2-ll-b1": {
+    "model_returned": {
+      "\"Qwen/Qwen3.6-27B-FP8\"": 40
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 40
+    },
+    "revision": {
+      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 40
+    },
+    "run_date": {
+      "\"2026-09-27\"": 40
+    },
+    "served_temperature": {
+      "1.0": 40
+    }
+  },
+  "decider-2b": {
+    "model_returned": {
+      "\"decider-v10\"": 18336
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_native__rep1.jsonl": 400,
+      "d1_neutral__rep1.jsonl": 400,
+      "d1_neutral__rep2.jsonl": 40,
+      "d2_hier_dom__rep1.jsonl": 600,
+      "d2_hier_int__rep1.jsonl": 600,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep2.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep2.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"d61c1c16089572df5d180329b9fea4997a90090c\"": 18336
+    },
+    "run_date": {
+      "\"2026-09-24\"": 12536,
+      "\"2026-09-26\"": 5800
+    },
+    "served_temperature": {
+      "1.3": 18336
     }
   },
   "jev-1.13.0": {
     "model_returned": {
-      "\"jev-1.13.0\"": 37568
+      "\"jev-1.13.0\"": 42368
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -90,15 +437,23 @@
       "d2_k150__rep1.jsonl": 800,
       "d2_k150__rep2.jsonl": 800,
       "d2_k150__rep3.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
       "d2_k20__rep2.jsonl": 600,
       "d2_k20__rep3.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
       "d2_k50__rep1.jsonl": 600,
       "d2_k50__rep2.jsonl": 600,
       "d2_k50__rep3.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
       "d2_k5__rep1.jsonl": 600,
       "d2_k5__rep2.jsonl": 600,
       "d2_k5__rep3.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_conv_go_awry__rep2.jsonl": 500,
       "d3_conv_go_awry__rep3.jsonl": 500,
@@ -149,18 +504,19 @@
       "e2_d3_wiki_corpus_kswap__rep3.jsonl": 500
     },
     "revision": {
-      "\"jev-1.13.0\"": 37568
+      "\"jev-1.13.0\"": 42368
     },
     "run_date": {
-      "\"2026-09-24\"": 37568
+      "\"2026-09-24\"": 37568,
+      "\"2026-09-25\"": 4800
     },
     "served_temperature": {
-      "null": 37568
+      "null": 42368
     }
   },
   "kev-0.8b": {
     "model_returned": {
-      "\"kev-0.8b\"": 12536
+      "\"kev-0.8b\"": 18336
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -170,9 +526,17 @@
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
       "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
       "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
@@ -183,26 +547,29 @@
       "e2_d1_kswap__rep1.jsonl": 400,
       "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep2.jsonl": 500,
       "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep2.jsonl": 500,
       "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"9a45d25eb2ab761841196625383fa1dff0e56c1e\"": 12536
+      "\"9a45d25eb2ab761841196625383fa1dff0e56c1e\"": 18336
     },
     "run_date": {
-      "\"2026-09-24\"": 12536
+      "\"2026-09-24\"": 12536,
+      "\"2026-09-26\"": 5800
     },
     "served_temperature": {
-      "2.3510958125672174": 12536
+      "2.3510958125672174": 18336
     }
   },
   "kev-9b": {
     "model_returned": {
-      "\"kev-9b\"": 12536
+      "\"kev-9b\"": 18336
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -212,9 +579,17 @@
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
       "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
       "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
@@ -225,26 +600,29 @@
       "e2_d1_kswap__rep1.jsonl": 400,
       "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep2.jsonl": 500,
       "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep2.jsonl": 500,
       "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c\"": 12536
+      "\"2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c\"": 18336
     },
     "run_date": {
-      "\"2026-09-24\"": 12536
+      "\"2026-09-24\"": 12536,
+      "\"2026-09-26\"": 5800
     },
     "served_temperature": {
-      "2.2973967099940698": 12536
+      "2.2973967099940698": 18336
     }
   },
   "laya-en": {
     "model_returned": {
-      "\"laya-rl-agent\"": 11736
+      "\"laya-rl-agent\"": 16336
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -254,9 +632,17 @@
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
       "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
       "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
@@ -267,26 +653,29 @@
       "e2_d1_kswap__rep1.jsonl": 400,
       "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep2.jsonl": 500,
       "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep2.jsonl": 500,
       "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 11736
+      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 16336
     },
     "run_date": {
-      "\"2026-09-24\"": 11736
+      "\"2026-09-24\"": 11736,
+      "\"2026-09-26\"": 4600
     },
     "served_temperature": {
-      "1.0": 11736
+      "1.0": 16336
     }
   },
   "laya-ml": {
     "model_returned": {
-      "\"laya-rl-agent\"": 12536
+      "\"laya-rl-agent\"": 18336
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -296,9 +685,17 @@
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
       "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
       "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
@@ -309,26 +706,29 @@
       "e2_d1_kswap__rep1.jsonl": 400,
       "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep2.jsonl": 500,
       "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep2.jsonl": 500,
       "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 12536
+      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 18336
     },
     "run_date": {
-      "\"2026-09-24\"": 12536
+      "\"2026-09-24\"": 12536,
+      "\"2026-09-26\"": 5800
     },
     "served_temperature": {
-      "1.0": 12536
+      "1.0": 18336
     }
   },
   "nimble-9b": {
     "model_returned": {
-      "\"nimble-9b\"": 12536
+      "\"nimble-9b\"": 18336
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -338,9 +738,17 @@
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
       "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
       "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
@@ -351,26 +759,29 @@
       "e2_d1_kswap__rep1.jsonl": 400,
       "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep2.jsonl": 500,
       "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep2.jsonl": 500,
       "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"bd792f44ec8e265be861bfcdf4e05967ffe0e858\"": 12536
+      "\"bd792f44ec8e265be861bfcdf4e05967ffe0e858\"": 18336
     },
     "run_date": {
-      "\"2026-09-24\"": 12536
+      "\"2026-09-24\"": 12536,
+      "\"2026-09-26\"": 5800
     },
     "served_temperature": {
-      "1.0": 12536
+      "1.0": 18336
     }
   },
   "this-that-1.0": {
     "model_returned": {
-      "\"this-that-1.0\"": 12536
+      "\"this-that-1.0\"": 18336
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -380,9 +791,17 @@
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_p2__rep1.jsonl": 600,
+      "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k20_p2__rep1.jsonl": 600,
+      "d2_k20_p3__rep1.jsonl": 600,
       "d2_k50__rep1.jsonl": 600,
+      "d2_k50_p2__rep1.jsonl": 600,
+      "d2_k50_p3__rep1.jsonl": 600,
       "d2_k5__rep1.jsonl": 600,
+      "d2_k5_p2__rep1.jsonl": 600,
+      "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
@@ -393,21 +812,42 @@
       "e2_d1_kswap__rep1.jsonl": 400,
       "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep2.jsonl": 500,
       "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
       "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep2.jsonl": 500,
       "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"3d927195c4f9845efe66c5715883a7a0f42b1239\"": 12536
+      "\"3d927195c4f9845efe66c5715883a7a0f42b1239\"": 18336
     },
     "run_date": {
-      "\"2026-09-24\"": 12536
+      "\"2026-09-24\"": 12536,
+      "\"2026-09-26\"": 5800
     },
     "served_temperature": {
-      "1.0": 12536
+      "1.0": 18336
+    }
+  },
+  "this-that-1.0-desc": {
+    "model_returned": {
+      "\"this-that-1.0-desc\"": 1200
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800
+    },
+    "revision": {
+      "\"3d927195c4f9845efe66c5715883a7a0f42b1239\"": 1200
+    },
+    "run_date": {
+      "\"2026-09-26\"": 1200
+    },
+    "served_temperature": {
+      "1.0": 1200
     }
   }
 }

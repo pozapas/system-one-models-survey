@@ -143,6 +143,16 @@
         "flips_per_100": 0.0,
         "n": 200,
         "source": "d1_neutral retest subset rep1 vs rep2"
+      },
+      "d3_conv_go_awry": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_conv_go_awry_kny rep1 vs rep2"
+      },
+      "d3_wiki_corpus": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_wiki_corpus_kny rep1 vs rep2"
       }
     }
   },
@@ -447,6 +457,16 @@
         "flips_per_100": 0.0,
         "n": 200,
         "source": "d1_neutral retest subset rep1 vs rep2"
+      },
+      "d3_conv_go_awry": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_conv_go_awry_kny rep1 vs rep2"
+      },
+      "d3_wiki_corpus": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_wiki_corpus_kny rep1 vs rep2"
       }
     }
   },
@@ -594,6 +614,16 @@
         "flips_per_100": 0.0,
         "n": 200,
         "source": "d1_neutral retest subset rep1 vs rep2"
+      },
+      "d3_conv_go_awry": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_conv_go_awry_kny rep1 vs rep2"
+      },
+      "d3_wiki_corpus": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_wiki_corpus_kny rep1 vs rep2"
       }
     }
   },
@@ -741,6 +771,16 @@
         "flips_per_100": 0.0,
         "n": 200,
         "source": "d1_neutral retest subset rep1 vs rep2"
+      },
+      "d3_conv_go_awry": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_conv_go_awry_kny rep1 vs rep2"
+      },
+      "d3_wiki_corpus": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_wiki_corpus_kny rep1 vs rep2"
       }
     }
   },
@@ -888,6 +928,16 @@
         "flips_per_100": 0.0,
         "n": 200,
         "source": "d1_neutral retest subset rep1 vs rep2"
+      },
+      "d3_conv_go_awry": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_conv_go_awry_kny rep1 vs rep2"
+      },
+      "d3_wiki_corpus": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_wiki_corpus_kny rep1 vs rep2"
       }
     }
   },
@@ -1035,6 +1085,16 @@
         "flips_per_100": 0.0,
         "n": 200,
         "source": "d1_neutral retest subset rep1 vs rep2"
+      },
+      "d3_conv_go_awry": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_conv_go_awry_kny rep1 vs rep2"
+      },
+      "d3_wiki_corpus": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_wiki_corpus_kny rep1 vs rep2"
       }
     }
   },
@@ -1182,6 +1242,16 @@
         "flips_per_100": 0.0,
         "n": 200,
         "source": "d1_neutral retest subset rep1 vs rep2"
+      },
+      "d3_conv_go_awry": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_conv_go_awry_kny rep1 vs rep2"
+      },
+      "d3_wiki_corpus": {
+        "flips_per_100": 0.0,
+        "n": 500,
+        "source": "e2_d3_wiki_corpus_kny rep1 vs rep2"
       }
     }
   }

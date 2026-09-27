@@ -392,6 +392,19 @@ def collect_revision():
     bb = load("backbone_controls.json")
     if bb:
         _collect_backbone(bb)
+    cp = load("comparator_paired.json")
+    if cp:
+        # cp.<cond>.<comparator>.{diff,lo,hi,holm}: src/a16_comparator_paired.py, vs Jev
+        src = "results/comparator_paired.json"
+        for cond, res in cp.items():
+            cs = CSLUG.get(cond, cond.replace("_", ""))
+            for m, v in res.items():
+                p = f"cp.{cs}.{SLUG.get(m, m)}"
+                radd(f"{p}.diff", v["diff"], src, fmt=".1f")
+                radd(f"{p}.absdiff", abs(v["diff"]), src, fmt=".1f")
+                radd(f"{p}.lo", v["lo"], src, fmt=".1f")
+                radd(f"{p}.hi", v["hi"], src, fmt=".1f")
+                radd(f"{p}.holm", v["holm"], src, fmt=".2g")
     rp = load("render_paired.json")
     if rp:
         # rp.<done|dtwo>.<comparison>.{diff,lo,hi,p}: src/a13_render_paired.py
@@ -889,6 +902,7 @@ def collect_params():
     add("p.anchor.package.pwr", 0.610, "Ibrahim and Zaki package analysis/cell_metrics.csv, commit 311956c", fmt=".3f")
     add("p.anchor.package.emo", 0.494, "Ibrahim and Zaki package analysis/cell_metrics.csv, commit 311956c", fmt=".3f")
     add("p.gpuhourcost", 4.8 * 9.99 / 100, "Colab Pro 100 units for 9.99 USD, L4 4.8 units per hour (assumption)", fmt=".2f")
+    add("p.gpuhourcosta", 11.8 * 9.99 / 100, "Colab Pro 100 units for 9.99 USD, A100 11.8 units per hour (assumption, bench.usd_per_gpu_hour)", fmt=".2f")
 
     # Model facts (§4), label prefix m.<slug>.<fact>. Parameter counts and context
     # budgets are copied verbatim from each model's own card; served temperatures for
@@ -930,6 +944,10 @@ def collect_params():
     add("m.comparator.temp", 0.0,
         "src/adapters.py ComparatorOpenBackend (greedy decoding, served_temperature=0.0)",
         fmt=".1f")
+    add("m.likelihood.temp", 1.0,
+        "src/adapters.py combine_key_logprobs: option-key log-likelihoods normalized at"
+        " temperature one (served_temperature=1.0 in every comparator-open2-ll and backbone"
+        " record)", fmt=".1f")
 
     # Dataset facts (§5), label prefix d.<dataset>.<fact>.
     add("d.d1.license", "Apache-2.0", "LocalLLaMA/typed-decisions card")

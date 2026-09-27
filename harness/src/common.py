@@ -45,7 +45,16 @@ def dump(obj, name):
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(obj, fh, indent=2, sort_keys=True, default=_jsonable)
-    os.replace(tmp, path)
+    # OneDrive can hold the target briefly while it syncs; retry instead of failing
+    import time
+    for attempt in range(30):
+        try:
+            os.replace(tmp, path)
+            break
+        except PermissionError:
+            if attempt == 29:
+                raise
+            time.sleep(1.0)
     return path
 
 

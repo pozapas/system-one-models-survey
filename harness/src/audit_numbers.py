@@ -31,8 +31,9 @@ SOURCES = [os.path.join("sections", f) for f in sorted(os.listdir(os.path.join(M
 NAME_TOKENS = re.compile(
     r"(?:\b\d+(?:\.\d+)?[BM](?:-class)?\b|"                  # parameter sizes in names
     r"Jev\s*1\.13\.0|jev-1\.13\.0|Kev-0\.8B|Kev-9B|Nimble-9B|decider-2b|decider-0\.8b|"
-    r"this-that-model-1\.0|Qwen3(?:\.5)?-[\w.]+|Qwen3(?:\.5)?|mmBERT|CLINC-150|SHA-256|L4|T4|H100|"
+    r"this-that-model-1\.0|Qwen3(?:\.[56])?-[\w.]+|Qwen3(?:\.[56])?|mmBERT|CLINC-150|SHA-256|L4|T4|H100|"
     r"F1|RQ[1-4]|DeBERTa-v3|BERT-base|D[123]|o_?\{?\d\}?|o\d+|k01|kny|kswap|krand|d[123]_\w+|e2_\w+|Qwen3-14B|AWQ|"
+    r"Qwen3\.6-27B|FP8|A100|"
     r"Gemma-3-27B|typesafe-sdk|GPT-\d)", re.I)
 
 # Numeric literals that are typography or structure rather than evidence.

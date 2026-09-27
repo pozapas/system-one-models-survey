@@ -18,10 +18,10 @@ MANU = os.path.join(BASE, "manuscript")
 OUT = os.path.join(BASE, "submission")
 
 HIGHLIGHTS = [
-    "Decision models, trained classifiers and an LLM compared under matched conditions",
-    "Trained classifiers lead on intents; four decision models top zero-shot NLI on 5 of 6",
+    "Trained classifiers lead on intents; most decision models beat zero-shot NLI",
+    "An LLM matches Jev on intents via option likelihoods, not via stated probabilities",
     "A stored temperature fitted on few options raises calibration error with 150 options",
-    "Option names and rendering shift some models strongly and others barely",
+    "Trained heads, not their backbones, make decision models robust to option names",
     "In-scope risk thresholds do not control out-of-scope acceptance; check it separately",
 ]
 

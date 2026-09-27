@@ -17,7 +17,7 @@
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d1High": {
-      "text": "3",
+      "text": "4",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d1Unclear": {
