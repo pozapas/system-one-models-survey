@@ -50,6 +50,8 @@ def strip_latex(line):
     s = re.sub(r"\\(?:label|ref|eqref|sref|fref|frefi|tref|eref|aref|refi|cite|citep|citet)"
                r"\*?(?:\{[^}]*\})+", " REF ", s)
     s = re.sub(r"\\(?:input|include|includegraphics)(?:\[[^]]*\])?\{[^}]*\}", " ", s)
+    # \longtab{caption}{label}{table file}: the label and the file path are not prose
+    s = re.sub(r"\}\{tab:[^}]*\}\{tables/[^}]*\}", "}", s)
     s = re.sub(r"\\texttt\{[^}]*\}", " CODE ", s)
     s = re.sub(r"\\[a-zA-Z@]+\*?", " ", s)           # remaining commands
     s = re.sub(r"[{}]", " ", s)

@@ -53,6 +53,8 @@ def strip_for_source_audit(text):
                r"\*?(?:\{[^}]*\})+", " REF ", t)
     t = re.sub(r"\\cite[pt]?\*?(?:\[[^]]*\])*\{[^}]*\}", " CITE ", t)
     t = re.sub(r"\\input\{[^}]*\}", " TABLE ", t)            # generated tables
+    # \longtab{caption}{label}{table file}: the label and the file path are not prose
+    t = re.sub(r"\}\{tab:[^}]*\}\{tables/[^}]*\}", "}", t)
     t = re.sub(r"\\includegraphics(?:\[[^]]*\])?\{[^}]*\}", " FIG ", t)
     t = re.sub(r"\\begin\{[^}]*\}|\\end\{[^}]*\}", " ENV ", t)
     t = re.sub(r"\\texttt\{[^}]*\}", " CODE ", t)            # version strings

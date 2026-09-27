@@ -285,7 +285,37 @@ def colspec(parts):
     return "".join("%s{%.4f}" % (t, f) for t, f in parts)
 
 
+def with_tabhead(lines):
+    """Insert \\tabhead after the \\midrule that closes each header block (a \\midrule that
+    directly follows a \\headrow line). It expands to nothing in a tabular and to \\endhead
+    in an appendix longtable (\\longtab in paper4a_tables.sty)."""
+    out = []
+    for i, l in enumerate(lines):
+        out.append(l)
+        if l.strip() == "\\midrule" and i and lines[i - 1].lstrip().startswith("\\headrow"):
+            out.append("\\tabhead")
+    return out
+
+
+def keep_last_rows(lines, n=3):
+    """End the last n body rows before each \\bottomrule with \\\\* instead of \\\\, so a
+    longtable never leaves one or two rows alone on a new page (in a tabular \\\\* is the same
+    as \\\\)."""
+    out = list(lines)
+    for i, l in enumerate(out):
+        if l.strip() != "\\bottomrule":
+            continue
+        k, j = 0, i - 1
+        while j >= 0 and k < n and not out[j].lstrip().startswith(("\\midrule", "\\tabhead")):
+            if out[j].rstrip().endswith(" \\\\"):
+                out[j] = out[j].rstrip() + "*"
+                k += 1
+            j -= 1
+    return out
+
+
 def ewrite(name, lines):
+    lines = keep_last_rows(with_tabhead(lines))
     os.makedirs(EAAI_TABLES_DIR, exist_ok=True)
     path = os.path.join(EAAI_TABLES_DIR, name)
     with open(path, "w", encoding="utf-8") as fh:
