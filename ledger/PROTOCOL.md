@@ -31,6 +31,14 @@ Each study is rated on five domains, adapted from PROBAST and QUADAS-AI. The rat
 4. Tuning-budget parity between compared systems.
 5. Test-set exposure.
 
+Rating anchors (written 2026-09-26 from the reasons recorded with the first ratings, after a second rater showed that domains 2 to 5 needed explicit rules):
+
+- Domain 1: low for human adjudicated or task-outcome labels; unclear for a human crowd, an administrative field, or headline results that mix label types; high for an LLM teacher, a model consensus, a synthetic procedure or a vendor label.
+- Domain 2: low when n is stated, the sampling design is described and the headline results carry intervals; unclear when some but not all of these hold; high when none holds or the counts do not reconcile.
+- Domain 3: low for an exact model version or revision together with run dates; unclear for a version or a date alone, or a minor version only; high when no version identifier is given for the evaluated models.
+- Domain 4: low when every compared system receives the same instructions and budget, or when a single system is studied; unclear for a disclosed and bounded asymmetry; high when one system is tuned on test data or selected after seeing results.
+- Domain 5: low for new or private items; unclear for public items seen only through derived features, credentialed access or partly public data; high for verbatim public benchmark items with answer keys released before 2026 and no contamination check.
+
 ## Synthesis
 
 `synthesis.json` holds per-regularity pooled statements, with bootstrap intervals over studies wherever at least three studies report a compatible estimand. It does not build a leaderboard across papers from incompatible estimands.

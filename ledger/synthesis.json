@@ -1,7 +1,7 @@
 {
   "values": {
     "syn.ledgerRows": {
-      "text": "396",
+      "text": "397",
       "source": "shared/ledger/synthesis.json",
       "note": "rows in ledger.csv at synthesis time"
     },
@@ -1233,7 +1233,7 @@
     "syn.gapJevBestKiteGap": {
       "text": "-0.035",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026kite: KITE SocSci210 marginal distance to human responses; Jev vs GPT-6 Astra (lower is better; sign oriented so negative means Jev worse) (distance; ref human_crowd; RoB some_concerns; role estimate); ledger L451"
+      "note": "li2026kite: KITE SocSci210 marginal distance to human responses; Jev vs GPT-6 Astra (lower is better; sign oriented so negative means Jev worse) (distance; ref human_crowd; RoB high; role estimate); ledger L451"
     },
     "syn.gapJevBestLiFastCloud": {
       "text": "3.5",
@@ -1373,7 +1373,7 @@
     "syn.costRatioKiteCost": {
       "text": "260",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026kite: KITE cost per 1000 predictions; GPT-6 Astra lower bound over Jev upper bound (conservative bound of both ranges) (cost ratio; ref human_crowd; RoB some_concerns; role estimate); ledger L451"
+      "note": "li2026kite: KITE cost per 1000 predictions; GPT-6 Astra lower bound over Jev upper bound (conservative bound of both ranges) (cost ratio; ref human_crowd; RoB high; role estimate); ledger L451"
     },
     "syn.costRatioRafeCostScenario": {
       "text": "52",
