@@ -26,6 +26,9 @@ import metrics as M
 MAIN = ["d1_native", "d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki_corpus",
         "d3_emotion", "d3_wiki_politeness"]
 ALL_MODELS = [bench.JEV] + bench.MODELS_OPEN + ["comparator-open"]
+# second revision comparators, when answered, as extra models after the original ones
+# (each model is summarized on its own, so the earlier entries do not change)
+ALL_MODELS += bench.present(bench.COMPARATORS_2)
 
 
 def fit_types(model, rep=1):

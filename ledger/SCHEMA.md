@@ -34,5 +34,5 @@ Each row holds one measured quantity: one study, one model, one task, one metric
 | code_available | yes (URL) / no / partial |
 | excerpt | **a verbatim sentence or table cell from the primary full text that supports `value`** |
 | location | page, section, table or figure |
-| extractor | the agent name |
+| extractor | the extraction batch |
 | ledger_version | 1.0 |

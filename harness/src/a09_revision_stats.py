@@ -51,6 +51,15 @@ import metrics as M
 OUT = "revision_stats.json"
 MODELS = [bench.JEV] + bench.MODELS_OPEN + ["comparator-open"]
 COMP = "comparator-open"
+# Second revision comparators (bench.COMPARATORS_2), when answered, are analyzed as extra
+# models after the original ones. Every random generator below is seeded per model and
+# task (or pair), so appending models cannot change an existing value; section E puts them
+# in a Holm family of their own. VERBAL are the comparators that write their probabilities
+# as JSON text, BATCHED those whose latency is a batch share (batch_wall_s / n_requests).
+COMP2 = bench.present(bench.COMPARATORS_2)
+MODELS_X = MODELS + COMP2
+VERBAL = {COMP} | {m for m in COMP2 if not m.endswith("-ll")}
+BATCHED_X = {COMP} | set(COMP2)
 D3 = ["d3_conv_go_awry", "d3_wiki_corpus", "d3_emotion", "d3_wiki_politeness"]
 TASKS = ["d1_neutral", "d2_k150"] + D3
 FOLDS = 5
@@ -296,7 +305,7 @@ def section_A(raw_ok):
     out = {"estimator": ESTIMATOR, "results": {}, "d3_pooled": {}}
     checks = []
     e1 = json.load(open(os.path.join(C.RESULTS, "e1_main.json"), encoding="utf-8"))
-    for m in MODELS:
+    for m in MODELS_X:
         pooled = {"conf": [], "correct": [], "conf_raw": [], "correct_raw": [], "conf_s": []}
         for cond in TASKS:
             if not has(m, cond):
@@ -468,7 +477,7 @@ def section_B():
                  "share of out-of-scope utterances with confidence >= threshold"),
         "replicates": B_BOOT, "refit_replicates": B_REFIT},
         "insample": {}, "heldout": {}, "gate": {}}
-    for m in MODELS:
+    for m in MODELS_X:
         for cond in TASKS:
             if not has(m, cond):
                 continue
@@ -599,7 +608,7 @@ def section_B():
 
 def section_C():
     out = {}
-    for m in MODELS:
+    for m in MODELS_X:
         n_q = n_t1 = 0
         maxdiff = 0.0
         temps = Counter()
@@ -636,6 +645,16 @@ def section_C():
                 "adapter; probs_t1 only repeats them; at more than 20 options only the top "
                 "5 are reported (adapters.COMPARATOR_FULL_COVERAGE_MAX_K, COMPARATOR_TOP_N) "
                 "and the rest are zero"))
+        elif m in VERBAL:
+            rec.update(raw_available=False, reason=(
+                "generative comparator of the second revision, verbalized mode: the "
+                "comparator-open protocol on a stronger checkpoint; probs_t1 only repeats the "
+                "written numbers"))
+        elif m in COMP2:
+            rec.update(raw_available=True, reason=(
+                "generative comparator of the second revision, likelihood mode: softmax at "
+                "temperature one of the option keys' log-likelihoods after the answer cue; "
+                "probs_t1 is stored and identical to the shipped distribution"))
         elif m in ("this-that-1.0", "nimble-9b"):
             rec.update(raw_available=True, reason=(
                 "served at temperature 1.0 with unrounded probabilities; probs_t1 is stored "
@@ -666,12 +685,13 @@ def req_info(model, cond):
     for key, a in A.items():
         qs = list(a["answers"])
         nq = len(qs)
-        if model == COMP:
+        if model in BATCHED_X:
+            usd_h = bench.usd_per_gpu_hour(model, USD_H)     # USD_H for comparator-open
             share = {q: a["answers"][q]["raw"]["batch_wall_s"] / a["answers"][q]["raw"]["n_requests"]
                      for q in qs}
             lat_r = sum(share.values())
-            cost_r = lat_r / 3600 * USD_H
-            dcost = {q: share[q] / 3600 * USD_H for q in qs}
+            cost_r = lat_r / 3600 * usd_h
+            dcost = {q: share[q] / 3600 * usd_h for q in qs}
             dlat = dict(share)
         elif model == bench.JEV:
             cost_r = (a.get("usage_in") or 0) * C.PRICE_PER_MTOK / 1e6
@@ -776,6 +796,7 @@ def lat_pcts(x):
 def section_D():
     firsts = [bench.JEV] + bench.MODELS_OPEN
     pairs = [(f, COMP) for f in firsts] + [(f, bench.JEV) for f in bench.MODELS_OPEN]
+    pairs += [(f, c) for c in COMP2 for f in firsts]     # extra second stages, appended
     e6 = json.load(open(os.path.join(C.RESULTS, "e6_cascade.json"), encoding="utf-8"))
     out = {"definitions": {
         "confidence_arm": "shipped top-label probability of the first stage",
@@ -937,8 +958,8 @@ def section_D():
                                    "ok": bool(abs(ref["accuracy"] - dl["accuracy"]) < 1e-12
                                               and abs(ref["escalated"] - dl["escalated"]) < 1e-12
                                               and ref["tau"] == taus)})
-            rec["latency_first_amortized"] = f == COMP
-            rec["latency_second_amortized"] = s == COMP
+            rec["latency_first_amortized"] = f in BATCHED_X
+            rec["latency_second_amortized"] = s in BATCHED_X
             out["pairs"][key] = rec
             dlv = rec["decision_level"]
             log("D", key, "gain", round(100 * dlv["gain"], 2), dlv["ci"]["gain"],
@@ -946,7 +967,7 @@ def section_D():
             dump_partial("D_cascades", out)
 
     # per model and condition costs, cost checks, and cost sensitivity
-    for m in MODELS:
+    for m in MODELS_X:
         for cond in ["d1_neutral", "d2_k150", "d2_k5", "d2_k20"] + D3:
             if not has(m, cond) or not ans(m, cond):
                 continue
@@ -1044,6 +1065,37 @@ def section_E():
                 fam[m]["mcnemar_p_holm"] = float(b)
             out["families"][cond] = fam
             log("E", cond, {m: (round(100 * v["diff"], 1), round(v["p_holm"], 4)) for m, v in fam.items()})
+        fam2 = {}
+        for m in COMP2:          # same estimator as above, own Holm family
+            if not has(m, cond):
+                continue
+            ob = {(r["item_id"], r["qid"]): float(np.argmax(r["p"]) == r["y"])
+                  for r in dec(m, cond) if r["y"] >= 0 and not np.isnan(r["p"]).any()}
+            keys = sorted(set(ja) & set(ob))
+            if len(keys) < 30:
+                continue
+            ca = np.array([ja[k] for k in keys])
+            cb = np.array([ob[k] for k in keys])
+            diff = cb - ca
+            ug, inv = np.unique(np.array([k[0] for k in keys]), return_inverse=True)
+            s = np.bincount(inv, weights=diff)
+            nn = np.bincount(inv).astype(float)
+            rng = np.random.default_rng(C.SEED)
+            pick = rng.integers(0, len(ug), (B_PAIRED, len(ug)))
+            bd = s[pick].sum(1) / nn[pick].sum(1)
+            mc = M.mcnemar(ca.astype(bool), cb.astype(bool))
+            fam2[m] = {"n": len(keys), "n_clusters": int(len(ug)), "acc_jev": float(ca.mean()),
+                       "acc_other": float(cb.mean()), "diff": float(diff.mean()),
+                       "diff_ci": pct(bd), "p_boot": boot_p_two(bd),
+                       "mcnemar_p": mc["p"], "mcnemar_n01": mc["n01"], "mcnemar_n10": mc["n10"],
+                       "mcnemar_ignores_clustering": cond == "d1_neutral"}
+        if fam2:
+            ms = list(fam2)
+            for m, a, b in zip(ms, holm([fam2[m]["p_boot"] for m in ms]),
+                               holm([fam2[m]["mcnemar_p"] for m in ms])):
+                fam2[m]["p_holm"] = float(a)
+                fam2[m]["mcnemar_p_holm"] = float(b)
+            out.setdefault("families_comparators2", {})[cond] = fam2
 
         # Jev service variability
         reps = [r for r in bench.available_reps(bench.JEV, cond) if r <= 3]
@@ -1157,7 +1209,7 @@ def section_G():
                   "reruns (conditions ending _p2, _p3), which are counted by their own analysis")},
         "files": {}, "by_model": {}, "distinct_errors": {}}
     n_sub = len(man["_retest_subset"]["item_ids"])
-    for m in MODELS:
+    for m in MODELS_X:
         d = os.path.join(C.ANSWERS, m)
         tot = Counter()
         for fn in sorted(os.listdir(d)):
@@ -1192,7 +1244,7 @@ def section_G():
                     nq += 1
                     if not q.get("probs"):
                         empty += 1
-                    if m == COMP:
+                    if m in VERBAL:
                         raw = q.get("raw", {})
                         if (raw.get("usage_out") or 0) >= 768:
                             trunc += 1
@@ -1214,8 +1266,8 @@ def section_G():
                    "keys_with_error_and_answer": len(ok_keys & err_keys),
                    "answered_questions": nq, "empty_probability_answers": empty,
                    "retries": "not recorded",
-                   "truncation": trunc if m == COMP else "not recorded"}
-            if m == COMP:
+                   "truncation": trunc if m in VERBAL else "not recorded"}
+            if m in VERBAL:
                 rec["verbalized_not_summing_to_one"] = renorm
                 rec["verbalized_on_percent_scale"] = pct_scale
             out["files"][f"{m}|{cond}|rep{rep}"] = rec
@@ -1224,7 +1276,7 @@ def section_G():
             tot["errors"] += err
             tot["refusals"] += refus
             tot["answered_questions"] += nq
-            if m == COMP:
+            if m in VERBAL:
                 tot["truncated"] += trunc
                 tot["verbalized_not_summing_to_one"] += renorm
                 tot["verbalized_on_percent_scale"] += pct_scale
@@ -1250,7 +1302,7 @@ def section_H():
                   "newlines, and of the option texts alone, over the 600 in-scope utterances; "
                   "a proxy for option-token budgets until token counts are available")},
         "accuracy_by_position": {}, "predicted_position": {}, "chars": {}}
-    for m in MODELS:
+    for m in MODELS_X:
         for K in (20, 50, 150):
             cond = f"d2_k{K}"
             if not has(m, cond):
@@ -1331,6 +1383,8 @@ def main():
                    "replicates_paired": B_PAIRED, "level": LEVEL,
                    "usd_per_gpu_hour": USD_H, "jev_usd_per_mtok": C.PRICE_PER_MTOK,
                    "analyzed_rep": 1, "models": MODELS, "tasks": TASKS}
+    if COMP2:
+        RES["meta"]["extra_models_revision2"] = COMP2
     raw_ok = section_C()
     dump()
     section_I()

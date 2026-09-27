@@ -28,6 +28,15 @@ SLUG = {"jev-1.13.0": "jev", "laya-en": "layaen", "laya-ml": "layaml",
         "kev-0.8b": "kevsmall", "kev-9b": "kevlarge", "decider-2b": "decider",
         "this-that-1.0": "thisthat", "nimble-9b": "nimble",
         "comparator-open": "compopen"}
+# second revision tags (bench.COMPARATORS_2, COMPARATORS_2_B1, BACKBONES): labels exist only
+# once their answers and results do, so these entries change no existing label
+SLUG.update({"comparator-open2": "comptwo", "comparator-open2-ll": "comptwoll",
+             "comparator-open2-awq": "comptwoawq", "comparator-open2-awq-ll": "comptwoawqll",
+             "comparator-open2-b1": "comptwobone", "comparator-open2-ll-b1": "comptwollbone",
+             "comparator-open2-awq-b1": "comptwoawqbone",
+             "comparator-open2-awq-ll-b1": "comptwoawqllbone",
+             "backbone-qwen35-0.8b-base": "bbsmallbase", "backbone-qwen35-2b-base": "bbtwobase",
+             "backbone-qwen35-9b-base": "bbninebase", "backbone-qwen35-9b": "bbnine"})
 CSLUG = {"d1_native": "donenative", "d1_neutral": "doneneutral", "d2_k150": "dtwo",
          "d3_conv_go_awry": "toxicity", "d3_wiki_corpus": "power",
          "d3_emotion": "emotion", "d3_wiki_politeness": "politeness"}
@@ -380,6 +389,9 @@ def collect_revision():
                 radd(f"{p}.lo", v["lo"], src, fmt=".1f")
                 radd(f"{p}.hi", v["hi"], src, fmt=".1f")
                 radd(f"{p}.holm", v["holm"], src, fmt=".2g")
+    bb = load("backbone_controls.json")
+    if bb:
+        _collect_backbone(bb)
     rp = load("render_paired.json")
     if rp:
         # rp.<done|dtwo>.<comparison>.{diff,lo,hi,p}: src/a13_render_paired.py
@@ -393,6 +405,48 @@ def collect_revision():
                 radd(f"{p}.hi", v["hi"], src, fmt=".1f")
                 radd(f"{p}.p", v["p"], src, fmt=".2g")
                 radd(f"{p}.acc", v["acc_a"], src, fmt=".3f")
+
+
+def _collect_backbone(bb):
+    """Labels bb.* from results/backbone_controls.json (src/a15_backbone_controls.py):
+    bb.<backbone>.<cond>.{acc,acclo,acchi,ece,n}, bb.<backbone>.oos.auroc,
+    bb.<backbone>.<set>.<naming>.{flips,auc}, and per decision model and backbone
+    bb.<model>.<backbone>.<cond or oos or set naming>.<metric>.{diff,lo,hi,holm}."""
+    src = "results/backbone_controls.json"
+    for m, s in bb.get("models", {}).items():
+        if not m.startswith("backbone-"):
+            continue            # the decision models' own values are the e1.* and e2.* labels
+        ms = SLUG[m]
+        for cond, v in s.items():
+            if cond in CSLUG:
+                p = f"bb.{ms}.{CSLUG[cond]}"
+                radd(f"{p}.n", v["n_scored"], src)
+                radd(f"{p}.acc", v["accuracy"], src, fmt=".3f")
+                radd(f"{p}.acclo", v["accuracy_ci"][0], src, fmt=".3f")
+                radd(f"{p}.acchi", v["accuracy_ci"][1], src, fmt=".3f")
+                radd(f"{p}.ece", v["ece_shipped"], src, fmt=".3f")
+        if "d2_oos" in s:
+            radd(f"bb.{ms}.oos.auroc", s["d2_oos"]["auroc_in_vs_oos"], src, fmt=".3f")
+        for ds, d in s.get("names", {}).items():
+            for n in ("k01", "kny", "kswap", "krand"):
+                radd(f"bb.{ms}.{RV_SET[ds]}.{n}.flips", d[n]["flips_per_100_vs_kny"], src, fmt=".1f")
+                radd(f"bb.{ms}.{RV_SET[ds]}.{n}.auc", d[n]["auc"], src, fmt=".2f")
+    for key, v in bb.get("paired", {}).items():
+        pair, cond, metric = key.split("|")
+        dm, b = pair.split(">")
+        if cond.startswith("names_"):
+            ds, n = cond[len("names_"):].rsplit("_", 1)
+            cs = f"{RV_SET[ds]}{n}"
+        else:
+            cs = "oos" if cond == "d2_oos" else CSLUG[cond]
+        ms = {"accuracy": "acc", "ece_shipped": "ece", "auroc": "auroc", "flips": "flips"}[metric]
+        p = f"bb.{SLUG[dm]}.{SLUG[b]}.{cs}.{ms}"
+        fmt = ".3f" if metric == "auroc" else ".1f"
+        radd(f"{p}.diff", v["diff"], src, fmt=fmt)
+        if v.get("ci"):
+            radd(f"{p}.lo", v["ci"][0], src, fmt=fmt)
+            radd(f"{p}.hi", v["ci"][1], src, fmt=fmt)
+        radd(f"{p}.holm", v["holm"], src, fmt=".2g")
 
 
 def _collect_laya_budget(lb):
@@ -752,7 +806,10 @@ def _collect_rv(rv):
         for k in ("files", "answered", "errors", "refusals", "answered_questions"):
             radd(f"{p}.{k.replace('_', '')}", d.get(k, 0), src)
         for k in ("answered", "errors", "refusals"):
-            tot[k] += d.get(k, 0)
+            # the totals stay over the original models; second revision tags add their own
+            # rv.fail.<slug>.* labels only
+            if m not in bench.COMPARATORS_2 + bench.COMPARATORS_2_B1 + bench.BACKBONES:
+                tot[k] += d.get(k, 0)
         if m == "comparator-open":
             radd(f"{p}.truncated", d.get("truncated", 0), src)
             radd(f"{p}.renormalized", d.get("verbalized_not_summing_to_one", 0), src)

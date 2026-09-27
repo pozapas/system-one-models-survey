@@ -1005,3 +1005,544 @@ harness.register("comparator-open", lambda **kw: ComparatorOpenBackend(**kw))
 # not the e2_ files.
 COMPARATOR_CONDITIONS = ["d1_neutral", "d1_calib", "d2_k150", "d2_k20",
                         "d3_conv_go_awry", "d3_wiki_corpus", "d3_emotion", "d3_wiki_politeness"]
+
+
+# ====================================================================== second revision
+#
+# Everything below was appended for the second revision and only ADDS backends and helpers:
+# no line above this block changed, so every earlier tag behaves exactly as before. Two new
+# families, both registered at the end of this block:
+#
+#   backbone-*        the untuned Qwen3.5 backbones of the decision models, asked the same
+#                     question as a plain text prompt and scored by the likelihood of each
+#                     option key (BackboneOptScoreBackend, transformers, one request at a time)
+#   comparator-open2* Qwen3.6-27B through vLLM, in two modes: the verbalized-JSON protocol of
+#                     comparator-open unchanged (Comparator2Backend), and the model's own
+#                     likelihood of each option key after the same chat prompt
+#                     (Comparator2LLBackend); each also has a batch-1 variant for latency
+
+
+OPTSCORE_INSTRUCTION = "Reply with the key of the single best option, exactly as written above."
+OPTSCORE_CUE = "Answer:"
+
+
+def optscore_prompt(rec, q):
+    """(prompt_text, keys, continuations) for one question under option-key scoring.
+
+    The content is what every decision model receives: the state, the question's instruction
+    and the options as "- key: description" lines in request order, with the keys of the
+    frozen condition itself (o1..oK on the neutral files, 0/1, no/yes, yes/no or random strings
+    on the option-name files, false/true for noul, 0..L-1 for score; comparator_option_list).
+    One instruction line and the answer cue "Answer:" follow. The cue ends without a trailing
+    space and each continuation is " " + key, so the prompt and each key are tokenized apart
+    at a word boundary (optscore_encode checks that this equals the joint tokenization). No
+    chat template is applied, for any backbone, so that the weights are the only variable
+    across the four backbones. Pure function, no model import."""
+    keys, descs = comparator_option_list(q)
+    lines = "\n".join(f"- {key}: {desc}" for key, desc in zip(keys, descs))
+    text = (f"State:\n{_state_text(rec['state'])}\n\n"
+            f"Question: {_txt(q['instructions'])}\n\nOptions:\n{lines}\n\n"
+            f"{OPTSCORE_INSTRUCTION}\n{OPTSCORE_CUE}")
+    return text, keys, [" " + k for k in keys]
+
+
+def key_nodes(key_ids):
+    """The token paths after the prompt at which a next-token distribution is needed, shortest
+    first: the empty path (the prompt itself) and every proper prefix of every key's token
+    sequence. A key whose tokens are a proper prefix of a longer key (o1 of o10..o19 and
+    o100..o150 under digit-wise tokenization) is such a path too, which is where its boundary
+    term is read (combine_key_logprobs). Pure function."""
+    seqs = [tuple(s) for s in key_ids]
+    if any(len(s) == 0 for s in seqs):
+        raise ValueError("an option key tokenized to nothing")
+    if len(set(seqs)) != len(seqs):
+        raise ValueError("two option keys tokenized to the same token sequence")
+    nodes = {s[:j] for s in seqs for j in range(len(s))}
+    return sorted(nodes, key=lambda n: (len(n), n))
+
+
+def key_children(key_ids):
+    """{path: set of next tokens that continue some declared key}. Pure function."""
+    ch = {}
+    for s in key_ids:
+        s = tuple(s)
+        for j in range(len(s)):
+            ch.setdefault(s[:j], set()).add(s[j])
+    return ch
+
+
+def combine_key_logprobs(keys, key_ids, node_lp, node_floor=None):
+    """Option probabilities from next-token log-probabilities at the key_nodes paths.
+
+    For option k with tokens t_1..t_m after the prompt:
+        log s_k = sum_j log p(t_j | prompt, t_<j)                  (sequence log-likelihood)
+                + log(1 - sum_{c in E_k} p(c | prompt, t_1..t_m))  (boundary term)
+    where E_k is the set of next tokens that continue k's tokens into a LONGER declared key.
+    The first term alone is the plain sum of token log-probabilities; it is not divided by the
+    number of tokens or normalized in any other way. The boundary term is zero unless k is a
+    token prefix of another key: it removes from k the probability that the model goes on to
+    write a longer declared key, so s_k is the probability of the event "the continuation is
+    exactly key k among the declared keys" and o1 does not absorb the mass of o10..o19. The
+    distribution is softmax(log s) over the options, i.e. temperature 1.
+
+    node_lp maps each path to {token id: log-probability}. When a needed token is absent from a
+    path's map (vLLM returns only the top-N), node_floor[path] (the smallest log-probability
+    that was returned, an upper bound) is used and counted in n_missing; with no floor the
+    absence is an error. Returns (probs, logp_key, log_boundary, n_missing). Pure function."""
+    seqs = [tuple(s) for s in key_ids]
+    ch = key_children(seqs)
+    missing = [0]
+
+    def lp(path, tok):
+        d = node_lp[path]
+        if tok in d:
+            return float(d[tok])
+        if node_floor is None or path not in node_floor:
+            raise KeyError(f"no log-probability for token {tok} after path {path}")
+        missing[0] += 1
+        return float(node_floor[path])
+
+    logp, logb = {}, {}
+    for k, s in zip(keys, seqs):
+        logp[k] = sum(lp(s[:j], s[j]) for j in range(len(s)))
+        ext = ch.get(s)
+        if ext:
+            mass = sum(math.exp(lp(s, c)) for c in ext)
+            logb[k] = math.log1p(-min(mass, 1.0 - 1e-15))
+        else:
+            logb[k] = 0.0
+    tot = {k: logp[k] + logb[k] for k in keys}
+    top = max(tot.values())
+    ex = {k: math.exp(v - top) for k, v in tot.items()}
+    z = sum(ex.values())
+    return {k: v / z for k, v in ex.items()}, logp, logb, missing[0]
+
+
+def _replicate_cache(cache, n, device):
+    """n independent copies (batch rows) of a batch-1 transformers cache, leaving the source
+    untouched: the layer objects are shallow-copied, the per-state dicts of the linear-attention
+    (Gated DeltaNet) layers are copied, then reorder_cache(zeros(n)) index_selects every KV,
+    conv and recurrent tensor into new tensors. This is kev/model.py's _rows_hidden replica
+    (jaredpalmer/kev at KEV_GITHUB_COMMIT), which kev uses to continue question rows from a
+    cached Qwen3.5 state."""
+    import copy
+    import torch
+    from transformers.cache_utils import LinearAttentionCacheLayerMixin
+    replica = copy.copy(cache)
+    replica.layers = [copy.copy(layer) for layer in cache.layers]
+    for src, tgt in zip(cache.layers, replica.layers):
+        if isinstance(src, LinearAttentionCacheLayerMixin):
+            tgt.conv_states = src.conv_states.copy()
+            tgt.recurrent_states = src.recurrent_states.copy()
+            tgt.is_conv_states_initialized = src.is_conv_states_initialized.copy()
+            tgt.is_recurrent_states_initialized = src.is_recurrent_states_initialized.copy()
+            tgt.has_previous_state = src.has_previous_state.copy()
+            tgt.conv_kernel_size = src.conv_kernel_size.copy()
+    replica.reorder_cache(torch.zeros(n, dtype=torch.long, device=device))
+    return replica
+
+
+# ---------------------------------------------------------------------- untuned backbones
+
+# The base each decision model adapts, per its own card (shared/colab/cards):
+#   kev-9b      LoRA + pointer head on Qwen/Qwen3.5-9B-Base (card: revision 68c46c4b)
+#   nimble-9b   LoRA on the post-trained Qwen/Qwen3.5-9B (card and schema_config.json:
+#               c202236235762e1c871ad0ccb60c8ee5ba337b9a), NOT the Base checkpoint
+#   decider-2b  Qwen/Qwen3.5-2B-Base (decider_config.json "base"; no revision stated)
+#   this-that   adapted from decider-2b, so the same 2B base
+#   kev-0.8b    Qwen/Qwen3.5-0.8B-Base (card: revision dc7cdfe2)
+# Laya is a ModernBERT encoder with no language-model head over its option keys, so it has
+# no backbone control here. Revisions are pinned through P4_REVISIONS by the notebook.
+BACKBONE_REPOS = {
+    "backbone-qwen35-9b-base": "Qwen/Qwen3.5-9B-Base",
+    "backbone-qwen35-9b": "Qwen/Qwen3.5-9B",
+    "backbone-qwen35-2b-base": "Qwen/Qwen3.5-2B-Base",
+    "backbone-qwen35-0.8b-base": "Qwen/Qwen3.5-0.8B-Base",
+}
+# the decision model(s) each backbone is the control for
+BACKBONE_OF = {"kev-9b": "backbone-qwen35-9b-base", "nimble-9b": "backbone-qwen35-9b",
+               "decider-2b": "backbone-qwen35-2b-base", "this-that-1.0": "backbone-qwen35-2b-base",
+               "kev-0.8b": "backbone-qwen35-0.8b-base"}
+BACKBONE_CONDITIONS = (["d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki_corpus",
+                        "d3_emotion", "d3_wiki_politeness"]
+                       + [f"e2_d1_{n}" for n in ("k01", "kny", "kswap", "krand")]
+                       + [f"e2_d3_{t}_{n}" for t in ("conv_go_awry", "wiki_corpus")
+                          for n in ("k01", "kny", "kswap", "krand")])
+
+
+class BackboneOptScoreBackend:
+    """An untuned causal LM scored on the option keys (optscore_prompt, combine_key_logprobs).
+
+    One forward pass over the prompt with the cache on gives the next-token distribution at the
+    answer cue. Every deeper path the keys need (key_nodes; one path " o" for o1..o9, sixteen
+    for o1..o150, a few for random five-letter keys) then runs as one right-padded batch of rows
+    that continue independent replicas of that cache (_replicate_cache), rows_per_pass rows at
+    a time, so a question costs one prompt pass plus one short batched pass whatever its option
+    count. Padding sits after each row's real tokens, so causal attention and the recurrent
+    layers never let it reach a real position; each row is read at its own last real token.
+    Log-softmax is taken in float64 from the model's logits (bfloat16 weights on CUDA, float32
+    on CPU). Deterministic, so served and T=1 distributions coincide (probs_t1 == probs).
+
+    Self-check. With P4_OPTSCORE_CHECK=n the first n requests of the process also recompute
+    every path by a plain full-sequence forward pass without any cache and compare the
+    resulting option distributions. The largest absolute difference is printed per request.
+    It raises, failing the notebook's smoke test before the full run starts, when a difference
+    exceeds P4_OPTSCORE_CHECK_TOL (default 0.15) or when the two argmax options disagree on
+    more than one checked question. On CPU in float32 the two agree to about 1e-6 in
+    probability and 3e-5 in log-probability (Qwen3.5-0.8B-Base on d2_k150, d1_neutral and the
+    random-key files), which is the exactness test; in bfloat16 the cached rows and the
+    full-sequence pass round differently (up to about 0.02 in probability on the laptop's
+    emulated bfloat16), so on the GPU the check only guards against gross breakage.
+
+    Truncation: none is applied. A prompt longer than max_len tokens (32768 by default; the
+    longest frozen prompt is about 8k tokens, Qwen3.5 reads 262,144) is recorded as an error
+    line, and the notebook's status cell reports the maximum prompt length per condition.
+    """
+
+    concurrency = 1
+    served_temperature = 1.0
+
+    def __init__(self, tag, max_len=32768, rows_per_pass=32):
+        self.tag = tag
+        self.repo = BACKBONE_REPOS[tag]
+        self.max_len = max_len
+        self.rows_per_pass = rows_per_pass
+        self.check_n = int(os.environ.get("P4_OPTSCORE_CHECK", "0"))
+        self.check_tol = float(os.environ.get("P4_OPTSCORE_CHECK_TOL", "0.15"))
+        self._argmax_disagree = 0
+        self._n_seen = 0
+        self._loaded = False
+
+    async def __aenter__(self):
+        if not self._loaded:
+            await _run_sync(self._load)
+            self._loaded = True
+        return self
+
+    async def __aexit__(self, *a):
+        return None
+
+    def _load(self):
+        import torch
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+        self.revision = _model_sha(self.repo)
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        dtype = torch.bfloat16 if self.device == "cuda" else torch.float32
+        self.tok = AutoTokenizer.from_pretrained(self.repo, revision=self.revision)
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.repo, revision=self.revision, dtype=dtype).to(self.device).eval()
+        self.dtype_name = str(dtype).replace("torch.", "")
+
+    def encode(self, rec, q):
+        """(prompt ids, keys, key ids, joint tokenization equal) for one question."""
+        text, keys, conts = optscore_prompt(rec, q)
+        enc = lambda s: self.tok.encode(s, add_special_tokens=False)   # noqa: E731
+        p_ids = enc(text)
+        k_ids = [enc(c) for c in conts]
+        joint_ok = all(enc(text + c) == p_ids + ids for c, ids in zip(conts, k_ids))
+        return p_ids, keys, k_ids, joint_ok
+
+    def _needed(self, nodes, children):
+        return {n: sorted(children.get(n, ())) for n in nodes}
+
+    def node_logprobs(self, p_ids, nodes, children):
+        """{path: {token: log-probability}} for the tokens each path needs, cached and batched."""
+        import torch
+        F = torch.nn.functional
+        need = self._needed(nodes, children)
+        out = {}
+        with torch.no_grad():
+            ids = torch.tensor([p_ids], device=self.device)
+            res = self.model(input_ids=ids, use_cache=True, logits_to_keep=1)
+            cache = res.past_key_values
+            lp = F.log_softmax(res.logits[0, -1].double(), -1)
+            out[()] = dict(zip(need[()], lp[need[()]].tolist()))
+            rest = [n for n in nodes if n]
+            for start in range(0, len(rest), self.rows_per_pass):
+                part = rest[start:start + self.rows_per_pass]
+                L = max(len(n) for n in part)
+                x = torch.tensor([list(n) + [n[-1]] * (L - len(n)) for n in part],
+                                 device=self.device)
+                att = torch.tensor([[1] * (len(p_ids) + len(n)) + [0] * (L - len(n))
+                                    for n in part], device=self.device)
+                replica = _replicate_cache(cache, len(part), self.device)
+                o = self.model(input_ids=x, attention_mask=att, past_key_values=replica,
+                               use_cache=True)
+                for i, n in enumerate(part):
+                    row = F.log_softmax(o.logits[i, len(n) - 1].double(), -1)
+                    out[n] = dict(zip(need[n], row[need[n]].tolist()))
+                del replica, o
+        return out
+
+    def node_logprobs_naive(self, p_ids, nodes, children):
+        """The same quantities by one full forward pass per path, no cache (the self-check)."""
+        import torch
+        F = torch.nn.functional
+        need = self._needed(nodes, children)
+        out = {}
+        with torch.no_grad():
+            for n in nodes:
+                ids = torch.tensor([p_ids + list(n)], device=self.device)
+                res = self.model(input_ids=ids, use_cache=False, logits_to_keep=1)
+                row = F.log_softmax(res.logits[0, -1].double(), -1)
+                out[n] = dict(zip(need[n], row[need[n]].tolist()))
+        return out
+
+    def score_question(self, rec, q, check=False):
+        p_ids, keys, k_ids, joint_ok = self.encode(rec, q)
+        n_tok = len(p_ids) + max(len(s) for s in k_ids)
+        if n_tok > self.max_len:
+            raise ValueError(f"optscore: prompt is {n_tok} tokens, max_len is {self.max_len}")
+        nodes = key_nodes(k_ids)
+        children = key_children(k_ids)
+        node_lp = self.node_logprobs(p_ids, nodes, children)
+        probs, logp, logb, _ = combine_key_logprobs(keys, k_ids, node_lp)
+        raw = {"served_temperature": 1.0, "probs_t1": probs, "logp_key": logp,
+               "log_boundary": {k: v for k, v in logb.items() if v != 0.0},
+               "n_prompt_tokens": len(p_ids), "n_paths": len(nodes),
+               "joint_tokenization_ok": joint_ok, "dtype": self.dtype_name,
+               "scoring": "optscore: sum of key-token log-probs + boundary term, softmax, T=1"}
+        if check:
+            naive = self.node_logprobs_naive(p_ids, nodes, children)
+            p_naive, _, _, _ = combine_key_logprobs(keys, k_ids, naive)
+            d_prob = max(abs(probs[k] - p_naive[k]) for k in keys)
+            d_lp = max(abs(node_lp[n][t] - naive[n][t]) for n in nodes for t in node_lp[n])
+            raw["check_max_abs_dprob"], raw["check_max_abs_dlogp"] = d_prob, d_lp
+            if max(probs, key=probs.get) != max(p_naive, key=p_naive.get):
+                self._argmax_disagree += 1
+            print(f"  optscore self-check: max |dprob| {d_prob:.3g}, max |dlogp| {d_lp:.3g}, "
+                  f"argmax disagreements so far {self._argmax_disagree}", flush=True)
+            if d_prob > self.check_tol or self._argmax_disagree > 1:
+                raise RuntimeError(f"optscore self-check failed: cached and full-sequence "
+                                   f"distributions differ by {d_prob:.4g} (tolerance "
+                                   f"{self.check_tol}), {self._argmax_disagree} argmax "
+                                   f"disagreements")
+        return probs, raw, len(p_ids)
+
+    async def answer(self, rec):
+        check = self._n_seen < self.check_n
+        self._n_seen += 1
+
+        def _score():
+            out, usage = {}, 0
+            for qid, q in rec["questions"].items():
+                probs, raw, n = self.score_question(rec, q, check=check)
+                out[qid] = {"probs": probs, "raw": raw}
+                usage += n
+            return out, usage
+
+        out, usage = await _run_sync(_score)
+        return {"model_returned": self.repo, "usage_in": usage, "answers": out}
+
+
+for _tag in BACKBONE_REPOS:
+    harness.register(_tag, lambda _t=_tag, **kw: BackboneOptScoreBackend(_t, **kw))
+
+
+# ---------------------------------------------------------------------- comparator-open2 (vLLM)
+
+# Qwen3.6-27B, the official FP8 release (fine-grained FP8, block 128), on an A100 40 GB: its
+# card puts it ahead of Gemma-4-31B and Qwen3.6-35B-A3B on MMLU-Pro (86.2), GPQA Diamond
+# (87.8) and SuperGPQA (66.0). vLLM runs block FP8 on Ampere through the FP8 Marlin kernel
+# (weight-only, W8A16). The L4 fallback is the same model as a community 4-bit AWQ release
+# (compressed-tensors, group size 32), under its own tags so the two never mix.
+COMPARATOR2_REPO = "Qwen/Qwen3.6-27B-FP8"
+COMPARATOR2_AWQ_REPO = "cyankiwi/Qwen3.6-27B-AWQ-INT4"
+COMPARATOR2_LL_CUE = '{"answer": "'
+COMPARATOR2_TOPN = 64      # next-token log-probabilities returned per scoring path
+COMPARATOR2_PROFILES = {   # engine settings per checkpoint (and the GPU it is meant for)
+    COMPARATOR2_REPO: {"max_model_len": 16384, "gpu_memory_utilization": 0.92,
+                       "max_num_seqs": 32, "enforce_eager": False},
+    COMPARATOR2_AWQ_REPO: {"max_model_len": 12288, "gpu_memory_utilization": 0.95,
+                           "max_num_seqs": 8, "enforce_eager": True},
+}
+
+
+class Comparator2Backend(ComparatorOpenBackend):
+    """comparator-open's verbalized-JSON protocol, unchanged (comparator_prompt,
+    comparator_json_schema, comparator_parse, greedy decoding, thinking off, prefetch
+    batching), on a stronger checkpoint. Only the engine construction differs: the vision tower
+    is not loaded (language_model_only), the tokenizer revision is pinned with the weights, and
+    the engine settings come from COMPARATOR2_PROFILES. The prompt budget is the profile's
+    max_model_len minus max_tokens (16384 - 768 on the A100 profile, so the longest D3 prompts
+    that exceeded comparator-open's 12288 budget are answered)."""
+
+    served_temperature = 0.0
+
+    def __init__(self, tag, repo, batch1=False, max_tokens=768):
+        prof = COMPARATOR2_PROFILES[repo]
+        super().__init__(max_model_len=prof["max_model_len"], max_tokens=max_tokens,
+                         gpu_memory_utilization=prof["gpu_memory_utilization"])
+        self.tag, self.repo, self.batch1 = tag, repo, batch1
+        self.max_num_seqs = prof["max_num_seqs"]
+        self.enforce_eager = prof["enforce_eager"]
+        if batch1:
+            # harness.run() skips a backend whose prefetch is None, so nothing is batched: each
+            # question is its own generate() call inside answer() and latency_s is batch-1 time
+            self.prefetch = None
+            self.concurrency = 1
+
+    def _load(self):
+        self.revision = _model_sha(self.repo)
+        from vllm import LLM
+        self.llm = LLM(model=self.repo, revision=self.revision, tokenizer_revision=self.revision,
+                       max_model_len=self.max_model_len,
+                       gpu_memory_utilization=self.gpu_memory_utilization,
+                       max_num_seqs=self.max_num_seqs, enforce_eager=self.enforce_eager,
+                       max_logprobs=COMPARATOR2_TOPN, enable_prefix_caching=True,
+                       language_model_only=True)
+        self.tokenizer = self.llm.get_tokenizer()
+
+    def _one_question(self, rec, qid):
+        return {"key": rec["key"], "state": rec["state"],
+                "questions": {qid: rec["questions"][qid]}}
+
+    async def answer(self, rec):
+        if not self.batch1:
+            return await super().answer(rec)
+        out, usage_in_total = {}, 0
+        for qid in rec["questions"]:
+            await _run_sync(self._prefetch_sync, [self._one_question(rec, qid)])
+            cached = self._cache.pop((rec["key"], qid))
+            if cached["error"] is not None:
+                raise RuntimeError(cached["error"])
+            usage_in_total += cached["usage_in"] or 0
+            out[qid] = {"probs": cached["probs"],
+                       "raw": {"served_temperature": 0.0, "probs_t1": cached["probs"],
+                               "answer": cached["answer"], "raw_text": cached["raw_text"],
+                               "usage_out": cached["usage_out"], "latency_mode": "batch1",
+                               "batch_wall_s": cached["batch_wall_s"], "n_requests": 1}}
+        return {"model_returned": self.repo, "usage_in": usage_in_total, "answers": out}
+
+
+class Comparator2LLBackend(Comparator2Backend):
+    """The same checkpoint and the same chat prompt as Comparator2Backend, read as a
+    likelihood instead of a verbalized number.
+
+    The prompt is comparator_prompt unchanged, through the chat template with thinking off,
+    followed by the assistant's opening characters of the JSON reply it was asked for,
+    COMPARATOR2_LL_CUE = '{"answer": "'. What the model would write next is the key of its
+    answer, so the option probabilities are combine_key_logprobs over the key tokens after that
+    cue (the same sequence log-likelihood plus boundary term as the backbones, temperature 1,
+    no generation). Each needed path is one vLLM request with max_tokens=1 that returns the
+    top COMPARATOR2_TOPN next-token log-probabilities (vLLM's default logprobs_mode is the raw
+    model distribution). Requests are sent as token ids, so nothing is re-tokenized. A needed
+    token outside the returned top-N gets the smallest returned log-probability as an upper
+    bound, counted per question in raw["n_missing"].
+
+    Batching: the questions of a prefetch chunk go in groups of max_num_seqs. For each group,
+    phase 1 sends every question's prompt (the root path), which fills vLLM's prefix cache,
+    and phase 2 sends every deeper path, which continues a cached prompt (for this hybrid
+    model vLLM caches at block granularity, "align" mode, so up to one block is recomputed per
+    path). Grouping keeps a group's prompt blocks in the cache until its paths have run; with
+    the whole chunk in phase 1, the blocks of early prompts would be evicted first.
+    batch_wall_s is the summed wall time of all groups of the chunk and n_requests the number
+    of questions in the chunk, so batch_wall_s / n_requests is a question's share, as for
+    comparator-open. The batch-1 variant runs both phases for one question at a time."""
+
+    served_temperature = 1.0
+
+    def ll_encode(self, rec, qid, q):
+        prompt, keys, _n_report = comparator_prompt(rec, qid, q)
+        text = self._chat(prompt) + COMPARATOR2_LL_CUE
+        enc = lambda s: self.tokenizer.encode(s, add_special_tokens=False)   # noqa: E731
+        p_ids = enc(text)
+        k_ids = [enc(k) for k in keys]
+        joint_ok = all(enc(text + k + '"')[:len(p_ids) + len(ids)] == p_ids + ids
+                       for k, ids in zip(keys, k_ids))
+        return p_ids, keys, k_ids, joint_ok
+
+    @staticmethod
+    def _lp_dict(logprobs_at_pos):
+        return {int(t): float(getattr(v, "logprob", v)) for t, v in logprobs_at_pos.items()}
+
+    def _prefetch_sync(self, chunk):
+        import time
+        from vllm import SamplingParams
+        sp = SamplingParams(temperature=0, max_tokens=1, logprobs=COMPARATOR2_TOPN)
+        items = []
+        for rec in chunk:
+            for qid, q in rec["questions"].items():
+                p_ids, keys, k_ids, joint_ok = self.ll_encode(rec, qid, q)
+                n_tok = len(p_ids) + max(len(s) for s in k_ids)
+                if n_tok > self.max_model_len - 1:
+                    self._cache[(rec["key"], qid)] = {
+                        "error": f"comparator-ll: prompt is {n_tok} tokens, "
+                                 f"max_model_len is {self.max_model_len}"}
+                    continue
+                items.append({"key": rec["key"], "qid": qid, "p_ids": p_ids, "keys": keys,
+                              "k_ids": k_ids, "joint_ok": joint_ok, "nodes": key_nodes(k_ids)})
+        if not items:
+            return
+        node_lp = [{} for _ in items]
+        wall = phase1 = 0.0
+        n_paths_total = 0
+        group = max(1, int(self.max_num_seqs))
+        for g0 in range(0, len(items), group):
+            idx = list(range(g0, min(g0 + group, len(items))))
+            t0 = time.time()
+            roots = self.llm.generate([{"prompt_token_ids": items[i]["p_ids"]} for i in idx],
+                                      sp, use_tqdm=False)
+            t1 = time.time()
+            deeper = [(i, n) for i in idx for n in items[i]["nodes"] if n]
+            outs = (self.llm.generate([{"prompt_token_ids": items[i]["p_ids"] + list(n)}
+                                       for i, n in deeper], sp, use_tqdm=False)
+                    if deeper else [])
+            wall += time.time() - t0
+            phase1 += t1 - t0
+            n_paths_total += len(idx) + len(deeper)
+            for i, o in zip(idx, roots):
+                node_lp[i][()] = self._lp_dict(o.outputs[0].logprobs[0])
+            for (i, n), o in zip(deeper, outs):
+                node_lp[i][n] = self._lp_dict(o.outputs[0].logprobs[0])
+        for i, it in enumerate(items):
+            floor = {n: min(d.values()) for n, d in node_lp[i].items()}
+            probs, logp, logb, n_missing = combine_key_logprobs(it["keys"], it["k_ids"],
+                                                                node_lp[i], floor)
+            self._cache[(it["key"], it["qid"])] = {
+                "error": None, "probs": probs, "answer": max(probs, key=probs.get),
+                "logp_key": logp, "log_boundary": {k: v for k, v in logb.items() if v != 0.0},
+                "n_missing": n_missing, "n_paths": len(it["nodes"]),
+                "joint_ok": it["joint_ok"], "usage_in": len(it["p_ids"]),
+                "batch_wall_s": wall, "phase1_wall_s": phase1, "n_requests": len(items),
+                "n_path_requests": n_paths_total}
+
+    async def answer(self, rec):
+        out, usage_in_total = {}, 0
+        for qid in rec["questions"]:
+            key = (rec["key"], qid)
+            if self.batch1:
+                await _run_sync(self._prefetch_sync, [self._one_question(rec, qid)])
+            elif key not in self._cache:
+                await _run_sync(self._prefetch_sync, [rec])
+            c = self._cache.pop(key)
+            if c["error"] is not None:
+                raise RuntimeError(c["error"])
+            usage_in_total += c["usage_in"] or 0
+            out[qid] = {"probs": c["probs"],
+                       "raw": {"served_temperature": 1.0, "probs_t1": c["probs"],
+                               "answer": c["answer"], "logp_key": c["logp_key"],
+                               "log_boundary": c["log_boundary"], "n_missing": c["n_missing"],
+                               "n_paths": c["n_paths"], "joint_tokenization_ok": c["joint_ok"],
+                               "latency_mode": "batch1" if self.batch1 else "batched",
+                               "batch_wall_s": c["batch_wall_s"],
+                               "phase1_wall_s": c["phase1_wall_s"],
+                               "n_requests": 1 if self.batch1 else c["n_requests"],
+                               "n_path_requests": c["n_path_requests"],
+                               "cue": COMPARATOR2_LL_CUE}}
+        return {"model_returned": self.repo, "usage_in": usage_in_total, "answers": out}
+
+
+# tag -> (class, checkpoint, batch-1)
+COMPARATOR2_TAGS = {
+    "comparator-open2": (Comparator2Backend, COMPARATOR2_REPO, False),
+    "comparator-open2-ll": (Comparator2LLBackend, COMPARATOR2_REPO, False),
+    "comparator-open2-b1": (Comparator2Backend, COMPARATOR2_REPO, True),
+    "comparator-open2-ll-b1": (Comparator2LLBackend, COMPARATOR2_REPO, True),
+    "comparator-open2-awq": (Comparator2Backend, COMPARATOR2_AWQ_REPO, False),
+    "comparator-open2-awq-ll": (Comparator2LLBackend, COMPARATOR2_AWQ_REPO, False),
+    "comparator-open2-awq-b1": (Comparator2Backend, COMPARATOR2_AWQ_REPO, True),
+    "comparator-open2-awq-ll-b1": (Comparator2LLBackend, COMPARATOR2_AWQ_REPO, True),
+}
+for _tag, (_cls, _repo, _b1) in COMPARATOR2_TAGS.items():
+    harness.register(_tag, lambda _t=_tag, _c=_cls, _r=_repo, _b=_b1, **kw: _c(_t, _r, _b, **kw))

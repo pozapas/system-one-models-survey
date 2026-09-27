@@ -22,6 +22,10 @@ BASE = {"nli": {c: "baseline-nli-deberta-v3-base" for c in CONDS},
                     "d3_emotion": "baseline-bge-small-lr-d3",
                     "d3_wiki_politeness": "baseline-bge-small-lr-d3"}}
 MODELS = [bench.JEV] + bench.MODELS_OPEN
+# second revision comparators, when answered, are paired against the same baselines in a
+# Holm family of their own (holm_family "comparators2"), so the Holm-adjusted values of
+# MODELS stay exactly as they are
+EXTRA = bench.present(bench.COMPARATORS_2)
 
 
 def cmap(model, cond):
@@ -70,6 +74,17 @@ def main():
             adj = holm([v["p"] for v in res.values()])
             for (m, v), a in zip(res.items(), adj):
                 v["holm"] = a
+            ext = {}
+            for m in EXTRA:
+                if not bench.available_reps(m, cond):
+                    continue
+                r = paired(cmap(m, cond), B, C.SEED)
+                if r:
+                    ext[m] = r
+            for (m, v), a in zip(ext.items(), holm([v["p"] for v in ext.values()])):
+                v["holm"] = a
+                v["holm_family"] = "comparators2"
+            res.update(ext)
             out[f"{cond}|{bname}"] = res
             sig_pos = [m for m, v in res.items() if v["holm"] < 0.05 and v["diff"] > 0]
             sig_neg = [m for m, v in res.items() if v["holm"] < 0.05 and v["diff"] < 0]

@@ -17,6 +17,50 @@ MODELS_OPEN = ["laya-en", "laya-ml", "kev-0.8b", "decider-2b", "this-that-1.0",
                "kev-9b", "nimble-9b"]
 JEV = "jev-1.13.0"
 
+# Second revision runs (build_revision2_notebook.py). None of these is part of MODELS_OPEN:
+# the analyses add them as extra models only when their answer folders exist, after the
+# original models, so every earlier result stays as it was.
+COMPARATORS_2 = ["comparator-open2", "comparator-open2-ll",
+                 "comparator-open2-awq", "comparator-open2-awq-ll"]
+COMPARATORS_2_B1 = ["comparator-open2-b1", "comparator-open2-ll-b1",
+                    "comparator-open2-awq-b1", "comparator-open2-awq-ll-b1"]
+BATCHED = ("comparator-open",) + tuple(COMPARATORS_2)     # latency amortized over a batch
+BACKBONES = ["backbone-qwen35-0.8b-base", "backbone-qwen35-2b-base",
+             "backbone-qwen35-9b-base", "backbone-qwen35-9b"]
+# decision model -> the untuned backbone it adapts (adapters.BACKBONE_OF)
+BACKBONE_OF = {"kev-9b": "backbone-qwen35-9b-base", "nimble-9b": "backbone-qwen35-9b",
+               "decider-2b": "backbone-qwen35-2b-base",
+               "this-that-1.0": "backbone-qwen35-2b-base",
+               "kev-0.8b": "backbone-qwen35-0.8b-base"}
+USD_PER_UNIT = 9.99 / 100          # Colab Pro: 100 compute units for 9.99 USD (a04)
+
+
+def present(models):
+    """The models of the list that have an answer folder."""
+    return [m for m in models if os.path.isdir(os.path.join(C.ANSWERS, m))]
+
+
+def usd_per_gpu_hour(model, default):
+    """GPU price per hour for a model of the second revision run: the compute units per hour
+    that answers/run_log_revision2.json records as assumed for the GPU of that model's part
+    (part 1 backbones, part 2 comparators), times USD_PER_UNIT. Without the log, the planned
+    GPU's rate is used (A100 11.8 units per hour for the FP8 comparator, L4 4.8 otherwise).
+    Every other model gets `default` (a04's L4 rate), unchanged."""
+    if model not in COMPARATORS_2 + COMPARATORS_2_B1 + BACKBONES:
+        return default
+    units = {"L4": 4.8, "A100": 11.8}
+    gpu = "L4" if (model in BACKBONES or "-awq" in model) else "A100"
+    p = os.path.join(C.ANSWERS, "run_log_revision2.json")
+    if os.path.exists(p):
+        log = json.load(open(p, encoding="utf-8"))
+        units.update(log.get("units_per_hour_assumed") or {})
+        name = log.get("part1_gpu" if model in BACKBONES else "part2_gpu") or ""
+        for g in ("A100", "H100", "L4", "T4"):
+            if g in name:
+                gpu = g
+                break
+    return float(units.get(gpu, 4.8)) * USD_PER_UNIT
+
 
 def inputs(cond):
     with open(os.path.join(C.INPUTS, f"{cond}.jsonl"), encoding="utf-8") as fh:

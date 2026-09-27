@@ -118,6 +118,8 @@ def main():
     cl = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else {}
     firsts = [bench.JEV] + bench.MODELS_OPEN
     pairs = [(f, c) for c in COMPARATORS for f in firsts]
+    # second revision comparators, when answered, as extra second stages
+    pairs += [(f, c) for c in bench.present(bench.COMPARATORS_2) for f in firsts]
     pairs += [(f, bench.JEV) for f in bench.MODELS_OPEN]
     res = {}
     for f, s in pairs:

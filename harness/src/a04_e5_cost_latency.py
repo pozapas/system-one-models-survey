@@ -26,6 +26,10 @@ import common as C
 CONDS = ["d1_neutral", "d2_k150", "d2_k5", "d2_k20", "d3_conv_go_awry", "d3_wiki_corpus",
          "d3_emotion", "d3_wiki_politeness"]
 MODELS = [bench.JEV] + bench.MODELS_OPEN + ["comparator-open"]
+# second revision comparators and their batch-1 samples, when answered, as extra models;
+# each is priced at the GPU its part ran on (bench.usd_per_gpu_hour), every earlier model
+# keeps the L4 rate below
+MODELS += bench.present(bench.COMPARATORS_2 + bench.COMPARATORS_2_B1)
 # Assumptions, stated in the manuscript. Colab Pro sells 100 compute units for
 # 9.99 USD; the L4 runtime draws the rate recorded in run_log.json, else 4.8 units/h.
 USD_PER_UNIT = 9.99 / 100
@@ -53,7 +57,8 @@ def main():
             ans = bench.answers(m, cond, 1)
             if not ans:
                 continue
-            batched = m == "comparator-open"
+            batched = m in bench.BATCHED
+            usd_h = bench.usd_per_gpu_hour(m, usd_per_hour)
             if batched:
                 # vLLM generates a whole chunk at once; each request's share of the chunk's
                 # wall time is batch_wall_s / n_requests, summed over its questions
@@ -74,12 +79,17 @@ def main():
                 d["basis"] = "recorded input tokens x 0.042 USD per million"
             else:
                 gpu_s = float(lat.sum())
-                d["usd_per_1000_decisions"] = gpu_s / 3600 * usd_per_hour / n_dec * 1000
-                d["basis"] = (f"GPU seconds x {usd_per_hour:.3f} USD per hour "
+                d["usd_per_1000_decisions"] = gpu_s / 3600 * usd_h / n_dec * 1000
+                d["basis"] = (f"GPU seconds x {usd_h:.3f} USD per hour "
                               "(Colab compute units), "
                               + ("batched generation, time amortized per request" if batched
                                  else "one request at a time"))
                 d["latency_mode"] = "batched_amortized" if batched else "single_request"
+                if m in bench.COMPARATORS_2 + bench.COMPARATORS_2_B1:
+                    d["usd_per_gpu_hour"] = usd_h
+                    if m in bench.COMPARATORS_2_B1:
+                        d["basis"] += (", batch-1 sample: one question per generate call, "
+                                       "latency per request = its questions in sequence")
             mres[cond] = d
         if mres:
             res[m] = mres

@@ -2,7 +2,7 @@
 
 This repository accompanies two manuscripts by Amir Rafe and Subasish Das (Texas State University):
 
-- *From Calibrated Classifiers to Decision Contracts: A Survey of System One Models* (the survey), and
+- *System One Decision Models: A Survey from Calibrated Classifiers to Decision Contracts* (the survey), and
 - *Benchmarking System One decision models against trained classifiers and language models for automated decision gates* (the benchmark paper).
 
 A typed probabilistic decision model maps a state and a caller-declared typed question to a probability distribution over a finite answer space, without generating text.

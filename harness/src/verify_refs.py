@@ -1,7 +1,7 @@
 """Verify every candidate reference against authoritative bibliographic records.
 
-This implements the protocol in step 2 of the plan as a deterministic script
-rather than as a language agent. Crossref is queried first, then OpenAlex, then
+This implements the reference-checking protocol as a deterministic script.
+Crossref is queried first, then OpenAlex, then
 arXiv. A candidate is accepted only when the title matches closely and either
 the first author's surname or the year agrees, and the metadata written to the
 bibliography is the record's, never the candidate's.
