@@ -1,0 +1,138 @@
+{
+  "runtimes": [
+    {
+      "start": "2026-09-27T15:32:14.276212Z",
+      "part1": true,
+      "comparator": true,
+      "backbone_desc": true,
+      "part2": false,
+      "gpu": "NVIDIA L4, 580.82.07, 23034 MiB"
+    },
+    {
+      "start": "2026-09-27T17:53:54.013118Z",
+      "part1": false,
+      "comparator": true,
+      "backbone_desc": true,
+      "part2": true,
+      "gpu": "NVIDIA A100-SXM4-80GB, 580.82.07, 81920 MiB"
+    }
+  ],
+  "units_per_hour_assumed": {
+    "L4": 4.8,
+    "A100": 11.8
+  },
+  "part1_gpu": "NVIDIA L4, 580.82.07, 23034 MiB",
+  "models": {
+    "laya-ml": {
+      "smoke_s_per_request_incl_load": 4.7334229946136475,
+      "requests": 800,
+      "laya-ml/d2_k150_oos_min": 0.6576325376828511
+    },
+    "kev-0.8b": {
+      "smoke_s_per_request_incl_load": 16.869955825805665,
+      "requests": 800,
+      "kev-0.8b/d2_k150_oos_min": 1.2879000743230185
+    },
+    "decider-2b": {
+      "smoke_s_per_request_incl_load": 6.313565015792847,
+      "requests": 800,
+      "decider-2b/d2_k150_oos_min": 2.2093222975730895
+    },
+    "this-that-1.0": {
+      "smoke_s_per_request_incl_load": 7.318096733093261,
+      "requests": 800,
+      "this-that-1.0/d2_k150_oos_min": 2.2939477960268655
+    },
+    "kev-9b": {
+      "smoke_s_per_request_incl_load": 25.370217990875243,
+      "requests": 800,
+      "kev-9b/d2_k150_oos_min": 6.189810188611348
+    },
+    "nimble-9b": {
+      "smoke_s_per_request_incl_load": 31.932940196990966,
+      "requests": 800,
+      "nimble-9b/d2_k150_oos_min": 23.132676271597543
+    },
+    "comparator-open": {
+      "smoke_s_incl_load": 244.1987807750702,
+      "full_min": 16.70923830270767
+    },
+    "backbone-desc-qwen35-0.8b-base": {
+      "smoke_s_incl_load": 107.20638275146484,
+      "requests": 3196,
+      "smoke_check_max_abs_dprob": 0.003907673936619893,
+      "full_min": 26.590455257892607
+    },
+    "backbone-desc-qwen35-2b-base": {
+      "smoke_s_incl_load": 103.98839473724365,
+      "requests": 3196,
+      "smoke_check_max_abs_dprob": 0.004810451535143867,
+      "full_min": 28.248898486296337
+    }
+  },
+  "end": "2026-09-27T19:09:04.986385Z",
+  "status": {
+    "laya-ml/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "kev-0.8b/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "decider-2b/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "this-that-1.0/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "kev-9b/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "nimble-9b/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "comparator-open/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "backbone-desc-qwen35-0.8b-base/d1_neutral__rep1": "OK 400/400 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 634 tokens",
+    "backbone-desc-qwen35-0.8b-base/d2_k150__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 1308 tokens",
+    "backbone-desc-qwen35-0.8b-base/d3_conv_go_awry__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 7959 tokens",
+    "backbone-desc-qwen35-0.8b-base/d3_wiki_corpus__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 3824 tokens",
+    "backbone-desc-qwen35-0.8b-base/d3_emotion__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 155 tokens",
+    "backbone-desc-qwen35-0.8b-base/d3_wiki_politeness__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 222 tokens",
+    "backbone-desc-qwen35-2b-base/d1_neutral__rep1": "OK 400/400 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 634 tokens",
+    "backbone-desc-qwen35-2b-base/d2_k150__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 1308 tokens",
+    "backbone-desc-qwen35-2b-base/d3_conv_go_awry__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 7959 tokens",
+    "backbone-desc-qwen35-2b-base/d3_wiki_corpus__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 3824 tokens",
+    "backbone-desc-qwen35-2b-base/d3_emotion__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 155 tokens",
+    "backbone-desc-qwen35-2b-base/d3_wiki_politeness__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 222 tokens",
+    "backbone-desc-qwen35-9b-base/d1_neutral__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b-base/d2_k150__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b-base/d3_conv_go_awry__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b-base/d3_wiki_corpus__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b-base/d3_emotion__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b-base/d3_wiki_politeness__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b/d1_neutral__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b/d2_k150__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b/d3_conv_go_awry__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b/d3_wiki_corpus__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b/d3_emotion__rep1": "MISSING (part 1c)",
+    "backbone-desc-qwen35-9b/d3_wiki_politeness__rep1": "MISSING (part 1c)",
+    "comparator-open2/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "comparator-open2-ll/d2_k150_oos__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok"
+  },
+  "revisions_pinned": {
+    "Mapika/decider-2b": "d61c1c16089572df5d180329b9fea4997a90090c",
+    "Qwen/Qwen3-14B-AWQ": "31c69efc29464b6bb0aee1398b5a7b50a99340c3",
+    "Qwen/Qwen3.5-0.8B-Base": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+    "Qwen/Qwen3.5-2B-Base": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "Qwen/Qwen3.5-9B-Base": "68c46c4b3498877f3ef123c856ecfde50c39f404",
+    "Qwen/Qwen3.6-27B-FP8": "e89b16ebf1988b3d6befa7de50abc2d76f26eb09",
+    "bespokelabs/Bespoke-Nimble-9B": "bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+    "convaiinnovations/laya": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "cyankiwi/Qwen3.6-27B-AWQ-INT4": "e5cc0400fb2403c437c2c40a7c52fb5ae93fda18",
+    "flock-io/this-that-model-1.0": "3d927195c4f9845efe66c5715883a7a0f42b1239",
+    "jaredpalmer/kev-0.8b": "9a45d25eb2ab761841196625383fa1dff0e56c1e",
+    "jaredpalmer/kev-9b": "2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c"
+  },
+  "part2_gpu": "NVIDIA A100-SXM4-80GB, 580.82.07, 81920 MiB",
+  "part2": {
+    "variant": "fp8",
+    "tags": {
+      "verbal": "comparator-open2",
+      "ll": "comparator-open2-ll"
+    },
+    "smoke_verbal_s_incl_load": 416.2113492488861,
+    "smoke_verbal_s_per_question": 1.2912670135498048,
+    "smoke_ll_s_incl_load": 97.76753950119019,
+    "smoke_ll_s_per_question": 3.693069314956665,
+    "verbal_min": 9.059689585367838,
+    "ll_min": 56.44243770837784
+  }
+}

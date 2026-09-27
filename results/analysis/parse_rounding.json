@@ -1,0 +1,184 @@
+{
+  "reparse": {
+    "comparator-open2|d1_neutral": {
+      "acc_lenient": 0.7245,
+      "acc_strict": 0.7245,
+      "n": 2000,
+      "recovered": 0
+    },
+    "comparator-open2|d2_k150": {
+      "acc_lenient": 0.9066666666666666,
+      "acc_strict": 0.6833333333333333,
+      "n": 600,
+      "recovered": 160
+    },
+    "comparator-open2|d3_conv_go_awry": {
+      "acc_lenient": 0.534,
+      "acc_strict": 0.534,
+      "n": 500,
+      "recovered": 0
+    },
+    "comparator-open2|d3_emotion": {
+      "acc_lenient": 0.46586345381526106,
+      "acc_strict": 0.39759036144578314,
+      "n": 498,
+      "recovered": 75
+    },
+    "comparator-open2|d3_wiki_corpus": {
+      "acc_lenient": 0.616,
+      "acc_strict": 0.616,
+      "n": 500,
+      "recovered": 0
+    },
+    "comparator-open2|d3_wiki_politeness": {
+      "acc_lenient": 0.6546184738955824,
+      "acc_strict": 0.6546184738955824,
+      "n": 498,
+      "recovered": 0
+    },
+    "comparator-open|d1_neutral": {
+      "acc_lenient": 0.68,
+      "acc_strict": 0.68,
+      "n": 2000,
+      "recovered": 0
+    },
+    "comparator-open|d2_k150": {
+      "acc_lenient": 0.735,
+      "acc_strict": 0.7283333333333334,
+      "n": 600,
+      "recovered": 9
+    },
+    "comparator-open|d3_conv_go_awry": {
+      "acc_lenient": 0.552,
+      "acc_strict": 0.554,
+      "n": 500,
+      "recovered": 1
+    },
+    "comparator-open|d3_emotion": {
+      "acc_lenient": 0.46586345381526106,
+      "acc_strict": 0.463855421686747,
+      "n": 498,
+      "recovered": 2
+    },
+    "comparator-open|d3_wiki_corpus": {
+      "acc_lenient": 0.576,
+      "acc_strict": 0.576,
+      "n": 500,
+      "recovered": 0
+    },
+    "comparator-open|d3_wiki_politeness": {
+      "acc_lenient": 0.6526104417670683,
+      "acc_strict": 0.6526104417670683,
+      "n": 498,
+      "recovered": 0
+    }
+  },
+  "risk": 0.05,
+  "rounding": {
+    "comparator-open2-ll|d1_neutral": {
+      "cov": 0.4215,
+      "cov_rounded": 0.4195,
+      "n": 2000
+    },
+    "comparator-open2-ll|d2_k150": {
+      "cov": 0.8566666666666667,
+      "cov_rounded": 0.8616666666666667,
+      "n": 600
+    },
+    "comparator-open2|d1_neutral": {
+      "cov": 0.0425,
+      "cov_rounded": 0.045,
+      "n": 2000
+    },
+    "comparator-open2|d2_k150": {
+      "cov": 0.6933333333333334,
+      "cov_rounded": 0.6933333333333334,
+      "n": 600
+    },
+    "comparator-open|d1_neutral": {
+      "cov": 0.001,
+      "cov_rounded": 0.001,
+      "n": 2000
+    },
+    "comparator-open|d2_k150": {
+      "cov": 0.015,
+      "cov_rounded": 0.005,
+      "n": 600
+    },
+    "decider-2b|d1_neutral": {
+      "cov": 0.059,
+      "cov_rounded": 0.06,
+      "n": 2000
+    },
+    "decider-2b|d2_k150": {
+      "cov": 0.75,
+      "cov_rounded": 0.7516666666666667,
+      "n": 600
+    },
+    "jev-1.13.0|d1_neutral": {
+      "cov": 0.1305,
+      "cov_rounded": 0.1305,
+      "n": 2000
+    },
+    "jev-1.13.0|d2_k150": {
+      "cov": 0.9266666666666666,
+      "cov_rounded": 0.9266666666666666,
+      "n": 600
+    },
+    "kev-0.8b|d1_neutral": {
+      "cov": 0.0225,
+      "cov_rounded": 0.021,
+      "n": 2000
+    },
+    "kev-0.8b|d2_k150": {
+      "cov": 0.22166666666666668,
+      "cov_rounded": 0.2683333333333333,
+      "n": 600
+    },
+    "kev-9b|d1_neutral": {
+      "cov": 0.1165,
+      "cov_rounded": 0.1135,
+      "n": 2000
+    },
+    "kev-9b|d2_k150": {
+      "cov": 0.6116666666666667,
+      "cov_rounded": 0.64,
+      "n": 600
+    },
+    "laya-en|d1_neutral": {
+      "cov": 0.0005,
+      "cov_rounded": 0.0,
+      "n": 2000
+    },
+    "laya-ml|d1_neutral": {
+      "cov": 0.0115,
+      "cov_rounded": 0.0,
+      "n": 2000
+    },
+    "laya-ml|d2_k150": {
+      "cov": 0.0,
+      "cov_rounded": 0.0,
+      "n": 600
+    },
+    "nimble-9b|d1_neutral": {
+      "cov": 0.203,
+      "cov_rounded": 0.1485,
+      "n": 2000
+    },
+    "nimble-9b|d2_k150": {
+      "cov": 0.655,
+      "cov_rounded": 0.675,
+      "n": 600
+    },
+    "this-that-1.0|d1_neutral": {
+      "cov": 0.043,
+      "cov_rounded": 0.0,
+      "n": 2000
+    },
+    "this-that-1.0|d2_k150": {
+      "cov": 0.78,
+      "cov_rounded": 0.7783333333333333,
+      "n": 600
+    }
+  }
+}

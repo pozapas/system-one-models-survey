@@ -1066,7 +1066,7 @@ def section_E():
             out["families"][cond] = fam
             log("E", cond, {m: (round(100 * v["diff"], 1), round(v["p_holm"], 4)) for m, v in fam.items()})
         fam2 = {}
-        for m in COMP2:          # same estimator as above, own Holm family
+        for m in COMP2:          # same estimator as above, joined to the family below
             if not has(m, cond):
                 continue
             ob = {(r["item_id"], r["qid"]): float(np.argmax(r["p"]) == r["y"])
@@ -1090,12 +1090,15 @@ def section_E():
                        "mcnemar_p": mc["p"], "mcnemar_n01": mc["n01"], "mcnemar_n10": mc["n10"],
                        "mcnemar_ignores_clustering": cond == "d1_neutral"}
         if fam2:
-            ms = list(fam2)
-            for m, a, b in zip(ms, holm([fam2[m]["p_boot"] for m in ms]),
-                               holm([fam2[m]["mcnemar_p"] for m in ms])):
-                fam2[m]["p_holm"] = float(a)
-                fam2[m]["mcnemar_p_holm"] = float(b)
+            # one Holm family per dataset across every model compared with Jev, the second
+            # comparator's readouts included, as the manuscript's methods state
+            joint = [(fam, m) for m in fam] + [(fam2, m) for m in fam2]
+            for (d, m), a, b in zip(joint, holm([d[m]["p_boot"] for d, m in joint]),
+                                    holm([d[m]["mcnemar_p"] for d, m in joint])):
+                d[m]["p_holm"] = float(a)
+                d[m]["mcnemar_p_holm"] = float(b)
             out.setdefault("families_comparators2", {})[cond] = fam2
+            log("E merged", cond, {m: round(v["p_holm"], 4) for m, v in fam2.items()})
 
         # Jev service variability
         reps = [r for r in bench.available_reps(bench.JEV, cond) if r <= 3]

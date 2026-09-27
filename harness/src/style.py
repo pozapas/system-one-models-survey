@@ -75,6 +75,8 @@ MODEL_LABELS = {
     "this-that-1.0": "this-that-model-1.0",
     "nimble-9b": "Nimble-9B",
     "comparator-open": "Qwen3-14B, verbal",
+    "comparator-open2": "Qwen3.6-27B, verbal",
+    "comparator-open2-ll": "Qwen3.6-27B, likelihood",
 }
 
 MODEL_MARKERS = {

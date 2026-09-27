@@ -19,9 +19,9 @@ OUT = os.path.join(BASE, "submission")
 
 HIGHLIGHTS = [
     "Trained classifiers lead on intents; most decision models beat zero-shot NLI",
-    "An LLM matches Jev on intents via option likelihoods, not via stated probabilities",
+    "An LLM read by option-key likelihood is level with Jev on workflows and intents",
     "A stored temperature fitted on few options raises calibration error with 150 options",
-    "Trained heads flip far fewer social-science answers than their backbones",
+    "Fine-tuned checkpoints flip far fewer social-science answers than their backbones",
     "In-scope risk thresholds do not control out-of-scope acceptance; check it separately",
 ]
 

@@ -392,19 +392,49 @@ def collect_revision():
     bb = load("backbone_controls.json")
     if bb:
         _collect_backbone(bb)
-    cp = load("comparator_paired.json")
-    if cp:
-        # cp.<cond>.<comparator>.{diff,lo,hi,holm}: src/a16_comparator_paired.py, vs Jev
-        src = "results/comparator_paired.json"
-        for cond, res in cp.items():
-            cs = CSLUG.get(cond, cond.replace("_", ""))
-            for m, v in res.items():
-                p = f"cp.{cs}.{SLUG.get(m, m)}"
-                radd(f"{p}.diff", v["diff"], src, fmt=".1f")
-                radd(f"{p}.absdiff", abs(v["diff"]), src, fmt=".1f")
-                radd(f"{p}.lo", v["lo"], src, fmt=".1f")
-                radd(f"{p}.hi", v["hi"], src, fmt=".1f")
-                radd(f"{p}.holm", v["holm"], src, fmt=".2g")
+    r3 = load("revision3.json")
+    if r3:
+        # oo.<model>.* (explicit out-of-scope option) and bd.<backbone>.<task>.* (description
+        # scoring): src/a18_revision3.py
+        src = "results/revision3.json"
+        for m, v in r3.get("oos_option", {}).items():
+            p = f"oo.{SLUG[m]}"
+            radd(f"{p}.accin", v["acc_in"], src, fmt=".3f")
+            radd(f"{p}.oosrecall", v["oos_recall"], src, fmt=".3f")
+            radd(f"{p}.falsereject", v["false_reject"], src, fmt=".3f")
+            radd(f"{p}.optcov", v["option"]["coverage_in"], src, fmt=".2f")
+            radd(f"{p}.optfar", v["option"]["oos_false_acceptance"], src, fmt=".2f")
+            g = v["option_gate"]
+            radd(f"{p}.gcov", g["coverage_in"], src, fmt=".3f")
+            _ci(f"{p}.gcov", g["coverage_in_ci"], src, ".3f")
+            if g["risk_in"] is not None and g["risk_in"] == g["risk_in"]:
+                radd(f"{p}.grisk", g["risk_in"], src, fmt=".3f")
+                radd(f"{p}.griskub", g["risk_in_upper_95_one_sided_cp"], src, fmt=".3f")
+            radd(f"{p}.gfar", g["oos_false_acceptance"], src, fmt=".3f")
+            _ci(f"{p}.gfar", g["oos_false_acceptance_ci"], src, ".3f")
+        for d, res in r3.get("desc_scoring", {}).items():
+            bb = SLUG[d.replace("backbone-desc-", "backbone-")]
+            for cond, v in res.items():
+                p = f"bd.{bb}.{RV_TASK[cond]}"
+                radd(f"{p}.accdesc", v["acc_desc"], src, fmt=".3f")
+                radd(f"{p}.acckey", v["acc_key"], src, fmt=".3f")
+    pr = load("parse_rounding.json")
+    if pr:
+        # vr.<model>.<task>.{n,recovered,accstrict,acclenient} and
+        # rr.<model>.<task>.{cov,covrounded}: src/a17_parse_rounding.py
+        src = "results/parse_rounding.json"
+        for key, v in pr.get("reparse", {}).items():
+            m, cond = key.split("|")
+            p = f"vr.{SLUG[m]}.{RV_TASK[cond]}"
+            radd(f"{p}.n", v["n"], src, fmt="d")
+            radd(f"{p}.recovered", v["recovered"], src, fmt="d")
+            radd(f"{p}.accstrict", v["acc_strict"], src, fmt=".3f")
+            radd(f"{p}.acclenient", v["acc_lenient"], src, fmt=".3f")
+        for key, v in pr.get("rounding", {}).items():
+            m, cond = key.split("|")
+            p = f"rr.{SLUG[m]}.{RV_TASK[cond]}"
+            radd(f"{p}.cov", v["cov"], src, fmt=".2f")
+            radd(f"{p}.covrounded", v["cov_rounded"], src, fmt=".2f")
     rp = load("render_paired.json")
     if rp:
         # rp.<done|dtwo>.<comparison>.{diff,lo,hi,p}: src/a13_render_paired.py
@@ -758,6 +788,11 @@ def _collect_rv(rv):
         radd(f"{p}.kone", d["k1_usd_per_1000"], src, fmt=".4f")
         radd(f"{p}.ktwo", d["k2_usd_per_1000"], src, fmt=".4f")
         casc(p, d["decision_level"], "escalated")
+        if d["decision_level"].get("cost_fraction") is not None:
+            # cascade cost in USD per thousand decisions: the cost fraction times the
+            # second stage's own cost (Equation eq:costfraction)
+            radd(f"{p}.usd", d["decision_level"]["cost_fraction"] * d["k2_usd_per_1000"],
+                 src, fmt=".3f")
         if "request_level_replace_all" in d:
             casc(f"rv.cas.{SLUG[f]}.{SLUG[s]}.donerequest", d["request_level_replace_all"],
                  "escalated_requests")
@@ -775,10 +810,13 @@ def _collect_rv(rv):
 
     # E. paired comparisons and service variability
     E = rv.get("E_paired", {})
-    for cond, fam in E.get("families", {}).items():
+    # the second comparator's readouts share each dataset's Holm family (a09 section E)
+    fams = [E.get("families", {}), E.get("families_comparators2", {})]
+    for cond, fam in [(c, f) for F in fams for c, f in F.items()]:
         for m, d in fam.items():
             p = f"rv.pd.{SLUG[m]}.{RV_TASK[cond]}"
             radd(f"{p}.diff", 100 * d["diff"], src, fmt=".1f")
+            radd(f"{p}.absdiff", abs(100 * d["diff"]), src, fmt=".1f")
             _ci(f"{p}.diff", d["diff_ci"], src, ".1f", scale=100)
             radd(f"{p}.p", d["p_boot"], src, fmt=".2g")
             radd(f"{p}.holm", d["p_holm"], src, fmt=".2g")

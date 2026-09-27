@@ -1546,3 +1546,166 @@ COMPARATOR2_TAGS = {
 }
 for _tag, (_cls, _repo, _b1) in COMPARATOR2_TAGS.items():
     harness.register(_tag, lambda _t=_tag, _c=_cls, _r=_repo, _b=_b1, **kw: _c(_t, _r, _b, **kw))
+
+
+
+# ====================================================================== third revision
+#
+# Appended for the third revision; no line above changed. One backend family:
+#
+#   backbone-desc-*   the same untuned Qwen3.5 backbones, asked the same content, but scored on
+#                     each option's DESCRIPTION instead of its key (BackboneDescScoreBackend)
+#
+# Key scoring asks an untuned base model to produce a neutral identifier such as o17, which
+# may understate what the backbone knows about the options. Description scoring is the
+# classic zero-shot readout of a language model: the probability of writing the option's own
+# text after the answer cue.
+
+DESCSCORE_INSTRUCTION = "Reply with the description of the single best option, exactly as written above."
+
+
+def descscore_prompt(rec, q):
+    """(prompt_text, keys, continuations) for one question under description scoring. The
+    content equals optscore_prompt's (state, instruction, "- key: description" lines in
+    request order) with the instruction line asking for the description; each continuation
+    is " " + description. No chat template. Pure function, no model import."""
+    keys, descs = comparator_option_list(q)
+    lines = "\n".join(f"- {key}: {desc}" for key, desc in zip(keys, descs))
+    text = (f"State:\n{_state_text(rec['state'])}\n\n"
+            f"Question: {_txt(q['instructions'])}\n\nOptions:\n{lines}\n\n"
+            f"{DESCSCORE_INSTRUCTION}\n{OPTSCORE_CUE}")
+    return text, keys, [" " + d for d in descs]
+
+
+def combine_desc_logprobs(keys, logp_sum, n_tok):
+    """softmax over options of the MEAN log-probability per token of each description (length
+    normalized, temperature one). Returns (probs, mean). Pure function."""
+    mean = {k: logp_sum[k] / max(n_tok[k], 1) for k in keys}
+    top = max(mean.values())
+    ex = {k: math.exp(v - top) for k, v in mean.items()}
+    z = sum(ex.values())
+    return {k: v / z for k, v in ex.items()}, mean
+
+
+class BackboneDescScoreBackend(BackboneOptScoreBackend):
+    """The untuned backbone scored on option descriptions (descscore_prompt,
+    combine_desc_logprobs). One cached forward pass over the prompt gives the log-probability
+    of each description's first token; every description then continues a replica of that
+    cache as one right-padded row, rows_per_pass rows per pass, and its remaining tokens are
+    read at the row's own positions. The self-check (P4_OPTSCORE_CHECK) recomputes every
+    description by a full-sequence forward pass without a cache."""
+
+    def __init__(self, tag, max_len=32768, rows_per_pass=16):
+        super().__init__(BACKBONE_DESC_OF[tag], max_len=max_len, rows_per_pass=rows_per_pass)
+        self.tag = tag
+
+    def encode_desc(self, rec, q):
+        text, keys, conts = descscore_prompt(rec, q)
+        enc = lambda s: self.tok.encode(s, add_special_tokens=False)   # noqa: E731
+        p_ids = enc(text)
+        c_ids = [enc(c) for c in conts]
+        if any(len(c) == 0 for c in c_ids):
+            raise ValueError("a description tokenized to nothing")
+        joint_ok = all(enc(text + c) == p_ids + ids for c, ids in zip(conts, c_ids))
+        return p_ids, keys, c_ids, joint_ok
+
+    def desc_logprobs(self, p_ids, c_ids):
+        """Summed log-probability of each description. Memory: the log-softmax is taken one
+        vocabulary vector at a time, and a pass that runs out of GPU memory is retried with
+        half as many rows (down to one), so the result does not depend on the batch size."""
+        import torch
+        F = torch.nn.functional
+        rows = int(os.environ.get("P4_DESC_ROWS", self.rows_per_pass))
+        sums = []
+        with torch.no_grad():
+            ids = torch.tensor([p_ids], device=self.device)
+            res = self.model(input_ids=ids, use_cache=True, logits_to_keep=1)
+            cache = res.past_key_values
+            lp0 = F.log_softmax(res.logits[0, -1].double(), -1)
+            del res
+            start = 0
+            while start < len(c_ids):
+                part = c_ids[start:start + rows]
+                L = max(len(c) for c in part)
+                try:
+                    x = torch.tensor([c + [c[-1]] * (L - len(c)) for c in part],
+                                     device=self.device)
+                    att = torch.tensor([[1] * (len(p_ids) + len(c)) + [0] * (L - len(c))
+                                        for c in part], device=self.device)
+                    replica = _replicate_cache(cache, len(part), self.device)
+                    o = self.model(input_ids=x, attention_mask=att, past_key_values=replica,
+                                   use_cache=True)
+                    got = []
+                    for i, c in enumerate(part):
+                        tot = float(lp0[c[0]])
+                        for j in range(1, len(c)):
+                            tot += float(F.log_softmax(o.logits[i, j - 1].double(), -1)[c[j]])
+                        got.append(tot)
+                    del replica, o
+                except torch.cuda.OutOfMemoryError:
+                    replica = o = None
+                    torch.cuda.empty_cache()
+                    if rows == 1:
+                        raise
+                    rows = max(1, rows // 2)
+                    print(f"  descscore: out of memory, retrying with {rows} rows per pass",
+                          flush=True)
+                    continue
+                sums += got
+                start += len(part)
+                if self.device == "cuda":
+                    torch.cuda.empty_cache()
+        return sums
+
+    def desc_logprobs_naive(self, p_ids, c_ids):
+        import torch
+        F = torch.nn.functional
+        sums = []
+        with torch.no_grad():
+            for c in c_ids:
+                ids = torch.tensor([p_ids + c], device=self.device)
+                lps = F.log_softmax(self.model(input_ids=ids, use_cache=False).logits[0].double(), -1)
+                sums.append(float(sum(lps[len(p_ids) - 1 + j, c[j]] for j in range(len(c)))))
+        return sums
+
+    def score_question(self, rec, q, check=False):
+        p_ids, keys, c_ids, joint_ok = self.encode_desc(rec, q)
+        n_tok = len(p_ids) + max(len(c) for c in c_ids)
+        if n_tok > self.max_len:
+            raise ValueError(f"descscore: prompt is {n_tok} tokens, max_len is {self.max_len}")
+        sums = self.desc_logprobs(p_ids, c_ids)
+        logp_sum = dict(zip(keys, sums))
+        n_toks = {k: len(c) for k, c in zip(keys, c_ids)}
+        probs, mean = combine_desc_logprobs(keys, logp_sum, n_toks)
+        raw = {"served_temperature": 1.0, "probs_t1": probs, "logp_desc_sum": logp_sum,
+               "desc_tokens": n_toks, "n_prompt_tokens": len(p_ids),
+               "joint_tokenization_ok": joint_ok, "dtype": self.dtype_name,
+               "scoring": "descscore: mean log-prob per description token, softmax, T=1"}
+        if check:
+            naive = self.desc_logprobs_naive(p_ids, c_ids)
+            p_naive, _ = combine_desc_logprobs(keys, dict(zip(keys, naive)), n_toks)
+            d_prob = max(abs(probs[k] - p_naive[k]) for k in keys)
+            raw["check_max_abs_dprob"] = d_prob
+            # a near tie can swap the argmax under bfloat16 rounding, so only a clear
+            # disagreement (top two options more than 0.05 apart) counts against the check
+            top2 = sorted(p_naive.values(), reverse=True)[:2]
+            if (max(probs, key=probs.get) != max(p_naive, key=p_naive.get)
+                    and top2[0] - top2[-1] > 0.05):
+                self._argmax_disagree += 1
+            print(f"  descscore self-check: max |dprob| {d_prob:.3g}, argmax disagreements "
+                  f"so far {self._argmax_disagree}", flush=True)
+            if d_prob > self.check_tol or self._argmax_disagree > 1:
+                raise RuntimeError(f"descscore self-check failed: {d_prob:.4g} "
+                                   f"(tolerance {self.check_tol}), {self._argmax_disagree} "
+                                   f"argmax disagreements")
+        return probs, raw, len(p_ids)
+
+
+BACKBONE_DESC_OF = {"backbone-desc-qwen35-9b-base": "backbone-qwen35-9b-base",
+                    "backbone-desc-qwen35-9b": "backbone-qwen35-9b",
+                    "backbone-desc-qwen35-2b-base": "backbone-qwen35-2b-base",
+                    "backbone-desc-qwen35-0.8b-base": "backbone-qwen35-0.8b-base"}
+BACKBONE_DESC_CONDITIONS = ["d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki_corpus",
+                            "d3_emotion", "d3_wiki_politeness"]
+for _tag in BACKBONE_DESC_OF:
+    harness.register(_tag, lambda _t=_tag, **kw: BackboneDescScoreBackend(_t, **kw))

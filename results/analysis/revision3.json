@@ -1,0 +1,397 @@
+{
+  "desc_scoring": {
+    "backbone-desc-qwen35-0.8b-base": {
+      "d1_neutral": {
+        "acc_desc": 0.353,
+        "acc_key": 0.4495,
+        "n": 2000
+      },
+      "d2_k150": {
+        "acc_desc": 0.025,
+        "acc_key": 0.12,
+        "n": 600
+      },
+      "d3_conv_go_awry": {
+        "acc_desc": 0.496,
+        "acc_key": 0.572,
+        "n": 500
+      },
+      "d3_emotion": {
+        "acc_desc": 0.2791164658634538,
+        "acc_key": 0.43373493975903615,
+        "n": 498
+      },
+      "d3_wiki_corpus": {
+        "acc_desc": 0.5,
+        "acc_key": 0.5,
+        "n": 500
+      },
+      "d3_wiki_politeness": {
+        "acc_desc": 0.3353413654618474,
+        "acc_key": 0.3333333333333333,
+        "n": 498
+      }
+    },
+    "backbone-desc-qwen35-2b-base": {
+      "d1_neutral": {
+        "acc_desc": 0.3375,
+        "acc_key": 0.414,
+        "n": 2000
+      },
+      "d2_k150": {
+        "acc_desc": 0.11666666666666667,
+        "acc_key": 0.5116666666666667,
+        "n": 600
+      },
+      "d3_conv_go_awry": {
+        "acc_desc": 0.5,
+        "acc_key": 0.496,
+        "n": 500
+      },
+      "d3_emotion": {
+        "acc_desc": 0.3092369477911647,
+        "acc_key": 0.43373493975903615,
+        "n": 498
+      },
+      "d3_wiki_corpus": {
+        "acc_desc": 0.498,
+        "acc_key": 0.52,
+        "n": 500
+      },
+      "d3_wiki_politeness": {
+        "acc_desc": 0.5200803212851406,
+        "acc_key": 0.41566265060240964,
+        "n": 498
+      }
+    }
+  },
+  "oos_option": {
+    "comparator-open": {
+      "acc_in": 0.7316666666666667,
+      "false_reject": 0.015,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.28,
+      "option": {
+        "coverage_in": 0.985,
+        "oos_false_acceptance": 0.72,
+        "risk_in": 0.2571912013536379,
+        "risk_in_upper_95_one_sided_cp": 0.28847697321256427
+      },
+      "option_gate": {
+        "accepted_in": 0,
+        "coverage_in": 0.0,
+        "coverage_in_ci": [
+          0.0,
+          0.022952707075064707
+        ],
+        "errors_in": 0,
+        "oos_false_acceptance": 0.0,
+        "oos_false_acceptance_ci": [
+          0.0,
+          0.015151515151515152
+        ],
+        "risk_in": NaN,
+        "risk_in_ci": [
+          0.0,
+          1.0
+        ],
+        "risk_in_upper_95_one_sided_cp": null
+      }
+    },
+    "comparator-open2": {
+      "acc_in": 0.6483333333333333,
+      "false_reject": 0.041666666666666664,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.88,
+      "option": {
+        "coverage_in": 0.9583333333333334,
+        "oos_false_acceptance": 0.12,
+        "risk_in": 0.3234782608695652,
+        "risk_in_upper_95_one_sided_cp": 0.3570631619672382
+      },
+      "option_gate": {
+        "accepted_in": 392,
+        "coverage_in": 0.6533333333333333,
+        "coverage_in_ci": [
+          0.013594253490870033,
+          0.7039490186586869
+        ],
+        "errors_in": 19,
+        "oos_false_acceptance": 0.055,
+        "oos_false_acceptance_ci": [
+          0.0,
+          0.10216087675765095
+        ],
+        "risk_in": 0.04846938775510204,
+        "risk_in_ci": [
+          0.0,
+          0.13190476190476189
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.070311957562344
+      }
+    },
+    "comparator-open2-ll": {
+      "acc_in": 0.885,
+      "false_reject": 0.04,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.86,
+      "option": {
+        "coverage_in": 0.96,
+        "oos_false_acceptance": 0.14,
+        "risk_in": 0.078125,
+        "risk_in_upper_95_one_sided_cp": 0.09904804816407273
+      },
+      "option_gate": {
+        "accepted_in": 502,
+        "coverage_in": 0.8366666666666667,
+        "coverage_in_ci": [
+          0.7704884658514444,
+          0.9140085537410135
+        ],
+        "errors_in": 25,
+        "oos_false_acceptance": 0.035,
+        "oos_false_acceptance_ci": [
+          0.013391369047619048,
+          0.08042241665178683
+        ],
+        "risk_in": 0.049800796812749,
+        "risk_in_ci": [
+          0.043478260869565216,
+          0.06358688374584327
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.06886341172187586
+      }
+    },
+    "decider-2b": {
+      "acc_in": 0.855,
+      "false_reject": 0.0,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.13,
+      "option": {
+        "coverage_in": 1.0,
+        "oos_false_acceptance": 0.87,
+        "risk_in": 0.145,
+        "risk_in_upper_95_one_sided_cp": 0.17077632219331104
+      },
+      "option_gate": {
+        "accepted_in": 457,
+        "coverage_in": 0.7616666666666667,
+        "coverage_in_ci": [
+          0.6507928351502039,
+          0.8530570399358051
+        ],
+        "errors_in": 25,
+        "oos_false_acceptance": 0.14,
+        "oos_false_acceptance_ci": [
+          0.07039993974542443,
+          0.25003140703517585
+        ],
+        "risk_in": 0.05470459518599562,
+        "risk_in_ci": [
+          0.044116794049406306,
+          0.06652142434363505
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.07556913999220213
+      }
+    },
+    "jev-1.13.0": {
+      "acc_in": 0.9083333333333333,
+      "false_reject": 0.0033333333333333335,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.585,
+      "option": {
+        "coverage_in": 0.9966666666666667,
+        "oos_false_acceptance": 0.415,
+        "risk_in": 0.08862876254180602,
+        "risk_in_upper_95_one_sided_cp": 0.11013115743374369
+      },
+      "option_gate": {
+        "accepted_in": 555,
+        "coverage_in": 0.925,
+        "coverage_in_ci": [
+          0.7942884545122397,
+          0.972650739476678
+        ],
+        "errors_in": 26,
+        "oos_false_acceptance": 0.195,
+        "oos_false_acceptance_ci": [
+          0.07008843332328409,
+          0.30965355329949235
+        ],
+        "risk_in": 0.04684684684684685,
+        "risk_in_ci": [
+          0.04452582877214296,
+          0.06238193926570819
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.06440982210644831
+      }
+    },
+    "kev-0.8b": {
+      "acc_in": 0.6816666666666666,
+      "false_reject": 0.013333333333333334,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.11,
+      "option": {
+        "coverage_in": 0.9866666666666667,
+        "oos_false_acceptance": 0.89,
+        "risk_in": 0.3091216216216216,
+        "risk_in_upper_95_one_sided_cp": 0.3418715781876026
+      },
+      "option_gate": {
+        "accepted_in": 134,
+        "coverage_in": 0.22333333333333333,
+        "coverage_in_ci": [
+          0.08025273948391658,
+          0.3950010330578513
+        ],
+        "errors_in": 8,
+        "oos_false_acceptance": 0.01,
+        "oos_false_acceptance_ci": [
+          0.0,
+          0.05408568142610693
+        ],
+        "risk_in": 0.05970149253731343,
+        "risk_in_ci": [
+          0.047209288201473805,
+          0.15688854489164084
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.10514118570451066
+      }
+    },
+    "kev-9b": {
+      "acc_in": 0.83,
+      "false_reject": 0.04666666666666667,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.84,
+      "option": {
+        "coverage_in": 0.9533333333333334,
+        "oos_false_acceptance": 0.16,
+        "risk_in": 0.12937062937062938,
+        "risk_in_upper_95_one_sided_cp": 0.15475863557834865
+      },
+      "option_gate": {
+        "accepted_in": 366,
+        "coverage_in": 0.61,
+        "coverage_in_ci": [
+          0.4541957872257814,
+          0.7142917471042471
+        ],
+        "errors_in": 19,
+        "oos_false_acceptance": 0.015,
+        "oos_false_acceptance_ci": [
+          0.0,
+          0.055
+        ],
+        "risk_in": 0.05191256830601093,
+        "risk_in_ci": [
+          0.04452009969160152,
+          0.071841664599355
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.07524501593665787
+      }
+    },
+    "laya-ml": {
+      "acc_in": 0.008333333333333333,
+      "false_reject": 0.0033333333333333335,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.005,
+      "option": {
+        "coverage_in": 0.9966666666666667,
+        "oos_false_acceptance": 0.995,
+        "risk_in": 0.9916387959866221,
+        "risk_in_upper_95_one_sided_cp": 0.9966998251453195
+      },
+      "option_gate": {
+        "accepted_in": 0,
+        "coverage_in": 0.0,
+        "coverage_in_ci": [
+          0.0,
+          0.0
+        ],
+        "errors_in": 0,
+        "oos_false_acceptance": 0.0,
+        "oos_false_acceptance_ci": [
+          0.0,
+          0.0
+        ],
+        "risk_in": NaN,
+        "risk_in_ci": null,
+        "risk_in_upper_95_one_sided_cp": null
+      }
+    },
+    "nimble-9b": {
+      "acc_in": 0.86,
+      "false_reject": 0.011666666666666667,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.645,
+      "option": {
+        "coverage_in": 0.9883333333333333,
+        "oos_false_acceptance": 0.355,
+        "risk_in": 0.12984822934232715,
+        "risk_in_upper_95_one_sided_cp": 0.1547750063030431
+      },
+      "option_gate": {
+        "accepted_in": 394,
+        "coverage_in": 0.6566666666666666,
+        "coverage_in_ci": [
+          0.4754653130287648,
+          0.8047866726971203
+        ],
+        "errors_in": 20,
+        "oos_false_acceptance": 0.03,
+        "oos_false_acceptance_ci": [
+          0.0048543689320388345,
+          0.0785807308795285
+        ],
+        "risk_in": 0.050761421319796954,
+        "risk_in_ci": [
+          0.04430239722191106,
+          0.07301667266402784
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.07290959260990772
+      }
+    },
+    "this-that-1.0": {
+      "acc_in": 0.8616666666666667,
+      "false_reject": 0.0016666666666666668,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.165,
+      "option": {
+        "coverage_in": 0.9983333333333333,
+        "oos_false_acceptance": 0.835,
+        "risk_in": 0.13689482470784642,
+        "risk_in_upper_95_one_sided_cp": 0.1621661737350594
+      },
+      "option_gate": {
+        "accepted_in": 468,
+        "coverage_in": 0.78,
+        "coverage_in_ci": [
+          0.7172410862619809,
+          0.8578435471178437
+        ],
+        "errors_in": 23,
+        "oos_false_acceptance": 0.185,
+        "oos_false_acceptance_ci": [
+          0.12435233160621761,
+          0.2767552376085845
+        ],
+        "risk_in": 0.049145299145299144,
+        "risk_in_ci": [
+          0.044206584743797815,
+          0.06373750734861845
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.068910449994878
+      }
+    }
+  }
+}
