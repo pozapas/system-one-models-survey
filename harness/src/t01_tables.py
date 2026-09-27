@@ -413,8 +413,7 @@ def e_t03_headline():
               " AUROC separates in-scope from out-of-scope inputs, and F1 is the mean macro-F1"
               " of the four D3 tasks in percent. The trained classifiers use labeled data of each"
               " task disjoint from its test items, and the decision models and the comparators use no task"
-              " training except where Section~\\ref{sec:models} states it. Qwen3-14B is the"
-              " generative comparator of the other tables. Bold marks the best"
+              " training except where Section~\\ref{sec:models} states it. Bold marks the best"
               " value in each column over all rows, with ties bolded.}"]
     return ewrite("t03_headline.tex", lines)
 
@@ -467,7 +466,7 @@ def e_t04_calibration():
               " at a temperature of one and after scaling, and Cov.\\ is the coverage at"
               " \\num{p.riskfive} percent risk as shipped. The raw arm exists only where the"
               " served temperature is known and the temperature-one distribution is stored,"
-              " so Jev 1.13.0 and the generative comparator have none. Bold marks the lowest"
+              " so Jev 1.13.0 and Qwen3-14B have none. Bold marks the lowest"
               " error and the highest coverage in each column, with ties bolded, and \\mkup\\"
               " marks a shipped error above the raw error before rounding, where the stored"
               " temperature raises the error.}"]
@@ -628,7 +627,7 @@ def e_t08_cascade():
     below). A dot marks a gain whose interval excludes zero at printed precision."""
     rv = json.load(open(os.path.join(C.RESULTS, "revision_stats.json"), encoding="utf-8"))
     pairs = rv["D_cascades"]["pairs"]
-    blocks = [("Escalation to the generative comparator", "comparator-open",
+    blocks = [("Escalation to Qwen3-14B", "comparator-open",
                [m for m in MODEL_ORDER if m != "comparator-open"]),
               ("Escalation to Jev 1.13.0", "jev-1.13.0",
                [m for m in MODEL_ORDER if m not in ("jev-1.13.0", "comparator-open")])]
@@ -870,46 +869,47 @@ BACKBONE_ROWS = [("kev-0.8b", "bbsmallbase", "Qwen3.5-0.8B-Base"),
 
 def e_t17_backbones():
     """Appendix. Each open decision model with a decoder head against the untuned backbone
-    it adapts (a15, bb.*): the backbone's accuracy under option-key likelihood scoring and
-    the paired difference of the decision model in points, with the interval beneath, on D1,
-    D2 and emotion, and the flips per hundred under the swapped D1 option names. Bold marks
-    a difference significant after Holm correction."""
-    cols = [("doneneutral", "acc", "doneneutral.acc"), ("dtwo", "acc", "dtwo.acc"),
-            ("emotion", "acc", "emotion.acc"), ("donekswap", "flips", "done.kswap.flips")]
+    it adapts (a15, bb.*): the paired difference of the decision model in points of accuracy
+    on D1, D2, derailment, power and emotion, and in flips per hundred under the swapped
+    option names on the three binary sets, with the interval beneath. Bold marks a
+    difference significant after Holm correction across the five pairs of its column."""
+    cols = [("doneneutral", "acc"), ("dtwo", "acc"), ("toxicity", "acc"), ("power", "acc"),
+            ("emotion", "acc"), ("donekswap", "flips"), ("toxicitykswap", "flips"),
+            ("powerkswap", "flips")]
     sig = set()
     for m, bs, _n in BACKBONE_ROWS:
-        for c, met, _b in cols:
+        for c, met in cols:
             p = f"bb.{CN.SLUG[m]}.{bs}.{c}.{met}"
             h = printed(f"{p}.holm")
             if h is not None and h < HOLM_ALPHA:
                 sig.add(f"{p}.diff")
     E_MARKS["t17_backbones.tex"] = sorted(sig)
-    spec = colspec([("P", 0.19), ("P", 0.17)] + [("N", 0.08)] * 8)
+    spec = colspec([("P", 0.17), ("P", 0.15)] + [("N", 0.085)] * 8)
     lines = EAAI_HEADER + [
         "\\tablestyle",
         "\\begin{tabular}{%s}" % spec,
         "\\toprule",
-        "\\headrow \\hdtop{} & \\hdtop{} & \\hdgroup{two}{D1 accuracy}"
-        " & \\hdgroup{two}{D2 accuracy} & \\hdgroup{two}{Emotion accuracy}"
-        " & \\hdgroup{two}{D1 swap flips} \\\\",
-        "\\bandrules{3-4,5-6,7-8,9-10}",
-        "\\headrow \\hdsub{Decision model} & \\hdsub{Backbone}"
-        + " & \\hdsub{Base} & \\hdsub{Diff.}" * 4 + " \\\\",
+        "\\headrow \\hdtop{} & \\hdtop{} & \\hdgroup{five}{Accuracy difference}"
+        " & \\hdgroup{three}{Swap flip difference} \\\\",
+        "\\bandrules{3-7,8-10}",
+        "\\headrow \\hdsub{Decision model} & \\hdsub{Backbone} & \\hdsub{D1} & \\hdsub{D2}"
+        " & \\hdsub{Derail.} & \\hdsub{Power} & \\hdsub{Emotion} & \\hdsub{D1}"
+        " & \\hdsub{Derail.} & \\hdsub{Power} \\\\",
         "\\midrule"]
     for m, bs, bname in BACKBONE_ROWS:
         cells = [mname(m), bname]
-        for c, met, b in cols:
+        for c, met in cols:
             p = f"bb.{CN.SLUG[m]}.{bs}.{c}.{met}"
-            cells += [ecell(f"bb.{bs}.{b}"), stack(ecell(f"{p}.diff", sig), f"{p}.")]
+            cells.append(stack(ecell(f"{p}.diff", sig), f"{p}."))
         lines.append(" & ".join(cells) + " \\\\")
     lines += ["\\bottomrule", "\\end{tabular}",
-              "\\tablenote{Base is the untuned backbone scored by the likelihood of each option"
-              " key, and Diff.\\ is the decision model minus its backbone on identical decisions,"
-              " in points for accuracy and in flips per hundred decisions for the swapped option"
-              " names, with its paired cluster bootstrap interval beneath. The this-that-model-1.0"
-              " checkpoint is adapted from decider-2b, so its difference spans two training"
-              " stages. Bold marks a difference significant after Holm correction at the five"
-              " percent level.}"]
+              "\\tablenote{Each cell is the decision model minus the untuned backbone it adapts"
+              " on identical decisions, in points of accuracy or in flips per hundred decisions"
+              " under the swapped yes and no names, with its paired cluster bootstrap interval"
+              " beneath. The backbones are scored by the likelihood of each option key. The"
+              " this-that-model-1.0 checkpoint is adapted from decider-2b, so its difference spans"
+              " two training stages. Bold marks a difference significant after Holm correction"
+              " across the five pairs of its column at the five percent level.}"]
     return ewrite("t17_backbones.tex", lines)
 
 

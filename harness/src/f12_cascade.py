@@ -57,7 +57,7 @@ LABEL_AT = {0: (R, B), 1: (R, B), 2: (B, A), 3: ((0, -9, "center", "top"), B),
 COND_LABEL = {"d1_neutral": "D1", "d2_k150": "D2", "d3_wiki_politeness": "politeness",
               "d3_conv_go_awry": "derailment", "d3_wiki_corpus": "power",
               "d3_emotion": "emotion"}
-SECOND_LABEL = {"jev-1.13.0": "Jev 1.13.0 alone", "comparator-open": "Comparator alone"}
+SECOND_LABEL = {"jev-1.13.0": "Jev 1.13.0 alone", "comparator-open": "Qwen3-14B alone"}
 
 
 MANUSCRIPT_FIGURES = [os.path.join(os.path.dirname(C.ROOT), "benchmark", "manuscript", "figures"),

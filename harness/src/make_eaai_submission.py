@@ -21,7 +21,7 @@ HIGHLIGHTS = [
     "Trained classifiers lead on intents; most decision models beat zero-shot NLI",
     "An LLM matches Jev on intents via option likelihoods, not via stated probabilities",
     "A stored temperature fitted on few options raises calibration error with 150 options",
-    "Trained heads, not their backbones, make decision models robust to option names",
+    "Trained heads flip far fewer social-science answers than their backbones",
     "In-scope risk thresholds do not control out-of-scope acceptance; check it separately",
 ]
 

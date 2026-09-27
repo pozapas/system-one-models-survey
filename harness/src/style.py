@@ -74,7 +74,7 @@ MODEL_LABELS = {
     "decider-2b": "decider-2b",
     "this-that-1.0": "this-that-model-1.0",
     "nimble-9b": "Nimble-9B",
-    "comparator-open": "Generative comparator",
+    "comparator-open": "Qwen3-14B, verbal",
 }
 
 MODEL_MARKERS = {
