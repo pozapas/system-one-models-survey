@@ -93335,11 +93335,35 @@
     "source": "ledger L044: All seven findings apply the instrument of \u00a73 to the same items, and the type-error rate is 0% in every one of them.",
     "value": "0"
   },
+  "lit.webDecisionIndex.deciderBankingF1": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L943: data/index.json, Decider 2B: BANKING77 raw 0.7277, coverage 1.0",
+    "value": "72.8"
+  },
   "lit.webDecisionIndex.engines": {
     "fmt": null,
     "note": null,
     "source": "ledger L938: data/index.json, models: 70 entries (open decision models and Jev reproductions; hosted Jev listed separately)",
     "value": "70"
+  },
+  "lit.webDecisionIndex.jevBankingF1": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L940: data/index.json, Jev: BANKING77 raw 0.7974, coverage 1.0",
+    "value": "79.7"
+  },
+  "lit.webDecisionIndex.kevlargeBankingF1": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L941: data/index.json, Kev 9B: BANKING77 raw 0.8483, coverage 1.0",
+    "value": "84.8"
+  },
+  "lit.webDecisionIndex.kevsmallBankingF1": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L942: data/index.json, Kev 0.8B: BANKING77 raw 0.7622, coverage 1.0",
+    "value": "76.2"
   },
   "lit.webDecisionIndex.panel": {
     "fmt": null,
