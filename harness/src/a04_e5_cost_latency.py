@@ -99,6 +99,8 @@ def main():
     tok = 0
     d = os.path.join(C.ANSWERS, bench.JEV)
     for fn in os.listdir(d):
+        if not fn.endswith(".jsonl"):        # DONE markers and run logs
+            continue
         with open(os.path.join(d, fn), encoding="utf-8") as fh:
             for line in fh:
                 j = json.loads(line)

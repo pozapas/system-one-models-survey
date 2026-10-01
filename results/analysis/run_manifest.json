@@ -1,13 +1,104 @@
 {
-  "backbone-qwen35-0.8b-base": {
+  "backbone-desc-qwen35-0.8b-base": {
     "model_returned": {
-      "\"Qwen/Qwen3.5-0.8B-Base\"": 8796
+      "\"Qwen/Qwen3.5-0.8B-Base\"": 3196
     },
     "records_per_file": {
       "d1_neutral__rep1.jsonl": 400,
       "d2_k150__rep1.jsonl": 800,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68\"": 3196
+    },
+    "run_date": {
+      "\"2026-09-27\"": 3196
+    },
+    "served_temperature": {
+      "1.0": 3196
+    }
+  },
+  "backbone-desc-qwen35-2b-base": {
+    "model_returned": {
+      "\"Qwen/Qwen3.5-2B-Base\"": 3196
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"b1485b2fa6dfa1287294f269f5fb618e03d52d7c\"": 3196
+    },
+    "run_date": {
+      "\"2026-09-27\"": 3196
+    },
+    "served_temperature": {
+      "1.0": 3196
+    }
+  },
+  "backbone-desc-qwen35-9b": {
+    "model_returned": {
+      "\"Qwen/Qwen3.5-9B\"": 3196
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"c202236235762e1c871ad0ccb60c8ee5ba337b9a\"": 3196
+    },
+    "run_date": {
+      "\"2026-09-29\"": 1200,
+      "\"2026-09-30\"": 1996
+    },
+    "served_temperature": {
+      "1.0": 3196
+    }
+  },
+  "backbone-desc-qwen35-9b-base": {
+    "model_returned": {
+      "\"Qwen/Qwen3.5-9B-Base\"": 3196
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_k150__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"68c46c4b3498877f3ef123c856ecfde50c39f404\"": 3196
+    },
+    "run_date": {
+      "\"2026-09-29\"": 3196
+    },
+    "served_temperature": {
+      "1.0": 3196
+    }
+  },
+  "backbone-qwen35-0.8b-base": {
+    "model_returned": {
+      "\"Qwen/Qwen3.5-0.8B-Base\"": 9904
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
+      "d2_k150__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -24,25 +115,28 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68\"": 8796
+      "\"dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68\"": 9904
     },
     "run_date": {
       "\"2026-09-26\"": 2698,
-      "\"2026-09-27\"": 6098
+      "\"2026-09-27\"": 6098,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 8796
+      "1.0": 9904
     }
   },
   "backbone-qwen35-2b-base": {
     "model_returned": {
-      "\"Qwen/Qwen3.5-2B-Base\"": 8796
+      "\"Qwen/Qwen3.5-2B-Base\"": 9904
     },
     "records_per_file": {
       "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_k150__rep1.jsonl": 800,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -59,24 +153,27 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"b1485b2fa6dfa1287294f269f5fb618e03d52d7c\"": 8796
+      "\"b1485b2fa6dfa1287294f269f5fb618e03d52d7c\"": 9904
     },
     "run_date": {
-      "\"2026-09-27\"": 8796
+      "\"2026-09-27\"": 8796,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 8796
+      "1.0": 9904
     }
   },
   "backbone-qwen35-9b": {
     "model_returned": {
-      "\"Qwen/Qwen3.5-9B\"": 8796
+      "\"Qwen/Qwen3.5-9B\"": 9904
     },
     "records_per_file": {
       "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_k150__rep1.jsonl": 800,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -93,24 +190,27 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"c202236235762e1c871ad0ccb60c8ee5ba337b9a\"": 8796
+      "\"c202236235762e1c871ad0ccb60c8ee5ba337b9a\"": 9904
     },
     "run_date": {
-      "\"2026-09-27\"": 8796
+      "\"2026-09-27\"": 8796,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 8796
+      "1.0": 9904
     }
   },
   "backbone-qwen35-9b-base": {
     "model_returned": {
-      "\"Qwen/Qwen3.5-9B-Base\"": 8796
+      "\"Qwen/Qwen3.5-9B-Base\"": 9904
     },
     "records_per_file": {
       "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_k150__rep1.jsonl": 800,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -127,13 +227,14 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"68c46c4b3498877f3ef123c856ecfde50c39f404\"": 8796
+      "\"68c46c4b3498877f3ef123c856ecfde50c39f404\"": 9904
     },
     "run_date": {
-      "\"2026-09-27\"": 8796
+      "\"2026-09-27\"": 8796,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 8796
+      "1.0": 9904
     }
   },
   "baseline-bert-base-clinc": {
@@ -154,6 +255,23 @@
     },
     "served_temperature": {
       "1.0": 2600
+    }
+  },
+  "baseline-bge-small-lr-banking": {
+    "model_returned": {
+      "\"BAAI/bge-small-en-v1.5\"": 616
+    },
+    "records_per_file": {
+      "d2_banking77__rep1.jsonl": 616
+    },
+    "revision": {
+      "\"5c38ec7c405ec4b44b94cc5a9bb96e735b38267a\"": 616
+    },
+    "run_date": {
+      "\"2026-09-29\"": 616
+    },
+    "served_temperature": {
+      "1.0": 616
     }
   },
   "baseline-bge-small-lr-clinc": {
@@ -215,41 +333,384 @@
       "1.0": 1996
     }
   },
-  "baseline-nli-deberta-v3-base": {
+  "baseline-bge-small-lr-goemo": {
     "model_returned": {
-      "\"MoritzLaurer/deberta-v3-base-zeroshot-v2.0\"": 5696
+      "\"BAAI/bge-small-en-v1.5\"": 492
+    },
+    "records_per_file": {
+      "d3_goemotions__rep1.jsonl": 492
+    },
+    "revision": {
+      "\"5c38ec7c405ec4b44b94cc5a9bb96e735b38267a\"": 492
+    },
+    "run_date": {
+      "\"2026-09-29\"": 492
+    },
+    "served_temperature": {
+      "1.0": 492
+    }
+  },
+  "baseline-deberta-large-banking": {
+    "model_returned": {
+      "\"microsoft/deberta-v3-large\"": 616
+    },
+    "records_per_file": {
+      "d2_banking77__rep1.jsonl": 616
+    },
+    "revision": {
+      "\"64a8c8eab3e352a784c658aef62be1662607476f\"": 616
+    },
+    "run_date": {
+      "\"2026-09-30\"": 616
+    },
+    "served_temperature": {
+      "1.0": 616
+    }
+  },
+  "baseline-deberta-large-clinc": {
+    "model_returned": {
+      "\"microsoft/deberta-v3-large\"": 800
+    },
+    "records_per_file": {
+      "d2_k150__rep1.jsonl": 800
+    },
+    "revision": {
+      "\"64a8c8eab3e352a784c658aef62be1662607476f\"": 800
+    },
+    "run_date": {
+      "\"2026-09-30\"": 800
+    },
+    "served_temperature": {
+      "1.0": 800
+    }
+  },
+  "baseline-deberta-large-d1": {
+    "model_returned": {
+      "\"microsoft/deberta-v3-large\"": 700
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
-      "d1_native__rep1.jsonl": 400,
-      "d1_neutral__rep1.jsonl": 400,
-      "d2_k150__rep1.jsonl": 800,
-      "d2_k20__rep1.jsonl": 600,
-      "d2_k50__rep1.jsonl": 600,
-      "d2_k5__rep1.jsonl": 600,
+      "d1_neutral__rep1.jsonl": 400
+    },
+    "revision": {
+      "\"64a8c8eab3e352a784c658aef62be1662607476f\"": 700
+    },
+    "run_date": {
+      "\"2026-09-30\"": 700
+    },
+    "served_temperature": {
+      "1.0": 700
+    }
+  },
+  "baseline-deberta-large-d3": {
+    "model_returned": {
+      "\"microsoft/deberta-v3-large\"": 1996
+    },
+    "records_per_file": {
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498
     },
     "revision": {
-      "\"8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8\"": 5696
+      "\"64a8c8eab3e352a784c658aef62be1662607476f\"": 1996
     },
     "run_date": {
-      "\"2026-09-25\"": 5696
+      "\"2026-09-30\"": 1996
     },
     "served_temperature": {
-      "1.0": 5696
+      "1.0": 1996
     }
   },
-  "comparator-open": {
+  "baseline-deberta-large-goemo": {
     "model_returned": {
-      "\"Qwen/Qwen3-14B-AWQ\"": 10096
+      "\"microsoft/deberta-v3-large\"": 492
+    },
+    "records_per_file": {
+      "d3_goemotions__rep1.jsonl": 492
+    },
+    "revision": {
+      "\"64a8c8eab3e352a784c658aef62be1662607476f\"": 492
+    },
+    "run_date": {
+      "\"2026-09-30\"": 492
+    },
+    "served_temperature": {
+      "1.0": 492
+    }
+  },
+  "baseline-nli-deberta-v3-base": {
+    "model_returned": {
+      "\"MoritzLaurer/deberta-v3-base-zeroshot-v2.0\"": 6804
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_native__rep1.jsonl": 400,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8\"": 6804
+    },
+    "run_date": {
+      "\"2026-09-25\"": 5696,
+      "\"2026-09-29\"": 1108
+    },
+    "served_temperature": {
+      "1.0": 6804
+    }
+  },
+  "comparator-gemma": {
+    "model_returned": {
+      "\"google/gemma-4-31B-it\"": 12804
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"842da3794eaa0b77d5f08bae87a17459d91ff475\"": 12804
+    },
+    "run_date": {
+      "\"2026-09-30\"": 12804
+    },
+    "served_temperature": {
+      "0.0": 12804
+    }
+  },
+  "comparator-gemma-b1": {
+    "model_returned": {
+      "\"google/gemma-4-31B-it\"": 40
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 40
+    },
+    "revision": {
+      "\"842da3794eaa0b77d5f08bae87a17459d91ff475\"": 40
+    },
+    "run_date": {
+      "\"2026-09-30\"": 40
+    },
+    "served_temperature": {
+      "0.0": 40
+    }
+  },
+  "comparator-gemma-ll": {
+    "model_returned": {
+      "\"google/gemma-4-31B-it\"": 12804
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"842da3794eaa0b77d5f08bae87a17459d91ff475\"": 12804
+    },
+    "run_date": {
+      "\"2026-09-30\"": 12804
+    },
+    "served_temperature": {
+      "1.0": 12804
+    }
+  },
+  "comparator-gemma-ll-b1": {
+    "model_returned": {
+      "\"google/gemma-4-31B-it\"": 40
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 40
+    },
+    "revision": {
+      "\"842da3794eaa0b77d5f08bae87a17459d91ff475\"": 40
+    },
+    "run_date": {
+      "\"2026-09-30\"": 40
+    },
+    "served_temperature": {
+      "1.0": 40
+    }
+  },
+  "comparator-mistral": {
+    "model_returned": {
+      "\"mistralai/Mistral-Small-24B-Instruct-2501\"": 12645
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 379,
+      "d1_neutral__rep1.jsonl": 553,
+      "d2_banking77__rep1.jsonl": 616,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 719,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 550,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"9527884be6e5616bdd54de542f9ae13384489724\"": 12645
+    },
+    "run_date": {
+      "\"2026-09-30\"": 12645
+    },
+    "served_temperature": {
+      "0.0": 12645
+    }
+  },
+  "comparator-mistral-b1": {
+    "model_returned": {
+      "\"mistralai/Mistral-Small-24B-Instruct-2501\"": 40
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 40
+    },
+    "revision": {
+      "\"9527884be6e5616bdd54de542f9ae13384489724\"": 40
+    },
+    "run_date": {
+      "\"2026-09-30\"": 40
+    },
+    "served_temperature": {
+      "0.0": 40
+    }
+  },
+  "comparator-mistral-ll": {
+    "model_returned": {
+      "\"mistralai/Mistral-Small-24B-Instruct-2501\"": 12804
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
+      "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
+    },
+    "revision": {
+      "\"9527884be6e5616bdd54de542f9ae13384489724\"": 12804
+    },
+    "run_date": {
+      "\"2026-09-30\"": 12804
+    },
+    "served_temperature": {
+      "1.0": 12804
+    }
+  },
+  "comparator-mistral-ll-b1": {
+    "model_returned": {
+      "\"mistralai/Mistral-Small-24B-Instruct-2501\"": 40
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 40
+    },
+    "revision": {
+      "\"9527884be6e5616bdd54de542f9ae13384489724\"": 40
+    },
+    "run_date": {
+      "\"2026-09-30\"": 40
+    },
+    "served_temperature": {
+      "1.0": 40
+    }
+  },
+  "comparator-open": {
+    "model_returned": {
+      "\"Qwen/Qwen3-14B-AWQ\"": 12004
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -263,42 +724,80 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498
     },
     "revision": {
-      "\"31c69efc29464b6bb0aee1398b5a7b50a99340c3\"": 10096
+      "\"31c69efc29464b6bb0aee1398b5a7b50a99340c3\"": 12004
     },
     "run_date": {
       "\"2026-09-25\"": 4096,
-      "\"2026-09-26\"": 6000
+      "\"2026-09-26\"": 6000,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "0.0": 10096
+      "0.0": 12004
+    }
+  },
+  "comparator-open-b1": {
+    "model_returned": {
+      "\"Qwen/Qwen3-14B-AWQ\"": 40
+    },
+    "records_per_file": {
+      "d1_neutral__rep1.jsonl": 40
+    },
+    "revision": {
+      "\"31c69efc29464b6bb0aee1398b5a7b50a99340c3\"": 40
+    },
+    "run_date": {
+      "\"2026-09-29\"": 40
+    },
+    "served_temperature": {
+      "0.0": 40
     }
   },
   "comparator-open2": {
     "model_returned": {
-      "\"Qwen/Qwen3.6-27B-FP8\"": 4096
+      "\"Qwen/Qwen3.6-27B-FP8\"": 12804
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
-      "d3_wiki_politeness__rep1.jsonl": 498
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 4096
+      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 12804
     },
     "run_date": {
-      "\"2026-09-27\"": 4096
+      "\"2026-09-27\"": 4896,
+      "\"2026-10-01\"": 7908
     },
     "served_temperature": {
-      "0.0": 4096
+      "0.0": 12804
     }
   },
   "comparator-open2-b1": {
@@ -320,26 +819,44 @@
   },
   "comparator-open2-ll": {
     "model_returned": {
-      "\"Qwen/Qwen3.6-27B-FP8\"": 4096
+      "\"Qwen/Qwen3.6-27B-FP8\"": 12804
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k20__rep1.jsonl": 600,
+      "d2_k50__rep1.jsonl": 600,
+      "d2_k5__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
-      "d3_wiki_politeness__rep1.jsonl": 498
+      "d3_wiki_politeness__rep1.jsonl": 498,
+      "e2_d1_k01__rep1.jsonl": 400,
+      "e2_d1_kny__rep1.jsonl": 400,
+      "e2_d1_krand__rep1.jsonl": 400,
+      "e2_d1_kswap__rep1.jsonl": 400,
+      "e2_d3_conv_go_awry_k01__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kny__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_krand__rep1.jsonl": 500,
+      "e2_d3_conv_go_awry_kswap__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_k01__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kny__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_krand__rep1.jsonl": 500,
+      "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 4096
+      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 12804
     },
     "run_date": {
-      "\"2026-09-27\"": 4096
+      "\"2026-09-27\"": 4896,
+      "\"2026-10-01\"": 7908
     },
     "served_temperature": {
-      "1.0": 4096
+      "1.0": 12804
     }
   },
   "comparator-open2-ll-b1": {
@@ -359,18 +876,47 @@
       "1.0": 40
     }
   },
+  "comparator-open2-think": {
+    "model_returned": {
+      "\"Qwen/Qwen3.6-27B-FP8\"": 5361
+    },
+    "records_per_file": {
+      "d1_calib__rep1.jsonl": 300,
+      "d1_neutral__rep1.jsonl": 400,
+      "d2_banking77__rep1.jsonl": 616,
+      "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
+      "d3_conv_go_awry__rep1.jsonl": 500,
+      "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
+      "d3_wiki_corpus__rep1.jsonl": 500,
+      "d3_wiki_politeness__rep1.jsonl": 498
+    },
+    "revision": {
+      "\"e89b16ebf1988b3d6befa7de50abc2d76f26eb09\"": 5361
+    },
+    "run_date": {
+      "\"2026-09-30\"": 4254,
+      "\"2026-10-01\"": 1107
+    },
+    "served_temperature": {
+      "0.0": 5361
+    }
+  },
   "decider-2b": {
     "model_returned": {
-      "\"decider-v10\"": 18336
+      "\"decider-v10\"": 20244
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_native__rep1.jsonl": 400,
       "d1_neutral__rep1.jsonl": 400,
       "d1_neutral__rep2.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -384,6 +930,7 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -402,19 +949,21 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"d61c1c16089572df5d180329b9fea4997a90090c\"": 18336
+      "\"d61c1c16089572df5d180329b9fea4997a90090c\"": 20244
     },
     "run_date": {
       "\"2026-09-24\"": 12536,
-      "\"2026-09-26\"": 5800
+      "\"2026-09-26\"": 5800,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.3": 18336
+      "1.3": 20244
     }
   },
   "jev-1.13.0": {
     "model_returned": {
-      "\"jev-1.13.0\"": 42368
+      "\"jev-1.13.0\"": 44316
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
@@ -428,6 +977,8 @@
       "d1_neutral__rep3.jsonl": 400,
       "d1_neutral__rep4.jsonl": 40,
       "d1_neutral__rep5.jsonl": 40,
+      "d1_neutral__rep6.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_dom__rep2.jsonl": 600,
       "d2_hier_dom__rep3.jsonl": 600,
@@ -437,6 +988,7 @@
       "d2_k150__rep1.jsonl": 800,
       "d2_k150__rep2.jsonl": 800,
       "d2_k150__rep3.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -460,6 +1012,7 @@
       "d3_emotion__rep1.jsonl": 498,
       "d3_emotion__rep2.jsonl": 498,
       "d3_emotion__rep3.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_corpus__rep2.jsonl": 500,
       "d3_wiki_corpus__rep3.jsonl": 500,
@@ -504,28 +1057,33 @@
       "e2_d3_wiki_corpus_kswap__rep3.jsonl": 500
     },
     "revision": {
-      "\"jev-1.13.0\"": 42368
+      "\"jev-1.13.0\"": 44316
     },
     "run_date": {
       "\"2026-09-24\"": 37568,
-      "\"2026-09-25\"": 4800
+      "\"2026-09-25\"": 4800,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108,
+      "\"2026-09-30\"": 40
     },
     "served_temperature": {
-      "null": 42368
+      "null": 44316
     }
   },
   "kev-0.8b": {
     "model_returned": {
-      "\"kev-0.8b\"": 18336
+      "\"kev-0.8b\"": 20244
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_native__rep1.jsonl": 400,
       "d1_neutral__rep1.jsonl": 400,
       "d1_neutral__rep2.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -539,6 +1097,7 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -557,28 +1116,32 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"9a45d25eb2ab761841196625383fa1dff0e56c1e\"": 18336
+      "\"9a45d25eb2ab761841196625383fa1dff0e56c1e\"": 20244
     },
     "run_date": {
       "\"2026-09-24\"": 12536,
-      "\"2026-09-26\"": 5800
+      "\"2026-09-26\"": 5800,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "2.3510958125672174": 18336
+      "2.3510958125672174": 20244
     }
   },
   "kev-9b": {
     "model_returned": {
-      "\"kev-9b\"": 18336
+      "\"kev-9b\"": 20244
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_native__rep1.jsonl": 400,
       "d1_neutral__rep1.jsonl": 400,
       "d1_neutral__rep2.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -592,6 +1155,7 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -610,25 +1174,28 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c\"": 18336
+      "\"2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c\"": 20244
     },
     "run_date": {
       "\"2026-09-24\"": 12536,
-      "\"2026-09-26\"": 5800
+      "\"2026-09-26\"": 5800,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "2.2973967099940698": 18336
+      "2.2973967099940698": 20244
     }
   },
   "laya-en": {
     "model_returned": {
-      "\"laya-rl-agent\"": 16336
+      "\"laya-rl-agent\"": 17444
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_native__rep1.jsonl": 400,
       "d1_neutral__rep1.jsonl": 400,
       "d1_neutral__rep2.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
@@ -645,6 +1212,7 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -663,28 +1231,31 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 16336
+      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 17444
     },
     "run_date": {
       "\"2026-09-24\"": 11736,
-      "\"2026-09-26\"": 4600
+      "\"2026-09-26\"": 4600,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 16336
+      "1.0": 17444
     }
   },
   "laya-ml": {
     "model_returned": {
-      "\"laya-rl-agent\"": 18336
+      "\"laya-rl-agent\"": 20244
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_native__rep1.jsonl": 400,
       "d1_neutral__rep1.jsonl": 400,
       "d1_neutral__rep2.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -698,6 +1269,7 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -716,28 +1288,32 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 18336
+      "\"55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851\"": 20244
     },
     "run_date": {
       "\"2026-09-24\"": 12536,
-      "\"2026-09-26\"": 5800
+      "\"2026-09-26\"": 5800,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 18336
+      "1.0": 20244
     }
   },
   "nimble-9b": {
     "model_returned": {
-      "\"nimble-9b\"": 18336
+      "\"nimble-9b\"": 20244
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_native__rep1.jsonl": 400,
       "d1_neutral__rep1.jsonl": 400,
       "d1_neutral__rep2.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -751,6 +1327,7 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -769,28 +1346,32 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"bd792f44ec8e265be861bfcdf4e05967ffe0e858\"": 18336
+      "\"bd792f44ec8e265be861bfcdf4e05967ffe0e858\"": 20244
     },
     "run_date": {
       "\"2026-09-24\"": 12536,
-      "\"2026-09-26\"": 5800
+      "\"2026-09-26\"": 5800,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 18336
+      "1.0": 20244
     }
   },
   "this-that-1.0": {
     "model_returned": {
-      "\"this-that-1.0\"": 18336
+      "\"this-that-1.0\"": 20244
     },
     "records_per_file": {
       "d1_calib__rep1.jsonl": 300,
       "d1_native__rep1.jsonl": 400,
       "d1_neutral__rep1.jsonl": 400,
       "d1_neutral__rep2.jsonl": 40,
+      "d2_banking77__rep1.jsonl": 616,
       "d2_hier_dom__rep1.jsonl": 600,
       "d2_hier_int__rep1.jsonl": 600,
       "d2_k150__rep1.jsonl": 800,
+      "d2_k150_oos__rep1.jsonl": 800,
       "d2_k150_p2__rep1.jsonl": 600,
       "d2_k150_p3__rep1.jsonl": 600,
       "d2_k20__rep1.jsonl": 600,
@@ -804,6 +1385,7 @@
       "d2_k5_p3__rep1.jsonl": 600,
       "d3_conv_go_awry__rep1.jsonl": 500,
       "d3_emotion__rep1.jsonl": 498,
+      "d3_goemotions__rep1.jsonl": 492,
       "d3_wiki_corpus__rep1.jsonl": 500,
       "d3_wiki_politeness__rep1.jsonl": 498,
       "e2_d1_k01__rep1.jsonl": 400,
@@ -822,14 +1404,16 @@
       "e2_d3_wiki_corpus_kswap__rep1.jsonl": 500
     },
     "revision": {
-      "\"3d927195c4f9845efe66c5715883a7a0f42b1239\"": 18336
+      "\"3d927195c4f9845efe66c5715883a7a0f42b1239\"": 20244
     },
     "run_date": {
       "\"2026-09-24\"": 12536,
-      "\"2026-09-26\"": 5800
+      "\"2026-09-26\"": 5800,
+      "\"2026-09-27\"": 800,
+      "\"2026-09-29\"": 1108
     },
     "served_temperature": {
-      "1.0": 18336
+      "1.0": 20244
     }
   },
   "this-that-1.0-desc": {

@@ -57,6 +57,7 @@ COMP = "comparator-open"
 # in a Holm family of their own. VERBAL are the comparators that write their probabilities
 # as JSON text, BATCHED those whose latency is a batch share (batch_wall_s / n_requests).
 COMP2 = bench.present(bench.COMPARATORS_2)
+CASCADE_SECONDS = ("comparator-open2", "comparator-open2-ll", "comparator-gemma")
 MODELS_X = MODELS + COMP2
 VERBAL = {COMP} | {m for m in COMP2 if not m.endswith("-ll")}
 BATCHED_X = {COMP} | set(COMP2)
@@ -796,7 +797,10 @@ def lat_pcts(x):
 def section_D():
     firsts = [bench.JEV] + bench.MODELS_OPEN
     pairs = [(f, COMP) for f in firsts] + [(f, bench.JEV) for f in bench.MODELS_OPEN]
-    pairs += [(f, c) for c in COMP2 for f in firsts]     # extra second stages, appended
+    # extra second stages, appended: the Qwen3.6-27B pair of the second revision and, of the
+    # fourth revision's comparators, only the most accurate one (Gemma-4-31B, verbal), so the
+    # number of cascades and their multiplicity stay bounded
+    pairs += [(f, c) for c in COMP2 if c in CASCADE_SECONDS for f in firsts]
     e6 = json.load(open(os.path.join(C.RESULTS, "e6_cascade.json"), encoding="utf-8"))
     out = {"definitions": {
         "confidence_arm": "shipped top-label probability of the first stage",

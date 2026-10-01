@@ -1709,3 +1709,202 @@ BACKBONE_DESC_CONDITIONS = ["d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki
                             "d3_emotion", "d3_wiki_politeness"]
 for _tag in BACKBONE_DESC_OF:
     harness.register(_tag, lambda _t=_tag, **kw: BackboneDescScoreBackend(_t, **kw))
+
+
+
+# ====================================================================== fourth revision
+#
+# Appended for the fourth revision; no line above changed. A comparator from a second model
+# family, Gemma-4-31B-it, read in the same two ways as Qwen3.6-27B (the verbalized-JSON
+# protocol of comparator-open, and the likelihood of each option key after the same chat
+# prompt), so that the comparator results do not rest on one model family.
+#
+# The bf16 checkpoint is quantized to FP8 weights when vLLM loads it (weight-only FP8 through
+# the Marlin kernel on an A100), which is the same numeric format as the Qwen3.6-27B FP8
+# release. The chat template is the model's own; Gemma has no thinking switch, so _chat's
+# enable_thinking argument is ignored by its template.
+
+COMPARATOR3_REPO = "google/gemma-4-31B-it"
+COMPARATOR2_PROFILES[COMPARATOR3_REPO] = {"max_model_len": 16384, "gpu_memory_utilization": 0.92,
+                                          "max_num_seqs": 32, "enforce_eager": False,
+                                          "quantization": "fp8"}
+
+
+class _Comparator3Load:
+    """_load of Comparator2Backend with the profile's on-the-fly quantization; the
+    language_model_only switch is passed only where the engine accepts it."""
+
+    def _load(self):
+        self.revision = _model_sha(self.repo)
+        from vllm import LLM
+        prof = COMPARATOR2_PROFILES[self.repo]
+        kw = dict(model=self.repo, revision=self.revision, tokenizer_revision=self.revision,
+                  max_model_len=self.max_model_len,
+                  gpu_memory_utilization=self.gpu_memory_utilization,
+                  max_num_seqs=self.max_num_seqs, enforce_eager=self.enforce_eager,
+                  max_logprobs=COMPARATOR2_TOPN, enable_prefix_caching=True)
+        if prof.get("quantization"):
+            kw["quantization"] = prof["quantization"]
+        try:
+            self.llm = LLM(language_model_only=True, **kw)
+        except (TypeError, ValueError) as e:
+            print(f"  engine does not take language_model_only here ({e}); loading without it",
+                  flush=True)
+            self.llm = LLM(**kw)
+        self.tokenizer = self.llm.get_tokenizer()
+
+
+class Comparator3Backend(_Comparator3Load, Comparator2Backend):
+    pass
+
+
+class Comparator3LLBackend(_Comparator3Load, Comparator2LLBackend):
+    pass
+
+
+COMPARATOR3_TAGS = {
+    "comparator-gemma": (Comparator3Backend, COMPARATOR3_REPO, False),
+    "comparator-gemma-ll": (Comparator3LLBackend, COMPARATOR3_REPO, False),
+}
+for _tag, (_cls, _repo, _b1) in COMPARATOR3_TAGS.items():
+    harness.register(_tag, lambda _t=_tag, _c=_cls, _r=_repo, _b=_b1, **kw: _c(_t, _r, _b, **kw))
+
+# conditions of the fourth revision
+GOEMOTIONS_COND = "d3_goemotions"
+STRESS_CONDITIONS = ([f"d2_k{k}" for k in (5, 20, 50)]
+                     + [f"e2_d1_{n}" for n in ("k01", "kny", "kswap", "krand")]
+                     + [f"e2_d3_{t}_{n}" for t in ("conv_go_awry", "wiki_corpus")
+                        for n in ("k01", "kny", "kswap", "krand")])
+
+
+# A third comparator family, Mistral-Small-24B-Instruct-2501 (text only, standard tokenizer
+# files), read in the same two ways; with Qwen and Gemma the comparators then span model
+# families from three developers. Weights are quantized to FP8 on load, as for Gemma.
+COMPARATOR4_REPO = "mistralai/Mistral-Small-24B-Instruct-2501"
+COMPARATOR2_PROFILES[COMPARATOR4_REPO] = {"max_model_len": 16384, "gpu_memory_utilization": 0.92,
+                                          "max_num_seqs": 32, "enforce_eager": False,
+                                          "quantization": "fp8"}
+COMPARATOR4_TAGS = {
+    "comparator-mistral": (Comparator3Backend, COMPARATOR4_REPO, False),
+    "comparator-mistral-ll": (Comparator3LLBackend, COMPARATOR4_REPO, False),
+}
+for _tag, (_cls, _repo, _b1) in COMPARATOR4_TAGS.items():
+    harness.register(_tag, lambda _t=_tag, _c=_cls, _r=_repo, _b=_b1, **kw: _c(_t, _r, _b, **kw))
+BANKING77_COND = "d2_banking77"
+
+
+# A deliberating comparator: the same Qwen3.6-27B checkpoint with its thinking mode switched
+# on, asked the verbalized-JSON question of comparator-open. It contrasts a model that reasons
+# in text before it answers with the same weights answering at once (comparator-open2), so any
+# difference is due to deliberation alone. Thinking cannot run under a JSON grammar, so the
+# reply is generated freely with the sampling settings the model card recommends for thinking
+# mode (temperature 0.6, top-p 0.95, top-k 20, fixed seed), and the JSON object after the
+# closing think tag is parsed by comparator_parse unchanged. A reply without a parsable object
+# is recorded as an error line. The context is widened so a long prompt still leaves the full
+# thinking budget.
+
+THINK_MAX_TOKENS = 8192
+THINK_MAX_MODEL_LEN = 24576
+THINK_SAMPLING = {"temperature": 0.6, "top_p": 0.95, "top_k": 20, "seed": 20260924}
+
+
+def think_final_json(text):
+    """The JSON object a thinking reply ends with: the text after the last closing think tag,
+    from its first opening brace to its last closing brace. Pure function."""
+    tail = text.rsplit("</think>", 1)[-1]
+    a, b = tail.find("{"), tail.rfind("}")
+    if a < 0 or b <= a:
+        raise ValueError("comparator-think: no JSON object after the reasoning")
+    return tail[a:b + 1]
+
+
+class Comparator2ThinkBackend(Comparator2Backend):
+    def __init__(self, tag, repo, batch1=False, max_tokens=THINK_MAX_TOKENS):
+        super().__init__(tag, repo, batch1=batch1, max_tokens=max_tokens)
+        self.max_model_len = THINK_MAX_MODEL_LEN
+
+    def _chat(self, prompt):
+        msgs = [{"role": "user", "content": prompt}]
+        return self.tokenizer.apply_chat_template(msgs, tokenize=False,
+                                                  add_generation_prompt=True,
+                                                  enable_thinking=True)
+
+    def _prefetch_sync(self, chunk):
+        import time
+        from vllm import SamplingParams
+        all_reqs = [r for rec in chunk for r in self._requests(rec)]
+        budget = self.max_model_len - self.max_tokens
+        reqs, prompts = [], []
+        for key, qid, prompt, keys, n_report in all_reqs:
+            prompt = self._chat(prompt)
+            n_prompt_tok = len(self.tokenizer.encode(prompt, add_special_tokens=False))
+            if n_prompt_tok > budget:
+                self._cache[(key, qid)] = {
+                    "probs": None, "answer": None,
+                    "error": f"comparator: prompt is {n_prompt_tok} tokens, budget is {budget}",
+                    "raw_text": None, "usage_in": n_prompt_tok, "usage_out": None,
+                    "latency_mode": "batched", "batch_wall_s": 0.0, "n_requests": len(all_reqs)}
+                continue
+            reqs.append((key, qid, keys))
+            prompts.append(prompt)
+        if not prompts:
+            return
+        sp = SamplingParams(max_tokens=self.max_tokens, **THINK_SAMPLING)
+        t0 = time.time()
+        outputs = self.llm.generate(prompts, [sp] * len(prompts))
+        wall = time.time() - t0
+        for (key, qid, keys), out in zip(reqs, outputs):
+            text = out.outputs[0].text
+            usage_in = len(out.prompt_token_ids) if out.prompt_token_ids is not None else None
+            usage_out = len(out.outputs[0].token_ids) if out.outputs[0].token_ids is not None else None
+            try:
+                probs, answer = comparator_parse(think_final_json(text), keys)
+                err = None
+            except ValueError as e:
+                probs, answer, err = None, None, str(e)
+            self._cache[(key, qid)] = {
+                "probs": probs, "answer": answer, "error": err, "raw_text": text,
+                "usage_in": usage_in, "usage_out": usage_out,
+                "latency_mode": "batched", "batch_wall_s": wall, "n_requests": len(reqs)}
+
+
+harness.register("comparator-open2-think",
+                 lambda **kw: Comparator2ThinkBackend("comparator-open2-think", COMPARATOR2_REPO,
+                                                      False, **kw))
+
+
+# Batch-1 latency samples of every comparator, so that latency is compared one request at a
+# time for all of them (Comparator2Backend.answer handles batch1). Qwen3-14B-AWQ gets an
+# engine profile with its first run's context limit so the same batch-1 code path serves it.
+COMPARATOR2_PROFILES.setdefault(COMPARATOR_REPO, {"max_model_len": 12288,
+                                                  "gpu_memory_utilization": 0.90,
+                                                  "max_num_seqs": 32, "enforce_eager": False})
+COMPARATOR_B1_TAGS = {
+    "comparator-gemma-b1": (Comparator3Backend, COMPARATOR3_REPO, True),
+    "comparator-gemma-ll-b1": (Comparator3LLBackend, COMPARATOR3_REPO, True),
+    "comparator-mistral-b1": (Comparator3Backend, COMPARATOR4_REPO, True),
+    "comparator-mistral-ll-b1": (Comparator3LLBackend, COMPARATOR4_REPO, True),
+    "comparator-open-b1": (Comparator3Backend, COMPARATOR_REPO, True),
+}
+for _tag, (_cls, _repo, _b1) in COMPARATOR_B1_TAGS.items():
+    harness.register(_tag, lambda _t=_tag, _c=_cls, _r=_repo, _b=_b1, **kw: _c(_t, _r, _b, **kw))
+
+
+# Gemma-4-31B and Mistral-Small-24B quantized to FP8 on load fail inside vLLM 0.30's torch.compile
+# pass (InductorError "auto_functionalized was not removed" during the engine's profile run, an
+# inductor bug with online FP8 quantization). Both run in eager mode instead, which skips the
+# compile and CUDA-graph capture and keeps the FP8 weights; the numerics are the same, only the
+# throughput is lower. The Qwen3.6-27B FP8 release is pre-quantized and keeps its compiled profile.
+for _repo in (COMPARATOR3_REPO, COMPARATOR4_REPO):
+    COMPARATOR2_PROFILES[_repo]["enforce_eager"] = True
+
+
+# FP8 quantization on load does not run on the A100 either: in eager mode vLLM 0.30 selects the
+# CUTLASS w8a8 kernel for online FP8, which fails on this GPU (RuntimeError
+# cutlass_scaled_mm_sm80_epilogue during the profile run). Gemma-4-31B and Mistral-Small-24B
+# therefore run in their native bfloat16 weights, which fit an 80 GB A100 (about 58 and 47 GB),
+# still in eager mode. The Qwen3.6-27B FP8 release keeps its pre-quantized weights.
+for _repo in (COMPARATOR3_REPO, COMPARATOR4_REPO):
+    COMPARATOR2_PROFILES[_repo].pop("quantization", None)
+    COMPARATOR2_PROFILES[_repo]["gpu_memory_utilization"] = 0.94
+    COMPARATOR2_PROFILES[_repo]["enforce_eager"] = True

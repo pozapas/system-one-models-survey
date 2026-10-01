@@ -90,6 +90,16 @@
     "requests": 400,
     "sha256": "013fd3993a5d3e4e77cd267161d6333a202a35ca0daa2342abaf945f8548b591"
   },
+  "d2_banking77": {
+    "decisions": 616,
+    "file": "d2_banking77.jsonl",
+    "per_intent": 8,
+    "requests": 616,
+    "rule": "8 test utterances per intent, all 77 intents as options in one random permutation per item, keys o1..o77",
+    "script": "src/s00f_freeze_banking77.py",
+    "sha256": "8540748e94e90142678c178b13901d125444f338e37cb8fa14569a547feab78a",
+    "source": "legacy-datasets/banking77@f54121560de48f2852f90be299010d1d6dc612ec test"
+  },
   "d2_hier_dom": {
     "decisions": 600,
     "file": "d2_hier_dom.jsonl",
@@ -194,6 +204,23 @@
     "file": "d3_emotion.jsonl",
     "requests": 498,
     "sha256": "ccd5a620b9269d577a0f9672351b0eaa1b2f03fd0527eadaf9884e3078cc9f9b"
+  },
+  "d3_goemotions": {
+    "decisions": 492,
+    "file": "d3_goemotions.jsonl",
+    "per_class": {
+      "anger": 84,
+      "disgust": 76,
+      "fear": 80,
+      "joy": 84,
+      "sadness": 84,
+      "surprise": 84
+    },
+    "requests": 492,
+    "rule": "comments whose rater-agreed labels map to one Ekman emotion, neutral excluded; up to 84 per emotion",
+    "script": "src/s00e_freeze_goemotions.py",
+    "sha256": "3bb9ac4ad9d7b99c8002ca3e50b81c2c9eff2ab90335f668577e30d8fc924da6",
+    "source": "google-research-datasets/go_emotions@add492243ff905527e67aeb8b80c082af02207c3 simplified/test"
   },
   "d3_wiki_corpus": {
     "decisions": 500,

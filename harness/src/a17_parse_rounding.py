@@ -24,9 +24,10 @@ import bench
 import common as C
 import metrics as M
 
-VERBAL = ["comparator-open", "comparator-open2"]
+VERBAL = ["comparator-open", "comparator-open2", "comparator-gemma", "comparator-mistral",
+          "comparator-open2-think"]
 CONDS = ["d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki_corpus", "d3_emotion",
-         "d3_wiki_politeness"]
+         "d3_wiki_politeness", "d3_goemotions", "d2_banking77"]
 ROUND_MODELS = [bench.JEV] + bench.MODELS_OPEN + ["comparator-open"] + \
     bench.present(bench.COMPARATORS_2)
 RISK = 0.05
@@ -46,8 +47,11 @@ def raw_texts(model, cond):
 
 
 def lenient(txt, opts):
+    # a thinking reply carries its reasoning first; the JSON object follows the closing tag
+    tail = (txt or "").rsplit("</think>", 1)[-1]
+    a, b = tail.find("{"), tail.rfind("}")
     try:
-        items = json.loads(txt).get("probabilities") or []
+        items = json.loads(tail[a:b + 1] if a >= 0 and b > a else tail).get("probabilities") or []
     except Exception:
         items = []
     q = np.zeros(len(opts))
@@ -77,10 +81,11 @@ def reparse():
             if not bench.available_reps(m, cond):
                 continue
             raw = raw_texts(m, cond)
-            n = rec = cs = cl = 0
+            n = rec = cs = cl = pf = 0
             for d in bench.decisions(m, cond, 1):
                 if np.isnan(d["p"]).any() or not scored(d):
                     continue
+                pf += int(d.get("parse_failed", False))
                 p = np.asarray(d["p"], float)
                 q = lenient(raw.get((d["key"], d["qid"]), ""), d["options"])
                 n += 1
@@ -88,7 +93,7 @@ def reparse():
                 cs += int(np.argmax(p) == d["y"])
                 cl += int(np.argmax(q) == d["y"])
             out[f"{m}|{cond}"] = {"n": n, "recovered": rec, "acc_strict": cs / n,
-                                  "acc_lenient": cl / n}
+                                  "acc_lenient": cl / n, "parse_failed": pf}
             print("reparse", m, cond, out[f"{m}|{cond}"], flush=True)
     return out
 

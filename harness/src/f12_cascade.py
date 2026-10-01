@@ -24,10 +24,9 @@ e6's own cost fractions use. In every panel:
   * a dashed line marks the better of the two single stages.
 
 Informative pairs are the ones the results section reads (this-that-model-1.0
-and decider-2b to the hosted model on D2, the hosted model to the comparator on D1
-and on politeness, Laya (English) to the comparator on D1), plus Kev-9B to the
-hosted model on D1, the closest open model on D1, whose sweep shows the full
-trade-off. Pairs with no cost fraction (cost unknown) are skipped.
+and decider-2b to the hosted model on D2, the hosted model to Gemma-4-31B on D1 and D2,
+this-that-model-1.0 to Gemma-4-31B on D2), plus Kev-9B to the hosted model on D1, the
+closest open model on D1, whose sweep shows the full trade-off. Pairs with no cost fraction (cost unknown) are skipped.
 
 Output: figures/f12_cascade.pdf and .png, and the PDF copied to the figures folders of
 the ACL and EAAI manuscripts, which both include this file.
@@ -46,9 +45,9 @@ import style
 PAIRS = [("this-that-1.0", "jev-1.13.0", "d2_k150"),
          ("decider-2b", "jev-1.13.0", "d2_k150"),
          ("kev-9b", "jev-1.13.0", "d1_neutral"),
-         ("jev-1.13.0", "comparator-open", "d1_neutral"),
-         ("jev-1.13.0", "comparator-open", "d3_wiki_politeness"),
-         ("laya-en", "comparator-open", "d1_neutral")]
+         ("jev-1.13.0", "comparator-gemma", "d1_neutral"),
+         ("jev-1.13.0", "comparator-gemma", "d2_k150"),
+         ("this-that-1.0", "comparator-gemma", "d2_k150")]
 # direct-label offsets (dx pt, dy pt, ha, va) for the first-stage and second-stage points
 R, L, B, A = (6, 0, "left", "center"), (-6, 0, "right", "center"),     (0, -7, "center", "top"), (0, 7, "center", "bottom")
 LABEL_AT = {0: (R, B), 1: (R, B), 2: (B, A), 3: ((0, -9, "center", "top"), B),
@@ -57,7 +56,8 @@ LABEL_AT = {0: (R, B), 1: (R, B), 2: (B, A), 3: ((0, -9, "center", "top"), B),
 COND_LABEL = {"d1_neutral": "D1", "d2_k150": "D2", "d3_wiki_politeness": "politeness",
               "d3_conv_go_awry": "derailment", "d3_wiki_corpus": "power",
               "d3_emotion": "emotion"}
-SECOND_LABEL = {"jev-1.13.0": "Jev 1.13.0 alone", "comparator-open": "Qwen3-14B alone"}
+SECOND_LABEL = {"jev-1.13.0": "Jev 1.13.0 alone", "comparator-open": "Qwen3-14B alone",
+                "comparator-gemma": "Gemma-4-31B alone"}
 
 
 MANUSCRIPT_FIGURES = [os.path.join(os.path.dirname(C.ROOT), "benchmark", "manuscript", "figures"),

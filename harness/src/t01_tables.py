@@ -222,7 +222,14 @@ FAMILIES = [("Hosted", ["jev-1.13.0"]),
             ("Open, decoder head", ["kev-0.8b", "kev-9b", "decider-2b", "this-that-1.0",
                                     "nimble-9b"]),
             ("Generative comparator", ["comparator-open", "comparator-open2",
-                                       "comparator-open2-ll"])]
+                                       "comparator-open2-ll", "comparator-open2-think",
+                                       "comparator-gemma", "comparator-gemma-ll",
+                                       "comparator-mistral", "comparator-mistral-ll"])]
+# base checkpoint of each comparator readout; family_rows leaves a small gap between bases
+COMP_BASE = {"comparator-open": "qwen3", "comparator-open2": "qwen36",
+             "comparator-open2-ll": "qwen36", "comparator-open2-think": "qwen36",
+             "comparator-gemma": "gemma", "comparator-gemma-ll": "gemma",
+             "comparator-mistral": "mistral", "comparator-mistral-ll": "mistral"}
 WORDS = {2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight",
          9: "nine", 10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen"}
 
@@ -338,6 +345,8 @@ def family_rows(models, ncols, row_fn, between=None):
         for i, m in enumerate(ms):
             if between and i:
                 out.append(between)
+            elif i and m in COMP_BASE and COMP_BASE[m] != COMP_BASE.get(ms[i - 1]):
+                out.append("\\addlinespace[2.5pt]")
             out += row_fn(m)
     return out
 
@@ -359,7 +368,7 @@ def e_t16_scores():
                 + " \\\\"]
 
     n = 1 + len(cols)
-    spec = colspec([("P", 0.22)] + [("N", 0.78 / len(cols))] * len(cols))
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / len(cols))] * len(cols))
     words = {13: "thirteen"}
     groups = " & ".join("\\hdgroup{two}{%s}" % lab for _ds, lab in dsets)
     rules = ",".join("%d-%d" % (2 + 2 * i, 3 + 2 * i) for i in range(len(dsets)))
@@ -385,7 +394,7 @@ def e_t03_headline():
     """Full width. Columns grouped by dataset: D1 (accuracy, soft accuracy), D2 (accuracy,
     out-of-scope AUROC), D3 (four task accuracies, mean macro-F1). Bold is the best value
     of each column over every row."""
-    models = DECISION_MODELS + ["comparator-open", "comparator-open2", "comparator-open2-ll"]
+    models = DECISION_MODELS + COMPARATORS_ALL
     cols = [("acc", "doneneutral.acc"), ("soft", "doneneutral.softacc"),
             ("acc", "dtwo.acc"), ("auroc", "oos.auroc")]
     cols += [("acc", f"{cs}.acc") for _c, cs, _l in D3_TASKS] + [("f1", "dthree.macrofone")]
@@ -400,6 +409,10 @@ def e_t03_headline():
         ("BERT-base, fine-tuned",
          [None, None, "bl.bertbaseclinc.d2k150.acc", "bl.bertbaseclinc.d2k150.aurocoos"]
          + [None] * 5),
+        ("DeBERTa-v3-large, fine-tuned",
+         ["bl.debertalarged1.d1neutral.acc", "bl.debertalarged1.d1neutral.softacc",
+          "bl.debertalargeclinc.d2k150.acc", "bl.debertalargeclinc.d2k150.aurocoos"]
+         + [f"bl.debertalarged3.{t}.acc" for t in d3b] + ["bl.debertalarged3.dthree.macrofone"]),
         ("DeBERTa-v3 NLI, zero-shot",
          ["bl.nlidebertav3base.d1neutral.acc", "bl.nlidebertav3base.d1neutral.softacc",
           "bl.nlidebertav3base.d2k150.acc", "bl.nlidebertav3base.d2k150.aurocoos"]
@@ -422,7 +435,7 @@ def e_t03_headline():
         cells = [name] + [ecell(l, best) if l and has(l) else "--" for l in labs]
         return " & ".join(cells) + " \\\\"
 
-    spec = colspec([("P", 0.205)] + [("N", 0.795 / 9)] * 9)
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / 9)] * 9)
     lines = EAAI_HEADER + [
         "\\tablestyle",
         "\\begin{tabular}{%s}" % spec,
@@ -436,8 +449,8 @@ def e_t03_headline():
         "\\midrule"]
     lines += family_rows(models, 10, row)
     lines += ["\\groupspan{ten}{Classifier trained on each task's own labels}",
-              bl_row(*bl_rows[0]), bl_row(*bl_rows[1]),
-              "\\groupspan{ten}{Zero-shot classifier}", bl_row(*bl_rows[2])]
+              bl_row(*bl_rows[0]), bl_row(*bl_rows[1]), bl_row(*bl_rows[2]),
+              "\\groupspan{ten}{Zero-shot classifier}", bl_row(*bl_rows[3])]
     lines += ["\\bottomrule", "\\end{tabular}",
               "\\tablenote{Acc.\\ is accuracy, Soft is agreement with the teacher distribution,"
               " AUROC separates in-scope from out-of-scope inputs, and F1 is the mean macro-F1"
@@ -478,8 +491,8 @@ def e_t04_calibration():
                       ecell(f"{p}.ecescaled", best), ecell(f"{p}.covfive", best)]
         return [" & ".join(cells) + " \\\\"]
 
-    rest = (1.0 - 0.23 - 3 * 0.068) / 9
-    spec = colspec([("P", 0.23)] + ([("N", 0.068)] + [("N", rest)] * 3) * 3)
+    rest = (1.0 - NAME_W - 3 * 0.068) / 9
+    spec = colspec([("P", NAME_W)] + ([("N", 0.068)] + [("N", rest)] * 3) * 3)
     lines = EAAI_HEADER + [
         "\\tablestylewide",
         "\\begin{tabular}{%s}" % spec,
@@ -517,16 +530,17 @@ def e_t05_cardinality():
     the largest option set."""
     cols = [("five.acc", "max"), ("twenty.acc", "max"), ("fifty.acc", "max"),
             ("all.acc", "max"), ("all.ece", "min"), ("hier.acc", "max"), ("drop", "min")]
+    models = DECISION_MODELS + [m for m in COMPARATORS_ALL if has(f"e3.{CN.SLUG[m]}.all.acc")]
     best = set()
     for suf, mode in cols:
-        best |= best_of([f"e3.{CN.SLUG[m]}.{suf}" for m in DECISION_MODELS], mode)
+        best |= best_of([f"e3.{CN.SLUG[m]}.{suf}" for m in models], mode)
 
     def row(m):
         ms = CN.SLUG[m]
         return [" & ".join([mname(m)] + [ecell(f"e3.{ms}.{suf}", best) for suf, _m in cols])
                 + " \\\\"]
 
-    spec = colspec([("P", 0.23)] + [("N", 0.77 / 7)] * 7)
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / 7)] * 7)
     lines = EAAI_HEADER + [
         "\\tablestyle",
         "\\begin{tabular}{%s}" % spec,
@@ -538,11 +552,12 @@ def e_t05_cardinality():
         " & \\hdsub{\\num{p.kfifty}} & \\hdsub{\\num{p.kall}} & \\hdsub{ECE}"
         " & \\hdsub{Two-stage} & \\hdsub{Drop} \\\\",
         "\\midrule"]
-    lines += family_rows(DECISION_MODELS, 8, row)
+    lines += family_rows(models, 8, row)
     lines += ["\\bottomrule", "\\end{tabular}",
               "\\tablenote{Two-stage is the accuracy of asking the domain and then the"
               " intent, and Drop is the one-stage accuracy lost from \\num{p.kfive} to"
-              " \\num{p.kall} options. Bold marks the highest accuracy and the lowest error"
+              " \\num{p.kall} options. The two-stage condition was run for the decision models"
+              " only. Bold marks the highest accuracy and the lowest error"
               " and drop in each column, with ties bolded.}"]
     return ewrite("t05_cardinality.tex", lines)
 
@@ -565,9 +580,11 @@ def e_t06_names():
     hundred against the aligned identifiers for digits, random strings and the swap, each
     with a glyph for its excess over the floor, the aligned AUC and the floor."""
     set_names = {"done": "Typed-decisions", "toxicity": "Derailment", "power": "Power"}
+    models = DECISION_MODELS + [m for m in COMPARATORS_ALL
+                                if has(f"e2.{CN.SLUG[m]}.done.kswap.flips")]
     best = set()
     for _c, ds, _l in NAMES_DATASETS:
-        best |= best_of([f"e2.{CN.SLUG[m]}.{ds}.kny.auc" for m in DECISION_MODELS], "max")
+        best |= best_of([f"e2.{CN.SLUG[m]}.{ds}.kny.auc" for m in models], "max")
 
     def row(m):
         ms = CN.SLUG[m]
@@ -584,7 +601,7 @@ def e_t06_names():
             out.append(" & ".join(cells) + " \\\\")
         return out
 
-    spec = colspec([("P", 0.24), ("P", 0.18)] + [("N", 0.12)] * 3 + [("N", 0.11)] * 2)
+    spec = colspec([("P", NAME_W), ("P", 0.165)] + [("N", 0.11)] * 5)
     lines = EAAI_HEADER + [
         "\\tablestyle",
         "\\begin{tabular}{%s}" % spec,
@@ -596,14 +613,14 @@ def e_t06_names():
         " & \\hdsub{\\flipcell{}{Random}} & \\hdsub{\\flipcell{}{Swapped}} & \\hdsub{AUC}"
         " & \\hdsub{Floor} \\\\",
         "\\midrule"]
-    lines += family_rows(DECISION_MODELS, 7, row, between="\\addlinespace[2.5pt]")
+    lines += family_rows(models, 7, row, between="\\addlinespace[2.5pt]")
     lines += ["\\bottomrule", "\\end{tabular}",
               "\\tablenote{Digits, Random and Swapped are the option-name conditions, AUC is"
               " measured under the aligned identifiers and Floor is the test-retest floor. The"
               " glyph grades the flips above the model's floor on that set, \\symnone\\ below"
               " one per hundred, \\symhalf\\ from one to ten and \\symfull\\ ten or more."
               " A floor that was not measured counts as zero, as it is for every open"
-              " model on typed-decisions. Bold marks the highest AUC on each set, with ties bolded.}"]
+              " model on typed-decisions and for every comparator. Bold marks the highest AUC on each set, with ties bolded.}"]
     return ewrite("t06_names.tex", lines)
 
 
@@ -611,26 +628,34 @@ def e_t07_cost():
     """Full width: platform, cost per thousand decisions with an inline bar on a linear
     scale to the most expensive model and a tick at the hosted list price, and the median
     and tail latency. Bold is the lowest value of each column."""
-    models = DECISION_MODELS + ["comparator-open"]
+    models = DECISION_MODELS + COMPARATORS_ALL
+
+    def lat(m):
+        # comparators: latency of the runs with one request at a time (the -b1 tags); their
+        # batched runs give the cost
+        ms = CN.SLUG[m]
+        return f"e5.{ms}bone.d1neutral" if m in COMPARATORS_ALL else f"e5.{ms}.d1neutral"
     usd = [f"e5.{CN.SLUG[m]}.d1neutral.usd" for m in models]
     best = best_of(usd, "min")
     for suf in ("pfifty", "pninetyfive"):
-        best |= best_of([f"e5.{CN.SLUG[m]}.d1neutral.{suf}" for m in models], "min")
-    have = [l for l in usd if printed(l) is not None]
+        best |= best_of([f"{lat(m)}.{suf}" for m in models], "min")
+    # the scale ends at the most expensive model other than the thinking mode, whose bar is cut
+    have = [l for l in usd if printed(l) is not None and "think" not in l]
     top = max(have, key=printed)
     ref = "e5.jev.d1neutral.usd"
 
     def row(m):
         ms = CN.SLUG[m]
         p = f"e5.{ms}.d1neutral"
-        hw = "API" if m == "jev-1.13.0" else "Colab GPU"
+        hw = ("API" if m == "jev-1.13.0" else "Colab A100"
+              if m in COMPARATORS_ALL and m != "comparator-open" else "Colab L4")
         bar = "\\valbar{%s.usd}{%s}{%s}" % (p, top, ref) if has(f"{p}.usd") else ""
-        return [" & ".join([mname(m), hw if has(f"{p}.pfifty") else "--",
-                            ecell(f"{p}.usd", best), bar, ecell(f"{p}.pfifty", best),
-                            ecell(f"{p}.pninetyfive", best)]) + " \\\\"]
+        return [" & ".join([mname(m), hw if has(f"{p}.usd") else "--",
+                            ecell(f"{p}.usd", best), bar, ecell(f"{lat(m)}.pfifty", best),
+                            ecell(f"{lat(m)}.pninetyfive", best)]) + " \\\\"]
 
-    bar_frac = 0.30
-    spec = colspec([("P", 0.225), ("P", 0.13), ("N", 0.105), ("P", bar_frac),
+    bar_frac = 0.24
+    spec = colspec([("P", NAME_W), ("P", 0.13), ("N", 0.105), ("P", bar_frac),
                     ("N", 0.12), ("N", 0.12)])
     lines = EAAI_HEADER + [
         "\\tablestyle",
@@ -645,12 +670,16 @@ def e_t07_cost():
         "\\midrule"]
     lines += family_rows(models, 6, row)
     lines += ["\\bottomrule", "\\end{tabular}",
-              "\\tablenote{Bars share one linear scale, and the orange tick marks the hosted"
-              " model's cost at its list price. Bold marks the lowest value in each column, with ties bolded.}"]
+              "\\tablenote{Costs of the comparators come from batched runs and their latencies"
+              " from \\num{p.bone.requests} requests sent one at a time, with Gemma-4-31B and"
+              " Mistral-Small-24B served without graph compilation and the thinking mode not"
+              " timed alone. Bars share one linear scale, cut at its end for the thinking mode,"
+              " and the orange tick marks the hosted model's list price. Bold marks the lowest"
+              " value in each column, with ties bolded.}"]
     return ewrite("t07_cost.tex", lines)
 
 
-def e_t08_cascade():
+def e_t08_cascade(blocks=None, fname="t08_cascade.tex"):
     """Full width, two stacked panels (D1 typed-decisions at decision level, D2 CLINC-150),
     one row per first stage grouped by the second stage. Cells come from rv.cas (a09 section
     D: out-of-fold thresholds, itemwise costs, cluster-bootstrap intervals that refit the
@@ -659,10 +688,10 @@ def e_t08_cascade():
     below). A dot marks a gain whose interval excludes zero at printed precision."""
     rv = json.load(open(os.path.join(C.RESULTS, "revision_stats.json"), encoding="utf-8"))
     pairs = rv["D_cascades"]["pairs"]
-    blocks = [("Escalation to Qwen3-14B", "comparator-open",
-               [m for m in MODEL_ORDER if m != "comparator-open"]),
-              ("Escalation to Jev 1.13.0", "jev-1.13.0",
-               [m for m in MODEL_ORDER if m not in ("jev-1.13.0", "comparator-open")])]
+    if blocks is None:
+        blocks = [("Escalation to Gemma-4-31B, verbal", "comparator-gemma", DECISION_MODELS),
+                  ("Escalation to Jev 1.13.0", "jev-1.13.0",
+                   [m for m in DECISION_MODELS if m != "jev-1.13.0"])]
     panels = [("D1 typed-decisions", "doneneutral", "d1_neutral"),
               ("D2 CLINC-150", "dtwo", "d2_k150")]
     spec = colspec([("P", 0.26), ("N", 0.085), ("N", 0.085), ("N", 0.085), ("P", 0.13),
@@ -710,13 +739,22 @@ def e_t08_cascade():
               " items, and Gain is its difference from the better single stage in points. Esc.\\"
               " is the escalated share and Cost the cost fraction from each decision's own"
               " cost, where the escalation unit on D1 is the decision, a request's cost is shared"
-              " among its decisions and Qwen3-14B is charged per question. Brackets hold"
+              " among its decisions and a comparator is charged per question. Brackets hold"
               " cluster bootstrap intervals at"
               " \\num{p.boot.level} percent whose \\num{p.boot.refitreps} replicates refit the"
-              " thresholds, unadjusted for the number of cascades, and" + mark_text[0].lower()
+              " thresholds, unadjusted for the number of cascades. A dash marks a pair without results,"
+              " because Laya (English) refused the full intent list, and" + mark_text[0].lower()
               + mark_text[1:] + "}"]
-    E_MARKS["t08_cascade.tex"] = marked
-    return ewrite("t08_cascade.tex", lines)
+    E_MARKS[fname] = marked
+    return ewrite(fname, lines)
+
+
+def e_t22_cascade_qwen():
+    """Appendix. The held-out cascades of t08 toward the two Qwen comparators."""
+    blocks = [("Escalation to Qwen3-14B, verbal", "comparator-open", DECISION_MODELS),
+              ("Escalation to Qwen3.6-27B, verbal", "comparator-open2", DECISION_MODELS),
+              ("Escalation to Qwen3.6-27B, likelihood", "comparator-open2-ll", DECISION_MODELS)]
+    return e_t08_cascade(blocks, "t22_cascade_qwen.tex")
 
 
 # Labels behind the bold cells and the markers of the new EAAI tables, for the report.
@@ -747,7 +785,7 @@ def e_t09_calib_tasks():
     """Per-task calibration: expected calibration error as shipped and after cross-fitted
     temperature scaling (rv.ts), with the refit bootstrap interval of the scaled error beneath
     it. Bold is the lowest shipped and the lowest scaled error of each column."""
-    models = DECISION_MODELS + ["comparator-open"]
+    models = DECISION_MODELS + COMPARATORS_ALL
     best = set()
     for cs, _l in TASK_COLS:
         for met in ("ece", "ecescaled"):
@@ -805,7 +843,7 @@ def e_t10_selective():
                       ecell(f"{h}.risk"), ecell(f"{h}.riskub")]
         return [" & ".join(cells) + " \\\\"]
 
-    spec = colspec([("P", 0.24)] + [("N", 0.1), ("N", 0.095), ("N", 0.085), ("N", 0.1)] * 2)
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / 8)] * 8)
     lines = EAAI_HEADER + [
         "\\tablestyle",
         "\\begin{tabular}{%s}" % spec,
@@ -837,8 +875,7 @@ def e_t11_paired():
     """Paired accuracy differences with Jev (rv.pd): each model minus Jev in points on
     identical decisions, with the paired cluster bootstrap interval beneath. Bold where the
     Holm-adjusted p value, at printed precision, is below HOLM_ALPHA."""
-    models = ([m for m in DECISION_MODELS if m != "jev-1.13.0"]
-              + ["comparator-open", "comparator-open2", "comparator-open2-ll"])
+    models = [m for m in DECISION_MODELS if m != "jev-1.13.0"] + COMPARATORS_ALL
 
     def pref(m, cs):
         return f"rv.pd.{CN.SLUG[m]}.{cs}"
@@ -860,7 +897,7 @@ def e_t11_paired():
             cells.append(stack(ecell(f"{p}.diff", sig), f"{p}.diff"))
         return [" & ".join(cells) + " \\\\"]
 
-    spec = colspec([("P", 0.22)] + [("N", 0.13)] * 6)
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / 6)] * 6)
     lines = EAAI_HEADER + [
         "\\tablestyle",
         "\\begin{tabular}{%s}" % spec,
@@ -881,10 +918,13 @@ def e_t11_paired():
     return ewrite("t11_paired.tex", lines)
 
 
-COMPARATORS_ALL = ["comparator-open", "comparator-open2", "comparator-open2-ll"]
-COMPARATOR_ROWS = {"comparator-open": "Qwen3-14B, verbal",
-                   "comparator-open2": "Qwen3.6-27B, verbal",
-                   "comparator-open2-ll": "Qwen3.6-27B, likelihood"}
+# width of the model-name column, wide enough for the longest comparator label
+NAME_W = 0.285
+
+COMPARATORS_ALL = ["comparator-open", "comparator-open2", "comparator-open2-ll",
+                   "comparator-open2-think", "comparator-gemma", "comparator-gemma-ll",
+                   "comparator-mistral", "comparator-mistral-ll"]
+COMPARATOR_ROWS = {m: style.MODEL_LABELS[m] for m in COMPARATORS_ALL}
 
 # decision model -> (backbone slug, backbone name), following bench.BACKBONE_OF
 BACKBONE_ROWS = [("kev-0.8b", "bbsmallbase", "Qwen3.5-0.8B-Base"),
@@ -957,7 +997,11 @@ MANIFEST_TEMP = {"jev-1.13.0": None, "laya-en": "m.laya.temp", "laya-ml": "m.lay
 
 def _tt(s):
     """Monospace identifier; a space inside it (package and version) does not break."""
-    return "\\texttt{%s}" % s.replace("_", "\\_").replace(" ", "~")
+    # a long repository name may break after a hyphen of its model name
+    s = s.replace("_", "\\_").replace(" ", "~")
+    if len(s) > 32:
+        s = s.replace("-Instruct-", "-\\allowbreak Instruct-")
+    return "\\texttt{%s}" % s
 
 
 def _single(counter, what, model):
@@ -1085,6 +1129,26 @@ def e_t12_manifest():
     lines = [l.replace("{Generative comparator}", "{Generative comparators}") for l in lines]
     lines.append(row2(extra[0], "\\msw{comptwo}" + extra[1], extra[2], extra[3],
                       ecell("m.comparator.temp") + ", " + ecell("m.likelihood.temp")))
+    # fourth revision: the thinking mode of the same checkpoint (sampled, adapters.THINK_SAMPLING)
+    # and two further comparators in bf16 on the A100, with the vLLM pin the fourth notebook asserts
+    assert abs(AD.THINK_SAMPLING["temperature"] - printed("m.think.temp")) < 1e-9
+    src4 = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "build_revision4_notebook.py"), encoding="utf-8").read()
+    assert 'R2.VLLM_VERSION == "%s"' % vllm2[0] in src4, vllm2
+    lines.append(row2(("comparator-open2-think",), "\\msw{comptwothink}Qwen3.6-27B, thinking",
+                      _tt(AD.COMPARATOR2_REPO), _tt("vllm " + vllm2[0]), ecell("m.think.temp")))
+    for tags, sw, name, rp in (
+            (("comparator-gemma", "comparator-gemma-ll"), "compgem", "Gemma-4-31B, both readouts",
+             AD.COMPARATOR3_REPO),
+            (("comparator-mistral", "comparator-mistral-ll"), "compmis",
+             "Mistral-Small-24B, both readouts", AD.COMPARATOR4_REPO)):
+        for t in tags:
+            temp = _single(man[t]["served_temperature"], "served_temperature", t)
+            want = "m.likelihood.temp" if t.endswith("-ll") else "m.comparator.temp"
+            assert abs(float(temp) - printed(want)) < 1e-9, (t, temp)
+        lines.append(row2(tags, "\\msw{%s}%s" % (sw, name), _tt(rp),
+                          _tt("vllm " + vllm2[0]) + ", bf16, eager",
+                          ecell("m.comparator.temp") + ", " + ecell("m.likelihood.temp")))
     lines.append(groupspan(6, "Untuned backbones"))
     for t, r in bb_rows:
         lines.append(row2((t,), r.split("/")[1], _tt(r), bbenv,
@@ -1094,9 +1158,11 @@ def e_t12_manifest():
               " the served temperature that every answer record reports. The hosted service"
               " reports neither, and each response named the pinned model. Laya applies a"
               " temperature per question type and option count and records one as its nominal"
-              " value, and the comparators decode greedily or read key likelihoods at a temperature"
-              " of one. Every open model except Qwen3.6-27B ran on a Colab L4 GPU, and a pin"
-              " written as a lower bound was resolved at install time.}"]
+              " value. The comparators decode greedily or read key likelihoods at a temperature"
+              " of one, except the thinking mode, which samples its reasoning at the temperature"
+              " shown with a fixed seed. Qwen3.6-27B, Gemma-4-31B and Mistral-Small-24B ran on a"
+              " Colab A100 GPU and every other open model on a Colab L4 GPU, and a pin written as"
+              " a lower bound was resolved at install time.}"]
     return ewrite("t12_manifest.tex", lines)
 
 
@@ -1119,6 +1185,13 @@ def e_t13_gate():
     def pol(letter, m, text):
         return "(%s) %s%s" % (letter, mname(m), text)
 
+    def casrow(letter, c, second):
+        return [pol(letter, "this-that-1.0", " escalating to " + style.MODEL_LABELS[second]
+                    .replace(", verbal", "")),
+                stack(ecell(f"{c}.acc"), f"{c}.acc"), ALL, "--", "--",
+                stack(ecell(f"{c}.esc"), f"{c}.esc"), ALL, ecell(f"{c}.usd"),
+                ecell(f"{c}.pfifty"), ecell(f"{c}.pninetyfive")]
+
     e5j = "e5.jev.d2k150"
     groups = [
         ("Every request answered", [
@@ -1129,12 +1202,10 @@ def e_t13_gate():
             [pol("b", "jev-1.13.0", "")] + gated("jev-1.13.0"),
             [pol("c", "kev-9b", "")] + gated("kev-9b"),
             [pol("d", "decider-2b", "")] + gated("decider-2b"),
-            [pol("e", "comparator-open2-ll", "")] + gated("comparator-open2-ll")]),
-        ("Cascade", [
-            [pol("f", "this-that-1.0", " escalating to Jev 1.13.0"),
-             stack(ecell(f"{cas}.acc"), f"{cas}.acc"), ALL, "--", "--",
-             stack(ecell(f"{cas}.esc"), f"{cas}.esc"), ALL, ecell(f"{cas}.usd"),
-             ecell(f"{cas}.pfifty"), ecell(f"{cas}.pninetyfive")]])]
+            [pol("e", "comparator-open2-ll", "")] + gated("comparator-open2-ll"),
+            [pol("f", "comparator-gemma", "")] + gated("comparator-gemma")]),
+        ("Cascade", [casrow("g", cas, "jev-1.13.0"),
+                     casrow("h", "rv.cas.thisthat.compgem.dtwo", "comparator-gemma")])]
     assert has(f"{j}.cov")
     spec = colspec([("P", 0.21), ("N", 0.1), ("N", 0.095), ("N", 0.075), ("N", 0.075),
                     ("N", 0.09), ("N", 0.105), ("N", 0.085), ("N", 0.075), ("N", 0.09)])
@@ -1159,8 +1230,8 @@ def e_t13_gate():
               " \\num{p.boot.level} percent upper bound. Escalated is the share sent to the"
               " second stage, and Accepted the share of out-of-scope requests routed to a"
               " handler, which is all of them when no request can be rejected. USD is the cost per thousand requests and the"
-              " latencies are in ms per request, amortized over a batch for Qwen3.6-27B. The cascade"
-              " has no reject option and so routes every out-of-scope request, and its"
+              " latencies are in ms per request, amortized over a batch for the comparators. The"
+              " cascades have no reject option and so route every out-of-scope request, and their"
               " latencies compose recorded in-scope latencies offline. Beneath a value is"
               " its cluster bootstrap interval at \\num{p.boot.level} percent.}"]
     return ewrite("t13_gate.tex", lines)
@@ -1186,7 +1257,7 @@ def e_t18_oos_option():
                             stack(ecell(f"{p}.gfar", best), f"{p}.gfar"),
                             ecell(f"rv.gate.{ms}.far")]) + " \\\\"]
 
-    spec = colspec([("P", 0.25)] + [("N", 0.125)] * 6)
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / 6)] * 6)
     lines = EAAI_HEADER + [
         "\\tablestyle",
         "\\begin{tabular}{%s}" % spec,
@@ -1209,9 +1280,158 @@ def e_t18_oos_option():
               " that targets \\num{p.riskfive} percent in-scope risk. Answered is its in-scope"
               " coverage and Accepted its out-of-scope false acceptance, beside the false"
               " acceptance of the same gate without the option, with cluster bootstrap intervals"
-              " beneath Answered and Accepted. Bold marks the lowest false acceptance among models that answer at least"
+              " beneath Answered and Accepted. Laya (English) refused every request with this option set and is"
+              " not listed. Bold marks the lowest false acceptance among models that answer at least"
               " half of the in-scope requests.}"]
     return ewrite("t18_oos_option.tex", lines)
+
+
+def e_t19_new_tasks():
+    """Main text. The two fourth-revision benchmarks (nt.*, a20): GoEmotions with rater-agreed
+    Ekman labels and Banking77 with its 77 intents. Per benchmark accuracy, macro-F1, ECE as
+    shipped and the paired difference from Jev in points, bold where Holm-adjusted p < 0.05.
+    Rows: decision models, comparator readouts, and the classifiers trained on each benchmark's
+    training split and the zero-shot entailment classifier."""
+    models = DECISION_MODELS + COMPARATORS_ALL
+    tasks = [("goemo", "GoEmotions, Ekman emotions"), ("banking", "Banking77 intents")]
+    mets = [("acc", "max"), ("fone", "max"), ("ece", "min")]
+    cls = [("BGE-small, trained per task", {"goemo": "bgegoemo", "banking": "bgebanking"}),
+           ("DeBERTa-v3-large, fine-tuned", {"goemo": "debgoemo", "banking": "debbanking"}),
+           ("DeBERTa-v3 NLI, zero-shot", {"goemo": "nlizs", "banking": "nlizs"})]
+    best, sig = set(), set()
+    for t, _l in tasks:
+        slugs = [CN.SLUG[m] for m in models] + [d[t] for _n, d in cls]
+        for met, mode in mets:
+            best |= best_of([f"nt.{s}.{t}.{met}" for s in slugs], mode)
+        for s in slugs:
+            h = printed(f"nt.{s}.{t}.holm")
+            if h is not None and h < HOLM_ALPHA:
+                sig.add(f"nt.{s}.{t}.diff")
+    E_MARKS["t19_new_tasks.tex"] = sorted(best | sig)
+
+    def cells(slug_of):
+        out = []
+        for t, _l in tasks:
+            p = f"nt.{slug_of(t)}.{t}"
+            out += [ecell(f"{p}.{met}", best) for met, _m in mets]
+            out.append(ecell(f"{p}.diff", sig) if has(f"{p}.diff") else "--")
+        return out
+
+    def row(m):
+        ms = CN.SLUG[m]
+        return [" & ".join([mname(m)] + cells(lambda t: ms)) + " \\\\"]
+
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / 8)] * 8)
+    lines = EAAI_HEADER + [
+        "\\tablestyle",
+        "\\begin{tabular}{%s}" % spec,
+        "\\toprule",
+        "\\headrow \\hdtop{}" + "".join(" & \\hdgroup{four}{%s}" % l for _t, l in tasks)
+        + " \\\\",
+        "\\bandrules{2-5,6-9}",
+        "\\headrow \\hdsub{Model}" + (" & \\hdsub{Acc.} & \\hdsub{F1} & \\hdsub{ECE}"
+                                     " & \\hdsub{vs Jev}") * 2 + " \\\\",
+        "\\midrule"]
+    lines += family_rows(models, 9, row)
+    lines.append("\\groupspan{nine}{Classifier trained on each benchmark's own labels}")
+    for name, d in cls[:2]:
+        lines.append(" & ".join([name] + cells(lambda t, d=d: d[t])) + " \\\\")
+    lines.append("\\groupspan{nine}{Zero-shot classifier}")
+    lines.append(" & ".join([cls[2][0]] + cells(lambda t: "nlizs")) + " \\\\")
+    lines += ["\\bottomrule", "\\end{tabular}",
+              "\\tablenote{GoEmotions has \\num{n.d3goemotions.requests} Reddit comments whose"
+              " rater-agreed labels map to one of six Ekman emotions, and Banking77 has"
+              " \\num{n.d2banking77.requests} queries, each asked with all 77 intents. F1 is"
+              " macro-F1 in percent, ECE the calibration error as shipped, and vs Jev the paired"
+              " accuracy difference from Jev 1.13.0 in points. The Kev checkpoints list Banking77"
+              " among their training sets. Bold marks the best value in each of the first three"
+              " columns of a benchmark and a difference significant after Holm correction at"
+              " the five percent level.}"]
+    return ewrite("t19_new_tasks.tex", lines)
+
+
+VERBAL_READOUTS = ["comparator-open", "comparator-open2", "comparator-open2-think",
+                   "comparator-gemma", "comparator-mistral"]
+
+
+def e_t20_readouts():
+    """Appendix. Reliability of the verbal readouts (vr.*, a17): per benchmark the share of
+    decisions whose reply the fixed parser could not use (no parseable JSON, or keys written
+    with their descriptions), the accuracy with the fixed parser and with a lenient re-parse
+    that accepts such keys."""
+    tasks = [("doneneutral", "D1"), ("dtwo", "D2"), ("emotion", "Emotion"),
+             ("goemo", "GoEmo."), ("banking", "Bank.")]
+
+    def row(m):
+        ms = CN.SLUG[m]
+        out = []
+        for met in ("failshare", "accstrict", "acclenient"):
+            out.append(" & ".join(
+                [mname(m) if met == "failshare" else "",
+                 {"failshare": "Unusable share", "accstrict": "Accuracy, fixed parser",
+                  "acclenient": "Accuracy, lenient"}[met]]
+                + [ecell(f"vr.{ms}.{t}.{met}") for t, _l in tasks]) + " \\\\")
+        return out
+
+    spec = colspec([("P", NAME_W), ("P", 0.215)] + [("N", 0.1)] * 5)
+    lines = EAAI_HEADER + [
+        "\\tablestyle",
+        "\\begin{tabular}{%s}" % spec,
+        "\\toprule",
+        "\\headrow \\hd{Model} & \\hd{Measure}" + "".join(" & \\hd{%s}" % l for _t, l in tasks)
+        + " \\\\",
+        "\\midrule"]
+    lines += family_rows(VERBAL_READOUTS, 7, row, between="\\addlinespace[2.5pt]")
+    lines += ["\\bottomrule", "\\end{tabular}",
+              "\\tablenote{Unusable share counts decisions whose reply has no parseable JSON"
+              " after any reasoning, or names an option by its key joined to its description."
+              " The fixed parser, used in every other table, scores such a decision as a"
+              " uniform distribution, and the lenient re-parse accepts a key followed by its"
+              " description. GoEmo.\\ is GoEmotions and Bank.\\ is Banking77.}"]
+    return ewrite("t20_readouts.tex", lines)
+
+
+def e_t21_risk_control():
+    """Appendix. Learn-then-test risk control (rc.*, a19): coverage with a finite-sample
+    guarantee that the error rate of the accepted decisions stays at or below alpha with
+    probability 1 - delta, and the realized risk on the accepted decisions."""
+    models = DECISION_MODELS + COMPARATORS_ALL
+    dsets = [("doneneutral", "D1 typed-decisions"), ("dtwo", "D2 CLINC-150")]
+    best = set()
+    for cs, _l in dsets:
+        best |= best_of([f"rc.{CN.SLUG[m]}.{cs}.cov" for m in models], "max")
+    E_MARKS["t21_risk_control.tex"] = sorted(best)
+
+    def row(m):
+        ms = CN.SLUG[m]
+        cells = [mname(m)]
+        for cs, _l in dsets:
+            p = f"rc.{ms}.{cs}"
+            cells += [ecell(f"{p}.cov", best), ecell(f"{p}.accepted"),
+                      ecell(f"{p}.risk") if has(f"{p}.risk") else "--"]
+        return [" & ".join(cells) + " \\\\"]
+
+    spec = colspec([("P", NAME_W)] + [("N", (1 - NAME_W) / 6)] * 6)
+    lines = EAAI_HEADER + [
+        "\\tablestyle",
+        "\\begin{tabular}{%s}" % spec,
+        "\\toprule",
+        "\\headrow \\hdtop{}" + "".join(" & \\hdgroup{three}{%s}" % l for _c, l in dsets)
+        + " \\\\",
+        "\\bandrules{2-4,5-7}",
+        "\\headrow \\hdsub{Model}" + (" & \\hdsub{Coverage} & \\hdsub{Accepted}"
+                                     " & \\hdsub{Risk}") * 2 + " \\\\",
+        "\\midrule"]
+    lines += family_rows(models, 7, row)
+    lines += ["\\bottomrule", "\\end{tabular}",
+              "\\tablenote{The threshold is the lowest of \\num{rc.gridsize} fixed candidates"
+              " whose accepted decisions on the calibration data pass an exact binomial test of"
+              " an error rate at or below \\num{rc.alpha} percent, with a Bonferroni correction"
+              " over the candidates at \\num{rc.confidence} percent confidence. Coverage and"
+              " Risk are the accepted share and its error rate on the scored decisions, and"
+              " Accepted counts those decisions, with a dash where none is accepted. Bold marks"
+              " the highest coverage on each dataset, with ties bolded.}"]
+    return ewrite("t21_risk_control.tex", lines)
 
 
 def _body_labels(text):
@@ -1225,8 +1445,8 @@ def _body_labels(text):
 # EAAI tables revised past their ACL counterparts: t04 prints a dash where a model has no
 # raw arm, and t08 reads the revision cascades (rv.cas) instead of e6. They are exempt from
 # the ACL cell check below; t09 to t13 have no ACL counterpart.
-EAAI_DIVERGES = {"t03_headline.tex", "t04_calibration.tex", "t08_cascade.tex",
-                 "t11_paired.tex"}
+EAAI_DIVERGES = {"t03_headline.tex", "t04_calibration.tex", "t05_cardinality.tex",
+                 "t06_names.tex", "t07_cost.tex", "t08_cascade.tex", "t11_paired.tex"}
 
 
 def eaai_main():
@@ -1234,7 +1454,8 @@ def eaai_main():
     paths = [e_t03_headline(), e_t04_calibration(), e_t05_cardinality(), e_t06_names(),
              e_t07_cost(), e_t08_cascade(), e_t09_calib_tasks(), e_t10_selective(),
              e_t11_paired(), e_t12_manifest(), e_t13_gate(), e_t16_scores(),
-             e_t17_backbones(), e_t18_oos_option()]
+             e_t17_backbones(), e_t18_oos_option(), e_t19_new_tasks(),
+             e_t20_readouts(), e_t21_risk_control(), e_t22_cascade_qwen()]
     import re
     used = set()
     for p in paths:

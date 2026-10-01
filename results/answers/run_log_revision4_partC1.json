@@ -1,0 +1,50 @@
+{
+  "runtimes": [
+    {
+      "start": "2026-09-30T06:38:42.399751Z",
+      "parts": "C1",
+      "b05_groups": [
+        "clinc",
+        "goemo",
+        "banking",
+        "d3",
+        "d1"
+      ],
+      "think": true,
+      "qwen36": true,
+      "gpu": "NVIDIA A100-SXM4-80GB, 580.82.07, 81920 MiB"
+    }
+  ],
+  "units_per_hour_assumed": {
+    "L4": 4.8,
+    "A100": 11.8
+  },
+  "models": {
+    "comparator-gemma": {
+      "smoke_s_incl_load": 291.1826105117798,
+      "smoke_s_per_question": null,
+      "smoke_answered": 0,
+      "smoke_error_lines": 0,
+      "smoke_mean_output_tokens": null
+    },
+    "comparator-gemma-ll": {
+      "smoke_s_incl_load": 97.19968247413635,
+      "smoke_s_per_question": null,
+      "smoke_answered": 0,
+      "smoke_error_lines": 0,
+      "smoke_mean_output_tokens": null
+    },
+    "comparator-gemma-b1": {
+      "answered": 0,
+      "error_lines": 0,
+      "median_latency_s": null,
+      "min": 1.5961073120435079
+    },
+    "comparator-gemma-ll-b1": {
+      "answered": 0,
+      "error_lines": 0,
+      "median_latency_s": null,
+      "min": 1.589013644059499
+    }
+  }
+}

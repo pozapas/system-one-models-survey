@@ -30,6 +30,9 @@ SETS = {"d1": ["e2_d1_{}"],
         "d3_conv_go_awry": ["e2_d3_conv_go_awry_{}"],
         "d3_wiki_corpus": ["e2_d3_wiki_corpus_{}"]}
 MODELS = [bench.JEV] + bench.MODELS_OPEN
+# generative comparators with option-name answers (second and fourth revisions)
+MODELS += bench.present(["comparator-open2", "comparator-open2-ll", "comparator-gemma",
+                         "comparator-gemma-ll", "comparator-mistral", "comparator-mistral-ll"])
 
 
 def pos_prob(model, cond, rep=1):

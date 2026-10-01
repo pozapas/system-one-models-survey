@@ -1,0 +1,42 @@
+{
+  "runtimes": [
+    {
+      "start": "2026-09-30T01:38:40.792326Z",
+      "parts": "B",
+      "b05_groups": [
+        "clinc",
+        "goemo",
+        "banking",
+        "d3",
+        "d1"
+      ],
+      "think": true,
+      "qwen36": true,
+      "gpu": "NVIDIA L4, 580.82.07, 23034 MiB"
+    }
+  ],
+  "units_per_hour_assumed": {
+    "L4": 4.8,
+    "A100": 11.8
+  },
+  "models": {
+    "b05": {
+      "smoke_min": 1.5648681044578552
+    },
+    "baseline-deberta-large-clinc": {
+      "attempt1_min": 21.072200592358907
+    },
+    "baseline-deberta-large-goemo": {
+      "attempt1_min": 11.698835249741872
+    },
+    "baseline-deberta-large-banking": {
+      "attempt1_min": 12.750932069619497
+    },
+    "baseline-deberta-large-d3": {
+      "attempt1_min": 113.53818331162135
+    },
+    "baseline-deberta-large-d1": {
+      "attempt1_min": 126.06336849927902
+    }
+  }
+}

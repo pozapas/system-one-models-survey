@@ -1,0 +1,121 @@
+{
+  "runtimes": [
+    {
+      "start": "2026-09-29T20:16:53.604259Z",
+      "parts": "A",
+      "b05_groups": [
+        "clinc",
+        "goemo",
+        "banking",
+        "d3",
+        "d1"
+      ],
+      "think": true,
+      "qwen36": true,
+      "gpu": "NVIDIA L4, 580.82.07, 23034 MiB"
+    }
+  ],
+  "units_per_hour_assumed": {
+    "L4": 4.8,
+    "A100": 11.8
+  },
+  "models": {
+    "laya-en": {
+      "smoke_s_per_request_incl_load": 6.613366762797038,
+      "requests": 1108,
+      "d3_goemotions_min_attempt1": 0.3925565560658773,
+      "d2_banking77_min_attempt1": 0.519803539911906
+    },
+    "laya-ml": {
+      "smoke_s_per_request_incl_load": 2.6014607350031533,
+      "requests": 1108,
+      "d3_goemotions_min_attempt1": 0.4056039015452067,
+      "d2_banking77_min_attempt1": 0.505154033501943
+    },
+    "kev-0.8b": {
+      "smoke_s_per_request_incl_load": 13.991885860761007,
+      "requests": 1108,
+      "d3_goemotions_min_attempt1": 0.8178393443425497,
+      "d2_banking77_min_attempt1": 0.9938116272290548
+    },
+    "decider-2b": {
+      "smoke_s_per_request_incl_load": 5.262035528818767,
+      "requests": 1108,
+      "d3_goemotions_min_attempt1": 0.7573572039604187,
+      "d2_banking77_min_attempt1": 1.1539762298266092
+    },
+    "this-that-1.0": {
+      "smoke_s_per_request_incl_load": 6.149082024892171,
+      "requests": 1108,
+      "d3_goemotions_min_attempt1": 0.8194343686103821,
+      "d2_banking77_min_attempt1": 1.224407688776652
+    },
+    "kev-9b": {
+      "smoke_s_per_request_incl_load": 20.027326782544453,
+      "requests": 1108,
+      "d3_goemotions_min_attempt1": 1.117037844657898,
+      "d2_banking77_min_attempt1": 3.2636072715123494
+    },
+    "nimble-9b": {
+      "smoke_s_per_request_incl_load": 23.531027515729267,
+      "requests": 1108,
+      "d3_goemotions_min_attempt1": 2.143306879202525,
+      "d2_banking77_min_attempt1": 9.403054082393647
+    },
+    "backbone-qwen35-0.8b-base": {
+      "smoke_s_incl_loads": 51.961143255233765,
+      "requests": 1108,
+      "smoke_check_max_abs_dprob": 0.015207104125537163,
+      "full_min": 4.038829970359802
+    },
+    "backbone-qwen35-2b-base": {
+      "smoke_s_incl_loads": 41.93316650390625,
+      "requests": 1108,
+      "smoke_check_max_abs_dprob": 0.017130128734175964,
+      "full_min": 4.184420704841614
+    },
+    "backbone-qwen35-9b-base": {
+      "smoke_s_incl_loads": 84.91012120246887,
+      "requests": 1108,
+      "smoke_check_max_abs_dprob": 0.0003920162507295155,
+      "full_min": 7.396138791243235
+    },
+    "backbone-qwen35-9b": {
+      "smoke_s_incl_loads": 59.97323536872864,
+      "requests": 1108,
+      "smoke_check_max_abs_dprob": 0.0022844903359271126,
+      "full_min": 7.642274530728658
+    },
+    "comparator-open": {
+      "smoke_s_incl_load": 247.75463128089905,
+      "smoke_s_per_question": 1.7282291650772095,
+      "smoke_answered": 6,
+      "smoke_error_lines": 0,
+      "smoke_mean_output_tokens": 104.5,
+      "full_min": 11.189251581827799
+    },
+    "comparator-open-b1": {
+      "answered": 40,
+      "error_lines": 0,
+      "median_latency_s": 11.3337,
+      "min": 9.768027261892955
+    },
+    "backbone-desc-qwen35-9b-base": {
+      "smoke_s_incl_loads": 177.91013646125793,
+      "requests": 3196,
+      "smoke_check_max_abs_dprob": 0.0026216513322437907,
+      "full_min": 95.11736171245575
+    },
+    "backbone-desc-qwen35-9b": {
+      "smoke_s_incl_loads": 174.1800742149353,
+      "requests": 3196,
+      "smoke_check_max_abs_dprob": 0.004326249925727832,
+      "full_min": 94.41772682666779
+    },
+    "jev-1.13.0": {
+      "answered": 40,
+      "error_lines": 0,
+      "median_latency_s": 0.2483
+    }
+  }
+}

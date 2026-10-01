@@ -13,14 +13,25 @@ import common as C
 
 REPS = 10000
 CONDS = ["d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki_corpus", "d3_emotion",
-         "d3_wiki_politeness"]
+         "d3_wiki_politeness", "d3_goemotions", "d2_banking77"]
 BASE = {"nli": {c: "baseline-nli-deberta-v3-base" for c in CONDS},
+        # the stronger trained classifier of the fourth revision (b05), on every benchmark
+        "trainedlarge": {"d1_neutral": "baseline-deberta-large-d1",
+                         "d2_k150": "baseline-deberta-large-clinc",
+                         "d3_conv_go_awry": "baseline-deberta-large-d3",
+                         "d3_wiki_corpus": "baseline-deberta-large-d3",
+                         "d3_emotion": "baseline-deberta-large-d3",
+                         "d3_wiki_politeness": "baseline-deberta-large-d3",
+                         "d3_goemotions": "baseline-deberta-large-goemo",
+                         "d2_banking77": "baseline-deberta-large-banking"},
         "trained": {"d1_neutral": "baseline-bge-small-lr-d1",
                     "d2_k150": "baseline-bge-small-lr-clinc",
                     "d3_conv_go_awry": "baseline-bge-small-lr-d3",
                     "d3_wiki_corpus": "baseline-bge-small-lr-d3",
                     "d3_emotion": "baseline-bge-small-lr-d3",
-                    "d3_wiki_politeness": "baseline-bge-small-lr-d3"}}
+                    "d3_wiki_politeness": "baseline-bge-small-lr-d3",
+                    "d3_goemotions": "baseline-bge-small-lr-goemo",
+                    "d2_banking77": "baseline-bge-small-lr-banking"}}
 MODELS = [bench.JEV] + bench.MODELS_OPEN
 # second revision comparators, when answered, are paired against the same baselines in a
 # Holm family of their own (holm_family "comparators2"), so the Holm-adjusted values of
@@ -64,27 +75,16 @@ def main():
     for cond in CONDS:
         for bname, bmap in BASE.items():
             B = cmap(bmap[cond], cond)
+            # one Holm family per benchmark and baseline across every model compared with it
             res = {}
-            for m in MODELS:
+            for m in MODELS + EXTRA:
                 if not bench.available_reps(m, cond):
                     continue
                 r = paired(cmap(m, cond), B, C.SEED)
                 if r:
                     res[m] = r
-            adj = holm([v["p"] for v in res.values()])
-            for (m, v), a in zip(res.items(), adj):
+            for (m, v), a in zip(res.items(), holm([v["p"] for v in res.values()])):
                 v["holm"] = a
-            ext = {}
-            for m in EXTRA:
-                if not bench.available_reps(m, cond):
-                    continue
-                r = paired(cmap(m, cond), B, C.SEED)
-                if r:
-                    ext[m] = r
-            for (m, v), a in zip(ext.items(), holm([v["p"] for v in ext.values()])):
-                v["holm"] = a
-                v["holm_family"] = "comparators2"
-            res.update(ext)
             out[f"{cond}|{bname}"] = res
             sig_pos = [m for m, v in res.items() if v["holm"] < 0.05 and v["diff"] > 0]
             sig_neg = [m for m, v in res.items() if v["holm"] < 0.05 and v["diff"] < 0]

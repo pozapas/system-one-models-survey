@@ -1,0 +1,431 @@
+{
+  "parts": {
+    "run_log_revision4_partA.json": {
+      "runtimes": [
+        {
+          "start": "2026-09-29T20:16:53.604259Z",
+          "parts": "A",
+          "b05_groups": [
+            "clinc",
+            "goemo",
+            "banking",
+            "d3",
+            "d1"
+          ],
+          "think": true,
+          "qwen36": true,
+          "gpu": "NVIDIA L4, 580.82.07, 23034 MiB"
+        }
+      ],
+      "units_per_hour_assumed": {
+        "L4": 4.8,
+        "A100": 11.8
+      },
+      "models": {
+        "laya-en": {
+          "smoke_s_per_request_incl_load": 6.613366762797038,
+          "requests": 1108,
+          "d3_goemotions_min_attempt1": 0.3925565560658773,
+          "d2_banking77_min_attempt1": 0.519803539911906
+        },
+        "laya-ml": {
+          "smoke_s_per_request_incl_load": 2.6014607350031533,
+          "requests": 1108,
+          "d3_goemotions_min_attempt1": 0.4056039015452067,
+          "d2_banking77_min_attempt1": 0.505154033501943
+        },
+        "kev-0.8b": {
+          "smoke_s_per_request_incl_load": 13.991885860761007,
+          "requests": 1108,
+          "d3_goemotions_min_attempt1": 0.8178393443425497,
+          "d2_banking77_min_attempt1": 0.9938116272290548
+        },
+        "decider-2b": {
+          "smoke_s_per_request_incl_load": 5.262035528818767,
+          "requests": 1108,
+          "d3_goemotions_min_attempt1": 0.7573572039604187,
+          "d2_banking77_min_attempt1": 1.1539762298266092
+        },
+        "this-that-1.0": {
+          "smoke_s_per_request_incl_load": 6.149082024892171,
+          "requests": 1108,
+          "d3_goemotions_min_attempt1": 0.8194343686103821,
+          "d2_banking77_min_attempt1": 1.224407688776652
+        },
+        "kev-9b": {
+          "smoke_s_per_request_incl_load": 20.027326782544453,
+          "requests": 1108,
+          "d3_goemotions_min_attempt1": 1.117037844657898,
+          "d2_banking77_min_attempt1": 3.2636072715123494
+        },
+        "nimble-9b": {
+          "smoke_s_per_request_incl_load": 23.531027515729267,
+          "requests": 1108,
+          "d3_goemotions_min_attempt1": 2.143306879202525,
+          "d2_banking77_min_attempt1": 9.403054082393647
+        },
+        "backbone-qwen35-0.8b-base": {
+          "smoke_s_incl_loads": 51.961143255233765,
+          "requests": 1108,
+          "smoke_check_max_abs_dprob": 0.015207104125537163,
+          "full_min": 4.038829970359802
+        },
+        "backbone-qwen35-2b-base": {
+          "smoke_s_incl_loads": 41.93316650390625,
+          "requests": 1108,
+          "smoke_check_max_abs_dprob": 0.017130128734175964,
+          "full_min": 4.184420704841614
+        },
+        "backbone-qwen35-9b-base": {
+          "smoke_s_incl_loads": 84.91012120246887,
+          "requests": 1108,
+          "smoke_check_max_abs_dprob": 0.0003920162507295155,
+          "full_min": 7.396138791243235
+        },
+        "backbone-qwen35-9b": {
+          "smoke_s_incl_loads": 59.97323536872864,
+          "requests": 1108,
+          "smoke_check_max_abs_dprob": 0.0022844903359271126,
+          "full_min": 7.642274530728658
+        },
+        "comparator-open": {
+          "smoke_s_incl_load": 247.75463128089905,
+          "smoke_s_per_question": 1.7282291650772095,
+          "smoke_answered": 6,
+          "smoke_error_lines": 0,
+          "smoke_mean_output_tokens": 104.5,
+          "full_min": 11.189251581827799
+        },
+        "comparator-open-b1": {
+          "answered": 40,
+          "error_lines": 0,
+          "median_latency_s": 11.3337,
+          "min": 9.768027261892955
+        },
+        "backbone-desc-qwen35-9b-base": {
+          "smoke_s_incl_loads": 177.91013646125793,
+          "requests": 3196,
+          "smoke_check_max_abs_dprob": 0.0026216513322437907,
+          "full_min": 95.11736171245575
+        },
+        "backbone-desc-qwen35-9b": {
+          "smoke_s_incl_loads": 174.1800742149353,
+          "requests": 3196,
+          "smoke_check_max_abs_dprob": 0.004326249925727832,
+          "full_min": 94.41772682666779
+        },
+        "jev-1.13.0": {
+          "answered": 40,
+          "error_lines": 0,
+          "median_latency_s": 0.2483
+        }
+      }
+    },
+    "run_log_revision4_partB.json": {
+      "runtimes": [
+        {
+          "start": "2026-09-30T01:38:40.792326Z",
+          "parts": "B",
+          "b05_groups": [
+            "clinc",
+            "goemo",
+            "banking",
+            "d3",
+            "d1"
+          ],
+          "think": true,
+          "qwen36": true,
+          "gpu": "NVIDIA L4, 580.82.07, 23034 MiB"
+        }
+      ],
+      "units_per_hour_assumed": {
+        "L4": 4.8,
+        "A100": 11.8
+      },
+      "models": {
+        "b05": {
+          "smoke_min": 1.5648681044578552
+        },
+        "baseline-deberta-large-clinc": {
+          "attempt1_min": 21.072200592358907
+        },
+        "baseline-deberta-large-goemo": {
+          "attempt1_min": 11.698835249741872
+        },
+        "baseline-deberta-large-banking": {
+          "attempt1_min": 12.750932069619497
+        },
+        "baseline-deberta-large-d3": {
+          "attempt1_min": 113.53818331162135
+        },
+        "baseline-deberta-large-d1": {
+          "attempt1_min": 126.06336849927902
+        }
+      }
+    },
+    "run_log_revision4_partC1.json": {
+      "runtimes": [
+        {
+          "start": "2026-09-30T06:38:42.399751Z",
+          "parts": "C1",
+          "b05_groups": [
+            "clinc",
+            "goemo",
+            "banking",
+            "d3",
+            "d1"
+          ],
+          "think": true,
+          "qwen36": true,
+          "gpu": "NVIDIA A100-SXM4-80GB, 580.82.07, 81920 MiB"
+        }
+      ],
+      "units_per_hour_assumed": {
+        "L4": 4.8,
+        "A100": 11.8
+      },
+      "models": {
+        "comparator-gemma": {
+          "smoke_s_incl_load": 291.1826105117798,
+          "smoke_s_per_question": null,
+          "smoke_answered": 0,
+          "smoke_error_lines": 0,
+          "smoke_mean_output_tokens": null
+        },
+        "comparator-gemma-ll": {
+          "smoke_s_incl_load": 97.19968247413635,
+          "smoke_s_per_question": null,
+          "smoke_answered": 0,
+          "smoke_error_lines": 0,
+          "smoke_mean_output_tokens": null
+        },
+        "comparator-gemma-b1": {
+          "answered": 0,
+          "error_lines": 0,
+          "median_latency_s": null,
+          "min": 1.5961073120435079
+        },
+        "comparator-gemma-ll-b1": {
+          "answered": 0,
+          "error_lines": 0,
+          "median_latency_s": null,
+          "min": 1.589013644059499
+        }
+      }
+    }
+  },
+  "end": "2026-09-30T06:49:49.105699Z",
+  "status": {
+    "laya-en/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "laya-en/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "laya-ml/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "laya-ml/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "kev-0.8b/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "kev-0.8b/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "decider-2b/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "decider-2b/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "this-that-1.0/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "this-that-1.0/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "kev-9b/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "kev-9b/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "nimble-9b/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "nimble-9b/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "backbone-qwen35-0.8b-base/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 138 tokens",
+    "backbone-qwen35-0.8b-base/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 796 tokens",
+    "backbone-qwen35-2b-base/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 138 tokens",
+    "backbone-qwen35-2b-base/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 796 tokens",
+    "backbone-qwen35-9b-base/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 138 tokens",
+    "backbone-qwen35-9b-base/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 796 tokens",
+    "backbone-qwen35-9b/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 138 tokens",
+    "backbone-qwen35-9b/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 796 tokens",
+    "comparator-open/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "comparator-open/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "comparator-open-b1/d1_neutral__rep1": "OK 40/40 answered, 0 error lines (0 over the length limit), revision ok",
+    "backbone-desc-qwen35-9b-base/d1_neutral__rep1": "OK 400/400 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 634 tokens",
+    "backbone-desc-qwen35-9b-base/d2_k150__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 1308 tokens",
+    "backbone-desc-qwen35-9b-base/d3_conv_go_awry__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 7959 tokens",
+    "backbone-desc-qwen35-9b-base/d3_wiki_corpus__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 3824 tokens",
+    "backbone-desc-qwen35-9b-base/d3_emotion__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 155 tokens",
+    "backbone-desc-qwen35-9b-base/d3_wiki_politeness__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 222 tokens",
+    "backbone-desc-qwen35-9b/d1_neutral__rep1": "OK 400/400 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 634 tokens",
+    "backbone-desc-qwen35-9b/d2_k150__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 1308 tokens",
+    "backbone-desc-qwen35-9b/d3_conv_go_awry__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 7959 tokens",
+    "backbone-desc-qwen35-9b/d3_wiki_corpus__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 3824 tokens",
+    "backbone-desc-qwen35-9b/d3_emotion__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 155 tokens",
+    "backbone-desc-qwen35-9b/d3_wiki_politeness__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok, longest prompt 222 tokens",
+    "jev-1.13.0/d1_neutral__rep6": "OK 40/40 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-clinc/d2_k150__rep1": "OK 800/800 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-goemo/d3_goemotions__rep1": "OK 492/492 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-banking/d2_banking77__rep1": "OK 616/616 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-d3/d3_emotion__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-d3/d3_wiki_politeness__rep1": "OK 498/498 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-d3/d3_conv_go_awry__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-d3/d3_wiki_corpus__rep1": "OK 500/500 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-d1/d1_neutral__rep1": "OK 400/400 answered, 0 error lines (0 over the length limit), revision ok",
+    "baseline-deberta-large-d1/d1_calib__rep1": "OK 300/300 answered, 0 error lines (0 over the length limit), revision ok",
+    "comparator-gemma/d1_neutral__rep1": "MISSING (part C1)",
+    "comparator-gemma/d1_calib__rep1": "MISSING (part C1)",
+    "comparator-gemma/d2_k150__rep1": "MISSING (part C1)",
+    "comparator-gemma/d2_k20__rep1": "MISSING (part C1)",
+    "comparator-gemma/d3_conv_go_awry__rep1": "MISSING (part C1)",
+    "comparator-gemma/d3_wiki_corpus__rep1": "MISSING (part C1)",
+    "comparator-gemma/d3_emotion__rep1": "MISSING (part C1)",
+    "comparator-gemma/d3_wiki_politeness__rep1": "MISSING (part C1)",
+    "comparator-gemma/d3_goemotions__rep1": "MISSING (part C1)",
+    "comparator-gemma/d2_banking77__rep1": "MISSING (part C1)",
+    "comparator-gemma/d2_k150_oos__rep1": "MISSING (part C1)",
+    "comparator-gemma/d2_k5__rep1": "MISSING (part C1)",
+    "comparator-gemma/d2_k50__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d1_k01__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d1_kny__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d1_kswap__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d1_krand__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_conv_go_awry_k01__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_conv_go_awry_kny__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_conv_go_awry_kswap__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_conv_go_awry_krand__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_wiki_corpus_k01__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_wiki_corpus_kny__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_wiki_corpus_kswap__rep1": "MISSING (part C1)",
+    "comparator-gemma/e2_d3_wiki_corpus_krand__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d1_neutral__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d1_calib__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d2_k150__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d2_k20__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d3_conv_go_awry__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d3_wiki_corpus__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d3_emotion__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d3_wiki_politeness__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d3_goemotions__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d2_banking77__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d2_k150_oos__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d2_k5__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/d2_k50__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d1_k01__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d1_kny__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d1_kswap__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d1_krand__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_conv_go_awry_k01__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_conv_go_awry_kny__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_conv_go_awry_kswap__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_conv_go_awry_krand__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_wiki_corpus_k01__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_wiki_corpus_kny__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_wiki_corpus_kswap__rep1": "MISSING (part C1)",
+    "comparator-gemma-ll/e2_d3_wiki_corpus_krand__rep1": "MISSING (part C1)",
+    "comparator-gemma-b1/d1_neutral__rep1": "INCOMPLETE 0/40 answered, 0 error lines (0 over the length limit), revision set()",
+    "comparator-gemma-ll-b1/d1_neutral__rep1": "INCOMPLETE 0/40 answered, 0 error lines (0 over the length limit), revision set()",
+    "comparator-mistral/d1_neutral__rep1": "MISSING (part C2)",
+    "comparator-mistral/d1_calib__rep1": "MISSING (part C2)",
+    "comparator-mistral/d2_k150__rep1": "MISSING (part C2)",
+    "comparator-mistral/d2_k20__rep1": "MISSING (part C2)",
+    "comparator-mistral/d3_conv_go_awry__rep1": "MISSING (part C2)",
+    "comparator-mistral/d3_wiki_corpus__rep1": "MISSING (part C2)",
+    "comparator-mistral/d3_emotion__rep1": "MISSING (part C2)",
+    "comparator-mistral/d3_wiki_politeness__rep1": "MISSING (part C2)",
+    "comparator-mistral/d3_goemotions__rep1": "MISSING (part C2)",
+    "comparator-mistral/d2_banking77__rep1": "MISSING (part C2)",
+    "comparator-mistral/d2_k150_oos__rep1": "MISSING (part C2)",
+    "comparator-mistral/d2_k5__rep1": "MISSING (part C2)",
+    "comparator-mistral/d2_k50__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d1_k01__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d1_kny__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d1_kswap__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d1_krand__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_conv_go_awry_k01__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_conv_go_awry_kny__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_conv_go_awry_kswap__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_conv_go_awry_krand__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_wiki_corpus_k01__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_wiki_corpus_kny__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_wiki_corpus_kswap__rep1": "MISSING (part C2)",
+    "comparator-mistral/e2_d3_wiki_corpus_krand__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d1_neutral__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d1_calib__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d2_k150__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d2_k20__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d3_conv_go_awry__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d3_wiki_corpus__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d3_emotion__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d3_wiki_politeness__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d3_goemotions__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d2_banking77__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d2_k150_oos__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d2_k5__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/d2_k50__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d1_k01__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d1_kny__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d1_kswap__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d1_krand__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_conv_go_awry_k01__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_conv_go_awry_kny__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_conv_go_awry_kswap__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_conv_go_awry_krand__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_wiki_corpus_k01__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_wiki_corpus_kny__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_wiki_corpus_kswap__rep1": "MISSING (part C2)",
+    "comparator-mistral-ll/e2_d3_wiki_corpus_krand__rep1": "MISSING (part C2)",
+    "comparator-mistral-b1/d1_neutral__rep1": "MISSING (part C2, optional)",
+    "comparator-mistral-ll-b1/d1_neutral__rep1": "MISSING (part C2, optional)",
+    "comparator-open2-think/d1_neutral__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d1_calib__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d2_k150__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d3_conv_go_awry__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d3_wiki_corpus__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d3_emotion__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d3_wiki_politeness__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d2_k150_oos__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d3_goemotions__rep1": "MISSING (part C3)",
+    "comparator-open2-think/d2_banking77__rep1": "MISSING (part C3)",
+    "comparator-open2/d3_goemotions__rep1": "MISSING (part C3)",
+    "comparator-open2/d2_banking77__rep1": "MISSING (part C3)",
+    "comparator-open2/d2_k5__rep1": "MISSING (part C3)",
+    "comparator-open2/d2_k50__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d1_k01__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d1_kny__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d1_kswap__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d1_krand__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_conv_go_awry_k01__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_conv_go_awry_kny__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_conv_go_awry_kswap__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_conv_go_awry_krand__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_wiki_corpus_k01__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_wiki_corpus_kny__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_wiki_corpus_kswap__rep1": "MISSING (part C3)",
+    "comparator-open2/e2_d3_wiki_corpus_krand__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/d3_goemotions__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/d2_banking77__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/d2_k5__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/d2_k50__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d1_k01__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d1_kny__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d1_kswap__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d1_krand__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_conv_go_awry_k01__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_conv_go_awry_kny__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_conv_go_awry_kswap__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_conv_go_awry_krand__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_wiki_corpus_k01__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_wiki_corpus_kny__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_wiki_corpus_kswap__rep1": "MISSING (part C3)",
+    "comparator-open2-ll/e2_d3_wiki_corpus_krand__rep1": "MISSING (part C3)"
+  },
+  "revisions_pinned": {
+    "Mapika/decider-2b": "d61c1c16089572df5d180329b9fea4997a90090c",
+    "Qwen/Qwen3-14B-AWQ": "31c69efc29464b6bb0aee1398b5a7b50a99340c3",
+    "Qwen/Qwen3.5-0.8B-Base": "dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68",
+    "Qwen/Qwen3.5-2B-Base": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+    "Qwen/Qwen3.5-9B": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "Qwen/Qwen3.5-9B-Base": "68c46c4b3498877f3ef123c856ecfde50c39f404",
+    "Qwen/Qwen3.6-27B-FP8": "e89b16ebf1988b3d6befa7de50abc2d76f26eb09",
+    "bespokelabs/Bespoke-Nimble-9B": "bd792f44ec8e265be861bfcdf4e05967ffe0e858",
+    "convaiinnovations/laya": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+    "cyankiwi/Qwen3.6-27B-AWQ-INT4": "e5cc0400fb2403c437c2c40a7c52fb5ae93fda18",
+    "flock-io/this-that-model-1.0": "3d927195c4f9845efe66c5715883a7a0f42b1239",
+    "google/gemma-4-31B-it": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "jaredpalmer/kev-0.8b": "9a45d25eb2ab761841196625383fa1dff0e56c1e",
+    "jaredpalmer/kev-9b": "2629c06a5aeb0feb3b9783bafed17ed8f39ecf5c",
+    "microsoft/deberta-v3-large": "64a8c8eab3e352a784c658aef62be1662607476f",
+    "mistralai/Mistral-Small-24B-Instruct-2501": "9527884be6e5616bdd54de542f9ae13384489724"
+  }
+}

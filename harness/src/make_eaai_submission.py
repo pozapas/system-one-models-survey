@@ -18,11 +18,11 @@ MANU = os.path.join(BASE, "manuscript")
 OUT = os.path.join(BASE, "submission")
 
 HIGHLIGHTS = [
-    "Trained classifiers lead on intents; most decision models beat zero-shot NLI",
-    "An LLM read by option-key likelihood is level with Jev on workflows and intents",
-    "A stored temperature fitted on few options raises calibration error with 150 options",
-    "Fine-tuned checkpoints flip far fewer social-science answers than their backbones",
-    "In-scope risk thresholds do not control out-of-scope acceptance; check it separately",
+    "A fine-tuned DeBERTa-v3-large has the top accuracy on every labeled task but one",
+    "Without labels, Gemma-4-31B matches Jev on workflows and beats it on CLINC-150",
+    "Key likelihoods avoid reply-format failures of stated LLM probabilities",
+    "Guaranteed risk costs coverage; in-scope thresholds miss out-of-scope requests",
+    "Four fine-tuned decision heads resist yes-no swaps that move every generative model",
 ]
 
 

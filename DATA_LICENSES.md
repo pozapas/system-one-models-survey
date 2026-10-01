@@ -20,6 +20,8 @@ The census cards and screens (`census/`), the evidence ledger, the risk-of-bias 
 | Wikipedia Politeness (ConvoKit), via Ziems et al. (2024) | D3 | CC BY 4.0, as stated on the ConvoKit page | Item identifiers and rebuild script only |
 | Wikipedia talk corpus (ConvoKit), via Ziems et al. (2024) | D3 | CC BY-SA 4.0, as stated on the ConvoKit page | Item identifiers and rebuild script only |
 | dair-ai/emotion | D3 | For educational and research purposes only, per the dataset card | Item identifiers and rebuild script only |
+| GoEmotions (google-research-datasets/go_emotions, revision add49224) | D3 (fourth revision) | Apache-2.0, per the dataset card | Item identifiers and rebuild script (`s00e_freeze_goemotions.py`) only, since the texts are Reddit comments |
+| Banking77 (legacy-datasets/banking77, revision f5412156) | D2 (fourth revision) | CC BY 4.0, per the dataset card | Redistributed with attribution; built by `s00f_freeze_banking77.py` |
 
 The D1 inputs are derived from LocalLLaMA/typed-decisions, licensed under the Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0). The D2 inputs are derived from CLINC-150 by Larson et al. (2019), licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/). `harness/inputs/D3_README.md` gives the per-task details and sources, and `results/analysis/licenses_audit.json` records the license check behind this table. In `results/analysis/clinc_overlap.json` the quoted emotion examples are removed and only their item identifiers are kept.
 

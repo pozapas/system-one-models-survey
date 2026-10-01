@@ -29,7 +29,9 @@ import a09_revision_stats as R
 OOS_COND = "d2_k150_oos"
 OOS_IDX = 150
 MODELS = [bench.JEV, "laya-ml", "kev-0.8b", "decider-2b", "this-that-1.0", "kev-9b", "nimble-9b",
-          "comparator-open", "comparator-open2", "comparator-open2-ll"]
+          "comparator-open", "comparator-open2", "comparator-open2-ll", "comparator-gemma",
+          "comparator-gemma-ll", "comparator-mistral", "comparator-mistral-ll",
+          "comparator-open2-think"]
 DESC = {"backbone-desc-qwen35-0.8b-base": "backbone-qwen35-0.8b-base",
         "backbone-desc-qwen35-2b-base": "backbone-qwen35-2b-base",
         "backbone-desc-qwen35-9b-base": "backbone-qwen35-9b-base",

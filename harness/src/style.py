@@ -77,6 +77,11 @@ MODEL_LABELS = {
     "comparator-open": "Qwen3-14B, verbal",
     "comparator-open2": "Qwen3.6-27B, verbal",
     "comparator-open2-ll": "Qwen3.6-27B, likelihood",
+    "comparator-open2-think": "Qwen3.6-27B, thinking",
+    "comparator-gemma": "Gemma-4-31B, verbal",
+    "comparator-gemma-ll": "Gemma-4-31B, likelihood",
+    "comparator-mistral": "Mistral-Small-24B, verbal",
+    "comparator-mistral-ll": "Mistral-Small-24B, likelihood",
 }
 
 MODEL_MARKERS = {
@@ -129,8 +134,11 @@ def line_kw(model, markers=True, base=MARKER_SIZE):
 
 def point_kw(model, base=MARKER_SIZE, fill="full"):
     """Keyword arguments for a standalone marker of one model (no line)."""
-    c = MODEL_COLORS[model]
-    kw = dict(linestyle="none", marker=MODEL_MARKERS[model], markersize=msize(model, base),
+    # comparators outside the figure palette (MODEL_COLORS) share the grey hexagon of the
+    # first comparator; panels that show them name them in text
+    c = MODEL_COLORS.get(model, MODEL_COLORS["comparator-open"])
+    kw = dict(linestyle="none", marker=MODEL_MARKERS.get(model, "h"),
+              markersize=msize(model, base),
               color=c, markeredgewidth=0.7, zorder=7 if model == HOSTED else 4)
     if fill == "full":
         kw.update(markerfacecolor=c, markeredgecolor=edge(model))

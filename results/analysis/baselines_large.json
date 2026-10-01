@@ -1,0 +1,290 @@
+{
+  "bge-small-lr-banking": {
+    "answers_dir": "shared/answers/baseline-bge-small-lr-banking",
+    "d2_banking77": {
+      "acc": 0.9366883116883117,
+      "acc_ci": [
+        0.9172077922077922,
+        0.9545454545454546
+      ],
+      "aurc": 0.010192603016762699,
+      "aurc_scaled": 0.00985901404494306,
+      "auroc_oos": null,
+      "brier": 0.10468624245228894,
+      "brier_scaled": 0.09562278157179753,
+      "cov5": 0.9691558441558441,
+      "cov5_scaled": 0.9756493506493507,
+      "ece_scaled": 0.009154616139993344,
+      "ece_scaled_crossfit": 0.010914008084459997,
+      "ece_shipped": 0.05722310950246029,
+      "macro_f1": null,
+      "n": 616,
+      "nll": 0.25593135652558624,
+      "nll_scaled": 0.22550084351187596,
+      "softacc": null,
+      "temperature": 0.6899936941099433,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    }
+  },
+  "bge-small-lr-goemo": {
+    "answers_dir": "shared/answers/baseline-bge-small-lr-goemo",
+    "d3_goemotions": {
+      "acc": 0.676829268292683,
+      "acc_ci": [
+        0.6361788617886179,
+        0.717530487804878
+      ],
+      "aurc": 0.13965302811955765,
+      "aurc_scaled": 0.13862012890539438,
+      "auroc_oos": null,
+      "brier": 0.43943867548380605,
+      "brier_scaled": 0.43308057589063886,
+      "cov5": 0.2540650406504065,
+      "cov5_scaled": 0.2540650406504065,
+      "ece_scaled": 0.04095115995698318,
+      "ece_scaled_crossfit": 0.03823926676098089,
+      "ece_shipped": 0.0758090675341005,
+      "macro_f1": 0.6760341718121426,
+      "n": 492,
+      "nll": 0.8867238463563544,
+      "nll_scaled": 0.8643081582076724,
+      "softacc": null,
+      "temperature": 0.8372954576579902,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    }
+  },
+  "deberta-large-banking": {
+    "answers_dir": "shared/answers/baseline-deberta-large-banking",
+    "d2_banking77": {
+      "acc": 0.9496753246753247,
+      "acc_ci": [
+        0.9318181818181818,
+        0.9659090909090909
+      ],
+      "aurc": 0.011768720015251978,
+      "aurc_scaled": 0.011708644035789096,
+      "auroc_oos": null,
+      "brier": 0.08119540060634137,
+      "brier_scaled": 0.08102453678279294,
+      "cov5": 0.9967532467532467,
+      "cov5_scaled": 0.9967532467532467,
+      "ece_scaled": 0.019264548889819693,
+      "ece_scaled_crossfit": 0.020517292815561035,
+      "ece_shipped": 0.021637379093711235,
+      "latency_ms_p50_l4": 56.85268249908404,
+      "macro_f1": null,
+      "n": 616,
+      "nll": 0.22402575468219818,
+      "nll_scaled": 0.2213009172620727,
+      "softacc": null,
+      "temperature": 0.9774749263248849,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    }
+  },
+  "deberta-large-clinc": {
+    "answers_dir": "shared/answers/baseline-deberta-large-clinc",
+    "d2_k150": {
+      "acc": 0.9533333333333334,
+      "acc_ci": [
+        0.935,
+        0.9683333333333334
+      ],
+      "aurc": 0.013060901094401325,
+      "aurc_scaled": 0.012553334432622871,
+      "auroc_oos": 0.9889083333333333,
+      "brier": 0.07581490013023154,
+      "brier_scaled": 0.07439116921147627,
+      "cov5": 1.0,
+      "cov5_scaled": 1.0,
+      "ece_scaled": 0.03478618840178239,
+      "ece_scaled_crossfit": 0.028761191386221997,
+      "ece_shipped": 0.0358643667470103,
+      "latency_ms_p50_l4": 58.032824999827426,
+      "macro_f1": null,
+      "n": 600,
+      "n_oos": 200,
+      "nll": 0.2506822559852893,
+      "nll_scaled": 0.23772421060242854,
+      "softacc": null,
+      "temperature": 1.0978064901843114,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    }
+  },
+  "deberta-large-d1": {
+    "answers_dir": "shared/answers/baseline-deberta-large-d1",
+    "d1_neutral": {
+      "acc": 0.793,
+      "acc_ci": [
+        0.7735,
+        0.813
+      ],
+      "aurc": 0.0724232928931308,
+      "aurc_scaled": 0.07132308111900154,
+      "auroc_oos": null,
+      "brier": 0.33165763029863526,
+      "brier_scaled": 0.2831577653037318,
+      "by_type": {
+        "choice": {
+          "acc": 0.7566666666666667,
+          "n": 600
+        },
+        "noul": {
+          "acc": 0.8533333333333334,
+          "n": 600
+        },
+        "score": {
+          "acc": 0.775,
+          "n": 800
+        }
+      },
+      "cov5": 0.496,
+      "cov5_scaled": 0.4755,
+      "ece_scaled": 0.0214873074175757,
+      "ece_scaled_crossfit": 0.012634185270389097,
+      "ece_shipped": 0.15733635401131665,
+      "latency_ms_p50_l4": 126.49624899495393,
+      "macro_f1": null,
+      "n": 2000,
+      "nll": 0.5813668562570162,
+      "nll_scaled": 0.4798282553795207,
+      "softacc": 0.6159795493139711,
+      "temperature": {
+        "choice": 0.46857368474644656,
+        "noul": 0.5062806630483135,
+        "score": 0.4172128986943916
+      },
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    }
+  },
+  "deberta-large-d3": {
+    "answers_dir": "shared/answers/baseline-deberta-large-d3",
+    "d3_conv_go_awry": {
+      "acc": 0.592,
+      "acc_ci": [
+        0.548,
+        0.636
+      ],
+      "aurc": 0.3631212270317214,
+      "aurc_scaled": 0.3631212270317214,
+      "auroc_oos": null,
+      "brier": 0.5098255603894783,
+      "brier_scaled": 0.4815536915738539,
+      "cov5": 0.002,
+      "cov5_scaled": 0.002,
+      "ece_scaled": 0.06336156386626934,
+      "ece_scaled_crossfit": 0.05320060827433705,
+      "ece_shipped": 0.11152578980458423,
+      "latency_ms_p50_l4": 58.6629939989507,
+      "macro_f1": 0.586038961038961,
+      "n": 500,
+      "nll": 0.7169057527748333,
+      "nll_scaled": 0.674535551274932,
+      "softacc": null,
+      "temperature": 2.203163877471799,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    },
+    "d3_emotion": {
+      "acc": 0.9377510040160643,
+      "acc_ci": [
+        0.9156626506024096,
+        0.9598393574297188
+      ],
+      "aurc": 0.008422416581512694,
+      "aurc_scaled": 0.008341267970272879,
+      "auroc_oos": null,
+      "brier": 0.10359396195154762,
+      "brier_scaled": 0.1016721044623649,
+      "cov5": 0.9477911646586346,
+      "cov5_scaled": 0.9457831325301205,
+      "ece_scaled": 0.02490362568917326,
+      "ece_scaled_crossfit": 0.02727085870742685,
+      "ece_shipped": 0.024123738145826645,
+      "latency_ms_p50_l4": 57.70934149950335,
+      "macro_f1": 0.9370877488130572,
+      "n": 498,
+      "nll": 0.19417023673079134,
+      "nll_scaled": 0.19012372568018693,
+      "softacc": null,
+      "temperature": 1.1411231517562042,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    },
+    "d3_wiki_corpus": {
+      "acc": 0.586,
+      "acc_ci": [
+        0.544,
+        0.63005
+      ],
+      "aurc": 0.36223920983250535,
+      "aurc_scaled": 0.36223920983250535,
+      "auroc_oos": null,
+      "brier": 0.7329191879519567,
+      "brier_scaled": 0.6173899629975694,
+      "cov5": 0.008,
+      "cov5_scaled": 0.008,
+      "ece_scaled": 0.25728998938900105,
+      "ece_scaled_crossfit": 0.06105392938204834,
+      "ece_shipped": 0.3512687291351116,
+      "latency_ms_p50_l4": 59.56784000045445,
+      "macro_f1": 0.5769829689664897,
+      "n": 500,
+      "nll": 1.4372152991840763,
+      "nll_scaled": 0.9023846121539899,
+      "softacc": null,
+      "temperature": 1.8872086202957774,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    },
+    "d3_wiki_politeness": {
+      "acc": 0.7289156626506024,
+      "acc_ci": [
+        0.6867469879518072,
+        0.7670682730923695
+      ],
+      "aurc": 0.15073243294217992,
+      "aurc_scaled": 0.1490845729910072,
+      "auroc_oos": null,
+      "brier": 0.4113912833220543,
+      "brier_scaled": 0.3871309857030186,
+      "cov5": 0.20883534136546184,
+      "cov5_scaled": 0.19678714859437751,
+      "ece_scaled": 0.061812900825923424,
+      "ece_scaled_crossfit": 0.07057868942911924,
+      "ece_shipped": 0.11831447634726927,
+      "latency_ms_p50_l4": 58.31806550122565,
+      "macro_f1": 0.7340281224152192,
+      "n": 498,
+      "nll": 0.7025685298772433,
+      "nll_scaled": 0.6538329449578593,
+      "softacc": null,
+      "temperature": 1.555200181207607,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    }
+  },
+  "deberta-large-goemo": {
+    "answers_dir": "shared/answers/baseline-deberta-large-goemo",
+    "d3_goemotions": {
+      "acc": 0.7560975609756098,
+      "acc_ci": [
+        0.7195121951219512,
+        0.7967987804878048
+      ],
+      "aurc": 0.09716310280902549,
+      "aurc_scaled": 0.09836567871355678,
+      "auroc_oos": null,
+      "brier": 0.3675260141284939,
+      "brier_scaled": 0.347757512465036,
+      "cov5": 0.3475609756097561,
+      "cov5_scaled": 0.3434959349593496,
+      "ece_scaled": 0.03282613290239518,
+      "ece_scaled_crossfit": 0.04423965782297595,
+      "ece_shipped": 0.10989315690955073,
+      "latency_ms_p50_l4": 58.146755500274594,
+      "macro_f1": 0.756764622493141,
+      "n": 492,
+      "nll": 0.7889872484877095,
+      "nll_scaled": 0.7346671301787783,
+      "softacc": null,
+      "temperature": 1.496165291045017,
+      "temperature_rule": "held-out temperature of b05/b06/b07"
+    }
+  }
+}

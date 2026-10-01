@@ -45,7 +45,7 @@ import bench
 import metrics as M
 
 OUT = "backbone_controls.json"
-MAIN = ["d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki_corpus", "d3_emotion",
+MAIN = ["d1_neutral", "d2_k150", "d3_conv_go_awry", "d3_wiki_corpus", "d3_emotion", "d3_goemotions", "d2_banking77",
         "d3_wiki_politeness"]
 PAIRS = [(d, b) for d, b in bench.BACKBONE_OF.items()]
 B_PAIRED = 10000

@@ -37,9 +37,22 @@ SLUG.update({"comparator-open2": "comptwo", "comparator-open2-ll": "comptwoll",
              "comparator-open2-awq-ll-b1": "comptwoawqllbone",
              "backbone-qwen35-0.8b-base": "bbsmallbase", "backbone-qwen35-2b-base": "bbtwobase",
              "backbone-qwen35-9b-base": "bbninebase", "backbone-qwen35-9b": "bbnine"})
+# fourth revision tags
+SLUG.update({"comparator-gemma": "compgem", "comparator-gemma-ll": "compgemll",
+             "comparator-mistral": "compmis", "comparator-mistral-ll": "compmisll",
+             "comparator-open2-think": "comptwothink",
+             "comparator-gemma-b1": "compgembone", "comparator-gemma-ll-b1": "compgemllbone",
+             "comparator-mistral-b1": "compmisbone", "comparator-mistral-ll-b1": "compmisllbone",
+             "comparator-open-b1": "compopenbone",
+             "baseline-deberta-large-clinc": "debclinc", "baseline-deberta-large-d1": "debdone",
+             "baseline-deberta-large-d3": "debdthree", "baseline-deberta-large-goemo": "debgoemo",
+             "baseline-deberta-large-banking": "debbanking",
+             "baseline-bge-small-lr-goemo": "bgegoemo", "baseline-bge-small-lr-banking": "bgebanking",
+             "baseline-nli-deberta-v3-base": "nlizs"})
 CSLUG = {"d1_native": "donenative", "d1_neutral": "doneneutral", "d2_k150": "dtwo",
          "d3_conv_go_awry": "toxicity", "d3_wiki_corpus": "power",
-         "d3_emotion": "emotion", "d3_wiki_politeness": "politeness"}
+         "d3_emotion": "emotion", "d3_wiki_politeness": "politeness",
+         "d3_goemotions": "goemo", "d2_banking77": "banking", "d2_k150_oos": "dtwooos"}
 
 
 def add(label, value, source, note=None, fmt=None):
@@ -361,7 +374,7 @@ def collect_revision():
     if rv:
         _collect_rv(rv)
     for name, prefix in (("baselines.json", "bl"), ("clinc_overlap.json", "ov"),
-                         ("e3_permutations.json", "e3p")):
+                         ("e3_permutations.json", "e3p"), ("baselines_large.json", "bl")):
         d = load(name)
         if d:
             _collect_external(d, prefix, "results/" + name)
@@ -369,7 +382,7 @@ def collect_revision():
     if lb:
         _collect_laya_budget(lb)
     # mean D3 macro-F1 of the baselines in percent, comparable with e1.*.dthree.macrofone
-    for tag in ("bgesmalllrd3", "nlidebertav3base"):
+    for tag in ("bgesmalllrd3", "nlidebertav3base", "debertalarged3"):
         ks = [f"bl.{tag}.d3{t}.macrof1" for t in
               ("convgoawry", "wikicorpus", "emotion", "wikipoliteness")]
         if all(k in N for k in ks):
@@ -418,6 +431,70 @@ def collect_revision():
                 p = f"bd.{bb}.{RV_TASK[cond]}"
                 radd(f"{p}.accdesc", v["acc_desc"], src, fmt=".3f")
                 radd(f"{p}.acckey", v["acc_key"], src, fmt=".3f")
+    nt = load("new_tasks.json")
+    if nt:
+        # nt.<model>.<goemo|banking>.{n,acc,acclo,acchi,fone,ece,parsefailed,diff,lo,hi,holm}:
+        # src/a20_new_tasks.py
+        src = "results/new_tasks.json"
+        for cond, res in nt.items():
+            cs = CSLUG[cond]
+            for m, v in res.items():
+                p = f"nt.{SLUG.get(m, m)}.{cs}"
+                radd(f"{p}.n", v["n"], src, fmt="d")
+                radd(f"{p}.acc", v["accuracy"], src, fmt=".3f")
+                _ci(f"{p}.acc", v["accuracy_ci"], src, ".3f")
+                radd(f"{p}.fone", v["macro_f1"], src, fmt=".1f")
+                radd(f"{p}.ece", v["ece_shipped"], src, fmt=".3f")
+                radd(f"{p}.parsefailed", v["parse_failed"], src, fmt="d")
+                t = v.get("vs_jev")
+                if t:
+                    radd(f"{p}.diff", t["diff"], src, fmt=".1f")
+                    radd(f"{p}.absdiff", abs(t["diff"]), src, fmt=".1f")
+                    radd(f"{p}.lo", t["lo"], src, fmt=".1f")
+                    radd(f"{p}.hi", t["hi"], src, fmt=".1f")
+                    radd(f"{p}.holm", t["holm"], src, fmt=".2g")
+    # sat.<model>.<doneneutral|dtwo>: share of decisions whose top probability is at least
+    # 0.999 (bench.decisions, first repetition)
+    for m in ("jev-1.13.0", "comparator-open2-ll", "comparator-gemma-ll", "comparator-mistral-ll",
+              "comparator-gemma"):
+        for cond in ("d1_neutral", "d2_k150"):
+            ds = [d for d in bench.decisions(m, cond, 1)
+                  if d["y"] >= 0 and not np.isnan(d["p"]).any()]
+            if ds:
+                radd(f"sat.{SLUG[m]}.{CSLUG[cond]}",
+                     float(np.mean([d["p"].max() >= 0.999 for d in ds])),
+                     "bench.decisions: share with top probability >= 0.999", fmt=".2f")
+    radd("p.satlevel", 0.999, "collect_numbers sat.* threshold on the top probability", fmt=".3f")
+    # e5.jev.cloud.*: the hosted model from a second client location (a Colab runtime, rep 6 of
+    # d1_neutral, its first 40 requests) against the same requests of rep 1 from the first location
+    p6 = os.path.join(C.ANSWERS, "jev-1.13.0", "d1_neutral__rep6.jsonl")
+    if os.path.exists(p6):
+        def lat(path):
+            return {j["key"]: j["latency_s"] for j in
+                    (json.loads(l) for l in open(path, encoding="utf-8") if l.startswith("{"))
+                    if j.get("latency_s")}
+        l6 = lat(p6)
+        l1 = lat(os.path.join(C.ANSWERS, "jev-1.13.0", "d1_neutral__rep1.jsonl"))
+        keys = [k for k in l6 if k in l1]
+        src = "answers/jev-1.13.0/d1_neutral__rep6.jsonl and __rep1.jsonl"
+        radd("e5.jev.cloud.n", len(keys), src, fmt="d")
+        radd("e5.jev.cloud.pfifty", 1000 * float(np.median([l6[k] for k in keys])), src, fmt=".0f")
+        radd("e5.jev.cloudlocal.pfifty", 1000 * float(np.median([l1[k] for k in keys])), src,
+             fmt=".0f")
+    rc = load("risk_control.json")
+    if rc:
+        # rc.<model>.<doneneutral|dtwo>.{cov,risk,accepted}: src/a19_risk_control.py
+        src = "results/risk_control.json"
+        radd("rc.alpha", 100 * rc["alpha"], src, fmt=".0f")
+        radd("rc.confidence", 100 * (1 - rc["delta"]), src, fmt=".0f")
+        radd("rc.gridsize", len(rc["grid"]), src, fmt="d")
+        for d, cs in (("d1", "doneneutral"), ("d2", "dtwo")):
+            for m, v in rc[d].items():
+                p = f"rc.{SLUG.get(m, m)}.{cs}"
+                radd(f"{p}.cov", v["coverage"], src, fmt=".3f")
+                radd(f"{p}.accepted", v["accepted"], src, fmt="d")
+                if v["risk"] is not None:
+                    radd(f"{p}.risk", v["risk"], src, fmt=".3f")
     pr = load("parse_rounding.json")
     if pr:
         # vr.<model>.<task>.{n,recovered,accstrict,acclenient} and
@@ -430,6 +507,9 @@ def collect_revision():
             radd(f"{p}.recovered", v["recovered"], src, fmt="d")
             radd(f"{p}.accstrict", v["acc_strict"], src, fmt=".3f")
             radd(f"{p}.acclenient", v["acc_lenient"], src, fmt=".3f")
+            radd(f"{p}.parsefailed", v.get("parse_failed", 0), src, fmt="d")
+            radd(f"{p}.failshare", (v.get("parse_failed", 0) + v["recovered"]) / v["n"], src,
+                 fmt=".3f")
         for key, v in pr.get("rounding", {}).items():
             m, cond = key.split("|")
             p = f"rr.{SLUG[m]}.{RV_TASK[cond]}"
@@ -941,6 +1021,18 @@ def collect_params():
     add("p.anchor.package.emo", 0.494, "Ibrahim and Zaki package analysis/cell_metrics.csv, commit 311956c", fmt=".3f")
     add("p.gpuhourcost", 4.8 * 9.99 / 100, "Colab Pro 100 units for 9.99 USD, L4 4.8 units per hour (assumption)", fmt=".2f")
     add("p.gpuhourcosta", 11.8 * 9.99 / 100, "Colab Pro 100 units for 9.99 USD, A100 11.8 units per hour (assumption, bench.usd_per_gpu_hour)", fmt=".2f")
+    # requests per latency run of one request at a time (the -b1 comparator tags)
+    import glob
+    nb1 = {sum(1 for l in open(f, encoding="utf-8") if l.startswith("{"))
+           for f in glob.glob(os.path.join(C.ANSWERS, "comparator-*-b1", "d1_neutral__rep1.jsonl"))}
+    assert len(nb1) == 1, nb1
+    add("p.bone.requests", nb1.pop(), "records per answers/comparator-*-b1/d1_neutral__rep1.jsonl",
+        fmt="d")
+    import adapters as _AD
+    add("m.think.temp", _AD.THINK_SAMPLING["temperature"],
+        "src/adapters.py THINK_SAMPLING (comparator-open2-think)", fmt=".1f")
+    add("m.think.topp", _AD.THINK_SAMPLING["top_p"], "src/adapters.py THINK_SAMPLING", fmt=".2f")
+    add("m.think.maxtokens", _AD.THINK_MAX_TOKENS, "src/adapters.py THINK_MAX_TOKENS", fmt="d")
 
     # Model facts (§4), label prefix m.<slug>.<fact>. Parameter counts and context
     # budgets are copied verbatim from each model's own card; served temperatures for
@@ -1004,6 +1096,16 @@ def collect_params():
     add("d.d3wikicorpus.k", 2, "shared/data/d3/README.md (wiki_corpus, binary)")
     add("d.d3emotion.k", 6, "shared/data/d3/README.md (emotion, six-class)")
     add("d.d3wikipoliteness.k", 3, "shared/data/d3/README.md (wiki_politeness, three-class)")
+    add("d.goemo.license", "Apache-2.0",
+        "src/s00e_freeze_goemotions.py (google-research-datasets/go_emotions card)")
+    add("d.banking.license", "CC BY 4.0",
+        "src/s00f_freeze_banking77.py (legacy-datasets/banking77 card)")
+    add("d.goemo.k", 6, "src/s00e_freeze_goemotions.py (Ekman's six emotions)")
+    add("d.banking.k", 77, "src/s00f_freeze_banking77.py (77 intents)")
+    import s00f_freeze_banking77 as _B77
+    add("p.banking.perintent", _B77.PER_INTENT, "src/s00f_freeze_banking77.py PER_INTENT", fmt="d")
+    add("p.goemo.emotions", 27, "GoEmotions: 27 emotion categories (Demszky et al., 2020)", fmt="d")
+    add("p.gpumem", 80, "Colab A100 80GB runtime of the third and fourth revision notebooks", fmt="d")
 
 
 def collect():

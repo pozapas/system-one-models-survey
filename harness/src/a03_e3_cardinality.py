@@ -17,6 +17,9 @@ import metrics as M
 
 KS = [5, 20, 50, 150]
 MODELS = [bench.JEV] + bench.MODELS_OPEN + ["comparator-open"]
+# generative comparators answered on the nested option sets (second and fourth revisions)
+MODELS += bench.present(["comparator-open2", "comparator-open2-ll", "comparator-gemma",
+                         "comparator-gemma-ll", "comparator-mistral", "comparator-mistral-ll"])
 
 
 def by_item(model, cond, rep=1):

@@ -1,0 +1,262 @@
+{
+  "alpha": 0.05,
+  "d1": {
+    "comparator-gemma": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "comparator-gemma-ll": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "comparator-mistral": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "comparator-mistral-ll": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "comparator-open": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "comparator-open2": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "comparator-open2-ll": {
+      "accepted": 326,
+      "coverage": 0.163,
+      "errors": 2,
+      "risk": 0.006134969325153374,
+      "threshold": 0.99
+    },
+    "comparator-open2-think": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "decider-2b": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "jev-1.13.0": {
+      "accepted": 166,
+      "coverage": 0.083,
+      "errors": 4,
+      "risk": 0.024096385542168676,
+      "threshold": 0.9943765867480965
+    },
+    "kev-0.8b": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "kev-9b": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "laya-en": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "laya-ml": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    },
+    "nimble-9b": {
+      "accepted": 179,
+      "coverage": 0.0895,
+      "errors": 4,
+      "risk": 0.0223463687150838,
+      "threshold": 0.99
+    },
+    "this-that-1.0": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null,
+      "threshold": null
+    }
+  },
+  "d2": {
+    "comparator-gemma": {
+      "accepted": 304,
+      "coverage": 0.5066666666666667,
+      "errors": 5,
+      "risk": 0.01644736842105263
+    },
+    "comparator-gemma-ll": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "comparator-mistral": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "comparator-mistral-ll": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "comparator-open": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "comparator-open2": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "comparator-open2-ll": {
+      "accepted": 152,
+      "coverage": 0.25333333333333335,
+      "errors": 6,
+      "risk": 0.039473684210526314
+    },
+    "comparator-open2-think": {
+      "accepted": 47,
+      "coverage": 0.07833333333333334,
+      "errors": 1,
+      "risk": 0.02127659574468085
+    },
+    "decider-2b": {
+      "accepted": 108,
+      "coverage": 0.18,
+      "errors": 3,
+      "risk": 0.027777777777777776
+    },
+    "jev-1.13.0": {
+      "accepted": 317,
+      "coverage": 0.5283333333333333,
+      "errors": 3,
+      "risk": 0.00946372239747634
+    },
+    "kev-0.8b": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "kev-9b": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "laya-ml": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "nimble-9b": {
+      "accepted": 0,
+      "coverage": 0.0,
+      "errors": 0,
+      "risk": null
+    },
+    "this-that-1.0": {
+      "accepted": 43,
+      "coverage": 0.07166666666666667,
+      "errors": 2,
+      "risk": 0.046511627906976744
+    }
+  },
+  "delta": 0.1,
+  "grid": [
+    0.5,
+    0.52,
+    0.54,
+    0.56,
+    0.58,
+    0.6,
+    0.62,
+    0.64,
+    0.66,
+    0.68,
+    0.7,
+    0.72,
+    0.74,
+    0.76,
+    0.78,
+    0.8,
+    0.82,
+    0.84,
+    0.86,
+    0.88,
+    0.9,
+    0.92,
+    0.94,
+    0.96,
+    0.98,
+    0.99,
+    0.9943765867480965,
+    0.9968377223398316,
+    0.9982217205899611,
+    0.999,
+    0.9994376586748096,
+    0.9996837722339832,
+    0.9998221720589962,
+    0.9999,
+    0.999943765867481,
+    0.9999683772233983,
+    0.9999822172058996,
+    0.99999,
+    0.9999943765867481,
+    0.9999968377223398,
+    0.9999982217205899,
+    0.999999,
+    0.9999994376586748,
+    0.999999683772234,
+    0.999999822172059,
+    0.9999999,
+    0.9999999437658674,
+    0.9999999683772234,
+    0.9999999822172059,
+    0.99999999
+  ]
+}

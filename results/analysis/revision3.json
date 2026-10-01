@@ -63,9 +63,202 @@
         "acc_key": 0.41566265060240964,
         "n": 498
       }
+    },
+    "backbone-desc-qwen35-9b": {
+      "d1_neutral": {
+        "acc_desc": 0.4645,
+        "acc_key": 0.617,
+        "n": 2000
+      },
+      "d2_k150": {
+        "acc_desc": 0.105,
+        "acc_key": 0.7816666666666666,
+        "n": 600
+      },
+      "d3_conv_go_awry": {
+        "acc_desc": 0.5,
+        "acc_key": 0.56,
+        "n": 500
+      },
+      "d3_emotion": {
+        "acc_desc": 0.357429718875502,
+        "acc_key": 0.4959839357429719,
+        "n": 498
+      },
+      "d3_wiki_corpus": {
+        "acc_desc": 0.548,
+        "acc_key": 0.598,
+        "n": 500
+      },
+      "d3_wiki_politeness": {
+        "acc_desc": 0.5381526104417671,
+        "acc_key": 0.5441767068273092,
+        "n": 498
+      }
+    },
+    "backbone-desc-qwen35-9b-base": {
+      "d1_neutral": {
+        "acc_desc": 0.463,
+        "acc_key": 0.5625,
+        "n": 2000
+      },
+      "d2_k150": {
+        "acc_desc": 0.3983333333333333,
+        "acc_key": 0.7283333333333334,
+        "n": 600
+      },
+      "d3_conv_go_awry": {
+        "acc_desc": 0.502,
+        "acc_key": 0.57,
+        "n": 500
+      },
+      "d3_emotion": {
+        "acc_desc": 0.3755020080321285,
+        "acc_key": 0.4859437751004016,
+        "n": 498
+      },
+      "d3_wiki_corpus": {
+        "acc_desc": 0.566,
+        "acc_key": 0.608,
+        "n": 500
+      },
+      "d3_wiki_politeness": {
+        "acc_desc": 0.5742971887550201,
+        "acc_key": 0.5301204819277109,
+        "n": 498
+      }
     }
   },
   "oos_option": {
+    "comparator-gemma": {
+      "acc_in": 0.9383333333333334,
+      "false_reject": 0.0033333333333333335,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.715,
+      "option": {
+        "coverage_in": 0.9966666666666667,
+        "oos_false_acceptance": 0.285,
+        "risk_in": 0.05852842809364549,
+        "risk_in_upper_95_one_sided_cp": 0.07685327214262798
+      },
+      "option_gate": {
+        "accepted_in": 567,
+        "coverage_in": 0.945,
+        "coverage_in_ci": [
+          0.7390274100225557,
+          0.9983334717607973
+        ],
+        "errors_in": 28,
+        "oos_false_acceptance": 0.17,
+        "oos_false_acceptance_ci": [
+          0.040811146793742877,
+          0.30650308853809194
+        ],
+        "risk_in": 0.04938271604938271,
+        "risk_in_ci": [
+          0.03639759665621735,
+          0.05913978494623656
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.0670815347861798
+      }
+    },
+    "comparator-gemma-ll": {
+      "acc_in": 0.9366666666666666,
+      "false_reject": 0.005,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.715,
+      "option": {
+        "coverage_in": 0.995,
+        "oos_false_acceptance": 0.285,
+        "risk_in": 0.05862646566164154,
+        "risk_in_upper_95_one_sided_cp": 0.07698074363915834
+      },
+      "option_gate": {
+        "accepted_in": 583,
+        "coverage_in": 0.9716666666666667,
+        "coverage_in_ci": [
+          0.8964776363383417,
+          0.9967268112918926
+        ],
+        "errors_in": 30,
+        "oos_false_acceptance": 0.21,
+        "oos_false_acceptance_ci": [
+          0.10254629629629629,
+          0.3191751388743318
+        ],
+        "risk_in": 0.051457975986277875,
+        "risk_in_ci": [
+          0.040265089448048304,
+          0.05862068965517241
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.06915118375544657
+      }
+    },
+    "comparator-mistral": {
+      "acc_in": 0.765,
+      "false_reject": 0.016666666666666666,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.3,
+      "option": {
+        "coverage_in": 0.9833333333333333,
+        "oos_false_acceptance": 0.7,
+        "risk_in": 0.22203389830508474,
+        "risk_in_upper_95_one_sided_cp": 0.2520324279453269
+      },
+      "option_gate": {
+        "accepted_in": 0,
+        "coverage_in": 0.0,
+        "coverage_in_ci": [
+          0.0,
+          0.0
+        ],
+        "errors_in": 0,
+        "oos_false_acceptance": 0.0,
+        "oos_false_acceptance_ci": [
+          0.0,
+          0.0
+        ],
+        "risk_in": NaN,
+        "risk_in_ci": null,
+        "risk_in_upper_95_one_sided_cp": null
+      }
+    },
+    "comparator-mistral-ll": {
+      "acc_in": 0.7833333333333333,
+      "false_reject": 0.005,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.135,
+      "option": {
+        "coverage_in": 0.995,
+        "oos_false_acceptance": 0.865,
+        "risk_in": 0.21273031825795644,
+        "risk_in_upper_95_one_sided_cp": 0.2421491403513879
+      },
+      "option_gate": {
+        "accepted_in": 265,
+        "coverage_in": 0.44166666666666665,
+        "coverage_in_ci": [
+          0.3290092020841984,
+          0.6069542897001894
+        ],
+        "errors_in": 18,
+        "oos_false_acceptance": 0.035,
+        "oos_false_acceptance_ci": [
+          0.004878048780487805,
+          0.10259562841530051
+        ],
+        "risk_in": 0.06792452830188679,
+        "risk_in_ci": [
+          0.04368879043540934,
+          0.081083574349257
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.09906349169479674
+      }
+    },
     "comparator-open": {
       "acc_in": 0.7316666666666667,
       "false_reject": 0.015,
@@ -163,6 +356,39 @@
           0.06358688374584327
         ],
         "risk_in_upper_95_one_sided_cp": 0.06886341172187586
+      }
+    },
+    "comparator-open2-think": {
+      "acc_in": 0.925,
+      "false_reject": 0.006666666666666667,
+      "n_in": 600,
+      "n_oos": 200,
+      "oos_recall": 0.665,
+      "option": {
+        "coverage_in": 0.9933333333333333,
+        "oos_false_acceptance": 0.335,
+        "risk_in": 0.06879194630872483,
+        "risk_in_upper_95_one_sided_cp": 0.08833508857374035
+      },
+      "option_gate": {
+        "accepted_in": 534,
+        "coverage_in": 0.89,
+        "coverage_in_ci": [
+          0.6911109982563947,
+          0.9832824290334172
+        ],
+        "errors_in": 25,
+        "oos_false_acceptance": 0.165,
+        "oos_false_acceptance_ci": [
+          0.06587312039076718,
+          0.3103639846743295
+        ],
+        "risk_in": 0.04681647940074907,
+        "risk_in_ci": [
+          0.03650018088916169,
+          0.061567164179104475
+        ],
+        "risk_in_upper_95_one_sided_cp": 0.06477586169407305
       }
     },
     "decider-2b": {

@@ -24,6 +24,16 @@ COMPARATORS_2 = ["comparator-open2", "comparator-open2-ll",
                  "comparator-open2-awq", "comparator-open2-awq-ll"]
 COMPARATORS_2_B1 = ["comparator-open2-b1", "comparator-open2-ll-b1",
                     "comparator-open2-awq-b1", "comparator-open2-awq-ll-b1"]
+# Fourth revision comparators (build_revision4_notebook.py): Gemma-4-31B and Mistral-Small-24B,
+# each read through stated probabilities and option-key likelihoods, and Qwen3.6-27B with its
+# thinking mode on. They join the second-revision list so every analysis that adds extra
+# comparators picks them up; their batch-1 latency samples join the batch-1 list.
+COMPARATORS_2 += ["comparator-gemma", "comparator-gemma-ll", "comparator-mistral",
+                  "comparator-mistral-ll", "comparator-open2-think"]
+COMPARATORS_2_B1 += ["comparator-gemma-b1", "comparator-gemma-ll-b1", "comparator-mistral-b1",
+                     "comparator-mistral-ll-b1", "comparator-open-b1"]
+# comparators that ran on an L4 rather than an A100
+COMPARATORS_ON_L4 = ("comparator-open-b1",)
 BATCHED = ("comparator-open",) + tuple(COMPARATORS_2)     # latency amortized over a batch
 BACKBONES = ["backbone-qwen35-0.8b-base", "backbone-qwen35-2b-base",
              "backbone-qwen35-9b-base", "backbone-qwen35-9b"]
@@ -49,12 +59,13 @@ def usd_per_gpu_hour(model, default):
     if model not in COMPARATORS_2 + COMPARATORS_2_B1 + BACKBONES:
         return default
     units = {"L4": 4.8, "A100": 11.8}
-    gpu = "L4" if (model in BACKBONES or "-awq" in model) else "A100"
+    gpu = "L4" if (model in BACKBONES or "-awq" in model or model in COMPARATORS_ON_L4) else "A100"
     p = os.path.join(C.ANSWERS, "run_log_revision2.json")
     if os.path.exists(p):
         log = json.load(open(p, encoding="utf-8"))
         units.update(log.get("units_per_hour_assumed") or {})
-        name = log.get("part1_gpu" if model in BACKBONES else "part2_gpu") or ""
+        name = log.get("part1_gpu" if (model in BACKBONES or model in COMPARATORS_ON_L4)
+                       else "part2_gpu") or ""
         for g in ("A100", "H100", "L4", "T4"):
             if g in name:
                 gpu = g
@@ -84,6 +95,34 @@ def answers(model, cond, rep=1):
     return out
 
 
+# A comparator reply the parser cannot read is scored as a uniform distribution, the rule the
+# verbalized-JSON parser already applies when no reported key matches the option set
+# (adapters.comparator_parse), so every generative readout is scored on all its requests. Only
+# parse failures are filled this way; declared refusals (Laya over its option budget) and
+# prompts over the context limit stay missing.
+PARSE_FAILURE_MARKERS = ("could not parse the requested JSON", "no JSON object after the reasoning")
+
+
+def parse_failures(model, cond, rep=1):
+    """Keys of the requests whose every line is a parse failure (no successful line)."""
+    path = os.path.join(C.ANSWERS, model, f"{cond}__rep{rep}.jsonl")
+    failed, ok = set(), set()
+    if not os.path.exists(path):
+        return failed
+    with open(path, encoding="utf-8") as fh:
+        for line in fh:
+            try:
+                j = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            err = j.get("error")
+            if not err:
+                ok.add(j["key"])
+            elif any(m in str(err) for m in PARSE_FAILURE_MARKERS):
+                failed.add(j["key"])
+    return failed - ok
+
+
 def available_reps(model, cond):
     d = os.path.join(C.ANSWERS, model)
     if not os.path.isdir(d):
@@ -108,12 +147,15 @@ def decisions(model, cond, rep=1, raw=False):
     serves temperature-scaled ones."""
     recs = inputs(cond)
     ans = answers(model, cond, rep)
+    failed = parse_failures(model, cond, rep)
     rows = []
     for r in recs:
         a = ans.get(r["key"])
         for qid, g in r["gold"].items():
             opts = g["options"]
             p = np.full(len(opts), np.nan)
+            if a is None and r["key"] in failed:
+                p = np.full(len(opts), 1.0 / len(opts))
             lat = None
             if a is not None and a["answers"].get(qid) and a["answers"][qid]["probs"]:
                 pr = a["answers"][qid]["probs"]
@@ -141,6 +183,7 @@ def decisions(model, cond, rep=1, raw=False):
             rows.append({"key": r["key"], "item_id": r["item_id"], "qid": qid,
                          "type": g["type"], "options": opts, "y": y, "soft": soft,
                          "p": p, "meta": r["meta"], "latency_s": lat,
+                         "parse_failed": a is None and r["key"] in failed,
                          "usage_in": a.get("usage_in") if a else None,
                          "positive": g.get("positive")})
     return rows

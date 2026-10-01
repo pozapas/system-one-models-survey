@@ -1,0 +1,66 @@
+{
+  "runtimes": [
+    {
+      "start": "2026-09-30T18:18:24.858824Z",
+      "parts": "C2",
+      "b05_groups": [
+        "clinc",
+        "goemo",
+        "banking",
+        "d3",
+        "d1"
+      ],
+      "think": true,
+      "qwen36": true,
+      "gpu": "NVIDIA A100-SXM4-80GB, 580.82.07, 81920 MiB"
+    },
+    {
+      "start": "2026-09-30T19:38:17.142791Z",
+      "parts": "C2",
+      "b05_groups": [
+        "clinc",
+        "goemo",
+        "banking",
+        "d3",
+        "d1"
+      ],
+      "think": true,
+      "qwen36": true,
+      "gpu": "NVIDIA A100-SXM4-80GB, 580.82.07, 81920 MiB"
+    }
+  ],
+  "units_per_hour_assumed": {
+    "L4": 4.8,
+    "A100": 11.8
+  },
+  "models": {
+    "comparator-mistral": {
+      "smoke_s_incl_load": 55.583255767822266,
+      "smoke_s_per_question": 0.5115133694240025,
+      "smoke_answered": 9,
+      "smoke_error_lines": 0,
+      "smoke_mean_output_tokens": 68.47619047619048,
+      "full_min": 5.420827380816141
+    },
+    "comparator-mistral-ll": {
+      "smoke_s_incl_load": 47.33969211578369,
+      "smoke_s_per_question": 0.0926913647424607,
+      "smoke_answered": 9,
+      "smoke_error_lines": 0,
+      "smoke_mean_output_tokens": null,
+      "full_min": 14.51577537059784
+    },
+    "comparator-mistral-b1": {
+      "answered": 40,
+      "error_lines": 0,
+      "median_latency_s": 12.6725,
+      "min": 9.210397096474965
+    },
+    "comparator-mistral-ll-b1": {
+      "answered": 40,
+      "error_lines": 0,
+      "median_latency_s": 0.3581,
+      "min": 0.9883944908777873
+    }
+  }
+}

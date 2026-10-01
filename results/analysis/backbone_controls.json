@@ -31,6 +31,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.16396103896103897,
+        "accuracy_ci": [
+          0.13636363636363635,
+          0.19318181818181818
+        ],
+        "ece_shipped": 0.06630446543709449,
+        "mean_confidence": 0.1146083877810584,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.12,
         "accuracy_ci": [
@@ -70,6 +81,17 @@
         "mean_confidence": 0.578164146910794,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.483739837398374,
+        "accuracy_ci": [
+          0.43902439024390244,
+          0.5264227642276422
+        ],
+        "ece_shipped": 0.05501917045340043,
+        "mean_confidence": 0.5284188573373249,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.5,
@@ -189,6 +211,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.4707792207792208,
+        "accuracy_ci": [
+          0.4318181818181818,
+          0.512987012987013
+        ],
+        "ece_shipped": 0.2128195959582888,
+        "mean_confidence": 0.2605502528488614,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.5116666666666667,
         "accuracy_ci": [
@@ -228,6 +261,17 @@
         "mean_confidence": 0.5073099257437896,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.4654471544715447,
+        "accuracy_ci": [
+          0.42276422764227645,
+          0.5101626016260162
+        ],
+        "ece_shipped": 0.06685859019881381,
+        "mean_confidence": 0.4173638904353094,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.52,
@@ -347,6 +391,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.7418831168831169,
+        "accuracy_ci": [
+          0.7045454545454546,
+          0.7743912337662338
+        ],
+        "ece_shipped": 0.06078465655698051,
+        "mean_confidence": 0.7943232429937039,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.7816666666666666,
         "accuracy_ci": [
@@ -386,6 +441,17 @@
         "mean_confidence": 0.5869185206446063,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.5426829268292683,
+        "accuracy_ci": [
+          0.49796747967479676,
+          0.5894308943089431
+        ],
+        "ece_shipped": 0.060889847320418924,
+        "mean_confidence": 0.5977184945910823,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.598,
@@ -505,6 +571,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.711038961038961,
+        "accuracy_ci": [
+          0.6753246753246753,
+          0.7451298701298701
+        ],
+        "ece_shipped": 0.034721613020751045,
+        "mean_confidence": 0.7316595271810336,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.7283333333333334,
         "accuracy_ci": [
@@ -544,6 +621,17 @@
         "mean_confidence": 0.6729731510516271,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.5609756097560976,
+        "accuracy_ci": [
+          0.5182926829268293,
+          0.6056910569105691
+        ],
+        "ece_shipped": 0.12641695876129336,
+        "mean_confidence": 0.6683452538176657,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.608,
@@ -663,6 +751,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.827922077922078,
+        "accuracy_ci": [
+          0.8002840909090909,
+          0.8571428571428571
+        ],
+        "ece_shipped": 0.029915640043183776,
+        "mean_confidence": 0.8154498120123587,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.86,
         "accuracy_ci": [
@@ -702,6 +801,17 @@
         "mean_confidence": 0.834001448109849,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.6178861788617886,
+        "accuracy_ci": [
+          0.5772357723577236,
+          0.6626524390243902
+        ],
+        "ece_shipped": 0.07227982726237696,
+        "mean_confidence": 0.681834071354185,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.534,
@@ -821,6 +931,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.8295454545454546,
+        "accuracy_ci": [
+          0.8002840909090909,
+          0.8571834415584415
+        ],
+        "ece_shipped": 0.14876951825360907,
+        "mean_confidence": 0.6807759362918454,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.685,
         "accuracy_ci": [
@@ -860,6 +981,17 @@
         "mean_confidence": 0.4806018359450492,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.5548780487804879,
+        "accuracy_ci": [
+          0.5101626016260162,
+          0.5975609756097561
+        ],
+        "ece_shipped": 0.07155663795428027,
+        "mean_confidence": 0.5012267391623914,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.52,
@@ -979,6 +1111,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.849025974025974,
+        "accuracy_ci": [
+          0.8181818181818182,
+          0.8766233766233766
+        ],
+        "ece_shipped": 0.24269070711923843,
+        "mean_confidence": 0.6063352669067357,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.85,
         "accuracy_ci": [
@@ -1018,6 +1161,17 @@
         "mean_confidence": 0.5005420428534599,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.6077235772357723,
+        "accuracy_ci": [
+          0.5630081300813008,
+          0.6524390243902439
+        ],
+        "ece_shipped": 0.09174303103171777,
+        "mean_confidence": 0.5159805462040545,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.594,
@@ -1137,6 +1291,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.8425324675324676,
+        "accuracy_ci": [
+          0.8133116883116883,
+          0.8685064935064936
+        ],
+        "ece_shipped": 0.06685840021870995,
+        "mean_confidence": 0.9092499081298151,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.86,
         "accuracy_ci": [
@@ -1176,6 +1341,17 @@
         "mean_confidence": 0.8007709961699724,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.5955284552845529,
+        "accuracy_ci": [
+          0.5528455284552846,
+          0.6402439024390244
+        ],
+        "ece_shipped": 0.17317675710368452,
+        "mean_confidence": 0.7687052123882374,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.554,
@@ -1295,6 +1471,17 @@
         "n_decisions": 2000,
         "n_scored": 2000
       },
+      "d2_banking77": {
+        "accuracy": 0.827922077922078,
+        "accuracy_ci": [
+          0.7987012987012987,
+          0.8571428571428571
+        ],
+        "ece_shipped": 0.07046885465006908,
+        "mean_confidence": 0.8983756900839011,
+        "n_decisions": 616,
+        "n_scored": 616
+      },
       "d2_k150": {
         "accuracy": 0.8633333333333333,
         "accuracy_ci": [
@@ -1334,6 +1521,17 @@
         "mean_confidence": 0.9159538220773609,
         "n_decisions": 498,
         "n_scored": 498
+      },
+      "d3_goemotions": {
+        "accuracy": 0.6117886178861789,
+        "accuracy_ci": [
+          0.5690548780487805,
+          0.6565040650406504
+        ],
+        "ece_shipped": 0.18519372714983334,
+        "mean_confidence": 0.7969823450360122,
+        "n_decisions": 492,
+        "n_scored": 492
       },
       "d3_wiki_corpus": {
         "accuracy": 0.53,
@@ -1473,6 +1671,36 @@
       "p": 0.001998001998001998,
       "replicates": 1000
     },
+    "decider-2b>backbone-qwen35-2b-base|d2_banking77|accuracy": {
+      "a": 82.79220779220779,
+      "b": 47.07792207792208,
+      "ci": [
+        31.33116883116883,
+        40.0974025974026
+      ],
+      "diff": 35.714285714285715,
+      "holm": 0.000999900009999,
+      "holm_family": "d2_banking77|accuracy over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.00019998000199980003,
+      "replicates": 10000
+    },
+    "decider-2b>backbone-qwen35-2b-base|d2_banking77|ece_shipped": {
+      "a": 2.9915640043183775,
+      "b": 21.28195959582888,
+      "ci": [
+        -21.598247988296823,
+        -13.691479881388002
+      ],
+      "diff": -18.290395591510503,
+      "holm": 0.00999000999000999,
+      "holm_family": "d2_banking77|ece_shipped over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.001998001998001998,
+      "replicates": 1000
+    },
     "decider-2b>backbone-qwen35-2b-base|d2_k150|accuracy": {
       "a": 86.0,
       "b": 51.16666666666667,
@@ -1576,6 +1804,36 @@
       "n": 498,
       "n_clusters": 498,
       "p": 0.01998001998001998,
+      "replicates": 1000
+    },
+    "decider-2b>backbone-qwen35-2b-base|d3_goemotions|accuracy": {
+      "a": 61.78861788617886,
+      "b": 46.54471544715447,
+      "ci": [
+        10.569105691056912,
+        19.91869918699187
+      ],
+      "diff": 15.24390243902439,
+      "holm": 0.000999900009999,
+      "holm_family": "d3_goemotions|accuracy over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.00019998000199980003,
+      "replicates": 10000
+    },
+    "decider-2b>backbone-qwen35-2b-base|d3_goemotions|ece_shipped": {
+      "a": 7.227982726237696,
+      "b": 6.685859019881381,
+      "ci": [
+        -4.621103639515496,
+        5.017454988066021
+      ],
+      "diff": 0.542123706356315,
+      "holm": 1.0,
+      "holm_family": "d3_goemotions|ece_shipped over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.8551448551448552,
       "replicates": 1000
     },
     "decider-2b>backbone-qwen35-2b-base|d3_wiki_corpus|accuracy": {
@@ -1803,6 +2061,36 @@
       "p": 0.001998001998001998,
       "replicates": 1000
     },
+    "kev-0.8b>backbone-qwen35-0.8b-base|d2_banking77|accuracy": {
+      "a": 82.95454545454545,
+      "b": 16.3961038961039,
+      "ci": [
+        62.824675324675326,
+        70.29220779220779
+      ],
+      "diff": 66.55844155844156,
+      "holm": 0.000999900009999,
+      "holm_family": "d2_banking77|accuracy over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.00019998000199980003,
+      "replicates": 10000
+    },
+    "kev-0.8b>backbone-qwen35-0.8b-base|d2_banking77|ece_shipped": {
+      "a": 14.876951825360907,
+      "b": 6.630446543709449,
+      "ci": [
+        3.791240721143026,
+        10.744163093747046
+      ],
+      "diff": 8.246505281651457,
+      "holm": 0.00999000999000999,
+      "holm_family": "d2_banking77|ece_shipped over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.001998001998001998,
+      "replicates": 1000
+    },
     "kev-0.8b>backbone-qwen35-0.8b-base|d2_k150|accuracy": {
       "a": 68.5,
       "b": 12.0,
@@ -1906,6 +2194,36 @@
       "n": 498,
       "n_clusters": 498,
       "p": 0.005994005994005994,
+      "replicates": 1000
+    },
+    "kev-0.8b>backbone-qwen35-0.8b-base|d3_goemotions|accuracy": {
+      "a": 55.487804878048784,
+      "b": 48.3739837398374,
+      "ci": [
+        2.642276422764228,
+        11.38211382113821
+      ],
+      "diff": 7.113821138211382,
+      "holm": 0.0029997000299970002,
+      "holm_family": "d3_goemotions|accuracy over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.000999900009999,
+      "replicates": 10000
+    },
+    "kev-0.8b>backbone-qwen35-0.8b-base|d3_goemotions|ece_shipped": {
+      "a": 7.155663795428027,
+      "b": 5.5019170453400426,
+      "ci": [
+        -3.419406428740291,
+        6.101153999709479
+      ],
+      "diff": 1.6537467500879846,
+      "holm": 1.0,
+      "holm_family": "d3_goemotions|ece_shipped over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.5934065934065934,
       "replicates": 1000
     },
     "kev-0.8b>backbone-qwen35-0.8b-base|d3_wiki_corpus|accuracy": {
@@ -2133,6 +2451,36 @@
       "p": 0.013986013986013986,
       "replicates": 1000
     },
+    "kev-9b>backbone-qwen35-9b-base|d2_banking77|accuracy": {
+      "a": 84.90259740259741,
+      "b": 71.1038961038961,
+      "ci": [
+        10.38961038961039,
+        17.20779220779221
+      ],
+      "diff": 13.7987012987013,
+      "holm": 0.000999900009999,
+      "holm_family": "d2_banking77|accuracy over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.00019998000199980003,
+      "replicates": 10000
+    },
+    "kev-9b>backbone-qwen35-9b-base|d2_banking77|ece_shipped": {
+      "a": 24.269070711923842,
+      "b": 3.4721613020751043,
+      "ci": [
+        14.963842307776645,
+        22.6109845547503
+      ],
+      "diff": 20.796909409848737,
+      "holm": 0.00999000999000999,
+      "holm_family": "d2_banking77|ece_shipped over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.001998001998001998,
+      "replicates": 1000
+    },
     "kev-9b>backbone-qwen35-9b-base|d2_k150|accuracy": {
       "a": 85.0,
       "b": 72.83333333333334,
@@ -2236,6 +2584,36 @@
       "n": 498,
       "n_clusters": 498,
       "p": 0.001998001998001998,
+      "replicates": 1000
+    },
+    "kev-9b>backbone-qwen35-9b-base|d3_goemotions|accuracy": {
+      "a": 60.77235772357723,
+      "b": 56.09756097560976,
+      "ci": [
+        0.6097560975609756,
+        8.739837398373984
+      ],
+      "diff": 4.67479674796748,
+      "holm": 0.028397160283971604,
+      "holm_family": "d3_goemotions|accuracy over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.028397160283971604,
+      "replicates": 10000
+    },
+    "kev-9b>backbone-qwen35-9b-base|d3_goemotions|ece_shipped": {
+      "a": 9.174303103171777,
+      "b": 12.641695876129337,
+      "ci": [
+        -8.534825927763052,
+        2.7921840139663328
+      ],
+      "diff": -3.4673927729575587,
+      "holm": 0.7912087912087913,
+      "holm_family": "d3_goemotions|ece_shipped over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.26373626373626374,
       "replicates": 1000
     },
     "kev-9b>backbone-qwen35-9b-base|d3_wiki_corpus|accuracy": {
@@ -2463,6 +2841,36 @@
       "p": 0.001998001998001998,
       "replicates": 1000
     },
+    "nimble-9b>backbone-qwen35-9b|d2_banking77|accuracy": {
+      "a": 84.25324675324676,
+      "b": 74.18831168831169,
+      "ci": [
+        7.142857142857142,
+        13.14935064935065
+      ],
+      "diff": 10.064935064935066,
+      "holm": 0.000999900009999,
+      "holm_family": "d2_banking77|accuracy over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.00019998000199980003,
+      "replicates": 10000
+    },
+    "nimble-9b>backbone-qwen35-9b|d2_banking77|ece_shipped": {
+      "a": 6.6858400218709955,
+      "b": 6.078465655698051,
+      "ci": [
+        -2.9985416091987664,
+        2.871270943611001
+      ],
+      "diff": 0.6073743661729442,
+      "holm": 0.9790209790209791,
+      "holm_family": "d2_banking77|ece_shipped over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.9790209790209791,
+      "replicates": 1000
+    },
     "nimble-9b>backbone-qwen35-9b|d2_k150|accuracy": {
       "a": 86.0,
       "b": 78.16666666666666,
@@ -2565,6 +2973,36 @@
       "holm_family": "d3_emotion|ece_shipped over 5 pairs",
       "n": 498,
       "n_clusters": 498,
+      "p": 0.001998001998001998,
+      "replicates": 1000
+    },
+    "nimble-9b>backbone-qwen35-9b|d3_goemotions|accuracy": {
+      "a": 59.552845528455286,
+      "b": 54.268292682926834,
+      "ci": [
+        1.6260162601626018,
+        8.739837398373984
+      ],
+      "diff": 5.284552845528456,
+      "holm": 0.008799120087991202,
+      "holm_family": "d3_goemotions|accuracy over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.004399560043995601,
+      "replicates": 10000
+    },
+    "nimble-9b>backbone-qwen35-9b|d3_goemotions|ece_shipped": {
+      "a": 17.31767571036845,
+      "b": 6.088984732041893,
+      "ci": [
+        5.724398815522249,
+        13.480215179163494
+      ],
+      "diff": 11.22869097832656,
+      "holm": 0.00999000999000999,
+      "holm_family": "d3_goemotions|ece_shipped over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
       "p": 0.001998001998001998,
       "replicates": 1000
     },
@@ -2793,6 +3231,36 @@
       "p": 0.001998001998001998,
       "replicates": 1000
     },
+    "this-that-1.0>backbone-qwen35-2b-base|d2_banking77|accuracy": {
+      "a": 82.79220779220779,
+      "b": 47.07792207792208,
+      "ci": [
+        31.16883116883117,
+        40.0974025974026
+      ],
+      "diff": 35.714285714285715,
+      "holm": 0.000999900009999,
+      "holm_family": "d2_banking77|accuracy over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.00019998000199980003,
+      "replicates": 10000
+    },
+    "this-that-1.0>backbone-qwen35-2b-base|d2_banking77|ece_shipped": {
+      "a": 7.046885465006908,
+      "b": 21.28195959582888,
+      "ci": [
+        -18.73070249895327,
+        -10.26447377612399
+      ],
+      "diff": -14.235074130821973,
+      "holm": 0.00999000999000999,
+      "holm_family": "d2_banking77|ece_shipped over 5 pairs",
+      "n": 616,
+      "n_clusters": 616,
+      "p": 0.001998001998001998,
+      "replicates": 1000
+    },
     "this-that-1.0>backbone-qwen35-2b-base|d2_k150|accuracy": {
       "a": 86.33333333333333,
       "b": 51.16666666666667,
@@ -2896,6 +3364,36 @@
       "n": 498,
       "n_clusters": 498,
       "p": 0.9330669330669331,
+      "replicates": 1000
+    },
+    "this-that-1.0>backbone-qwen35-2b-base|d3_goemotions|accuracy": {
+      "a": 61.17886178861789,
+      "b": 46.54471544715447,
+      "ci": [
+        9.959349593495935,
+        19.10569105691057
+      ],
+      "diff": 14.634146341463413,
+      "holm": 0.000999900009999,
+      "holm_family": "d3_goemotions|accuracy over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.00019998000199980003,
+      "replicates": 10000
+    },
+    "this-that-1.0>backbone-qwen35-2b-base|d3_goemotions|ece_shipped": {
+      "a": 18.519372714983334,
+      "b": 6.685859019881381,
+      "ci": [
+        4.882798630069476,
+        15.696827953720968
+      ],
+      "diff": 11.833513695101953,
+      "holm": 0.00999000999000999,
+      "holm_family": "d3_goemotions|ece_shipped over 5 pairs",
+      "n": 492,
+      "n_clusters": 492,
+      "p": 0.001998001998001998,
       "replicates": 1000
     },
     "this-that-1.0>backbone-qwen35-2b-base|d3_wiki_corpus|accuracy": {
@@ -3103,6 +3601,13 @@
         "max_prompt_tokens": 634,
         "over_length": 0
       },
+      "d2_banking77__rep1": {
+        "answered": 616,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 796,
+        "over_length": 0
+      },
       "d2_k150__rep1": {
         "answered": 800,
         "errors": 0,
@@ -3122,6 +3627,13 @@
         "errors": 0,
         "joint_tokenization_mismatch": 0,
         "max_prompt_tokens": 155,
+        "over_length": 0
+      },
+      "d3_goemotions__rep1": {
+        "answered": 492,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 138,
         "over_length": 0
       },
       "d3_wiki_corpus__rep1": {
@@ -3231,6 +3743,13 @@
         "max_prompt_tokens": 634,
         "over_length": 0
       },
+      "d2_banking77__rep1": {
+        "answered": 616,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 796,
+        "over_length": 0
+      },
       "d2_k150__rep1": {
         "answered": 800,
         "errors": 0,
@@ -3250,6 +3769,13 @@
         "errors": 0,
         "joint_tokenization_mismatch": 0,
         "max_prompt_tokens": 155,
+        "over_length": 0
+      },
+      "d3_goemotions__rep1": {
+        "answered": 492,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 138,
         "over_length": 0
       },
       "d3_wiki_corpus__rep1": {
@@ -3359,6 +3885,13 @@
         "max_prompt_tokens": 634,
         "over_length": 0
       },
+      "d2_banking77__rep1": {
+        "answered": 616,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 796,
+        "over_length": 0
+      },
       "d2_k150__rep1": {
         "answered": 800,
         "errors": 0,
@@ -3378,6 +3911,13 @@
         "errors": 0,
         "joint_tokenization_mismatch": 0,
         "max_prompt_tokens": 155,
+        "over_length": 0
+      },
+      "d3_goemotions__rep1": {
+        "answered": 492,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 138,
         "over_length": 0
       },
       "d3_wiki_corpus__rep1": {
@@ -3487,6 +4027,13 @@
         "max_prompt_tokens": 634,
         "over_length": 0
       },
+      "d2_banking77__rep1": {
+        "answered": 616,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 796,
+        "over_length": 0
+      },
       "d2_k150__rep1": {
         "answered": 800,
         "errors": 0,
@@ -3506,6 +4053,13 @@
         "errors": 0,
         "joint_tokenization_mismatch": 0,
         "max_prompt_tokens": 155,
+        "over_length": 0
+      },
+      "d3_goemotions__rep1": {
+        "answered": 492,
+        "errors": 0,
+        "joint_tokenization_mismatch": 0,
+        "max_prompt_tokens": 138,
         "over_length": 0
       },
       "d3_wiki_corpus__rep1": {
