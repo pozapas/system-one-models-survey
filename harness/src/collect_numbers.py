@@ -1129,6 +1129,8 @@ def collect():
                 continue
             v = "0" + v if v.startswith(".") else v
             v = tidy_decimal(v)
+            # a large count prints with thousands separators, as every generated count does
+            v = int(v) if v.isdigit() and len(v) >= 4 else v
             add(f"lit.{k}", v, f"ledger {r['row_id']}: {r['excerpt'][:200]}")
             cv = (r.get("comparator_value") or "").strip()
             try:

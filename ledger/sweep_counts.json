@@ -25,7 +25,7 @@
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.ledgerRows": {
-      "text": "396",
+      "text": "400",
       "source": "shared/ledger/sweep_counts.json"
     }
   }

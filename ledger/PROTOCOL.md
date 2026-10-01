@@ -46,3 +46,7 @@ Rating anchors (written 2026-09-26 from the reasons recorded with the first rati
 ## Stability of value keys (added 2026-09-24)
 
 The companion benchmark cites ledger rows through `lit.<value_key>` labels in `shared/results/numbers.json`. **Existing value_key strings are therefore frozen.** A corrected value gets a new row that supersedes the old one, and its key is never renamed.
+
+## Rows from later sources (added 2026-10-01)
+
+Rows from sources dated after the cutoff may be appended for the benchmark paper, for example L937 to L939 from the community Decision Index (2026-09-28). They carry their own source date and are not risk-of-bias graded, so the survey synthesis counts only the studies graded in `rob.csv`. A later sweep that grades them releases them as part of a new minor version.

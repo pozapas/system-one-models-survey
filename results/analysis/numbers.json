@@ -90159,7 +90159,7 @@
     "fmt": null,
     "note": null,
     "source": "ledger L624: Run B completed 5 minutes 19 seconds faster (26m 53s vs. 32m 12s).",
-    "value": "1613"
+    "value": 1613
   },
   "lit.dossantos2026calibrated.runBWallclockTimeSeconds.cmp": {
     "fmt": null,
@@ -92667,7 +92667,7 @@
     "fmt": null,
     "note": null,
     "source": "ledger L093: The coded fields attribute 28,057 injury and fatal crashes per year across the nine factors, and the narrative variables add 10,747 more.",
-    "value": "10747"
+    "value": 10747
   },
   "lit.rafe2026calibrated.injuryFatalCrashesAddedPerYear.cmp": {
     "fmt": null,
@@ -92775,7 +92775,7 @@
     "fmt": null,
     "note": null,
     "source": "ledger L085: Projected to the whole corpus that is about $39,875 against $774, which separates a routine analysis from one that does not happen.",
-    "value": "39875"
+    "value": 39875
   },
   "lit.rafe2026calibrated.midTierProjectedWholeCorpusCost.cmp": {
     "fmt": null,
@@ -93334,6 +93334,24 @@
     "note": null,
     "source": "ledger L044: All seven findings apply the instrument of \u00a73 to the same items, and the type-error rate is 0% in every one of them.",
     "value": "0"
+  },
+  "lit.webDecisionIndex.engines": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L938: data/index.json, models: 70 entries (open decision models and Jev reproductions; hosted Jev listed separately)",
+    "value": "70"
+  },
+  "lit.webDecisionIndex.panel": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L939: data/methodology.json, index: \"panel\": 38 (Decision Index 0.2.1 headline panel)",
+    "value": "38"
+  },
+  "lit.webDecisionIndex.requests": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L937: data/methodology.json, suite: \"requests\": 120340, \"scoreable\": 119898",
+    "value": 120340
   },
   "lit.wu2026reflex.b3CostPerEpisode": {
     "fmt": null,
@@ -104049,13 +104067,13 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 4
+    "value": 5
   },
   "pos.cost.full": {
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 5
+    "value": 6
   },
   "pos.cost.partial": {
     "fmt": "d",
@@ -104067,7 +104085,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 3
+    "value": 4
   },
   "pos.families.partial": {
     "fmt": "d",
@@ -104079,7 +104097,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 4
+    "value": 5
   },
   "pos.identical.partial": {
     "fmt": "d",
@@ -104097,13 +104115,13 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 1
+    "value": 2
   },
   "pos.models.full": {
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 3
+    "value": 4
   },
   "pos.models.partial": {
     "fmt": "d",
@@ -104115,7 +104133,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 15
+    "value": 16
   },
   "pos.outofscope.full": {
     "fmt": "d",
@@ -104127,7 +104145,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 2
+    "value": 3
   },
   "pos.selective.full": {
     "fmt": "d",
@@ -104151,7 +104169,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 8
+    "value": 9
   },
   "pos.trained.full": {
     "fmt": "d",
@@ -104175,7 +104193,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 2
+    "value": 3
   },
   "rc.alpha": {
     "fmt": ".0f",

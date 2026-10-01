@@ -694,7 +694,9 @@ def f05(recs):
 def main():
     recs = read_selection()
     put("ledgerRows", str(len(LED)), "rows in ledger.csv at synthesis time")
-    studies = {r["study_key"] for r in LED.values()}
+    # the survey ledger is the graded population; rows appended later for the benchmark paper stay out until graded
+    graded = {r["study_key"] for r in load_csv(os.path.join(os.path.dirname(LEDGER_CSV), "rob.csv"))}
+    studies = {r["study_key"] for r in LED.values()} & graded
     put("ledgerStudies", str(len(studies)), "studies in ledger.csv")
     put("ledgerClusters", str(len({cluster_of(s) for s in studies})), "independent study clusters (li2026fast and li2026replacing merged)")
     inc = [r for r in recs if r["included"]]
