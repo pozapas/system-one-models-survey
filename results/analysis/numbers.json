@@ -90023,6 +90023,36 @@
     "source": "ledger L406 comparator value (Jev 1.13)",
     "value": "0.335"
   },
+  "lit.deusser2026evaluating.datasets": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L944: We evaluate Jev (jev-1.13.0) zero-shot on 37 datasets",
+    "value": "37"
+  },
+  "lit.deusser2026evaluating.jevBankingAcc": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L945: Intent and topic routing Banking77 3,076 Acc. 0.797 [0.782, 0.812]",
+    "value": "0.797"
+  },
+  "lit.deusser2026evaluating.jevClincInScope": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L946: On CLINC150, in-scope accuracy is 92.1%",
+    "value": "0.921"
+  },
+  "lit.deusser2026evaluating.jevOosRecall": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L947: the explicit out-of-scope option recovers 77.6% of out-of-scope requests at a precision of 94.1%",
+    "value": "0.776"
+  },
+  "lit.deusser2026evaluating.jevPooledEce": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L948: Pooled over 22 Choice datasets and 279,925 answers, the ECE is 0.028.",
+    "value": "0.028"
+  },
   "lit.dossantos2026calibrated.gapRetestScenariosConfirmedBothArms": {
     "fmt": null,
     "note": null,
@@ -92482,6 +92512,12 @@
     "note": null,
     "source": "ledger L206: Qwen and rules complete 105/288 (36.5%) and 92/288 (31.9%), respectively.",
     "value": "92/288"
+  },
+  "lit.ling2026jev.projects": {
+    "fmt": null,
+    "note": null,
+    "source": "ledger L949: we conduct a large-scale, data-driven analysis of 2,170 publicly available Jev projects collected from GitHub as of September 22, 2026",
+    "value": 2170
   },
   "lit.ma2026jevstar.combinedFullGameCost": {
     "fmt": null,
@@ -104091,13 +104127,13 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 5
+    "value": 6
   },
   "pos.cost.full": {
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 6
+    "value": 7
   },
   "pos.cost.partial": {
     "fmt": "d",
@@ -104109,7 +104145,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 4
+    "value": 5
   },
   "pos.families.partial": {
     "fmt": "d",
@@ -104121,7 +104157,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 5
+    "value": 6
   },
   "pos.identical.partial": {
     "fmt": "d",
@@ -104133,7 +104169,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 12
+    "value": 13
   },
   "pos.llm.partial": {
     "fmt": "d",
@@ -104157,7 +104193,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 16
+    "value": 17
   },
   "pos.outofscope.full": {
     "fmt": "d",
@@ -104169,7 +104205,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 3
+    "value": 4
   },
   "pos.selective.full": {
     "fmt": "d",
@@ -104181,7 +104217,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 3
+    "value": 4
   },
   "pos.stress.full": {
     "fmt": "d",
@@ -104193,7 +104229,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 9
+    "value": 10
   },
   "pos.trained.full": {
     "fmt": "d",
@@ -104217,7 +104253,7 @@
     "fmt": "d",
     "note": null,
     "source": "results/positioning_counts.json (benchmark/eaai/positioning_evidence.csv)",
-    "value": 3
+    "value": 4
   },
   "rc.alpha": {
     "fmt": ".0f",

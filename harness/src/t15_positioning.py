@@ -38,7 +38,7 @@ TEX_PATH = os.path.join(BASE, "benchmark", "eaai", "manuscript", "tables", "t15_
 GROUPS = [
     ("Multi-model evaluations", [
         "ibrahim2026evaluating", "sun2026typesafe", "typeddecisions2026dataset",
-        "robbalian2026rev", "web_decision_index"]),
+        "robbalian2026rev", "web_decision_index", "deusser2026evaluating"]),
     ("Single decision model against language models", [
         "li2026jevasajudge", "huang2026can", "cheng2026thisthatmodel", "ren2026openjev"]),
     ("Applications", [
