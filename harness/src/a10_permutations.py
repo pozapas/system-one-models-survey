@@ -1,5 +1,5 @@
 """E3 robustness: three distractor sequences for the cardinality sweep, and this-that's option
-rendering (revision, reviewer points 1 and 2).
+rendering.
 
 Permutations. p1 is the original sweep (d2_k5, d2_k20, d2_k50, d2_k150); p2 and p3 are the
 conditions d2_k{K}_p2 and d2_k{K}_p3 written by s00c_freeze_permutations.py, the same 600

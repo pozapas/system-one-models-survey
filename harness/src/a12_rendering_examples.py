@@ -1,6 +1,6 @@
 """The exact text and token sequence each model family reads for the same frozen request.
 
-Revision, reviewer point 2. Every model receives byte-identical wire requests (state plus
+Every model receives byte-identical wire requests (state plus
 questions, colab/inputs/*.jsonl), but each model's own code turns that request into its own
 token sequence. This script runs each project's own rendering code (no weights) at the pinned
 revision on two example requests and records the decoded text, the token ids and the length:
@@ -24,7 +24,7 @@ Families and the rendering function used (all at the revision the answers record
 
 Output: results/rendering_examples.json
 
-Usage: python a12_rendering_examples.py   (HF_HOME defaults to D:/p4env/hf; downloads only
+Usage: python a12_rendering_examples.py   (HF_HOME defaults to ~/.cache/huggingface; downloads only
 tokenizer and code files that are not cached yet)
 """
 import json
@@ -32,7 +32,7 @@ import os
 import sys
 import traceback
 
-os.environ.setdefault("HF_HOME", "D:/p4env/hf")
+os.environ.setdefault("HF_HOME", os.path.expanduser("~/.cache/huggingface"))
 os.environ.setdefault("TORCHDYNAMO_DISABLE", "1")
 os.environ.setdefault("TORCH_COMPILE_DISABLE", "1")
 os.environ.setdefault("USE_TF", "0")

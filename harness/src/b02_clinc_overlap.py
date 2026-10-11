@@ -41,9 +41,9 @@ import numpy as np
 
 import common as C
 
-os.environ.setdefault("HF_HOME", "D:/p4env/hf")
+os.environ.setdefault("HF_HOME", os.path.expanduser("~/.cache/huggingface"))
 CLINC_COMMIT = "828f8093932c8fe6ca7936c3d2e52903b1c523de"
-CACHE = "D:/p4env/cache/clinc_" + CLINC_COMMIT[:8]
+CACHE = os.path.expanduser("~/.cache/decision-benchmark/clinc_") + CLINC_COMMIT[:8]
 VARIANTS = ["data_full", "data_small", "data_imbalanced", "data_oos_plus"]
 DECIDER_REPO_SHA = "a5120cce45b9ff70964fac54ea6e8c1ac5b08c7f"   # Mapika/decider main, read 2026-09-25
 EVAL_CAP, SEED = 1500, 0

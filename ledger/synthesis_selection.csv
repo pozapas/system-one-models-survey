@@ -29,7 +29,7 @@ r1Gap,L519,context,yes,LocalLLaMA typed-decisions; ModernBERT-base specialist fi
 r1Readout,L417,context,yes,Yu et al. within-backbone contrast; typed decision head vs answer SFT on the same 4B backbone (macro accuracy points),yuHeadVsSft,accuracy,,value,,,,comparator_value,^([\d.]+) \(,100*(a-b),,
 r1Readout,L249,context,yes,Ren et al. matched ablation; typed readout vs label-token generative fine-tune on the same Qwen3 backbone (AUROC points),renReadout,AUROC,,value,,,,comparator_value,,100*(b-a),,
 r2JevEce,L006,estimate,yes,Ibrahim & Zaki Jev median evaluation-task ECE; primary 15 equal-width bins; recalibrated value is the scalar temperature fit on pilot tasks (transferred fit),ibrJev,equal-width 15 bins,primary,value,,raw,L900,value,,a,,transferred (pilot tasks to evaluation tasks)
-r2JevEce,L079,estimate,yes,Rafe & Das pooled raw ECE with exact discrete-grid estimator; Platt on held-out split (in-domain fit); survey authors' own paper,rafeJevPlatt,exact discrete-grid (unbinned),primary,value,,raw,L080,value,,a,,in-domain (held-out split of the same corpus)
+r2JevEce,L079,estimate,yes,Rafe & Das pooled raw ECE with exact discrete-grid estimator; Platt on held-out split (in-domain fit),rafeJevPlatt,exact discrete-grid (unbinned),primary,value,,raw,L080,value,,a,,in-domain (held-out split of the same corpus)
 r2JevEce,L079,context,yes,Rafe & Das isotonic recalibration of the same raw record (second method; not a second study value),rafeJevIsotonic,exact discrete-grid (unbinned),,value,,raw,L081,value,,a,,in-domain (held-out split of the same corpus)
 r2JevEce,L487,estimate,yes,Archer Hume 1200-item MMLU sample; 10 equal-width bins on probabilities rounded to 2 decimals,archerJev,equal-width 10 bins,primary,value,,raw,,,,a,,
 r2JevEce,L515,estimate,yes,LocalLLaMA typed-decisions test split; ECE against LLM-teacher soft gold; binning not stated,localllamaJev,not specified,primary,value,,raw,,,,a,,
@@ -106,7 +106,7 @@ gapJevBest,L001,estimate,yes,Ibrahim & Zaki median macro-F1 deficit to the per-t
 gapJevBest,L066,estimate,yes,Li et al. RewardBench (preference) human-adjudicated accuracy difference vs GPT-6 Astra; n in the ledger is the number of adjudicated disagreements,liJudgeRewardBench,accuracy,primary,value,,,,,,a,,
 gapJevBest,L067,estimate,yes,Li et al. JudgeBench (difficult correctness) human-adjudicated accuracy difference vs GPT-6 Astra,liJudgeJudgeBench,accuracy,primary,value,,,,,,a,,
 gapJevBest,L068,estimate,yes,Li et al. HaluEval (grounded factuality) human-adjudicated accuracy difference vs GPT-6 Astra,liJudgeHaluEval,accuracy,primary,value,,,,,,a,,
-gapJevBest,L089,estimate,yes,Rafe & Das paired F1 difference against the best frontier arm (Claude Fable 5.1); survey authors' own paper,rafeGap,F1,primary,value,,,,,,-100*a,,
+gapJevBest,L089,estimate,yes,Rafe & Das paired F1 difference against the best frontier arm (Claude Fable 5.1),rafeGap,F1,primary,value,,,,,,-100*a,,
 gapJevBest,L101,estimate,yes,Zhang et al. ContractNLI official test; Jev vs the most accurate model (Gemini 3.1 Pro Preview),zhangGap,accuracy,primary,value,,,,comparator_value,,b-a,,
 gapJevBest,L400,estimate,yes,Deng et al. semantic accuracy; Jev ties the frontier configurations at 100 (ceiling),dengGap,accuracy,primary,value,,,,comparator_value,,a-b,,
 gapJevBest,L451,estimate,yes,KITE SocSci210 marginal distance to human responses; Jev vs GPT-6 Astra (lower is better; sign oriented so negative means Jev worse),kiteGap,distance,primary,value,^([\d.]+) /,,,value,/ ([\d.]+) \(,b-a,,

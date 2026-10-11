@@ -24,7 +24,7 @@ COMPARATORS_2 = ["comparator-open2", "comparator-open2-ll",
                  "comparator-open2-awq", "comparator-open2-awq-ll"]
 COMPARATORS_2_B1 = ["comparator-open2-b1", "comparator-open2-ll-b1",
                     "comparator-open2-awq-b1", "comparator-open2-awq-ll-b1"]
-# Fourth revision comparators (build_revision4_notebook.py): Gemma-4-31B and Mistral-Small-24B,
+# Fourth-round comparators: Gemma-4-31B and Mistral-Small-24B,
 # each read through stated probabilities and option-key likelihoods, and Qwen3.6-27B with its
 # thinking mode on. They join the second-revision list so every analysis that adds extra
 # comparators picks them up; their batch-1 latency samples join the batch-1 list.

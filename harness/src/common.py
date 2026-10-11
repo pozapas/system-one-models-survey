@@ -1,6 +1,6 @@
 """Shared paths, metrics and calibration helpers for the benchmark.
 
-Adapted from paper3/src/common.py. Every analysis script imports this first,
+Every analysis script imports this first,
 because it sets the BLAS thread limits before numpy is imported.
 """
 import os
@@ -14,7 +14,7 @@ import pickle
 
 import numpy as np
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # paper4/shared/
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repository root
 BASE = os.path.dirname(os.path.dirname(ROOT))                         # project root
 DATA = os.path.join(ROOT, "data")
 INPUTS = os.path.join(ROOT, "colab", "inputs")
@@ -45,7 +45,7 @@ def dump(obj, name):
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as fh:
         json.dump(obj, fh, indent=2, sort_keys=True, default=_jsonable)
-    # OneDrive can hold the target briefly while it syncs; retry instead of failing
+    # A synced folder can hold the target briefly; retry instead of failing
     import time
     for attempt in range(30):
         try:

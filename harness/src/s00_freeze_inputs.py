@@ -277,7 +277,7 @@ def d3_all(manifest):
 
 
 def main():
-    os.environ.setdefault("HF_HOME", "D:/p4env/hf")
+    os.environ.setdefault("HF_HOME", os.path.expanduser("~/.cache/huggingface"))
     manifest = {}
     native = d1_rows("test", False, "d1_native")
     write("d1_native", native, manifest)

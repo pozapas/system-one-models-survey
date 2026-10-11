@@ -5,10 +5,7 @@ snapshot the benchmark used and at the current head, with verbatim quotes, and s
 whether the companion repository may ship the text or should ship reconstruction scripts.
 For D1 it reads the dataset card YAML at every commit of LocalLLaMA/typed-decisions.
 
-Part (b) queries the arXiv API for the 2026 preprints cited in the manuscript and compares
-title and author list with refs.bib (read only, never edited).
-
-Outputs: results/licenses_audit.json, results/preprint_metadata.json
+Output: results/licenses_audit.json
 """
 import datetime
 import html
@@ -21,7 +18,6 @@ import requests
 
 import common as C
 
-os.environ.setdefault("HF_HOME", "D:/p4env/hf")
 D1_REPO = "LocalLLaMA/typed-decisions"
 D1_REV = "c76749ec58bd8c3d2ea706b31c333a9059c38f90"
 CLINC_COMMIT = "828f8093932c8fe6ca7936c3d2e52903b1c523de"
@@ -194,122 +190,6 @@ def d3_audit():
 
 # ------------------------------------------------------------------ (b) arXiv
 
-BIB_KEYS = ["ibrahim2026evaluating", "li2026jevasajudge", "huang2026can", "ren2026openjev",
-            "cheng2026thisthatmodel", "zhang2026same", "deng2026jev", "wu2026reflex", "li2026fast",
-            "li2026replacing", "jiang2026jevmem", "ma2026jevstar", "yu2026visual",
-            "robitza2026jevqa", "sun2026typesafe"]
-BIB = os.path.join(C.BASE, "paper4", "benchmark", "eaai", "manuscript", "refs.bib")
-
-
-def bib_entries():
-    path = BIB if os.path.exists(BIB) else os.path.join(os.path.dirname(C.ROOT), "benchmark",
-                                                        "eaai", "manuscript", "refs.bib")
-    t = open(path, encoding="utf-8").read()
-    out = {}
-    for k in BIB_KEYS:
-        m = re.search(r"@\w+\{" + k + r",(.*?)\n\}", t, re.S)
-        if not m:
-            out[k] = None
-            continue
-        body = m.group(1)
-        f = lambda name: (re.search(name + r"\s*=\s*\{(.*)\},?\s*$", body, re.M) or [None, None])[1]
-        out[k] = {"title": f("title"), "author": f("author"), "eprint": f("eprint")}
-    return out, path
-
-
-def strip_tex(s):
-    return re.sub(r"\s+", " ", re.sub(r"[{}]", "", s or "")).strip()
-
-
-def bib_authors(s):
-    out = []
-    for a in strip_tex(s).split(" and "):
-        a = a.strip()
-        if "," in a:
-            last, first = [x.strip() for x in a.split(",", 1)]
-            out.append(f"{first} {last}")
-        else:
-            out.append(a)
-    return out
-
-
-def arxiv_query(ids):
-    """One request per id, three seconds apart; the API refused a single comma list with 406."""
-    import time
-    out = {}
-    for aid in ids:
-        for attempt in range(5):
-            r = get("https://export.arxiv.org/api/query?id_list=" + aid,
-                    headers={"Accept": "application/atom+xml"})
-            if r.ok:
-                break
-            time.sleep(5 * (attempt + 1))
-        r.raise_for_status()
-        out.update(_parse_feed(r.text))
-        time.sleep(3)
-    return out
-
-
-def _parse_feed(text):
-    ns = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
-    root = ET.fromstring(text)
-    out = {}
-    for e in root.findall("a:entry", ns):
-        aid = e.find("a:id", ns).text.rsplit("/", 1)[-1]
-        base, ver = aid.rsplit("v", 1)
-        out[base] = {"id_version": aid, "version": int(ver),
-                     "title": re.sub(r"\s+", " ", e.find("a:title", ns).text).strip(),
-                     "authors": [a.find("a:name", ns).text.strip() for a in e.findall("a:author", ns)],
-                     "published": e.find("a:published", ns).text,
-                     "updated": e.find("a:updated", ns).text,
-                     "primary_category": e.find("x:primary_category", ns).attrib.get("term")}
-    return out
-
-
-def norm_title(s):
-    return re.sub(r"[^a-z0-9]+", " ", strip_tex(s).lower()).strip()
-
-
-def surname(n):
-    return re.sub(r"[^a-z]", "", n.split()[-1].lower()) if n.split() else ""
-
-
-def preprints():
-    bib, path = bib_entries()
-    ids = {k: v["eprint"] for k, v in bib.items() if v and v["eprint"]}
-    ax = arxiv_query(sorted(set(ids.values())))
-    rows = {}
-    for k in BIB_KEYS:
-        b = bib.get(k)
-        if not b:
-            rows[k] = {"status": "not in refs.bib"}
-            continue
-        a = ax.get(b["eprint"])
-        if not a:
-            rows[k] = {"eprint": b["eprint"], "status": "not returned by the arXiv API"}
-            continue
-        ba = bib_authors(b["author"])
-        title_ok = norm_title(b["title"]) == norm_title(a["title"])
-        auth_ok = [surname(x) for x in ba] == [surname(x) for x in a["authors"]]
-        diffs = []
-        if not title_ok:
-            diffs.append("title differs")
-        if not auth_ok:
-            diffs.append(f"author list differs: bib has {len(ba)}, arXiv has {len(a['authors'])}")
-        rows[k] = {"eprint": b["eprint"], "bib_title": strip_tex(b["title"]),
-                   "bib_authors": ba, "arxiv": a, "title_matches": title_ok,
-                   "authors_match": auth_ok, "needs_update": bool(diffs), "differences": diffs}
-    return {"_doc": ("Preprint metadata from the arXiv API (export.arxiv.org/api/query), read "
-                     f"{TODAY} by shared/src/b03_licenses.py, compared with refs.bib ({os.path.relpath(path, C.BASE)}), "
-                     "which is not edited. entries[bibkey].arxiv gives the current version, "
-                     "title, authors, first-version date (published) and latest-version date "
-                     "(updated); title_matches ignores case, punctuation and TeX braces; "
-                     "authors_match compares surnames in order; differences lists what refs.bib "
-                     "should change."),
-            "queried": TODAY, "entries": rows,
-            "needs_update": [k for k, v in rows.items() if v.get("needs_update")]}
-
-
 def main():
     d1 = d1_audit()
     print("D1", d1["license_at_snapshot"], d1["license_current"], "any CC BY:", d1["any_revision_cc_by"])
@@ -322,7 +202,7 @@ def main():
                     "YAML license field of the D1 dataset card at every repository commit."),
            "datasets": [], "d1_license_history": d1.pop("license_history"),
            "data_licenses_md_check": {
-               "file": "companion/DATA_LICENSES.md",
+               "file": "DATA_LICENSES.md",
                "claim": "Apache-2.0 on the current dataset card (CC BY 4.0 at the revision used)",
                "verdict": "incorrect: apache-2.0 at the revision used (c76749ec) and at every "
                           "other revision"}}
@@ -339,10 +219,6 @@ def main():
                       "shipped with attribution; for D3 the repository should ship the "
                       "reconstruction script and item ids rather than the text.")
     C.dump(lic, "licenses_audit.json")
-    pp = preprints()
-    C.dump(pp, "preprint_metadata.json")
-    for k, v in pp["entries"].items():
-        print(k, v.get("eprint"), v.get("differences"), (v.get("arxiv") or {}).get("id_version"))
 
 
 if __name__ == "__main__":

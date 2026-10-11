@@ -1,6 +1,6 @@
 # Evidence ledger protocol, version 1.0 (frozen 2026-09-24)
 
-Maintainers: the survey authors. Source documents: `Paper4_Survey_Concept_Proposal_System_One_Models.md` §6 and `Paper4_Outline_Survey_and_Benchmark_System_One_Models.md` §7 and Appendix B.
+Maintainers: the survey authors.
 
 ## Cutoff
 
@@ -19,7 +19,7 @@ Include any study that reports a measured quantity for a typed probabilistic dec
 
 ## Extraction
 
-For each included study, the ledger holds one row per (study, model, task, metric) in `ledger.csv`. The row fields are listed in the outline, Appendix B. **Every extracted number carries a verbatim excerpt and a location (page, section, table or figure) from the primary full text.** The proposal's seed numbers are hypotheses to check, not values to copy. Any disagreement goes into `seed_discrepancies.csv`.
+For each included study, the ledger holds one row per (study, model, task, metric) in `ledger.csv`. The row fields are listed in `SCHEMA.md`. **Every extracted number carries a verbatim excerpt and a location (page, section, table or figure) from the primary full text.** The proposal's seed numbers are hypotheses to check, not values to copy. Any disagreement goes into `seed_discrepancies.csv`.
 
 ## Risk of bias
 

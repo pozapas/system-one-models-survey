@@ -43,7 +43,7 @@ the counts are recorded. D1 training states exclude d1_calib and every d1_neutra
 
 Stages (default all): d2bge, d2bert (the two CLINC models), d1, nli, latency, eval.
     python b01_baselines.py [stage ...]
-Intermediate arrays and checkpoints go to D:/p4env/b01cache, outside the synced folder.
+Intermediate arrays and checkpoints go to ~/.cache/decision-benchmark/b01cache.
 """
 import json
 import os
@@ -54,12 +54,12 @@ import numpy as np
 
 import common as C
 
-os.environ.setdefault("HF_HOME", "D:/p4env/hf")
+os.environ.setdefault("HF_HOME", os.path.expanduser("~/.cache/huggingface"))
 import bench                      # noqa: E402
 import metrics as M               # noqa: E402
 
-CACHE = "D:/p4env/b01cache"
-CLINC_FILE = "D:/p4env/cache/clinc_828f8093/data_oos_plus.json"
+CACHE = os.path.expanduser("~/.cache/decision-benchmark/b01cache")
+CLINC_FILE = os.path.expanduser("~/.cache/decision-benchmark/clinc_828f8093/data_oos_plus.json")
 CLINC_COMMIT = "828f8093932c8fe6ca7936c3d2e52903b1c523de"
 D1_REPO, D1_REV = "LocalLLaMA/typed-decisions", "c76749ec58bd8c3d2ea706b31c333a9059c38f90"
 BERT = "bert-base-uncased"

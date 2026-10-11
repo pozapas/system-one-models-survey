@@ -125,7 +125,7 @@
   ],
   "data_licenses_md_check": {
     "claim": "Apache-2.0 on the current dataset card (CC BY 4.0 at the revision used)",
-    "file": "companion/DATA_LICENSES.md",
+    "file": "DATA_LICENSES.md",
     "verdict": "incorrect: apache-2.0 at the revision used (c76749ec) and at every other revision"
   },
   "datasets": [
@@ -133,7 +133,7 @@
       "any_revision_cc_by": false,
       "current_head": "f7a2487edd7a043a5441a5e9ccc7fe5ddbd9ebe8",
       "dataset": "D1 LocalLLaMA/typed-decisions",
-      "finding": "the dataset card declares apache-2.0 at the pinned revision and at every revision of the repository; no revision declares CC BY 4.0. The manuscript's Apache-2.0 is correct and companion/DATA_LICENSES.md, which says CC BY 4.0 at the revision used, is wrong",
+      "finding": "the dataset card declares apache-2.0 at the pinned revision and at every revision of the repository; no revision declares CC BY 4.0. The manuscript's Apache-2.0 is correct and DATA_LICENSES.md, which says CC BY 4.0 at the revision used, is wrong",
       "license_at_snapshot": "apache-2.0",
       "license_current": "apache-2.0",
       "license_files_in_repo_at_snapshot": [],

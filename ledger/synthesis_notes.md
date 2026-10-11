@@ -65,7 +65,7 @@ Every number carries its `syn.` key or ledger `value_key`. Independence is count
 
 Li et al. show confidence still orders errors: 47.7% accuracy at low confidence [syn.r2CbwLiLowConf] against 95.8% at high [syn.r2CbwLiHighConf].
 
-**RoB.** The low extreme is the authors' own paper (some concerns). guo2026just and ibrahim2026evaluating are high through D5.
+**RoB.** The low extreme is rafe2026calibrated (some concerns). guo2026just and ibrahim2026evaluating are high through D5.
 
 **Proposed wording:** "Calibration belongs to the model and the task together. Raw error varies by a factor of 7.3 [syn.r2JevEceMaxOverMin] across studies. Binning does not explain this, but the estimand (pooled against per-task) explains much of it. In the records available, in-domain recalibration gave the largest cuts, and transferred fits ranged from substantial to negligible. It is no durable advantage over LLMs given one temperature."
 
@@ -89,7 +89,7 @@ Li et al. show confidence still orders errors: 47.7% accuracy at low confidence 
 
 **Kept out of the estimates.**
 - KITE's fixed anchors, on 0.017 of states [syn.r3StrongFracKiteEpstein], use a different design.
-- Paper 1's review budget of 0.8% [rafe2026calibrated.reviewBudgetH90PooledHeldOut] is a precision-targeted deferral budget, not a cascade (contradicted_claims 19).
+- The review budget of rafe2026calibrated of 0.8% [rafe2026calibrated.reviewBudgetH90PooledHeldOut] is a precision-targeted deferral budget, not a cascade (contradicted_claims 19).
 
 **RoB.** Li and Ibrahim are high only through D5. REFLEX has some concerns.
 
@@ -121,7 +121,6 @@ Li et al. show confidence still orders errors: 47.7% accuracy at low confidence 
 - 4 [syn.r2JevEceBinNotSpecifiedNStudies] of 7 [syn.r2JevEceNStudies] Jev ECE studies omit the binning.
 - No cascade study shares a cost definition with another.
 - No study tracks behaviour across Jev versions.
-- Paper 3's inverted top-bin confidence is not in the ledger.
 
 **Fewer than 3 clusters (range only).**
 - R1: the parity, task-outcome and model-or-synthetic strata, the AUROC comparison (Sun), and the readout contrasts.

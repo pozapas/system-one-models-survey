@@ -1,4 +1,4 @@
-"""Laya's option token budget on the cardinality conditions (revision, reviewer point 3).
+"""Laya's option token budget on the cardinality conditions.
 
 Laya builds one encoder sequence per question,
 
@@ -35,7 +35,7 @@ import statistics as st
 import common as C
 
 LAYA_REV = "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851"
-HF = os.environ.get("HF_HOME", "D:/p4env/hf")
+HF = os.environ.get("HF_HOME", os.path.expanduser("~/.cache/huggingface"))
 SNAP = os.path.join(HF, "hub", "models--convaiinnovations--laya", "snapshots", LAYA_REV)
 MODELS = {"laya-en": SNAP, "laya-ml": os.path.join(SNAP, "multilingual")}
 KS = [5, 20, 50, 150]

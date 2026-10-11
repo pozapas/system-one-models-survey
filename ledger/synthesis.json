@@ -1218,7 +1218,7 @@
     "syn.gapJevBestRafeGap": {
       "text": "-5.9",
       "source": "shared/ledger/synthesis.json",
-      "note": "rafe2026calibrated: Rafe & Das paired F1 difference against the best frontier arm (Claude Fable 5.1); survey authors' own paper (F1; ref human_adjudicated; RoB some_concerns; role estimate); ledger L089"
+      "note": "rafe2026calibrated: Rafe & Das paired F1 difference against the best frontier arm (Claude Fable 5.1) (F1; ref human_adjudicated; RoB some_concerns; role estimate); ledger L089"
     },
     "syn.gapJevBestZhangGap": {
       "text": "-5.8",

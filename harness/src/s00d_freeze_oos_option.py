@@ -1,4 +1,4 @@
-"""The intent benchmark with an explicit out-of-scope option (third revision, reviewer M5).
+"""The intent benchmark with an explicit out-of-scope option.
 
 d2_k150 asks the 600 in-scope and 200 out-of-scope CLINC-150 items with the 150 intents as
 options, so a decision model has no answer that says the request fits none of them, while the

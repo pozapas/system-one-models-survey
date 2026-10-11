@@ -14,8 +14,7 @@ This folder holds the same-harness evaluation of the benchmark paper, *Benchmark
 | `src/a09`–`a13_*.py` | The revision analyses: clustered and Holm-corrected paired tests, out-of-fold cascades with itemwise costs, distractor permutations, the Laya token budget, the run manifest and the rendering comparison. |
 | `src/b01`–`b03_*.py` | Conventional baselines (trained CLINC-150 and typed-decisions classifiers, zero-shot NLI), the CLINC-150 exposure audit and the license audit. |
 | `src/s00c_freeze_permutations.py` | Freezes the two extra distractor permutations of the D2 cardinality conditions. |
-| `src/f07`–`f12_*.py`, `src/t01_tables.py` | Figures and tables. |
-| `colab/run_open.ipynb`, `colab/run_comparator.ipynb`, `colab/run_revision.ipynb` | The Colab notebooks that ran the open models, the comparator and the revision runs on an NVIDIA L4. |
+| `colab/*.ipynb` | The self-contained Colab notebooks that ran the open models, the comparators and the later rounds (NVIDIA L4 and A100). |
 | `colab/cards/` | The model and dataset cards as read on 2026-09-24. |
 | `inputs/*.jsonl.gz` | The frozen D1 and D2 requests. `manifest.json` lists the digest of each uncompressed file, D3 included. |
 | `inputs/d3_item_ids.json` | The item identifiers of every D3 condition. The D3 texts are not redistributed, and step 1 below rebuilds them. |
@@ -33,4 +32,4 @@ This folder holds the same-harness evaluation of the benchmark paper, *Benchmark
    python src/harness.py --model jev --cond all --rep 1
    ```
    Running the hosted model needs `TYPESAFE_API_KEY`. For the open models, use the notebooks.
-3. Run `a01` to `a08`, then `collect_numbers.py`, then the figure and table scripts.
+3. Run the analyses `a01` to `a21` and `b01` to `b07`, then `collect_numbers.py`, which gathers every reported number into `results/analysis/numbers.json` with its source.

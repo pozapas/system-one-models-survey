@@ -39,7 +39,7 @@ These are working notes for survey section 7.2, not manuscript prose. The per-st
 
 ## Pattern by evidence role
 
-- **independent_evaluation (8): 5 some concerns, 3 high.** All 3 highs come from D5, public benchmarks: ibrahim, li-judge and zhang. This group has the best D1, D2 and D4 profiles. Its weak point is test-set exposure. The survey authors' own paper (rafe2026calibrated) is graded some concerns. It has four unclears (D1 to D4) and one low (D5). There are no highs, but it gets no domain-level credit that another study would not get.
+- **independent_evaluation (8): 5 some concerns, 3 high.** All 3 highs come from D5, public benchmarks: ibrahim, li-judge and zhang. This group has the best D1, D2 and D4 profiles. Its weak point is test-set exposure. rafe2026calibrated is graded some concerns. It has four unclears (D1 to D4) and one low (D5). There are no highs, but it gets no domain-level credit that another study would not get.
 - **method_paper_with_evaluation (9): 6 some concerns, 3 high.**
   - The 3 highs are cheng, jiang and yu.
   - This group holds 3 of the 8 D4 highs. cheng trains its model on the task family, ren tunes its recipe on the test items, and in ma the system comparison is confounded by concurrent interface changes.

@@ -1,4 +1,4 @@
-"""Two further distractor sequences for the cardinality sweep (revision, reviewer point 1).
+"""Two further distractor sequences for the cardinality sweep.
 
 The original sweep (d2_k5, d2_k20, d2_k50, d2_k150, written by s00_freeze_inputs.d2_all) asks
 the same 600 in-scope CLINC-150 items with option sets that are nested prefixes of ONE fixed
