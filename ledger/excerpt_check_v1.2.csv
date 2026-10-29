@@ -157,7 +157,7 @@ L1224,lin2026pact,2609.35865,ok,"18 | 82.1 | 84.0 | -1.9 | 25/31 | 0.504 | [-6.5
 L1225,lin2026pact,2609.35865,ok,"18 | 82.1 | 75.6 | +6.5 | 39/18 | 0.008 | [+1.9, +11.1]"
 L1226,lin2026pact,2609.35865,ok,PACT (ours) | 84.6 \pm 2.8 | 73.3 \pm 6.2 | 0.560 \pm 0.088 | 0.251 \pm 0.026 | 10.8 \pm 1.7 | 7.9 \pm 1.1 | 3.95 \pm 1.03 | 0.232 \pm 0.120
 L1227,lin2026pact,2609.35865,ok,"Properly reproduced with checkpoint selection, the published recipe is a strong accuracy baseline, and it is also the best-calibrated run (ECET 5.4% vs. 7.9% for PACT)."
-L1228,lin2026pact,2609.35865,ok,halves the seed-to-seed standard deviation (6.0\to2.8 pp) and lowers NLL by 26% and ECE by 25%.
+L1228,lin2026pact,2609.35865,ok,"TABLE III: Holdout results, single-pass decoding (K{=}1), mean \pm s.d. over seeds 17/18/19 (324 items, 162 pairs). Accuracy, pair accuracy, ECE and AURC in %. ECET is after the contextual temperature T(x) (not fitted for the base model). Shaded: best mean per column. | Run | Acc. \uparrow | Pair ac"
 L1229,lin2026pact,2609.35865,ok,PACT (ours) | 84.6 \pm 2.8 | 73.3 \pm 6.2 | 0.560 \pm 0.088 | 0.251 \pm 0.026 | 10.8 \pm 1.7 | 7.9 \pm 1.1 | 3.95 \pm 1.03 | 0.232 \pm 0.120
 L1230,lin2026pact,2609.35865,ok,"PACT has the lowest TV (5.6% vs. 6.9% for Nimble recipe, 7.4% for CE-only and 12.0% for the base model) and the lowest flip rate (9.8% vs. 13.8%, 12.1% and 23.5%)."
 L1231,lin2026pact,2609.35865,ok,the lowest Score MAE of all multi-seed arms (0.232 vs. 0.311 and 0.322)
@@ -169,7 +169,7 @@ L1236,li2026beyond,2609.33209,ok,"Qwen3.8-27B’s verbalized readout violates th
 L1237,li2026beyond,2609.33209,ok,"Its two repeats of identical requests differ by 0.012 per answer on average and are identical in 39.1% of cases, which gives a noise floor of \mathrm{NF}=0.013 (Eq. 3)."
 L1238,li2026beyond,2609.33209,ok,"Confidence-matched pairs | 140 (253) | 0.028 | 0.257 | -0.229 [-0.264,-0.195]"
 L1239,li2026beyond,2609.33209,ok,"Double-negation labels removed | 160 (320) | 0.057 | 0.385 | -0.328 [-0.360,-0.297]"
-L1240,li2026beyond,2609.33209,ok,"yet it answers a statement and its negation on the same side of 0.5 in 57 pairs, against 32 for Jev."
+L1240,li2026beyond,2609.33209,ok,"Table 1: Negation complementarity. Item means with 95% bootstrap CIs (160 items, 480 pairs). The same-side rate is the share of pairs answered on the same side of 0.5. | Jev (native) | 0.064 [0.055,0.072] | 0.080 [0.068,0.092] | 0.036 [0.026,0.047] | +0.054 [0.045,0.063] | 0.067 [0.046,0.090]"
 L1241,li2026beyond,2609.33209,ok,"Asked separately whether each of the three labels applies, Jev gives probabilities that sum to 1.14 on average and to more than one on 159 of 160 items."
 L1242,li2026beyond,2609.33209,ok,"Partition additivity | |\sum_{k}s_{k}-1| | 0.141 [0.123,0.159] | 0.319 [0.288,0.352] | -0.178 [-0.214,-0.144]"
 L1243,li2026beyond,2609.33209,ok,"Cross-format | |s_{k}-c_{k}| | 0.091 [0.085,0.098] | 0.131 [0.120,0.142] | -0.040 [-0.050,-0.030]"
@@ -182,7 +182,7 @@ L1249,shi2026multi,2609.33282,ok,"On PluriHarms, our model obtains the lowest In
 L1250,shi2026multi,2609.33282,ok,"On PluriHarms (Table 1), its Aggregated MAE is 0.2278, compared with 0.228 for the strongest general-model baseline, GPT-5.4."
 L1251,shi2026multi,2609.33282,ok,"Digit SFT reduces Individual MAE from 0.2441 to 0.1960 and Aggregated MAE from 0.2962 to 0.2341, establishing a useful initialization for numerical scoring. Adding BPO after SFT further reduces the two MAEs to 0.1659 and 0.2278"
 L1252,shi2026multi,2609.33282,ok,GT label 0.1640\pm 0.0078 0.2298\pm 0.0127
-L1253,shi2026multi,2609.33282,ok,"Arousal MAE is 15.7% lower than the best displayed baseline, GPT-5.6-sol with T+P inputs (0.8929)."
+L1253,shi2026multi,2609.33282,ok,"On iNews (Table 2), the five-judge Elo students with T+P achieve A/D/V MAEs of 0.7530, 0.6960, and 0.9361."
 L1254,shi2026multi,2609.33282,ok,Our method obtains an Arousal exact-match accuracy of 42.31% and accuracy within one rating point of 85.84%.
 L1255,shi2026multi,2609.33282,ok,"T+P Dominance MAE is 0.6960, compared with 0.6995 for GPT-5.4 with I+P inputs."
 L1256,shi2026multi,2609.33282,ok,"On iNews (Table 2), the five-judge Elo students with T+P achieve A/D/V MAEs of 0.7530, 0.6960, and 0.9361."
@@ -208,7 +208,7 @@ L1275,liu2026evaluating,2609.33401,ok,"On Jev’s 1,612 valid WAInjectBench outp
 L1276,liu2026evaluating,2609.33401,ok,"This development fit makes probabilities more extreme, increasing the penalty for high-confidence test errors and raising Jev’s test NLL from 0.481 to 2.163."
 L1277,liu2026evaluating,2609.33401,ok,"Jev’s 7.63% R-Judge coverage consists of 17 blocks and one allowance, so only 0.42% of inputs proceed without review."
 L1278,liu2026evaluating,2609.33401,ok,"On R-Judge, independent thresholds raise Jev’s test coverage from 7.63% to 47.03% while meeting confirmation and test limits. Both policies allow just one input, while independent thresholds block 110."
-L1279,liu2026evaluating,2609.33401,ok,"With a 1% miss limit during selection, symmetric policies send every WAInjectBench input for review with Jev, Decider, GPT-4.1, and Qwen3-8B (Table 13)."
+L1279,liu2026evaluating,2609.33401,ok,Table 13. Symmetric thresholds at the 1% selection miss limit. | Configuration | Coverage | Allowed | Misses | False blocks | Confirmation check | WAInjectBench | Jev | 0.00% | 0.00% | 0.00% | 0.00% | Pass
 L1280,liu2026evaluating,2609.33401,ok,"Jev’s R-Judge coverage rises from 7.63% to 72.88% at a 5% miss budget, but benign blocking reaches 5.41%, above its unchanged limit."
 L1281,liu2026evaluating,2609.33401,ok,"GPT-4.1 identifies 10 of the 167 WAInjectBench attacks missed by Jev but misses 33 that Jev correctly flags. Its own miss count is therefore 190, showing that correcting some Jev errors need not reduce the total misses."
 L1282,liu2026evaluating,2609.33401,ok,"Kimi corrects all 14 Jev misses without introducing another miss, but repeats all 42 Jev false positives and adds 54."
@@ -419,7 +419,7 @@ L1602,rezvani2026jevvibe,2609.34963,ok,"Its Top-3 accuracy reaches 0.766 compare
 L1603,rezvani2026jevvibe,2609.34963,ok,"Its Top-3 accuracy reaches 0.766 compared with 0.757 for GPT, while its Top-5 accuracy reaches 0.836 compared with 0.814."
 L1604,rezvani2026jevvibe,2609.34963,ok,"Their overall ranking quality is nearly identical, with MRR values of 0.628 for GPT and 0.624 for Jev."
 L1605,rezvani2026jevvibe,2609.34963,ok,"The strongest of these, Qwen2.5-Coder-32B-Instruct, achieves a Top-1 accuracy of 0.335 compared with 0.458 for Jev."
-L1606,rezvani2026jevvibe,2609.34963,ok,"Jev returns a valid typed classification for all 1,916 examples."
+L1606,rezvani2026jevvibe,2609.34963,ok,"TABLE I: CWE classification performance on the CyberSecEval Instruct benchmark. Top-k accuracy, Macro-F1, and MRR are computed over successfully evaluated predictions. Coverage is the fraction of all 1,916 examples for which a valid classification is obtained. | Model | Top-1 ↑ | Top-3 ↑ | Top-5 ↑ |"
 L1607,rezvani2026jevvibe,2609.34963,ok,"Jev reduces the estimated API cost of the benchmark experiment by approximately 55.9×, from $15.83 to $0.283."
 L1608,rezvani2026jevvibe,2609.34963,ok,"Jev reduces the estimated API cost of the benchmark experiment by approximately 55.9×, from $15.83 to $0.283."
 L1609,rezvani2026jevvibe,2609.34963,ok,"Median end-to-end request latency decreases from 1.531 s for GPT-5.6-Sol to 0.244 s for Jev, making Jev approximately 6.27× faster at the median."
@@ -448,11 +448,11 @@ L1631,loi2026argument,2609.35286,ok,"Its native scores occupied 2.00-2.37 out of
 L1632,zhang2026decide,2609.35293,ok,"Our system obtains 1.0645 micro RMSE, the lowest aggregate among the 14 teams that report all ten corpora and 0.0018 below PAI’s 1.0663 (Ruan et al., 2026)."
 L1633,zhang2026decide,2609.35293,ok,"Raw scores reach only 2.0731 RMSE even with nine demonstrations: nine rubric levels do not by themselves put the model’s scores on the gold scale, but a few coefficients per corpus do."
 L1634,zhang2026decide,2609.35293,ok,"Task 2 reaches 52.09 cF1, between the sixth and seventh of the 12 complete-coverage participants, and Task 3 reaches 44.06, between the fifth and sixth of 9."
-L1635,zhang2026decide,2609.35293,ok,Both exceed the fine-tuned Llama-3.3-70B and GPT-OSS-120B baselines.
+L1635,zhang2026decide,2609.35293,ok,Table 1: Test results and task adaptation. T1: micro RMSE over ten corpora; T2/T3: macro cF1 over eight corpora. | Ours | 488 coefficients on CPU | 1.0645 | 52.09 | 44.06
 L1636,zhang2026decide,2609.35293,ok,"Task 2 reaches 52.09 cF1, between the sixth and seventh of the 12 complete-coverage participants, and Task 3 reaches 44.06, between the fifth and sixth of 9."
-L1637,zhang2026decide,2609.35293,ok,Both exceed the fine-tuned Llama-3.3-70B and GPT-OSS-120B baselines.
+L1637,zhang2026decide,2609.35293,ok,Table 1: Test results and task adaptation. T1: micro RMSE over ten corpora; T2/T3: macro cF1 over eight corpora. | Ours | 488 coefficients on CPU | 1.0645 | 52.09 | 44.06
 L1638,zhang2026decide,2609.35293,ok,Table 2: Per-corpus test results. | Task 1: RMSE ↓ | Task 2: cF1 ↑ | Task 3: cF1 ↑ | Corpus | Ours | Best | Ours | Best | Exact VA | Ours | Best | Cat. acc. | Aggregate | 1.0645 | 1.0663c | 52.09 | 57.73c | +4.46 | 44.06 | 49.20g | 85.0
-L1639,zhang2026decide,2609.35293,ok,"Replacing the reranker, and all the evidence it combines, by the lattice pair judgment alone (with a threshold chosen on development data) loses 15.31 points: no single signal decides boundaries well; their learned combination does."
+L1639,zhang2026decide,2609.35293,ok,"Table 3: Component ablations on test (T1 micro over ten corpora, T2/T3 macro over eight). Each variant removes one component and refits the learned postprocessor on the data the final system uses. | Variant (test) | Score | Task 2, exact-match pair F1 ↑ | Full system | 56.55 | − reranker (pair judgm"
 L1640,zhang2026decide,2609.35293,ok,"Without the model’s category probabilities, training lookups and the prior reach only 38.03 cF1 (−6.03)."
 L1641,zhang2026decide,2609.35293,ok,"Gold VA on our extracted pairs would add only 4.46 cF1 to Task 2 (Table 2), so most of the error lies in which spans are extracted."
 L1642,porcedda2026jev,2609.35342,ok,"Jev-Noul and Jev-Score show a similar calibration, obtaining an average OVL of 0.918 and 0.886, respectively"
@@ -482,15 +482,15 @@ L1665,dai2026koa,2609.36115,ok,"Table 2: Text classification accuracy (%) on SST
 L1666,dai2026koa,2609.36115,ok,"Table 2: Text classification accuracy (%) on SST-2 (872 examples), Amazon Reviews (5k), a production intent-routing benchmark (587 utterances, with a label inventory that evolves over time), and a voice turn-taking / endpointing benchmark (353 examples, binary). | Model | SST-2 | Amazon | Intent Rou"
 L1667,dai2026koa,2609.36115,ok,"A useful control is the external commercial single-token system Jev/TypeSafe, which on the voice endpointing task serves at 0.55 s median (P95 0.69 s), essentially tied with Koa-decision (Figure 3)"
 L1668,dai2026koa,2609.36115,ok,"A useful control is the external commercial single-token system Jev/TypeSafe, which on the voice endpointing task serves at 0.55 s median (P95 0.69 s), essentially tied with Koa-decision (Figure 3)"
-L1669,dai2026koa,2609.36115,ok,"and well ahead of every frontier LLM, which must decode over the running dialogue transcript and lands at 0.98–2.88 s at the median."
+L1669,dai2026koa,2609.36115,ok,"A useful control is the external commercial single-token system Jev/TypeSafe, which on the voice endpointing task serves at 0.55 s median (P95 0.69 s), essentially tied with Koa-decision (Figure 3)—and well ahead of every frontier LLM, which must decode over the running dialogue transcript and lands"
 L1670,dai2026koa,2609.36115,ok,"On this intent-routing benchmark, Koa-decision reaches 85.5% accuracy, competitive with the frontier panel (within ∼2 points of the strongest, Claude-4.8-Opus and Gemini-Pro-3.1)"
 L1671,dai2026koa,2609.36115,ok,Koa-decision answers in 0.53 s at the median and 0.63 s at the P95—from ∼1.9× faster than the quickest frontier model (GPT-4.1-mini) to ∼7.5× faster than the slowest (Gemini-Pro-3.1).
 L1672,dai2026koa,2609.36115,ok,"Table 2: Text classification accuracy (%) on SST-2 (872 examples), Amazon Reviews (5k), a production intent-routing benchmark (587 utterances, with a label inventory that evolves over time), and a voice turn-taking / endpointing benchmark (353 examples, binary). | Model | SST-2 | Amazon | Intent Rou"
-L1673,dai2026koa,2609.36115,ok,"The strongest zero-shot model (Gemini-Pro-3.1, 55.9%) still trails our fine-tuned Gemma-3-27B (62.7%);"
+L1673,dai2026koa,2609.36115,ok,"Table 1: MIntRec 2.0 accuracy (%), all models given text + video. Base VLMs and frontier VLMs are evaluated zero-shot under the same natural-language prompt (list the 30 intent names, reply with one). The strongest zero-shot model (Gemini-Pro-3.1, 55.9%) still trails our fine-tuned Gemma-3-27B (62.7"
 L1674,konak2026more,2609.36154,ok,"Jev R3 achieves macro-F1 0.0378 on WISDM, 0.1184 on UCI341, and 0.0893 on PAMAP2. The corresponding RF values are 0.7057, 0.8899, and 0.8041."
 L1675,konak2026more,2609.36154,ok,"Jev R3 achieves macro-F1 0.0378 on WISDM, 0.1184 on UCI341, and 0.0893 on PAMAP2. The corresponding RF values are 0.7057, 0.8899, and 0.8041."
 L1676,konak2026more,2609.36154,ok,"Jev R3 achieves macro-F1 0.0378 on WISDM, 0.1184 on UCI341, and 0.0893 on PAMAP2. The corresponding RF values are 0.7057, 0.8899, and 0.8041."
-L1677,konak2026more,2609.36154,ok,"R2 assigns walking to 899/900 WISDM windows, 300/300 UCI341 windows, and 595/600 PAMAP2 windows. With exactly 50 examples per class, single-class prediction has accuracy 1/K and macro-F1 2/[K⁡(K+1)]; the UCI341 R2 scores are exactly this collapsed solution."
+L1677,konak2026more,2609.36154,ok,"Table 2. All matched main recognition results, reported as estimate [95% subject-cluster interval]. Scores are proportions. Jev uses native choice on every window; the other systems use their frozen class predictions. | Dataset | Model | Representation | Accuracy [95% CI] | Macro-F1 [95% CI] | UCI34"
 L1678,konak2026more,2609.36154,ok,"R3 ECE is 0.2532, 0.3489, and 0.1294, respectively."
 L1679,konak2026more,2609.36154,ok,"R3 ECE is 0.2532, 0.3489, and 0.1294, respectively."
 L1680,konak2026more,2609.36154,ok,"R3 ECE is 0.2532, 0.3489, and 0.1294, respectively."
@@ -516,7 +516,7 @@ L1699,asseri2026calibrated,2609.36399,ok,"Projected on the axis from its America
 L1700,asseri2026calibrated,2609.36399,ok,"Averaged over framings, an Arabic item lowered the share by 29.5 points (26.1–33.1), whereas an Arabic framing changed it by −3.9 points (−8.9 to 1.5)"
 L1701,asseri2026calibrated,2609.36399,ok,"Averaged over framings, an Arabic item lowered the share by 29.5 points (26.1–33.1), whereas an Arabic framing changed it by −3.9 points (−8.9 to 1.5)"
 L1702,asseri2026calibrated,2609.36399,ok,"In the documented set-up, JEV was less confident in Arabic, by 0.090 on average."
-L1703,asseri2026calibrated,2609.36399,ok,"JEV ordered Saudi Arabia and the United States as Hofstede’s scores do on four of the six dimensions in both languages: power distance, individualism, uncertainty avoidance and indulgence, but not masculinity or long-term orientation (mean τ=0.33; 33% of dimensions mis-ranked)."
+L1703,asseri2026calibrated,2609.36399,ok,"Table 7: Rank test of Masoud et al. (2025) by set-up: number of dimensions (of six) on which JEV orders Saudi Arabia and the United States as Hofstede’s scores do, with the mean Kendall’s τ in parentheses, and the dimensions out of order. | Documented (headline) | 4 (0.33) | MAS, LTO | 4 (0.33) | MA"
 L1704,asseri2026calibrated,2609.36399,ok,The English share ranged from 87.1% to 106.8% and the Arabic share from 42.1% (third person) to 72.2%
 L1705,asseri2026calibrated,2609.36399,ok,The English share ranged from 87.1% to 106.8% and the Arabic share from 42.1% (third person) to 72.2%
 L1800,deusser2026evaluating,2609.37647,ok,Table 3: Jev and the two open-weight reference models on identical requests: primary metric (best per dataset in bold) and ECE of the first Choice or Noul question (– for Score-only tasks). // MMLU | Acc. | 0.918 | 0.817 | 0.674 | 0.025 | 0.045 | 0.241 |
@@ -765,7 +765,7 @@ L2096,mu2026hydrojev,2610.02048,ok,"On the four new-family sets the two were als
 L2097,mu2026hydrojev,2610.02048,ok,"R2 retrained without the evaluated subtype collapsed to 0.259, 0.240, 0.238 and 0.227, close to chance. Jev exceeded it by +0.361 [95% CI 0.189, 0.523] in round 1"
 L2098,mu2026hydrojev,2610.02048,ok,"+0.390 [0.321, 0.458] in round 3 and +0.417 [0.344, 0.488] in round 4"
 L2099,mu2026hydrojev,2610.02048,ok,"A supervised classifier trained on 200 labelled windows of the same subtypes was clearly better in distribution (R2 0.887-0.934, mean 0.91)"
-L2100,mu2026hydrojev,2610.02048,ok,"On the in-distribution sets, R2 averaged 0.46 with one label per class and 0.59 with two, against Jev’s 0.63, and overtook Jev only at four (0.72; Fig. 3a)."
+L2100,mu2026hydrojev,2610.02048,ok,"The crossover k*, the smallest k at which the mean of R2 exceeds Jev (Eq. 8), was 4 on seven of the eight sealed sets and 40 on E2."
 L2101,mu2026hydrojev,2610.02048,ok,"Two frontier reasoning models were significantly more accurate: glm-5.2 scored 0.706 and 0.697 and deepseek-v4-pro 0.722 and 0.637 on E1r2 and E2r2, against Jev’s 0.628 and 0.434 (Fig. 4a)."
 L2102,mu2026hydrojev,2610.02048,ok,"Over 2,722 calls, Jev’s service-reported compute time had a median of 1.22 s (10th-90th percentile 1.15-1.46 s)"
 L2103,mu2026hydrojev,2610.02048,ok,"With glm-5.2, the difference to the reviewer alone was +0.011 [ - 0.011, 0.033] in distribution and +0.016 [0.003, 0.033] on the unseen family, both inside the 0.03 margin after Holm correction"
@@ -843,7 +843,7 @@ L2220,azizi2026labels,2610.02586,ok,"Deleting every definition leaves accuracy u
 L2221,azizi2026labels,2610.02586,ok,"when they are supplied as the only informative channel, with the labels replaced by letters, they support 0.7971, well above the 0.5690 control in which neither channel carries information."
 L2222,azizi2026labels,2610.02586,ok,"When a label and its definition point to different classes, accuracy falls to 0.1357, below the no-information control, which means the decision is following the label."
 L2223,azizi2026labels,2610.02586,ok,falling from 0.8511 under aligned labels to 0.2281 when a label contradicts its definition
-L2224,azizi2026labels,2610.02586,ok,"A model that is invariant to option labels by construction becomes label-sensitive when the label is written into its input, with no change to its weights."
+L2224,azizi2026labels,2610.02586,ok,"Adding the label to von produces the effect. Its contrast on PolicyBench moves from exactly zero to +0.0333 [+0.0246,\,+0.0423] , and on the classification tasks it acquires the same collapse as the laya checkpoints, falling from 0.8511 under aligned labels to 0.2281 when a label contradicts its def"
 L2225,azizi2026labels,2610.02586,ok,"renaming the options to A and B raises accuracy by +0.1511 [+0.1377,\,+0.1646]"
 L2226,azizi2026labels,2610.02586,ok,"For laya, they reduce accuracy from 0.7911 to 0.5297 (-0.2618 [-0.2851,\,-0.2386] )."
 L2227,azizi2026labels,2610.02586,ok,"the Qwen2.5-7B label-log-probability readout gains +0.1203 [+0.1019,\,+0.1395] from replacing meaningful labels with A and B ( n=2100 ; Table 3)"
@@ -872,13 +872,13 @@ L2249,chen2026secjev,2610.03073,ok,"IoT-23 | SecJev-4B | 1000 | 90.20 | 86.95 | 
 L2250,chen2026secjev,2610.03073,ok,"4B | Raw | 0.358 | 0.173 | 1.84 | || 4B | Scaled | 0.344 | 0.177 | 3.56 | || Table 9: Security-test confidence metrics, averaged over questions. Lower is better for all three. ECE uses 15 equal-width bins."
 L2251,chen2026secjev,2610.03073,ok,"For example, 9B NLL falls from 0.364 to 0.355 while ECE rises from 1.53% to 2.48%."
 L2252,chen2026secjev,2610.03073,ok,Paraphrase | 0.8B | 1400 | 88.64 | 87.79 | 95.36 | 85.93 | | 2B | 1400 | 90.79 | 89.86 | 96.57 | 88.79 | | 4B | 1400 | 91.64 | 91.14 | 98.36 | 90.57 | || Table 6: Paired semantic consistency (%).
-L2253,chen2026secjev,2610.03073,ok,Answer agreement is 95.36–98.36% for paraphrases and 97.40–98.80% for permutations.
+L2253,chen2026secjev,2610.03073,ok,"Table 6: Paired semantic consistency (%). Original/changed accuracy uses the same eligible questions: 1,400 for paraphrasing and 500 for permutation. Consistency is semantic answer agreement; both-correct requires both predictions to match the label. Tasks have equal weight within each condition. | "
 L2254,chen2026secjev,2610.03073,ok,"Kev initialization reaches 90.34% test macro accuracy versus 88.17% for direct-Qwen training, a 2.17-point gain"
 L2255,chen2026secjev,2610.03073,ok,"General transfer falls from 68.45% to 66.01% at 0.8B, while changes at larger sizes stay within 0.46 points."
 L2256,chen2026secjev,2610.03073,ok,"Two human reviewers independently assess 280 questions, 20 per task, and agree on 261 answers (93.21%)."
 L2257,paschalides2026jev,2610.03324,ok,Jev | .826 | .843 | + 1.6 | .691 | .682 | - 0.9 | .738 | .729 | - 0.9 | .960 | .957 | - 0.4 | || GPT-6 Sol | .897 | .895 | - 0.2 | .682 | .683 | + 0.2 | .776 | .720 | - 5.7 | .976 | .978 | + 0.2 | || Table 4: Direct (A) and decomposed (B) binary macro-F1 on the full test sets.
-L2258,paschalides2026jev,2610.03324,ok,"Jev scores highest among the decision models on Dynamic (.826), HateXplain (.738), and HateCheck (.960), and Decider on MHS (.801)."
-L2259,paschalides2026jev,2610.03324,ok,"Sol exceeds every decision model on Dynamic (.897), HateXplain (.776), and HateCheck (.976)"
+L2258,paschalides2026jev,2610.03324,ok,"Table 4: Direct (A) and decomposed (B) binary macro-F1 on the full test sets. Both formulations classify the same texts and receive the same dataset-specific definition, together with the decomposition rule and component glossary, so each difference \Delta (percentage points) is paired. Bold \Delta "
+L2259,paschalides2026jev,2610.03324,ok,"Table 4: Direct (A) and decomposed (B) binary macro-F1 on the full test sets. Both formulations classify the same texts and receive the same dataset-specific definition, together with the decomposition rule and component glossary, so each difference \Delta (percentage points) is paired. Bold \Delta "
 L2260,paschalides2026jev,2610.03324,ok,"Jev scores highest among the decision models on Dynamic (.826), HateXplain (.738), and HateCheck (.960)"
 L2261,paschalides2026jev,2610.03324,ok,"whereas on MHS, Decider exceeds both by 12 points (.801 versus .691 and .682)"
 L2262,paschalides2026jev,2610.03324,ok,"Laya is the fastest model shown, but its macro-F1 (.701) is substantially below Jev’s (.960) and the commercial LLMs’ (.974-.976)."
@@ -934,7 +934,7 @@ L2311,rahimi2026system,2610.04345,ok,"In receive-antenna selection, Jev delivers
 L2312,rahimi2026system,2610.04345,ok,"In particular, Jev achieves a mean utility regret of 0.131, which is comparable to Qwen (0.134) and GPT-Sol (0.145), while maintaining substantially lower inference latency."
 L2313,rahimi2026system,2610.04345,ok,"As shown in Fig. 4, Jev reaches a median client-observed latency of only 1.46 s, compared with 5.13 s for Qwen and 5.29 s for GPT-Sol."
 L2314,rahimi2026system,2610.04345,ok,"More notably, in intent-conditioned RAN slicing, Jev achieves utility comparable to the evaluated LLMs while providing more than a 3.5x reduction in median response latency."
-L2315,wang2026hidden,2610.04985,ok,"Jev achieves 100% accuracy on all three clean tasks. NanoJev achieves 93.8% on support routing, 94.0% on subscription cancellation, and 71.7% on issue severity"
+L2315,wang2026hidden,2610.04985,ok,TABLE I: Comparison of six input manipulation attacks against Jev and NanoJev across three tasks. We report Acc and ASR as percentages. Clean rows provide reference accuracy and baseline target prediction rates. | Attack Method | Support routing | Subscription cancellation | Issue severity | Acc \up
 L2316,wang2026hidden,2610.04985,ok,Context ignoring | 3.0 | 96.5 | 0.0 | 100.0 | 5.5 | 47.0 | || TABLE I: Comparison of six input manipulation attacks against Jev and NanoJev across three tasks. We report Acc and ASR as percentages.
 L2317,wang2026hidden,2610.04985,ok,Jev-specific injection | 0.0 | 100.0 | 0.0 | 100.0 | 0.3 | 97.2 | || TABLE I: Comparison of six input manipulation attacks against Jev and NanoJev across three tasks. We report Acc and ASR as percentages.
 L2318,wang2026hidden,2610.04985,ok,Jev-specific injection | 0.0 | 100.0 | 0.0 | 100.0 | 0.3 | 97.2 | || TABLE I: Comparison of six input manipulation attacks against Jev and NanoJev across three tasks. We report Acc and ASR as percentages.
@@ -944,7 +944,7 @@ L2321,wang2026hidden,2610.04985,ok,"RLCD Poisoning | 5% | 92.5 | 82.8 | 93.1 | 9
 L2322,wang2026hidden,2610.04985,ok,"Base | – | 84.0 | 2.0 | 95.2 | 84.0 | 2.0 | 95.2 | SFT Poisoning | 5% | 92.3 | 76.1 | 94.8 | 92.6 | 89.0 | 94.3 | || TABLE II: Backdoor attack results on NanoJev under different poisoning methods, poison rates, and triggers. Results are reported as percentages."
 L2323,wang2026hidden,2610.04985,ok,Cancellation | 73.3 | 82.3 | 74.6 | 22.4 | || TABLE III: Membership inference results on NanoJev. All metrics are reported as percentages.
 L2324,wang2026hidden,2610.04985,ok,Jev | 97.5 | 99.6 | || NanoJev | 64.2 | 65.7 | || TABLE IV: Internal knowledge inference against Jev and NanoJev using 100 factual and 100 fabricated statements. All metrics are percentages.
-L2325,wang2026hidden,2610.04985,ok,"The official Jev is highly vulnerable, achieving 100% Coverage and Accepted Accuracy for all four attributes under both label and probability access."
+L2325,wang2026hidden,2610.04985,ok,TABLE V: Private attribute inference against the official Jev and NanoJev under label and probability access. Cov. and Acc. denote Coverage and Accepted Accuracy. All values are percentages; – indicates undefined accuracy at zero coverage. | Model | Access | Attribute | Cov. \uparrow | Acc. \uparrow
 L2326,wang2026hidden,2610.04985,ok,Jev achieves ROC-AUC values between 0.95 and 1.0 across all eight benchmarks.
 L2327,wang2026hidden,2610.04985,ok,Calibrating the threshold using held-out calibration data increases the average accuracy across HC3 and M4 from 78% to 89%.
 L2328,wang2026hidden,2610.04985,ok,"Across the 100 queries, the average score increases from 2.3 to 4.5, and all queries meet the success criterion, obtaining a 100% attack success rate."
@@ -966,8 +966,8 @@ L2343,cao2026searchjev,2610.05107,ok,Dual-system Search Agent (Jev 1.13) | 46.0 
 L2344,cao2026searchjev,2610.05107,ok,Sufficiency by Qwen3.5-0.8B AR (JSON) | 16.0 | - 30.0 | 6.6 | 2.5 | 72 |
 L2345,cao2026searchjev,2610.05107,ok,"Jev 1.13 (closed) | 62.3 | 20.0 | 97.7 | 5.6 | 98.7 | 3.4 | 84.5 | 3.7 | 273.3 || SearchJev-4B | 55.8 | 3.0 | 99.6 | 26.9 | 99.0 | 11.4 | 65.0 | 15.4 | 37.1 || Table 5: Results on the out-of-distribution test sets of SearchDecision-Bench, covering decision quality, calibration, and latency across fo"
 L2346,cao2026searchjev,2610.05107,ok,"Jev 1.13 (closed) | 62.3 | 20.0 | 97.7 | 5.6 | 98.7 | 3.4 | 84.5 | 3.7 | 273.3 || SearchJev-4B | 55.8 | 3.0 | 99.6 | 26.9 | 99.0 | 11.4 | 65.0 | 15.4 | 37.1 || Table 5: Results on the out-of-distribution test sets of SearchDecision-Bench, covering decision quality, calibration, and latency across fo"
-L2347,cao2026searchjev,2610.05107,ok,"Both outperform Jev 1.13 on routing ECE, but Jev remains better calibrated on the other three families."
-L2348,yang2026graphdecisionbench,2610.06354,ok,"It answers every adjacency query correctly and performs relatively well on cycle, pairwise connectivity and distance judgments, but reaches only 67.80% on exact degree and 61.25% on articulation."
+L2347,cao2026searchjev,2610.05107,ok,"Table 5: Results on the out-of-distribution test sets of SearchDecision-Bench, covering decision quality, calibration, and latency across four decision families. | NDCG@10, accuracy, and ECE are scaled by 100 | Routing | Rewriting | Relevance | Verification | Latency | SearchJev-4B | 55.8 | 3.0 | 99"
+L2348,yang2026graphdecisionbench,2610.06354,ok,Figure 2. Graph-cognition accuracy across six tasks and fourteen configurations. Values are percentages | Adjacency Degree Cycle Pairwise | Jev-1.13.0 100.0
 L2349,yang2026graphdecisionbench,2610.06354,ok,"It answers every adjacency query correctly and performs relatively well on cycle, pairwise connectivity and distance judgments, but reaches only 67.80% on exact degree and 61.25% on articulation."
 L2350,yang2026graphdecisionbench,2610.06354,ok,"Kev's articulation accuracy is slightly higher (62.50% versus 61.25%), ruling out a claim of uniform dominance."
 L2351,yang2026graphdecisionbench,2610.06354,ok,"On ogbn-arxiv, its G-A difference is +10 percentage points with a paired 95% interval of [+3,+18], whereas TG-BAG is only +1 point [-4,+7]."
@@ -998,7 +998,7 @@ L2411,denney2026jev,2610.06625,ok,"On the 243 expert-judged pairs (Table 8), GPT
 L2412,denney2026jev,2610.06625,ok,"Survey, calibration | error vs raters | 0.114 | 0.109 | 0.005 [ - 0.031, 0.040] | level |"
 L2413,denney2026jev,2610.06625,ok,"Averaged over the two orders, its calibration error against the raters is level with JEV’s; in single calls it is higher (0.145 against 0.071)."
 L2414,denney2026jev,2610.06625,ok,"Qwen3.8-27B, whose token probabilities we also have, is better calibrated than JEV on these pairs (0.011 against 0.071 in single calls)."
-L2415,denney2026jev,2610.06625,ok,GPT-6 Luna has higher calibration error than JEV on all eight reading tasks with a categorical human label.
+L2415,denney2026jev,2610.06625,ok,"When each question is asked once, GPT-6 Luna has higher calibration error than JEV on all eight reading tasks with a categorical human label."
 L2416,denney2026jev,2610.06625,ok,"74% of Luna’s probabilities are below 0.01 or above 0.99, against 18% for JEV and 16% for Qwen."
 L2417,denney2026jev,2610.06625,ok,"Across 10 matched tasks, GPT-6 Luna’s price per decision was 0.45 to 1.03 times JEV’s, and at most 1.27 times if every uncached input token is billed at the posted cache-write rate."
 L2418,denney2026jev,2610.06625,ok,"In this case, Qwen was more expensive than both GPT-6 Luna and JEV, at 2.35 to 5.41 times JEV’s cost per decision."
@@ -1126,7 +1126,7 @@ L2539,xu2026same,2610.08675,ok,"At the inclusive 0.8 source-probability cutoff, 
 L2540,xu2026same,2610.08675,ok,"Two clear wrong-role B means fall below 0.8; four remain accepted, including wrong-period and wrong-status citations near 0.95."
 L2541,xu2026same,2610.08675,ok,Two of six equivalent-fact B means also fall below 0.8.
 L2542,xu2026same,2610.08675,ok,"For the four selected wrong-role contrasts, all eight B calls are accepted under the original rendering and withheld under the explicit rendering at 0.8."
-L2543,xu2026same,2610.08675,ok,"(a) Acceptance outcomes at the inclusive 0.8 cutoffOriginal renderingExplicit columnOriginalExplicit0.51Only A supported(n = 15 pairs)Both supported(n = 19 pairs)Neither supported(n = 2 pairs)accept A, withhold B8/159/15"
+L2543,xu2026same,2610.08675,ok,"Fig. 3: Fresh-source outcomes under one reviewer’s declared blinded labels. Decisions use two-call means and inclusive cutoffs. (a) All six outcomes at 0.8; overlapping measurements within disjoint strata of 15 A-only-supported, 19 both-supported and 2 neither-supported pairs. | Only A supported (n "
 L2544,xu2026same,2610.08675,ok,accept both5/196/19
 L2545,xu2026same,2610.08675,ok,Jev matches 95 of 96 keys. All 12 consulted questions already have correct primary answers; the sole primary error has probability exactly 0.8 and is outside the strict gate.
 L2546,xu2026same,2610.08675,ok,The largest observed identical-input range is 0.05 in this repeat check.
@@ -1149,7 +1149,7 @@ L2601,li2026visual,2610.09328,ok,Table 2: Atomic verification under a fixed trai
 L2602,li2026visual,2610.09328,ok,Its Brier score decreases from 0.1332 to 0.0356.
 L2603,li2026visual,2610.09328,ok,"Subsequent reward experiments use the development-selected BCE checkpoint at update 136, whose test balanced accuracy is 95.24%."
 L2604,li2026visual,2610.09328,ok,"Visual Jev achieves 63.49% strict preference agreement, exceeding direct 27B scoring at 60.32% and direct 4B scoring at 59.13% by 3.17 and 4.37 percentage points, respectively."
-L2605,li2026visual,2610.09328,ok,"Paired bootstrap over parent tasks yields a 95% confidence interval of [-8.33,16.67] percentage points for the agreement difference against 27B"
+L2605,li2026visual,2610.09328,ok,"Visual Jev achieves 63.49% strict preference agreement, exceeding direct 27B scoring at 60.32% and direct 4B scoring at 59.13% by 3.17 and 4.37 percentage points, respectively."
 L2606,li2026visual,2610.09328,ok,Table 3: Offline human preference comparison. | Visual Jev atomic mean 63.49 42.86 47.62
 L2607,li2026visual,2610.09328,ok,"After 30 GRPO updates, the Visual Jev reward model yields a composite score of 52.50, improving over the official baseline of 41.78 by 10.72 points. Training with direct 27B rewards reaches 51.84, also above baseline."
 L2608,bailo2026system,2610.09683,ok,"Table 1: Accuracy against the oracle on the 900 held-out questions (600 command, balanced over attack, collect, open door and exit; 300 weapon), with 95% intervals that resample games. | Kev 9B 0.60 [0.49, 0.69] 0.50 1.00 92% (1.7)"
@@ -1163,7 +1163,7 @@ L2615,bailo2026system,2610.09683,ok,"the two most accurate, Kev 9B and Strands, 
 L2616,bailo2026system,2610.09683,ok,"Kev 9B 0.60 0.28 0.61 [0.48, 0.71] 0.74 [0.64, 0.81] 0.70"
 L2617,bailo2026system,2610.09683,ok,"With the reasoning thinker, deferring the 30% least confident decisions of the Laya base raises command accuracy from 0.56 to 0.75 [0.63, 0.82], close to a perfect selector that defers exactly the actor’s mistakes (0.76), without any training."
 L2618,bailo2026system,2610.09683,ok,"Laya, base (0.89) 0.56 0.61 0.75 0.76 +0.15 [0.11, 0.19]"
-L2619,bailo2026system,2610.09683,ok,"and none for Kev 9B and Strands (0.61, 0.60). With those two, deferring by confidence is deferring at random, although they are the most accurate zero-shot actors."
+L2619,bailo2026system,2610.09683,ok,"Table 3: Offline deferral on the 600 command questions of the held-out set, in doomLaya’s option order: the actor’s least confident decisions are answered by the thinker. Last column: accuracy gained by deferring by confidence rather than at random, with a 95% interval that resamples games. For refe"
 L2620,bailo2026system,2610.09683,ok,the rank correlation between an actor’s AUROC and its gain over random deferral at 30% is 0.87
 L2621,bailo2026system,2610.09683,ok,"a median of 29 ms per decision, 350 decisions per 180-s game"
 L2622,huo2026nl2hull,2610.09896,ok,"Chip achieved the highest question accuracy among the compared systems, reaching 95.90%, and also achieved the highest FFD exact match at 99.32%."
@@ -1196,7 +1196,7 @@ L2648,jung2026decision,2610.09937,ok,A request cost about US$0.0001 and returned
 L2649,jung2026decision,2610.09937,ok,Three full passes over the ORNL winter split gave the same most probable answer on 97–99% of windows for Jev and 96–98% for Qwen2.5 7B.
 L2650,jung2026decision,2610.09937,ok,"Given the class names alone, Jev changed 41% of its answers on the ORNL unit, and its accuracy on consistency faults fell from 71% to 6%."
 L2651,rafe2026estimating,2610.10321,ok,"Phone use is the clearest case, with 15,074 narrative-stated crashes against 7,340 coded ones"
-L2652,rafe2026estimating,2610.10321,ok,the human check agrees with all fifteen estimates within its margin
+L2652,rafe2026estimating,2610.10321,ok,"For all fifteen factors the design-based correction lies within its 95 percent margin of zero, so on every row of Figure 4(a) the interval of the human check contains the model estimate."
 L2653,rafe2026estimating,2610.10321,ok,"Note: Brier scores are multiplied by one thousand and are held out over fifty narrative half-splits. | Alcohol Platt, coded shift 25 4.56 2.71 100% (17) 71% (13)"
 L2654,rafe2026estimating,2610.10321,ok,Phone use† Platt 15 0.88 0.29 96% (8) 90% (9)
 L2655,rafe2026estimating,2610.10321,ok,Unbelted† Isotonic 5 3.59 0.14 100% (3) 15% (13)
@@ -1209,16 +1209,16 @@ L2661,rafe2026estimating,2610.10321,ok,"Kumo Tabular, small 60,000 0.865 0.759 0
 L2662,rafe2026estimating,2610.10321,ok,"Kumo Tabular small scored 15 times as many rows per second, so one pass over all 5,601,890 crashes takes about 11 minutes against 2.8 hours"
 L2663,rafe2026estimating,2610.10321,ok,"Over all five folds it discriminated at least as well as a gradient-boosted tree tuned per target on every one of the 18 targets, with a mean flag AUC of 0.890 against 0.881."
 L2664,yan2026jevforest,2610.10615,ok,Table 5: Online workflow comparison. | Direct 1 1 0.771 17.99 0.846
-L2665,yan2026jevforest,2610.10615,ok,"Batch accuracy is 37/48 on AG News and 22/24 on TREC, exceeding the four-question forest."
-L2666,yan2026jevforest,2610.10615,ok,"At budget four on AG News, the forest classifies 35 of 48 examples correctly, compared with 32 for the static gain ranking and 28 for random ordering."
-L2667,yan2026jevforest,2610.10615,ok,"Although the forest requests only four of eight semantic features, its repeated calls cost more and take longer than acquiring all eight in a batch on both tasks."
-L2668,yan2026jevforest,2610.10615,ok,"Direct Jev classification attains the same accuracy as batching at lower reported cost, with similar latency."
-L2669,yan2026jevforest,2610.10615,ok,"On TREC, the corresponding counts are 16, 18, and 20 of 24."
+L2665,yan2026jevforest,2610.10615,ok,"Table 5: Online workflow comparison. Cost is mean provider-reported USD per example, in units of 10^{-6} USD; time is median end-to-end seconds. Sequential methods use four questions in four requests. Batch uses eight semantic questions in one request. Direct uses one multiclass question and bypasse"
+L2666,yan2026jevforest,2610.10615,ok,"Table 5: Online workflow comparison. Cost is mean provider-reported USD per example, in units of 10^{-6} USD; time is median end-to-end seconds. Sequential methods use four questions in four requests. Batch uses eight semantic questions in one request. Direct uses one multiclass question and bypasse"
+L2667,yan2026jevforest,2610.10615,ok,"Table 5: Online workflow comparison. Cost is mean provider-reported USD per example, in units of 10^{-6} USD; time is median end-to-end seconds. Sequential methods use four questions in four requests. Batch uses eight semantic questions in one request. Direct uses one multiclass question and bypasse"
+L2668,yan2026jevforest,2610.10615,ok,"Table 5: Online workflow comparison. Cost is mean provider-reported USD per example, in units of 10^{-6} USD; time is median end-to-end seconds. Sequential methods use four questions in four requests. Batch uses eight semantic questions in one request. Direct uses one multiclass question and bypasse"
+L2669,yan2026jevforest,2610.10615,ok,"Table 5: Online workflow comparison. Cost is mean provider-reported USD per example, in units of 10^{-6} USD; time is median end-to-end seconds. Sequential methods use four questions in four requests. Batch uses eight semantic questions in one request. Direct uses one multiclass question and bypasse"
 L2670,yan2026jevforest,2610.10615,ok,Table 5: Online workflow comparison. | Batch 8 1 0.917 36.66 0.811
 L2671,lee2026system,2610.11135,ok,Jev0-shot .738 .691 .725 .742 .698 .700 .648 .706 7/7
-L2672,lee2026system,2610.11135,ok,"This is above the strongest training-free LLM-KT baseline, LOKT (.671), and above the best deep KT model trained on 8 learners (.689; higher on 5/7 datasets)."
-L2673,lee2026system,2610.11135,ok,"It also beats System-Two Thinking-KT (.650) on all seven datasets with one call instead of ten, at about 1/100 of its API cost (Section 5.4)."
-L2674,lee2026system,2610.11135,ok,"JevKT is ahead of the best deep KT model by +.033, +.023 and +.016 mean AUC at N{=}8 , 16 and 32 (on 7/7, 7/7 and 7/7 datasets)"
+L2672,lee2026system,2610.11135,ok,"Without any data from the target platform, Jev0-shot reaches .706 mean AUC (first block of Table 1). This is above the strongest training-free LLM-KT baseline, LOKT (.671), and above the best deep KT model trained on 8 learners (.689; higher on 5/7 datasets)."
+L2673,lee2026system,2610.11135,ok,"Without any data from the target platform, Jev0-shot reaches .706 mean AUC (first block of Table 1). This is above the strongest training-free LLM-KT baseline, LOKT (.671), and above the best deep KT model trained on 8 learners (.689; higher on 5/7 datasets). It also beats System-Two Thinking-KT (.6"
+L2674,lee2026system,2610.11135,ok,Table 1: Cold-start AUC (P1) of Jev against the best deep KT and the best LLM-based KT baseline with N training learners (mean over 5 seeds). | N | Method | ASSIST09 | NIPS34 | XES3G5M | DBE-KT22 | Alg05 | Junyi | ASSIST17 | Avg | Wins | 8 | JevKT | .735 | .707 | .720 | .821 | .734 | .701 | .638 | .
 L2675,lee2026system,2610.11135,ok,JevKT .745 .762 .739 .838 .762 .715 .667 .747 4/7
 L2676,lee2026system,2610.11135,ok,JevKT .780 .774 .758 .829 .780 .771 .701 .770 0/7
 L2677,lee2026system,2610.11135,ok,"JevKT (.713) and Jev0-shot (.704) stay well above LOKT (.664), but the best deep KT model, trained on all learners and chosen on test, is ahead (.729; JevKT is better on 1/7 datasets; Table 10)."
@@ -1235,9 +1235,9 @@ L2687,cheng2026metaencoder,2610.11316,ok,JevBench (hard) | 0.7387 | 0.7658 | 0.4
 L2688,cheng2026metaencoder,2610.11316,ok,Jev Intelligence | 81.4 | 84.5 | 45.8 | 42.1
 L2689,cheng2026metaencoder,2610.11316,ok,ImaJev (dev) | 0.8555 | – | 0.8117 | 0.7792
 L2690,cheng2026metaencoder,2610.11316,ok,MMLU | 0.7767 | 0.8601 | 0.7325 | 0.6544
-L2691,cheng2026metaencoder,2610.11316,ok,"Across the 10 permutations, none of the three standard deviation exceeds 0.003 ."
+L2691,cheng2026metaencoder,2610.11316,ok,Figure 1: 10 random permutations of option order across three variants on MMLU. Standard deviation is measured. | C2 — label + description \sigma=0.0014 C0 — description only \sigma=0.0030 C1 — bare label \sigma=0.0028
 L2692,cheng2026metaencoder,2610.11316,ok,MMLU (57 subjects) | 0.5645 | 0.7456 | +0.1811
-L2693,cheng2026metaencoder,2610.11316,ok,"On MMMU and MMMU-Pro and Video-MMMU, MetaEncoder all outperforms the decoder."
+L2693,cheng2026metaencoder,2610.11316,ok,Table 6: Encoder versus constrained decoder. Video uses 8 frames. Agreement denotes the fraction of instances where both models are simultaneously correct or incorrect. | Benchmark | Decoder | Encoder | Agreement | MMMU | 0.4962 | 0.5730 | 0.7154
 L2694,ma2026fastjev,2610.11379,ok,"For 4B, pruning 43.75% retains 93.66% of the Original score on average."
 L2695,ma2026fastjev,2610.11379,ok,Pruning 45.83% of candidate layers gives mean task score retention of 97.52% for 0.8B and 94.92% for 2B.
 L2696,ma2026fastjev,2610.11379,ok,Pruning 45.83% of candidate layers gives mean task score retention of 97.52% for 0.8B and 94.92% for 2B.
@@ -1261,73 +1261,73 @@ L2713,sharma2026typedbench,2610.11392,ok,policy.severity 0.750 0.357 0.407 0.610
 L2714,sharma2026typedbench,2610.11392,ok,"Table 13: Suite H: the encoder answers every question, and answers whose confidence falls below the threshold t are replaced by the hosted model’s answers | phishing Laya english 0.706 0.68 0.5 0.09 0.763 0.732 0.66     0.7 0.34 0.858 0.804 1.00"
 L2800,liu2026adversarial,2610.11436,ok,the edit increased Jev’s false acceptance from 1.0% to 26.0% with three output labels and from 3.0% to 26.5% with the published four-label grading instruction under sorted JSON keys
 L2801,liu2026adversarial,2610.11436,ok,from 3.0% to 26.5% with the published four-label grading instruction under sorted JSON keys
-L2802,liu2026adversarial,2610.11436,ok,"Under insertion presentation, both Jev grading configurations rejected all 200 candidates in each cue condition."
-L2803,liu2026adversarial,2610.11436,ok,The paired presentation interactions were ... with pointwise 95% bootstrap intervals
-L2804,liu2026adversarial,2610.11436,ok,The paired presentation interactions were ... with pointwise 95% bootstrap intervals
-L2805,liu2026adversarial,2610.11436,ok,"With near mutations pooled across workloads, both grading configurations gave"
+L2802,liu2026adversarial,2610.11436,derived,"Under insertion presentation, both Jev grading configurations rejected all 200 candidates in each cue condition."
+L2803,liu2026adversarial,2610.11436,ok,"The paired presentation interactions were +25.0\,\mathrm{pp} and +23.5\,\mathrm{pp} , with pointwise 95% bootstrap intervals [19.0,31.0] and [18.0,29.5] points."
+L2804,liu2026adversarial,2610.11436,ok,"The paired presentation interactions were +25.0\,\mathrm{pp} and +23.5\,\mathrm{pp} , with pointwise 95% bootstrap intervals [19.0,31.0] and [18.0,29.5] points."
+L2805,liu2026adversarial,2610.11436,ok,"With near mutations pooled across workloads, both grading configurations gave +2\,\mathrm{pp} , while far mutations gave +48\,\mathrm{pp} and +45\,\mathrm{pp} ."
 L2806,liu2026adversarial,2610.11436,ok,Jev FINAL3 misses the declared wrong-final-only clean threshold by one response (189/200 versus 190 required).
-L2807,liu2026adversarial,2610.11436,ok,Within-group equality of returned probability vectors and any change of returned verdict.
-L2808,liu2026adversarial,2610.11436,ok,Every tested configuration failed this gate (Table 22).
-L2809,liu2026adversarial,2610.11436,ok,Every tested configuration failed this gate (Table 22).
-L2810,liu2026adversarial,2610.11436,ok,Every tested configuration failed this gate (Table 22).
-L2811,liu2026adversarial,2610.11436,ok,Every tested configuration failed this gate (Table 22).
-L2812,liu2026adversarial,2610.11436,ok,Every tested configuration failed this gate (Table 22).
-L2813,ma2026can,2610.11692,ok,Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds.
-L2814,ma2026can,2610.11692,ok,Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds.
-L2815,ma2026can,2610.11692,ok,Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds.
-L2816,ma2026can,2610.11692,ok,Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds.
+L2807,liu2026adversarial,2610.11436,ok,Table 18: Within-group equality of returned probability vectors and any change of returned verdict. The input populations and collection windows differ between studies; these observations leave caching and serving changes unidentified. | Study (UTC date) | Endpoint | Groups | Identical vectors | Ver
+L2808,liu2026adversarial,2610.11436,ok,Table 22: Correct judgments out of 80 sources in each numeric clean condition. The four required counts define the declared competence gate; every configuration fails. | Configuration | Correct value | Wrong value | Wrong final | Valid revision | Laya | 67 | 46 | 54 | 75
+L2809,liu2026adversarial,2610.11436,ok,Table 22: Correct judgments out of 80 sources in each numeric clean condition. The four required counts define the declared competence gate; every configuration fails. | Configuration | Correct value | Wrong value | Wrong final | Valid revision | SemIf NF4 | 79 | 54 | 59 | 68
+L2810,liu2026adversarial,2610.11436,ok,Table 22: Correct judgments out of 80 sources in each numeric clean condition. The four required counts define the declared competence gate; every configuration fails. | Configuration | Correct value | Wrong value | Wrong final | Valid revision | NanoJev | 17 | 69 | 54 | 51
+L2811,liu2026adversarial,2610.11436,ok,Table 22: Correct judgments out of 80 sources in each numeric clean condition. The four required counts define the declared competence gate; every configuration fails. | Configuration | Correct value | Wrong value | Wrong final | Valid revision | CLM NF4 | 38 | 0 | 0 | 59
+L2812,liu2026adversarial,2610.11436,ok,Table 22: Correct judgments out of 80 sources in each numeric clean condition. The four required counts define the declared competence gate; every configuration fails. | Configuration | Correct value | Wrong value | Wrong final | Valid revision | Clef-flash NF4 | 65 | 64 | 68 | 51
+L2813,ma2026can,2610.11692,ok,Table 2: Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds. Episode length is averaged over instances solved in both conditions. | Success (%) | Episode length | Environment | With navigation | Without navigation | FourRooms | 96 | 40 | 21.7 
+L2814,ma2026can,2610.11692,ok,Table 2: Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds. Episode length is averaged over instances solved in both conditions. | Success (%) | Episode length | Environment | With navigation | Without navigation | MultiRoom-N4 | 100 | 38 | 3
+L2815,ma2026can,2610.11692,ok,Table 2: Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds. Episode length is averaged over instances solved in both conditions. | Success (%) | Episode length | Environment | With navigation | Without navigation | MultiRoom-N2 | 100 | 90 | 6
+L2816,ma2026can,2610.11692,ok,Table 2: Task-dependent contribution of engineered navigation. Pure-Jev performance over 50 paired environment seeds. Episode length is averaged over instances solved in both conditions. | Success (%) | Episode length | Environment | With navigation | Without navigation | DoorKey-8 \times 8 | 100 | 
 L2817,ma2026can,2610.11692,ok,"Jev matches or exceeds the tested Qwen configuration on all nine MiniGrid tasks, whereas Atari comparisons are mixed (Figure 2)."
 L2818,ma2026can,2610.11692,ok,"Jev probabilities, weighted toward less frequently completed goals, yield 382.7 on Seaquest versus 345.3 for uniform goals, but 17.2 on Freeway versus 19.7."
 L2819,ma2026can,2610.11692,ok,"Jev probabilities, weighted toward less frequently completed goals, yield 382.7 on Seaquest versus 345.3 for uniform goals, but 17.2 on Freeway versus 19.7."
 L2820,ma2026can,2610.11692,ok,"Overall selected-goal completion is 0.36%, compared with 1.98% for uniform selection at the same reward coefficient."
 L2821,li2026can,2610.11901,ok,"On VAST, Jev achieves 77.92% macro-F1, only 0.16 percentage points below GPT-5.6 (78.08%)"
-L2822,li2026can,2610.11901,ok,Performance and resource usage on the full test sets of VAST and ZS-CSD.
+L2822,li2026can,2610.11901,ok,"Table 1: Performance and resource usage on the full test sets of VAST and ZS-CSD. | Dataset | Model / setting | Accuracy | Macro-F1 | Input tokens | Output tokens | Cost | VAST | Jev | 78.14 | 77.92 | 1,763,143 | 114,228 | $0.0741"
 L2823,li2026can,2610.11901,ok,"Jev achieves 58.43% macro-F1, falling 15.19 and 13.99 points behind GPT-5.6 and Claude Sonnet 5, respectively."
-L2824,li2026can,2610.11901,ok,Performance and resource usage on the full test sets of VAST and ZS-CSD.
+L2824,li2026can,2610.11901,ok,"Table 1: Performance and resource usage on the full test sets of VAST and ZS-CSD. | Dataset | Model / setting | Accuracy | Macro-F1 | Input tokens | Output tokens | Cost | ZS-CSD | Jev | 58.40 | 58.43 | 1,846,931 | 98,192 | $0.0776"
 L2825,li2026can,2610.11901,ok,"On VAST, Jev achieves 77.92% macro-F1, outperforming the LoRA-tuned Qwen2.5-3B (74.52%) but falling below Qwen2.5-7B (79.91%)."
 L2826,li2026can,2610.11901,ok,"A similar pattern appears on ZS-CSD, where Jev achieves 58.43%, compared with 56.08% and 60.85% for the two fine-tuned models."
 L2827,li2026can,2610.11901,ok,"On VAST, its recorded API cost is only $0.0741, compared with $3.9010 for GPT-5.6"
-L2828,li2026can,2610.11901,ok,Performance and resource usage on the full test sets of VAST and ZS-CSD.
+L2828,li2026can,2610.11901,ok,"Table 1: Performance and resource usage on the full test sets of VAST and ZS-CSD. | Dataset | Model / setting | Accuracy | Macro-F1 | Input tokens | Output tokens | Cost | ZS-CSD | Jev | 58.40 | 58.43 | 1,846,931 | 98,192 | $0.0776"
 L2829,li2026can,2610.11901,ok,"The confusion analysis further shows that Jev makes 373 favor–against errors, compared with only 35 for GPT-5.6 and 101 for Claude Sonnet 5 (Table 5)."
 L2830,li2026can,2610.11901,ok,"For Jev, macro-F1 decreases from 63.49% on noun phrases to 55.26% on claims."
 L2831,li2026can,2610.11901,ok,"For Jev, macro-F1 decreases from 63.49% on noun phrases to 55.26% on claims."
-L2832,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2833,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2834,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2835,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2836,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2837,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2838,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2839,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2840,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2841,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2842,li2026specialized,2610.11978,ok,Jev against the six frontier LLMs: the median and range of their scores
-L2843,li2026specialized,2610.11978,ok,"On HellaSwag, our score is 6.2 points lower."
-L2844,azizi2026one,2610.12292,ok,Clean behavior on the three public screening tasks. Chance accuracy is 50%.
-L2845,azizi2026one,2610.12292,ok,Clean behavior on the three public screening tasks. Chance accuracy is 50%.
-L2846,azizi2026one,2610.12292,ok,Clean behavior on the three public screening tasks. Chance accuracy is 50%.
-L2847,azizi2026one,2610.12292,ok,Clean behavior on the three public screening tasks. Chance accuracy is 50%.
-L2848,azizi2026one,2610.12292,ok,Clean behavior on the three public screening tasks. Chance accuracy is 50%.
-L2849,azizi2026one,2610.12292,ok,Clean behavior on the three public screening tasks. Chance accuracy is 50%.
+L2832,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2833,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2834,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2835,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2836,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2837,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2838,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2839,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2840,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2841,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2842,li2026specialized,2610.11978,ok,"Table 4: Jev against the six frontier LLMs: the median and range of their scores, the difference \Delta between Jev and the median, and the rank of Jev among the evaluated models. On GPQA Diamond, only the three frontier LLMs evaluated in this work are counted. | Benchmark | Jev | Median | Range | \"
+L2843,li2026specialized,2610.11978,ok,"Table 3: Accuracy (%) of Jev in this work and in Deußer et al. (2026), with the number of items in their evaluation. Our ARC score is on ARC-Challenge; theirs is on ARC-Easy and ARC-Challenge. | Benchmark | Ours | Deußer et al. | Items | HellaSwag | 89.3 | 95.5 | 10,042"
+L2844,azizi2026one,2610.12292,ok,Table 2: Clean behavior on the three public screening tasks. Chance accuracy is 50%. | model | task | n | accuracy | fail-open | fail-closed | rlcd | injection | 406 | 71.7 | 45.8 | 10.8
+L2845,azizi2026one,2610.12292,ok,Table 2: Clean behavior on the three public screening tasks. Chance accuracy is 50%. | model | task | n | accuracy | fail-open | fail-closed | laya-ml | jailbreak | 1034 | 36.4 | 91.7 | 35.6
+L2846,azizi2026one,2610.12292,ok,Table 2: Clean behavior on the three public screening tasks. Chance accuracy is 50%. | model | task | n | accuracy | fail-open | fail-closed | laya-td | jailbreak | 1034 | 68.0 | 60.7 | 3.3
+L2847,azizi2026one,2610.12292,ok,Table 2: Clean behavior on the three public screening tasks. Chance accuracy is 50%. | model | task | n | accuracy | fail-open | fail-closed | laya-td | injection | 406 | 60.8 | 76.8 | 1.5
+L2848,azizi2026one,2610.12292,ok,Table 2: Clean behavior on the three public screening tasks. Chance accuracy is 50%. | model | task | n | accuracy | fail-open | fail-closed | laya-td | toxic | 768 | 59.2 | 77.1 | 4.4
+L2849,azizi2026one,2610.12292,ok,Table 2: Clean behavior on the three public screening tasks. Chance accuracy is 50%. | model | task | n | accuracy | fail-open | fail-closed | laya-ml | toxic | 768 | 47.1 | 9.6 | 96.1
 L2850,azizi2026one,2610.12292,ok,"six lines of log text raise the fail-open rate to 63%, and three unverified assertions raise it to 70%"
 L2851,azizi2026one,2610.12292,ok,"causes 88.6% ... of correctly blocked messages to be allowed, out of 88 such messages."
-L2852,azizi2026one,2610.12292,ok,Table 4: Changing one option label and nothing else.
-L2853,azizi2026one,2610.12292,ok,Table 4: Changing one option label and nothing else.
-L2854,azizi2026one,2610.12292,ok,"What the option channel costs an attacker on GuardBench, averaged over the six policies."
-L2855,azizi2026one,2610.12292,ok,"What the option channel costs an attacker on GuardBench, averaged over the six policies."
-L2856,azizi2026one,2610.12292,ok,"The option channel on the three public screening tasks, averaged over them."
-L2857,azizi2026one,2610.12292,ok,"What the option channel costs an attacker on GuardBench, averaged over the six policies."
+L2852,azizi2026one,2610.12292,ok,"Table 4: Changing one option label and nothing else. For each model we report the policy with the largest effect, over a vocabulary of candidate labels. The definitions remain correct and bound to the same classes throughout, and the state is not modified. | model | policy | honest | worst renaming "
+L2853,azizi2026one,2610.12292,ok,"Table 4: Changing one option label and nothing else. For each model we report the policy with the largest effect, over a vocabulary of candidate labels. The definitions remain correct and bound to the same classes throughout, and the state is not modified. | model | policy | honest | worst renaming "
+L2854,azizi2026one,2610.12292,ok,"Table 5: What the option channel costs an attacker on GuardBench, averaged over the six policies. Columns k give the fail-open rate reached after trying k labels in a random order, honest is the unattacked naming, and best is the whole vocabulary searched. The last column is the single most effectiv"
+L2855,azizi2026one,2610.12292,ok,"Table 5: What the option channel costs an attacker on GuardBench, averaged over the six policies. Columns k give the fail-open rate reached after trying k labels in a random order, honest is the unattacked naming, and best is the whole vocabulary searched. The last column is the single most effectiv"
+L2856,azizi2026one,2610.12292,ok,"Table 7: The option channel on the three public screening tasks, averaged over them. Columns are as in Table 5. The message being judged is written by a real user and is never modified; only the name of the permissive option changes. | model | honest | k{=}1 | k{=}5 | k{=}10 | best | best label | la"
+L2857,azizi2026one,2610.12292,ok,"Table 5: What the option channel costs an attacker on GuardBench, averaged over the six policies. Columns k give the fail-open rate reached after trying k labels in a random order, honest is the unattacked naming, and best is the whole vocabulary searched. The last column is the single most effectiv"
 L2858,azizi2026one,2610.12292,ok,"the median P(\text{block}) is 0.57, 97.0% of these decisions fall below 0.70, and the highest value observed is 0.82"
 L2859,azizi2026one,2610.12292,ok,the pooled margin is 0.149 before the attack and 0.151 after it
-L2860,azizi2026one,2610.12292,ok,"At a review budget of 10% of traffic,"
+L2860,azizi2026one,2610.12292,ok,"Table 8: Using the gate as a pre-filter. Items whose margin falls below a threshold are sent for review instead of being decided, and the threshold is set on clean traffic, because that is what a deployer can see. Values are averaged over the 36 combinations of model, screening task and attack. The "
 L2861,azizi2026one,2610.12292,ok,on jailbreak screening D1 raises clean accuracy from 68.0% to 86.0% while reducing the attacked fail-open rate from 63.2% to 3.5%
 L2862,azizi2026one,2610.12292,ok,"is correct on 100% of items on all six policies, with a fail-open rate of zero under both attacks"
 L2863,ling2026when,2610.13092,ok,"ReAct-J and Reflexion-J achieve 96.02% and 98.01% success, trailing their original configurations by 1.49 and 1.74 percentage points (pp), respectively (Figure 1)."
 L2864,ling2026when,2610.13092,ok,"ReAct-J and Reflexion-J achieve 96.02% and 98.01% success, trailing their original configurations by 1.49 and 1.74 percentage points (pp), respectively (Figure 1)."
-L2865,ling2026when,2610.13092,ok,Effectiveness across three runs.
-L2866,ling2026when,2610.13092,ok,"On AndroidWorld, Jev trails T3A, AutoDroid, and FastAgent by 13.22, 2.30, and 18.10 pp, respectively, with both AutoDroid variants below 20% success."
-L2867,ling2026when,2610.13092,ok,"On AndroidWorld, Jev trails T3A, AutoDroid, and FastAgent by 13.22, 2.30, and 18.10 pp, respectively, with both AutoDroid variants below 20% success."
-L2868,ling2026when,2610.13092,ok,"On AndroidWorld, Jev trails T3A, AutoDroid, and FastAgent by 13.22, 2.30, and 18.10 pp, respectively, with both AutoDroid variants below 20% success."
+L2865,ling2026when,2610.13092,ok,Table 5: Effectiveness across three runs. Success rates and AndroidWorld official scores are run means \pm sample SD. All-three success counts distinct tasks completed in every run. | Configuration | Successes | Success rate (%) | Score (%) | All-three success | ALFWorld | ReAct-J | 386/402 | 96.02 
+L2866,ling2026when,2610.13092,ok,Table 5: Effectiveness across three runs. Success rates and AndroidWorld official scores are run means \pm sample SD. All-three success counts distinct tasks completed in every run. | Configuration | Successes | Success rate (%) | Score (%) | All-three success | AndroidWorld | T3A-J | 154/348 | 44.2
+L2867,ling2026when,2610.13092,ok,Table 5: Effectiveness across three runs. Success rates and AndroidWorld official scores are run means \pm sample SD. All-three success counts distinct tasks completed in every run. | Configuration | Successes | Success rate (%) | Score (%) | All-three success | AndroidWorld | AutoDroid-J | 57/348 |
+L2868,ling2026when,2610.13092,ok,Table 5: Effectiveness across three runs. Success rates and AndroidWorld official scores are run means \pm sample SD. All-three success counts distinct tasks completed in every run. | Configuration | Successes | Success rate (%) | Score (%) | All-three success | AndroidWorld | FastAgent-J | 111/348 
 L2869,ling2026when,2610.13092,ok,"Across all five families, Jev reduces mean decision cost by 66.1% – 78.4% and time by 73.9% – 81.5% (Figure 3a)."
 L2870,ling2026when,2610.13092,ok,"Across all five families, Jev reduces mean decision cost by 66.1% – 78.4% and time by 73.9% – 81.5% (Figure 3a)."
 L2871,ling2026when,2610.13092,ok,"On ALFWorld, ReAct and Reflexion reduce cost by 50.9% and 32.6%, and time by 47.6% and 37.8%, respectively."
@@ -1339,44 +1339,44 @@ L2876,tran2026can,2610.13675,ok,"On Dataset B, CLEF-Flash with P3 achieves the h
 L2877,tran2026can,2610.13675,ok,"On Dataset B, CLEF-Flash with P3 achieves the highest accuracy (74.85%), macro F1 score (73.70%), balanced accuracy (76.52%), and macro precision (73.65%)."
 L2878,tran2026can,2610.13675,ok,"CLEF-Flash with P3 achieves the highest accuracy (66.28%), whereas CLEF with P2 achieves the highest macro F1 score (64.51%) and balanced accuracy (68.72%)."
 L2879,tran2026can,2610.13675,ok,"CLEF-Flash with P3 achieves the highest accuracy (66.28%), whereas CLEF with P2 achieves the highest macro F1 score (64.51%) and balanced accuracy (68.72%)."
-L2880,tran2026can,2610.13675,ok,"Given its 1268 benign images among 1875 images, predicting every image as benign would yield 67.63% accuracy, exceeding every evaluated configuration."
+L2880,tran2026can,2610.13675,ok,"Table 3: Classification performance and inference speed on Dataset B, BUSI, and BUS-BRA. Acc.: accuracy; Bal. Acc.: balanced accuracy. F1 score and precision are macro averages. FPS is reported in frames per second and latency in milliseconds per image. | Prompt | Model | Acc. (%) | F1 score (%) | B"
 L2881,tran2026can,2610.13675,ok,"On BUS-BRA, CLEF-Flash with P3 leads all six metrics, but its accuracy and macro F1 score reach only 51.63% and 51.39%, respectively."
 L2882,tran2026can,2610.13675,ok,"The resulting malignant recall is 97.53% for CLEF and 90.61% for CLEF-Flash, while benign recall is only 12.93% and 32.97%, respectively."
 L2883,tran2026can,2610.13675,ok,"The resulting malignant recall is 97.53% for CLEF and 90.61% for CLEF-Flash, while benign recall is only 12.93% and 32.97%, respectively."
-L2884,tran2026can,2610.13675,ok,"For CLEF, the same change reduces accuracy on every dataset."
-L2885,tran2026can,2610.13675,ok,"Classification performance and inference speed on Dataset B, BUSI, and BUS-BRA."
-L2886,tran2026can,2610.13675,ok,"Classification performance and inference speed on Dataset B, BUSI, and BUS-BRA."
+L2884,tran2026can,2610.13675,ok,"Table 3: Classification performance and inference speed on Dataset B, BUSI, and BUS-BRA. Acc.: accuracy; Bal. Acc.: balanced accuracy. F1 score and precision are macro averages. FPS is reported in frames per second and latency in milliseconds per image. | Prompt | Model | Acc. (%) | F1 score (%) | B"
+L2885,tran2026can,2610.13675,ok,"Table 3: Classification performance and inference speed on Dataset B, BUSI, and BUS-BRA. Acc.: accuracy; Bal. Acc.: balanced accuracy. F1 score and precision are macro averages. FPS is reported in frames per second and latency in milliseconds per image. | Prompt | Model | Acc. (%) | F1 score (%) | B"
+L2886,tran2026can,2610.13675,ok,"Table 3: Classification performance and inference speed on Dataset B, BUSI, and BUS-BRA. Acc.: accuracy; Bal. Acc.: balanced accuracy. F1 score and precision are macro averages. FPS is reported in frames per second and latency in milliseconds per image. | Prompt | Model | Acc. (%) | F1 score (%) | B"
 L2887,tran2026can,2610.13675,ok,"CLEF-Flash offers lower observed latency across all matched comparisons, with approximately 3.30-3.64-fold speedups on Dataset B, 1.85-1.91-fold on BUSI, and 1.30-1.38-fold on BUS-BRA."
 L2888,fadli2026does,2610.14112,ok,"On NusaX, zero-shot Jev (0.782) is on par with DeepSeek (0.786)"
 L2889,fadli2026does,2610.14112,table_ok,"Macro-F1 on the test sets (trained arms: mean of three seeds), API cost per 1,000 decisions and median latency [[row A1 Jev (noul_en), column NT-senti; IndoBERT per language 0.824]]"
 L2890,fadli2026does,2610.14112,table_ok,"Macro-F1 on the test sets (trained arms: mean of three seeds), API cost per 1,000 decisions and median latency [[row A1 Jev (noul_en), column NT-emot; IndoBERT per language 0.647]]"
-L2891,fadli2026does,2610.14112,ok,Laya without fine-tuning (C2) is far below every other arm
+L2891,fadli2026does,2610.14112,ok,"Macro-F1 on the test sets (trained arms: mean of three seeds), API cost per 1,000 decisions and median latency | C2 Laya zero-shot | 0.502 | 0.590 | 0.367 | local | --"
 L2892,fadli2026does,2610.14112,table_ok,"Macro-F1 on the test sets (trained arms: mean of three seeds), API cost per 1,000 decisions and median latency [[row C1 Laya-ft, pooled, column NusaX-senti]]"
 L2893,fadli2026does,2610.14112,ok,"presenting the human Indonesian translation instead raises its accuracy by up to 37.2 points, most in languages distant from Indonesian"
-L2894,fadli2026does,2610.14112,ok,RQ1: sentence-level overlap effect (H1a) and the gain from the Indonesian source sentence (H1b)
-L2895,fadli2026does,2610.14112,ok,H2a is not confirmed.
-L2896,fadli2026does,2610.14112,ok,"H2b, in contrast, is confirmed in all three datasets: the AURC is higher on regional languages"
-L2897,fadli2026does,2610.14112,ok,"Relative to the logprob-derived distribution of DeepSeek, Jev is better calibrated (Fig. 2)."
-L2898,fadli2026does,2610.14112,ok,"With 500 labels per language, the lower bound of the classical baseline still falls short of zero-shot Jev in 9 of 10 NusaX regional languages"
+L2894,fadli2026does,2610.14112,ok,"RQ1: sentence-level overlap effect (H1a) and the gain from the Indonesian source sentence (H1b) | Dataset | [95% CI] (H1a) | Items | NusaX-senti | 0.33 [0.17, 0.49] | 4,000 | 7 of 10"
+L2895,fadli2026does,2610.14112,ok,"RQ2: regional minus Indonesian differences for Jev's native choice distribution (A1-choice), with 95% cluster-bootstrap intervals | Dataset | ECE (H2a) | AURC (H2b) | Overconfidence | NusaX-senti | -0.036 [-0.054, -0.018] | 0.058 [0.035, 0.066] | -0.040 [-0.060, -0.020]"
+L2896,fadli2026does,2610.14112,ok,"RQ2: regional minus Indonesian differences for Jev's native choice distribution (A1-choice), with 95% cluster-bootstrap intervals | Dataset | ECE (H2a) | AURC (H2b) | Overconfidence | NusaX-senti | -0.036 [-0.054, -0.018] | 0.058 [0.035, 0.066] | -0.040 [-0.060, -0.020]"
+L2897,fadli2026does,2610.14112,ok,"Relative to the logprob-derived distribution of DeepSeek, Jev is better calibrated (Fig. 2). Its ECE is lower by 0.039 ... 0.127 (all intervals below zero)"
+L2898,fadli2026does,2610.14112,ok,"With 500 labels per language, the lower bound of the classical baseline still falls short of zero-shot Jev in 9 of 10 NusaX regional languages | RQ3: label budget n at which a trained model reaches zero-shot Jev (NusaX regional languages, macro-F1) | Language | Jev A1 | n B1-LR | Buginese | 0.514 | "
 L2899,fadli2026does,2610.14112,ok,Routing the 30% least confident emotion decisions to IndoBERT raises macro-F1 from 0.629 (Jev) and 0.647 (IndoBERT) to 0.676
-L2900,fadli2026does,2610.14112,ok,Routing to DeepSeek instead matches DeepSeek alone at
-L2901,fadli2026does,2610.14112,ok,"Macro-F1 on the test sets (trained arms: mean of three seeds), API cost per 1,000 decisions and median latency"
-L2902,fadli2026does,2610.14112,ok,Claude Opus 5.5 is the most accurate model on every subset
-L2903,fadli2026does,2610.14112,ok,Claude Sonnet and Opus cost 347 ... times as much as Jev per decision
-L2904,fadli2026does,2610.14112,ok,"Claude Haiku 4.5, the smallest model, is less accurate than Jev on both sentiment subsets"
+L2900,fadli2026does,2610.14112,ok,Routing to DeepSeek instead matches DeepSeek alone at 24 ... 77% lower API cost.
+L2901,fadli2026does,2610.14112,ok,"Macro-F1 on the test sets (trained arms: mean of three seeds), API cost per 1,000 decisions and median latency | A1 Jev (noul_en) | 0.782 | 0.781 | 0.629 | 0.015 ... 0.019 | 355 ... 369"
+L2902,fadli2026does,2610.14112,ok,"LLM ladder on the fixed test subsets: macro-F1, accuracy difference to Jev, API cost and median latency | Claude Opus 5.5 | 0.890 | 0.877 | 0.770 | +10.2 / +7.5 / +13.6 | 9.4 ... 10.9 | 4.2 ... 4.7"
+L2903,fadli2026does,2610.14112,ok,"Where cost is reported, Claude Sonnet and Opus cost 347 ... 618 times as much as Jev per decision"
+L2904,fadli2026does,2610.14112,ok,"LLM ladder on the fixed test subsets: macro-F1, accuracy difference to Jev, API cost and median latency | Claude Haiku 4.5 | 0.729 | 0.750 | 0.627 | -6.5 / -4.4 / -1.6 | 6.3 ... 7.8 | 8.8 ... 11.3"
 L2905,fadli2026does,2610.14112,ok,Translating with NLLB before asking Jev (A3) lowers accuracy in 6 of 13 language versions
 L2906,fadli2026does,2610.14112,ok,the three pre-registered formulations differ by at most 1.1 macro-F1 points
 L2907,fadli2026does,2610.14112,ok,"The exception is Buginese, where Jev is weak (macro-F1 0.514) and 25 labels suffice."
 L2908,fadli2026does,2610.14112,ok,Jev is statistically indistinguishable from DeepSeek in 24 of 26 language versions
-L2909,dong2026dice,2610.14404,ok,Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task.
-L2910,dong2026dice,2610.14404,ok,Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task.
-L2911,dong2026dice,2610.14404,ok,Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task.
-L2912,dong2026dice,2610.14404,ok,Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task.
+L2909,dong2026dice,2610.14404,ok,TABLE III: Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task. Counts belong to different synthetic studies. | Pillar | Clean task baseline | Attacked local correctness | Wrong final decision | State | 36/36 re
+L2910,dong2026dice,2610.14404,ok,TABLE III: Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task. Counts belong to different synthetic studies. | Pillar | Clean task baseline | Attacked local correctness | Wrong final decision | State | 36/36 re
+L2911,dong2026dice,2610.14404,ok,TABLE III: Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task. Counts belong to different synthetic studies. | Pillar | Clean task baseline | Attacked local correctness | Wrong final decision | Question | 12/12
+L2912,dong2026dice,2610.14404,ok,TABLE III: Primary outcomes by pillar. Local correctness concerns the request Jev actually received; a wrong final decision concerns the protected task. Counts belong to different synthetic studies. | Pillar | Clean task baseline | Attacked local correctness | Wrong final decision | Output | 12/12 c
 L2913,dong2026dice,2610.14404,ok,Transfer uses the same 36 actions for three separate interventions; repeat statistics summarize five exact-request rounds on the original cases.
-L2914,dong2026dice,2610.14404,ok,The selected state and output outcomes were stable across repeats; question variation came from one answer near the decision threshold.
-L2915,dong2026dice,2610.14404,ok,Checks evaluated on the three primary studies.
-L2916,dong2026dice,2610.14404,ok,Checks evaluated on the three primary studies.
-L2917,dong2026dice,2610.14404,ok,Checks evaluated on the three primary studies.
+L2914,dong2026dice,2610.14404,ok,TABLE IV: Non-pooled follow-ups. Transfer uses the same 36 actions for three separate interventions; repeat statistics summarize five exact-request rounds on the original cases. | Pillar | Transfer: wrong decisions | Repeats: mean \pm sample SD | Question | 36/36 | 95.0% \pm 4.6 pp
+L2915,dong2026dice,2610.14404,ok,"TABLE V: Checks evaluated on the three primary studies. A dash means that clean acceptance was not measured for that comparison. Clean state inputs include related representations, while question and output clean inputs are their respective study cases. | Pillar | Check or audit view | Wrong decisio"
+L2916,dong2026dice,2610.14404,ok,"TABLE V: Checks evaluated on the three primary studies. A dash means that clean acceptance was not measured for that comparison. Clean state inputs include related representations, while question and output clean inputs are their respective study cases. | Pillar | Check or audit view | Wrong decisio"
+L2917,dong2026dice,2610.14404,ok,"TABLE V: Checks evaluated on the three primary studies. A dash means that clean acceptance was not measured for that comparison. Clean state inputs include related representations, while question and output clean inputs are their respective study cases. | Pillar | Check or audit view | Wrong decisio"
 L2918,chen2026company,2610.14631,ok,"Nimble-9B flips 9.1%/8.0% of target judgments (Table 2, Figure 1)."
 L2919,chen2026company,2610.14631,ok,"Nimble-9B flips 9.1%/8.0% of target judgments (Table 2, Figure 1)."
 L2920,chen2026company,2610.14631,ok,changes 21.4%/18.9% of selection-or-abstention actions in TREC DL2019/2020 under a threshold of 0.5 fixed before inference
@@ -1386,12 +1386,12 @@ L2923,chen2026company,2610.14631,ok,All 70 observed request-set flips disappear.
 L2924,chen2026company,2610.14631,ok,"Their singleton accuracies are 51.0%/53.2% at 0.8B, 75.2%/80.1% at 4B, and 78.1%/85.3% at 9B."
 L2925,chen2026company,2610.14631,ok,"Their singleton accuracies are 51.0%/53.2% at 0.8B, 75.2%/80.1% at 4B, and 78.1%/85.3% at 9B."
 L2926,chen2026company,2610.14631,table_ok,"Native trained decision engines on the frozen retrieval states. [[Table 2 row Nimble-9B 2019, Singleton accuracy 74.1 [67.8, 79.8]]]"
-L2927,chen2026company,2610.14631,ok,"Task quality with full shared evidence: native singleton Noul above the rule, ordinary-LLM controls"
+L2927,chen2026company,2610.14631,ok,"Table 4. Task quality with full shared evidence: native singleton Noul above the rule, ordinary-LLM controls (explicit-output realization, independent-compiler arm) below it. Accuracy and correct actions are percentages; Brier is unscaled. Actions use threshold 0.5. | Model | Year | Accuracy | Brier"
 L2928,chen2026company,2610.14631,ok,"singleton accuracy is 66.1%/64.8%, close to the 66.7% all-No baseline"
 L2929,chen2026company,2610.14631,ok,"Von also has no observed request-set flips, with 37.0%/40.9% accuracy under its released Noul calibration."
 L2930,chen2026company,2610.14631,ok,Appending judged grade-0 passage D flips 13.1%/15.1% of Laya-typed decisions and 5.1%/5.2% of Kev-4B decisions.
 L2931,chen2026company,2610.14631,ok,"document isolation flips 27.4%/25.4% of Laya-typed, 12.5%/11.5% of Kev-4B, 22.8%/19.9% of Nimble, and 16.8%/18.0% of Von judgments"
-L2932,chen2026company,2610.14631,ok,"In FP32, Laya-typed has identical singleton/all probabilities at native four-decimal resolution."
+L2932,chen2026company,2610.14631,ok,"In FP32, Laya-typed has identical singleton/all probabilities at native four-decimal resolution. | Dots show the mass at exactly zero: 17.5%/21.6% in BF16 and 100%/99.4% in FP32 for typed/general, where Laya-general’s FP32 maximum movement is 0.0001."
 L2933,chen2026company,2610.14631,ok,Request-set flips remain at 9.4–18.8% and action changes at 21.4–49.1%.
 L2934,chen2026company,2610.14631,ok,Reversing Choice criteria changes approximately 5% of Kev-4B
 L3000,lukauskas2026probable,2610.14912,ok,"Table 1: Aligned PSS components at C3 on the same 100 respondents, scored against all 263 humans. || Jev 1.13 | 0.77 | 0.66 | 0.95 | 0.50 | 0.34 | 0.681 | 0.036 |"
@@ -1510,7 +1510,7 @@ L3112,dai2026probabilitybench,2610.17016,ok,"In peer review, Jev’s mean KL dec
 L3113,dai2026probabilitybench,2610.17016,ok,"Decision models account for ten of the fourteen model–world points on the observed frontiers, including Jev and Perplexity Decider."
 L3114,dai2026probabilitybench,2610.17016,ok,Jev 1.13 Noul | 0.042 | 0.00 | TypeSafe AI: Jev announcement |
 L3115,dai2026probabilitybench,2610.17016,ok,Perplexity Decider V1.1 27B | 0.02 | 0.00 | OpenRouter: Decisions catalog |
-L3116,dai2026probabilitybench,2610.17016,ok,"Across the 36,000 predictions in the demonstration-count study, clipping affects 67 Luna replies, all in covert transfer, and no Jev replies."
+L3116,dai2026probabilitybench,2610.17016,derived,"Across the 36,000 predictions in the demonstration-count study, clipping affects 67 Luna replies, all in covert transfer, and no Jev replies."
 L3200,panchal2026fundm,2610.17175,ok,Mean 0.443 0.464 0.357 0.747 0.750 0.757
 L3201,panchal2026fundm,2610.17175,ok,"At 24 layers, FunDM and FunDM+1T score 0.747 and 0.750 versus the teacher's 0.757, retaining 98.7% and 99.2% of its mean accuracy."
 L3202,panchal2026fundm,2610.17175,ok,MMLU-Pro 0.180 0.182 0.157 0.426 0.443 0.451
@@ -1581,7 +1581,7 @@ L3266,li2026same,2610.17820,ok,"Putting both forgeries into one payload (A12a) g
 L3267,li2026same,2610.17820,ok,"The search succeeds on 5 of 50 requests against Jev and 11 of 50 against GPT-6 Astra. With 50 requests this gap could be chance, so we do not claim that Jev resists the search better."
 L3268,li2026same,2610.17820,ok,"Of the 79 requests Jev flags when clean, A5a loosens 19. Of those 19, 12 fall one step from block to review and 7 reach pass."
 L3269,li2026same,2610.17820,ok,"Jev's mean probability for the attacker's action rises by 0.064 from clean to injected, more than four times the largest shift on any LLM judge (GLM-5.2, 0.015)."
-L3270,li2026same,2610.17820,ok,"Jev never picks the attacker's action at any size; only GLM-5.1 does, on 3 of 50 cases at 8 and 16 options and on none at 32, which is within chance."
+L3270,li2026same,2610.17820,ok,"At 8, 16 and 32 options every system picks the attacker’s action 0% of the time, except GLM-5.1 at 0.06 [0.00, 0.14] with 8 and 16 options and 0.00 with 32."
 L3271,lukassen2026cheap,2610.18122,ok,Jev 1.13 | 0.78 | 0.83 | 0.081 | 0.169 | 0.63 | 1.00 | 0.97 | 0.030 | 0.008 |
 L3272,lukassen2026cheap,2610.18122,ok,Jev 1.13 | 0.78 | 0.83 | 0.081 | 0.169 | 0.63 | 1.00 | 0.97 | 0.030 | 0.008 |
 L3273,lukassen2026cheap,2610.18122,ok,Jev 1.13 | 0.78 | 0.83 | 0.081 | 0.169 | 0.63 | 1.00 | 0.97 | 0.030 | 0.008 |
@@ -1726,8 +1726,8 @@ L3478,zhu2026videojev,2610.18615,ok,Table 1: Video temporal grounding. | VideoJe
 L3479,zhu2026videojev,2610.18615,ok,Table 1: Video temporal grounding. | VideoJev-4B 0.276 82.8 69.4 40.3 60.1 78.8 70.5 51.4 62.8 87.3 79.4 64.8 73.2 65.3 | Qwen3.5-4B [33] 0.763 75.2 56.6 31.5 52.3 72.6 61.6 42.6 55.6 82.9 73.1 58.1 67.9 58.6
 L3480,zhu2026videojev,2610.18615,ok,Table 2: Multiple-choice Video QA. | VideoJev-4B 1.123 67.9 75.0 73.6 80.6 74.3 | Qwen3.5-4BThinking [33] 144.929 66.4 76.9 73.6 82.8 74.9 | Qwen3.5-4BInstruct [33] 1.355 60.0 70.6 61.2 73.3 66.3
 L3481,zhu2026videojev,2610.18615,ok,Table 2: Multiple-choice Video QA. | VideoJev-35B-A3B 1.493 73.4 81.8 77.1 85.9 79.5 | Qwen3.6-35B-A3BThinking [34] 149.777 71.4 82.5 74.9 86.2 78.8
-L3482,zhu2026videojev,2610.18615,ok,"Measured speedups over these Thinking baselines are 𝟏𝟐𝟗× and 𝟏𝟎𝟎×, respectively."
-L3483,zhu2026videojev,2610.18615,ok,"Measured speedups over these Thinking baselines are 𝟏𝟐𝟗× and 𝟏𝟎𝟎×, respectively."
+L3482,zhu2026videojev,2610.18615,ok,"Measured speedups over these Thinking baselines are 129× and 100×, respectively."
+L3483,zhu2026videojev,2610.18615,ok,"Measured speedups over these Thinking baselines are 129× and 100×, respectively."
 L3484,zhu2026videojev,2610.18615,ok,Its probabilities tend to overestimate correctness: the four-benchmark mean expected calibration error (ECE; ten equal-width bins) is 8.65 and 8.13 percentage points for 4B and 35B-A3B.
 L3485,zhu2026videojev,2610.18615,ok,"On LVBench, the 35B-A3B model reaches 95.8% accuracy on its 591 predictions with confidence at least 99%, compared with 73.4% overall."
 L3486,zhu2026videojev,2610.18615,ok,Table 3 shows that VideoJev improves mean grounding and QA scores by 1.3 and 1.9 points. | VideoJev-4B† (baseline) 60.6 62.8 72.9 65.4 67.7 74.9 73.5 82.6 74.7
@@ -1890,7 +1890,7 @@ L3706,xie2026lost,2610.19856,ok,"Intern correctly classifies 329 of the 500 TREC
 L3707,xie2026lost,2610.19856,ok,"On TREC, supplying the fine-category label makes every JevK5 gold-regular decision correct under both U and C, yet fallback recall reaches only 71.1% and 14.8%, respectively."
 L3708,xie2026lost,2610.19856,ok,"Even with the correct category provided, OpenJev achieves perfect regular accuracy but only 43.4% and 41.0% fallback recall under U and C, respectively (Figure 3)."
 L3709,xie2026lost,2610.19856,ok,"In a separate sixteen-option category-only task, Kev achieves 99.2% and 98.4% joint correctness on BANKING77 under U and C, respectively."
-L3710,xie2026lost,2610.19856,ok,"JevK5’s CLINC fallback recalls differ by only 1.8% between U and C, yet one-third of its choices change."
+L3710,xie2026lost,2610.19856,ok,Table 1: Main PFR results (%) under direct selection with fallback named Other. U/C: union/complement; Δ=C−U (pp). A+: regular accuracy; A−: fallback recall; F+: false fallback rate; J: joint correctness under both assignments. DR: U/C disagreement under regular (R) or fallback (F) assignment. | CLI
 L3711,xie2026lost,2610.19856,ok,"For JevK5 on CLINC150, the C-minus-U recall gap changes from −41.4 points at fallback position 1 to +35.2 at position 11, while mean regular accuracy remains 94.8–97.1%."
 L3712,xie2026lost,2610.19856,ok,"For Intern on TREC, this approach achieves J=65.8%, compared with 21.0% under direct C selection."
 L3713,xie2026lost,2610.19856,ok,Joint policy correctness is zero for all four models under both criteria.
@@ -1931,7 +1931,7 @@ L3747,chouhan2026verdict,2610.20778,table_ok,"Table 1: Typed-decisions test spli
 L3748,chouhan2026verdict,2610.20778,table_ok,"Table 5: Standard benchmarks. [row RACE (test); Verdict-MQ 77.4±0.4; Baseline 78.9±0.1; Laya, zero-shot 45.5; Jev, zero-shot 93.3]"
 L3749,chouhan2026verdict,2610.20778,table_ok,"Table 5: Standard benchmarks. [row BoolQ (val); Verdict-MQ 76.2±3.1; Baseline 81.0±0.6; Laya, zero-shot 76.0; Jev, zero-shot 91.3]"
 L3750,chouhan2026verdict,2610.20778,table_ok,"Table 5: Standard benchmarks. [row MultiRC (val); Verdict-MQ 80.6±0.5; Baseline 71.6±4.9; Laya, zero-shot 54.9; Jev, zero-shot 90.0]"
-L3751,chouhan2026verdict,2610.20778,ok,"Removing our own delay gives 1.7–1.8 s per call, which still includes retry backoff and the shared, rate-limited gateway’s overhead"
+L3751,chouhan2026verdict,2610.20778,ok,"Our standard-benchmark Jev runs were sequential, and the timed window included a fixed 0.3 s delay we inserted after every call and the retry backoff on transient errors: total wall-clock time per call was 2.0–2.1 s (RACE 2839 s/1,407 cases, BoolQ 5999 s/2,938, MultiRC 725 s/344). Removing our own d"
 L3752,chouhan2026verdict,2610.20778,ok,"At a 90% target the large Verdict-MQ auto-handles 62–71% of decisions against Laya’s 56%, at comparable or better realized accuracy (89.4–92.2% vs 86.5%), with 32–39% lower AURC."
 L3753,lan2026from,2610.20907,ok,"The LLM judge achieves the highest overall discrimination (AUROC 0.897), followed by Jev (0.871), Prompt Guard 2 86M (0.757), and Prompt Guard 2 22M (0.714)."
 L3754,lan2026from,2610.20907,table_ok,Table 2: Overall detection performance on the confirmatory cohort. [row Jev-native; column AUPRC = 0.973]
@@ -1959,7 +1959,7 @@ L3807,min2026prune,2610.20927,ok,"Table 4: Results on OfficeBench, grouped by th
 L3808,min2026prune,2610.20927,ok,"Table 3: Results on the AppWorld test-normal split by difficulty, over three independent runs. | Method | Average (168) | Acc. \uparrow | Pass3 \uparrow | Steps \downarrow | Peak \downarrow | Agent: GPT-5.6 Luna / Compressor: GPT-5.6 Luna | No compression | 84.1 \pm 0.9 | 78.6 | 12.1 | 12.53 | Promp"
 L3809,min2026prune,2610.20927,ok,"SJC achieves the highest Pass3 among compressed methods in all four benchmark–model settings, improving over Prompting by 2.1\% – 8.9\% without adding interaction steps or context length (Tables 3 and 4)."
 L3810,min2026prune,2610.20927,ok,"Table 3: Results on the AppWorld test-normal split by difficulty, over three independent runs. | Method | Average (168) | Acc. \uparrow | Pass3 \uparrow | Steps \downarrow | Peak \downarrow | Agent: GPT-5.6 Luna / Compressor: GPT-5.6 Luna | Fast-Jev | 74.8 \pm 1.4 | 61.9 | 22.4 | 9.63 | Prompting | "
-L3811,min2026prune,2610.20927,ok,"At $0.042 per million input tokens, the judge costs $1.2–$1.5 per 1,000 tasks."
+L3811,min2026prune,2610.20927,ok,Table 5: Overhead of SJC. LLM tokens are means per task; \Delta is relative to Prompting. Summary length is the change in summary tokens after pruning. | AppWorld | OfficeBench | GPT | M3 | Judge cost ($/1K tasks) | 1.24 | 1.39 | 1.19 | 1.52
 L3812,min2026prune,2610.20927,ok,Cumulative agent and compressor tokens change by -8.0\% and -2.9\% on AppWorld and by -1.3\% and -7.0\% on OfficeBench relative to Prompting. | Table 5: Overhead of SJC. LLM tokens are means per task; \Delta is relative to Prompting. | AppWorld | OfficeBench | GPT | M3 | GPT | M3 | Prompting tokens 
 L3813,min2026prune,2610.20927,ok,"when the same 40 judge requests ( 1{,}598 entries) from AppWorld with GPT-5.6 Luna are issued five times, the self-judge changes its answer on 8.6\% of entries and Jev on 2.1\% ."
 L3814,min2026prune,2610.20927,ok,Table 6: Pass3 (%) with the compressor itself as the source judge (Self) and with Jev. | AppWorld | OfficeBench | GPT | M3 | GPT | M3 | Prompting | 64.3 | 55.4 | 68.4 | 74.7 | +SJC (Self) | 75.6 | 50.0 | 60.0 | 70.5 | +SJC (Jev) | 73.2 | 62.5 | 73.7 | 76.8
@@ -1972,14 +1972,14 @@ L3820,song2026lev,2610.20951,ok,"Table 9: Top-label expected calibration error o
 L3821,song2026lev,2610.20951,ok,"Temperature scaling lowers the hard-tier ECE at depth four from 0.255 to 0.231 for LEV-1.4B and from 0.218 to 0.192 for LEV-2.6B, and that of the Qwen3-1.7B control from 0.258 to 0.253."
 L3822,song2026lev,2610.20951,ok,"The gain holds for every backbone and on every panel and reaches 13.0 points on JevBench for LEV-2.6B (Fig. 13), while the fourth step of the Ouro models adds at most one point."
 L3823,song2026lev,2610.20951,ok,Table 1: Accuracy (%) and median latency per request of every system on the six panels of Table 5. | Avg. is the unweighted mean of Kev-Breadth and LevBench. | System | Depth | Latency \downarrow | Tuning \uparrow | Held-out \uparrow | Benchmark \uparrow | (ms) | Kev-Seen | Kev-Skills | Kev-Transfer
-L3824,song2026lev,2610.20951,ok,Latency is the median per request on one H200 GPU in bf16.
+L3824,song2026lev,2610.20951,ok,"Table 8: Accuracy and latency on the public JevBench items per tier (48 easy, 72 standard, 111 hard), with the JevBench Intelligence score. | System | Params | Depth | Latency (ms) | Easy | Standard | Hard | All | Intelligence | LEV, one checkpoint per model read at every depth | 1 | 15 | 100.0 | 70"
 L3825,song2026lev,2610.20951,ok,"Table 2: On-demand depth on the two held-out panels, pooled over their questions. | Model | Deepest | On-demand | Cost | vs. deepest | vs. frontier | Locked test | LEV-2.6B | 64.6 | 63.7 | 0.78 | -0.9 [-1.1,-0.6] | +0.1 [-0.4,+0.5]"
 L3826,song2026lev,2610.20951,ok,"On-demand depth, set per question by a small stopper with a threshold fitted on unlabelled requests, saves 15% to 24% of the computation at a cost of under one accuracy point, level with or slightly above a fixed mix of depths."
 L3827,song2026lev,2610.20951,ok,"At 39 to 46 ms, on-demand LEV-1.4B and LEV-3B are 7.0 to 8.8 points more accurate than the only cascade that reaches this latency, and 5.4 to 7.5 points above the best dense option."
 L3828,song2026lev,2610.20951,ok,"The questions that LEV-2.6B stops at depth one are 94.8% correct on the calibration partition but only 78.9% on Kev-Transfer, at almost the same confidence."
 L3829,song2026lev,2610.20951,ok,"Table 8: Accuracy and latency on the public JevBench items per tier (48 easy, 72 standard, 111 hard), with the JevBench Intelligence score. | System | Params | Depth | Latency (ms) | Easy | Standard | Hard | All | Intelligence | LEV-2.6B [-1pt]Ouro-2.6B | 2.6B | 4 | 200 | 100.0 | 90.3 | 56.8 | 76.2 "
 L3830,bellversoler2026audio,2610.22401,ok,"Table 1: MSP-Podcast 2.0 Dev-select, the 3,113 clips every system answers: 8-class macro-F1 (95% interval), log loss against the votes (LL8) and latency of 20 questions in ms (Sec. 4). | System | Params | F1 (95% CI) | LL8 | ms | ASOM | 2.2B | 0.383 (0.353, 0.412) | 1.507 | 13.1 | Qwen2.5-Omni-7B | "
-L3831,bellversoler2026audio,2610.22401,ok,"Every other open-label system trails ASOM: the best zero-shot ALM, Qwen2.5-Omni-7B, by 0.072, ParaCLAP by 0.099, and Omni-3B fine-tuned with LoRA on all 169k Train clips by 0.026"
+L3831,bellversoler2026audio,2610.22401,ok,"Table 1: MSP-Podcast 2.0 Dev-select, the 3,113 clips every system answers: 8-class macro-F1 (95% interval), log loss against the votes (LL8) and latency of 20 questions in ms (Sec. 4). Omni: Thinker parameters. + transcript: an earlier reader on the fixed 30 s window. Bold: best per column. | System"
 L3832,bellversoler2026audio,2610.22401,ok,"ASOM (F1 0.383) is above every audio-only classifier; only DeepSER, which adds two text streams over its own transcript, is ahead (+0.017)"
 L3833,bellversoler2026audio,2610.22401,ok,"every zero-shot ALM has a log loss above the class prior (2.097 or more, against 1.863), so a constant answer is closer to the listeners' votes, while ASOM is well below it (1.507)."
 L3834,bellversoler2026audio,2610.22401,ok,"ASOM answers twenty questions in 13.1 ms, as fast as one, since all criteria are scored in one reader call; most of it is the Whisper encoder (10.6 ms). An ALM runs its language model for each question: even with the audio prefix shared, twenty questions take 230–545 ms, 17–41 times ASOM."
@@ -2025,7 +2025,7 @@ L3873,chen2026system1,2610.21244,ok,"Jev achieves 72.6% accuracy at $0.052 per 1
 L3874,chen2026system1,2610.21244,ok,Decision-2.0-Vega-27B (73.0%) and Jev (72.6%) outperform GPT-6 Luna (71.2%) and GPT-5.6 Luna (70.0%). Both remain within 1.4 percentage points of Gemma-4-31B.
 L3875,chen2026system1,2610.21244,ok,"Across the 87 tasks, Decision-2.0-Vega-27B and Jev achieve mean Brier scores of 0.343 and 0.349, respectively."
 L3876,chen2026system1,2610.21244,ok,"Microsoft-Decision-1 is the least expensive hosted model, achieving 70.9% at $0.038."
-L3877,chen2026system1,2610.21244,ok,"The Decisions API and CLM-v0.1-8B instead lose 2.6 and 17.8 percentage points, respectively. Brier scores improve in four of the five pairs, with reductions of 0.037–0.400; CLM is the only exception."
+L3877,chen2026system1,2610.21244,ok,"Table 1: All models on the non-agentic tasks: accuracy (%), overall accuracy and Brier score, latency, cost and output tokens. Rank is by overall accuracy; within a family, the rows follow it. | Model | Cls | Know | Social | Pro | Ret | Struct | Code | Fore | Dialog | Batch | Judge | Safety | Route "
 L3878,chen2026system1,2610.21244,ok,"Table 1: All models on the non-agentic tasks: accuracy (%), overall accuracy and Brier score, latency, cost and output tokens. | Every cell is the mean over the tasks of a domain on all 78,362 questions. | Model | Cls | Know | Social | Pro | Ret | Struct | Code | Fore | Dialog | Batch | Judge | Safe"
 L3879,chen2026system1,2610.21244,ok,"Claude Opus 5.5 achieves the highest overall accuracy (81.1%) and the lowest Brier score, leading in 9 of the 13 domains. ... Claude Opus 5.5 achieves 81.1% at $10.38, roughly 74 times GPT-6 Luna's cost for a 9.9-percentage-point accuracy gain."
 L3880,chen2026system1,2610.21244,ok,"Table 1: All models on the non-agentic tasks: accuracy (%), overall accuracy and Brier score, latency, cost and output tokens. | Every cell is the mean over the tasks of a domain on all 78,362 questions. | Model | Cls | Know | Social | Pro | Ret | Struct | Code | Fore | Dialog | Batch | Judge | Safe"
@@ -2039,8 +2039,8 @@ L3887,wang2026jevlitemas,2610.21411,ok,Table 1. End-to-end comparison across fou
 L3888,wang2026jevlitemas,2610.21411,ok,Table 1. End-to-end comparison across four benchmarks using DeepSeek-V4-Flash (top) and GPT-5 (bottom). | DeepSeek-V4-Flash | Method | API-Bank | IDRBench I3 | ACC \uparrow | Input | Output | Total \downarrow | E2E \downarrow | Calls \downarrow | Ours | 75.33 | 4928.3 | 5305.5 | 10233.8 | 72.40 | 2.
 L3889,wang2026jevlitemas,2610.21411,ok,Table 1. End-to-end comparison across four benchmarks using DeepSeek-V4-Flash (top) and GPT-5 (bottom). | GPT-5 | Method | MATH | MBPP+ | ACC \uparrow | Input | Output | Total \downarrow | E2E \downarrow | Calls \downarrow | Ours | 83.33 | 4028.0 | 3514.0 | 7542.0 | 40.25 | 3.03 | LAS | 84.67 | 4842
 L3890,wang2026jevlitemas,2610.21411,ok,"Removing semantic feedback lowers accuracy from 75.33% to 57.33% on I3 and from 66.29% to 57.30% on API-Bank, with nearly unchanged LLM call counts."
-L3891,wang2026jevlitemas,2610.21411,ok,"Compared with Qwen3-1.7B-Instruct (SLM Router), Jev improves accuracy by 11.33 and 4.94 points, with 24.3% and 16.1% fewer generative-LLM tokens and lower end-to-end latency."
-L3892,wang2026jevlitemas,2610.21411,ok,"Jev Router outperforms LLM Router by 6.66 and 0.67 accuracy points on IDRBench I3 and API-Bank, while reducing generative-LLM tokens by 63.1% and 36.0%."
+L3891,wang2026jevlitemas,2610.21411,ok,"Table 2. Ablations of workflow organization and routing on IDRBench I3 and API-Bank. ACC is accuracy (%); Tok. counts generative-LLM tokens (K), excluding decision-model tokens; E2E is latency (s), and Calls counts generative-LLM API requests. SLM Router uses Qwen3-1.7B-Instruct. | (b) Routing and f"
+L3892,wang2026jevlitemas,2610.21411,ok,"Table 2. Ablations of workflow organization and routing on IDRBench I3 and API-Bank. ACC is accuracy (%); Tok. counts generative-LLM tokens (K), excluding decision-model tokens; E2E is latency (s), and Calls counts generative-LLM API requests. SLM Router uses Qwen3-1.7B-Instruct. | (b) Routing and f"
 L3893,wang2026jevlitemas,2610.21411,ok,"Table 4. Jev, LLM, and SLM judging under clean and injected-error conditions. | ACC and Rate are percentages; Rate denotes FPR ( \downarrow ) for clean cases and TPR ( \uparrow ) for attacks. | Case | Judge | ACC | Rate | Tok. | E2E | MATH Attack | Jev | 94.00 | 95.33 | 8,657 | 34.19 | LLM Judge | 9"
 L3894,wang2026jevlitemas,2610.21411,ok,"Jev achieves true-positive rates of 95.33% on MATH and 91.33% on MBPP+, approaching the LLM judge's 96.67% and 92.00%. In contrast, the SLM Judge achieves only 61.33% and 44.67% TPR"
 L3895,wang2026jevlitemas,2610.21411,ok,"Table 4. Jev, LLM, and SLM judging under clean and injected-error conditions. | ACC and Rate are percentages; Rate denotes FPR ( \downarrow ) for clean cases and TPR ( \uparrow ) for attacks. | Case | Judge | ACC | Rate | Tok. | E2E | MATH Clean | Jev | 97.33 | 4.00 | 5,433 | 22.13 | LLM Judge | 96."
@@ -2059,12 +2059,12 @@ L3907,zhu2026jevagentharness,2610.21412,ok,"Table 1 ... ALFWorld: action cascade
 L3908,zhu2026jevagentharness,2610.21412,ok,"A confident wrong choice at an irreversible step ends the task. All 34 of Jev's failed tasks began with an irreversible wrong tool choice, usually cancelling where the agent should have asked."
 L3909,zhu2026jevagentharness,2610.21412,ok,Over the five pre-specified models the isolated and task-level rankings disagree (Kendall rank correlation -0.200 ).
 L3910,zhu2026jevagentharness,2610.21412,ok,"On one L4 GPU, it took a median 31 ms per answer, while a Flash call took 809 ms."
-L3911,zhu2026jevagentharness,2610.21412,ok,"JevAgentHarness cut cost and time on DecisionGym, ALFWorld and mini-SWE-agent. With AgentDecision-4B on its own GPU, the DecisionGym agent was 86.3% cheaper and 2.5 times faster, without losing 3 or more points of success"
+L3911,zhu2026jevagentharness,2610.21412,ok,"Table 2: What each part of JevAgentHarness contributes. Each row compares the agent without and with one part: the change in success (points) and the cost and time saved (%) vs. the LLM alone. | Part | Without, then with | \Delta pt | Saved %: cost, time | Serving | 4B, shared GPU | +0.6 | 81.1 | −4"
 L3912,chen2026qwen,2610.21614,ok,Table 2: Choice accuracy (%) of Qwen-Audio-Jev on eight labeled benchmarks ... MMAU | 78.4000 |
 L3913,chen2026qwen,2610.21614,ok,Table 2: Choice accuracy (%) of Qwen-Audio-Jev on eight labeled benchmarks ... MMSU | 83.1366 |
 L3914,chen2026qwen,2610.21614,ok,Table 2: Choice accuracy (%) of Qwen-Audio-Jev on eight labeled benchmarks ... MMAR | 70.0000 |
 L3915,chen2026qwen,2610.21614,ok,Table 2 ... MELD | 58.1511 | ; MELD yields the lowest accuracy at 58.15%.
-L3916,chen2026qwen,2610.21614,ok,"The model achieves 100% accuracy on DiDiSpeech and over 90% on NonSpeech7k, while MELD yields the lowest accuracy at 58.15%."
+L3916,chen2026qwen,2610.21614,ok,"Table 2: Choice accuracy (%) of Qwen-Audio-Jev on eight labeled benchmarks covering acoustic-scene classification, musical-instrument recognition, human non-speech sound recognition, speaker-gender classification, speech emotion recognition, and audio question answering. | Benchmark | Accuracy (%) |"
 L3917,chen2026qwen,2610.21614,ok,"Table 3: Noul performance of Qwen-Audio-Jev on speaker verification, binary audio question answering, sarcasm detection, and audio-deepfake detection. | Accuracy, FPR, and FNR use a probability threshold of 0.5. | Configuration | Accuracy (%) \uparrow | EER (%) \downarrow | AUC \uparrow | Brier \dow"
 L3918,chen2026qwen,2610.21614,ok,Table 3: Noul performance of Qwen-Audio-Jev ... VoxCeleb1-O | 93.7595 | 6.1714 | 0.983857 | 0.047376 | 5.6199 | 6.8613 |
 L3919,chen2026qwen,2610.21614,ok,Table 3: Noul performance of Qwen-Audio-Jev ... VoxCeleb1-O | 93.7595 | 6.1714 | 0.983857 | 0.047376 | 5.6199 | 6.8613 |
@@ -2086,9 +2086,9 @@ L3934,teng2026prism,2610.22066,ok,"one shuffle changes 4.7% of the answers of Je
 L3935,teng2026prism,2610.22066,ok,"a published decision fine-tune of Gemma 4 12B (Torchcast AI, 2026a) still changes 9.1%."
 L3936,teng2026prism,2610.22066,table_ok,"Prism-1 reaches 79.5% on Gemma and 78.0% on Qwen, against 80.4% and 77.9% for trained SCQ, which flips 7.1% and 7.4% of its answers. No difference is significant in exact McNemar tests pooled over the five sets ( p\geq 0.13 )."
 L3937,teng2026prism,2610.22066,ok,"Prism-1 reaches 79.5% on Gemma and 78.0% on Qwen, against 80.4% and 77.9% for trained SCQ"
-L3938,teng2026prism,2610.22066,ok,"Counting a question only if the answer is right in both listings, the Rob. column of Table 1, SCQ falls from 80.4% to 77.8% on Gemma and from 77.9% to 74.3% on Qwen, and Prism-1, unchanged, is 1.6 and 3.7 points ahead ( p<0.01 )."
+L3938,teng2026prism,2610.22066,ok,Table 1. Main results. Acc: accuracy (%). Flip: answers changed by one shuffle (%). Dr.: probability moved among the original options when one irrelevant option is added (points). St.: questions on which an added irrelevant option can move the answer to another original option (%). Rob.: order-robus
 L3939,teng2026prism,2610.22066,ok,"Prism-1's probabilities are as well calibrated as SCQ's, with an expected calibration error of 5.3% and 5.4% against 4.9% and 5.4%."
-L3940,teng2026prism,2610.22066,ok,while no shuffle changes any of its answers and no added irrelevant option moves its choice among the others.
+L3940,teng2026prism,2610.22066,ok,Table 1. Main results. Acc: accuracy (%). Flip: answers changed by one shuffle (%). Dr.: probability moved among the original options when one irrelevant option is added (points). St.: questions on which an added irrelevant option can move the answer to another original option (%). Rob.: order-robus
 L4000,zhu2026interndecision,2610.22131,ok,"The 4B model achieves a 90.02% unweighted average accuracy across seven evaluation suites, compared with 88.74% for Jev v1.13.0."
 L4001,zhu2026interndecision,2610.22131,table_ok,"Table 3: Decision accuracy in percent. Average is the unweighted mean of the seven suites. Denominators are given in Table 2; bold data values mark column maxima, including ties. The comparison is restricted to these evaluated systems and protocols. [row: Jev; column: Average; value 88.74]"
 L4002,zhu2026interndecision,2610.22131,table_ok,"Table 3: Decision accuracy in percent. Average is the unweighted mean of the seven suites. Denominators are given in Table 2; bold data values mark column maxima, including ties. The comparison is restricted to these evaluated systems and protocols. [row: JevK5; column: Average; value 85.16]"
@@ -2200,7 +2200,7 @@ L4201,you2026native,2610.24692,ok,Table S1: Complete results on 135 test decisio
 L4202,you2026native,2610.24692,ok,"Jev has the lowest observed multiclass Brier score (0.610), compared with 0.750 for uniform prediction and 0.730 for the development prior."
 L4203,you2026native,2610.24692,ok,"Its relative improvement over uniform is 18.7% (95% interval, 4.9–31.1%)."
 L4204,you2026native,2610.24692,ok,"Jev’s top-label ECE is 0.226, compared with 0.133 for DeepSeek, 0.203 for Luna, 0.241 for Sol, and 0.317 for Gemini (Figure 1)."
-L4205,you2026native,2610.24692,ok,"Of 37 such test decision points, Jev and DeepSeek each identify three, Luna four, Sol ten, and Gemini none."
+L4205,you2026native,2610.24692,ok,"Jev (A) and DeepSeek Flash (B) each identify only 3 of 37 decision points requiring clarification, compared with 22 of 26 requiring urgent care."
 L4206,you2026native,2610.24692,ok,Table 3: Original information-sufficiency comparison on 135 Public Test 1 decision points from 62 cases. || Choice argmax .081 .990 .146 .203 Choice threshold .027 .990 .051 .203 Noul threshold .973 .449 .567 .212
 L4207,you2026native,2610.24692,ok,"Noul nevertheless has lower binary Brier: 0.21466 versus 0.27624 for Choice (Noul minus Choice, −0.06158; 95% interval, −0.09061 to −0.03478)."
 L4208,you2026native,2610.24692,ok,Reversing option order changes 5 Choice and 1 Noul decisions; alternate wording changes 17 and 15; an identical-request repeat changes 2 and 1.
@@ -2371,7 +2371,7 @@ L4429,polignano2026decision4rec,2610.26035,ok,"As released, Jev is not significa
 L4430,polignano2026decision4rec,2610.26035,ok,"Read alone on the pool, the released Kev-27B is 7 to 26% better than the released Kev-4B (significantly in four of six domains) and 9 to 27% better than Jev (in all six)."
 L4431,polignano2026decision4rec,2610.26035,ok,"At the same size, the trained Kev-0.8B ranks 24 to 115% better than the released Kev-0.8B in all fifteen settings (p < 0.001)."
 L4432,polignano2026decision4rec,2610.26035,ok,"With the Kev-4B decision model it is 25% above SASRecF on Video Games and 36% on Musical Instruments, and with the Kev-0.8B model 19% and 26% (all p < 0.001)."
-L4433,polignano2026decision4rec,2610.26035,ok,"With its own SASRecF, Decision4Rec-Full is 29 to 31% above SASRecF (p < 0.001), with a decision model that never saw the domain. The pool alone gives 25%, and the decision model adds 4% (0.8B) and 5% (4B), not significantly on 2,000 users (p = 0.052 and 0.17)."
+L4433,polignano2026decision4rec,2610.26035,ok,"Table 9: RQ2. Industrial and Scientific, a domain never used to train the decision model. NDCG@10, and its share of the NDCG@10 of SASRecF trained in this domain. | The rows of Decision4Rec give the final, fused score. | System | NDCG@10 \uparrow | share of SASRecF \uparrow | Logs, and a SASRecF tra"
 L4434,polignano2026decision4rec,2610.26035,ok,"Yet the oracle with the decision model is only a little above the oracle with a random order (0.0802 against 0.0727 on Video Games), which already gives 64 to 88% of the gain. The fused score is not significantly better than SASRec on any dataset."
 L4435,polignano2026decision4rec,2610.26035,ok,"Table 13: RQ4. Can the probabilities of the trained Kev-0.8B decision model be trusted? Full architecture, 2,000 test users per domain. || Calibration error, raw \downarrow | 0.019 | 0.015 | 0.015 | 0.031 | 0"
 L4436,polignano2026decision4rec,2610.26035,ok,"Table 13: RQ4. Can the probabilities of the trained Kev-0.8B decision model be trusted? Full architecture, 2,000 test users per domain. || Calibration error, raw \downarrow | 0.019 | 0.015 | 0.015 | 0.031 | 0"
@@ -2393,10 +2393,10 @@ L4451,iqbal2026typed,2610.26325,ok,"On FPB, by contrast, Nimble-9B’s Macro-F1 
 L4452,iqbal2026typed,2610.26325,ok,"On FPB, by contrast, Nimble-9B’s Macro-F1 is 12.0 points below its base ( [-14.6,-9.3] ; p<0.007 ) and its ECE is 9.6 points higher ( [6.8,12.1] ; p<0.007 )."
 L4453,iqbal2026typed,2610.26325,ok,"On HWU64 it lowers ECE by 4.2 points ( [-5.6,-2.5] ; p<0.007 )."
 L4454,iqbal2026typed,2610.26325,ok,"Tev1-4B’s Macro-F1 is higher than Qwen3.5-4B’s on CLINC150 ( +2.5 , [1.9,3.1] ; p<0.007 ), HWU64 ( +2.8 , [1.1,4.8] ; p=0.040 ) and FPB ( +10.0 , [7.4,12.7] ; p<0.007 )"
-L4455,iqbal2026typed,2610.26325,ok,"On the fixed set of 50 target priors, the shift-induced change in ECE at \alpha=1 is 1.7 points larger for Jev than for DeBERTa-v3-large on FPB (PA1; [1.0,2.5] ; p<0.007 ), and the excess risk of the 80%-coverage threshold is 2.5 points larger ( [1.8,3.2] ; p<0.007 ; PA2)."
-L4456,iqbal2026typed,2610.26325,ok,"On the fixed set of 50 target priors, the shift-induced change in ECE at \alpha=1 is 1.7 points larger for Jev than for DeBERTa-v3-large on FPB (PA1; [1.0,2.5] ; p<0.007 ), and the excess risk of the 80%-coverage threshold is 2.5 points larger ( [1.8,3.2] ; p<0.007 ; PA2)."
-L4457,iqbal2026typed,2610.26325,ok,"EM prior correction with Jev’s implicit prior lowers Jev’s ECE under shift on FPB by 2.7 points ( [-3.7,-1.6] ; p<0.007 ; PA3) and on HateXplain by 1.8 points ( [-2.7,-0.8] ; p<0.007 )"
-L4458,iqbal2026typed,2610.26325,ok,"EM prior correction with Jev’s implicit prior lowers Jev’s ECE under shift on FPB by 2.7 points ( [-3.7,-1.6] ; p<0.007 ; PA3) and on HateXplain by 1.8 points ( [-2.7,-0.8] ; p<0.007 )"
+L4455,iqbal2026typed,2610.26325,ok,"Table 6: At moderate shift ( \alpha=1 ), Jev and DeBERTa-v3-large are distinguishable only on FPB, and EM with Jev’s implicit prior lowers its shifted ECE on FPB and HateXplain. | Test (points) | CLINC150 | HWU64 | FPB | HateXplain | TREC-6 | PA1: \Delta ECE under shift, Jev - DeBERTa | +0.09 [ - 0."
+L4456,iqbal2026typed,2610.26325,ok,"Table 6: At moderate shift ( \alpha=1 ), Jev and DeBERTa-v3-large are distinguishable only on FPB, and EM with Jev’s implicit prior lowers its shifted ECE on FPB and HateXplain. | Test (points) | CLINC150 | HWU64 | FPB | HateXplain | TREC-6 | PA2: excess risk at \tau_{80} , Jev - DeBERTa | 0.00 [ - "
+L4457,iqbal2026typed,2610.26325,ok,"Table 6: At moderate shift ( \alpha=1 ), Jev and DeBERTa-v3-large are distinguishable only on FPB, and EM with Jev’s implicit prior lowers its shifted ECE on FPB and HateXplain. | Test (points) | CLINC150 | HWU64 | FPB | HateXplain | TREC-6 | PA3: ECE, Jev EM - none | - 0.12 [ - 0.29, +0.03] | +0.12"
+L4458,iqbal2026typed,2610.26325,ok,"Table 6: At moderate shift ( \alpha=1 ), Jev and DeBERTa-v3-large are distinguishable only on FPB, and EM with Jev’s implicit prior lowers its shifted ECE on FPB and HateXplain. | Test (points) | CLINC150 | HWU64 | FPB | HateXplain | TREC-6 | PA3: ECE, Jev EM - none | - 0.12 [ - 0.29, +0.03] | +0.12"
 L4459,iqbal2026typed,2610.26325,ok,"it returned the same prediction for 96.4–99.8% of examples but the same probability vector for only 19.4–87.4% of them, with differences of up to 0.29 between runs"
 L4460,iqbal2026typed,2610.26325,ok,"Jev’s API latency, including the network, had a median of 713 ms (95th percentile 942 ms)."
 L4461,qian2026soma,2610.26793,ok,"It reduces generated tokens by 36% on Qwen3-8B and 16% on R1-Distill-Llama-8B, and raises average accuracy from 91.0% to 91.3% and from 84.4% to 84.8%."
@@ -2405,7 +2405,7 @@ L4463,qian2026soma,2610.26793,ok,"On Qwen3-8B, it raises average abstention from
 L4464,qian2026soma,2610.26793,ok,"These gains come with a moderate rise in false abstentions on answerable questions, from 2.4% to 8.0% and from 2.1% to 4.8% on average."
 L4465,qian2026soma,2610.26793,ok,"On R1-Distill-Llama-8B, it raises abstention from 38.2% to 59.4% with the largest token reduction of all methods (48%)."
 L4466,qian2026soma,2610.26793,ok,"On SUM, SOMA exceeds AtU on Qwen3-8B (87% vs. 83%) and is one percentage point lower on R1-Distill-Llama-8B (70% vs. 71%), even though AtU trains a probe on SUM for each S2 model, whereas SOMA treats S2 as a black box and needs no training."
-L4467,qian2026soma,2610.26793,ok,"For unanswerable questions, reminders alone leave abstention close to Vanilla, so the gain in abstention comes from the takeover."
+L4467,qian2026soma,2610.26793,ok,"Table 4: Ablations on a fixed test subset, reported as question-weighted averages. Remind-only never takes over ( h=\infty ). | Overthinking | Unanswerable | Variant | Acc \uparrow | Tok | Abs \uparrow | Acc \uparrow | FA \downarrow | Tok | Qwen3-8B | Remind-only | 93.4 | - 16% | 74 | 87 | 4 | - 12%"
 L4468,qian2026soma,2610.26793,ok,"Halving the interval to X=128 increases savings in both scenarios (to 48% and 19% in overthinking, and to 36% and 51% for unanswerable questions) and raises abstention on R1-Distill-Llama-8B from 60% to 63%, at the cost of about 1.5–2 times as many S1 calls."
 L4469,sudjianto2026teacher,2610.26797,ok,"Table 4: Forecasts of monetary relief on 10,000 test complaints received in 2025–2026; the share with relief is 0.169 . || Qwen3-30B zero-shot | 0.509 | 0.364 | 0.73 | 219^{a} | 100.2 | 136.7 | 17.5"
 L4470,sudjianto2026teacher,2610.26797,ok,"Recalibration lowers its Brier score from 0.364 to 0.137 and leaves its AUC unchanged, and the recalibrated model remains worse than the teacher by 0.0133 in Brier score ( 0.0101 to 0.0166 ) and by 10.7 per 1,000 in decision cost at c=0.2 ( 6.6 to 15.1 )."
@@ -2414,7 +2414,7 @@ L4472,sudjianto2026teacher,2610.26797,ok,"Qwen3-30B, which reads all candidates 
 L4473,sudjianto2026teacher,2610.26797,ok,"Table 4: Forecasts of monetary relief on 10,000 test complaints received in 2025–2026; the share with relief is 0.169 . || Letter reading, 0.5B, as published | 0.262 | 0.160 | 0.48 | 0.95 | 164.3 | 165.1 | 5.0"
 L4474,sudjianto2026teacher,2610.26797,ok,"The published letter reading departs by 5.0 decibans, and reversing the order of its options moves its answer by 0.40 on average. The trained students depart by 0.20 and 0.69 decibans, and reversing the order moves their answers by 0.007 and 0.012 ."
 L4475,sudjianto2026teacher,2610.26797,ok,"Table 4: Forecasts of monetary relief on 10,000 test complaints received in 2025–2026; the share with relief is 0.169 . || Student on outcomes | 0.194 | 0.119 | 0.80 | 1.70 | 82.7 | 97.3 | 0.69"
-L4476,sudjianto2026teacher,2610.26797,ok,"Its decision cost at c=0.2 differs from the teacher’s by -0.4 per 1,000 (interval -3.1 to 2.1 ), and its Brier score is lower by 0.0029 ( 0.0015 to 0.0044 )."
+L4476,sudjianto2026teacher,2610.26797,ok,"Table 4: Forecasts of monetary relief on 10,000 test complaints received in 2025–2026; the share with relief is 0.169 . Turing’s mean V is 1 for a calibrated forecast. | mean | Turing | cost per 1,000 | departure | Model | forecast | Brier | AUC | mean V | c=0.2 | c=0.3 | (decibans) | Student on the"
 L4477,sudjianto2026teacher,2610.26797,ok,"The best model, the student trained on outcomes, gives 1.70 , because the 1% of complaints with the largest V , confident forecasts that turned out wrong, make up two thirds of its sum. The check measures calibration only, and a validator who relied on it would accept the constant forecast and rejec"
 L4478,zhang2026general,2610.27099,ok,"Averaged over the six task types, CS1-4B scored 89.7, well above its initialization, Nox-4B (73.3), and above Vega-27B (81.7), the best open model (Fig. 2b)."
 L4479,zhang2026general,2610.27099,ok,"It led on 13 of the 14 tasks whose keys come from rules, observed outcomes or an open LLM:"
@@ -2423,7 +2423,7 @@ L4481,zhang2026general,2610.27099,ok,75.6% on outcome forecasting (JEV-27B 69.4%
 L4482,zhang2026general,2610.27099,ok,"Averaged over the six task types, CS1-4B scored 86.7, against 81.7 for its initialization, Nox-4B, and 88.6 for Vega-27B, the strongest open model, while answering 6.4 times faster;"
 L4483,zhang2026general,2610.27099,ok,Extended Data Table 4: Public data sets: balanced accuracy. || LongHealth human 20 400 20 89.5 89.0 90.2 81.3 91.9 46.0 57.0 66.4 83.1 85.4 86.6 76.9 88.6 91.3 88.1
 L4484,zhang2026general,2610.27099,ok,"Extended Data Table 4: Public data sets: balanced accuracy. || TCGA pathology§ registry 859 2,139 42.0 98.0∗ 96.6 97.8 97.5 97.6 83.5 84.1 86.8 93.2 94.5 96.8 94.3 95.7 96.5 95.7"
-L4485,zhang2026general,2610.27099,ok,"On one NVIDIA GB10 desktop graphics processor (commonly referred to as a DGX Spark), CS1-4B answered 40 questions about a 2,900-token note in 1.80 s, against 11.54 s for Decision 2.0 Vega-27B (6.4 times faster);"
+L4485,zhang2026general,2610.27099,ok,"Extended Data Table 2: Speed, compute and calibration. a, Latency per document on one NVIDIA GB10 (bf16, synthetic 2,900-token note, one document at a time) for 1, 10 and 40 questions | System | ms/doc (1 q) | ms/doc (10 q) | ms/doc (40 q) | Answers/s (40 q) | GB10-h per 10^{6} docs | Ratio to CS1-4"
 L4486,zhang2026general,2610.27099,ok,"At 40 questions per document, CS1-4B costs 500 GB10-hours per million documents, against 630 for Nox-4B, 830 for Lux-9B and 3,210 for Vega-27B (Extended Data Table 2)."
 L4487,zhang2026general,2610.27099,ok,"Pooled over five human-keyed public benchmarks (14,756 items), its ECE was 0.029, about half that of Nox-4B (0.058), but above that of JEV-27B (0.010) and Clef (0.024), and per set it ranged from 0.007 to 0.100"
 L4488,zhang2026general,2610.27099,ok,"over the 27 outcomes of the three public prognosis sets, its mean predicted risk was 0.39 against an observed incidence of 0.19, and the calibration error of its predicted risks was 0.203 (Fig. 2g)"
@@ -2584,13 +2584,13 @@ L4805,ha2026decision,2610.31422,ok,"followed by Quyet (53.61), LAYA (43.23), and
 L4806,ha2026decision,2610.31422,ok,"Its advantage is particularly pronounced in intent classification, achieving 79.26 macro-F1 on PhoATIS and 80.20 on ViMQ, exceeding the next-best models by 51.54 and 41.43 points, respectively."
 L4807,ha2026decision,2610.31422,ok,"On NEU-ESC, JEV performs comparably to the strongest LLM, Gemma-3-27b-it (37.31 versus 37.32)."
 L4808,ha2026decision,2610.31422,ok,"It also achieves the highest reported macro-F1 on ViHSD (59.34), exceeding Qwen3-32B (57.56)"
-L4809,ha2026decision,2610.31422,ok,"On UIT-VSMEC, GPT-4.1 exceeds JEV by 7.66 macro-F1 points"
-L4810,ha2026decision,2610.31422,ok,Llama-3.3-70B-Instruct also outperforms JEV on ViMQ by 4.62 points.
+L4809,ha2026decision,2610.31422,ok,"Table 10: Zero-shot macro-F1 on 11 overlapping classification settings. Decision models use English label descriptions, while LLM results are taken from prior zero-shot prompting experiments. Bold and underlined values indicate the highest and second-highest reported scores per setting, respectively"
+L4810,ha2026decision,2610.31422,ok,"Table 10: Zero-shot macro-F1 on 11 overlapping classification settings. Decision models use English label descriptions, while LLM results are taken from prior zero-shot prompting experiments. Bold and underlined values indicate the highest and second-highest reported scores per setting, respectively"
 L4811,ha2026decision,2610.31422,ok,Sentiment analysis | UIT-VSFC | 49.81 | 58.71 | 45.67 | 42.89 | 50.80 | 39.49 | 75.87 | 81.12 | 64.46 | 86.58 | 88.44 | 73.44 | 93.87 | 93.45 | 82.83
-L4812,ha2026decision,2610.31422,ok,"JEV exhibits the most stable average performance, with macro-F1 varying by only 0.35 points across the three configurations and reaching its highest value under EN+VI descriptions (69.44)."
+L4812,ha2026decision,2610.31422,ok,Table 2: Changes in macro-F1 relative to English label descriptions (percentage points). | Dataset | LAYA | GLiNER | Quyet | JEV | VI | EN+VI | VI | EN+VI | VI | EN+VI | VI | EN+VI | Mean (12 shared) | +1.40 | −4.48 | −7.33 | −9.83 | +0.44 | −5.49 | −0.12 | +0.22
 L4813,ha2026decision,2610.31422,ok,"JEV exhibits the smallest mean reduction (9.51 points), followed by LAYA (13.77), GLiNER (14.75), and Quyet (15.47)."
 L4814,ha2026decision,2610.31422,ok,"Teencode and typographical noise have smaller average effects, with mean reductions of 0.47–1.10 and 2.87–4.54 points, respectively."
-L4815,ha2026decision,2610.31422,ok,"Teencode and typographical noise have smaller average effects, with mean reductions of 0.47–1.10 and 2.87–4.54 points, respectively."
+L4815,ha2026decision,2610.31422,ok,Table 4: Changes in macro-F1 under linguistic perturbations relative to original inputs (percentage points). | Dataset | LAYA | GLiNER | Quyet | JEV | NoAcc | Teen | Typo | NoAcc | Teen | Typo | NoAcc | Teen | Typo | NoAcc | Teen | Typo | Mean (12 shared) | −13.77 | −0.52 | −2.87 | −14.75 | −1.01 | 
 L4816,ha2026decision,2610.31422,ok,"Prediction-level comparisons further show that diacritic removal changes 19.57% of JEV’s decisions on average, compared with 40.60% for Quyet and 54.29% for LAYA."
 L4817,ha2026decision,2610.31422,ok,"Of its 169 incorrect predictions, 140 include the gold intent together with an additional intent."
 L4818,feng2026jevdlc,2610.31521,ok,"Jev-DLC reaches 44.83% on the full stream, a 5.39-point gain over Frozen and a 2.43-point higher accuracy than Recent-4."
@@ -2602,7 +2602,7 @@ L4823,feng2026jevdlc,2610.31521,ok,Table 8: Current-event scorer anchors on the 
 L4824,feng2026jevdlc,2610.31521,ok,User-macro accuracy is 41.22% on TCPA-Repeat and 24.05% on TCPA-Open; the API receives no replayed TCPA interactions and maintains no continual adaptation state.
 L4825,feng2026jevdlc,2610.31521,ok,User-macro accuracy is 41.22% on TCPA-Repeat and 24.05% on TCPA-Open; the API receives no replayed TCPA interactions and maintains no continual adaptation state.
 L4826,feng2026jevdlc,2610.31521,ok,"Jev-DLC reaches 29.74% overall on TCPA-Open, and PPlug reaches 31.30%. The paired Jev-DLC-minus-PPlug interval is [−2.17,−0.92] points."
-L4827,feng2026jevdlc,2610.31521,ok,"Jev-DLC reaches 44.83% on Full, 1.71 points above C and 3.33 points above R."
+L4827,feng2026jevdlc,2610.31521,ok,"Table 2: Channel retention on TCPA-Repeat, in user-macro accuracy (%). Both channels contribute to the full Jev-DLC decision state. | State | Full | d≥2 | d≥4 | d≥8 | C only | 43.12 | 54.85 | 48.60 | 44.30"
 L4828,feng2026jevdlc,2610.31521,ok,"Table 21: Accuracy improvement of adaptive over development-fixed two-channel fusion (in percentage points). Paired confidence intervals are computed using 10,000 user-level bootstrap resamples. ... Full | +0.68 | [+0.16,+1.20]"
 L4829,feng2026jevdlc,2610.31521,ok,Jev-DLC | 324 B | 0 B | 0 | Vector update
 L4830,feng2026jevdlc,2610.31521,ok,"After the frozen scorer output is available, state computation takes 0.1781 ms for prediction and 0.0810 ms for feedback updates on TCPA-Repeat."
@@ -2613,7 +2613,7 @@ L4834,dinzinger2026system,2610.32318,ok,its margin over the better decision mode
 L4835,dinzinger2026system,2610.32318,ok,"The difference is significant on 48 of the 60 pairs of reranker fine-tune and collection, and the decision fine-tune is never significantly better (∗)."
 L4836,dinzinger2026system,2610.32318,ok,"Up to 9B, the better mode of a decision fine-tune stays within −2.5 and +0.7 points of its untuned model, asked the same question, with significant gains on at most three of ten collections (†)."
 L4837,dinzinger2026system,2610.32318,ok,Jev (59.1) ranks as well as the reranker fine-tunes of 8B and 9B (59.0 to 59.4) and the Set-Encoder (59.0).
-L4838,dinzinger2026system,2610.32318,ok,"$/1k: mean API cost in US dollars per 1,000 queries over the collections run."
+L4838,dinzinger2026system,2610.32318,ok,"Table 2. Context: other rerankers (nDCG@10, ×100) on the BM25 top-100 of TREC DL 2019–2023 and five BEIR collections; System One models in joint mode (Laya isolated), asked whether the passage answers the query (Sect. 4). | $/1k: mean API cost in US dollars per 1,000 queries over the collections run"
 L4839,dinzinger2026system,2610.32318,ok,Laya (43.5) does not improve on its BM25 candidates (43.2).
 L4840,dinzinger2026system,2610.32318,ok,but costs Kev-0.6B 12.2 points and Kev-8B 13.0 (‡; significant on all ten and on five collections).
 L4841,dinzinger2026system,2610.32318,ok,The best calibrated systems in the study are Jev (0.075) and Kev-27B (0.076).
@@ -2631,12 +2631,12 @@ L4852,tommasino2026pathjev,2610.32478,ok,"Its clean ECE becomes 0.201, similar t
 L4853,tommasino2026pathjev,2610.32478,ok,"On the two organs absent from training, PathJev-P reaches a balanced accuracy of 0.390, against 0.277 for the generative baseline and 0.328 for CONCH."
 L4854,tommasino2026pathjev,2610.32478,ok,"PathJev-P (ours) | 0.541±.015 | 0.204±.002 | 0.390±.015 | 0.301±.012 ... Gen-SFT, length-normalised | 0.492 | 0.201 | 1.508 | 0.289 | 0.110"
 L4855,tommasino2026pathjev,2610.32478,ok,"On the in-domain sets the two trained methods are close (0.692 and 0.707), and on the seen-source SPIDER sets the generative baseline is slightly ahead (0.810 against 0.781)."
-L4856,tommasino2026pathjev,2610.32478,ok,"The released OmniMed-Jev often answers “other”. Removing that candidate raises its balanced accuracy, but it stays far below PathJev-P (Table 2)"
+L4856,tommasino2026pathjev,2610.32478,ok,"On the clean test sets PathJev-P reaches a balanced accuracy of 0.541 ± 0.015 (Table 2), against 0.492 for the generative baseline, 0.345 for CONCH, 0.288 for the Inner-Jev read-out and 0.213 for the released OmniMed-Jev."
 L4857,tommasino2026pathjev,2610.32478,ok,(a) OmniMed-Jev | 0.213 | 0.517 | 0.253 | 0.540 | 0.173 | 0.493 | 0.212 | 0.577
 L4858,tommasino2026pathjev,2610.32478,ok,(e) Inner-Jev | 0.288 | 0.578 | 0.230 | 0.636 | 0.346 | 0.521 | 0.142 | 0.688
 L4859,tommasino2026pathjev,2610.32478,ok,(d) Linear probe† | 0.724 | 0.047 | 0.772 | 0.021 | 0.677 | 0.074 | 0.905 | 0.013
 L4860,tommasino2026pathjev,2610.32478,ok,"A single temperature fitted on the validation mix lowers the clean-set ECE of every method (per set in Table 15; PathJev-P 0.204→0.154, generative baseline 0.279→0.211)."
-L4861,tommasino2026pathjev,2610.32478,ok,"A temperature fitted on one unseen organ and applied to the other lowers PathJev-P’s NLL on the unseen organs from 2.079 to 1.781, close to the 1.713 of an oracle fitted on the evaluated set itself."
+L4861,tommasino2026pathjev,2610.32478,ok,"Table 3: Post hoc: negative log-likelihood on the unseen organs (lower is better) after one temperature per method, fitted on different data; seed mean for trained methods. | Temperature fitted on | Method | none | val. mix | in-domain val. | other unseen organ | same set (oracle) | PathJev-P (ours)"
 L4862,tommasino2026pathjev,2610.32478,ok,"over 10 random orders, its clean balanced accuracy stays between 0.542 and 0.549, although 7.3% of individual predictions change. The generative baseline behaves similarly, while OmniMed-Jev changes 18.9% of its predictions."
 L4863,tommasino2026pathjev,2610.32478,ok,"Wall time of the whole run (h, 1 GPU) | 10.4–10.5 | 16.3–16.5"
 L4864,sautenkov2026uavswarmagent,2610.32559,ok,"Table 1. Missions in which the swarm located the incident, by scenario and model (N=3 UAVs). Prec.: median share of reported frames that show the incident. ... Structure fire | 30 | 28/30 | 30/30 | 28/30 | 0.68"
@@ -2710,7 +2710,7 @@ L4931,wang2026benchmarking,2610.33410,ok,"AAPL, BA, and CAT achieve AUC values o
 L4932,li2026seeing,2610.33702,ok,"Table 2: Element selection on Multimodal-Mind2Web with K=16: first-choice accuracy and decision flip rate over five candidate orders (original, reversed, three seeded random), on the cross-task / cross-website / cross-domain splits. ... Iris-4B stage 2 | crops | + Mind2Web crops | 78.38 | 72.07 | 74"
 L4933,li2026seeing,2610.33702,ok,Iris-4B stage 2 | crops | + Mind2Web crops | 78.38 | 72.07 | 74.84 | 0.00 | 0.00 | 0.00
 L4934,li2026seeing,2610.33702,ok,Iris-4B stage 2 | crops | + Mind2Web crops | 78.38 | 72.07 | 74.84 | 0.00 | 0.00 | 0.00
-L4935,li2026seeing,2610.33702,ok,"The flip rate stays at exactly zero on all 6,396 records; all-order accuracy equals first-order accuracy."
+L4935,li2026seeing,2610.33702,ok,"Table 2: Element selection on Multimodal-Mind2Web with K=16: first-choice accuracy and decision flip rate over five candidate orders (original, reversed, three seeded random), on the cross-task / cross-website / cross-domain splits. | Accuracy (%) | Flip rate (%) | Model | Candidates | Train data | "
 L4936,li2026seeing,2610.33702,ok,OneJev-4B | crops in state | OneJev-Data | 37.85 | 37.46 | 34.83 | 50.64 | 52.80 | 54.30
 L4937,li2026seeing,2610.33702,ok,OneJev-4B retrained | crops in state | + Mind2Web crops | 90.58 | 89.48 | 91.59 | 7.63 | 10.13 | 7.99
 L4938,li2026seeing,2610.33702,ok,"Iris-4B stage 2, state-conditioned | crops | + Mind2Web crops | 89.60 | 84.46 | 87.48 | 0.00 | 0.00 | 0.00"
@@ -2719,7 +2719,7 @@ L4940,li2026seeing,2610.33702,ok,"Table 2 (row “zero-shot”) shows 31.11% cro
 L4941,li2026seeing,2610.33702,ok,Jeva-4B (reported) | HTML text | Jeva curriculum | 79.99 | 62.25 | 66.23 | 0.00 | 0.00 | 0.00
 L4942,li2026seeing,2610.33702,ok,Iris-4B conditioned + abstention stage | 0.969 | 0.935 | 0.949 | 79.0 | 77.3 | 77.5
 L4943,li2026seeing,2610.33702,ok,"Iris-4B conditioned, stage 2 | 0.943 | 0.919 | 0.947 | 40.7 | 43.2 | 33.8"
-L4944,li2026seeing,2610.33702,ok,a request with K=16 crops takes 254 ms on one A800 against 737 ms for the retrained OneJev through its server
+L4944,li2026seeing,2610.33702,ok,"With caches cleared, latency is linear in K as Proposition 2 says: 208 ms at K=16, 652 at 64, 2.3 s at 256, 12.1 s at 1,024 and 23.9 s at 2,048, a slope of 11.6 ms per crop;"
 L4945,li2026seeing,2610.33702,ok,"The speedup at full reuse is 3.6× at K=16, 11× at 64, 37× at 256, 133× at 1,024 and 191× at 2,048"
 L4946,li2026seeing,2610.33702,ok,"Iris-4B (Jeva-4B weights, no training) | 100.0 | 100.0 | 60.36 | 70.13"
 L4947,li2026seeing,2610.33702,ok,Iris-4B mixture (retrieval-tuned) | 47.6 | 49.4 | 30.4 | 44.8 | 47.0 | 82.0 | 69.3 | 48.8 | 4.5 | 6.0 | 49.3 | 4.6 | 40.3
@@ -2796,7 +2796,7 @@ L5068,steiner2026entity,2610.34626,ok,Attribute deletion - 3.40† (1.8) - 2.70�
 L5069,steiner2026entity,2610.34626,ok,"Table 9. Calibration with F0, scores \times 100 . Bold/underl.: best/second, arrows: direction. Mid: share with 0.1\leq p<0.9 . // PPLX v1.2 1.68 0.10 7.56 8.4 Clef 1.88 0.15 7.41 10.7 Jev 1.13 1.94 0.22 7.42 14.1"
 L5070,steiner2026entity,2610.34626,ok,"Three decision models are close to calibrated without recalibration: PPLX v1.2, Clef, and Jev 1.13 stay close to the diagonal, with calibration errors (REL \times 100 ) of 0.10 to 0.22 (Figure 2, Table 9)."
 L5071,steiner2026entity,2610.34626,ok,"Table 9. Calibration with F0, scores \times 100 . Bold/underl.: best/second, arrows: direction. Mid: share with 0.1\leq p<0.9 . // Kev 3.68 0.70 6.16 19.4 Clef-flash 4.54 1.89 6.48 36.1"
-L5072,steiner2026entity,2610.34626,ok,"Table 10. Test F1 difference (pp) to t=0.5 with the selected prompt when t is tuned on validation, either per benchmark or once per model for all benchmarks. // A threshold per benchmark raises the mean F1 of Clef-flash by 4.5 and of Kev by 1.6."
+L5072,steiner2026entity,2610.34626,ok,"Table 10. Test F1 difference (pp) to t=0.5 with the selected prompt when t is tuned on validation, either per benchmark or once per model for all benchmarks. | Jev 1.13 | PPLX v1.2 | Clef | Clef-flash | Luna Dec. | Kev | Benchmark | Per bench. | Per model | Mean \Delta F1 | - 0.39 | 0.00 | - 0.23 | "
 L5073,steiner2026entity,2610.34626,ok,"Table 11. Cascade at a target risk of 0.5%: F1 (%) of each decision model alone, with Sol, and with the ensemble, and of the ensemble members alone. \Delta : gain over the row above (blue/red). Shaded bold: best mean per group. Cost at list prices. // Jev 1.13: t=0.120 , 11.7 % deferred, selective r"
 L5074,steiner2026entity,2610.34626,ok,"Table 11. Cascade at a target risk of 0.5%: F1 (%) of each decision model alone, with Sol, and with the ensemble, and of the ensemble members alone. \Delta : gain over the row above (blue/red). Shaded bold: best mean per group. Cost at list prices. // PPLX v1.2: t=0.072 , 10.3 % deferred, selective "
 L5075,steiner2026entity,2610.34626,ok,"Table 12. Best published F1 on our test splits and PPLX v1.2 (selected prompt), alone and in the cascade at 0.5% target risk. In parentheses: gap to the best published F1 (blue/red: above/below). Bold: highest per row. †Instruction-tuned on training data of this benchmark. // Mean 85.53 90.02 89.13 "
@@ -2810,13 +2810,13 @@ L5082,li2026cana,2610.34816,ok,"TABLE VII: Which policies pass the three replace
 L5083,li2026cana,2610.34816,ok,"Staging adds quality at a price. Two-stage PPLX at 4,096 tokens scores 0.2013 ( +0.0169 against full-text Jina) at 2.8 times Jina's p95 (interval [2.6,3.1] ), clearly above the limit; at 8,192 tokens it reaches 0.2108 at 5.9 times."
 L5084,li2026cana,2610.34816,ok,"PPLX occupies about 50 GiB at peak against 4.3 GiB for full-text Jina, so even the passing PPLX policies need more than 11 times Jina's memory."
 L5085,li2026cana,2610.34816,ok,"Jina on the truncated 8,192-token text scores 0.1765, below full-text Jina by 0.0079 (interval [-0.0171,+0.0008] ) and well above the BM25 Top-5, at a p95 of 245 ms (0.20 times full-text Jina, interval [0.19,0.23] ) and 1.9 GiB."
-L5086,li2026cana,2610.34816,ok,"but PPLX scores 0.013 higher in BM25 order than in shuffled orders, in all 12 domains (Holm p=0.002 )"
+L5086,li2026cana,2610.34816,ok,TABLE V: Do multi-stage reranking and its controls hold up? Follow-up experiments on BRIGHT | Contrast (nDCG@5) | \Delta | p | Holm p | Candidate order (row 3: mean over six shuffled orders) | PPLX: BM25 - shuffled order | \mathbf{+.0131} | < .001 | 0.002
 L5087,li2026cana,2610.34816,ok,"Two-stage PPLX returns all annotated supporting candidates within its Top-5 more often than two-stage Jina on the enterprise benchmark, by +0.102 (interval [+0.070,+0.135] , Holm p<.001 ; +0.132 over the three other orders)"
 L5088,li2026cana,2610.34816,ok,"Jina does better on MuSiQue, by 0.020 (interval [-0.031,-0.010] , Holm p=0.0003 ; -0.013 over the other orders)."
 L5089,li2026cana,2610.34816,ok,"and 4,096 beats Jina by +0.0092 ( [+0.0039,+0.0143] ); both stay positive after correcting for two settings, and PPLX leads Jina in 10 and 11 of 12 forums."
 L5090,li2026cana,2610.34816,ok,"the p95 ratio to full-text Jina is 1.49 ( [1.29,1.69] ) at 4,096 tokens, a pass (upper bound 1.72 at the two-setting 97.5% level), and 2.19 ( [1.92,2.52] ) at 6,144, inconclusive"
 L5091,li2026cana,2610.34816,ok,"Other decision models fare no better: Liquid d1-3B, the only one fully reliable by default, has 3.0 times Jina's p95, and Winnow-12B with fallback 4.6 (indicative only)."
-L5092,li2026cana,2610.34816,ok,"Truncated Kev-9B and Drex-DLM score 0.121 and 0.119, below the BM25 Top-5."
+L5092,li2026cana,2610.34816,ok,"TABLE IV: Does truncating candidate text make decision models competitive? Equal-prefix truncation to 8,192 tokens on BRIGHT | Done (%) | nDCG@5 | Jina | \Delta of truncated vs | Decision model | default | trunc. | same text | BM25 Top-5 | Kev-9B | 46.8 | 100 | 0.0663 | 0.1213 | 0.1779 | -.0566 | -."
 L5093,li2026cana,2610.34816,ok,Failures recur (daggers in Table I); Intern-Decision-4B hits its context limit on all 500 EnterpriseRAG-Bench requests.
 L5094,xu2026trustjev,2610.34826,ok,"TABLE III: Results on TensorTrust, IHEval, and AEB. // TrustJev 90.97 ± 1.03 89.27 ± 1.14 90.11 ± 0.12 99.31 ± 0.30 99.57 ± 0.25 99.44 ± 0.12 99.51 ± 0.30 99.42 ± 0.00 99.46 ± 0.15 // TrustJev achieves the highest mean Balance, exceeding the strongest baselines by 1.05, 0.57, and 0.87 percentage poi"
 L5095,xu2026trustjev,2610.34826,ok,"TABLE III: Results on TensorTrust, IHEval, and AEB. // TrustJev 90.97 ± 1.03 89.27 ± 1.14 90.11 ± 0.12 99.31 ± 0.30 99.57 ± 0.25 99.44 ± 0.12 99.51 ± 0.30 99.42 ± 0.00 99.46 ± 0.15"
@@ -2848,7 +2848,7 @@ L5120,ichikawa2026decision,2610.34956,ok,"The distilled small models exhibit the
 L5121,ichikawa2026decision,2610.34956,ok,Table 2. DF-Long across tasks. S1MB uses 8-bit weights; other results use bfloat16 (BF16) on one NVIDIA B200. nDCG@10 is normalized discounted cumulative gain at rank ten ( \times 100 ). Ruri: Ruri v3; BGE: bge-reranker-v2-m3. Calibration uses development data. // S1MB English Task Avg 63.55 DF-Larg
 L5122,ichikawa2026decision,2610.34956,ok,Table 2. DF-Long across tasks. S1MB uses 8-bit weights; other results use bfloat16 (BF16) on one NVIDIA B200. nDCG@10 is normalized discounted cumulative gain at rank ten ( \times 100 ). Ruri: Ruri v3; BGE: bge-reranker-v2-m3. Calibration uses development data. // JQaRA nDCG@10 90.1 Ruri: 86.9; BGE:
 L5123,ichikawa2026decision,2610.34956,ok,Its expected calibration error (ECE) is 0.024 on the development decisions used for temperature fitting.
-L5124,ichikawa2026decision,2610.34956,ok,"In the robustness evaluation, DF-Long successfully ignores 899 out of 900 embedded instructions across three languages."
+L5124,ichikawa2026decision,2610.34956,ok,Table 2. DF-Long across tasks. S1MB uses 8-bit weights; other results use bfloat16 (BF16) on one NVIDIA B200. nDCG@10 is normalized discounted cumulative gain at rank ten ( \times 100 ). Ruri: Ruri v3; BGE: bge-reranker-v2-m3. Calibration uses development data. | Benchmark or test | Metric | DF-Long
 L5125,ichikawa2026decision,2610.34956,ok,"For eight questions sharing the same state, latency decreases from 71.7 ms to 29.4 ms, yielding a 2.44\times speedup."
 L5126,ichikawa2026decision,2610.34956,ok,"DF-Long also handles lengthy inputs efficiently, answering a question about a 27K-token document in just 0.41 s on the evaluated GPU."
 L5127,mei2026improving,2610.35654,ok,"On the eleven-configuration MC11 benchmark, the one-epoch, lower-rate recipe establishes an all-module pointer reference at 50.28% accuracy."
@@ -2953,9 +2953,9 @@ L5276,pelaseyed2026dfip,2610.36804,ok,Replay alone gives 1.63×; projection alon
 L5277,pelaseyed2026dfip,2610.36804,ok,"In separate one-worker GLiNER pilots, length-aware batching is 1.57× faster than eager native FIFO batching and 1.40× faster than compiled native FIFO batching on a diverse resident trace, while passing the exposed-label and confidence audit."
 L5278,pelaseyed2026dfip,2610.36804,ok,The incremental native-batch ratios are 1.07× for recurring schemas and 1.40× for diversity.
 L5279,pelaseyed2026dfip,2610.36804,ok,"The released-compiler follow-up completes all requests without drops or errors, but diverse shared p95 is 72.10 ms versus compiled native batching 43.17 ms and compiled serial 69.52 ms."
-L5280,pelaseyed2026dfip,2610.36804,ok,"Decider has zero exposed probability drift, zero changes in 1,112 returned choices, and zero drift in 1,056 scores and 2,168 confidence fields."
+L5280,pelaseyed2026dfip,2610.36804,ok,"Table 6: Literal answer audit, one separate native-then-DFIP container per model. Probability drift covers 3,024 decisions, choice changes 1,112 categorical fields, and score drift 1,056 ordinal scores. | Checkpoint | Choice changes | PPLX-Decider | 0/1112"
 L5281,pelaseyed2026dfip,2610.36804,ok,Clef preserves choices but reaches 0.0188 maximum literal score drift and 0.0129 confidence drift.
-L5282,pelaseyed2026dfip,2610.36804,ok,"Twenty-one pairs cross literal confidence 0.9, with repeated inputs across rounds. These crossings would change a routing policy using that threshold; their effect on task accuracy or downstream routing utility is unmeasured."
+L5282,pelaseyed2026dfip,2610.36804,ok,"Twenty-one pairs cross literal confidence 0.9, with repeated inputs across rounds."
 L5283,pelaseyed2026dfip,2610.36804,ok,"At five offered requests/s, native loses none and has geometric-mean p95 0.81 s. Replay gives 2.04 within-window completions/s, 23.0% loss, and successful-request p95 49.41 s (range 21.79–76.55 s)."
 L5284,khatri2026need,2610.36915,ok,"Table 2: Conflict-type classification on the Conflicts test split (n=406), five classes, sorted by accuracy. | Liquid d1 Ultra 67.0 [62.3, 71.4] 53.5 0.044 0.18 0.46 +5.7 (0.027)"
 L5285,khatri2026need,2610.36915,ok,"Table 2: Conflict-type classification on the Conflicts test split (n=406), five classes, sorted by accuracy. | Jev 1.13 61.8 [56.9, 66.5] 54.9 0.103 0.19 0.26 +0.5 (0.92)"
