@@ -1,0 +1,103 @@
+name: Haidass1.5-143M-Jev
+name_src:
+  quote: '# Haidass1.5-143M-Jev'
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+hf_id: HanWangTJU/haidass1.5-143m-jev
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+revision_sha: 0063a7e9da51e75b1e785ccfe4aae410688c9961
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+vendor_or_author: HanWangTJU
+vendor_or_author_src:
+  quote: dataset 仓库 `HanWangTJU/haidass-jev-synthetic-v1`。
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+release_date: '2026-10-09'
+release_date_src:
+  quote: (HF API createdAt for HanWangTJU/haidass1.5-143m-jev)
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+backbone: DALabCommunity/Haidass1.5-143M
+backbone_src:
+  quote: 'base_model: DALabCommunity/Haidass1.5-143M'
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+decision_head: '| Pointer head | hidden 576 → projection 256 |'
+decision_head_src:
+  quote: '| Pointer head | hidden 576 → projection 256 |'
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+training_objective: '- 退火实验在 step 45 外部中断，没有形成可验证 checkpoint；RLCD 没有执行。'
+training_objective_src:
+  quote: '- 退火实验在 step 45 外部中断，没有形成可验证 checkpoint；RLCD 没有执行。'
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+state_modality: '| Context admission | state ≤ 384 tokens; each branch must fit with state in 1024 tokens; packed ≤ 2048 |'
+state_modality_src:
+  quote: '| Context admission | state ≤ 384 tokens; each branch must fit with state in 1024 tokens; packed ≤ 2048 |'
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 为冻结基座，通过 LoRA 和一个可训练选项指针头输出 `choice`、`noul` 和 `score`
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+source_urls:
+- 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'
+- 'https://github.com/jaredpalmer/kev.git'
+- 'https://github.com/jaredpalmer/kev'
+source_urls_src:
+  quote: '[`jaredpalmer/kev`](https://github.com/jaredpalmer/kev)，模型基座'
+  url: 'https://huggingface.co/HanWangTJU/haidass1.5-143m-jev/raw/0063a7e9da51e75b1e785ccfe4aae410688c9961/README.md'

@@ -1,0 +1,102 @@
+name: Trio-Spark
+name_src:
+  quote: '# Trio-Spark'
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+hf_id: MachineFi/Trio-Spark
+hf_id_src:
+  quote: 'rm.machinefi.com/spark/docs) · [Demos and clients](https://github.com/machinefi/trio-spark) · [v1.3 release post](https:'
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+revision_sha: 68d73a8b49d91c7527970498fcb5efad10b5f8b4
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+vendor_or_author: MachineFi
+vendor_or_author_src:
+  quote: Trio-Spark is MachineFi's hosted **Situated World Model** for bounded decisions.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+release_date: '2026-10-15'
+release_date_src:
+  quote: (HF API createdAt for MachineFi/Trio-Spark)
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+availability_and_license: 'Hosted commercial API only; no weights on Hugging Face. Proprietary terms (license: other, license_name: proprietary). Current release v1.3 (2026-10-15); public model ID trio-spark-v1.3. The former MachineFi/Trio-Spark-v1.0 repo returned an auth error on the HF API and its card is merged into this page. Separate text-only research weights MachineFi/Trio-Spark-DI (CC BY-NC 4.0) are gated on the HF API and their card could not be read.'
+availability_and_license_src:
+  quote: '**This repository is a model card for the commercial API. Model weights and training code are not distributed here.**'
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+backbone: not disclosed for the API model (the separate Trio-Spark-DI research checkpoint is tagged as a finetune of Qwen/Qwen3.5-9B on the HF API)
+backbone_src:
+  quote: none found
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+decision_head: not disclosed (hosted model; one pass returns a selected action and a probability for every option)
+decision_head_src:
+  quote: One pass returns a selected action and a probability for every option, with no free-form answer to parse.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+state_modality: structured text or JSON, one image or camera frame, or a 2 to 4 frame sampled video window
+state_modality_src:
+  quote: Input can be structured text or JSON, one image or camera frame, or a 2–4-frame sampled video window.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+context_length: at most 1,024 expanded input tokens including task, state, choices and visual input
+context_length_src:
+  quote: The API accepts 2–8 choices and at most 1,024 expanded input tokens
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+cardinality_limit: 2 to 8 choices per request (Banking77 with 77 choices was evaluated offline and is not a supported public-API request)
+cardinality_limit_src:
+  quote: The API accepts 2–8 choices
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+latency_with_hardware: not disclosed (card says latency depends on the request and workload)
+latency_with_hardware_src:
+  quote: Latency depends on the request and workload; the evaluation table is not a latency guarantee.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+price: $0.042 per million billed input tokens; output free; 100 free decisions for new accounts
+price_src:
+  quote: Text and visual input cost **$0.042 per million billed input tokens**; output is free.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+confidence_definition: response includes the full probability distribution, a confidence and a decide, review or abstain disposition; formula not stated
+confidence_definition_src:
+  quote: The response includes the complete probability distribution, confidence, a `decide`, `review` or `abstain` disposition, usage and latency.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+serving_temperature: not disclosed
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+calibration_as_shipped: Expected calibration error 0.019 (10 bins) on the ten-task, 2,977-decision panel for v1.3
+calibration_as_shipped_src:
+  quote: Its expected calibration error on that panel, using 10 bins, was **0.019**.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+disclosed_failure_modes: v1.3 scores below v1.0 on the internal GUI-action suite; numbers measure text decisions only and do not establish image, video, GUI or real-world performance
+disclosed_failure_modes_src:
+  quote: v1.3 scores below v1.0 on MachineFi's internal GUI-action suite despite improving on the published text panel.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+evaluation_protocol_published: Developer-run panel of 2,977 decisions on ten tasks, one request per item through production API code; peers via official APIs recorded October 7 to 8, 2026
+evaluation_protocol_published_src:
+  quote: Spark was evaluated through production API code and its model server, one request per item.
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+primitives: choice (2 to 8 allowed actions); the card refers to System One compatibility in the API docs
+primitives_src:
+  quote: The API accepts 2–8 choices and at most 1,024 expanded input tokens
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+source_urls:
+- 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'
+- 'https://github.com/machinefi/trio-spark'
+source_urls_src:
+  quote: 'ps://platform.machinefi.com/spark/docs) · [Demos and clients](https://github.com/machinefi/trio-spark) · [v1.3 release post](https://machinefi.com/blog/trio-spa'
+  url: 'https://huggingface.co/MachineFi/Trio-Spark/raw/68d73a8b49d91c7527970498fcb5efad10b5f8b4/README.md'

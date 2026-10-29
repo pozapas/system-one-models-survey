@@ -1,0 +1,102 @@
+name: Qwen2.5-3B Jev-Style Decision Engine ⚡
+name_src:
+  quote: '# Qwen2.5-3B Jev-Style Decision Engine ⚡'
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+hf_id: mikim869/qwen2.5-3b-jev-decision-engine
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+revision_sha: 9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+vendor_or_author: mikim869
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+release_date: '2026-10-18'
+release_date_src:
+  quote: (HF API createdAt for mikim869/qwen2.5-3b-jev-decision-engine)
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+availability_and_license: Open weights, license not stated; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+backbone: A specialized, parameter-efficient fine-tuned (PEFT/QLoRA) System-1 decision model based on `Qwen/Qwen2.5-3B-Instruct`. Inspired by the Jev decision architectur
+backbone_src:
+  quote: A specialized, parameter-efficient fine-tuned (PEFT/QLoRA) System-1 decision model based on `Qwen/Qwen2.5-3B-Instruct`. Inspired by the Jev decision architectur
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+primitives: not disclosed
+primitives_src:
+  quote: none found
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+source_urls:
+- 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'
+- 'https://github.com/unslothai/unsloth'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/mikim869/qwen2.5-3b-jev-decision-engine/raw/9cc9aefb2d5a39398eb50e5971be4cea74f8f6dd/README.md'

@@ -1,0 +1,102 @@
+name: strands-decider-E4B-gemma4-v1-2610
+name_src:
+  quote: '# strands-decider-E4B-gemma4-v1-2610'
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+hf_id: StrandsAgents/strands-decider-E4B-gemma4-v1-2610
+hf_id_src:
+  quote: '> The main home of this model is [`StrandsAgents/strands-decider-E4B-gemma4-v1-2610`](https://huggingface.co/StrandsAgen'
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+revision_sha: 1344d44397c457f3be34b8ff15c593b41248c6bf
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+vendor_or_author: StrandsAgents
+vendor_or_author_src:
+  quote: '> The main home of this model is [`StrandsAgents/strands-decider-E4B-gemma4-v1-2610`](https://huggingface.co/StrandsAgen'
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+release_date: '2026-10-09'
+release_date_src:
+  quote: (HF API createdAt for StrandsAgents/strands-decider-E4B-gemma4-v1-2610)
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+backbone: google/gemma-4-E4B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-E4B-it'
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+decision_head: holds a LoRA adapter on `google/gemma-4-E4B-it` plus a small readout head that
+decision_head_src:
+  quote: holds a LoRA adapter on `google/gemma-4-E4B-it` plus a small readout head that
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+training_data: '- **Trained on public datasets**, so it inherits their domains and their label noise.'
+training_data_src:
+  quote: '- **Trained on public datasets**, so it inherits their domains and their label noise.'
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: scores the options of a typed question (`noul`, a yes/no question; `choice`, one of N options;
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+source_urls:
+- 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'
+- 'https://github.com/strands-labs/strands-decider'
+source_urls_src:
+  quote: 'evaluations are at https://github.com/strands-labs/strands-decider, under the same Apache-2.0'
+  url: 'https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610/raw/1344d44397c457f3be34b8ff15c593b41248c6bf/README.md'

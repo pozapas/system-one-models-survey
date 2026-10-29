@@ -1,0 +1,102 @@
+name: EL JEVO 0.8B — V17
+name_src:
+  quote: '# EL JEVO 0.8B — V17'
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+hf_id: DanielAlonsoC/el-jevo
+hf_id_src:
+  quote: '| [**V17**](https://huggingface.co/DanielAlonsoC/el-jevo/tree/V17) | **Current recommended release; default weights on m'
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+revision_sha: 96e8d26bc3ee3654d29e88a19005a4c93d58985c
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+vendor_or_author: DanielAlonsoC
+vendor_or_author_src:
+  quote: '| [**V17**](https://huggingface.co/DanielAlonsoC/el-jevo/tree/V17) | **Current recommended release; default weights on m'
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+release_date: '2026-09-29'
+release_date_src:
+  quote: (HF API createdAt for DanielAlonsoC/el-jevo)
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+availability_and_license: Open weights, mit; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+backbone: AlexWortega/openjev
+backbone_src:
+  quote: 'by AlexWortega](https://huggingface.co/AlexWortega/openjev), built on [Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B). The project experiments'
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+context_length: to V12. GLiNER has a different architecture, native adapter and 512-token context. [All 20 suites](docs/v13-results.md), [older comparison including OpenJev](docs/v12-comparison.md), [creator metrics](docs/peer-creator-metrics.md).
+context_length_src:
+  quote: to V12. GLiNER has a different architecture, native adapter and 512-token context. [All 20 suites](docs/v13-results.md), [older comparison including OpenJev](docs/v12-comparison.md), [creator metrics](docs/peer-creator-metrics.md).
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| Yes/no (`noul`) | Evidence and a question with yes/no answers | A selected answer and scores for yes and no |'
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+source_urls:
+- 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'
+- 'https://github.com/dreth/el-jevo'
+source_urls_src:
+  quote: 'and credentials are not distributed. [Training repository](https://github.com/dreth/el-jevo).'
+  url: 'https://huggingface.co/DanielAlonsoC/el-jevo/raw/96e8d26bc3ee3654d29e88a19005a4c93d58985c/README.md'

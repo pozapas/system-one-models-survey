@@ -1,0 +1,101 @@
+name: Decider Ettin 68M
+name_src:
+  quote: '# Decider Ettin 68M'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+hf_id: aravind1706/decider-ettin
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+revision_sha: df8600e1f6e220b302cdd49897c2b1ff76e021ae
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+vendor_or_author: aravind1706
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+release_date: '2026-09-26'
+release_date_src:
+  quote: (HF API createdAt for aravind1706/decider-ettin)
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+backbone: jhu-clsp/ettin-encoder-68m
+backbone_src:
+  quote: 'base_model: jhu-clsp/ettin-encoder-68m'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+parameter_count: 'A 68M-parameter decision engine fine-tuned from [Ettin Encoder 68M](https://huggingface.co/jhu-clsp/ettin-encoder-68m) on the [BEV Decision 150K](https://huggingface.co/datasets/avbiswas/bev-decision-150K) dataset. Exported to ONNX (opset 18) and quantized to'
+parameter_count_src:
+  quote: 'A 68M-parameter decision engine fine-tuned from [Ettin Encoder 68M](https://huggingface.co/jhu-clsp/ettin-encoder-68m) on the [BEV Decision 150K](https://huggingface.co/datasets/avbiswas/bev-decision-150K) dataset. Exported to ONNX (opset 18) and quantized to'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+decision_head: '## Decision Heads'
+decision_head_src:
+  quote: '## Decision Heads'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+training_data: '- The model was trained on synthetic decision scenarios; real-world calibration has not been evaluated.'
+training_data_src:
+  quote: '- The model was trained on synthetic decision scenarios; real-world calibration has not been evaluated.'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+context_length: 'Hyperparameters: encoder LR 1e-5, head LR 2.5e-4, max sequence length 2048.'
+context_length_src:
+  quote: 'Hyperparameters: encoder LR 1e-5, head LR 2.5e-4, max sequence length 2048.'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| **Choice** | `choice_logits` | Pick one of up to 10 options |'
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+source_urls:
+- 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/aravind1706/decider-ettin/raw/df8600e1f6e220b302cdd49897c2b1ff76e021ae/README.md'

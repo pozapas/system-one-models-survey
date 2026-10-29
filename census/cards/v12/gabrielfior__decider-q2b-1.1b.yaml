@@ -1,0 +1,103 @@
+name: decider-q2b-1.1b
+name_src:
+  quote: '# decider-q2b-1.1b'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+hf_id: gabrielfior/decider-q2b-1.1b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+revision_sha: cb2712f66018fac0032e0712dedbe1134628e9bb
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+vendor_or_author: gabrielfior
+vendor_or_author_src:
+  quote: 'Write-up: [Can a smaller model match AWS Strands Decider 2B?](https://gabrielfior.github.io/projects/decision-models.htm'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+release_date: '2026-10-05'
+release_date_src:
+  quote: (HF API createdAt for gabrielfior/decider-q2b-1.1b)
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+backbone: Qwen/Qwen3.5-2B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B-Base'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+parameter_count: A 1.12B-parameter **decision model**. It takes a state and a typed question with developer-supplied options, and returns a probability for each option in one forward pass. It generates no text.
+parameter_count_src:
+  quote: A 1.12B-parameter **decision model**. It takes a state and a typed question with developer-supplied options, and returns a probability for each option in one forward pass. It generates no text.
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+decision_head: '- **Head:** a pointer head (~1M parameters, LayerNorm, 4-head cross-attention, residual pointer) that scores each option against the `<answer>` position.'
+decision_head_src:
+  quote: '- **Head:** a pointer head (~1M parameters, LayerNorm, 4-head cross-attention, residual pointer) that scores each option against the `<answer>` position.'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+training_objective: TREC and legacy policy, that were held out in earlier runs). No distillation from other decision models.
+training_objective_src:
+  quote: TREC and legacy policy, that were held out in earlier runs). No distillation from other decision models.
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+training_data: '## Training data'
+training_data_src:
+  quote: '## Training data'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `noul` (yes/no) | `{"true": "...", "false": "..."}` | `{"noul": p_yes}` |'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+source_urls:
+- 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'
+- 'https://github.com/strands-labs/strands-decider'
+- 'https://github.com/gabrielfior/decision-models-experiments'
+source_urls_src:
+  quote: 'training rows (Strands: ~123k, per their [architecture doc](https://github.com/strands-labs/strands-decider/blob/main/docs/architecture.md)) and 0.6x the para'
+  url: 'https://huggingface.co/gabrielfior/decider-q2b-1.1b/raw/cb2712f66018fac0032e0712dedbe1134628e9bb/README.md'

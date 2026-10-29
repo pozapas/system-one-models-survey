@@ -1,0 +1,16 @@
+{
+ "values": {
+  "prior": {
+   "tangCorpus": {
+    "text": "28",
+    "source": "shared/ledger/prior_reviews.json",
+    "note": "papers in Tang and Zheng's corpus (arXiv identifiers listed from its Appendix A)"
+   },
+   "tangInLedger": {
+    "text": "27",
+    "source": "shared/ledger/prior_reviews.json",
+    "note": "of those, papers with rows in ledger.csv; not in the ledger: 2609.25498"
+   }
+  }
+ }
+}

@@ -1,0 +1,103 @@
+name: pplx-decider-v1.1-27b
+name_src:
+  quote: '# pplx-decider-v1.1-27b'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+hf_id: perplexity-ai/pplx-decider-v1.1-27b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+revision_sha: 14c9d90137962d300f3de95633f7b6535e80c5ce
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+vendor_or_author: Perplexity AI (HF organisation perplexity-ai)
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+release_date: '2026-10-05'
+release_date_src:
+  quote: (HF API createdAt for perplexity-ai/pplx-decider-v1.1-27b)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+availability_and_license: Open weights listed in the repo (11 safetensors shards), Apache-2.0. The card calls the repository private and requires an authenticated token, but the HF API on 2026-10-28 reported private=False, gated=False.
+availability_and_license_src:
+  quote: authenticated Hugging Face access to this private repository
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+backbone: Qwen/Qwen3.8-27B (finetune); Qwen3_5Model backbone plus a separate readout
+backbone_src:
+  quote: The Transformers class name does not change the base model identity, Qwen3.8-27B.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+parameter_count: 27B backbone; about 49 GiB of weights
+parameter_count_src:
+  quote: a CUDA GPU with room for roughly 49 GiB of weights plus working memory
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+decision_head: readout.safetensors with a BF16 [255, 5120] decision head; full-attention layers run noncausal; applies one saved calibration temperature
+decision_head_src:
+  quote: plus `readout.safetensors` containing a BF16 `[255, 5120]` decision head.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+training_data: Update of pplx-decider-v1-27b; lifted causal mask and more data, including tasksource; Nimble-converted data is now a small share
+training_data_src:
+  quote: 'Most of the gains are driven by the lifting of the causal mask and training on more data, including data from [tasksource](https://github.com/sileod/tasksource).'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+state_modality: text and images (file paths, PIL images or base64 data URLs)
+state_modality_src:
+  quote: 'Pass images as file paths, PIL images, or `data:image/...;base64` URLs in `row["images"]`.'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+context_length: 8,192 tokens per decision including images; inputs are rejected, not truncated
+context_length_src:
+  quote: must fit in `prepare`'s 8,192-token limit. Inputs are rejected rather than truncated.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+cardinality_limit: readout has 255 rows (card gives no explicit option cap)
+cardinality_limit_src:
+  quote: plus `readout.safetensors` containing a BF16 `[255, 5120]` decision head.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+latency_with_hardware: not disclosed
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+price: $0 self-hosted (open weights); no hosted price in the card
+price_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+confidence_definition: not disclosed as a formula; predict applies the saved calibration temperature then normalises over valid candidates
+confidence_definition_src:
+  quote: apply it exactly once and normalize over the valid candidates for the current decision.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+serving_temperature: one saved calibration temperature applied once by DecisionModel.predict; value not stated in the README
+serving_temperature_src:
+  quote: The supplied `DecisionModel.predict` applies the saved calibration temperature.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+calibration_as_shipped: not disclosed (no ECE or Brier in the card)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+disclosed_failure_modes: Default causal inference does not reproduce the evaluated setup; Decision Index overall score uses suite weighting
+disclosed_failure_modes_src:
+  quote: Default causal inference does not reproduce this checkpoint's evaluated setup.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+evaluation_protocol_published: Decision Index category scores vs Jev and v1; overall score uses the suite's weighting
+evaluation_protocol_published_src:
+  quote: The overall score uses the suite's weighting, not a simple category average.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+primitives: choice, noul (usage example shows choice; the data pipeline converts datasets into Choice and Noul decisions)
+primitives_src:
+  quote: converted into Choice and Noul decisions with Nimble's converters
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+source_urls:
+- 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'
+- 'https://github.com/sileod/tasksource'
+- 'https://github.com/bespokelabsai/nimble'
+source_urls_src:
+  quote: 'and training on more data, including data from [tasksource](https://github.com/sileod/tasksource).'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b/raw/14c9d90137962d300f3de95633f7b6535e80c5ce/README.md'

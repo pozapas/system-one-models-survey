@@ -1,0 +1,103 @@
+name: Granite 4.1 30B Decision
+name_src:
+  quote: '# Granite 4.1 30B Decision'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+hf_id: modelfaces/granite-4.1-30b-decision
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+revision_sha: 33497af3bd1b9f5984247f337429bdbcc6588120
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+vendor_or_author: modelfaces
+vendor_or_author_src:
+  quote: '| Developer | modelfaces |'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+release_date: '2026-10-17'
+release_date_src:
+  quote: (HF API createdAt for modelfaces/granite-4.1-30b-decision)
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+backbone: ibm-granite/granite-4.1-30b-base
+backbone_src:
+  quote: 'base_model: ibm-granite/granite-4.1-30b-base'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+parameter_count: '| Parameters | 28.9B in the backbone (frozen), about 143M in the adapter, 2.1M in the head |'
+parameter_count_src:
+  quote: '| Parameters | 28.9B in the backbone (frozen), about 143M in the adapter, 2.1M in the head |'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+decision_head: It is a rank-16 LoRA adapter and a pointer head on IBM's
+decision_head_src:
+  quote: It is a rank-16 LoRA adapter and a pointer head on IBM's
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+training_objective: The loss is cross-entropy over each question's options. Option order is shuffled, and "none of the above"
+training_objective_src:
+  quote: The loss is cross-entropy over each question's options. Option order is shuffled, and "none of the above"
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+training_data: '30B base](https://huggingface.co/ibm-granite/granite-4.1-30b-base), trained with the open-source'
+training_data_src:
+  quote: '30B base](https://huggingface.co/ibm-granite/granite-4.1-30b-base), trained with the open-source'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+state_modality: '**Input.** A state (text, or a JSON object or array rendered as labelled text) and any number of named questions, each'
+state_modality_src:
+  quote: '**Input.** A state (text, or a JSON object or array rendered as labelled text) and any number of named questions, each'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `choice` | 1–255 named options, each with an optional description | a probability per option, the most likely option and a confidence |'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+source_urls:
+- 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'
+- 'https://github.com/jaredpalmer/kev'
+- 'https://github.com/jaredpalmer/kev.git'
+source_urls_src:
+  quote: '[Kev](https://github.com/jaredpalmer/kev) framework. Through Kev''s server it implements TypeSafe''s public System One'
+  url: 'https://huggingface.co/modelfaces/granite-4.1-30b-decision/raw/33497af3bd1b9f5984247f337429bdbcc6588120/README.md'

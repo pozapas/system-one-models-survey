@@ -1,0 +1,103 @@
+name: SRF Jev · Gemma 4 31B LoRA
+name_src:
+  quote: '# SRF Jev · Gemma 4 31B LoRA'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+hf_id: zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+revision_sha: 0b806760a3b16b2cf51e84b5a9cf814269deec75
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+vendor_or_author: zhangjiaxin2012
+vendor_or_author_src:
+  quote: '- [Interactive comparison website](https://huggingface.co/spaces/zhangjiaxin2012/SRF-Jev-Gemma4-Results).'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+release_date: '2026-10-19'
+release_date_src:
+  quote: (HF API createdAt for zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA)
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+backbone: google/gemma-4-31B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-31B-it'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+parameter_count: The 26B-A4B track needs its complete MoE base, not only the active 4B parameters.
+parameter_count_src:
+  quote: The 26B-A4B track needs its complete MoE base, not only the active 4B parameters.
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+decision_head: by the script. A generic generation pipeline or another prompt/readout does not reproduce these decision scores.
+decision_head_src:
+  quote: by the script. A generic generation pipeline or another prompt/readout does not reproduce these decision scores.
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+training_objective: The released 12B and 26B controls do not use the human extension in SFT; 31B's human-enriched endpoint changes calibration rather than the underlying adapter.
+training_objective_src:
+  quote: The released 12B and 26B controls do not use the human extension in SFT; 31B's human-enriched endpoint changes calibration rather than the underlying adapter.
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+training_data: in-house evaluation. It does not include optimizer state, prepared training datasets, public question/label streams, or a separately qualified merged/quantized model. Merging weights alone does not incorporate the prompt/readout or calibration.
+training_data_src:
+  quote: in-house evaluation. It does not include optimizer state, prepared training datasets, public question/label streams, or a separately qualified merged/quantized model. Merging weights alone does not incorporate the prompt/readout or calibration.
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+state_modality: Each input JSONL line contains exactly `state`, `question`, `primitive`, `options`, and `ordinal_values`. Examples for Choice, NoUL and Score are bundled. NoUL uses the semantic IDs `no`/`yes`; Score needs ordered ordinal values. Keep gold labels in a separate
+state_modality_src:
+  quote: Each input JSONL line contains exactly `state`, `question`, `primitive`, `options`, and `ordinal_values`. Examples for Choice, NoUL and Score are bundled. NoUL uses the semantic IDs `no`/`yes`; Score needs ordered ordinal values. Keep gold labels in a separate
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'below use the same pinned **231 public JevBench text items**: 139 Choice, 74 NoUL, 18 Score. This panel has been used repeatedly for development. These are **adaptive public proxies**, not official leaderboard scores or a confirmed SOTA result. Protected c'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+source_urls:
+- 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'
+- 'https://github.com/jxzhangjhu/srf-jev'
+- 'https://github.com/Mapika/decider'
+source_urls_src:
+  quote: '- [English results and methods](https://github.com/jxzhangjhu/srf-jev/tree/main/docs/gemma4) (repository access required).'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-LoRA/raw/0b806760a3b16b2cf51e84b5a9cf814269deec75/README.md'

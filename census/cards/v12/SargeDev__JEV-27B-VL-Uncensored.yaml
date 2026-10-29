@@ -1,0 +1,101 @@
+name: JEV-27B-VL-Uncensored
+name_src:
+  quote: (HF repo name SargeDev/JEV-27B-VL-Uncensored)
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+hf_id: SargeDev/JEV-27B-VL-Uncensored
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+revision_sha: 9f2d7be289a26da1978f93d17511363ac41ecb97
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+vendor_or_author: SargeDev
+vendor_or_author_src:
+  quote: '- **SargeDev** — [jev-distill-corpus-v3](https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3), the'
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+release_date: '2026-10-10'
+release_date_src:
+  quote: (HF API createdAt for SargeDev/JEV-27B-VL-Uncensored)
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+backbone: huihui-ai/Huihui-Qwen3.8-27B-abliterated
+backbone_src:
+  quote: 'base_model: huihui-ai/Huihui-Qwen3.8-27B-abliterated'
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+decision_head: recipe, the System-1 decision LoRA (r16/r32) + 24-slot decision head,
+decision_head_src:
+  quote: recipe, the System-1 decision LoRA (r16/r32) + 24-slot decision head,
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+training_data: calibrated typed-decision corpus AutoTrust's JEV models were trained on (Apache-2.0).
+training_data_src:
+  quote: calibrated typed-decision corpus AutoTrust's JEV models were trained on (Apache-2.0).
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '(calibrated typed decisions: yes/no · choice 2-256 · score 0-5, one forward pass) has been merged'
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+source_urls:
+- 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored/raw/9f2d7be289a26da1978f93d17511363ac41ecb97/README.md'

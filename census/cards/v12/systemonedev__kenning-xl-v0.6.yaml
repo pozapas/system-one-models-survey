@@ -1,0 +1,102 @@
+name: kenning-xl-v0.6 (experimental)
+name_src:
+  quote: '# kenning-xl-v0.6 (experimental)'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+hf_id: systemonedev/kenning-xl-v0.6
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+revision_sha: 7d1fb9fa51a897600259b491aa94d28cb890e546
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+vendor_or_author: systemonedev
+vendor_or_author_src:
+  quote: 'where reasoning helps. See the [design notes](https://github.com/systemonedev/systemone-builder/blob/main/docs/kenn'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+release_date: '2026-10-06'
+release_date_src:
+  quote: (HF API createdAt for systemonedev/kenning-xl-v0.6)
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+backbone: Qwen/Qwen3-1.7B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3-1.7B'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+decision_head: 'uses a small decoder (Qwen3-1.7B) with a **constrained answer-token readout**: it renders (state, question) and reads the next-token distribution over the answer tokens in one pass, so the full language model reasons over the whole state. An optional **delib'
+decision_head_src:
+  quote: 'uses a small decoder (Qwen3-1.7B) with a **constrained answer-token readout**: it renders (state, question) and reads the next-token distribution over the answer tokens in one pass, so the full language model reasons over the whole state. An optional **delib'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+training_objective: '- **Readout distillation** on the v0.5 structured corpus (records, tables, agent steps, logs, text, safety; exact or public labels), plus **gold-trace deliberate training**: the builder''s rule generators compute each label, so they emit the exact arithmetic/th'
+training_objective_src:
+  quote: '- **Readout distillation** on the v0.5 structured corpus (records, tables, agent steps, logs, text, safety; exact or public labels), plus **gold-trace deliberate training**: the builder''s rule generators compute each label, so they emit the exact arithmetic/th'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+training_data: '- Not trained on any TypeSafe output.'
+training_data_src:
+  quote: '- Not trained on any TypeSafe output.'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+context_length: '`Qwen/Qwen3-1.7B` (Apache-2.0), LoRA fine-tuned (merged), bf16, 1,536-token context.'
+context_length_src:
+  quote: '`Qwen/Qwen3-1.7B` (Apache-2.0), LoRA fine-tuned (merged), bf16, 1,536-token context.'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+primitives: not disclosed
+primitives_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+source_urls:
+- 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'
+- 'https://github.com/systemonedev/systemone-builder'
+source_urls_src:
+  quote: 'is spent only where reasoning helps. See the [design notes](https://github.com/systemonedev/systemone-builder/blob/main/docs/kenning-xl-design.md). It is not'
+  url: 'https://huggingface.co/systemonedev/kenning-xl-v0.6/raw/7d1fb9fa51a897600259b491aa94d28cb890e546/README.md'

@@ -18,6 +18,8 @@ import config as K
 
 PARTS = os.path.join(K.LEDGER, "parts")
 SCRATCH_A = sys.argv[1] if len(sys.argv) > 1 else None
+# version 1.2 coders wrote these when a paper does not say how its labels were made
+LABEL_FIX = {"": "not_reported", "unclear": "not_reported", "not reported": "not_reported"}
 GROUP_A = ["ibrahim2026evaluating", "sun2026typesafe", "li2026jevasajudge",
            "rafe2026calibrated", "zhang2026same", "huang2026can"]
 
@@ -75,7 +77,11 @@ def main():
     allrows = []
     for p in sorted(glob.glob(os.path.join(PARTS, "ledger_*.csv"))):
         for r in csv.DictReader(open(p, encoding="utf-8-sig")):
-            allrows.append({c: r.get(c, "") for c in cols})
+            row = {c: (r.get(c) or "") for c in cols}
+            if row["ledger_version"].strip() == "1.2":   # earlier rows stay byte-identical
+                lab = row["reference_label_type"].strip()
+                row["reference_label_type"] = LABEL_FIX.get(lab.lower(), lab)
+            allrows.append(row)
     ids = [r["row_id"] for r in allrows]
     keys = [r["value_key"] for r in allrows if r["value_key"]]
     dup_ids = {i for i in ids if ids.count(i) > 1}

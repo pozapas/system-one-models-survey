@@ -1,0 +1,73 @@
+{
+ "values": {
+  "hf12": {
+   "entries": {
+    "text": "2,645",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "Hugging Face entries created 2026-09-15 to 2026-10-28 not in the first census"
+   },
+   "t1Count": {
+    "text": "278",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "original implementations, every card checked by hand"
+   },
+   "t1Families": {
+    "text": "149",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "recipe families among them (author, backbone and recipe)"
+   },
+   "t1Rejected": {
+    "text": "42",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "rule-tiered T1 cards that the hand check moved to T2 or X"
+   },
+   "t2Count": {
+    "text": "1,111",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "derivatives (pattern-rule tiers)"
+   },
+   "t2FormatConversion": {
+    "text": "449",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "T2 format conversions"
+   },
+   "t2FinetuneDomain": {
+    "text": "336",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "T2 domain fine-tunes"
+   },
+   "dCount": {
+    "text": "192",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "datasets"
+   },
+   "xCount": {
+    "text": "1,064",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "screened out"
+   }
+  },
+  "gh12": {
+   "countTotal": {
+    "text": "15,788",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "GitHub repositories created 2026-09-15 to 2026-10-28 that pass the relevance screen"
+   },
+   "countEvaluation": {
+    "text": "2,009",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "evaluation packages (category from rules and a classifier)"
+   },
+   "countLocalServer": {
+    "text": "1,046",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "local servers"
+   },
+   "countTraining": {
+    "text": "839",
+    "source": "shared/census/census_numbers_v12.json",
+    "note": "open-model training code"
+   }
+  }
+ }
+}

@@ -1,0 +1,103 @@
+name: Jevásio-0.8B-V2
+name_src:
+  quote: '# Jevásio-0.8B-V2'
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+hf_id: TigreGotico/jevasio-0.8b-v2
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+revision_sha: 0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+vendor_or_author: TigreGotico
+vendor_or_author_src:
+  quote: 'It is [Jevásio-0.8B](https://huggingface.co/TigreGotico/jevasio-0.8b) trained further on [TigreGotico/jevasio-decisions-'
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+release_date: '2026-10-19'
+release_date_src:
+  quote: (HF API createdAt for TigreGotico/jevasio-0.8b-v2)
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+availability_and_license: Open weights, cc-by-nc-sa-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-sa-4.0'
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+backbone: Qwen/Qwen3.5-0.8B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-0.8B-Base'
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+decision_head: '| Head | Kev''s pointer head: it scores each option''s closing token against the question''s final token |'
+decision_head_src:
+  quote: '| Head | Kev''s pointer head: it scores each option''s closing token against the question''s final token |'
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+training_data: '| Licence | CC BY-NC-SA 4.0, for non-commercial research, because the training data is share-alike and non-commercial |'
+training_data_src:
+  quote: '| Licence | CC BY-NC-SA 4.0, for non-commercial research, because the training data is share-alike and non-commercial |'
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+state_modality: is a decision model for European Portuguese (pt-PT). It reads a state (a text or a JSON object) and a set of typed questions about it. It returns a probability over the options of each question, in one forward pass and without generated text. The questio
+state_modality_src:
+  quote: is a decision model for European Portuguese (pt-PT). It reads a state (a text or a JSON object) and a set of typed questions about it. It returns a probability over the options of each question, in one forward pass and without generated text. The questio
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: one forward pass and without generated text. The question types are `choice` (pick one option), `score` (an ordered level) and `noul` (yes or no).
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+source_urls:
+- 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'
+- 'https://github.com/jaredpalmer/kev'
+- 'https://github.com/jaredpalmer/kev.git'
+source_urls_src:
+  quote: 'The request format and the serving code are those of [Kev](https://github.com/jaredpalmer/kev), so a Kev or System One client works with it unchanged.'
+  url: 'https://huggingface.co/TigreGotico/jevasio-0.8b-v2/raw/0d9c7fdf60af46bff9c56fdbbc22a5bf9fb8a297/README.md'

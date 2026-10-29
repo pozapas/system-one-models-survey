@@ -1,0 +1,11 @@
+arxiv_id,title,first_author,published,screen_reason
+2610.22131,Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling,Tong Zhu,2026-10-15,"own-model: ""90.02% unweighted average accuracy... compared with 88.74% for Jev v1.13.0""; latency, calibration"
+2610.22276,MJev-Spatial: System One Spatial Intelligence via Native Attention Matching,Luozheng Qin,2026-10-15,"own-model: ""System 1 multimodal decision model""; 65.64% overall, 2.5 times faster than autoregressive baseline"
+2610.22526,Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms,Adib Sakhawat,2026-10-15,"evaluation: ""We audit three"" decision models; error capture 65% to 96%, calibration degradation"
+2610.22588,SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV,Yuchao Wu,2026-10-15,"application: ""contextual evidence decisions from JEV""; Recall@10 86.62%, 97.43%, 99.00%"
+2610.23170,Chinese Decision: A Family of Language Models for Single-Pass Probabilistic Decision-Making,Qiang Yan,2026-10-16,"own-model: ""single forward pass... Boolean, categorical, ordinal""; 85.97% accuracy, 1.00% ECE"
+2610.23346,Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking,Leandro Carísio Fernandes,2026-10-16,"evaluation: ""Jev-as-a-judge""; exact agreement 52.9%-64.9%, kappa 0.52-0.82, nDCG@10 0.3329 to 0.6331"
+2610.23668,TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models,Yiqu Yang,2026-10-16,"evaluation: ""Across nine models... 91.88%-99.93% of responses reveal the cause""; leakage and cost"
+2610.23804,Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models,Yuxiang Wang,2026-10-16,"application: ""Its typed decision model, JEV, reads each turn""; tau-Voice success 29 to 192 of 278 tasks"
+2610.24358,DKnown-Jev: Fine-Tuning and Evaluation of a JEV-Style Model for Tasks Involving Normative Knowledge,Qi Li,2026-10-17,"own-model: ""We develop DKnown-Jev""; 98.75% accuracy, exceeding Jev by 6.07 points"
+2610.24649,"Good Judgment, Bad Advice: Decision-Model Controllers Raise Agent Cost Without Improving Success",Naman Vats,2026-10-17,"evaluation: ""typed decision model, Jev 1.13""; cost ratio 1.19, AUROC 0.78, poor calibration"

@@ -1,0 +1,103 @@
+name: Jev-Style-0.8B-Decision-v3
+name_src:
+  quote: '# Jev-Style-0.8B-Decision-v3'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+hf_id: chaoliangUNSW/Jev-Style-0.8B-Decision-v3
+hf_id_src:
+  quote: '> js = JevStyle.from_pretrained("chaoliangUNSW/Jev-Style-0.8B-Decision-v3")'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+revision_sha: b023d1f9c7858fbf01504577a3bfc349ea5c7385
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+vendor_or_author: chaoliangUNSW
+vendor_or_author_src:
+  quote: '**Jev-Style decision series:** [v1 · 2B](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF) → [v2'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+release_date: '2026-09-24'
+release_date_src:
+  quote: (HF API createdAt for chaoliangUNSW/Jev-Style-0.8B-Decision-v3)
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+backbone: Qwen/Qwen3.5-0.8B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-0.8B'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+parameter_count: a calibrated probability for every option in one forward pass. 0.8B parameters, open weights, Apache-2.0.
+parameter_count_src:
+  quote: a calibrated probability for every option in one forward pass. 0.8B parameters, open weights, Apache-2.0.
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+decision_head: '| Readout | Option-letter token (one letter per option) | Option-letter token ('' A'' ... '' Z'') | **Verdict slot per option** (every option scored, one pass) |'
+decision_head_src:
+  quote: '| Readout | Option-letter token (one letter per option) | Option-letter token ('' A'' ... '' Z'') | **Verdict slot per option** (every option scored, one pass) |'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+training_data: '| Beyond its training data | **Jev-Style v3 · 0.8B** | Best official Laya |'
+training_data_src:
+  quote: '| Beyond its training data | **Jev-Style v3 · 0.8B** | Best official Laya |'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+state_modality: decision models. Instead of generating text, the model takes a state and a typed question and returns a probability
+state_modality_src:
+  quote: decision models. Instead of generating text, the model takes a state and a typed question and returns a probability
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '> from jev_style import JevStyle, noul'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+source_urls:
+- 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'
+- 'https://github.com/lawrence3699/jev-style'
+- 'https://github.com/elcronos/jev-vs-open-decision-models'
+source_urls_src:
+  quote: '→ **v3 · 0.8B (this model)** · **GitHub:** [jev-style](https://github.com/lawrence3699/jev-style) · **Website:** [jevstyle.com](https://jevstyle.com/#v3)'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3/raw/b023d1f9c7858fbf01504577a3bfc349ea5c7385/README.md'

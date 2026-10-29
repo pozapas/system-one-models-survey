@@ -1,0 +1,102 @@
+name: Qwen-AgentWorld-35B-A3B, readout fine-tuned (LoRA, + coherence)
+name_src:
+  quote: '# Qwen-AgentWorld-35B-A3B, readout fine-tuned (LoRA, + coherence)'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+hf_id: Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+revision_sha: 8cfd050d9e3583d26a39cf68bd98f4631e48d319
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+vendor_or_author: Praveenrajus
+vendor_or_author_src:
+  quote: '[jev-bench](https://huggingface.co/datasets/Praveenrajus/jev-bench) · [leaderboard](https://huggingface.co/datasets/Prav'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+release_date: '2026-10-02'
+release_date_src:
+  quote: (HF API createdAt for Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh)
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+backbone: Qwen/Qwen-AgentWorld-35B-A3B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen-AgentWorld-35B-A3B'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+parameter_count: 'World-35B-A3B`](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B) (35B parameters, about 3B active per token),'
+parameter_count_src:
+  quote: 'World-35B-A3B`](https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B) (35B parameters, about 3B active per token),'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+decision_head: '# Qwen-AgentWorld-35B-A3B, readout fine-tuned (LoRA, + coherence)'
+decision_head_src:
+  quote: '# Qwen-AgentWorld-35B-A3B, readout fine-tuned (LoRA, + coherence)'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+training_objective: · held-out **0.828** · TVD to human labels **0.305** · sure loss **0.030**
+training_objective_src:
+  quote: · held-out **0.828** · TVD to human labels **0.305** · sure loss **0.030**
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+training_data: trained on its own decision readout with a coherence penalty, the same method as the other `jevify-*-readout-coh` models.
+training_data_src:
+  quote: trained on its own decision readout with a coherence penalty, the same method as the other `jevify-*-readout-coh` models.
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+context_length: (the vLLM server ran with a 16,384-token context). None of the ten was used in fine-tuning; whether the base model saw their public texts in pretraining is unknown.
+context_length_src:
+  quote: (the vLLM server ran with a 16,384-token context). None of the ten was used in fine-tuning; whether the base model saw their public texts in pretraining is unknown.
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'One decision model**: it reads a `state`, answers typed questions (`choice`, `score`, `noul`) and returns calibrated'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+source_urls:
+- 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'
+- 'https://github.com/uspraveen/Jevify'
+source_urls_src:
+  quote: '[code](https://github.com/uspraveen/Jevify)'
+  url: 'https://huggingface.co/Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh/raw/8cfd050d9e3583d26a39cf68bd98f4631e48d319/README.md'

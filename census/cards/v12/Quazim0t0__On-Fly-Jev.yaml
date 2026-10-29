@@ -1,0 +1,101 @@
+name: On-Fly-Jev
+name_src:
+  quote: '# On-Fly-Jev'
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+hf_id: Quazim0t0/On-Fly-Jev
+hf_id_src:
+  quote: alt="Architecture graph for Quazim0t0/On-Fly-Jev. Open in hfviewer"
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+revision_sha: 05c4d43c4118e904803286b6c27902d616191a29
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+vendor_or_author: Quazim0t0
+vendor_or_author_src:
+  quote: 'Jev-style model. First was [Byrne-Jev](https://huggingface.co/Quazim0t0/Byrne-Jev-79M)'
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+release_date: '2026-09-27'
+release_date_src:
+  quote: (HF API createdAt for Quazim0t0/On-Fly-Jev)
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+backbone: 100 neurons from the original, untrained conversion of MaleCNS v1.0. Each keeps its body ID, transmitter, Dale sign,
+backbone_src:
+  quote: 100 neurons from the original, untrained conversion of MaleCNS v1.0. Each keeps its body ID, transmitter, Dale sign,
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+parameter_count: '- **Projection:** linear to 576 (head ~8.5M params), plus a question-type embedding (choice / score / noul).'
+parameter_count_src:
+  quote: '- **Projection:** linear to 576 (head ~8.5M params), plus a question-type embedding (choice / score / noul).'
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+decision_head: GPU first. Local CUDA, bf16. Every head on a row in one forward, so the times below are **per row**, not per head. No RSS or load time on that run.
+decision_head_src:
+  quote: GPU first. Local CUDA, bf16. Every head on a row in one forward, so the times below are **per row**, not per head. No RSS or load time on that run.
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+training_objective: '- **Role**: PAM copies carry the dopamine reward signal. PPL1 copies carry punishment.'
+training_objective_src:
+  quote: '- **Role**: PAM copies carry the dopamine reward signal. PPL1 copies carry punishment.'
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+state_modality: model on a spiking fly-neuron language model. You give it a state (text or JSON) and typed questions
+state_modality_src:
+  quote: model on a spiking fly-neuron language model. You give it a state (text or JSON) and typed questions
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: (`choice`, `score`, `noul`). It returns calibrated probabilities in **one forward pass**. Nothing is generated.
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+source_urls:
+- 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/Quazim0t0/On-Fly-Jev/raw/05c4d43c4118e904803286b6c27902d616191a29/README.md'

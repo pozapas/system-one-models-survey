@@ -1,0 +1,103 @@
+name: bekko-system-one-v0-17m
+name_src:
+  quote: '# bekko-system-one-v0-17m'
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+hf_id: hotchpotch/bekko-system-one-v0-17m
+hf_id_src:
+  quote: '| [17M](https://huggingface.co/hotchpotch/bekko-system-one-v0-17m) | 17M | 4M | 29 MB |'
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+revision_sha: b886a1f9b91f4e8368d7830080d52d955e2c8dfa
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+vendor_or_author: hotchpotch
+vendor_or_author_src:
+  quote: '[Release article](https://huggingface.co/blog/hotchpotch/bekko-system-one-v0-release/) · [Model collection](https://hugg'
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+release_date: '2026-09-29'
+release_date_src:
+  quote: (HF API createdAt for hotchpotch/bekko-system-one-v0-17m)
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+availability_and_license: Open weights, license not stated; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+backbone: cross-encoder/ettin-reranker-17m-v1
+backbone_src:
+  quote: 'base_model:'
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+decision_head: '| Decision heads | Choice, Noul, Score |'
+decision_head_src:
+  quote: '| Decision heads | Choice, Noul, Score |'
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+training_data: on S1MB’s benchmarks designed to measure generalization**. Their training data also includes dataset families represented in the evaluation, so strong results on those tasks do not establish broad generalization. The **v0** designation reflects this limit
+training_data_src:
+  quote: on S1MB’s benchmarks designed to measure generalization**. Their training data also includes dataset families represented in the evaluation, so strong results on those tasks do not establish broad generalization. The **v0** designation reflects this limit
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'System One v0: a family of compact English encoder models for **Choice, Noul, and Score** decisions. Supply instructions, application state, and candidate definitions; `model.predict()` returns candidate probabilities, a selected option, or a numeric rub'
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+source_urls:
+- 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'
+- 'https://github.com/hotchpotch/bekko-system-one'
+- 'https://github.com/hotchpotch/S1MB'
+source_urls_src:
+  quote: '/bekko-system-one-in-browser) · [Training and inference code](https://github.com/hotchpotch/bekko-system-one) · [Training dataset](https://huggingface.co/datase'
+  url: 'https://huggingface.co/hotchpotch/bekko-system-one-v0-17m/raw/b886a1f9b91f4e8368d7830080d52d955e2c8dfa/README.md'

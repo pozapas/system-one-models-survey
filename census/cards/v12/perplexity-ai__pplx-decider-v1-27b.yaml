@@ -1,0 +1,102 @@
+name: pplx-decider-v1-27b
+name_src:
+  quote: '# pplx-decider-v1-27b'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+hf_id: perplexity-ai/pplx-decider-v1-27b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+revision_sha: d8c3bd18e31dc1804433d38528b3e770019bf00c
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+vendor_or_author: Perplexity AI (HF organisation perplexity-ai)
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+release_date: '2026-10-01'
+release_date_src:
+  quote: (HF API createdAt for perplexity-ai/pplx-decider-v1-27b)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+availability_and_license: Open weights listed in the repo, Apache-2.0; HF API on 2026-10-28 reported private=False, gated=False. Card says results were measured through the Perplexity API.
+availability_and_license_src:
+  quote: The pplx-decider-v1-27b results were measured through the Perplexity API.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+backbone: Qwen/Qwen3.8-27B (finetune)
+backbone_src:
+  quote: pplx-decider-v1-27b is a decision model fine-tuned from Qwen3.8-27B.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+parameter_count: 27B backbone; about 49 GiB of weights
+parameter_count_src:
+  quote: a CUDA GPU with room for approximately 49 GiB of weights plus working memory
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+decision_head: not disclosed in the card (inference.py is referenced)
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+training_data: Human-labelled public datasets converted into Choice and Noul decisions with Bespoke Nimble converters; Nimble benchmark subsets excluded from training
+training_data_src:
+  quote: The data builder in `source/` uses Nimble's converters to turn human-labelled public datasets into Choice and Noul decisions.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+state_modality: text and images
+state_modality_src:
+  quote: For images, pass `images=["screenshot.png"]` to `predict`
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+cardinality_limit: not disclosed
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+latency_with_hardware: not disclosed
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+price: $0 self-hosted (open weights); API price not in the card
+price_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+confidence_definition: not disclosed
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+serving_temperature: not disclosed
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+calibration_as_shipped: not disclosed
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+disclosed_failure_modes: not disclosed
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+evaluation_protocol_published: Accuracy across 11 benchmarks, measured through the Perplexity API; compared with Jev and Qwen3.8-27B
+evaluation_protocol_published_src:
+  quote: Accuracy across 11 benchmarks. The pplx-decider-v1-27b results were measured through the Perplexity API.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+primitives: choice, noul
+primitives_src:
+  quote: 'Use `{"type": "noul", "instructions": "Does this message express urgency?"}` for a yes/no probability.'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+source_urls:
+- 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'
+- 'https://github.com/bespokelabsai/nimble'
+source_urls_src:
+  quote: 'Our data pipeline builds on [Bespoke Nimble](https://github.com/bespokelabsai/nimble)'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/d8c3bd18e31dc1804433d38528b3e770019bf00c/README.md'

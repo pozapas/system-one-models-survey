@@ -1,0 +1,103 @@
+name: Nano-Jev v1.0
+name_src:
+  quote: '# Nano-Jev v1.0'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+hf_id: sdmlai/nano-jev
+hf_id_src:
+  quote: '[`v0.1`](https://huggingface.co/sdmlai/nano-jev/tree/v0.1).'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+revision_sha: ffee345e97797bef0948561461ea54fe558588a0
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+vendor_or_author: sdmlai
+vendor_or_author_src:
+  quote: '[`v0.1`](https://huggingface.co/sdmlai/nano-jev/tree/v0.1).'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+release_date: '2026-09-25'
+release_date_src:
+  quote: (HF API createdAt for sdmlai/nano-jev)
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+availability_and_license: Open weights, mit; gated=False
+availability_and_license_src:
+  quote: 'license: mit'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+backbone: microsoft/MiniLM-L12-H384-uncased
+backbone_src:
+  quote: 'base_model: microsoft/MiniLM-L12-H384-uncased'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+parameter_count: A small (33.4M parameter) **typed decision model for RAG pipelines**. Give it a question,
+parameter_count_src:
+  quote: A small (33.4M parameter) **typed decision model for RAG pipelines**. Give it a question,
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+decision_head: '| Architecture | Cross-encoder (MiniLM, 12 layers, hidden 384) + 1-logit head |'
+decision_head_src:
+  quote: '| Architecture | Cross-encoder (MiniLM, 12 layers, hidden 384) + 1-logit head |'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+training_data: '| Training data | 49,760 examples: HotpotQA distractor (6,000 questions), SQuAD 2.0 (6,000), MultiNLI (8,000); seed 0 |'
+training_data_src:
+  quote: '| Training data | 49,760 examples: HotpotQA distractor (6,000 questions), SQuAD 2.0 (6,000), MultiNLI (8,000); seed 0 |'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+primitives: not disclosed
+primitives_src:
+  quote: none found
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+source_urls:
+- 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'
+- 'https://github.com/shubham10divakar/nano-jev'
+- 'https://github.com/StonyBrookNLP/musique'
+source_urls_src:
+  quote: '- Package: `pip install nano-jev` · Code: [github.com/shubham10divakar/nano-jev](https://github.com/shubham10divakar/nano-jev)'
+  url: 'https://huggingface.co/sdmlai/nano-jev/raw/ffee345e97797bef0948561461ea54fe558588a0/README.md'

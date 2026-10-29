@@ -1,0 +1,101 @@
+name: Zyot Decider · 12B
+name_src:
+  quote: '# Zyot Decider · 12B'
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+hf_id: hiteshluke/zyot-decider-12b-adapter
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+revision_sha: bf408f3666a8a2f60503fac09e8603bcb15361c9
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+vendor_or_author: hiteshluke
+vendor_or_author_src:
+  quote: '[`hiteshluke/zyot-decider-12b-gguf`](https://huggingface.co/hiteshluke/zyot-decider-12b-gguf).'
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+release_date: '2026-09-26'
+release_date_src:
+  quote: (HF API createdAt for hiteshluke/zyot-decider-12b-adapter)
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+backbone: 'base_model: google/gemma-4-12b-it'
+backbone_src:
+  quote: 'base_model: google/gemma-4-12b-it'
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+parameter_count: '- **12B parameter class** — largest open Zyot Decider release'
+parameter_count_src:
+  quote: '- **12B parameter class** — largest open Zyot Decider release'
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+decision_head: Measured head-to-head against the Laya reference at the same prompt format
+decision_head_src:
+  quote: Measured head-to-head against the Laya reference at the same prompt format
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+training_objective: '- **Soft-label distillation training** on `SargeDev/jev-distill-corpus-v3`'
+training_objective_src:
+  quote: '- **Soft-label distillation training** on `SargeDev/jev-distill-corpus-v3`'
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **`noul`** — Boolean / True-False'
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+source_urls:
+- 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/hiteshluke/zyot-decider-12b-adapter/raw/bf408f3666a8a2f60503fac09e8603bcb15361c9/README.md'

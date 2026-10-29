@@ -1,0 +1,101 @@
+name: Klyra-Decision-16M
+name_src:
+  quote: (HF repo name Jahirrrr/Klyra-Decision-16M)
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+hf_id: Jahirrrr/Klyra-Decision-16M
+hf_id_src:
+  quote: 'and trained from scratch | [View model](https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Preview) |'
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+revision_sha: 239491999d8760fc5ff21eea55b8daed9e4a8f5f
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+vendor_or_author: Jahirrrr
+vendor_or_author_src:
+  quote: '**Created and developed by [Jahirrrr](https://huggingface.co/Jahirrrr)**'
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+release_date: '2026-10-11'
+release_date_src:
+  quote: (HF API createdAt for Jahirrrr/Klyra-Decision-16M)
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+availability_and_license: Weights not listed in repo files, license not stated; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+backbone: '**A lightweight Transformer for structured decision-making, built from scratch.**'
+backbone_src:
+  quote: '**A lightweight Transformer for structured decision-making, built from scratch.**'
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+training_objective: '& Decision V4.2** | Larger supervised dataset mixture, replay, and distillation | **[View model](https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Language-Decision-V4.2)** |'
+training_objective_src:
+  quote: '& Decision V4.2** | Larger supervised dataset mixture, replay, and distillation | **[View model](https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Language-Decision-V4.2)** |'
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| Supported decision types | **Choice**, **Noul** (Yes/No), **Score** (ordinal rating) |'
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+source_urls:
+- 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/Jahirrrr/Klyra-Decision-16M/raw/239491999d8760fc5ff21eea55b8daed9e4a8f5f/README.md'

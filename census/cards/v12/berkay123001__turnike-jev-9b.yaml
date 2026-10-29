@@ -1,0 +1,102 @@
+name: Turnike-JEV-9B — Open-Weight Decision Model
+name_src:
+  quote: '# Turnike-JEV-9B — Open-Weight Decision Model'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+hf_id: berkay123001/turnike-jev-9b
+hf_id_src:
+  quote: in a single forward pass. Merged bf16 weights (no PEFT) are in `berkay123001/turnike-jev-9b-merged` and a torchao
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+revision_sha: fbc3255801d3e419f1f251986f997de4fd628b49
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+vendor_or_author: berkay123001
+vendor_or_author_src:
+  quote: '- **Same recipe as [Turnike-JEV-4B](https://huggingface.co/berkay123001/turnike-jev-4b).** The same data, the same draw'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+release_date: '2026-10-14'
+release_date_src:
+  quote: (HF API createdAt for berkay123001/turnike-jev-9b)
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+backbone: Qwen/Qwen3.5-9B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-9B'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+decision_head: 'GB GPU (about 9 GB in steady state after the unused vision tower and output head are dropped, ~12 GB peak while loading; measured on an RTX PRO 6000 and checked on an RTX 5060 Ti 16 GB with the stored FP8 weights: 11.9 GB peak, 9.0 GB steady, 19 s to load, sa'
+decision_head_src:
+  quote: 'GB GPU (about 9 GB in steady state after the unused vision tower and output head are dropped, ~12 GB peak while loading; measured on an RTX PRO 6000 and checked on an RTX 5060 Ti 16 GB with the stored FP8 weights: 11.9 GB peak, 9.0 GB steady, 19 s to load, sa'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+training_objective: 'Training: KL divergence between the target distribution and the model''s option distribution per question; LoRA r=16, α=32, dropout 0.05 on all attention, MLP and linear-attention projections of the language model (the vision tower is untouched and unused); lr'
+training_objective_src:
+  quote: 'Training: KL divergence between the target distribution and the model''s option distribution per question; LoRA r=16, α=32, dropout 0.05 on all attention, MLP and linear-attention projections of the language model (the vision tower is untouched and unused); lr'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+training_data: '> - Trained on public Turkish and English datasets, LLM-labelled public texts and synthetic data; the datasets are not released. / Herkese açık Türkçe ve İngilizce veri setleri, LLM ile etiketlenmiş açık metinler ve sentetik veriyle eğitildi; veri setleri yayı'
+training_data_src:
+  quote: '> - Trained on public Turkish and English datasets, LLM-labelled public texts and synthetic data; the datasets are not released. / Herkese açık Türkçe ve İngilizce veri setleri, LLM ile etiketlenmiş açık metinler ve sentetik veriyle eğitildi; veri setleri yayı'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+context_length: and unused); lr 1e-4, warm-up 3%, effective batch 32, 2,831 steps, max length 1,536 tokens, the same 80,000 packed items (seed 3) as the 4B. Two training-data shortcuts found during the 4B work ("none of the above" read from a sibling question, and from the
+context_length_src:
+  quote: and unused); lr 1e-4, warm-up 3%, effective batch 32, 2,831 steps, max length 1,536 tokens, the same 80,000 packed items (seed 3) as the 4B. Two training-data shortcuts found during the 4B work ("none of the above" read from a sibling question, and from the
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'is the same file for every Turnike size; the question formats (`noul` yes/no, `choice` with a list or a dict of option descriptions, `score`) and the command line (`python karar.py --help`) are documented on the [Turnike-JEV-4B card](https://huggingface.'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+source_urls:
+- 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'
+- 'https://github.com/uspraveen/Jevify'
+source_urls_src:
+  quote: 'scored with the `jevify-run report` of [uspraveen/Jevify](https://github.com/uspraveen/Jevify). It is not the [JevBench board by Benchmark Heaven](https://b'
+  url: 'https://huggingface.co/berkay123001/turnike-jev-9b/raw/fbc3255801d3e419f1f251986f997de4fd628b49/README.md'

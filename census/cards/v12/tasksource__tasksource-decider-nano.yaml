@@ -1,0 +1,101 @@
+name: tasksource-decider-nano
+name_src:
+  quote: '# tasksource-decider-nano'
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+hf_id: tasksource/tasksource-decider-nano
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+revision_sha: 2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+vendor_or_author: tasksource
+vendor_or_author_src:
+  quote: '# tasksource-decider-nano'
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+release_date: '2026-09-28'
+release_date_src:
+  quote: (HF API createdAt for tasksource/tasksource-decider-nano)
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+backbone: cross-encoder/ettin-reranker-150m-v1
+backbone_src:
+  quote: 'base_model: cross-encoder/ettin-reranker-150m-v1'
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+parameter_count: 'A 150M-parameter typed-decision model for the [Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index).'
+parameter_count_src:
+  quote: 'A 150M-parameter typed-decision model for the [Decision Index](https://huggingface.co/spaces/multimodalart/jev-decision-index).'
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+training_objective: requests, learning rate 2e-5, inputs up to 2,048 tokens, seed 1. The loss is soft
+training_objective_src:
+  quote: requests, learning rate 2e-5, inputs up to 2,048 tokens, seed 1. The loss is soft
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+state_modality: 'and the option text, like the reranker pair `(state, "Question: <instructions>\nOption: <option>")`, by a linear'
+state_modality_src:
+  quote: 'and the option text, like the reranker pair `(state, "Question: <instructions>\nOption: <option>")`, by a linear'
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+context_length: (ModernBERT-style encoder, 8,192-token context). Every option is scored against the full state, its question
+context_length_src:
+  quote: (ModernBERT-style encoder, 8,192-token context). Every option is scored against the full state, its question
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: It takes a `state` and typed questions (`choice`, `noul`) and returns a probability for every option. It does not
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+source_urls:
+- 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/tasksource/tasksource-decider-nano/raw/2c7c01ffe5aba74dd15968cf38b0fdc83d1f3810/README.md'

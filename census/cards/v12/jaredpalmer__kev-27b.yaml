@@ -1,0 +1,103 @@
+name: Kev-27B
+name_src:
+  quote: '# Kev-27B'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+hf_id: jaredpalmer/kev-27b
+hf_id_src:
+  quote: '| Version | v2 (Kev 1.0), released 2026-09-30 on `main` of [`jaredpalmer/kev-27b`](https://huggingface.co/jaredpalmer/ke'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+revision_sha: af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+vendor_or_author: jaredpalmer
+vendor_or_author_src:
+  quote: '| Developer | Jared Palmer ([github.com/jaredpalmer/kev](https://github.com/jaredpalmer/kev)) |'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+release_date: '2026-09-24'
+release_date_src:
+  quote: (HF API createdAt for jaredpalmer/kev-27b)
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+backbone: Qwen/Qwen3.8-27B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.8-27B'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+parameter_count: '| Parameters | 25.6B in the backbone (vision tower, LM head and multi-token-prediction layers are not loaded), 2.6M in the head |'
+parameter_count_src:
+  quote: '| Parameters | 25.6B in the backbone (vision tower, LM head and multi-token-prediction layers are not loaded), 2.6M in the head |'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+decision_head: 'model: a causal language-model backbone run prefill-only, with a pointer head over the options |'
+decision_head_src:
+  quote: 'model: a causal language-model backbone run prefill-only, with a pointer head over the options |'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+training_objective: states of at most 32,768 tokens. Only its manifest is public (`evals/sft-v2-r22/manifest.json` in the GitHub repository).
+training_objective_src:
+  quote: states of at most 32,768 tokens. Only its manifest is public (`evals/sft-v2-r22/manifest.json` in the GitHub repository).
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+training_data: '## Training data'
+training_data_src:
+  quote: '## Training data'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+state_modality: '**Input.** A state (text, or a JSON object or array rendered as labelled text) and any number of named questions, each of one of three types:'
+state_modality_src:
+  quote: '**Input.** A state (text, or a JSON object or array rendered as labelled text) and any number of named questions, each of one of three types:'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+context_length: '| Validated context length | 65,536 tokens (see Long documents) |'
+context_length_src:
+  quote: '| Validated context length | 65,536 tokens (see Long documents) |'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `choice` | 1–255 named options, each with an optional description | a probability per option, the most likely option and a confidence |'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+source_urls:
+- 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'
+- 'https://github.com/jaredpalmer/kev'
+- 'https://github.com/jaredpalmer/kev.git'
+source_urls_src:
+  quote: '| Developer | Jared Palmer ([github.com/jaredpalmer/kev](https://github.com/jaredpalmer/kev)) |'
+  url: 'https://huggingface.co/jaredpalmer/kev-27b/raw/af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf/README.md'

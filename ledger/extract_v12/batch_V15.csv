@@ -1,0 +1,11 @@
+arxiv_id,title,first_author,published,screen_reason
+2610.20927,"Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents",Guanghui Min,2026-10-14,"application: ""The judge is Jev, a non-generative decision model""; SJC improves reliability 2.1%-8.9%"
+2610.20951,LEV: Thinking Fast and Deep with Looped Decision Models,Dingjie Song,2026-10-14,"own-model: ""We present LEV, a decision model""; 63.2% to 76.2% on JevBench, latency below 50 ms"
+2610.22401,Audio System One Model: Typed Probabilistic Perception of Emotion in Speech,Jaime Bellver-Soler,2026-10-14,"own-model: ""ASOM (Audio System One Model)... choice, score and yes/no questions""; leads ALMs, 13.1 ms for 20 questions"
+2610.22407,Towards Adaptive and Real-Survey-Aligned Simulated Urban Mobility Behaviour of Generative Agents,Yves Bru,2026-10-14,"application: ""Jev-1.13 TypeSafe classifier gives surprisingly great results"" among fifteen decision-makers on travel survey"
+2610.21046,PremiseCheck: Efficient Fact-Checking of Human and AI Peer Reviews,Dingjie Song,2026-10-15,"application: ""cheap decision models, which score whether a statement holds""; PremiseCheck accuracy near GPT-5.5 at half cost"
+2610.21244,System1-Arena: Which Decisions Can Be Left to System 1?,Tianyu Chen,2026-10-15,"evaluation: ""System1-Arena... We evaluate 30 models""; accuracy, calibration, latency"
+2610.21411,Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows,Kaixiang Wang,2026-10-15,"application: ""Jev-LiteMAS""; reduces generative-LLM tokens 12.7-54.6% within 1.34 pp accuracy"
+2610.21412,"JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs",Kunlun Zhu,2026-10-15,"own-model: ""we train AgentDecision-4B""; AgentDecisionBench, 91.5% vs 82.0% task success, cost reductions"
+2610.21614,Qwen-Audio-Jev: A Unified Interface for Audio Decisions,Peixin Chen,2026-10-15,"own-model: ""dedicated Jev decision head"" with CHOICE, NOUL, SCORE; 78.40% MMAU accuracy"
+2610.22066,Prism-1: Position- and Rival-Independent Scoring for System One Models,Yao Long Teng,2026-10-15,"own-model: ""System One decision models return a distribution over the options in one forward pass""; Prism-1 accuracy and invariance results"

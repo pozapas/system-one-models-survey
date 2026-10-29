@@ -1,0 +1,101 @@
+name: rad-decider (0.8B)
+name_src:
+  quote: '# rad-decider (0.8B)'
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+hf_id: Rology/rad-decider
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+revision_sha: 5bab42db62458bdcefa96f14f9626e633d7a24eb
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+vendor_or_author: Rology
+vendor_or_author_src:
+  quote: Rology — open radiology AI. Released under **Apache-2.0** as a research artifact; not validated for clinical use.
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+release_date: '2026-10-15'
+release_date_src:
+  quote: (HF API createdAt for Rology/rad-decider)
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+backbone: Qwen/Qwen3.5-0.8B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-0.8B'
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+decision_head: '**untuned base model (`Qwen/Qwen3.5-0.8B`, same prompt, same letter readout)**. These three span the whole cycle: before the'
+decision_head_src:
+  quote: '**untuned base model (`Qwen/Qwen3.5-0.8B`, same prompt, same letter readout)**. These three span the whole cycle: before the'
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+training_objective: 1 epoch (9,000 steps, effective batch 32), restricted-softmax cross-entropy over
+training_objective_src:
+  quote: 1 epoch (9,000 steps, effective batch 32), restricted-softmax cross-entropy over
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- `noul` is shorthand for `yes/no`. `choice` takes an ordered list of `(option_key, definition)`. `score` is an ordered scale (lower/higher as written).'
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+source_urls:
+- 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/Rology/rad-decider/raw/5bab42db62458bdcefa96f14f9626e633d7a24eb/README.md'

@@ -1,0 +1,102 @@
+name: jev-vision-27b
+name_src:
+  quote: '# jev-vision-27b'
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+hf_id: leinenterprises/jev-vision-27b
+hf_id_src:
+  quote: '/ 0.113 / 0.349 / 0.432; [files](https://huggingface.co/datasets/leinenterprises/jev-vision-27b-results/tree/main/j'
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+revision_sha: 4084f7f755fd16f6c54a87c9a4534c6b877d02e4
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+vendor_or_author: leinenterprises
+vendor_or_author_src:
+  quote: '/ 0.113 / 0.349 / 0.432; [files](https://huggingface.co/datasets/leinenterprises/jev-vision-27b-results/tree/main/j'
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+release_date: '2026-10-10'
+release_date_src:
+  quote: (HF API createdAt for leinenterprises/jev-vision-27b)
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+backbone: Qwen/Qwen3.8-27B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.8-27B'
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+training_objective: '- Loss: KL to soft or label-smoothed targets at the answer position.'
+training_objective_src:
+  quote: '- Loss: KL to soft or label-smoothed targets at the answer position.'
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+training_data: The other strong entrants on the Decision Index vision board were trained on text only and answer image questions zero-shot. This one was trained on vision decisions directly (spatial and depth questions, charts, documents and receipts, web screenshots, captio
+training_data_src:
+  quote: The other strong entrants on the Decision Index vision board were trained on text only and answer image questions zero-shot. This one was trained on vision decisions directly (spatial and depth questions, charts, documents and receipts, web screenshots, captio
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+state_modality: 'A LoRA on **Qwen/Qwen3.8-27B** for typed decisions over text **and images**: give it a state (text, images, or both), a question and a list of options, and it returns a probability for every option in one forward pass.'
+state_modality_src:
+  quote: 'A LoRA on **Qwen/Qwen3.8-27B** for typed decisions over text **and images**: give it a state (text, images, or both), a question and a list of options, and it returns a probability for every option in one forward pass.'
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+primitives: not disclosed
+primitives_src:
+  quote: none found
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+source_urls:
+- 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'
+- 'https://github.com/apolinario/decision-index'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/leinenterprises/jev-vision-27b/raw/4084f7f755fd16f6c54a87c9a4534c6b877d02e4/README.md'

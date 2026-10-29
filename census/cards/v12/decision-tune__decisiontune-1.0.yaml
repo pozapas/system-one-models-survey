@@ -1,0 +1,103 @@
+name: DecisionTune 1.0
+name_src:
+  quote: '# DecisionTune 1.0'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+hf_id: decision-tune/decisiontune-1.0
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+revision_sha: fc8bed9a4f8e0f64f2769e761e036b2ae555f78d
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+vendor_or_author: decision-tune
+vendor_or_author_src:
+  quote: 'Weights: Apache-2.0. Package: [`decision-tune`](https://pypi.org/project/decision-tune/) ([source](https://github.com/de'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+release_date: '2026-10-04'
+release_date_src:
+  quote: (HF API createdAt for decision-tune/decisiontune-1.0)
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+backbone: answerdotai/ModernBERT-large
+backbone_src:
+  quote: 'base_model: answerdotai/ModernBERT-large'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+decision_head: 'The model is ModernBERT-large and a 4 KB scoring head. Each question is one sequence:'
+decision_head_src:
+  quote: 'The model is ModernBERT-large and a 4 KB scoring head. Each question is one sequence:'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+training_objective: during part of its training. We used its soft labels on 8 datasets (distillation weight 0.5, temperature 1.0).
+training_objective_src:
+  quote: during part of its training. We used its soft labels on 8 datasets (distillation weight 0.5, temperature 1.0).
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+training_data: '3. **Stage 2.** Two epochs on 16 training sets: BANKING77, CLINC150, GSM8K (code made the wrong options), WinoGrande, ContractNLI, Amazon ESCI, twitter-financial-news-sentiment, four tool-use sets (BFCL-style, API-Bank-style, ToolRet-style and When2Call-style)'
+training_data_src:
+  quote: '3. **Stage 2.** Two epochs on 16 training sets: BANKING77, CLINC150, GSM8K (code made the wrong options), WinoGrande, ContractNLI, Amazon ESCI, twitter-financial-news-sentiment, four tool-use sets (BFCL-style, API-Bank-style, ToolRet-style and When2Call-style)'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+state_modality: 'The model refuses a longer sequence. It does not truncate it. A state can be a string or a JSON object. The model shows an object as `key: value | key: value`.'
+state_modality_src:
+  quote: 'The model refuses a longer sequence. It does not truncate it. A state can be a string or a JSON object. The model shows an object as `key: value | key: value`.'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+primitives: not disclosed
+primitives_src:
+  quote: none found
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+source_urls:
+- 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'
+- 'https://github.com/decision-tune/decision-tune'
+- 'https://github.com/altertable-ai/duckdb-decision_tune'
+source_urls_src:
+  quote: 'ion-tune`](https://pypi.org/project/decision-tune/) ([source](https://github.com/decision-tune/decision-tune)). Demo: [decision-tune/demo](https://huggingface.c'
+  url: 'https://huggingface.co/decision-tune/decisiontune-1.0/raw/fc8bed9a4f8e0f64f2769e761e036b2ae555f78d/README.md'

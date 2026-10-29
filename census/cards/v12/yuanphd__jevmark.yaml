@@ -1,0 +1,103 @@
+name: jevmark adapters
+name_src:
+  quote: '# jevmark adapters'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+hf_id: yuanphd/jevmark
+hf_id_src:
+  quote: 'and every run''s per-record results: https://huggingface.co/datasets/yuanphd/jevmark-runs. Paper: "Learning a calibrate'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+revision_sha: 3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+vendor_or_author: yuanphd
+vendor_or_author_src:
+  quote: 'and every run''s per-record results: https://huggingface.co/datasets/yuanphd/jevmark-runs. Paper: "Learning a calibrate'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+release_date: '2026-10-04'
+release_date_src:
+  quote: (HF API createdAt for yuanphd/jevmark)
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+backbone: Qwen/Qwen3-0.6B-Base
+backbone_src:
+  quote: 'base_model:'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+decision_head: 'gface.co/datasets/yuanphd/jevmark-runs. Paper: "Learning a calibrated decision head from logged bandit feedback", arXiv, link to follow.'
+decision_head_src:
+  quote: 'gface.co/datasets/yuanphd/jevmark-runs. Paper: "Learning a calibrated decision head from logged bandit feedback", arXiv, link to follow.'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+training_objective: and when Reinforcement Learning for Calibrated Decisions (RLCD) helps.
+training_objective_src:
+  quote: and when Reinforcement Learning for Calibrated Decisions (RLCD) helps.
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+training_data: of the model's own chosen answer was revealed, no labels, trained with a pathwise Brier loss on the chosen action's probability. The paper calls this learner CAPS-Brier (Chosen-Action Proper Scoring); the folder keeps its original name. |
+training_data_src:
+  quote: of the model's own chosen answer was revealed, no labels, trained with a pathwise Brier loss on the chosen action's probability. The paper calls this learner CAPS-Brier (Chosen-Action Proper Scoring); the folder keeps its original name. |
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+state_modality: 'jevmark is a small decision model that never generates text: a text state and a set of typed questions go in, and one forward pass returns a full probability distribution per question. The answer options are part of each request (a yes or no question, one of t'
+state_modality_src:
+  quote: 'jevmark is a small decision model that never generates text: a text state and a set of typed questions go in, and one forward pass returns a full probability distribution per question. The answer options are part of each request (a yes or no question, one of t'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: model returns distributions and a confidence, 1 - H(p) / ln K for choice and score questions.
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+source_urls:
+- 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'
+- 'https://github.com/yuan-phd/jevmark.'
+- 'https://github.com/yuan-phd/jevmark'
+source_urls_src:
+  quote: 'every report and the metrics files behind every number: https://github.com/yuan-phd/jevmark. The deployment logs and every run''s per-record results: https'
+  url: 'https://huggingface.co/yuanphd/jevmark/raw/3b215bba44bc248fd2c0abfa0b8dbea9b1ee1394/README.md'

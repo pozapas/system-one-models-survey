@@ -1,6 +1,6 @@
-"""Paths and frozen protocol constants for the survey and the literature.
+"""Paths and frozen protocol constants for Session B (the survey and the literature).
 
-The survey writes only under shared/census, shared/ledger, shared/references and
+Session B writes only under shared/census, shared/ledger, shared/references and
 survey/. It reads shared/results/ and never writes to it.
 """
 import os
@@ -12,16 +12,16 @@ SURVEY = os.path.join(PAPER4, "survey")
 CENSUS = os.path.join(SHARED, "census")
 LEDGER = os.path.join(SHARED, "ledger")
 REFS = os.path.join(SHARED, "references")
-RESULTS_RO = os.path.join(SHARED, "results")          # read-only for the survey
+RESULTS_RO = os.path.join(SHARED, "results")          # read-only for Session B
 
 MANUSCRIPT = os.path.join(SURVEY, "manuscript")
 FIGURES = os.path.join(SURVEY, "figures")
 TABLES = os.path.join(SURVEY, "tables")
 NOTES = os.path.join(SURVEY, "notes")
 
-# Frozen on 2026-09-24. A single Sunday re-sweep is allowed only as a
-# versioned addendum (ledger v1.1), recorded in shared/ledger/PROTOCOL.md.
-CUTOFF = "2026-09-24"
-LEDGER_VERSION = "1.0"
+# The first cutoff was frozen on 2026-09-24 (ledger versions 1.0 and 1.1). The second sweep of
+# version 1.2 moves the cutoff to 2026-10-28, as recorded in shared/ledger/PROTOCOL.md.
+CUTOFF = "2026-10-28"
+LEDGER_VERSION = "1.2"
 
 MAILTO = "system-one-survey-refcheck@example.org"      # non-personal polite-pool address

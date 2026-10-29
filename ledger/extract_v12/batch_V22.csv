@@ -1,0 +1,9 @@
+arxiv_id,title,first_author,published,screen_reason
+2610.35826,Understanding Jev-Style System One Models: Does Structure Reduce Selection Bias?,Mingyang Song,2026-10-26,evaluation: Selection-bias test: cumulative failure set expands 27.3-28.5% under reordering.
+2610.36006,MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine,Simon A. Lee,2026-10-26,"own-model: MedJev 72.5% MedQA, AUROC 0.926 mortality, ECE 0.028-0.063."
+2610.36311,Confidence Is Not a Promise: A Reference Audit of Typed Decision Models,Pedro Carvalho Brom,2026-10-26,evaluation: Reference audit of calibration guarantees: threshold breaks promise in 147 of 190 evaluations; Jev keeps 95% in 8 of 51 locales.
+2610.36595,Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models,Chengxuan Pei,2026-10-27,application: Reports 11% vs 46.5% success with Jev-1.13.0 and 52.6% vs 11.8% with formalizer; latency 2.09 s.
+2610.36689,PsyJev: Psychological Analysis via System-1 Judgment,Fangyuan Liu,2026-10-27,own-model: Builds PsyJev; average test F1 64.33-67.56.
+2610.36804,DFIP: Decision-Focused Inference Path for System One Models,Ismail Pelaseyed,2026-10-27,"evaluation: Inference-path study: speedups of 2.47x (Decider) and 1.45x (Clef), audit of 3,024 decisions."
+2610.36915,Do We Need an LLM to Know Why Sources Conflict? Decision Models for Knowledge-Conflict Typing in RAG,Parv Khatri,2026-10-27,"evaluation: Accuracy 50.0-67.0%, 4-39x lower cost, 2.6-6.0x lower latency, cascade tied with Gemini at 25-37% of cost."
+2610.37229,Decision Models as Judges for Hallucination Detection,Haozheng Liu,2026-10-27,evaluation: Hallucination detection: best decision model matches gpt-6-sol on context inconsistency; cascade at 1-3% of cost; overconfident.

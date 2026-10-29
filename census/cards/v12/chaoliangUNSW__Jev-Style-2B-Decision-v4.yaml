@@ -1,0 +1,102 @@
+name: Jev-Style-2B-Decision-v4
+name_src:
+  quote: '# Jev-Style-2B-Decision-v4'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+hf_id: chaoliangUNSW/Jev-Style-2B-Decision-v4
+hf_id_src:
+  quote: 'formats (text only):** [GGUF for llama.cpp](https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4-GGUF) · [ML'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+revision_sha: 9d97074a4cfb194a2dbe5bf33a0cbff06db232bb
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+vendor_or_author: chaoliangUNSW
+vendor_or_author_src:
+  quote: '**[Try it in your browser →](https://huggingface.co/spaces/chaoliangUNSW/jev-style-2b)** (text and images, no install)'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+release_date: '2026-10-27'
+release_date_src:
+  quote: (HF API createdAt for chaoliangUNSW/Jev-Style-2B-Decision-v4)
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+backbone: Qwen/Qwen3.5-2B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+parameter_count: returns a calibrated probability for every option in one pass. 2.21B parameters (Qwen3.5-2B with its vision
+parameter_count_src:
+  quote: returns a calibrated probability for every option in one pass. 2.21B parameters (Qwen3.5-2B with its vision
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+decision_head: layers, the same verdict readout), so the v3 notes on layout and readout still apply; the v3 runtime cannot load
+decision_head_src:
+  quote: layers, the same verdict readout), so the v3 notes on layout and readout still apply; the v3 runtime cannot load
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+training_data: 'state without placeholders gets them added the way the training data writes them (`{"image": "<|image_1|>", ...}`).'
+training_data_src:
+  quote: 'state without placeholders gets them added the way the training data writes them (`{"image": "<|image_1|>", ...}`).'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+state_modality: '**Jev-style decisions about text and images.** Give it a state (text, JSON, and now images) and typed questions; it'
+state_modality_src:
+  quote: '**Jev-style decisions about text and images.** Give it a state (text, JSON, and now images) and typed questions; it'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **choice**: pick one of N named options;'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+source_urls:
+- 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'
+- 'https://github.com/lawrence3699/jev-style'
+source_urls_src:
+  quote: 'jevstyle.com](https://jevstyle.com) · **GitHub:** [jev-style](https://github.com/lawrence3699/jev-style) · **Collection:** [all v4 builds and the demo](https://'
+  url: 'https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4/raw/9d97074a4cfb194a2dbe5bf33a0cbff06db232bb/README.md'

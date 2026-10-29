@@ -1,0 +1,102 @@
+name: jev-decider-0.4B
+name_src:
+  quote: '# jev-decider-0.4B'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+hf_id: NeelContractor/jev-decider-0.4B
+hf_id_src:
+  quote: decider = load("NeelContractor/jev-decider-0.4B")
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+revision_sha: aac34a0d965f53211c300f7738fae7ddbfc73349
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+vendor_or_author: NeelContractor
+vendor_or_author_src:
+  quote: decider = load("NeelContractor/jev-decider-0.4B")
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+release_date: '2026-10-20'
+release_date_src:
+  quote: (HF API createdAt for NeelContractor/jev-decider-0.4B)
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+backbone: Qwen/Qwen3-0.6B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3-0.6B'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+parameter_count: 'A **0.4B-parameter System One decision model** in the bev-decider / Jev format. It reads a state (text or JSON) and typed questions about it and returns probabilities in a single forward pass, with no text generation:'
+parameter_count_src:
+  quote: 'A **0.4B-parameter System One decision model** in the bev-decider / Jev format. It reads a state (text or JSON) and typed questions about it and returns probabilities in a single forward pass, with no text generation:'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+decision_head: '| Decision head | 2-layer attention head, 512-dim, with a task-type embedding |'
+decision_head_src:
+  quote: '| Decision head | 2-layer attention head, 512-dim, with a task-type embedding |'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+training_objective: '- Objective: cross-entropy over the options.'
+training_objective_src:
+  quote: '- Objective: cross-entropy over the options.'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+training_data: '| Context | Trained with states up to **512** tokens; options are limited to 64 tokens each |'
+training_data_src:
+  quote: '| Context | Trained with states up to **512** tokens; options are limited to 64 tokens each |'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+state_modality: 'One decision model** in the bev-decider / Jev format. It reads a state (text or JSON) and typed questions about it and returns probabilities in a single forward pass, with no text generation:'
+state_modality_src:
+  quote: 'One decision model** in the bev-decider / Jev format. It reads a state (text or JSON) and typed questions about it and returns probabilities in a single forward pass, with no text generation:'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **`choice`**: pick one of several named options.'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+source_urls:
+- 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'
+- 'https://github.com/avbiswas/bev-decider'
+source_urls_src:
+  quote: 'module, so the model is loaded with the [`bev-decider`](https://github.com/avbiswas/bev-decider) package.'
+  url: 'https://huggingface.co/NeelContractor/jev-decider-0.4B/raw/aac34a0d965f53211c300f7738fae7ddbfc73349/README.md'

@@ -4,20 +4,32 @@
       "text": "23",
       "source": "shared/ledger/sweep_counts.json"
     },
+    "sweep.arxivQueriesV12": {
+      "text": "24",
+      "source": "shared/ledger/sweep_counts.json"
+    },
     "sweep.uniqueArxiv": {
-      "text": "22",
+      "text": "271",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.uniqueArxivV12": {
+      "text": "249",
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.includedArxiv": {
-      "text": "19",
+      "text": "237",
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.excludedArxiv": {
+      "text": "34",
+      "source": "shared/ledger/sweep_counts.json"
+    },
+    "sweep.includedNoRows": {
       "text": "3",
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.studiesTotal": {
-      "text": "27",
+      "text": "242",
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.studiesGrey": {
@@ -25,7 +37,7 @@
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.ledgerRows": {
-      "text": "409",
+      "text": "3,396",
       "source": "shared/ledger/sweep_counts.json"
     }
   }

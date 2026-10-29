@@ -1,0 +1,101 @@
+name: d1-omni-600M Code Review Decisions
+name_src:
+  quote: '# d1-omni-600M Code Review Decisions'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+hf_id: yannelli/d1-omni-600m-code-review-decisions
+hf_id_src:
+  quote: '| [d1-omni-600M](https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions) (this model) | LFM2.5 encoder with'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+revision_sha: c60c9596b3aabd7379f8fa242c239b1394d1eb49
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+vendor_or_author: yannelli
+vendor_or_author_src:
+  quote: 'on [JS/TS Code Review Decisions](https://huggingface.co/datasets/yannelli/js-ts-code-review-decisions). On that dat'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+release_date: '2026-10-12'
+release_date_src:
+  quote: (HF API createdAt for yannelli/d1-omni-600m-code-review-decisions)
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+availability_and_license: Open weights, other; gated=False
+availability_and_license_src:
+  quote: 'license: other'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+backbone: LiquidAI/d1-omni-600M
+backbone_src:
+  quote: 'base_model: LiquidAI/d1-omni-600M'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+parameter_count: '| Parameters | 587M (fp32, 2.3 GB) |'
+parameter_count_src:
+  quote: '| Parameters | 587M (fp32, 2.3 GB) |'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+decision_head: '(https://huggingface.co/LiquidAI/d1-omni-600M), LFM2.5 encoder with a decision head |'
+decision_head_src:
+  quote: '(https://huggingface.co/LiquidAI/d1-omni-600M), LFM2.5 encoder with a decision head |'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+training_objective: '| Model | Params | Macro F1 @ 0.5 | Accuracy | Log loss | Brier | ECE | Clean judged clean |'
+training_objective_src:
+  quote: '| Model | Params | Macro F1 @ 0.5 | Accuracy | Log loss | Brier | ECE | Clean judged clean |'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+training_data: Code Review Decisions and the second strongest of the four models trained on this dataset.
+training_data_src:
+  quote: Code Review Decisions and the second strongest of the four models trained on this dataset.
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| P(yes) for yes/no questions; a distribution over options for choice and score questions |'
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+source_urls:
+- 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/yannelli/d1-omni-600m-code-review-decisions/raw/c60c9596b3aabd7379f8fa242c239b1394d1eb49/README.md'

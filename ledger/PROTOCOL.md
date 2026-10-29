@@ -50,3 +50,12 @@ The companion benchmark cites ledger rows through `lit.<value_key>` labels in `s
 ## Rows from later sources (added 2026-10-01)
 
 Rows from sources dated after the cutoff may be appended for the benchmark paper, for example L937 to L939 from the community Decision Index (2026-09-28). They carry their own source date and are not risk-of-bias graded, so the survey synthesis counts only the studies graded in `rob.csv`. A later sweep that grades them releases them as part of a new minor version.
+
+## Version 1.2 (cutoff 2026-10-28)
+
+The second sweep reruns every arXiv query of version 1.0, adds queries for the models released after the first cutoff (`survey/src/sweep_v12.py`), and covers submissions from 2026-09-14 to 2026-10-28. New records are screened in `candidates_v12.csv`. Included papers are extracted under `EXTRACTION_BRIEF_v12.md` into `parts/ledger_V01.csv` to `parts/ledger_V22.csv`, graded under `GRADING_BRIEF_v12.md` into `parts/rob_G01.csv` to `parts/rob_G13.csv`, and selected for the synthesis under `SELECTION_BRIEF_v12.md` into `selection_parts/`. The rating anchors above apply unchanged. A study that mixes new items with public pre-2026 sets is rated unclear on domain 5.
+
+- `survey/src/merge_ledger.py` and `survey/src/merge_rob.py` rebuild `ledger.csv` and `rob.csv` from the parts. The version 1.1 grades are kept in `parts/rob_v11.csv`.
+- `survey/src/verify_excerpts.py 1.2` checks every excerpt of the second sweep against the saved full text (`excerpt_check_v1.2.csv`); repairs are logged in `excerpt_repairs_v1.2.md`.
+- `comparator_class.csv` codes the comparator of every accuracy contrast that enters `r1Gap` or `gapJevBest` (zero-shot open model or task-trained model for R1; frontier LLM, other LLM, task-trained model or decision model for the gap). It was added on 2026-10-28 after the first version 1.2 synthesis. For the gap it enforces the rule already stated in `synthesis.py` before version 1.2 (frontier comparators only), which the selection coders had applied inconsistently. For R1 it is an exploratory split: the pre-specified R1 estimate remains the pooled best-open-minus-Jev gap, and the split is reported beside it. The classes were coded twice, the second time without the computed contrasts or the numbers in the selection reasons (`comparator_class_blind.csv`, from `comparator_class_blind_todo.csv`), and disagreements were adjudicated in `survey/src/adjudicate_comparators.py`.
+- The second rating of version 1.1 covered the first sweep only.

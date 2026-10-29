@@ -1,0 +1,101 @@
+name: my_jev-0.6b（sysone）
+name_src:
+  quote: '# my_jev-0.6b（sysone）'
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+hf_id: siriusyiyi/my_jev-hr9
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+revision_sha: 5afd32a1f48af07457613100b718b3e921e64acb
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+vendor_or_author: siriusyiyi
+vendor_or_author_src:
+  quote: '- 训练：单张 16GB 消费卡（详见 github.com/siriusyiyi/my_jev）'
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+release_date: '2026-10-13'
+release_date_src:
+  quote: (HF API createdAt for siriusyiyi/my_jev-hr9)
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+backbone: Qwen/Qwen3-0.6B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3-0.6B-Base'
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 中文优先的 Jev 式路由决策模型：一次前向返回全部类型化问题（choice/score/noul）的完整概率分布，零 token 解码。
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+source_urls:
+- 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'
+source_urls_src:
+  quote: '- 训练：单张 16GB 消费卡（详见 github.com/siriusyiyi/my_jev）'
+  url: 'https://huggingface.co/siriusyiyi/my_jev-hr9/raw/5afd32a1f48af07457613100b718b3e921e64acb/README.md'

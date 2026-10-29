@@ -1,0 +1,221 @@
+analysis,record,study,class,reason
+r1Gap,nimble324,grey_bespoke_nimble,task_trained,"Nimble holdout is the contrastive family its LoRA was trained on (disjoint items, same family)."
+r1Gap,nimble13,grey_bespoke_nimble,zero_shot_open,Nimble was scored on 13 public subsets outside its training categories.
+r1Gap,cheng2250,cheng2026thisthatmodel,task_trained,this-that-model was trained on the benchmark's 15 families.
+r1Gap,ibrOpenBest,ibrahim2026evaluating,zero_shot_open,"Best open model is SemIf-4B, a frozen Qwen3.5-4B with a letter readout and no training."
+r1Gap,rev975,grey_robbalian_rev,task_trained,Rev was fine-tuned on train splits of the same five datasets that make up the 975-item holdout.
+r1Gap,revJevBench,grey_robbalian_rev,task_trained,Rev's authors read their model's misses on the public JevBench items to design its synthetic training data.
+r1Gap,revDecisionIndex,grey_robbalian_rev,zero_shot_open,Rev was trained on public decision pools with no documented overlap with the 19 Decision Index benchmarks.
+r1Gap,layaTypedDecisions,grey_laya,task_trained,laya-typed-decisions is fine-tuned on that benchmark's own training split.
+r1Gap,kevInDist,grey_kev,task_trained,Kev-9B was trained on the ten sources and programmatic policy data of its in-distribution set.
+r1Gap,kevOod,grey_kev,zero_shot_open,Kev OOD set uses six never-trained sources and held-out structures.
+r1Gap,kevMmluPro,grey_kev,zero_shot_open,MMLU-Pro is not among Kev's training sources.
+gapJevBest,ibrGap,ibrahim2026evaluating,frontier_llm,Oracle best-of-19 LLM per task is dominated by frontier models.
+gapJevBest,liJudgeRewardBench,li2026jevasajudge,frontier_llm,Comparator is GPT-6 Astra.
+gapJevBest,liJudgeJudgeBench,li2026jevasajudge,frontier_llm,Comparator is GPT-6 Astra.
+gapJevBest,liJudgeHaluEval,li2026jevasajudge,frontier_llm,Comparator is GPT-6 Astra.
+gapJevBest,rafeGap,rafe2026calibrated,frontier_llm,"Comparator is Claude Fable 5.1, a frontier LLM."
+gapJevBest,zhangGap,zhang2026same,frontier_llm,Comparator is Gemini 3.1 Pro.
+gapJevBest,dengGap,deng2026jev,frontier_llm,"Comparators are GPT-6 Astra, GPT-5.6 Sol, Claude Sonnet 5 and Claude Opus 5."
+gapJevBest,liFastCloud,li2026fast,other_llm,Comparator is DeepSeek v4.1 Flash.
+gapJevBest,liFastImage,li2026fast,other_llm,Comparator is DeepSeek v4.1 Flash.
+gapJevBest,liReplacingOcr,li2026replacing,other_llm,Comparator is DeepSeek v4.1 Flash.
+r1Gap,liuWaInject,liu2026evaluating,zero_shot_open,"Nimble used as released on WAInjectBench with the same prompt, not trained on it."
+gapJevBest,liuRJudgeBest,liu2026evaluating,other_llm,"Comparator is DeepSeek-V4.1-Flash, a flash-tier LLM."
+gapJevBest,liBeyondAcc,li2026beyond,other_llm,Comparator is an open Qwen3.8-27B read through its first token.
+r1Gap,kourtisKnown,kourtis2026type,task_trained,Laya was fine-tuned on the full training split of the 5G control corpus.
+gapJevBest,kourtisGap,kourtis2026type,task_trained,Comparator is a ModernBERT encoder trained on the full training split.
+r1Gap,joyClinc,joy2026system,zero_shot_open,Laya run at its released settings on CLINC150 with no tuning.
+gapJevBest,joyGap,joy2026system,decision_model,"Comparator is Laya, an open typed decision model used zero-shot."
+gapJevBest,madridMetaMedQA,madridgarcia2026jev,frontier_llm,"Comparator is GPT-6 Sol at medium reasoning, prompted."
+gapJevBest,sharmaH1,sharma2026selection,other_llm,"Comparator is the authors' engram v2, a gpt-4o-mini memory pipeline, not a trained model."
+gapJevBest,sharmaS4,sharma2026selection,other_llm,Comparator is a gpt-4o-mini listwise reranker.
+gapJevBest,zhangEmoGap,zhang2026emo,other_llm,Comparator is Gemini 3.8 Flash with input-output prompting.
+r1Gap,perifanisLayaBackend,perifanis2026selmroute,zero_shot_open,"Laya used as released as the semantic extractor, no training on the routing data."
+gapJevBest,perifanisGap,perifanis2026selmroute,task_trained,Comparator is GTE-Qwen2 embeddings with a CatBoost learner trained on the routing data.
+gapJevBest,wangGap,wang2026jev,other_llm,"Comparator is GLM-5.2, an open generative LLM."
+r1Gap,dingMmlu,ding2026jet,zero_shot_open,"JET scores candidates with pretrained Qwen3.5-27B, no additional training."
+gapJevBest,dingGap,ding2026jet,other_llm,"Comparator is JET, pretrained Qwen3.5-27B scored by likelihood with no training."
+gapJevBest,konakWisdm,konak2026more,task_trained,Comparator is a leave-one-subject-out Random Forest trained on other subjects.
+gapJevBest,rezvaniTop1,rezvani2026jevvibe,frontier_llm,Comparator is GPT-5.6 Sol.
+r1Gap,porceddaChoice,porcedda2026jev,zero_shot_open,SemIf Choice is a frozen Qwen readout used without training.
+gapJevBest,porceddaGap,porcedda2026jev,decision_model,"Comparator is SemIf Choice, an open typed decision model used zero-shot."
+gapJevBest,shengSr,sheng2026navjev,frontier_llm,"Comparator is Qwen3.8-Max, a closed flagship LLM prompted with the same state."
+r1Gap,daiSst2,dai2026koa,zero_shot_open,"Koa model was fine-tuned on a separate corpus and applied to SST-2, which is disjoint from adaptation data."
+gapJevBest,daiGapSst2,dai2026koa,frontier_llm,Comparator is Gemini-Pro-3.1 used zero-shot.
+r1Gap,deusserMmlu,deusser2026evaluating,zero_shot_open,Open Qwen3.8-27B scored by next-token probabilities with no training.
+r1Gap,gaoOrdinal,gao2026more,zero_shot_open,StartLux-27B used as released on the authors' same-prompt audit.
+r1Gap,wangGeneral,wang2026chinese,task_trained,Chinese-Jev General was trained on 10 million Chinese decisions for the authors' own CJ-Bench.
+gapJevBest,xuTraffic,xu2026first,task_trained,"Comparator is a Random Forest fitted on 8,000 training records."
+gapJevBest,xuTrafficSol,xu2026first,frontier_llm,Comparator is GPT-5.6 Sol with 40 in-context examples.
+r1Gap,liFastbAF,li2026fastb,zero_shot_open,Laya 0.3.21 run as released on byte-identical requests.
+gapJevBest,doRosarioBAcc,dorosario2026jevasajudge,frontier_llm,Comparator is GPT-6 Astra.
+gapJevBest,hakemMacroF1,teke2026hakembench,other_llm,Comparator is Gemini 3.8 Flash.
+gapJevBest,hakemHumanGold,teke2026hakembench,other_llm,"Comparator is DeepSeek V4 Pro, an open-weight general LLM."
+r1Gap,hakemKev4b,teke2026hakembench,zero_shot_open,"Kev 4B run as released on HakemBench, no tuning."
+gapJevBest,severoF1k1,severo2026jevids,other_llm,"Comparator is Gemini 3.6 Flash, the small tier."
+gapJevBest,muR2InDist,mu2026hydrojev,task_trained,Comparator is a logistic regression trained on 200 labelled windows.
+gapJevBest,muLlmE1,mu2026hydrojev,other_llm,Comparators are the open LLMs glm-5.2 and deepseek-v4-pro.
+gapJevBest,denneyGilardi21,denney2026jev,frontier_llm,Comparator is GPT-6 Luna.
+r1Gap,sansiAll,gan2026sansi,task_trained,SanSi-2.6B was trained on the suite's in-distribution sources.
+r1Gap,mazzoniPlurule,mazzoni2026benchmarking,zero_shot_open,Laya run untuned on the moderation datasets.
+gapJevBest,mazzoniOlid,mazzoni2026benchmarking,task_trained,"Comparator is Detoxify, a classifier trained for toxicity."
+gapJevBest,sadounTrec,sadoun2026probabilities,other_llm,Comparator is open Qwen3-32B with reasoning off.
+r1Gap,duanSii27b,duan2026general,task_trained,SII-Decision-27B is the authors' own model trained for the JEVal benchmark their group built.
+gapJevBest,duanGap,duan2026general,frontier_llm,Comparator is GPT-6 Luna.
+r1Gap,caoRewriting,cao2026searchjev,task_trained,SearchJev-4B is the authors' specialist trained on the 683K in-domain SearchDecision mixture.
+r1Gap,caoRouting,cao2026searchjev,task_trained,SearchJev-4B is the authors' specialist trained on the 683K in-domain SearchDecision mixture.
+r1Gap,caoVerification,cao2026searchjev,task_trained,SearchJev-4B is the authors' specialist trained on the 683K in-domain SearchDecision mixture.
+r1Gap,caoSufficiency,cao2026searchjev,task_trained,SearchJev-4B is the authors' specialist trained on the 683K in-domain SearchDecision mixture.
+r1Gap,caoNavigation,cao2026searchjev,task_trained,SearchJev-4B is the authors' specialist trained on the 683K in-domain SearchDecision mixture.
+gapJevBest,paschGap,paschalides2026jev,frontier_llm,Comparator is GPT-6 Sol.
+gapJevBest,luGapDbpedia,lu2026benchmarking,other_llm,Comparator is Qwen2.5-7B-Instruct.
+r1Gap,wangRouting,wang2026hidden,task_trained,NanoJev is the authors' 0.6B model trained on the task data.
+r1Gap,wangCancellation,wang2026hidden,task_trained,NanoJev is the authors' 0.6B model trained on the task data.
+r1Gap,wangSeverity,wang2026hidden,task_trained,NanoJev is the authors' 0.6B model trained on the task data.
+r1Gap,jungL2,jung2026decision,zero_shot_open,Qwen2.5-72B is an open LLM read through answer-word probabilities with no training.
+r1Gap,jungL3,jung2026decision,zero_shot_open,Qwen2.5-72B is an open LLM read through answer-word probabilities with no training.
+gapJevBest,jungGap,jung2026decision,task_trained,Comparator is LightGBM trained on source data.
+r1Gap,huoChip,huo2026nl2hull,task_trained,"Chip is the authors' Kev-0.8B fine-tuned on 88,604 in-distribution records."
+r1Gap,sharmaTickets,sharma2026typedbench,zero_shot_open,Kev-9B used as released on TypedBench.
+r1Gap,sharmaSeverity,sharma2026typedbench,zero_shot_open,Kev-9B used as released on TypedBench.
+gapJevBest,sharmaGapGemma,sharma2026typedbench,other_llm,Comparator is Gemma 4 31B read through option-letter log-probabilities.
+gapJevBest,sharmaGapSeverity,sharma2026typedbench,decision_model,"Comparator is Kev-9B, an open decision model used zero-shot."
+r1Gap,fadliLayaFt,fadli2026does,task_trained,Laya-multilingual was fine-tuned on pooled in-domain NusaX training data.
+gapJevBest,fadliGap,fadli2026does,frontier_llm,Comparator is Claude Opus 5.5.
+gapJevBest,fadliGapDeepseek,fadli2026does,other_llm,Comparator is DeepSeek V4.1 Flash.
+gapJevBest,lingGapReact,ling2026when,other_llm,"Comparator is the original ReAct agent run on gpt-5.6-luna, a flash-tier model."
+gapJevBest,liCanGap,li2026can,task_trained,Comparator is a Qwen2.5-7B LoRA fine-tuned on VAST.
+gapJevBest,liCanGapGpt,li2026can,frontier_llm,Comparator is GPT-5.6.
+r1Gap,rajputKev,rajput2026hosted,zero_shot_open,"Kev-4B used as released on contested items, no tuning."
+gapJevBest,laiDialogue,lai2026correct,other_llm,Comparator is open Qwen3.5-27B.
+r1Gap,liReadingEikos,li2026reading,zero_shot_open,Eikos-27B is a released open model evaluated untuned on the paired agent states.
+gapJevBest,liReadingGpt,li2026reading,frontier_llm,Comparator is GPT-6.1 Sol at medium reasoning.
+r1Gap,duD3,du2026reliable,zero_shot_open,D3-27B is a released open Jev-like model run untuned on the medical datasets.
+gapJevBest,duGemma,du2026reliable,other_llm,"Comparator is Gemma4-31B-IT, an open LLM."
+r1Gap,chungOpenJev2B,chung2026jevtom,zero_shot_open,Open-Jev-2B was used with no task fine-tuning.
+gapJevBest,chungGap,chung2026jevtom,other_llm,"Comparator is GPT-3.5-Turbo-1106, an older small LLM."
+gapJevBest,chungGapNoControls,chung2026jevtom,other_llm,"Comparator is GPT-3.5-Turbo-1106, an older small LLM."
+r1Gap,liJevaBanking,li2026jeva,task_trained,Jeva-4B is the authors' model trained on about 1M examples including similar intent data.
+r1Gap,agrijev,li2026agrijev,task_trained,"AgriJev-9B was adapted on 41,724 agricultural records whose sources (AgriCHN, CROP) are among the external views."
+r1Gap,zhangTypedClef,zhang2026typed,zero_shot_open,Clef is a released open decision model run without training on these tables.
+gapJevBest,zhangTypedGap,zhang2026typed,frontier_llm,Comparator is GPT-6 Luna.
+gapJevBest,zhangTypedGapTabfact,zhang2026typed,frontier_llm,Comparator is GPT-6 Luna.
+gapJevBest,chouhanGap,chouhan2026verdict,task_trained,Comparator is a fine-tuned Verdict-MQ or matched fine-tuned baseline.
+gapJevBest,chouhanGapBoolq,chouhan2026verdict,task_trained,Comparator is a fine-tuned Verdict-MQ or matched fine-tuned baseline.
+gapJevBest,chouhanGapMultirc,chouhan2026verdict,task_trained,Comparator is a fine-tuned Verdict-MQ or matched fine-tuned baseline.
+gapJevBest,chouhanGapTyped,chouhan2026verdict,task_trained,Comparator is a fine-tuned Verdict-MQ or matched fine-tuned baseline.
+r1Gap,panStartlux,pan2026world,zero_shot_open,"StartLux 27B used as released on RealtimeBench, which its authors did not build."
+gapJevBest,panGap,pan2026world,other_llm,"Comparator is MiMo v2.6 Ultra Speed, a non-frontier LLM."
+gapJevBest,panGapGpt,pan2026world,frontier_llm,Comparator is GPT-6.1 Sol at medium reasoning.
+r1Gap,geuterOpenDec,geuter2026releasing,task_trained,Jeff-1.0-Large's recipe was selected on OpenDecisions.
+r1Gap,geuterHeldOut,geuter2026releasing,zero_shot_open,Jeff trained on broad decision data and scored on held-out public sets not used for recipe selection.
+gapJevBest,geuterGap,geuter2026releasing,task_trained,Comparator is the authors' Jeff-1.0-Large trained on OpenDecisions.
+gapJevBest,geuterGapHeldOut,geuter2026releasing,task_trained,Comparator is the authors' Jeff-1.0-Large trained on OpenDecisions.
+r1Gap,startluxPivot,zhuang2026startlux,task_trained,"StartLux-27B is the authors' model scored on DecisionPivot, which they built and whose families are in its training."
+gapJevBest,startluxGap,zhuang2026startlux,task_trained,Comparator is the authors' StartLux-27B AutoThink trained with RL on their benchmark families.
+gapJevBest,startluxGapExt,zhuang2026startlux,other_llm,Comparator is GLM-5.3 with explicit reasoning.
+gapJevBest,lukassenGap,lukassen2026cheap,frontier_llm,"Best comparator is Claude Sonnet 5.5, tied with Gemini 3.8 Flash."
+r1Gap,huangRunoffTorchcast,huang2026consider,zero_shot_open,Torchcast 12B used as released on the five choice benchmarks.
+gapJevBest,huangRunoffGap,huang2026consider,decision_model,"Comparator is Mercury Decide, another typed decision model used zero-shot."
+r1Gap,jevguardOverall,hu2026jevguard,task_trained,Jev-Guard was trained in-distribution on the four-domain data.
+gapJevBest,jevguardGap,hu2026jevguard,task_trained,"Comparator is Jev-Guard, trained on the four-domain data."
+r1Gap,harnessBfcl,zhu2026jevagentharness,zero_shot_open,StartLux-9B run off the shelf on BFCL tool choice.
+r1Gap,harnessShift,zhu2026jevagentharness,task_trained,AgentDecision-4B is the authors' model trained on agent states.
+gapJevBest,harnessGap,zhu2026jevagentharness,decision_model,"Comparator is StartLux-9B, an open decision model used off the shelf."
+gapJevBest,harnessGapShift,zhu2026jevagentharness,task_trained,Comparator is the authors' AgentDecision-4B trained on agent states.
+r1Gap,prismFiveSet,teng2026prism,task_trained,Trained SCQ was fit on the 9.1k shared questions from the same benchmark sets.
+r1Gap,prismFiveSetPrism,teng2026prism,task_trained,Prism-1 is the authors' LoRA model trained on the shared 9.1k questions.
+gapJevBest,prismGap,teng2026prism,task_trained,Comparator is trained SCQ on Gemma 4 12B.
+r1Gap,arenaAcc,chen2026system1,zero_shot_open,Decision-2.0-Vega-27B run locally as released on the arena tasks.
+gapJevBest,arenaGap,chen2026system1,frontier_llm,Comparator is Claude Opus 5.5 at lowest reasoning effort.
+gapJevBest,liteMasGap,wang2026jevlitemas,other_llm,Comparator is a DeepSeek-V4-Flash router.
+gapJevBest,bruGap,bru2026towards,task_trained,Comparator is LightGBM trained on the survey data.
+r1Gap,internDecisionMean,zhu2026interndecision,task_trained,Intern-Decision-4B was fine-tuned on a corpus that includes the evaluation sources.
+gapJevBest,internDecisionGap,zhu2026interndecision,task_trained,"Comparator is Intern-Decision-4B, fine-tuned on the evaluation sources."
+r1Gap,dknownAcc,li2026dknownjev,task_trained,"DKnown-Jev 27B was fine-tuned on 26,064 in-domain records."
+gapJevBest,dknownGap,li2026dknownjev,task_trained,"Comparator is DKnown-Jev 27B, fine-tuned on in-domain records."
+r1Gap,raoRiceChem,rao2026decision,zero_shot_open,Perplexity Decider is a released open model run without task training.
+gapJevBest,raoGapRice,rao2026decision,other_llm,Comparator is DeepSeek V4.1 Flash.
+gapJevBest,raoGapHealth,rao2026decision,other_llm,Comparator is a flash-tier per-criterion judge (Gemini 3.8 Flash).
+gapJevBest,raoGapEllipse,rao2026decision,other_llm,Comparator is a flash-tier per-criterion judge (Gemini 3.8 Flash).
+gapJevBest,raoGapFedTurn,rao2026decision,other_llm,Comparator is a flash-tier per-criterion judge (Gemini 3.8 Flash).
+gapJevBest,raoGapFedDial,rao2026decision,other_llm,Comparator is a flash-tier per-criterion judge (Gemini 3.8 Flash).
+gapJevBest,raoGapLfqa,rao2026decision,other_llm,"Comparator is GPT-5.6 Luna, which the study calls a flash-tier judge."
+gapJevBest,raoGapUsrTc,rao2026decision,other_llm,Comparator is a flash-tier per-criterion judge (Gemini 3.8 Flash).
+gapJevBest,raoGapUsrPc,rao2026decision,other_llm,"Tie between GPT-5.6 Luna and Gemini 3.8 Flash, both flash-tier judges."
+gapJevBest,wangSoup4bMacro,wang2026jevsoup,other_llm,"Comparator is Adaptive Minds, an LLM router on unadapted Qwen3."
+gapJevBest,wangSoupIsolatedMicro,wang2026jevsoup,other_llm,"Comparator is Adaptive Minds, an LLM router on unadapted Qwen3."
+gapJevBest,zhangMobileSuccess,zhang2026mobile,frontier_llm,Comparator is a Qwen3.8-Max step-wise VLM agent.
+gapJevBest,wangUniJevGapQwen27,wang2026unijev,other_llm,Comparator is open Qwen3.8-27B.
+gapJevBest,youCareGap,you2026native,frontier_llm,"Comparator is GPT Sol, prompted for probabilities."
+r1Gap,yangReal738,yang2026what,zero_shot_open,Kev-27B used as released on the real decision items.
+gapJevBest,yangGapThinking,yang2026what,other_llm,Comparator is Qwen3.8-27B with thinking.
+gapJevBest,wangTruncGap,wang2026truncated,decision_model,"Comparator is GPT-6 Luna Decisions, a typed decision API used zero-shot."
+gapJevBest,iqbalClincGap,iqbal2026typed,task_trained,Comparator is DeBERTa-v3-large fine-tuned on the full training set.
+gapJevBest,zhangCsGapLongHealth,zhang2026general,task_trained,"Comparator is CS1-4B, fine-tuned on the domain."
+gapJevBest,zhangCsGapTcga,zhang2026general,task_trained,"Comparator is CS1-4B, fine-tuned on the domain."
+r1Gap,zhuangPair,zhuang2026decisionpivot,zero_shot_open,Perplexity Decider v1.1 evaluated as released.
+gapJevBest,zhuangGapPair,zhuang2026decisionpivot,decision_model,"Comparator is Perplexity Decider v1.1, a typed decision model used zero-shot."
+r1Gap,sMasSharp,li2026s2mas,task_trained,sharp-421m is Laya adapted by SFT and RLCD on the S2-MAS survey data.
+gapJevBest,sMasGapSharp,li2026s2mas,task_trained,Comparator is sharp-421m trained on the in-domain survey data.
+r1Gap,stamblerNative,stambler2026pyes,zero_shot_open,StartLux Instant v1.1 used as released on the logic puzzles.
+gapJevBest,stamblerGapJevBench,stambler2026pyes,other_llm,Comparator is open Qwen3.8-27B.
+gapJevBest,gershonUc2,gershon2026decision,other_llm,"Comparator is GLM-5.3, an open-weight LLM."
+gapJevBest,gershonUc2Half,gershon2026decision,frontier_llm,Comparator is Claude Opus 5.5.
+gapJevBest,gershonUc4,gershon2026decision,frontier_llm,Comparator is GPT-6.
+gapJevBest,munotHotpot,munot2026when,decision_model,"Comparator is Liquid d1, another typed decision model used zero-shot."
+gapJevBest,munotMetaTool,munot2026when,decision_model,"Comparator is Liquid d1, another typed decision model used zero-shot."
+gapJevBest,munotEcthr,munot2026when,decision_model,"Comparator is GPT-6 Luna Decisions, a typed decision API used zero-shot."
+r1Gap,wengJevBench35b,weng2026our,task_trained,The authors' 35B LoRA was developed with the JevBench items in view.
+r1Gap,wengJevBench2b,weng2026our,zero_shot_open,Released 2B was trained on the broad Eikos corpus before the benchmark was downloaded.
+r1Gap,wengJevBench2bRetrain,weng2026our,task_trained,The retrained 2B changed recipe and corpus after the released 2B scored 61.3 on these same items.
+r1Gap,demirOriginal,demir2026commit,zero_shot_open,pplx-decider is an open model evaluated untuned on CaseHOLD.
+r1Gap,demirAbstain,demir2026commit,zero_shot_open,pplx-decider is an open model evaluated untuned on CaseHOLD.
+gapJevBest,demirGap,demir2026commit,other_llm,Comparator is Gemini 3.8 Flash.
+gapJevBest,demirGapAbstain,demir2026commit,other_llm,Comparator is Gemini 3.8 Flash.
+r1Gap,laiNatural,lai2026which,task_trained,The authors' LoRA was fine-tuned on the source arithmetic rules.
+gapJevBest,santillanaGap,santillana2026vxone,task_trained,"Comparator is VX-One, the authors' trained heads."
+r1Gap,retijevDecisionUnseen,liu2026retijev,task_trained,RetiJev-9B was trained in-domain on the RetiJev rule families and corpus.
+r1Gap,retijevDecisionSeen,liu2026retijev,task_trained,RetiJev-9B was trained in-domain on the RetiJev rule families and corpus.
+r1Gap,retijevDiagnosis,liu2026retijev,task_trained,RetiJev-9B was trained in-domain on the RetiJev rule families and corpus.
+r1Gap,retijevGradingOod,liu2026retijev,task_trained,RetiJev-9B was trained in-domain on the RetiJev rule families and corpus.
+r1Gap,retijevGradingHard,liu2026retijev,task_trained,RetiJev-9B was trained in-domain on the RetiJev rule families and corpus.
+r1Gap,haMacroF1,ha2026decision,zero_shot_open,"Quyet-1.0-Small run locally as released, no study tuning."
+r1Gap,haAccuracy,ha2026decision,zero_shot_open,"Quyet-1.0-Small run locally as released, no study tuning."
+r1Gap,haPhoatis,ha2026decision,zero_shot_open,GLiNER2.5-multi-Decide run locally as released.
+r1Gap,fengRepeat,feng2026jevdlc,task_trained,JEV-SFT scorer is LoRA-fitted on the in-domain training streams.
+r1Gap,fengOpen,feng2026jevdlc,task_trained,JEV-SFT scorer is LoRA-fitted on the in-domain training streams.
+r1Gap,codeChoice,mohebifar2026onecodereviewbench,zero_shot_open,Kev-27B used as released on the real decision items.
+r1Gap,codeBoolean,mohebifar2026onecodereviewbench,zero_shot_open,Kev-27B used as released on the real decision items.
+r1Gap,codeReviewed,mohebifar2026onecodereviewbench,zero_shot_open,Kev-27B used as released on the real decision items.
+r1Gap,robojevSo101,chen2026robojev,task_trained,RoboJev-27B was trained on the benchmark family (ArmnetBench and related robot success data).
+r1Gap,robojevUnseen,chen2026robojev,task_trained,RoboJev-27B was trained on the benchmark family (ArmnetBench and related robot success data).
+r1Gap,robojevPplx,chen2026robojev,zero_shot_open,Perplexity Decider v1.2 used as released with the same input as Jev.
+gapJevBest,robojevGap,chen2026robojev,frontier_llm,Best input-matched comparator is GPT-6 Astra with 4 frames.
+gapJevBest,robojevGapOpen,chen2026robojev,task_trained,"Comparator is RoboJev-27B, the authors' model trained on the benchmark family."
+r1Gap,entityF1,steiner2026entity,zero_shot_open,Perplexity Decider v1.2 used as released with the same input as Jev.
+r1Gap,entityF1Selected,steiner2026entity,zero_shot_open,"Perplexity Decider v1.2 untrained; the selected prompt is a prompt choice, not training."
+r1Gap,entityBilliger,steiner2026entity,zero_shot_open,Perplexity Decider v1.2 used as released with the same input as Jev.
+gapJevBest,entityGap,steiner2026entity,frontier_llm,Comparator is GPT-6 Luna.
+r1Gap,trustjevTensorTrust,xu2026trustjev,task_trained,TrustJev is the authors' LoRA model trained on the same data.
+r1Gap,trustjevIheval,xu2026trustjev,task_trained,TrustJev is the authors' LoRA model trained on the same data.
+r1Gap,trustjevAeb,xu2026trustjev,task_trained,TrustJev is the authors' LoRA model trained on the same data.
+r1Gap,trustjevIndustrial,xu2026trustjev,task_trained,TrustJev is the authors' LoRA model trained on the same data.
+gapJevBest,trustjevGap,xu2026trustjev,task_trained,"Comparator is TrustJev, trained on the same data."
+r1Gap,rubrixHeldOut,paramasivam2026rubrix,task_trained,Held-out rubrics come from RubriX's own training sources.
+r1Gap,rubrixSummEval,paramasivam2026rubrix,zero_shot_open,"SummEval and QAGS are external benchmarks outside RubriX's training sources, in formats the note calls out of distribution."
+r1Gap,rubrixQagsCnn,paramasivam2026rubrix,zero_shot_open,"SummEval and QAGS are external benchmarks outside RubriX's training sources, in formats the note calls out of distribution."
+r1Gap,rubrixQagsXsum,paramasivam2026rubrix,zero_shot_open,"SummEval and QAGS are external benchmarks outside RubriX's training sources, in formats the note calls out of distribution."
+gapJevBest,heMimic4Gap,he2026can,other_llm,Comparator is Qwen Flash.
+gapJevBest,heMimic3Gap,he2026can,other_llm,Comparator is Qwen Flash.
+gapJevBest,heTrialgptGap,he2026can,other_llm,Comparator is Qwen Flash.
+r1Gap,bromPt,brom2026confidence,task_trained,"Laya multilingual was fine-tuned on 11,274 in-domain MASSIVE pt-PT items."
+gapJevBest,bromPt,brom2026confidence,task_trained,"Comparator is Laya multilingual fine-tuned on 11,274 in-domain items."
+r1Gap,liuDbFc,liu2026decisionb,zero_shot_open,Perplexity Decider is a released open model run without task training.
+gapJevBest,liuDbFc,liu2026decisionb,frontier_llm,Comparator is GPT-6 Sol.
+r1Gap,psyJev9b,liu2026psyjev,task_trained,PsyJev-9B was adapted on the PsyJudgeBench training partition.
+gapJevBest,psyJev9b,liu2026psyjev,task_trained,"Comparator is PsyJev-9B, adapted on the benchmark training partition."
+gapJevBest,psyGemma,liu2026psyjev,task_trained,Comparator is Gemma-2-9B-IT adapted on the benchmark.
+gapJevBest,khatriGem38,khatri2026need,other_llm,Comparator is Gemini 3.8 Flash.
+gapJevBest,khatriGem25,khatri2026need,other_llm,Comparator is Gemini 2.5 Flash.

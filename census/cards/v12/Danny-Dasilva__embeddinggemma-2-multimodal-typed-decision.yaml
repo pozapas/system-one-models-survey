@@ -1,0 +1,103 @@
+name: EmbeddingGemma 2 · Multimodal Typed Decision
+name_src:
+  quote: '# EmbeddingGemma 2 · Multimodal Typed Decision'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+hf_id: Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+revision_sha: f9074d686e0a324dd4832911c891af1cca654300
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+vendor_or_author: Danny-Dasilva
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+release_date: '2026-10-14'
+release_date_src:
+  quote: (HF API createdAt for Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision)
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+backbone: google/embeddinggemma-2
+backbone_src:
+  quote: 'base_model: google/embeddinggemma-2'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+parameter_count: where in an image is the thing the question describes. It uses a 4.9M-parameter main head, a crop-refinement head and a rank-16
+parameter_count_src:
+  quote: where in an image is the thing the question describes. It uses a 4.9M-parameter main head, a crop-refinement head and a rank-16
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+decision_head: The optional box head retains its existing encoder, adapter and heads. RefCOCO testB Acc@0.5 is
+decision_head_src:
+  quote: The optional box head retains its existing encoder, adapter and heads. RefCOCO testB Acc@0.5 is
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+training_objective: '| Soft cross-entropy ↓ | 0.8706 | 0.8866 |'
+training_objective_src:
+  quote: '| Soft cross-entropy ↓ | 0.8706 | 0.8866 |'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+training_data: 'prompt (`"Header:\n<text>"`) into the state. The model was trained with it.'
+training_data_src:
+  quote: 'prompt (`"Header:\n<text>"`) into the state. The model was trained with it.'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+state_modality: '- **State:** structured or free text, optionally with images or video.'
+state_modality_src:
+  quote: '- **State:** structured or free text, optionally with images or video.'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **Question types:** `choice` (pick one of named options), `noul` (yes/no) and `score`'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+source_urls:
+- 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'
+- 'https://github.com/fstandhartinger/jevbench'
+- 'https://github.com/lichengunc/refer'
+source_urls_src:
+  quote: '([items and method](https://github.com/fstandhartinger/jevbench/tree/main/datasets/imagejev-box-v0.1), MIT).'
+  url: 'https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision/raw/f9074d686e0a324dd4832911c891af1cca654300/README.md'

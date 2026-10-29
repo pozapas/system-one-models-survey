@@ -1,0 +1,102 @@
+name: Turion Jev 31B
+name_src:
+  quote: '# Turion Jev 31B'
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+hf_id: turion-ai/turion-jev-31b
+hf_id_src:
+  quote: '| Results | [runs/turion-jev-31b](https://huggingface.co/datasets/turion-ai/turion-jev-31b-decision-index-results/tree/m'
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+revision_sha: 9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+vendor_or_author: turion-ai
+vendor_or_author_src:
+  quote: '| Results | [runs/turion-jev-31b](https://huggingface.co/datasets/turion-ai/turion-jev-31b-decision-index-results/tree/m'
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+release_date: '2026-10-22'
+release_date_src:
+  quote: (HF API createdAt for turion-ai/turion-jev-31b)
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+backbone: google/gemma-4-31B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-31B-it'
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+decision_head: '- **Readout.** The next-token log-probabilities of the option codes after the prompt, normalised'
+decision_head_src:
+  quote: '- **Readout.** The next-token log-probabilities of the option codes after the prompt, normalised'
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+training_objective: repeated once. The loss is cross-entropy against soft (probability) targets over the option
+training_objective_src:
+  quote: repeated once. The loss is cross-entropy against soft (probability) targets over the option
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+training_data: Apache-2.0, like the base model; see `LICENSE` and `NOTICE`. The training data sources keep
+training_data_src:
+  quote: Apache-2.0, like the base model; see `LICENSE` and `NOTICE`. The training data sources keep
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+primitives: choice, score
+primitives_src:
+  quote: questions (multiple choice, yes/no, 0–5 score), it returns a probability for every option, read
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+source_urls:
+- 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'
+- 'https://github.com/apolinario/decision-index'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/turion-ai/turion-jev-31b/raw/9edd5783ed1735cbf9e3e8ae7a546126ae05b0ce/README.md'

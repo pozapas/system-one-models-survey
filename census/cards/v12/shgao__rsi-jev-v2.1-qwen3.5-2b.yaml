@@ -1,0 +1,102 @@
+name: rsi-jev-v2.1-qwen3.5-2b
+name_src:
+  quote: '# rsi-jev-v2.1-qwen3.5-2b'
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+hf_id: shgao/rsi-jev-v2.1-qwen3.5-2b
+hf_id_src:
+  quote: '| 0.7905 | **0.383** | 0.0556 | [🤗 download](https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b) |'
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+revision_sha: e858e07af1aabdb8ec9767cf66de5c18579fcafc
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+vendor_or_author: shgao
+vendor_or_author_src:
+  quote: '| 0.7905 | **0.383** | 0.0556 | [🤗 download](https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b) |'
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+release_date: '2026-09-27'
+release_date_src:
+  quote: (HF API createdAt for shgao/rsi-jev-v2.1-qwen3.5-2b)
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+backbone: Qwen/Qwen3.5-2B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B-Base'
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+decision_head: trained option-scoring head. It answers `choice` / `noul` / `score` questions about a
+decision_head_src:
+  quote: trained option-scoring head. It answers `choice` / `noul` / `score` questions about a
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+training_objective: Counting every arm whose training signal was a reward rather than the teacher's target
+training_objective_src:
+  quote: Counting every arm whose training signal was a reward rather than the teacher's target
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+training_data: and v2.1 trained on that benchmark's train split. Against v2.0, which trained on the same
+training_data_src:
+  quote: and v2.1 trained on that benchmark's train split. Against v2.0, which trained on the same
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: trained option-scoring head. It answers `choice` / `noul` / `score` questions about a
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+source_urls:
+- 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'
+- 'https://github.com/Shanghua-Gao/RSI-Jev'
+source_urls_src:
+  quote: '[Jev HTTP API](https://github.com/Shanghua-Gao/RSI-Jev/blob/main/serve/README.md).'
+  url: 'https://huggingface.co/shgao/rsi-jev-v2.1-qwen3.5-2b/raw/e858e07af1aabdb8ec9767cf66de5c18579fcafc/README.md'

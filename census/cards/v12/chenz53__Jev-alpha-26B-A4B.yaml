@@ -1,0 +1,103 @@
+name: Jev-alpha-26B-A4B
+name_src:
+  quote: '# Jev-alpha-26B-A4B'
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+hf_id: chenz53/Jev-alpha-26B-A4B
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+revision_sha: 97e483c0656c5d8ed3965d3c9f068eb9a1552ae9
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+vendor_or_author: chenz53
+vendor_or_author_src:
+  quote: 'Install the [Jev-alpha package](https://github.com/chenz53/Jev-alpha#get-started) for its shared renderer.'
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+release_date: '2026-10-08'
+release_date_src:
+  quote: (HF API createdAt for chenz53/Jev-alpha-26B-A4B)
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+backbone: google/gemma-4-26B-A4B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-26B-A4B-it'
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+training_objective: The loss is option-token cross-entropy plus 0.1 times conditional reference-to-model KL.
+training_objective_src:
+  quote: The loss is option-token cross-entropy plus 0.1 times conditional reference-to-model KL.
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+training_data: comparison, not a paired benchmark or a claim of parity. Jev's training data is unknown.
+training_data_src:
+  quote: comparison, not a paired benchmark or a claim of parity. Jev's training data is unknown.
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: contributes 100 final questions. The aggregate gives equal weight to noul, choice, and score.
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+source_urls:
+- 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'
+- 'https://github.com/jaredpalmer/kev'
+- 'https://github.com/chenz53/Jev-alpha'
+source_urls_src:
+  quote: '- [Transfer-v4](https://github.com/jaredpalmer/kev/blob/fe64b1274ea7f80d4095866df90666abb03e9cf6/runs/jev-transfer-v4/report.json): MMLU, SciQ, QNLI, PAWS.'
+  url: 'https://huggingface.co/chenz53/Jev-alpha-26B-A4B/raw/97e483c0656c5d8ed3965d3c9f068eb9a1552ae9/README.md'

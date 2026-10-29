@@ -1,0 +1,102 @@
+name: LFM2.5 Jev-style schema model
+name_src:
+  quote: '# LFM2.5 Jev-style schema model'
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+hf_id: odunola/lfm2.5_jev_style
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+revision_sha: be99effb3e14eca2d1fab8ed14df876bbf0df21c
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+vendor_or_author: odunola
+vendor_or_author_src:
+  quote: This research model is part of the **Audio Jev** project by **odunola**.
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+release_date: '2026-10-06'
+release_date_src:
+  quote: (HF API createdAt for odunola/lfm2.5_jev_style)
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+availability_and_license: Open weights, license not stated; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+backbone: LiquidAI/LFM2.5-350M
+backbone_src:
+  quote: 'base_model: LiquidAI/LFM2.5-350M'
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+decision_head: LoRA adapters, and a joint schema head.
+decision_head_src:
+  quote: LoRA adapters, and a joint schema head.
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+training_objective: We started with text to test the schema head, training loss, and data conversion.
+training_objective_src:
+  quote: We started with text to test the schema head, training loss, and data conversion.
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+training_data: '`training_metadata.json` contains the recorded training settings.'
+training_data_src:
+  quote: '`training_metadata.json` contains the recorded training settings.'
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 3. We added a joint schema head for Noul, Choice, and Score questions.
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+source_urls:
+- 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'
+- 'https://github.com/odunola499/audio-jev'
+source_urls_src:
+  quote: '- Project: https://github.com/odunola499/audio-jev'
+  url: 'https://huggingface.co/odunola/lfm2.5_jev_style/raw/be99effb3e14eca2d1fab8ed14df876bbf0df21c/README.md'

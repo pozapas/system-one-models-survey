@@ -1,0 +1,101 @@
+name: j33-jev
+name_src:
+  quote: '# j33-jev'
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+hf_id: J33-AI/j33-jev
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+revision_sha: 34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+vendor_or_author: J33-AI
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+release_date: '2026-10-11'
+release_date_src:
+  quote: (HF API createdAt for J33-AI/j33-jev)
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+backbone: google/embeddinggemma-2
+backbone_src:
+  quote: 'base_model: google/embeddinggemma-2'
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+parameter_count: '- Base: `google/embeddinggemma-2` text encoder (vision tower off), 271.6M parameters in total including a 0.59M scorer. No extra transformer layer on top (`head="none"`); a bigger GQA head scored worse in our runs.'
+parameter_count_src:
+  quote: '- Base: `google/embeddinggemma-2` text encoder (vision tower off), 271.6M parameters in total including a 0.59M scorer. No extra transformer layer on top (`head="none"`); a bigger GQA head scored worse in our runs.'
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+decision_head: split; Jev was used as delivered with no training on it. That is a head start.
+decision_head_src:
+  quote: split; Jev was used as delivered with no training on it. That is a head start.
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+training_objective: '- Soft cross-entropy against the soft gold labels, options shuffled each batch, AdamW (encoder LR 2.5e-5, head LR 1e-4, weight decay 0.01), OneCycle with 6% warm-up, effective batch 32, 4 epochs, seed 0.'
+training_objective_src:
+  quote: '- Soft cross-entropy against the soft gold labels, options shuffled each batch, AdamW (encoder LR 2.5e-5, head LR 1e-4, weight decay 0.01), OneCycle with 6% warm-up, effective batch 32, 4 epochs, seed 0.'
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+training_data: 'gface.co/google/embeddinggemma-2) encoder plus a small scoring layer, fine-tuned on the train split of [LocalLLaMA/typed-decisions](https://huggingface.co/datasets/LocalLLaMA/typed-decisions). The design follows the open-source Laya decision model: one sequenc'
+training_data_src:
+  quote: 'gface.co/google/embeddinggemma-2) encoder plus a small scoring layer, fine-tuned on the train split of [LocalLLaMA/typed-decisions](https://huggingface.co/datasets/LocalLLaMA/typed-decisions). The design follows the open-source Laya decision model: one sequenc'
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+state_modality: is a list), `noul` (yes/no, `criteria` has `false`/`true`). State can be any JSON-serialisable value; it is truncated to 4,000 characters. `base` is only used for the encoder config and tokenizer; all weights come from `model.safetensors`.
+state_modality_src:
+  quote: is a list), `noul` (yes/no, `criteria` has `false`/`true`). State can be any JSON-serialisable value; it is truncated to 4,000 characters. `base` is only used for the encoder config and tokenizer; all weights come from `model.safetensors`.
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'Question types: `choice` (pick one label), `score` (ordered levels, `criteria` is a list), `noul` (yes/no, `criteria` has `false`/`true`). State can be any JSON-serialisable value; it is truncated to 4,000 characters. `base` is only used for the encoder config'
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+source_urls:
+- 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/J33-AI/j33-jev/raw/34a0eda32b69ffc72f0e33a9acf2b8bdfa07fcc9/README.md'

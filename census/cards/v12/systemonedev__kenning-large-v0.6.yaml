@@ -1,0 +1,102 @@
+name: kenning-large-v0.6
+name_src:
+  quote: '# kenning-large-v0.6'
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+hf_id: systemonedev/kenning-large-v0.6
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+revision_sha: 97bc0c18c9f9eb8ee358f00aac78ec591945c8c0
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+vendor_or_author: systemonedev
+vendor_or_author_src:
+  quote: 'text. It was built with [SystemOne Builder](https://github.com/systemonedev/systemone-builder).'
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+release_date: '2026-10-08'
+release_date_src:
+  quote: (HF API createdAt for systemonedev/kenning-large-v0.6)
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+backbone: tasksource/ModernBERT-large-nli
+backbone_src:
+  quote: 'base_model: tasksource/ModernBERT-large-nli'
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+training_data: '## Training data'
+training_data_src:
+  quote: '## Training data'
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'One** decision model: given program state and typed questions (`noul` yes/no, `choice`, `score`) it returns typed answers with calibrated probabilities in one forward pass. It does not generate text. It was built with [SystemOne Builder](https://github.c'
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+source_urls:
+- 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'
+- 'https://github.com/systemonedev/systemone-builder'
+source_urls_src:
+  quote: 'not generate text. It was built with [SystemOne Builder](https://github.com/systemonedev/systemone-builder).'
+  url: 'https://huggingface.co/systemonedev/kenning-large-v0.6/raw/97bc0c18c9f9eb8ee358f00aac78ec591945c8c0/README.md'

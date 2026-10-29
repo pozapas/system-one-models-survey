@@ -1,0 +1,103 @@
+name: jev-27b
+name_src:
+  quote: '# jev-27b'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+hf_id: smha1012/jev-27b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+revision_sha: 6d23e73809ad73094cb9fea6c0d798617e2f87ac
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+vendor_or_author: smha1012
+vendor_or_author_src:
+  quote: 'decision model** trained with [jev-torch](https://github.com/smha1012/jev-torch).'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+release_date: '2026-10-02'
+release_date_src:
+  quote: (HF API createdAt for smha1012/jev-27b)
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+backbone: Qwen/Qwen3.8-27B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.8-27B'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+decision_head: '`adapter_vllm/` holds the same model as a vLLM LoRA module: the decision head is a LoRA on `lm_head` (the'
+decision_head_src:
+  quote: '`adapter_vllm/` holds the same model as a vLLM LoRA module: the decision head is a LoRA on `lm_head` (the'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+training_objective: '- **Loss:** `1·kl + 0.5·rps[score]`'
+training_objective_src:
+  quote: '- **Loss:** `1·kl + 0.5·rps[score]`'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+training_data: 'An **unofficial JEV-style decision model** trained with [jev-torch](https://github.com/smha1012/jev-torch).'
+training_data_src:
+  quote: 'An **unofficial JEV-style decision model** trained with [jev-torch](https://github.com/smha1012/jev-torch).'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'Question kinds: `noul` (exactly 2 options, false-like then true-like), `choice` (2–16 options),'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+source_urls:
+- 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'
+- 'https://github.com/smha1012/jev-torch'
+- 'https://github.com/smha1012/jev-torch.git'
+source_urls_src:
+  quote: 'JEV-style decision model** trained with [jev-torch](https://github.com/smha1012/jev-torch).'
+  url: 'https://huggingface.co/smha1012/jev-27b/raw/6d23e73809ad73094cb9fea6c0d798617e2f87ac/README.md'

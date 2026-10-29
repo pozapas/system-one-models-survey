@@ -1,0 +1,101 @@
+name: qwen3.5-0.8b-open-jev-decision
+name_src:
+  quote: '# qwen3.5-0.8b-open-jev-decision'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+hf_id: thealper2/qwen3.5-0.8b-open-jev-decision
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+revision_sha: 6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+vendor_or_author: thealper2
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+release_date: '2026-10-11'
+release_date_src:
+  quote: (HF API createdAt for thealper2/qwen3.5-0.8b-open-jev-decision)
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+backbone: unsloth/Qwen3.5-0.8B
+backbone_src:
+  quote: 'base_model: unsloth/Qwen3.5-0.8B'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+decision_head: '- Decision head: Clef joint schema head (fp32), config `{"hidden_size": 1024, "width": 512, "routing_layers": 2, "layers": 4, "heads": 8, "feedforward": 2048}`. Questions of a record are'
+decision_head_src:
+  quote: '- Decision head: Clef joint schema head (fp32), config `{"hidden_size": 1024, "width": 512, "routing_layers": 2, "layers": 4, "heads": 8, "feedforward": 2048}`. Questions of a record are'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+training_objective: '- Loss: soft-target cross-entropy over each question''s options (`noul` = binary log loss on the'
+training_objective_src:
+  quote: '- Loss: soft-target cross-entropy over each question''s options (`noul` = binary log loss on the'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+training_data: '## Training data'
+training_data_src:
+  quote: '## Training data'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+state_modality: Unsloth `FastDecisionModel` / `DecisionTrainer`. For each record (a JSON state plus one
+state_modality_src:
+  quote: Unsloth `FastDecisionModel` / `DecisionTrainer`. For each record (a JSON state plus one
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+context_length: '- Max sequence length: 2048 tokens per record.'
+context_length_src:
+  quote: '- Max sequence length: 2048 tokens per record.'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '`noul` → P(yes), `choice` → distribution over options, `score` → distribution over ordered levels.'
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+source_urls:
+- 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/thealper2/qwen3.5-0.8b-open-jev-decision/raw/6f0fdb3ab4f49ebca0f89bc7cd55f87b988bed69/README.md'

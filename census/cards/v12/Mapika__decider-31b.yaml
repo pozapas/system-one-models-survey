@@ -1,0 +1,102 @@
+name: 'decider-31b: typed decisions with calibrated probabilities on Gemma-4-31B, from text and images, one pass'
+name_src:
+  quote: '# decider-31b: typed decisions with calibrated probabilities on Gemma-4-31B, from text and images, one pass'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+hf_id: Mapika/decider-31b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+revision_sha: 53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+vendor_or_author: Mapika
+vendor_or_author_src:
+  quote: '- **Code:** `decider.serve_vllm` in [decider-ai](https://github.com/Mapika/decider) 1.10.0. It reads this repository''s'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+release_date: '2026-10-07'
+release_date_src:
+  quote: (HF API createdAt for Mapika/decider-31b)
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+backbone: google/gemma-4-31B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-31B-it'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+decision_head: server (the same readout as `decider.serve_vllm`; on v1 the two gave 64.23 and 64.27). The board's full score also includes
+decision_head_src:
+  quote: server (the same readout as `decider.serve_vllm`; on v1 the two gave 64.23 and 64.27). The board's full score also includes
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+training_objective: '- The index score is 0.33 lower. The loss is in Retrieval & Classification (65.53 to 62.47); Knowledge & Reasoning and Language'
+training_objective_src:
+  quote: '- The index score is 0.33 lower. The loss is in Retrieval & Classification (65.53 to 62.47); Knowledge & Reasoning and Language'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+training_data: '- The image gain is on the kinds of image questions it was trained on (for example Hateful Memes 0.72 to 0.83, RAVEN 0.25 to'
+training_data_src:
+  quote: '- The image gain is on the kinds of image questions it was trained on (for example Hateful Memes 0.72 to 0.83, RAVEN 0.25 to'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **Input:** a state and one or more typed questions (Choice, Noul yes/no, Score), each with an explicit option list, in the'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+source_urls:
+- 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'
+- 'https://github.com/Mapika/decider'
+source_urls_src:
+  quote: '- **Code:** `decider.serve_vllm` in [decider-ai](https://github.com/Mapika/decider) 1.10.0. It reads this repository''s'
+  url: 'https://huggingface.co/Mapika/decider-31b/raw/53e0a1bf0b5800df851f738f4f7ecbe3ae400cc2/README.md'

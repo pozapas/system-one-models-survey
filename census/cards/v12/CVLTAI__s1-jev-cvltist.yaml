@@ -1,0 +1,102 @@
+name: s1-jev-cvltist — Model Card
+name_src:
+  quote: '# s1-jev-cvltist — Model Card'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+hf_id: CVLTAI/s1-jev-cvltist
+hf_id_src:
+  quote: '> **Canonical home:** [`CVLTAI/s1-jev-cvltist`](https://huggingface.co/CVLTAI/s1-jev-cvltist) — this repo is a personal'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+revision_sha: e3218bf66071787feb03b400ddd017fbcad7c91a
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+vendor_or_author: CVLTAI
+vendor_or_author_src:
+  quote: '> **Canonical home:** [`CVLTAI/s1-jev-cvltist`](https://huggingface.co/CVLTAI/s1-jev-cvltist) — this repo is a personal'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+release_date: '2026-09-30'
+release_date_src:
+  quote: (HF API createdAt for CVLTAI/s1-jev-cvltist)
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+backbone: Qwen/Qwen3.5-4B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+decision_head: a purpose-built encoder can't, while the readout (single-token logit scoring over
+decision_head_src:
+  quote: a purpose-built encoder can't, while the readout (single-token logit scoring over
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+training_objective: (effective batch 32, 4096 context), loss → ~0.06–0.28.
+training_objective_src:
+  quote: (effective batch 32, 4096 context), loss → ~0.06–0.28.
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+training_data: '## 4. Training data'
+training_data_src:
+  quote: '## 4. Training data'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+state_modality: Given a `state` (free-form text / structured context) and one or more questions,
+state_modality_src:
+  quote: Given a `state` (free-form text / structured context) and one or more questions,
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '**Interface:** the TypeSafe Jev wire spec (choice / score / noul) · **Size:** 124 MB adapter'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+source_urls:
+- 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'
+- 'https://github.com/cvlt-ai/decision-model'
+source_urls_src:
+  quote: '> [github.com/cvlt-ai/decision-model](https://github.com/cvlt-ai/decision-model); the adapter here is'
+  url: 'https://huggingface.co/CVLTAI/s1-jev-cvltist/raw/e3218bf66071787feb03b400ddd017fbcad7c91a/README.md'

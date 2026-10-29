@@ -1,71 +1,71 @@
 {
   "values": {
     "rob.studiesGraded": {
-      "text": "27",
+      "text": "242",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.overallLow": {
-      "text": "0",
-      "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
-    },
-    "rob.overallSomeConcerns": {
-      "text": "14",
-      "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
-    },
-    "rob.overallHigh": {
-      "text": "13",
-      "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
-    },
-    "rob.d1High": {
       "text": "4",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
+    "rob.overallSomeConcerns": {
+      "text": "94",
+      "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
+    },
+    "rob.overallHigh": {
+      "text": "144",
+      "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
+    },
+    "rob.d1High": {
+      "text": "44",
+      "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
+    },
     "rob.d1Unclear": {
-      "text": "16",
+      "text": "154",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d2High": {
-      "text": "6",
+      "text": "11",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d2Unclear": {
-      "text": "12",
+      "text": "123",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d3High": {
-      "text": "7",
+      "text": "49",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d3Unclear": {
-      "text": "17",
+      "text": "172",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d4High": {
-      "text": "9",
+      "text": "42",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d4Unclear": {
-      "text": "8",
+      "text": "141",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d5High": {
-      "text": "7",
+      "text": "97",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d5Unclear": {
-      "text": "13",
+      "text": "100",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.sensLow": {
-      "text": "1",
+      "text": "5",
       "source": "shared/ledger/rob.csv (sensitivity computed by survey/src/t_s3_rob.py)"
     },
     "rob.sensSome": {
-      "text": "19",
+      "text": "180",
       "source": "shared/ledger/rob.csv (sensitivity computed by survey/src/t_s3_rob.py)"
     },
     "rob.sensHigh": {
-      "text": "7",
+      "text": "57",
       "source": "shared/ledger/rob.csv (sensitivity computed by survey/src/t_s3_rob.py)"
     }
   }

@@ -1,0 +1,103 @@
+name: kev-snake-vision-grpo — a vision System-1 decision model (SFT → GRPO)
+name_src:
+  quote: '# kev-snake-vision-grpo — a vision System-1 decision model (SFT → GRPO)'
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+hf_id: ZhangPY/kev-snake-vision-grpo
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+revision_sha: 1c43a1e0da0547606af985192357e5e36bf612c6
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+vendor_or_author: ZhangPY
+vendor_or_author_src:
+  quote: 'with its text twin ([kev-snake-text-grpo](https://huggingface.co/ZhangPY/kev-snake-text-grpo), where a 93.7%-accura'
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+release_date: '2026-10-05'
+release_date_src:
+  quote: (HF API createdAt for ZhangPY/kev-snake-vision-grpo)
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+backbone: Qwen/Qwen3.5-4B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B-Base'
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+decision_head: true input frames. The banner shows step / score / snake length; the head is direction-colour-coded (a rendering choice the model was trained with).*
+decision_head_src:
+  quote: true input frames. The banner shows step / score / snake length; the head is direction-colour-coded (a rendering choice the model was trained with).*
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+training_objective: '# kev-snake-vision-grpo — a vision System-1 decision model (SFT → GRPO)'
+training_objective_src:
+  quote: '# kev-snake-vision-grpo — a vision System-1 decision model (SFT → GRPO)'
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+training_data: It was trained with **behavior-cloning SFT followed by GRPO** reinforcement learning directly against the game, reaching **13.57 ± 5.54 points** over 200 held-out seeds — **+136% over the first vision SFT iteration (5.74)** and 61% of the text-modality SFT twi
+training_data_src:
+  quote: It was trained with **behavior-cloning SFT followed by GRPO** reinforcement learning directly against the game, reaching **13.57 ± 5.54 points** over 200 held-out seeds — **+136% over the first vision SFT iteration (5.74)** and 61% of the text-modality SFT twi
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+state_modality: decision model** that plays Snake **from raw pixels** — no text state, no chain-of-thought. One 352×352 frame in, one typed decision (`up / down / left / right`) with calibrated probabilities out, ~10 decisions/sec on an A100.
+state_modality_src:
+  quote: decision model** that plays Snake **from raw pixels** — no text state, no chain-of-thought. One 352×352 frame in, one typed decision (`up / down / left / right`) with calibrated probabilities out, ~10 decisions/sec on an A100.
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+primitives: choice, score
+primitives_src:
+  quote: / snake length; the head is direction-colour-coded (a rendering choice the model was trained with).*
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+source_urls:
+- 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'
+- 'https://github.com/jaredpalmer/kev'
+- 'https://github.com/jaredpalmer/kev.git'
+source_urls_src:
+  quote: 'A [Kev](https://github.com/jaredpalmer/kev)-style **System-1 decision model** that plays Snake **from raw pixels** — no text state, no chain-of-thought. One 352'
+  url: 'https://huggingface.co/ZhangPY/kev-snake-vision-grpo/raw/1c43a1e0da0547606af985192357e5e36bf612c6/README.md'

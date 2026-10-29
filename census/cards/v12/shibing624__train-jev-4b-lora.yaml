@@ -1,0 +1,103 @@
+name: train-jev-4b-lora v0.4.0
+name_src:
+  quote: '# train-jev-4b-lora v0.4.0'
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+hf_id: shibing624/train-jev-4b-lora
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+revision_sha: 2ead99963ed0daa38b8b58ac301f156a15b99986
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+vendor_or_author: shibing624
+vendor_or_author_src:
+  quote: 'standard causal attention and the [train-jev](https://github.com/shibing624/train-jev) System One API.'
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+release_date: '2026-10-16'
+release_date_src:
+  quote: (HF API createdAt for shibing624/train-jev-4b-lora)
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+backbone: Qwen/Qwen3.5-4B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B'
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+decision_head: '**Qwen3.5-4B + LoRA + a 24-slot FP32 decision head**, returning probabilities for yes/no (`noul`), multiple-choice (`choice`) and rating (`score`) questions without generating text. Uses standard causal attention and the [train-jev](https://github.com/shibing6'
+decision_head_src:
+  quote: '**Qwen3.5-4B + LoRA + a 24-slot FP32 decision head**, returning probabilities for yes/no (`noul`), multiple-choice (`choice`) and rating (`score`) questions without generating text. Uses standard causal attention and the [train-jev](https://github.com/shibing6'
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+training_objective: head are trained; the backbone is frozen. Initial Jev-distribution distillation is followed by gold/rule refinement and 12,947 admitted tasksource rows across nine sources, including 2,692 native soft targets. Sources include CommonsenseQA, CosmosQA, DynaSe
+training_objective_src:
+  quote: head are trained; the backbone is frozen. Initial Jev-distribution distillation is followed by gold/rule refinement and 12,947 admitted tasksource rows across nine sources, including 2,692 native soft targets. Sources include CommonsenseQA, CosmosQA, DynaSe
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+training_data: training.en.md) explains the reusable public-data workflow. Processed training data, generators, optimizer/RNG and raw evaluation predictions are not bundled; exact one-command training reproduction is not provided.
+training_data_src:
+  quote: training.en.md) explains the reusable public-data workflow. Processed training data, generators, optimizer/RNG and raw evaluation predictions are not bundled; exact one-command training reproduction is not provided.
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'a 24-slot FP32 decision head**, returning probabilities for yes/no (`noul`), multiple-choice (`choice`) and rating (`score`) questions without generating text. Uses standard causal attention and the [train-jev](https://github.com/shibing624/train-jev) System'
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+source_urls:
+- 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'
+- 'https://github.com/shibing624/train-jev'
+- 'https://github.com/shibing624/train-jev.git'
+source_urls_src:
+  quote: 'text. Uses standard causal attention and the [train-jev](https://github.com/shibing624/train-jev) System One API.'
+  url: 'https://huggingface.co/shibing624/train-jev-4b-lora/raw/2ead99963ed0daa38b8b58ac301f156a15b99986/README.md'

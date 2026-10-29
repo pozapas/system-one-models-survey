@@ -1,0 +1,103 @@
+name: EXAONE-4.0-1.2B-JEV (v0.3, unofficial)
+name_src:
+  quote: '# EXAONE-4.0-1.2B-JEV (v0.3, unofficial)'
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+hf_id: carrtesy/EXAONE-4.0-1.2B-JEV
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+revision_sha: bc5012eabb1c5231cafec849843e51bbb5fb9630
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+vendor_or_author: carrtesy
+vendor_or_author_src:
+  quote: '> individual ([carrtesy](https://github.com/carrtesy)). It is **not** released, endorsed or supported by LG AI'
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+release_date: '2026-10-02'
+release_date_src:
+  quote: (HF API createdAt for carrtesy/EXAONE-4.0-1.2B-JEV)
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+availability_and_license: Open weights, other; gated=False
+availability_and_license_src:
+  quote: 'license: other'
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+backbone: LGAI-EXAONE/EXAONE-4.0-1.2B
+backbone_src:
+  quote: 'base_model: LGAI-EXAONE/EXAONE-4.0-1.2B'
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+training_objective: '- Loss: unchanged from v0.1. Full-vocabulary cross-entropy on the answer label and the end-of-turn token, written'
+training_objective_src:
+  quote: '- Loss: unchanged from v0.1. Full-vocabulary cross-entropy on the answer label and the end-of-turn token, written'
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+training_data: v0.3 is the first release trained with the intended schedule; v0.2's multi-GPU run had a scheduler bug (the
+training_data_src:
+  quote: v0.3 is the first release trained with the intended schedule; v0.2's multi-GPU run had a scheduler bug (the
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '`POST /v1/systemone` takes the TypeSafe Jev wire format (`choice`, `noul`, `score`) and returns'
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+source_urls:
+- 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'
+- 'https://github.com/carrtesy/EXAONE-JEV'
+- 'https://github.com/togethercomputer/tev1'
+source_urls_src:
+  quote: 'Code, server and evaluation: [github.com/carrtesy/EXAONE-JEV](https://github.com/carrtesy/EXAONE-JEV).'
+  url: 'https://huggingface.co/carrtesy/EXAONE-4.0-1.2B-JEV/raw/bc5012eabb1c5231cafec849843e51bbb5fb9630/README.md'

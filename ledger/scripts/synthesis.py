@@ -23,6 +23,7 @@ median over clusters (10,000 resamples, Python random.Random seed 11, a fresh ge
 Calibration error is never pooled across binning schemes or estimands: R2 reports ranges by binning scheme.
 """
 import csv
+import glob
 import json
 import math
 import os
@@ -91,9 +92,26 @@ def cluster_of(study):
     return CLUSTER.get(study, study)
 
 
+# version 1.2 selection lines name one binning in several ways; the synthesis groups by the canonical name
+BINNING_SYNONYMS = {
+    "10 bins (width not stated)": "10 bins, scheme not stated",
+    "10 bins, spacing not stated": "10 bins, scheme not stated",
+    "15 bins (scheme not stated)": "15 bins, scheme not stated",
+    "15 bins (width not stated)": "15 bins, scheme not stated",
+    "15 bins, spacing not stated": "15 bins, scheme not stated",
+    "equal-width (bins not stated)": "equal-width, bin count not stated",
+}
+
+
 def read_selection():
     recs = []
-    for i, s in enumerate(load_csv(SEL), start=2):
+    lines = load_csv(SEL)
+    for p in sorted(glob.glob(os.path.join(K.LEDGER, "selection_parts", "sel_*.csv"))):
+        lines += load_csv(p)      # version 1.2 selection lines, one file per coder
+    for s in lines:
+        if s["analysis"].startswith("r2"):
+            s["group"] = BINNING_SYNONYMS.get(s["group"], s["group"])
+    for i, s in enumerate(lines, start=2):
         if s["include"].strip().lower() != "yes":
             recs.append(dict(s, included=False))
             continue
@@ -110,6 +128,8 @@ def read_selection():
         expr = s["expr"] or "a"
         if expr not in EXPR:
             sys.exit(f"{where}: unknown expression {expr}")
+        if expr == "a/100" and b is not None and s["analysis"].startswith("r2"):
+            b = b / 100   # a percent-scale raw and recalibrated pair (pair_recal_lines.py)
         val = EXPR[expr](a, b)
         model = row["comparator"] if a_field == "comparator_value" else row["model"]
         study = row["study_key"]
@@ -259,6 +279,30 @@ def rec(recs, analysis, record):
     return hits[0]
 
 
+CLASS_CSV = os.path.join(K.LEDGER, "comparator_class.csv")
+CLASSES = ({(r["analysis"], r["record"]): r["class"] for r in load_csv(CLASS_CSV)}
+           if os.path.exists(CLASS_CSV) else {})
+
+
+def pool(recs, analysis):
+    """Lines of one analysis that a comparator-class stratum may use: estimates and sensitivity readings."""
+    return [r for r in sel(recs, analysis, groups=ACC_GROUPS) if r["role"] == "estimate" or r["subset"] == "sensitivity"]
+
+
+def strata(est, analysis, labels, what, unit_note, suffix=""):
+    """Pooled summaries by comparator class, from comparator_class.csv (hand coded, one line per estimate)."""
+    if not CLASSES:
+        return
+    unclassed = [r["record"] for r in est if (analysis, r["record"]) not in CLASSES]
+    if unclassed:
+        sys.exit(f"{analysis}: estimate records without a comparator class: {', '.join(unclassed)}")
+    for cls, lab in labels.items():
+        sub = [r for r in est if CLASSES[(analysis, r["record"])] == cls]
+        if sub:
+            put_summary(f"{analysis}{lab}{suffix}", summarize(sub), "pp",
+                        f"{what}, comparator class {cls} (comparator_class.csv)", unit_note)
+
+
 def r1(recs):
     est = sel(recs, "r1Gap", "estimate", groups=ACC_GROUPS)
     s = summarize(est)
@@ -293,6 +337,14 @@ def r1(recs):
         if "median" in ss:
             put(f"r1Gap{lab}Min", FMT["pp"](ss["min"]), f"R1 {lab} minimum study gap ({ss['min_study']})")
             put(f"r1Gap{lab}Max", FMT["pp"](ss["max"]), f"R1 {lab} maximum study gap ({ss['max_study']})")
+    # comparator-class strata (version 1.2): zero-shot open reproductions versus models trained on the task
+    r1cls = {"zero_shot_open": "ZeroShot", "task_trained": "TaskTrained"}
+    strata(est, "r1Gap", r1cls, "R1 best open model minus Jev", " (points; positive means the open model is ahead)")
+    strata(pool(recs, "r1Gap"), "r1Gap", r1cls, "R1 best open model minus Jev, estimates and sensitivity readings",
+           " (points; positive means the open model is ahead)", suffix="Pool")
+    for lab, want in (("Parity", ("low",)), ("SelfReport", ("high", "unclear"))):
+        strata([r for r in est if r["d4"] in want], "r1Gap", r1cls, f"R1 best open model minus Jev, RoB D4 {'/'.join(want)}",
+               " (points; positive means the open model is ahead)", suffix=lab)
     for r in sel(recs, "r1Gap") + sel(recs, "r1Readout"):
         kind = "pp"
         put(("r1Gap" if r["analysis"] == "r1Gap" else "r1Readout") + camel(r["record"]), FMT[kind](r["val"]),
@@ -429,6 +481,10 @@ def gap(recs):
     put_summary("gapJevBest", s, "pp", "Jev minus best comparator on human-labelled or objectively scored items, "
                                        "accuracy-type points (macro-F1, accuracy, F1), frontier comparators only",
                 " (points; negative means Jev behind)")
+    gcls = {"frontier_llm": "Frontier", "other_llm": "OtherLlm", "task_trained": "TaskTrained", "decision_model": "DecisionModel"}
+    strata(est, "gapJevBest", gcls, "Jev minus best comparator", " (points; negative means Jev behind)")
+    strata(pool(recs, "gapJevBest"), "gapJevBest", gcls, "Jev minus best comparator, estimates and sensitivity readings",
+           " (points; negative means Jev behind)", suffix="Pool")
     sens = est + sel(recs, "gapJevBest", subset="sensitivity", groups=ACC_GROUPS)
     ss = summarize(sens)
     put_summary("gapJevBestSens", ss, "pp", "Sensitivity: accuracy gap including non-frontier comparators (li cluster, DeepSeek flash)")
@@ -679,7 +735,7 @@ def f05(recs):
                    "r3FeeFrac": ("cost_fraction", "cost_definition"),
                    "r3StrongFrac": ("strong_call_fraction", "strong_call_definition")}[an]
             d[col[0]] = f"{r['val']:.4f}"
-            d[col[1]] = AXIS[r["group"]]
+            d[col[1]] = AXIS.get(r["group"], r["group"])   # version 1.2 groups outside AXIS are written as named
             ids = [x for x in (d["ledger_rows"] + ";" + r["rows_used"]).split(";") if x]
             d["ledger_rows"] = ";".join(dict.fromkeys(ids))
     for r in sel(recs, "r3Context"):
@@ -689,6 +745,30 @@ def f05(recs):
                                       rob_overall=r["rob"], ledger_rows=r["rows_used"])
         by[r["record"]]["setting"] += f" (value {r['val']:.4g}: {r['group']})"
     write_csv("f05_cascade.csv", list(by.values()))
+
+
+OWN_STUDIES = {"rafe2026calibrated", "rafe2026counting", "rafe2026estimating"}   # leave-out sensitivity set
+
+
+def own_sensitivity(recs):
+    """Headline summaries recomputed without the studies in OWN_STUDIES, for the conclusion."""
+    keep = [r for r in recs if not r.get("included") or r["study"] not in OWN_STUDIES]
+    n_own = len({r["study"] for r in recs if r.get("included") and r["study"] in OWN_STUDIES})
+    put("ownStudiesInSynthesis", str(n_own), "studies of OWN_STUDIES with included selection lines")
+    sets = {
+        "r1GapZeroShot": [r for r in sel(keep, "r1Gap", "estimate", groups=ACC_GROUPS)
+                          if CLASSES.get(("r1Gap", r["record"])) == "zero_shot_open"],
+        "gapJevBestFrontier": [r for r in pool(keep, "gapJevBest")
+                               if CLASSES.get(("gapJevBest", r["record"])) == "frontier_llm"],
+        "r3Retained": sel(keep, "r3Retained", "estimate", subset="primary"),
+        "r3FeeFrac": sel(keep, "r3FeeFrac", "estimate", subset="primary"),
+        "costRatio": sel(keep, "costRatio", "estimate", subset="primary"),
+    }
+    for name, est in sets.items():
+        s = summarize(est)
+        kind = "pp" if name.startswith(("r1", "gap")) else "ratio"
+        put_summary("noOwn" + name[0].upper() + name[1:], s, kind,
+                    f"{name} without rafe2026calibrated, rafe2026counting and rafe2026estimating")
 
 
 def main():
@@ -707,6 +787,7 @@ def main():
     r3(recs)
     gap(recs)
     cost_speed(recs)
+    own_sensitivity(recs)
     v = vendor()
     crow = claims(recs, v)
     write_csv("f06_claims.csv", crow)

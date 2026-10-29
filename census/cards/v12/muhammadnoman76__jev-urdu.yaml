@@ -1,0 +1,101 @@
+name: 'Jev-Urdu: Urdu-first decisions, ready for Python'
+name_src:
+  quote: '# Jev-Urdu: Urdu-first decisions, ready for Python'
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+hf_id: muhammadnoman76/jev-urdu
+hf_id_src:
+  quote: 'LughaatNLP for using the [Jev-Urdu model](https://huggingface.co/muhammadnoman76/jev-urdu) in your applications.**'
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+revision_sha: 058ea3f7a86c4d7c5d95fb06d696eefb1319384e
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+vendor_or_author: muhammadnoman76
+vendor_or_author_src:
+  quote: 'LughaatNLP for using the [Jev-Urdu model](https://huggingface.co/muhammadnoman76/jev-urdu) in your applications.**'
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+release_date: '2026-10-01'
+release_date_src:
+  quote: (HF API createdAt for muhammadnoman76/jev-urdu)
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+backbone: jhu-clsp/mmBERT-base
+backbone_src:
+  quote: 'base_model: jhu-clsp/mmBERT-base'
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+parameter_count: The published model has approximately **321.9 million parameters**. Allow roughly **644 MB** for its checkpoint file, plus tokenizer files and memory for inference. Download size is not a measure of runtime memory use.
+parameter_count_src:
+  quote: The published model has approximately **321.9 million parameters**. Allow roughly **644 MB** for its checkpoint file, plus tokenizer files and memory for inference. Download size is not a measure of runtime memory use.
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+decision_head: 256k-token multilingual vocabulary, up to 8k context) + a 2-layer decision head that scores each answer option |
+decision_head_src:
+  quote: 256k-token multilingual vocabulary, up to 8k context) + a 2-layer decision head that scores each answer option |
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+training_objective: reinforcement learning against strictly proper scoring rules plus cross-entropy, 2 epochs
+training_objective_src:
+  quote: reinforcement learning against strictly proper scoring rules plus cross-entropy, 2 epochs
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+training_data: The test split comes from the same generator as the training data, so these numbers overstate real-world accuracy;
+training_data_src:
+  quote: The test split comes from the same generator as the training data, so these numbers overstate real-world accuracy;
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'Built-in methods are a starting point. Use `choice()` for a defined set of answers and `yes_no()` for a binary question:'
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+source_urls:
+- 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/muhammadnoman76/jev-urdu/raw/058ea3f7a86c4d7c5d95fb06d696eefb1319384e/README.md'

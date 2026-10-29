@@ -1,0 +1,103 @@
+name: MiniCPM5-2B-Jev
+name_src:
+  quote: '# MiniCPM5-2B-Jev'
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+hf_id: ytbai/MiniCPM5-2B-Jev
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+revision_sha: 27afc6f17ceb7eb95b6442047ec54e43fbed5ed1
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+vendor_or_author: ytbai
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+release_date: '2026-09-28'
+release_date_src:
+  quote: (HF API createdAt for ytbai/MiniCPM5-2B-Jev)
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+backbone: openbmb/MiniCPM5-2B
+backbone_src:
+  quote: 'base_model: openbmb/MiniCPM5-2B'
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+parameter_count: / Kev clients) and achieves **state-of-the-art accuracy among all ≤ 2B parameter open-weight System 1 / Jev models**, while outperforming several 4B–9B models on both `JevBench` and `decision-v7`.
+parameter_count_src:
+  quote: / Kev clients) and achieves **state-of-the-art accuracy among all ≤ 2B parameter open-weight System 1 / Jev models**, while outperforming several 4B–9B models on both `JevBench` and `decision-v7`.
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+decision_head: '- **Calibrated Native `LetterReadoutHead`**: Projects the terminal `Answer: (` hidden state onto 255 single-token option letters (`A..Z, AA..`) initialized from `lm_head.weight`, combined with class-balanced marginal prior debiasing (`noul_bias`, `choice_k_bia'
+decision_head_src:
+  quote: '- **Calibrated Native `LetterReadoutHead`**: Projects the terminal `Answer: (` hidden state onto 255 single-token option letters (`A..Z, AA..`) initialized from `lm_head.weight`, combined with class-balanced marginal prior debiasing (`noul_bias`, `choice_k_bia'
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+training_objective: to eliminate yes/no or position bias without altering the training loss.
+training_objective_src:
+  quote: to eliminate yes/no or position bias without altering the training loss.
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+training_data: 'The model was trained on **`jev_s1_clean_v2`**, a pure System 1 dataset of **18,604 training records (34,134 questions)** and **770 development records (1,134 questions)** across 5 balanced pools (100% decoupled from any browser or DOM tasks):'
+training_data_src:
+  quote: 'The model was trained on **`jev_s1_clean_v2`**, a pure System 1 dataset of **18,604 training records (34,134 questions)** and **770 development records (1,134 questions)** across 5 balanced pools (100% decoupled from any browser or DOM tasks):'
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+state_modality: 'jev](https://github.com/yuting-ai/minicpm5-2b-jev). Given a shared context document (`state`) and one or more typed decision specifications (`choice`, `noul`, `score`), it outputs a calibrated probability distribution over the candidate options for every quest'
+state_modality_src:
+  quote: 'jev](https://github.com/yuting-ai/minicpm5-2b-jev). Given a shared context document (`state`) and one or more typed decision specifications (`choice`, `noul`, `score`), it outputs a calibrated probability distribution over the candidate options for every quest'
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: document (`state`) and one or more typed decision specifications (`choice`, `noul`, `score`), it outputs a calibrated probability distribution over the candidate options for every question in a **single forward pass** — with zero autoregressive token genera
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+source_urls:
+- 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'
+- 'https://github.com/yuting-ai/minicpm5-2b-jev'
+- 'https://github.com/OpenBMB/MiniCPM'
+source_urls_src:
+  quote: 'ge/GitHub-yuting--ai%2Fminicpm5--2b--jev-181717?logo=github)](https://github.com/yuting-ai/minicpm5-2b-jev)'
+  url: 'https://huggingface.co/ytbai/MiniCPM5-2B-Jev/raw/27afc6f17ceb7eb95b6442047ec54e43fbed5ed1/README.md'

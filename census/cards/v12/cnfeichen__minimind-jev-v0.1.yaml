@@ -1,0 +1,103 @@
+name: minimind-jev v0.1 — a typed-decision head you can train in 3 minutes
+name_src:
+  quote: '# minimind-jev v0.1 — a typed-decision head you can train in 3 minutes'
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+hf_id: cnfeichen/minimind-jev-v0.1
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+revision_sha: fa26d3e20fb7794da500f0311955606f820b6e90
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+vendor_or_author: cnfeichen
+vendor_or_author_src:
+  quote: '([cnfeichen/t2reranking-4level-judgments](https://huggingface.co/datasets/cnfeichen/t2reranking-4level-judgments)).'
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+release_date: '2026-10-20'
+release_date_src:
+  quote: (HF API createdAt for cnfeichen/minimind-jev-v0.1)
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+availability_and_license: Open weights, mit; gated=False
+availability_and_license_src:
+  quote: 'license: mit'
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+backbone: trained decision surface, not a from-scratch model (that is the project's v0.3).
+backbone_src:
+  quote: trained decision surface, not a from-scratch model (that is the project's v0.3).
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+decision_head: '# minimind-jev v0.1 — a typed-decision head you can train in 3 minutes'
+decision_head_src:
+  quote: '# minimind-jev v0.1 — a typed-decision head you can train in 3 minutes'
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+training_objective: including a fully documented distillation arc (a negative result worth reading before
+training_objective_src:
+  quote: including a fully documented distillation arc (a negative result worth reading before
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+training_data: 'Training data: C-MTEB/T2Reranking (DuReader-derived), per its own terms.'
+training_data_src:
+  quote: 'Training data: C-MTEB/T2Reranking (DuReader-derived), per its own terms.'
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+primitives: score, noul
+primitives_src:
+  quote: P(passage answers query) — a Noul-type calibrated answer in the
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+source_urls:
+- 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'
+- 'https://github.com/vicfei/jev-rag-zh-benchmark'
+- 'https://github.com/vicfei/awesome-jev-prompts'
+source_urls_src:
+  quote: 'Same protocol as [jev-rag-zh-benchmark](https://github.com/vicfei/jev-rag-zh-benchmark)'
+  url: 'https://huggingface.co/cnfeichen/minimind-jev-v0.1/raw/fa26d3e20fb7794da500f0311955606f820b6e90/README.md'

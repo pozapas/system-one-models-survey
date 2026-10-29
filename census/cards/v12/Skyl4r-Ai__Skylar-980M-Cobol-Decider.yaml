@@ -1,0 +1,102 @@
+name: Skylar-980M-Cobol-Decider
+name_src:
+  quote: '# Skylar-980M-Cobol-Decider'
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+hf_id: Skyl4r-Ai/Skylar-980M-Cobol-Decider
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+revision_sha: 3a3e22f94d86e09565ee5c2d17fbe7d604bea825
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+vendor_or_author: Skyl4r-Ai
+vendor_or_author_src:
+  quote: 'It is the trunk of [Skylar-980M-Cobol-Base](https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Base), our 980M'
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+release_date: '2026-10-11'
+release_date_src:
+  quote: (HF API createdAt for Skyl4r-Ai/Skylar-980M-Cobol-Decider)
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+backbone: Skyl4r-Ai/Skylar-980M-Cobol-Base
+backbone_src:
+  quote: 'base_model: Skyl4r-Ai/Skylar-980M-Cobol-Base'
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+parameter_count: '| Parameters | 1.02B (980M trunk + decision head) |'
+parameter_count_src:
+  quote: '| Parameters | 1.02B (980M trunk + decision head) |'
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+decision_head: trained **100% from scratch**, with a new decision head, fine-tuned for 66 minutes on one RTX 4090.
+decision_head_src:
+  quote: trained **100% from scratch**, with a new decision head, fine-tuned for 66 minutes on one RTX 4090.
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+training_objective: (does the candidate's expected output look right?), a filter or reward
+training_objective_src:
+  quote: (does the candidate's expected output look right?), a filter or reward
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+training_data: probabilities**, in the schema of TypeSafe AI's Jev API. Trained on labels
+training_data_src:
+  quote: probabilities**, in the schema of TypeSafe AI's Jev API. Trained on labels
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+primitives: choice, noul
+primitives_src:
+  quote: '- **It answers "what does this COBOL program print?"** as a choice among candidate outputs: the true one and up to 3'
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+source_urls:
+- 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'
+- 'https://github.com/skyl4r-ai/skylar'
+source_urls_src:
+  quote: 'Code: [`models/decider.py`](https://github.com/skyl4r-ai/skylar/blob/main/models/decider.py), trainer'
+  url: 'https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider/raw/3a3e22f94d86e09565ee5c2d17fbe7d604bea825/README.md'

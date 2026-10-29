@@ -1,0 +1,103 @@
+name: diffcider-typed-decisions
+name_src:
+  quote: '# diffcider-typed-decisions'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+hf_id: sgaseretto/diffcider-typed-decisions
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+revision_sha: 55124ad9dde6d13dbc1919b027d43783b023e243
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+vendor_or_author: sgaseretto
+vendor_or_author_src:
+  quote: 'A typed-decision model made with [sysone](https://github.com/sgaseretto/sysonelib): the encoder `dllm-hub/Qwen3-0.6B-dif'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+release_date: '2026-10-06'
+release_date_src:
+  quote: (HF API createdAt for sgaseretto/diffcider-typed-decisions)
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+availability_and_license: Open weights, license not stated; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+backbone: dllm-hub/Qwen3-0.6B-diffusion-mdlm-v0.1
+backbone_src:
+  quote: 'base_model: dllm-hub/Qwen3-0.6B-diffusion-mdlm-v0.1'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+decision_head: 'The repo holds the head and a LoRA adapter, not the encoder''s weights: `Decider.load` downloads `dllm-hub/Qwen3-0.6B-diffusion-mdlm-v0.1` at commit `c8d24a3f4a` from the Hub and puts the adapter on it.'
+decision_head_src:
+  quote: 'The repo holds the head and a LoRA adapter, not the encoder''s weights: `Decider.load` downloads `dllm-hub/Qwen3-0.6B-diffusion-mdlm-v0.1` at commit `c8d24a3f4a` from the Hub and puts the adapter on it.'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+training_objective: '| loss | 0.9801 |'
+training_objective_src:
+  quote: '| loss | 0.9801 |'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+training_data: '/Qwen3-0.6B-diffusion-mdlm-v0.1` (lora) under a 0-layer `yesno` head, trained on [LocalLLaMA/typed-decisions](https://huggingface.co/datasets/LocalLLaMA/typed-decisions) (`all`) at `d0e2f0c4`.'
+training_data_src:
+  quote: '/Qwen3-0.6B-diffusion-mdlm-v0.1` (lora) under a 0-layer `yesno` head, trained on [LocalLLaMA/typed-decisions](https://huggingface.co/datasets/LocalLLaMA/typed-decisions) (`all`) at `d0e2f0c4`.'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+state_modality: 'A state is whatever the decision is about, as JSON-like data. Each question has a type: a `choice` among named options, a `score` on an ordered scale, or a `noul`, a statement that is true or false. The options are named when asking, so they can be new ones.'
+state_modality_src:
+  quote: 'A state is whatever the decision is about, as JSON-like data. Each question has a type: a `choice` among named options, a `score` on an ordered scale, or a `noul`, a statement that is true or false. The options are named when asking, so they can be new ones.'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'decision is about, as JSON-like data. Each question has a type: a `choice` among named options, a `score` on an ordered scale, or a `noul`, a statement that is true or false. The options are named when asking, so they can be new ones.'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+source_urls:
+- 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'
+- 'https://github.com/sgaseretto/sysonelib'
+- 'https://github.com/zhouzihao11/jev-dllm'
+source_urls_src:
+  quote: 'A typed-decision model made with [sysone](https://github.com/sgaseretto/sysonelib): the encoder `dllm-hub/Qwen3-0.6B-diffusion-mdlm-v0.1` (lora) under a 0-layer'
+  url: 'https://huggingface.co/sgaseretto/diffcider-typed-decisions/raw/55124ad9dde6d13dbc1919b027d43783b023e243/README.md'

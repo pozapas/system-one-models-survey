@@ -1,0 +1,102 @@
+name: Decision-WAF-V1.1-0.8B
+name_src:
+  quote: '# Decision-WAF-V1.1-0.8B'
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+hf_id: 0xBrandon/Decision-WAF-V1.1-0.8B
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+revision_sha: bd267b7d6da42136407b533543ced3ac79ee3b95
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+vendor_or_author: 0xBrandon
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+release_date: '2026-10-25'
+release_date_src:
+  quote: (HF API createdAt for 0xBrandon/Decision-WAF-V1.1-0.8B)
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+backbone: Qwen/Qwen3.5-0.8B-Base
+backbone_src:
+  quote: 'base_model:'
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+decision_head: on Qwen3.5-0.8B-Base, merged into the base weights. One-token classification head readout; loss on the answer token only. Trained for 4,591 steps (approximately 14.9 h) on a single RTX 4000 SFF Ada.
+decision_head_src:
+  quote: on Qwen3.5-0.8B-Base, merged into the base weights. One-token classification head readout; loss on the answer token only. Trained for 4,591 steps (approximately 14.9 h) on a single RTX 4000 SFF Ada.
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+training_objective: merged into the base weights. One-token classification head readout; loss on the answer token only. Trained for 4,591 steps (approximately 14.9 h) on a single RTX 4000 SFF Ada.
+training_objective_src:
+  quote: merged into the base weights. One-token classification head readout; loss on the answer token only. Trained for 4,591 steps (approximately 14.9 h) on a single RTX 4000 SFF Ada.
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+training_data: '- Trained on curated and synthetic data; distribution shift (new apps, unusual API shapes,'
+training_data_src:
+  quote: '- Trained on curated and synthetic data; distribution shift (new apps, unusual API shapes,'
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+primitives: not disclosed
+primitives_src:
+  quote: none found
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+source_urls:
+- 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'
+- 'https://github.com/0x4272616E646F6E/decision-waf'
+source_urls_src:
+  quote: 'with a single letter token, which the [decision-waf](https://github.com/0x4272616E646F6E/decision-waf) ingress scores as a'
+  url: 'https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B/raw/bd267b7d6da42136407b533543ced3ac79ee3b95/README.md'

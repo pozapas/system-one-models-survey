@@ -1,0 +1,103 @@
+name: vistalab-system-one-e4b
+name_src:
+  quote: '# vistalab-system-one-e4b'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+hf_id: UlkuTuncerKucuktas/vistalab-system-one-e4b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+revision_sha: 04220ca81fc240ada50b225cc5ce4175a5c4bbe5
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+vendor_or_author: UlkuTuncerKucuktas
+vendor_or_author_src:
+  quote: 'On [system-one-bench-tr](https://github.com/UlkuTuncerKucuktas/system-one-bench-tr) it scores 75.4% accuracy on the 25'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+release_date: '2026-10-07'
+release_date_src:
+  quote: (HF API createdAt for UlkuTuncerKucuktas/vistalab-system-one-e4b)
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+backbone: google/gemma-4-E4B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-E4B-it'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+decision_head: 'The same readout in plain transformers:'
+decision_head_src:
+  quote: 'The same readout in plain transformers:'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+training_objective: 2.2 below Jev (TypeSafe's System One model), with a lower raw log-loss
+training_objective_src:
+  quote: 2.2 below Jev (TypeSafe's System One model), with a lower raw log-loss
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+training_data: '- The model was trained on the format above (lettered options, one criterion per line, the Turkish closing line);'
+training_data_src:
+  quote: '- The model was trained on the format above (lettered options, one criterion per line, the Turkish closing line);'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+state_modality: 'A request is a text (the `state`: a message, a document, or an object of named fields) and one or more questions. Each'
+state_modality_src:
+  quote: 'A request is a text (the `state`: a message, a document, or an object of named fields) and one or more questions. Each'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **choice**: one of several named options, each with a criterion that says when it applies;'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+source_urls:
+- 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'
+- 'https://github.com/UlkuTuncerKucuktas/system-one-bench-tr'
+- 'https://github.com/UlkuTuncerKucuktas/vistalab-system-one'
+source_urls_src:
+  quote: 'On [system-one-bench-tr](https://github.com/UlkuTuncerKucuktas/system-one-bench-tr) it scores 75.4% accuracy on the 25'
+  url: 'https://huggingface.co/UlkuTuncerKucuktas/vistalab-system-one-e4b/raw/04220ca81fc240ada50b225cc5ce4175a5c4bbe5/README.md'

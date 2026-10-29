@@ -1,0 +1,11 @@
+arxiv_id,title,first_author,published,screen_reason
+2610.33718,RoboJev: An Open Vision-Language Judge for Robot Success Detection,Josef Liyanjun Chen,2026-10-24,"own-model: Builds RoboJev-27B; 95.2% balanced accuracy, 0.993 AUROC, 0.26 s per episode."
+2610.34124,Decision-Native Recommendation with Large Language Models,Daoxuan Liu,2026-10-25,"own-model: Builds DICE; higher top-one accuracy, order-consistent choices, ~6x speedup, calibrated confidence."
+2610.34329,SHIFT-JEV: Certified Abstention and Gain-Gated Continual Adaptation for LLM-Based Decision Models under Distribution Shift,Muhammad Atif Saeed,2026-10-25,own-model: Reports calibration error 0.289 to 0.087 under shift and 70.5% accuracy after continual adaptation.
+2610.34626,Entity Matching using Decision Models,Aaron Steiner,2026-10-25,"evaluation: Zero-shot F1 on eight benchmarks, calibration, speed, cost, and a confidence cascade (+1.9-4.0 F1)."
+2610.34816,Can System-1-Style Decision Models Replace Dedicated Rerankers in RAG? A Systems Evaluation,Qiaomu Li,2026-10-26,"evaluation: Systems evaluation of decision models vs dedicated reranker on quality, latency and memory."
+2610.34826,TrustJev: Separating Policy Authority from Untrusted Evidence in LLM-Based Decisions,Zhiwei Xu,2026-10-26,"own-model: Builds TrustJev; highest mean Balance, 95.77% vs 80.98% on authorization attacks."
+2610.34875,"RubriX: A Fast, Fine-Tunable Non-Autoregressive Rubric Judge",Balamurugan Paramasivam,2026-10-26,own-model: RubriX 75.4% exact accuracy vs 57.1% for Jev; 28 ms vs Jev 44-211 ms latency.
+2610.34956,Decision Model Factory: Building Specialized Sovereign Decision Models,Yuma Ichikawa,2026-10-26,"own-model: Five factory-built models improve on backbones; runner ""more than doubling serving speed""."
+2610.35654,Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation,Haocheng Mei,2026-10-26,own-model: Mean-span readout and selective adaptation improve accuracy on MC11 with half the trainable parameters.
+2610.35721,Can JEV Support Clinical Trial Criteria Assessment?,Mengxian He,2026-10-26,"evaluation: JEV vs Qwen Flash: macro-F1 0.768 vs 0.534 on MIMIC-III, lower latency and 53-74% lower cost."

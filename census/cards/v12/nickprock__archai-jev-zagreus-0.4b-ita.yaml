@@ -1,0 +1,102 @@
+name: archai-jev-zagreus-0.4b-ita
+name_src:
+  quote: '# archai-jev-zagreus-0.4b-ita'
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+hf_id: nickprock/archai-jev-zagreus-0.4b-ita
+hf_id_src:
+  quote: 'nella repository nella cartella [`/eval`](https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/tree/main/ev'
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+revision_sha: 5f6522bafda8c27942a18061968c784f5b62fe0e
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+vendor_or_author: nickprock
+vendor_or_author_src:
+  quote: 'nella repository nella cartella [`/eval`](https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/tree/main/ev'
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+release_date: '2026-10-03'
+release_date_src:
+  quote: (HF API createdAt for nickprock/archai-jev-zagreus-0.4b-ita)
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+availability_and_license: Open weights, license not stated; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+backbone: mii-llm/zagreus-0.4B-ita
+backbone_src:
+  quote: 'base_model: mii-llm/zagreus-0.4B-ita'
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: opzioni a chiave arbitraria (oppure una domanda sì/no `noul`) e restituisce una probabilità per
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+source_urls:
+- 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'
+- 'https://github.com/apolinario/decision-index'
+source_urls_src:
+  quote: '[Decision Index](https://github.com/apolinario/decision-index) (kit @ `9eb2dbe`):'
+  url: 'https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita/raw/5f6522bafda8c27942a18061968c784f5b62fe0e/README.md'

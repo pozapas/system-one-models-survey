@@ -1,0 +1,101 @@
+name: TD-v1 (typed-decider-150m-v1)
+name_src:
+  quote: '# TD-v1 (typed-decider-150m-v1)'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+hf_id: lxls/typed-decider-150m-v1
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+revision_sha: 3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+vendor_or_author: lxls
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+release_date: '2026-10-09'
+release_date_src:
+  quote: (HF API createdAt for lxls/typed-decider-150m-v1)
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+backbone: jhu-clsp/ettin-encoder-150m
+backbone_src:
+  quote: 'base_model: jhu-clsp/ettin-encoder-150m'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+parameter_count: 'TD-v1 is a 150M-parameter encoder that answers typed decision questions: pick one option (`choice`), pick a level on a scale (`score`) or answer yes/no (`noul`), given a state (free text or JSON). It is a student of [OpenDecider-nano](https://huggingface.co/ma'
+parameter_count_src:
+  quote: 'TD-v1 is a 150M-parameter encoder that answers typed decision questions: pick one option (`choice`), pick a level on a scale (`score`) or answer yes/no (`noul`), given a state (free text or JSON). It is a student of [OpenDecider-nano](https://huggingface.co/ma'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+decision_head: '`onnx/model.onnx` (fp32, opset 17) contains the encoder and the head in one graph. Inputs `input_ids` and `attention_mask` (int64, `[batch, tokens]`), output `logits` (`[batch, tokens]`, one score per token). Build the ids with `prompt_ids` from `system_one.py'
+decision_head_src:
+  quote: '`onnx/model.onnx` (fp32, opset 17) contains the encoder and the head in one graph. Inputs `input_ids` and `attention_mask` (int64, `[batch, tokens]`), output `logits` (`[batch, tokens]`, one score per token). Build the ids with `prompt_ids` from `system_one.py'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+training_objective: '- Loss: KL divergence to the teacher at temperature 2, plus 0.3 × cross-entropy on the dataset''s gold label where present.'
+training_objective_src:
+  quote: '- Loss: KL divergence to the teacher at temperature 2, plus 0.3 × cross-entropy on the dataset''s gold label where present.'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+training_data: CC BY-NC 4.0. Part of the training data (from `tasksource/tasksource-jev-typed-decisions`) is licensed for non-commercial use only, so these weights are released for non-commercial use. The base model (MIT), teacher (Apache-2.0) and Sarge corpus (Apache-2.0) p
+training_data_src:
+  quote: CC BY-NC 4.0. Part of the training data (from `tasksource/tasksource-jev-typed-decisions`) is licensed for non-commercial use only, so these weights are released for non-commercial use. The base model (MIT), teacher (Apache-2.0) and Sarge corpus (Apache-2.0) p
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+state_modality: 'pick a level on a scale (`score`) or answer yes/no (`noul`), given a state (free text or JSON). It is a student of [OpenDecider-nano](https://huggingface.co/manjunathshiva/opendecider-nano) (~400M), distilled on the teacher''s option probabilities, and uses th'
+state_modality_src:
+  quote: 'pick a level on a scale (`score`) or answer yes/no (`noul`), given a state (free text or JSON). It is a student of [OpenDecider-nano](https://huggingface.co/manjunathshiva/opendecider-nano) (~400M), distilled on the teacher''s option probabilities, and uses th'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'encoder that answers typed decision questions: pick one option (`choice`), pick a level on a scale (`score`) or answer yes/no (`noul`), given a state (free text or JSON). It is a student of [OpenDecider-nano](https://huggingface.co/manjunathshiva/opendeci'
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+source_urls:
+- 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/lxls/typed-decider-150m-v1/raw/3f2c06f16e3931e9eaaa944eaf7f1eedc87e9de8/README.md'

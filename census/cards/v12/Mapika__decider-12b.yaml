@@ -1,0 +1,102 @@
+name: 'decider-12b: typed decisions with calibrated probabilities in one forward pass, on Gemma-4-12B-it'
+name_src:
+  quote: '# decider-12b: typed decisions with calibrated probabilities in one forward pass, on Gemma-4-12B-it'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+hf_id: Mapika/decider-12b
+hf_id_src:
+  quote: '`Decider("Mapika/decider-12b", revision="v1")`.'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+revision_sha: 64d8d3f0080d5a75549f18ebec478239ecd706fa
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+vendor_or_author: Mapika
+vendor_or_author_src:
+  quote: '`Decider("Mapika/decider-12b", revision="v1")`.'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+release_date: '2026-09-29'
+release_date_src:
+  quote: (HF API createdAt for Mapika/decider-12b)
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+backbone: google/gemma-4-12B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-12B-it'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+decision_head: the decider readout.
+decision_head_src:
+  quote: the decider readout.
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+training_objective: one B300, 45 minutes. The loss is cross-entropy over the option letters at the answer slot, in the same chat layout as serving.
+training_objective_src:
+  quote: one B300, 45 minutes. The loss is cross-entropy over the option letters at the answer slot, in the same chat layout as serving.
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+training_data: '- **4,000 rows from our earlier training data, replayed:**'
+training_data_src:
+  quote: '- **4,000 rows from our earlier training data, replayed:**'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **Input:** a state and one or more typed questions (Choice, Noul yes/no, Score), each with an explicit option list.'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+source_urls:
+- 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'
+- 'https://github.com/Mapika/decider'
+source_urls_src:
+  quote: '[decider issue #18](https://github.com/Mapika/decider/issues/18), where the same effect was measured on 2,975 items.'
+  url: 'https://huggingface.co/Mapika/decider-12b/raw/64d8d3f0080d5a75549f18ebec478239ecd706fa/README.md'

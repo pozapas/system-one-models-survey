@@ -1,0 +1,102 @@
+name: d1 Browser Decision FP32
+name_src:
+  quote: '# d1 Browser Decision FP32'
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+hf_id: webbrain-one/d1-browser-decision-fp32
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+revision_sha: 9023fa407e3f17e02ad1fba1b921a0dc846dca89
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+vendor_or_author: webbrain-one
+vendor_or_author_src:
+  quote: 'adapter copied from the actual [WebBrain](https://github.com/webbrain-one/webbrain) extension module `src/chrom'
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+release_date: '2026-10-08'
+release_date_src:
+  quote: (HF API createdAt for webbrain-one/d1-browser-decision-fp32)
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+availability_and_license: Open weights, other; gated=False
+availability_and_license_src:
+  quote: 'license: other'
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+backbone: LiquidAI/d1-omni-600M
+backbone_src:
+  quote: 'base_model: LiquidAI/d1-omni-600M'
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+decision_head: '- 380 clean FP32 tensors: text encoder, decision head, vision tower and projector; no audio or LM head.'
+decision_head_src:
+  quote: '- 380 clean FP32 tensors: text encoder, decision head, vision tower and projector; no audio or LM head.'
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+training_objective: finite family splits, overconfidence/train-versus-validation loss separation, residual Ready-identifier/completion association (0.622556 bits within sparse target groups), and joint family/option-position association (0.584963 bits). Zero conditional
+training_objective_src:
+  quote: finite family splits, overconfidence/train-versus-validation loss separation, residual Ready-identifier/completion association (0.622556 bits within sparse target groups), and joint family/option-position association (0.584963 bits). Zero conditional
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+state_modality: options for `choice`, `noul` and ordinal `score` questions using text/JSON state and optional screenshots. It does **not** generate text or tokens. Do not call `generate()` or treat it as a causal chat model.
+state_modality_src:
+  quote: options for `choice`, `noul` and ordinal `score` questions using text/JSON state and optional screenshots. It does **not** generate text or tokens. Do not call `generate()` or treat it as a causal chat model.
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 15129e59ab3f94783f32c4b088674). It directly scores named options for `choice`, `noul` and ordinal `score` questions using text/JSON state and optional screenshots. It does **not** generate text or tokens. Do not call `generate()` or treat it as a causal chat m
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+source_urls:
+- 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'
+- 'https://github.com/webbrain-one/webbrain'
+source_urls_src:
+  quote: 'dependency-injected adapter copied from the actual [WebBrain](https://github.com/webbrain-one/webbrain) extension module `src/chrome/src/providers/d1-runtime.js'
+  url: 'https://huggingface.co/webbrain-one/d1-browser-decision-fp32/raw/9023fa407e3f17e02ad1fba1b921a0dc846dca89/README.md'

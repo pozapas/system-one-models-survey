@@ -1,6 +1,19 @@
 # Changelog
 
-Both releases describe the literature and ecosystem as of the same cutoff, 2026-09-24.
+Releases v1.0 and v1.1 describe the literature and ecosystem as of 2026-09-24. Release v1.2 moves the cutoff to 2026-10-28.
+
+## v1.2 (2026-10-28)
+
+This release adds a second literature sweep and extends the census to the new cutoff. No existing ledger value was changed.
+
+- **Sweep.** Every arXiv query of v1.0 was rerun over submissions from 2026-09-14 to 2026-10-28, with added queries for the models released after the first cutoff (`ledger/scripts/sweep_v12.py`). New records and their screening are in `ledger/candidates_v12.csv`.
+- **Ledger.** Rows L1000 to L5311 extract the included papers under `ledger/EXTRACTION_BRIEF_v12.md`, and `ledger/ledger.csv` now holds 3,396 rows from 244 studies.
+  - Every excerpt of the new rows is checked against the paper's full text (`ledger/excerpt_check_v1.2.csv`); repairs are logged in `ledger/excerpt_repairs_v1.2.md`.
+  - Rows L934 to L949, added after the first cutoff, are now kept in `ledger/parts/ledger_Y.csv` so that a merge reproduces them.
+  - `ledger/SCHEMA.md` adds the label types `mixed` and `not_reported` and an `other` calibration quantity.
+- **Risk of bias.** All 242 studies with ledger rows are graded in `ledger/rob.csv` under the written anchors (`ledger/GRADING_BRIEF_v12.md`). The second rating of v1.1 covered the first sweep only.
+- **Synthesis.** The new selection lines are in `ledger/selection_parts/`. `ledger/comparator_class.csv` codes the comparator of every accuracy contrast, coded twice (once blind to results) and adjudicated; the split by class was added after the first synthesis of this release.
+- **Census.** `census/census_screened_v12_final.csv` adds 2,645 Hugging Face entries created to 2026-10-28, with every rule-tiered original implementation checked by hand (`census/t1_check_C*.csv`). `census/census_github_screened_v12.csv` adds GitHub repositories, and `census/hosted_models_v12.csv` records the hosted and vendor models released after the first cutoff.
 
 ## v1.2 (2026-10-11)
 

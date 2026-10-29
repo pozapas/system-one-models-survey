@@ -1,0 +1,11 @@
+arxiv_id,title,first_author,published,screen_reason
+2610.24692,Native Probability Outputs for Clinical Triage: An Evaluation of Calibration and Decision Accuracy,Liang You,2026-10-17,"evaluation: ""We evaluate whether Jev... supports both judgments""; macro-F1 0.461, Brier 0.610"
+2610.24929,What Can't Jev Decide? Probing the Limits of One-Pass Decision Models,Wang Yang,2026-10-18,"evaluation: ""Jev and its open replicas""; accuracy 53-80% at sixteen updates, 97.5% vs 74%"
+2610.25456,System X: An LLM Decision Model That Replies from Its Own KV Cache,Syed Usama Khalid Bukhari,2026-10-18,"own-model: ""System X, an LLM decision model""; JevBench 55.4% to 54.5%, ECE 0.292 to 0.169, latency savings"
+2610.25474,P(Yes): 15$\times$ Improvements via Test-Time Scaling of Decision Models,Lev Stambler,2026-10-18,"evaluation: ""test-time search to frozen decision models""; per-blank accuracy gains of 4.0 to 13.0 points"
+2610.25553,"Narrow Decision Models: A System-1 Architecture for Calibrated, Typed Decisions",Carlos André Antunes,2026-10-18,"own-model: ""A Narrow Decision Model (NDM) offers the same interface""; ""agrees with the LLM classifier in production on 91%"""
+2610.25768,Truncated Reasoning Under a Budget: Evaluating System-1 Models as Decision-Makers,Zhongyin Wang,2026-10-19,"evaluation: ""We evaluate Jev as a decision reader of truncated reasoning""; +4.1 pp accuracy, 71.3% cost saving"
+2610.25784,UniJev: Separating Accuracy from Calibration in Trimodal System One Decision Models,Jianing Wang,2026-10-19,"own-model: ""System One models... UniJev""; ECE and accuracy across text, image, video"
+2610.25843,A Cue's Hidden Price: Auditing Seller Influence on AI Shoppers,Felix Buecheler,2026-10-19,"evaluation: ""first price-equivalent audit of a decision-native model, Jev""; cue-price profile measured"
+2610.25947,Claim Laundering: When Agent Decision Models Trust Records Over Reality,Tina Khezresmaeilzadeh,2026-10-19,"evaluation: ""four decision models and three domains""; records outweigh observations, AUROC 0.77-1.00, task success gains"
+2610.25963,ABACUS: Program-Guided Multistep Reasoning over Frozen Judgment Models,Yuhao Wang,2026-10-19,"application: ""We instantiate the framework with Kev""; 99.67% macro accuracy vs 64.00% direct Kev, 8.43-fold speedup"

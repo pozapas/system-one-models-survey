@@ -1,0 +1,31 @@
+# Sharma and Lall (2026), "When Does Selection Replace Extraction? A Pre-Registered Test of Agent Memory with a Typed Decision Model"
+
+## Identification
+- arXiv 2609.34227v1 [cs.AI], 28 Sep 2026 (header). License CC BY 4.0. Paper DOI 10.5281/zenodo.22985242; pre-registered plan 10.5281/zenodo.22970745 (commit b3c5dc5, tag v3-frozen); amendment 10.5281/zenodo.22977848 (commit efae0b6, tag v3-amended) (title footnotes, Section 4).
+- Authors: Rishabh Sharma, Rishika Lall; both "Independent Researcher" (byline). affiliation_type = independent.
+- Code: github.com/ris3abh/Engram (tags v3-frozen, v3-amended and the paper tag), with per-question answers, judge labels and human-audit grades under bench/results/v3/ (Section 7 end, Appendix I). code_available = yes.
+- Conflict of interest by design: the main comparator engram v2 is the authors' own earlier system, chosen as a strong comparator "because the test could fail against it" (Section 1); the human grader is the first author, who built the evaluated systems (Limitations).
+
+## Task and data
+- Conversational agent memory: question answering over long conversations after a store-and-read memory (Section 3.1). Primary data: five held-out LoCoMo conversations (conv-44, 47, 48, 49, 50), 3,122 turns, 778 scored questions (140 multi-hop, 165 temporal, 50 open-domain, 423 single-hop) plus 209 adversarial; exploratory replication on conv-30, 41, 42, 43 (610 scored); development on conv-26 only. LongMemEval_S cleaned: registered 70-question sample (30 knowledge-update) and, via amendment, all 500 questions (470 scored, 30 abstention) (Section 4).
+- Reference labels: gold answers of LoCoMo and LongMemEval, graded as CORRECT or WRONG by a gpt-4o-mini judge at temperature 0 with mem0's lenient LoCoMo judge prompt (Section 4, "Stack"). The registered primary test uses the judge's labels. Human sensitivity analysis: the first author graded both answers to each of H1's 142 judge-discordant questions blind to system and judge label (141 graded; one left ungraded), under strict and lenient mappings; judge agreement 81 percent strict and 79 percent lenient (Section 5.4, Appendix C). Ledger codes accuracy rows as llm_teacher (judge) and the human rows as human_single.
+- Exposure: LoCoMo (2024) and LongMemEval are public before 2026; held-out conversations "never run by any system before this study" (Section 4), but LLM answer-model exposure to LoCoMo is unaddressed. Coded public-pre-2026.
+
+## Systems evaluated
+- Turns + Jev: raw turns stored with dates (no extraction), cosine shortlist n = 30 (text-embedding-3-small), one Jev request asks a relevance Yes/No question about every shortlisted turn, keeps turns with probability above 0.5 plus a 10-turn cosine floor; answered by gpt-4o-mini; `jev-1.13.0` for every Jev decision (Section 3.1, 3.2). Jev is therefore used as a reranker/selector inside a pipeline; all Jev accuracy rows are end-to-end answer accuracy of the pipeline, not Jev decision accuracy.
+- Comparators: Turns + cosine (same store, no Jev), Turns + LLM (gpt-4o-mini listwise reranker), engram v2 (LLM fact extraction with gpt-4o-mini plus Jev typing/relation decisions; authors' system), mem0 OSS 2.1.0 (extraction calls served through OpenRouter, about half by Azure, not the OpenAI API as registered), Jev-Mem commit 81574eb with jev_model pinned to jev-1.13.0 (Section 3.2), full context.
+- Tuning parity: all share the answer model, embedder, answer and judge prompts; token-matched comparisons at matched context (Eq. 5; Turns + Jev at k = 6 against engram v2 at k = 3); every design choice made on conv-26 (Limitations). engram v2 changes were fixed on the development conversation before the v2-frozen tag (Section 3.2). Jev's k and the cosine floor are registered settings; whether mem0 and Jev-Mem were tuned is not described (defaults used).
+- Second answer model: Llama 3.3 70B Instruct via OpenRouter (9 providers, precision may differ) (Section 5.4). Run dates not stated in the text beyond the registered dates (amendment 2026-09-26 in Appendix B).
+
+## Design and statistics
+- Pre-registered non-inferiority test H1 with margin delta = 5 points (half the development-conversation rerank effect), one-sided 95 percent bound d-bar minus 1.645 s/sqrt(N) over N = 778 paired questions (Eq. 7); seven secondary tests S1-S7 under Holm correction at family-wise 0.05 (exact McNemar except S4 non-inferiority); S7 and the second answer model were added by amendment after S1 and S2 were known but before any H1 result (Section 4). Wilson 95 percent intervals in Figure 6. Conversation bootstrap fifth percentile of H1 difference -2.3 (Section 5.1).
+- Post-hoc: Turns + Jev (wide) with 150-turn shortlist and no cut-off, tested once, outside the Holm family (Section 5.6); budget analysis k = 20 comparisons are descriptive (Section 5.3).
+
+## Cost and latency
+- Write cost per 1,000 turns at list prices: Turns + Jev $0.0006 (embeddings only), engram v2 $1.865, mem0 $1.321, Jev-Mem $0.212; engram v2 write cost 3,061 times Turns + Jev (Abstract, Section 5.1). Read cost per query Turns + Jev $0.00020, Turns + LLM $0.00023 (Table 3). Read latency measured live on a fixed 40-question sample at k = 3, one query at a time: Turns + Jev p50 273 ms, p90 359 ms; Turns + LLM p50 816 ms; Jev-Mem p50 1,329 ms; "Jev reads about 3.0x faster than the LLM reranker and 4.9x faster than Jev-Mem" (Table 5, Section 5.7). Hardware not stated; Jev through the vendor API.
+
+## Cascade, option-name, cardinality, robustness
+- No cascade; Jev threshold tau = 0.5 on relevance. Abstention analysis: reranking lowered correct abstention on adversarial questions, 54.1 percent (Turns + Jev, k = 3) against 63.6 percent (Turns + cosine) (Table 6). No option-name test (binary Yes/No relevance question). Prompt-injection sensitivity untested (Limitations).
+
+## Authors' stated limitations
+- One benchmark family per setting (LoCoMo dialogues LLM-generated); engram v2 not run on LongMemEval; first author graded and built the systems; adversarial content untested; Jev is a closed versioned model (jev-1.13.0); mem0 serving deviation; post-hoc variant; k = 20 comparisons mix budget and read-path ceiling; absolute accuracy below SmartSearch under a different protocol; all design choices made on conv-26 (Limitations).

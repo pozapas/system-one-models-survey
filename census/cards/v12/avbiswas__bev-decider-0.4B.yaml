@@ -1,0 +1,103 @@
+name: bev-decider-0.4B
+name_src:
+  quote: '# bev-decider-0.4B'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+hf_id: avbiswas/bev-decider-0.4B
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+revision_sha: cf5138b5b465343d09c3b4fbd71eaca36d989d34
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+vendor_or_author: avbiswas
+vendor_or_author_src:
+  quote: 'to Jev on typed decisions.** On 5,000 held-out questions from [`avbiswas/bev-decision`](https://huggingface.co/dat'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+release_date: '2026-09-28'
+release_date_src:
+  quote: (HF API createdAt for avbiswas/bev-decider-0.4B)
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+backbone: Qwen/Qwen3-0.6B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3-0.6B'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+parameter_count: bev-decider is a **0.4B-parameter System One decision model**. It reads a state (text or JSON) and typed questions about it, and returns calibrated probabilities in a single forward pass, with no text generation. The questions use the same format as TypeSafe's
+parameter_count_src:
+  quote: bev-decider is a **0.4B-parameter System One decision model**. It reads a state (text or JSON) and typed questions about it, and returns calibrated probabilities in a single forward pass, with no text generation. The questions use the same format as TypeSafe's
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+decision_head: 'Roughly 0.4B parameters: 20 layers of Qwen3-0.6B plus a small decision head. It runs on a laptop CPU or Apple Silicon. Every question is answered in one prefill pass, with no generation.'
+decision_head_src:
+  quote: 'Roughly 0.4B parameters: 20 layers of Qwen3-0.6B plus a small decision head. It runs on a laptop CPU or Apple Silicon. Every question is answered in one prefill pass, with no generation.'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+training_objective: The adapter and head were trained with cross-entropy on about 940K typed questions. Sources include rule-conditioned decisions, routing and intent, procedural reasoning, extraction, NLI-style reading, counterfactual pairs, and a range of public classification
+training_objective_src:
+  quote: The adapter and head were trained with cross-entropy on about 940K typed questions. Sources include rule-conditioned decisions, routing and intent, procedural reasoning, extraction, NLI-style reading, counterfactual pairs, and a range of public classification
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+training_data: '| Context | Trained with states up to 1,024 tokens; the defaults and benchmarks use a 2,048-token limit. Options are limited to 64 tokens each |'
+training_data_src:
+  quote: '| Context | Trained with states up to 1,024 tokens; the defaults and benchmarks use a 2,048-token limit. Options are limited to 64 tokens each |'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+state_modality: is a **0.4B-parameter System One decision model**. It reads a state (text or JSON) and typed questions about it, and returns calibrated probabilities in a single forward pass, with no text generation. The questions use the same format as TypeSafe's Jev
+state_modality_src:
+  quote: is a **0.4B-parameter System One decision model**. It reads a state (text or JSON) and typed questions about it, and returns calibrated probabilities in a single forward pass, with no text generation. The questions use the same format as TypeSafe's Jev
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **`choice`**: pick one of several named options.'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+source_urls:
+- 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'
+- 'https://github.com/avbiswas/bev-decider'
+- 'https://github.com/instax-dutta/sysone-bench'
+source_urls_src:
+  quote: 'module, so the model is loaded with the [`bev-decider`](https://github.com/avbiswas/bev-decider) package.'
+  url: 'https://huggingface.co/avbiswas/bev-decider-0.4B/raw/cf5138b5b465343d09c3b4fbd71eaca36d989d34/README.md'

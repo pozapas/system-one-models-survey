@@ -1,0 +1,103 @@
+name: sparrow-tiny-general (v1.0)
+name_src:
+  quote: '# sparrow-tiny-general (v1.0)'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+hf_id: sparrow-decider/sparrow-tiny-general
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+revision_sha: fd1cbde6d1af377e2cfbc5f4c4559c80fe316987
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+vendor_or_author: sparrow-decider
+vendor_or_author_src:
+  quote: 'Part of [Sparrow Decider](https://github.com/sparrow-decider/sparrow-decider), a family of decision'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+release_date: '2026-10-23'
+release_date_src:
+  quote: (HF API createdAt for sparrow-decider/sparrow-tiny-general)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+availability_and_license: Weights not listed in repo files, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+backbone: jhu-clsp/ettin-encoder-32m
+backbone_src:
+  quote: 'base_model: jhu-clsp/ettin-encoder-32m'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+decision_head: '| Tier | tiny (Ettin 32M encoder + pointer head) |'
+decision_head_src:
+  quote: '| Tier | tiny (Ettin 32M encoder + pointer head) |'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+training_data: microcontrollers (use a nano), open-ended language far from its training data,
+training_data_src:
+  quote: microcontrollers (use a nano), open-ended language far from its training data,
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+state_modality: pick-one (`choice`) and rate-on-a-scale (`score`) questions about a text state, with calibrated
+state_modality_src:
+  quote: pick-one (`choice`) and rate-on-a-scale (`score`) questions about a text state, with calibrated
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: built on the Ettin 32M bidirectional encoder. It answers yes/no (`noul`),
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+source_urls:
+- 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'
+- 'https://github.com/sparrow-decider/sparrow-decider'
+- 'https://github.com/strands-labs/strands-decider'
+source_urls_src:
+  quote: 'Part of [Sparrow Decider](https://github.com/sparrow-decider/sparrow-decider), a family of decision'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-tiny-general/raw/fd1cbde6d1af377e2cfbc5f4c4559c80fe316987/README.md'

@@ -1,0 +1,96 @@
+id,panel,quote,source,note
+Nikunjgoyal07/jev-qwen-decider,b,"task token + option readouts + answer readout attend (2 pre-norm blocks, no positions), bilinear answer·option scoring",README.md,ChoiceHead over option readouts; each option restarts at P
+nouton/jev-ru-4b-lora-v2,c,you read the logprobs of the **first generated token**,README.md,"LoRA only; one option letter, its token probability is the confidence"
+odunola/lfm2.5_jev_style,b,# Adapted from Cloudflare Clef under the Apache-2.0 license.,audio_jev/text/model/jev_head.py,card says only a joint schema head with one pass; code is a Clef-derived head over question and option token spans
+olafura/gemma4-12b-system-one,undisclosed,"the direct answer is generated, and its confidence is the lowest probability among the answer tokens",README.md,"free-text router (answer now, reason, ask back); the answer is generated without any option mask or grammar (router.ex, prompt.ex, system_one.ex), so no option distribution is read; none of a-e fits"
+ParallaxOpen/Vela-Decision-170M,b,The hidden state at each mask is scored and softmaxed **within that question only**,README.md,
+Pdbz199/local-decision-model,b,"The hidden state at each `[OPT]` token is scored, so all options are judged in the same pass",README.md,
+per2021/kev-2b-qwen3.5,b,a rank-16 LoRA adapter and a pointer head on `Qwen/Qwen3.5-2B-Base`,README.md,Kev recipe
+perplexity-ai/pplx-decider-flash-v1.2,a,"a BF16 `[255, 2560]` decision head",README.md,255-row readout at a marker per question; not the LM head
+perplexity-ai/pplx-decider-v1-27b,a,A fully trainable Qwen backbone with a 255-option decision readout.,source/src/autojev/model.py,"card silent; read from the repository code (torch.nn.Linear(hidden, MAX_OPTIONS=255))"
+perplexity-ai/pplx-decider-v1.1-27b,a,"`readout.safetensors` containing a BF16 `[255, 5120]` decision head",README.md,
+perplexity-ai/pplx-decider-v1.2,a,"`readout.safetensors`, a BF16 `[255, 5120]` decision head",README.md,one marker readout per question
+pngwn/nanodiff-350m-typed-decisions-lam1,c,"probs  = logits[:, slot_idx].softmax(-1) # the decision distribution",README.md,"masked-diffusion LM, LM-head logits at the masked answer slot over option tokens, one pass"
+pngwn/system-one-qwen3.5-4b-scorer,d,"Each (state, question, option) triple is scored by a sequence-classification head and the per-question logits are softmaxed.",README.md,
+Praveenrajus/jevify-gemma-4-e4b-it-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-gemma-4-e4b-it-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-gemma-4-e4b-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh,c,one forward pass; the log-probabilities of the allowed answer tokens at the cue are read,README.md,LoRA served in vLLM with allowed_token_ids and logprobs
+Praveenrajus/jevify-qwen3-vl-2b,c,the probability of every allowed answer is read at the answer position in one forward pass,README.md,"Tier 0, no training"
+Praveenrajus/jevify-qwen3-vl-2b-t2,c,the restricted log-softmax over the allowed answers at the answer position,README.md,"decoder LoRA, no head"
+Praveenrajus/jevify-qwen3.5-2b,b,Decision heads read the backbone's hidden state at each option's own line,README.md,trained heads as residual on the LM log-score
+Praveenrajus/jevify-qwen3.5-2b-base-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-2b-base-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-2b-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-2b-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-4b,b,Decision heads read the backbone's hidden state at each option's own line,README.md,trained heads as residual on the LM log-score
+Praveenrajus/jevify-qwen3.5-4b-base-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-4b-base-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-4b-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-4b-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-4b-t2,b,Decision heads read the backbone's hidden state at each option's own line,README.md,trained heads as residual on the LM log-score
+Praveenrajus/jevify-qwen3.5-4b-t2-lowlr,b,Decision heads read the backbone's hidden state at each option's own line,README.md,trained heads as residual on the LM log-score
+Praveenrajus/jevify-qwen3.5-9b-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-qwen3.5-9b-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-smollm3-3b-apo-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-smollm3-3b-apo-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-smollm3-3b-sft-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/jevify-smollm3-3b-sft-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/Llama-3.1-Tulu-3-8B-DPO-jevify-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/Llama-3.1-Tulu-3-8B-DPO-jevify-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/Llama-3.1-Tulu-3-8B-SFT-jevify-readout,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+Praveenrajus/Llama-3.1-Tulu-3-8B-SFT-jevify-readout-coh,c,"the distribution over the allowed answers read at the answer position, one forward pass, no decoding",README.md,"readout fine-tune (LoRA), answer letters at the answer position, no separate head"
+projectj/Flight-Autopilot-Decision-Model-Maverick1.0,c,we read the logits of the model's next token and pick the most likely option letter,README.md,"LoRA on Qwen3-0.6B, GGUF, letters from LM head"
+q-project/N-Q-26M-JEV,b,the head reads the hidden state at the `<R11>` that closes each option,README.md,linear decision head; LM head kept but unused for decisions
+Quazim0t0/Byrne-Jev-79M,b,"typed decision head, one marker position per option, 2-layer bidirectional head over the sequence",README.md,
+Quazim0t0/On-Fly-Jev,b,each option scored at its last token by LayerNorm -> Linear -> GELU -> Linear -> one logit. Softmax over options.,README.md,
+Rckflr/kev-gemma-270m-experimental,b,a LoRA adapter and Kev pointer head trained on `google/gemma-3-270m`,README.md,
+Rology/rad-decider,c,It reads the logits of the option letters at a fixed answer slot,README.md,LoRA only
+rongxinzy/LightJev-0.6B-typed-decisions,b,logits.append(model.head(selected.to(model.head[0].weight.dtype)).squeeze(-1).float()),github:rongxinzy/LightJev@v0.2.0/src/lightjev/inference.py,"card says only shared-context causal listwise scoring; code (GitHub rongxinzy/LightJev v0.2.0) applies a LayerNorm+Linear(width,1) head at one position per candidate block in a shared sequence; the older independent-candidate path in model.py would be d, but the manifest architecture is shared-context"
+ronith128/969M-Decisions-CPU,c,"the selected 26 pretrained vocabulary rows A-Z, without a full-vocabulary text-generation readout",README.md,"OpenVINO graph takes label-token ids and returns one logit per label (runtime.py), up to 26 options"
+rony/gemma3-270m-typed-decisions,c,"The model's next-token logits at the reply position, restricted to those letter tokens and softmaxed, are the answer distribution.",README.md,
+rony/ministral3-3b-reasoning-typed-decisions,c,"the next-token logits at that position, restricted to those letter tokens and softmaxed, are the answer distribution",README.md,
+Ruivalim/exu-qwen3.5-2b-typed-decisions,d,"One sequence per option, each re-reading the whole trace",README.md,"small head scores each option sequence separately, then softmax across options"
+ryandcunha/mmbu-jev-qwen3-0.6b-closed,b,the pointer head (dim 256) that scores options against the decision token,README.md,"any2jev recipe, vocabulary head removed"
+Rydward98/Jev-Omni,a,"self.linear = torch.nn.Linear(hidden, 256, dtype=torch.float32)",load_model.py,"card silent; Head256 on the last hidden state, softmax over the first len(options) of 256 slots"
+Sagicc/nanoGentzen-Jev-v3,d,"s1_opt = self.system1_eval(seq_opt) s1_scores[opt] = s1_opt[""confidence""]",jev_server.py,"each option compiled to its own sequent and scored separately by the value head, then softmax; a symbolic-neural hybrid, hard to place"
+sainath/tiny-jev-support-v03-supervised,d,"logits = torch.einsum(""bd,bkd->bk"", state, actions) * self.logit_scale.exp().clamp(max=100)",source-0.4.1.zip:tiny-jev/src/tiny_jev/model.py,bi-encoder: head on frozen Qwen3-1.7B state embedding compared with a head on each option description embedding; card says state is encoded per question
+samatv256/mini-Jev,b,"logits = self.scorer(torch.stack(vectors).unsqueeze(0), valid)",inference.py,"each option branch encoded and pooled, then a small set-transformer head scores all options jointly; branch encoding resembles d but head sees all options"
+SargeDev/jev-distill-corpus,c,P(relevant) as the calibrated `yes` probability read from the final-token logits of `yes` vs `no`,README.md,"repo holds the Jev-Gate Student B card; yes/no logit readout, binary only"
+SargeDev/jev-gate-student-b,c,P(relevant) as the calibrated `yes` probability read from the final-token logits of `yes` vs `no`,README.md,binary yes/no logit readout
+SargeDev/Jev_Qwen3.8-27B,undisclosed,"state a call, attach an honest confidence",README.md,generative QLoRA judgment model; card documents no readout of a distribution over options
+SargeDev/Solar-JEV-27B,a,"z = W @ h + b   (W [24,5120], b [24] from head.safetensors)",read_decision.py,"card is contradictory (headline says lm_head LoRA, no extra head; ablation table says separate projection at read time for this r16 build); the repo ships head.safetensors with 24 slots (choice slots 8 to 23) and read_decision.py applies it, so coded a"
+SargeDev/Solar-JEV-Gemma-embed-2,a,"`Linear(768→2)` noul, `Linear(768→16)` choice (padded; masked per-row), `Linear(768→6)` score",README.md,"frozen encoder, fixed 16-slot choice head"
+scairesearch/kieve-jev,d,a paired cross-attention option scorer,README.md,"card only, code not available; paired option scorer read as pair scoring (config.json lists max_pair and pair_token_budget)"
+scairesearch/kieve-jev-100m,d,a paired cross-attention option scorer,README.md,"card only, code not available; paired option scorer read as pair scoring (config.json lists max_pair and pair_token_budget)"
+scairesearch/kieve-jev-curriculum-300m,d,a paired cross-attention option scorer,README.md,"card only, code not available; paired option scorer read as pair scoring (config.json lists max_pair and pair_token_budget)"
+scairesearch/kieve-jev-fractal-300m,d,a paired cross-attention option scorer,README.md,"card only, code not available; paired option scorer read as pair scoring (config.json lists max_pair and pair_token_budget)"
+scairesearch/kieve-jev-large,d,a paired cross-attention option scorer,README.md,"card only, code not available; paired option scorer read as pair scoring (config.json lists max_pair and pair_token_budget)"
+scairesearch/kieve-jev-moe-300m,d,a paired cross-attention option scorer,README.md,"card only, code not available; paired option scorer read as pair scoring (config.json lists max_pair and pair_token_budget)"
+scairesearch/kieve-jev-v0.7,d,a paired cross-attention option scorer,README.md,"card only, code not available; paired option scorer read as pair scoring (config.json lists max_pair and pair_token_budget)"
+sdmlai/nano-jev,d,"Cross-encoder (MiniLM, 12 layers, hidden 384) + 1-logit head",README.md,
+SeanLiu/Jev-Vision,b,"a distribution over the supplied options, pointer readout over the option tokens",README.md,LoRA plus typed decision heads (heads.pt)
+sennaLLMLearner/qwen3-4b-system-one-lora,c,the frozen native LM head provides answer-letter probabilities for each question,README.md,"tree-masked packed branches, one pass"
+seongyeon1/dlm-jev-tickets-lora,c,cross-entropy of the label-restricted distribution at each answer slot,README.md,"diffusion LM, label tokens at answer slots; reader code not inspected"
+sgaseretto/diffcider-typed-decisions,c,reading the model's own *Yes* against its *No* at a mask after each option,README.md,Yes-minus-No readout under a 0-layer yesno head; masked diffusion LM
+shgao/rsi-jev-v1.0-qwen3.5-0.8b,b,"is a cross-attention head: the hidden state at the decision cue is the query, the mean-pooled option spans are keys and values",README.md,
+shgao/rsi-jev-v2.0-qwen3.5-2b,b,plus the 7.3 M `option_xattn` scorer,README.md,"scorer design as in the v1.0 record, cross-attention over option spans"
+shgao/rsi-jev-v2.1-qwen3.5-2b,b,tower fine-tuned and a trained option-scoring head,README.md,"scorer design as in the v1.0 record, cross-attention over option spans"
+shgao/rsi-jev-v3.0-qwen3.5-2b,b,with v1.0's option scorer and v2.0's confidence head,README.md,"scorer design as in the v1.0 record, cross-attention over option spans"
+shgao/rsi-jev-v4.0-vl-qwen3.5-2b,b,"with v1.0's option scorer, v2.0's confidence head and v3.0's MLP readout",README.md,scorer design as in the v1.0 record
+shgao/rsi-jev-v5.0-vl-3b,b,Each option's vector is the mean of the tokens of its own block,README.md,truncated to 20 layers of Qwen3.5-4B-Base
+shgao/rsi-jev-v6.0-vl-4b,b,own-token option readout,README.md,"early-exit decision heads at layers 16, 20 and 32; card gives only the readout name"
+shgao/rsi-jev-v6.1-vl-27b,b,The option readout is v6.1-VL's: cross-attention over each option's own tokens.,README.md,
+shgao/rsi-jev-v6.1-vl-4b,b,own-token option readout,README.md,"early-exit decision heads at layers 16, 20 and 32; card gives only the readout name"
+shibing624/train-jev-27b-lora,a,Qwen3.8-27B + LoRA + a 24-slot FP32 decision head,README.md,
+shibing624/train-jev-4b-lora,a,Qwen3.5-4B + LoRA + a 24-slot FP32 decision head,README.md,
+shreyanbr/nev-lite-systemone,d,a small interaction MLP scores state against each option,README.md,"no transformer pass; pooled static embeddings, options cached"
+shreyanbr/system-one-distilled,d,A 70.8M-parameter DeBERTa-v3-xsmall cross-encoder that answers typed decision questions,README.md,NLI cross-encoder base
+shreyanbr/system-one-gold,d,A 70.8M-parameter DeBERTa-v3-xsmall cross-encoder that answers typed decision questions,README.md,NLI cross-encoder base
+shreyanbr/system-one-zeroshot,d,A 70.8M-parameter DeBERTa-v3-xsmall cross-encoder that answers typed decision questions,README.md,NLI cross-encoder base
+shunmoridev/llm-jp-4.1-33b-systemone-experimental,c,1回の forward pass で候補 token の logits を取得し、判定する,README.md,"candidate-token scoring, no classification head (Japanese card)"
+sidman007/jev-vlm-4b-lite-gguf,c,so a plain letter-logit GGUF carries pointer-quality calibration,README.md,"distilled from a pointer-head teacher, but this GGUF reads letters"
+Singularity-Compute/super-decider,c,top logprobs per canvas position; labels come from logprob_token_ids,github:Singularity-Compute/super-decider/runtime/structured_server.py,card says only that all answer slots are filled in one denoising step; code reads label-token logprobs at each slot
+siriusyiyi/my_jev-hr9,c,decider 式字母 logits 读出（零新增读出参数，LoRA 10.1M）,README.md,Chinese card
+skundu42/kev,d,Each candidate is encoded with that prompt and receives a scalar score.,README.md,"despite the name, a candidate scorer with a single-output head, not the Kev pointer head"
+Skyl4r-Ai/Skylar-980M-Cobol-Decider,b,the decision reads the trunk's state at each option's closing <|im_end|>,github:skyl4r-ai/skylar/models/decider.py,card says only 'a new decision head'; code gives an option-marker head with a 2-layer set head

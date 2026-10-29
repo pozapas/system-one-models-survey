@@ -1,0 +1,102 @@
+name: JevK5-9B v0.3.3 — open-weight Jev alternative, 9B
+name_src:
+  quote: '# JevK5-9B v0.3.3 — open-weight Jev alternative, 9B'
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+hf_id: alibiserikbay/JevK5-9B
+hf_id_src:
+  quote: '`jevk5-serve --model alibiserikbay/JevK5-9B --port 8090`. Both read `temperature` and'
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+revision_sha: d6521a18a86999190e9d775c915af3d6d6772fc4
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+vendor_or_author: alibiserikbay
+vendor_or_author_src:
+  quote: 'JevK5-9B is the larger sibling of [JevK5](https://huggingface.co/alibiserikbay/JevK5): the same'
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+release_date: '2026-09-25'
+release_date_src:
+  quote: (HF API createdAt for alibiserikbay/JevK5-9B)
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+backbone: Qwen/Qwen3.5-9B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-9B'
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+decision_head: on the Hub call `generate()` and do not perform JevK5's decision readout.
+decision_head_src:
+  quote: on the Hub call `generate()` and do not perform JevK5's decision readout.
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+training_objective: WinoGrande (0.85 → 0.95) and Amazon ESCI (0.53 → 0.60); its largest loss is HellaSwag (0.87 →
+training_objective_src:
+  quote: WinoGrande (0.85 → 0.95) and Amazon ESCI (0.53 → 0.60); its largest loss is HellaSwag (0.87 →
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+training_data: v0.3 training data on Qwen3.5-9B. It is an independent, Apache-2.0 open-source alternative to
+training_data_src:
+  quote: v0.3 training data on Qwen3.5-9B. It is an independent, Apache-2.0 open-source alternative to
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: TypeSafe's Jev for typed decisions. It reads a state and a yes/no (`noul`), choice, or score question
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+source_urls:
+- 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'
+- 'https://github.com/allebee/jevk5'
+source_urls_src:
+  quote: 'runs on the [JevK5 runtime](https://github.com/allebee/jevk5), which also serves a TypeSafe-style'
+  url: 'https://huggingface.co/alibiserikbay/JevK5-9B/raw/d6521a18a86999190e9d775c915af3d6d6772fc4/README.md'

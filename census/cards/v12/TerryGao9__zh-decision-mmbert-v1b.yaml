@@ -1,0 +1,103 @@
+name: jev-zh-mmbert-base-v1b
+name_src:
+  quote: '# jev-zh-mmbert-base-v1b'
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+hf_id: TerryGao9/zh-decision-mmbert-v1b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+revision_sha: e4df2f88ef279362f629e9cd8a67ff60b81c28de
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+vendor_or_author: TerryGao9
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+release_date: '2026-09-30'
+release_date_src:
+  quote: (HF API createdAt for TerryGao9/zh-decision-mmbert-v1b)
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+availability_and_license: Open weights, cc-by-sa-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-sa-4.0'
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+backbone: jhu-clsp/mmBERT-base
+backbone_src:
+  quote: 'base_model: jhu-clsp/mmBERT-base'
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+decision_head: calibrated probabilities over the options. Laya checkpoint format (the head is upstream `laya`'s own module); `jevzh compat` checks that it loads in the `laya` reference runtime and Laya's `/v1/systemone` server (plus `laya-mlx` on Apple silicon).
+decision_head_src:
+  quote: calibrated probabilities over the options. Laya checkpoint format (the head is upstream `laya`'s own module); `jevzh compat` checks that it loads in the `laya` reference runtime and Laya's `/v1/systemone` server (plus `laya-mlx` on Apple silicon).
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+training_objective: '- Recipe: RLCD (policy gradient on a strictly proper score) + soft cross-entropy, as in the upstream Laya notebook; temperatures fitted on a held-out calibration slice.'
+training_objective_src:
+  quote: '- Recipe: RLCD (policy gradient on a strictly proper score) + soft cross-entropy, as in the upstream Laya notebook; temperatures fitted on a held-out calibration slice.'
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+training_data: variance. The probe sets guided the design of this version's training data and format (no probe item was trained on), so probe gains are not a clean held-out measure; the never-trained eval sources are the least targeted yardstick. / **预览版，不是正式版。** 只训
+training_data_src:
+  quote: variance. The probe sets guided the design of this version's training data and format (no probe item was trained on), so probe gains are not a clean held-out measure; the never-trained eval sources are the least targeted yardstick. / **预览版，不是正式版。** 只训
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 中文优先的类型化决策模型（System One）：给定状态（文本 / JSON）和一个带选项的问题，一次前向计算输出每个选项的校准概率（choice / score / noul），不生成文本。检查点使用 Laya 的格式（决策头就是上游 `laya` 的模块），`jevzh compat` 已检查它能被 `laya` 参考运行时和 Laya 的 `/v1/systemone` 服务加载（Apple 芯片上另查 `laya-mlx`）。
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+source_urls:
+- 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'
+- 'https://github.com/PolyAI-LDN/task-specific-datasets'
+- 'https://github.com/google-research-datasets/boolean-questions'
+source_urls_src:
+  quote: 'al. 2020); CC BY 4.0 link; indicate modifications ([source](https://github.com/PolyAI-LDN/task-specific-datasets/blob/master/LICENSE)) |'
+  url: 'https://huggingface.co/TerryGao9/zh-decision-mmbert-v1b/raw/e4df2f88ef279362f629e9cd8a67ff60b81c28de/README.md'

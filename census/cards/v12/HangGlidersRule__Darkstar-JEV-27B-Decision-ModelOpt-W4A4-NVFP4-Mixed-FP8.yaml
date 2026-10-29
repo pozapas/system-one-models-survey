@@ -1,0 +1,102 @@
+name: Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8
+name_src:
+  quote: '# Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8'
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+hf_id: HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+revision_sha: 4fa9b02d0dcd6d8abe94d1f803e97670531a9084
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+vendor_or_author: HangGlidersRule
+vendor_or_author_src:
+  quote: '- [Source card](https://github.com/HangGlidersRule/model-forge/blob/main/models/jev-27b/model-card/decision-nvfp4.md)'
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+release_date: '2026-10-27'
+release_date_src:
+  quote: (HF API createdAt for HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8)
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+backbone: Qwen/Qwen3.8-27B
+backbone_src:
+  quote: 'base_model:'
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+decision_head: as calibrated probabilities from one forward pass with a one-token readout.
+decision_head_src:
+  quote: as calibrated probabilities from one forward pass with a one-token readout.
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+training_objective: '- 256 chat samples from `nvidia/Nemotron-SFT-Instruction-Following-Chat-v2` at'
+training_objective_src:
+  quote: '- 256 chat samples from `nvidia/Nemotron-SFT-Instruction-Following-Chat-v2` at'
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 1 decision model, quantized with NVIDIA ModelOpt. Typed decisions (`noul` yes/no, `choice` with up to 16 native
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+source_urls:
+- 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'
+- 'https://github.com/HangGlidersRule/model-forge'
+source_urls_src:
+  quote: '- [Source card](https://github.com/HangGlidersRule/model-forge/blob/main/models/jev-27b/model-card/decision-nvfp4.md)'
+  url: 'https://huggingface.co/HangGlidersRule/Darkstar-JEV-27B-Decision-ModelOpt-W4A4-NVFP4-Mixed-FP8/raw/4fa9b02d0dcd6d8abe94d1f803e97670531a9084/README.md'

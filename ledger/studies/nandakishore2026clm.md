@@ -1,0 +1,29 @@
+# nandakishore2026clm
+
+arXiv 2610.07177 (v1, 05 Oct 2026). "CLM-as-a-Judge: Evaluating an Open Contrastive Decision Model on Public Judge Benchmarks". Full text: fulltext/2610.07177.html and .txt. Extractor batch V08.
+
+**Author and affiliation.** Gowthamkumar Nandakishore, independent researcher (title page). Independence statement: no affiliation, funding or financial interest in Contrastive-LM, Alibaba/Qwen, Amazon/AWS, Convai Innovations, TypeSafe, meraGPT or the benchmark publishers (Abstract, Section 9). Independent.
+
+**Task and data.** Judging. Five preference benchmarks (RewardBench filtered split, RewardBench 2 best-of-four plus a derived pairwise form, RM-Bench official style matrix, JudgeBench) and one hallucination benchmark (HaluEval; qa, dialogue, summarization subsampled to 1,000 rows each, general kept) (Section 3, Benchmarks and task mapping). RewardBench 2 Ties excluded. Splits 30% calibration, 70% evaluation, stratified by benchmark and subset, assigned at prompt level with seed 20261001 (Preregistration). Item counts n are not stated in the text (they are in released manifests per Section 10), so n is "not reported" in the ledger.
+
+**Decision model.** Contrastive-LM/CLM-v0.1-8B (CLM), an open contrastive decision model that selects among typed candidate answers by embedding similarity behind a local embeddings server written for the study; encoder not quantized; serving path verified against the publisher's examples with one recorded discrepancy; zero-shot; confidence is the maximum probability (Section 3, CLM). Pinned by immutable revision hash in anc/pins.json (hash not printed in text). A fine-tuned variant with new decision heads trained on 10,000 deduplicated pairs from the Skywork preference dataset. Also laya 0.3.20 base checkpoint, 512-token window.
+
+**Comparators.** Qwen3-8B non-thinking via MLX bfloat16, greedy, at most 64 new tokens, one frozen prompt per task form with one-line JSON label and stated confidence (cheap generative judge); Qwen3-32B served through Amazon Bedrock as qwen.qwen3-32b-v1:0, temperature 0, 64 completion tokens, frozen prompt (strong judge); Skywork-Reward-V2-8B reward model selected by a preregistered rule (top open sequence-classifier at or under 8B on pinned RewardBench 2 leaderboard); trivial baselines always-first, random, longer-wins (Section 3). Tuning-budget parity: frozen prompts, one prompt per task form, same scoring rules and truncation policy; truncation windows differ (2048 CLM, 512 laya, 4096 others) which the author says frames every comparison (Section 3 Truncation, Table 1). HaluEval excludes the reward model by preregistration.
+
+**Reference labels.** Each benchmark's official labels, "no human adjudication", known noise accepted (Section 7 item 4). Mixed: human preference or curated labels (RewardBench family, RM-Bench), objective correctness (JudgeBench), HaluEval labels. Ledger uses human_crowd for most rows and task_outcome for JudgeBench.
+
+**Sampling design, intervals.** Cluster bootstrap at prompt level, 10,000 resamples, seed 0: BCa for single quantities, percentile for paired deltas; Benjamini-Hochberg at q=0.05 across a preregistered hypothesis family; preregistration frozen before any evaluation item was scored (SHA-256 in anc/prereg_freeze.json). Two departures: strong judge on Bedrock so the latency-cost criterion H4 was not evaluated; duplicate source ids handled by occurrence index (Section 3, Preregistration).
+
+**Exposure.** Benchmarks are public releases from 2024 and 2025; no contamination check is reported. Test items are public with answer keys. Hosted strong judge not revision pinned (Section 7 item 1).
+
+**Cost and latency.** Median per item on one Apple M5 Max, 20-item probes: CLM 338 ms on RewardBench vs Qwen3-8B 746, Skywork 244, laya 23; CLM 63 ms on HaluEval vs Qwen3-8B 635 (Table 5). No cost ratio against the hosted judge is computed (Section 6).
+
+**Calibration.** 15-bin equal-width ECE, NLL and signed gap; four maps (identity, one pooled temperature, per-benchmark temperature, per-benchmark isotonic) fit on calibration items only. Pooled T=20.1, at the fitter's upper bound (log T in [-3,3]). ECE falls from 0.235 to 0.402 under identity to 0.032 to 0.062 (Table 3, Section 5). Per-benchmark temperature and isotonic help on some benchmarks and hurt on JudgeBench. Calibrated-confidence AUROC for own errors above chance on RewardBench 0.587, RewardBench 2 0.609, pairs 0.602; at chance on RM-Bench 0.487 and HaluEval 0.495 (Section 5).
+
+**Cascade.** Confidence below a threshold escalates to Qwen3-32B; threshold is the lowest calibration-split grid point meeting the preregistered 0.97 retention bar. Escalation fractions 0.923 to 1.000; cascade accuracy equals the strong judge on RewardBench 2, JudgeBench, HaluEval; random-escalation control performs comparably (Table 4, Section 6). At error target 0.10 no acceptance rule produces a threshold on five of six benchmarks (Section 5).
+
+**Order, length, robustness.** Order-flip 0.0002 (3 flips, all exact score ties) vs reward model 0.0019, generative 0.2188, laya 0.4395. Length: CLM delta -0.023, generative -0.217, reward model -0.399 (Section 4). HaluEval: CLM answers every item with one constant label (Section 4). No option-name, cardinality or language tests.
+
+**Code and data.** Arxiv ancillary files anc/ hold the preregistration, pins, split listings, per-item predictions, metric JSONs, code; a mechanical NUMBER_CHECK; independent sessions recomputed quantities (Section 10). Experiments were executed by LLM agents under the author's direction (Acknowledgements).
+
+**Authors' limitations (Section 7).** Hosted strong judge not pinned; encoder serving path locally built; truncation differences; no human adjudication; scope of one cheap judge, one strong judge, one error target, one machine.

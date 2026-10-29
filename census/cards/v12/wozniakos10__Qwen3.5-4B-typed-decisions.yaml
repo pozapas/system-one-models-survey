@@ -1,0 +1,102 @@
+name: Qwen3.5-4B-typed-decisions
+name_src:
+  quote: '# Qwen3.5-4B-typed-decisions'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+hf_id: wozniakos10/Qwen3.5-4B-typed-decisions
+hf_id_src:
+  quote: 'The merged 16-bit version is at [`wozniakos10/Qwen3.5-4B-typed-decisions-merged`](https://huggingface.co/wozniakos10/Qwe'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+revision_sha: 38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+vendor_or_author: wozniakos10
+vendor_or_author_src:
+  quote: 'The merged 16-bit version is at [`wozniakos10/Qwen3.5-4B-typed-decisions-merged`](https://huggingface.co/wozniakos10/Qwe'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+release_date: '2026-10-10'
+release_date_src:
+  quote: (HF API createdAt for wozniakos10/Qwen3.5-4B-typed-decisions)
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+backbone: unsloth/Qwen3.5-4B
+backbone_src:
+  quote: 'base_model: unsloth/Qwen3.5-4B'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+decision_head: This repository contains the LoRA adapters and the decision head, loaded on top of `unsloth/Qwen3.5-4B`.
+decision_head_src:
+  quote: This repository contains the LoRA adapters and the decision head, loaded on top of `unsloth/Qwen3.5-4B`.
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+training_objective: '| Final training loss | 0.7875 |'
+training_objective_src:
+  quote: '| Final training loss | 0.7875 |'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+training_data: Trained with `DecisionTrainer` on the `all` config, `train` split of `LocalLLaMA/typed-decisions`. A part of the training rows was held out with `FastDecisionModel.split_holdout`. The output probabilities have not been temperature-calibrated.
+training_data_src:
+  quote: Trained with `DecisionTrainer` on the `all` config, `train` split of `LocalLLaMA/typed-decisions`. A part of the training rows was held out with `FastDecisionModel.split_holdout`. The output probabilities have not been temperature-calibrated.
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+context_length: '| Max sequence length | 2048 |'
+context_length_src:
+  quote: '| Max sequence length | 2048 |'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `noul` | A yes/no question | Probability that the answer is yes |'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+source_urls:
+- 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'
+- 'https://github.com/unslothai/unsloth'
+source_urls_src:
+  quote: 'B`](https://huggingface.co/unsloth/Qwen3.5-4B) with [Unsloth](https://github.com/unslothai/unsloth) on [`LocalLLaMA/typed-decisions`](https://huggingface.co/dat'
+  url: 'https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions/raw/38a68ba2a634dd0a42c74d9d13bcdf2707de1d9e/README.md'

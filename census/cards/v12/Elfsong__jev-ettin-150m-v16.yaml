@@ -1,0 +1,102 @@
+name: JEV Ettin 150M V16
+name_src:
+  quote: '# JEV Ettin 150M V16'
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+hf_id: Elfsong/jev-ettin-150m-v16
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+revision_sha: eae2fdc005c4e19f9bd8c42950120667231503df
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+vendor_or_author: Elfsong
+vendor_or_author_src:
+  quote: '[Public run and pinned release](https://huggingface.co/datasets/Elfsong/jev-decision-index-v16).'
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+release_date: '2026-10-23'
+release_date_src:
+  quote: (HF API createdAt for Elfsong/jev-ettin-150m-v16)
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+backbone: cross-encoder/ettin-reranker-150m-v1
+backbone_src:
+  quote: 'base_model: cross-encoder/ettin-reranker-150m-v1'
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+decision_head: The unchanged Crivo option-marker readout jointly encodes instructions, state and every option. A learned type embedding and shared scorer read each `[OPT]` token. Softmax returns a distribution over each question's options. There is no autoregressive generati
+decision_head_src:
+  quote: The unchanged Crivo option-marker readout jointly encodes instructions, state and every option. A learned type embedding and shared scorer read each `[OPT]` token. Softmax returns a distribution over each question's options. There is no autoregressive generati
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+training_objective: 'Full-parameter continual SFT from our V15 sampled stage2, with categorical CE + 0.5 × sum-form Brier. V16 uses 64 requested questions/update: general 35, multi-tool 8, single-call 3, no-call 1, When2Call 1, ACOS 6, Home/CLadder 3, long/evidence 7. `mix10` uses'
+training_objective_src:
+  quote: 'Full-parameter continual SFT from our V15 sampled stage2, with categorical CE + 0.5 × sum-form Brier. V16 uses 64 requested questions/update: general 35, multi-tool 8, single-call 3, no-call 1, When2Call 1, ACOS 6, Home/CLadder 3, long/evidence 7. `mix10` uses'
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+training_data: used for gradient updates or within-run checkpoint selection. Raw training data and benchmark prompts are not redistributed.
+training_data_src:
+  quote: used for gradient updates or within-run checkpoint selection. Raw training data and benchmark prompts are not redistributed.
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: the same `engine(state, questions)` with the kit's schema. Text `choice` and `noul` are supported. The adapter does not expose ordinal score or vision inference. `noul` returns P(true); a choice returns an answer key and probabilities summing to one over
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+source_urls:
+- 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'
+- 'https://github.com/apolinario/decision-index'
+source_urls_src:
+  quote: 'This release is submitted in [PR #277](https://github.com/apolinario/decision-index/pull/277) for the current **Decision Index 0.4.1** board. The official Octob'
+  url: 'https://huggingface.co/Elfsong/jev-ettin-150m-v16/raw/eae2fdc005c4e19f9bd8c42950120667231503df/README.md'

@@ -1,0 +1,7 @@
+{"values": {"hosted": {
+ "inputPricePerMtok": {"text": "0.042", "source": "shared/census/hosted_models_v12.csv", "note": "US dollars per million input tokens, output free; the same for Jev 1.13, Jev 1.14, Microsoft-Decision-1 and Trio-Spark v1.3 (vendor pages, accessed 2026-10-28)"},
+ "trioSparkEce": {"text": "0.019", "source": "shared/census/hosted_models_v12.csv", "note": "Trio-Spark v1.3 vendor-reported ECE on its own 2,977-decision text panel, 10 bins (model card, accessed 2026-10-28)"},
+ "trioSparkMaxOptions": {"text": "8", "source": "shared/census/hosted_models_v12.csv", "note": "Trio-Spark accepts 2 to 8 choices (model card)"},
+ "decisionOneContextK": {"text": "32K", "source": "shared/census/hosted_models_v12.csv", "note": "Microsoft-Decision-1 input limit in the Foundry catalog"},
+ "providers": {"text": "five", "source": "shared/census/hosted_models_v12.csv", "note": "providers of a typed decision model at the cutoff: TypeSafe, Microsoft, MachineFi, Cloudflare, Perplexity"}
+}}}

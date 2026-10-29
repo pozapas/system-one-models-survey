@@ -1,0 +1,101 @@
+name: '{''topic'': {''choice'': ''coding'', ''probs'': {''coding'': 0.673, ''math'': 0.326, ...}, ''confidence'': 0.673},'
+name_src:
+  quote: '# {''topic'': {''choice'': ''coding'', ''probs'': {''coding'': 0.673, ''math'': 0.326, ...}, ''confidence'': 0.673},'
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+hf_id: q-project/N-Q-26M-JEV
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+revision_sha: 95ff381014e62ce3e31b5ed18cf864b99b738145
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+vendor_or_author: q-project
+vendor_or_author_src:
+  quote: 'It is [N-Q-26M-Chat](https://huggingface.co/q-project/N-Q-26M-Chat) (Gated DeltaNet + gated attention, Russian and'
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+release_date: '2026-10-26'
+release_date_src:
+  quote: (HF API createdAt for q-project/N-Q-26M-JEV)
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+backbone: q-project/N-Q-26M-Chat
+backbone_src:
+  quote: 'base_model: q-project/N-Q-26M-Chat'
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+parameter_count: At 26M parameters the model learns every task family it is trained on, with honest probabilities, but it does
+parameter_count_src:
+  quote: At 26M parameters the model learns every task family it is trained on, with honest probabilities, but it does
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+decision_head: English) with a linear decision head. The language-model head is kept, so the checkpoint can still generate text.
+decision_head_src:
+  quote: English) with a linear decision head. The language-model head is kept, so the checkpoint can still generate text.
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+training_objective: Full fine-tune of N-Q-26M-Chat plus the new head, log-loss over the options (a proper scoring rule, which is what keeps
+training_objective_src:
+  quote: Full fine-tune of N-Q-26M-Chat plus the new head, log-loss over the options (a proper scoring rule, which is what keeps
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+training_data: not a product.** The model is good at the kinds of decisions it was trained on and
+training_data_src:
+  quote: not a product.** The model is good at the kinds of decisions it was trained on and
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+state_modality: 'model in the style of TypeSafe AI''s Jev: instead of generating text, it reads a **state** (any text), a'
+state_modality_src:
+  quote: 'model in the style of TypeSafe AI''s Jev: instead of generating text, it reads a **state** (any text), a'
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `choice` | the picked option, the full distribution, the confidence |'
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+source_urls:
+- 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/q-project/N-Q-26M-JEV/raw/95ff381014e62ce3e31b5ed18cf864b99b738145/README.md'

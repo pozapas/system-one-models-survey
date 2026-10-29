@@ -1,0 +1,103 @@
+name: autotrust/JEV-27B-VL
+name_src:
+  quote: '# autotrust/JEV-27B-VL'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+hf_id: autotrust/JEV-27B-VL
+hf_id_src:
+  quote: '# autotrust/JEV-27B-VL'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+revision_sha: 9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+vendor_or_author: autotrust
+vendor_or_author_src:
+  quote: '# autotrust/JEV-27B-VL'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+release_date: '2026-09-30'
+release_date_src:
+  quote: (HF API createdAt for autotrust/JEV-27B-VL)
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+backbone: Qwen/Qwen3.8-27B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.8-27B'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+decision_head: '* **Zero-shot on images:** the System 1 adapter and decision head were trained on text only; the vision encoder is'
+decision_head_src:
+  quote: '* **Zero-shot on images:** the System 1 adapter and decision head were trained on text only; the vision encoder is'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+training_objective: '**Plan-RewardBench (ACL 2026).** Which of two complete trajectories of a tool-using agent is better? On 1,171 pairs (planning,'
+training_objective_src:
+  quote: '**Plan-RewardBench (ACL 2026).** Which of two complete trajectories of a tool-using agent is better? On 1,171 pairs (planning,'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+training_data: '| rank | model | setting | ERQA | robot / embodied training data | source |'
+training_data_src:
+  quote: '| rank | model | setting | ERQA | robot / embodied training data | source |'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+state_modality: 'one thing about it. Plain text and JSON both work: a JSON `state` scored the same as plain text (83.8% vs 83.2%,'
+state_modality_src:
+  quote: 'one thing about it. Plain text and JSON both work: a JSON `state` scored the same as plain text (83.8% vs 83.2%,'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: understands the physical world a robot acts in. It has 400 multiple-choice questions about real robot and
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+source_urls:
+- 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'
+- 'https://github.com/embodiedreasoning/ERQA'
+- 'https://github.com/westlake-repl/MicroLens'
+source_urls_src:
+  quote: '**The benchmark.** [ERQA](https://github.com/embodiedreasoning/ERQA) (Embodied Reasoning Question Answering) is the'
+  url: 'https://huggingface.co/autotrust/JEV-27B-VL/raw/9e53b8a809d2ab98e3e6a55b2b2dbf94b4c1e84a/README.md'

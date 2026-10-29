@@ -1,0 +1,103 @@
+name: autotrust/JEV-9B
+name_src:
+  quote: '# autotrust/JEV-9B'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+hf_id: autotrust/JEV-9B
+hf_id_src:
+  quote: '# autotrust/JEV-9B'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+revision_sha: 7ac669b8fb476ba926491e3d1c39f9330d68dbed
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+vendor_or_author: autotrust
+vendor_or_author_src:
+  quote: '# autotrust/JEV-9B'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+release_date: '2026-09-23'
+release_date_src:
+  quote: (HF API createdAt for autotrust/JEV-9B)
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+backbone: Qwen/Qwen3.5-9B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-9B'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+parameter_count: 2. **Small trainable footprint.** 40.2 M parameters — 0.5 % of the backbone. Validation KL was already below 0.10 after
+parameter_count_src:
+  quote: 2. **Small trainable footprint.** 40.2 M parameters — 0.5 % of the backbone. Validation KL was already below 0.10 after
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+decision_head: '| Backbone | `Qwen/Qwen3.5-9B` text tower (vision tower and MTP head dropped), bf16 | 7.9 B | no — bit-identical to the base | both systems |'
+decision_head_src:
+  quote: '| Backbone | `Qwen/Qwen3.5-9B` text tower (vision tower and MTP head dropped), bf16 | 7.9 B | no — bit-identical to the base | both systems |'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+training_objective: 'for both demos: [`vl/demos/`](vl/demos). Image judging, briefly: VL-RewardBench 74.3%, AgentRewardBench AUROC 0.91,'
+training_objective_src:
+  quote: 'for both demos: [`vl/demos/`](vl/demos). Image judging, briefly: VL-RewardBench 74.3%, AgentRewardBench AUROC 0.91,'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+training_data: Tracker) evaluates 55 of them. Most are trained on human or programmatic gold labels, or on their own synthetic data, so
+training_data_src:
+  quote: Tracker) evaluates 55 of them. Most are trained on human or programmatic gold labels, or on their own synthetic data, so
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: ggingface.co/autotrust/JEV-27B). *System 1* answers typed questions (`noul` yes/no ·
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+source_urls:
+- 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'
+- 'https://github.com/gazelle93/decision-models-under-pressure'
+- 'https://github.com/fstandhartinger/jevbench'
+source_urls_src:
+  quote: 'relative to Jev** on [`decision-models-under-pressure`](https://github.com/gazelle93/decision-models-under-pressure), 16 options, human gold labels | JEV-'
+  url: 'https://huggingface.co/autotrust/JEV-9B/raw/7ac669b8fb476ba926491e3d1c39f9330d68dbed/README.md'

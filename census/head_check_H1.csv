@@ -1,0 +1,95 @@
+id,panel,quote,source,note
+0xBrandon/Decision-WAF-V1-0.1B,c,One-token classification head readout; loss on the answer token only.,README.md,Card says the model replies with a single letter token scored as a distribution over the categories; wording 'classification head' is loose but no separate trained head is described.
+0xBrandon/Decision-WAF-V1-0.8B,c,One-token classification head readout; loss on the answer token only.,README.md,Card says the model replies with a single letter token scored as a distribution over the categories; wording 'classification head' is loose but no separate trained head is described.
+0xBrandon/Decision-WAF-V1.1-0.8B,c,One-token classification head readout; loss on the answer token only.,README.md,Card says the model replies with a single letter token scored as a distribution over the categories; wording 'classification head' is loose but no separate trained head is described.
+0xSojalSec/Jev-Omni,a,"The head accepts 256, but quality above 20 is not established.",README.md,256-slot head on Gemma 4 12B.
+abhishek085/jev-control-core,c,"the answer-slot letter logits are read from a single forward pass, restricted to the valid option letters, and softmaxed.",README.md,
+abhishek085/jev-control-es,b,each `[MASK]` position's hidden state is projected to a scalar by the linear head,README.md,"Laya-style option-marker scorer, single linear head."
+abidlabs/jev-typed-decisions-causal-0.6b,c,next-token distribution restricted to the candidate option letters,README.md,"LM head frozen, LoRA only."
+aimeigaoshou/agent-jev,b,A permutation-equivariant candidate head scores the options you supply,README.md,Qwen3-0.6B with the LM head removed.
+ait-hf/certus-jev-like-v0007,c,Every answer is the soft-max over the logits of the option letters at the assistant turn,README.md,
+akhilaaa3/Jev-Omni,a,"The head accepts 256, but quality above 20 is not established.",README.md,256-slot head on Gemma 4 12B.
+AlephFunk/jev-qwen,c,takes a softmax over those label logits at the answer position: one forward pass,README.md,
+alibiserikbay/JevK5,c,"a softmax over the answer letters' next-token logits, divided by one calibration temperature",README.md,
+alibiserikbay/JevK5-2B,c,"a softmax over the answer letters' next-token logits, divided by one calibration",README.md,
+alibiserikbay/JevK5-9B,c,"a softmax over the answer letters' next-token logits, divided by one calibration temperature",README.md,
+altslate/certo-decision-model,b,"encode the state once, encode each OPTION from its text description, and score every option independently against the state",model_generic.py (github.com/AltSlate-Labs/certo),"Card says only 'per-option query/scoring head'; code shows state encoded once, small cross-attention head scores all options, so b not d."
+AmirBraham/jevstral-8b,b,`head.pt`: the pointer head and the temperature.,README.md,
+AndeyTait/JevForge-0.8B,d,Every row contains the same page state and question plus one candidate path.,README.md (github.com/zwliJay/jev-forge),"HF card says only 'shared scalar candidate head and whole-question candidate softmax'; the linked repo expands a question into K rows, one per candidate."
+anthonym21/qwen3-0.6b-rlcd-decision,c,The readout is the softmax over the 26 letter rows at the last prompt token,README.md,
+aravind1706/decider-ettin,b,[DECISION] [STATE] <state text> [QUESTION] <question text> [OPT_0] <option 0> [OPT_1] <option 1> ...,README.md,"Option positions (option_pos input) read from [OPT_i] markers; outputs named 'logits over option slots' but capped at 10 markers, so b."
+argos1111/modernbert-ja-310m-jev,d,model = AutoModelForSequenceClassification.from_pretrained(repo).eval(),README.md,Cross-encoder; each candidate scored separately and softmaxed.
+asjson/jevson-4b-01,undisclosed,This release is a LoRA over `Qwen/Qwen3-4B` plus small readout heads and fitted calibration temperatures.,README.md,Card names pointer.pt and other heads only for span extraction; how decision-mode options are read is not stated. Could be b.
+assix-research/jev-system1-gemma4-26b-decide,b,pools token span representations across all candidate options simultaneously,README.md,Clef-style span-pooling head.
+AstitwaAgarwal/multimodal-jev,b,o_j = W_o · mean(h[option j]),README.md,"q from last token, option vectors from mean-pooled option spans, dot-product softmax; 2-255 options."
+AstroHan/decision-head-qwen3.5-4b-rlcd-32k,c,it reads single-token A–Z logits out of the frozen vocabulary,README.md,
+autotrust/JEV,a,a 24-slot fp32 decision head initialised from `lm_head` rows,README.md,
+autotrust/JEV-27B-VL,a,"s = DH[""slots""][""ranges""][kind][0]",README.md,Card shows slot ranges in the decision-head file and reads option tokens at slot ids; slot count not stated on this card (35B sibling says 264).
+autotrust/JEV-35B,a,A 264-slot decision head gives one logit per slot,README.md,
+autotrust/JEV-9B,a,a 24-slot fp32 decision head initialised from `lm_head` rows,README.md,
+autotrust/JEV-Gemma4-26B-A4B,a,"goes through a linear fp32 head (hidden 2,816 → 24 slots)",README.md,
+avbiswas/bev-decider-0.4B,b,"Each option's embedding is then passed through a small, newly trained self-attention head",README.md,
+azharmo/build-jev-from-scratch,a,choice : softmax over K logits -> distribution + confidence,jev_toy/model.py,Toy pooled-state model; fixed choice head (num_choice_heads=8) plus noul and score heads.
+berkay123001/turnike-jev-0.8b,c,the model's final hidden state is multiplied with the output rows of that question's symbols only.,README.md,
+berkay123001/turnike-jev-4b,c,the model's final hidden state is multiplied with the output rows of that question's symbols only.,README.md,
+berkay123001/turnike-jev-9b,c,the model's final hidden state is multiplied with the output rows of that question's symbols only.,README.md,
+bespokelabs/Bespoke-Nimble-27B-v3,undisclosed,The weights are not released yet.,README.md,Card gives no readout; hosted API only. Sibling Nimble models read answer tokens.
+bespokelabs/Bespoke-Nimble-9B,c,It scores the allowed answer tokens directly,README.md,
+bespokelabs/Bespoke-Nimble-9B-v2,c,It scores allowed answer-token logits to return,README.md,
+bespokelabs/Bespoke-Nimble-9B-v3,c,"""candidate_encoding"": ""uppercase_single_token_v1""",schema_config.json,"Card silent; config lists single-token candidate codes (255), same recipe as Nimble-9B."
+bespokelabs/Nimble-v4-max,c,scores one token per option,README.md,
+bizhmans/krasivo-jev-bf16,b,plus a 256-dim pointer head,README.md,
+bizhmans/krasivo-jev-no-bench-bf16,b,plus a 256-dim pointer head,README.md,
+BricksDisplay/jevling-0.8b-v0.1,c,"torch.softmax(logits[s, LETTER_IDS[:n]].float(), 0).tolist()",README.md,Read from the card's reference code.
+BricksDisplay/jevling-0.8b-v1,c,"torch.softmax(logits[s, LETTER_IDS[:n]].float(), 0).tolist()",README.md,Read from the card's reference code.
+BricksDisplay/jevling-e2b-v0.1,c,"torch.softmax(logits[s, LETTER_IDS[:n]].float(), 0).tolist()",README.md,Read from the card's reference code.
+BricksDisplay/jevling-e2b-v1,c,"torch.softmax(logits[s, LETTER_IDS[:n]].float(), 0).tolist()",README.md,Read from the card's reference code.
+carrtesy/EXAONE-4.0-1.2B-JEV,c,the probability of every option is read from the logits at the answer position,README.md,
+chaoliangUNSW/Jev-Style-0.8B-Decision-v3,c,"No parameters are added, so the weights stay a standard Qwen3.5 text model.",README.md,Per-option verdict slot scored as logit(yes) minus logit(no) from the tied LM-head rows.
+chaoliangUNSW/Jev-Style-2B-Decision-v3,c,"Option k's score is `logit("" yes"") − logit("" no"")` at its ` ->` slot",README.md,Scalar Yes-minus-No readout at a per-option slot in one pass; no added head.
+chaoliangUNSW/Jev-Style-2B-Decision-v4,c,"Option k's score is `logit("" yes"") − logit("" no"")` at its ` ->` slot",README.md,Same readout as v3.
+chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2,c,"""interface"": ""exact option logits at last prompt position""",decision_config.json,Card silent; config says option logits at the last prompt position (26 options max).
+chendren/cx-decider-applied-v1,b,"""head_type"": ""pointer""",strands_decider_config.json,"Card silent; config has head_type pointer with pointer_dim 256 and num_slots 24, so pointer head wins over fixed slots."
+chenz53/Jev-alpha-26B-A4B,c,"scores = logits[0, -1, label_ids(tokenizer)[:len(order)]].float()",README.md,2-26 options via label tokens.
+Cloudflare/clef,b,"a small transformer head that reads the backbone's final hidden states, routes evidence from the state to each question",README.md,
+Cloudflare/clef-flash,b,"a small transformer head that reads the backbone's final hidden states, routes evidence from the state to each question",README.md,
+Cloudflare/clef-omni,b,"a small transformer head that reads the backbone's final hidden states, routes evidence from the state to each question",README.md,
+com-kotobalabs/open-jev-deberta-v3-large,b,For each option the head scores `[mean(question tokens); mean(option tokens); product]`,README.md,"Conflicts with CARD_PANELS (d): the encoder reads state and all questions at once and a 3-layer head scores every option from pooled features, which is the brief's b, not separate pair encodings."
+convaiinnovations/laya,b,"Every option is scored at its own `[MASK]` token, then softmaxed over that question's options.",README.md,
+convaiinnovations/laya-multilingual,b,"every option is scored at its own `[MASK]` token, then softmaxed over that question's options",README.md,
+cribl-ai/cribl-decision-1.0,c,"hidden state through the native `lm_head`, restricted to candidate-letter tokens.",README.md,
+cribl-ai/cribl-decision-1.0-0.8B,c,"hidden state through the native `lm_head`, restricted to candidate-letter tokens.",README.md,
+cribl-ai/cribl-decision-1.0-27B,c,"hidden state through the native `lm_head`, restricted to candidate-letter tokens.",README.md,
+cribl-ai/cribl-decision-1.0-9B,c,"hidden state through the native `lm_head`, restricted to candidate-letter tokens.",README.md,
+CVLTAI/s1-jev-cvltist,c,teacher-forces each option key and reads the single-token logit,README.md,
+Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision,b,The joint head uses a two-layer cross-attention refiner over option spans and state tokens.,README.md,"A long-context member encodes state, question and options separately but the joint member is the default."
+DavidHatley/system-one-mini,a,five independent `Linear -> GELU -> Dropout -> Linear` heads,README.md,Five fixed decisions with fixed class heads on DistilBERT; not an open-option model.
+DawoodKMasood/jev-gemma-3-270m,c,"choice_logits = logits[torch.tensor(candidate_ids, device=device)]",README.md,Read from the card's reference code.
+decision-tune/decisiontune-1.0,b,The head gives a score to the hidden state at each `[MASK]`.,README.md,
+decisionmodels/s1-llm-auto-router,a,with seven classification heads. Per-head calibration temperatures are in `meta.json`.,README.md,Seven fixed questions with fixed option sets.
+divyanshx11/JEVision,b,"a separately trained visual sidecar, pointer heads, and a bundled inference runtime",README.md,
+DKNTZMN/gan8-vs-jev,a,eight abstract frames plus two Jev-style single-pass heads trained on a controlled judgment bank,README.md,"Mechanism toy with linear and MLP noul heads on a feature vector, no language-model backbone; weakest fit to any class."
+dr3x1/jevsec,undisclosed,Any System One-compatible runtime on top of llama.cpp can serve this GGUF and expose `/v1/systemone`,README.md,"Only a claim of hosted-interface compatibility; merged LoRA GGUF, readout not described."
+dwidlee/systemone-lite-0.5b,c,ranks given symbols (usually one vocab id each);,README.md,Qwen2.5-0.5B-Instruct base; card brief on readout.
+ejbejaranos/JEV-HRI-LFM2-VL-450M,c,"(one forward pass, option tokens, per-kind calibration, LoRA on `lm_head`)",README.md,
+ejbejaranos/JEV-HRI-Qwen3-VL-2B,c,"(one forward pass, option tokens, per-kind calibration, LoRA on `lm_head`)",README.md,
+ejbejaranos/JEV-HRI-Qwen3-VL-4B,c,"(one forward pass, option tokens, per-kind calibration, LoRA on `lm_head`)",README.md,
+ejbejaranos/JEV-HRI-Qwen3-VL-8B,c,"(one forward pass, option tokens, per-kind calibration, LoRA on `lm_head`)",README.md,
+ejbejaranos/JEV-HRI-SmolVLM2-256M,c,"(one forward pass, option tokens, per-kind calibration, LoRA on `lm_head`)",README.md,
+Elfsong/jev-ettin-150m-v16,b,A learned type embedding and shared scorer read each `[OPT]` token.,README.md,
+Elfsong/jev-flan-t5-large-20261017-public-v2,b,"Candidate spans are mean-pooled and passed through LayerNorm, Linear, GELU, and Linear layers.",README.md,
+Elythros/elythros-decider-0.6b,b,"the final hidden state at each `<OPT>` goes through RMSNorm and a linear head,",README.md,
+Elythros/elythros-decider-1.7b,b,"the final hidden state at each `<OPT>` goes through RMSNorm and a linear head,",README.md,
+faizaltkl/qdec-lay-decision-model,b,which adds a small scoring head (the same design as Cloudflare's Clef) on top of the LLM.,README.md,
+FluidInference/kev-0-5b-coreml,b,This package merges the Kev LoRA adapter and keeps its trained pointer head.,README.md,
+flymy-ai/decision-4b-v1.1,c,the option letters' logits at the last prompt token (fp32 projection of its hidden state),README.md,
+flymy-ai/decision-4b-v1.2,c,the option letters' logits at the last prompt token (fp32 projection of its hidden state),README.md,
+flymy-ai/decision-4b-v1.4,c,the option letters' logits at the last prompt token (fp32 projection of its hidden state),README.md,
+flymy-ai/decision-4b-v1.5,c,the option letters' logits at the last prompt token (fp32 projection of its hidden state),README.md,
+flymy-ai/decision-4b-v1.6,c,the option letters' logits at the last prompt token (fp32 projection of its hidden state),README.md,
+forward-metric/sysone-typed-decisions-0.4B,b,Decision heads: turn option vectors and a summary vector into one logit per option.,heads.py (github.com/ForwardMetric/sysone),"Card silent; config.json says head compact, and the sysone library's CompactHead scores option vectors."
+Fr0zencr4nE/jev-spatial,a,"The head outputs scores for up to `max_choices` options, and scores for options that don't exist in a request are masked out.",README.md,"Unified LayerNorm plus Linear head over a fixed maximum of choices, applied over several rounds."
+Futurix-AI/FxAI-decision-model,a,logits = self.readout(hidden).float(),futurix_decision/runtime.py,Card silent on the head; runtime has a linear readout masked to MAX_OPTIONS = 255 slots.
+gabrielfior/decider-q2b-1.1b,b,"a pointer head (~1M parameters, LayerNorm, 4-head cross-attention, residual pointer) that scores each option against the `<answer>` position",README.md,
+guanxuyu/visual-jev-4b-answer-sft,c,candidate-token logits read from the backbone's own LM head at one fixed readout position,README.md,
+guoan1/jev-qwen35-08b,c,"Scalar decision head `Linear(hidden→1)`, initialized as `W_lm[""Yes""] − W_lm[""No""]`",README.md,"Open-Jev recipe (coded c in CARD_PANELS) but candidates are rendered as independent Yes/No prompts, so d is arguable."

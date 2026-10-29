@@ -1,0 +1,101 @@
+name: Clef-Flash
+name_src:
+  quote: '# Clef-Flash'
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+hf_id: Cloudflare/clef-flash
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+revision_sha: f0b7d3cd65296abfe459e6c228b618f5d8b26d2f
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+vendor_or_author: Cloudflare
+vendor_or_author_src:
+  quote: '- **Announcement:** [Clef decision models on the Cloudflare blog](https://blog.cloudflare.com/clef-decision-models)'
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+release_date: '2026-09-30'
+release_date_src:
+  quote: (HF API createdAt for Cloudflare/clef-flash)
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+availability_and_license: Open weights (standard sharded safetensors), Apache-2.0; the Clef-Flash API is described as fully compatible with Jev and SystemOne; the card does not describe a hosted offering or price.
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+backbone: Qwen/Qwen3.5-9B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-9B'
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+parameter_count: 9B (model described as a 9B multimodal model)
+parameter_count_src:
+  quote: Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions.
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+decision_head: 'Joint schema head: a small transformer head over the backbone final hidden states that routes evidence from the state to each question and scores all options of all questions jointly'
+decision_head_src:
+  quote: '**Joint schema head:** a small transformer head that reads the backbone''s final hidden states,'
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+training_data: not disclosed (card says post-trained from the base model; data not itemised)
+training_data_src:
+  quote: post-trained
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+state_modality: text, JSON, images or video
+state_modality_src:
+  quote: It reads the state as text, JSON, images, or video, and returns a probability for every allowed option of every question in a single forward pass.
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+context_length: max_length default 16,384 tokens
+context_length_src:
+  quote: '`encode_record` accepts `max_length` (default 16,384 tokens) and `max_state_tokens` to bound the input.'
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+cardinality_limit: not disclosed
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+latency_with_hardware: Median 38.8 ms, p95 122.4 ms in the card's Decision Index table; hardware for that table not stated (usage tested on a single H200)
+latency_with_hardware_src:
+  quote: Median latency (ms) | 209.3 | 38.8 | 524.1
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+price: $0 self-hosted (open weights); no hosted price in the card
+price_src:
+  quote: Released under the Apache-2.0 license
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+confidence_definition: answers carry choice, confidence and probabilities; confidence formula not stated
+confidence_definition_src:
+  quote: A `choice` answer has `choice`, `confidence`, and `probabilities`
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+serving_temperature: not disclosed (card says apply a softmax per question; no temperature mentioned)
+serving_temperature_src:
+  quote: Apply a softmax per question to get probabilities.
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+calibration_as_shipped: not disclosed (no ECE in the card)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+disclosed_failure_modes: not disclosed as a section; per-benchmark table shows weak rows
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+evaluation_protocol_published: Internal run of the Decision Index 0.2.1 suite plus four Typesafe Evals workflows
+evaluation_protocol_published_src:
+  quote: 'Per-benchmark results from our internal run of the [Decision Index](https://clef-evals.workers-ai-mle.workers.dev) 0.2.1 suite.'
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: The Clef-Flash API is fully compatible with Jev and SystemOne.
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+source_urls:
+- 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/Cloudflare/clef-flash/raw/f0b7d3cd65296abfe459e6c228b618f5d8b26d2f/README.md'

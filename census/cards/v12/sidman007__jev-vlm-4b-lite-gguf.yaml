@@ -1,0 +1,101 @@
+name: jev-vlm-4b-lite (GGUF)
+name_src:
+  quote: '# jev-vlm-4b-lite (GGUF)'
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+hf_id: sidman007/jev-vlm-4b-lite-gguf
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+revision_sha: 9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+vendor_or_author: sidman007
+vendor_or_author_src:
+  quote: The best-calibrated variant is the transformers **pointer** model `sidman007/jev-vlm-4b`
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+release_date: '2026-09-25'
+release_date_src:
+  quote: (HF API createdAt for sidman007/jev-vlm-4b-lite-gguf)
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+backbone: Qwen/Qwen3.5-4B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B-Base'
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+parameter_count: pointer-quality calibration. 4B params, Apache-2.0, runs in llama.cpp / LM Studio.
+parameter_count_src:
+  quote: pointer-quality calibration. 4B params, Apache-2.0, runs in llama.cpp / LM Studio.
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+decision_head: Distilled (forward-KL) from a pointer-head teacher, so a plain letter-logit GGUF carries
+decision_head_src:
+  quote: Distilled (forward-KL) from a pointer-head teacher, so a plain letter-logit GGUF carries
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '- **Choice** — pick one of N options → probability per option + confidence'
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+source_urls:
+- 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/sidman007/jev-vlm-4b-lite-gguf/raw/9003d2d09bc2d6469a48a8fdfad01f1e63c6f5eb/README.md'

@@ -1,0 +1,102 @@
+name: robo-jev 2B LoRA — v0.12
+name_src:
+  quote: '# robo-jev 2B LoRA — v0.12'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+hf_id: Steerix-org/robo-jev-2b-lora
+hf_id_src:
+  quote: 'characters. With the robo-jev package: `RoboJev.from_pretrained("Steerix-org/robo-jev-2b-lora").decide(state, quest'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+revision_sha: fdbff8c3c195976930061ed68eb01536f9737857
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+vendor_or_author: Steerix-org
+vendor_or_author_src:
+  quote: 'revision and apply the adapter with `peft`. The merged model is at [Steerix-org/robo-jev-2b](https://huggingface.co/St'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+release_date: '2026-10-12'
+release_date_src:
+  quote: (HF API createdAt for Steerix-org/robo-jev-2b-lora)
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+backbone: Qwen/Qwen3.5-2B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+parameter_count: 'This repository holds the **LoRA adapter** (r 32, α 64, 31 M parameters, bfloat16) for [Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B) at revision `15852e8`. The runners load the base at that pinned revision and apply the adapter with `peft`. The mer'
+parameter_count_src:
+  quote: 'This repository holds the **LoRA adapter** (r 32, α 64, 31 M parameters, bfloat16) for [Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B) at revision `15852e8`. The runners load the base at that pinned revision and apply the adapter with `peft`. The mer'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+training_data: model 68 % of the time (the same model labelled part of its training data), against 52 % for v0.11 and 48 % for the untrained base.
+training_data_src:
+  quote: model 68 % of the time (the same model labelled part of its training data), against 52 % for v0.11 and 48 % for the untrained base.
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+state_modality: '- **Drop-in.** The Decisions API''s request shape — a state text and up to 12 questions — and a probability for every answer.'
+state_modality_src:
+  quote: '- **Drop-in.** The Decisions API''s request shape — a state text and up to 12 questions — and a probability for every answer.'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '**Limits:** `choice` questions with 2–255 options (most accurate on shorter lists); 1–12 questions per request; state text ≤ 16,000 characters. With the robo-jev package: `RoboJev.from_pretrained("Steerix-org/robo-jev-2b-lora").decide(state, questions)`.'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+source_urls:
+- 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'
+- 'https://github.com/STEERIX-home/robo-jev'
+source_urls_src:
+  quote: '- Code: [github.com/STEERIX-home/robo-jev](https://github.com/STEERIX-home/robo-jev)'
+  url: 'https://huggingface.co/Steerix-org/robo-jev-2b-lora/raw/fdbff8c3c195976930061ed68eb01536f9737857/README.md'

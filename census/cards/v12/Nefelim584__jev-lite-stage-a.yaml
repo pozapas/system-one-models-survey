@@ -1,0 +1,102 @@
+name: jev-lite (Stage A)
+name_src:
+  quote: '# jev-lite (Stage A)'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+hf_id: Nefelim584/jev-lite-stage-a
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+revision_sha: 25bf76af8d81e0df95b29d654623c0cb524cc372
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+vendor_or_author: Nefelim584
+vendor_or_author_src:
+  quote: '**Code:** [github.com/Nefelim584/JEV_Judge](https://github.com/Nefelim584/JEV_Judge)'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+release_date: '2026-10-15'
+release_date_src:
+  quote: (HF API createdAt for Nefelim584/jev-lite-stage-a)
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+backbone: answerdotai/ModernBERT-large
+backbone_src:
+  quote: 'base_model: answerdotai/ModernBERT-large'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+decision_head: '- **Max length:** 512 tokens. When the state is longer, it is truncated head + tail (50/50), and the response sets `meta.truncated`.'
+decision_head_src:
+  quote: '- **Max length:** 512 tokens. When the state is longer, it is truncated head + tail (50/50), and the response sets `meta.truncated`.'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+training_objective: '| Loss | CE (Choice), CE + 0.5·EMD² (Score), BCE + 0.1·Brier (Bool) |'
+training_objective_src:
+  quote: '| Loss | CE (Choice), CE + 0.5·EMD² (Score), BCE + 0.1·Brier (Bool) |'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+training_data: '## Training data'
+training_data_src:
+  quote: '## Training data'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+state_modality: '**jev-lite** is a typed decision model. It takes a **state** (free text, a JSON object, or a list of texts) and one or more typed **questions**:'
+state_modality_src:
+  quote: '**jev-lite** is a typed decision model. It takes a **state** (free text, a JSON object, or a list of texts) and one or more typed **questions**:'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+context_length: '- **Max length:** 512 tokens. When the state is longer, it is truncated head + tail (50/50), and the response sets `meta.truncated`.'
+context_length_src:
+  quote: '- **Max length:** 512 tokens. When the state is longer, it is truncated head + tail (50/50), and the response sets `meta.truncated`.'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+primitives: choice, score
+primitives_src:
+  quote: '| `choice` | a prompt + 1–32 options | distribution over the options + argmax + confidence |'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+source_urls:
+- 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'
+- 'https://github.com/Nefelim584/JEV_Judge'
+source_urls_src:
+  quote: '**Code:** [github.com/Nefelim584/JEV_Judge](https://github.com/Nefelim584/JEV_Judge)'
+  url: 'https://huggingface.co/Nefelim584/jev-lite-stage-a/raw/25bf76af8d81e0df95b29d654623c0cb524cc372/README.md'

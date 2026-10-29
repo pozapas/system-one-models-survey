@@ -1,0 +1,103 @@
+name: jev pointer (Qwen3.5-2B, run 20261017-192041)
+name_src:
+  quote: '# jev pointer (Qwen3.5-2B, run 20261017-192041)'
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+hf_id: bizhmans/krasivo-jev-no-bench-bf16
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+revision_sha: 8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+vendor_or_author: bizhmans
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+release_date: '2026-10-19'
+release_date_src:
+  quote: (HF API createdAt for bizhmans/krasivo-jev-no-bench-bf16)
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+availability_and_license: Open weights, license not stated; gated=False
+availability_and_license_src:
+  quote: (HF API license tag and repo file list)
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+backbone: Qwen/Qwen3.5-2B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B-Base'
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+decision_head: attention, linear-attention and MLP projection, plus a 256-dim pointer head
+decision_head_src:
+  quote: attention, linear-attention and MLP projection, plus a 256-dim pointer head
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+training_objective: '| objective | focal loss (γ = 2) over the option distribution, which supports soft labels |'
+training_objective_src:
+  quote: '| objective | focal loss (γ = 2) over the option distribution, which supports soft labels |'
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+training_data: '- **Headline:** on the test splits of its 80 training datasets, macro accuracy is **0.879**, NLL 0.351 and ECE'
+training_data_src:
+  quote: '- **Headline:** on the test splits of its 80 training datasets, macro accuracy is **0.879**, NLL 0.351 and ECE'
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+state_modality: A "system one" model. It reads a **state** (a context), a **question** and a list of **options**, and in one
+state_modality_src:
+  quote: A "system one" model. It reads a **state** (a context), a **question** and a list of **options**, and in one
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+primitives: choice, noul
+primitives_src:
+  quote: '- **Questions:** `noul` (yes/no) and `choice` (any number of options; there is no fixed slot count).'
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+source_urls:
+- 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'
+- 'https://github.com/SergeyBazhmin/krasivo-jev'
+- 'https://github.com/jaredpalmer/kev'
+source_urls_src:
+  quote: '([`src/jev_model/pointer/`](https://github.com/SergeyBazhmin/krasivo-jev/tree/v0.1.0/src/jev_model/pointer)).'
+  url: 'https://huggingface.co/bizhmans/krasivo-jev-no-bench-bf16/raw/8fc7c4e7bec96d57b8b2adcb14925b1b36b46d0d/README.md'

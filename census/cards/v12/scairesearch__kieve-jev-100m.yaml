@@ -1,0 +1,101 @@
+name: Kieve-JeV (100M)
+name_src:
+  quote: '# Kieve-JeV (100M)'
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+hf_id: scairesearch/kieve-jev-100m
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+revision_sha: 259c7c77f1b545eb6c4d58765ba240008531b7f7
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+vendor_or_author: scairesearch
+vendor_or_author_src:
+  quote: '`scairesearch/kieve-jev-base` (0.2.1 public run) and the newer v0.4 release.'
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+release_date: '2026-10-20'
+release_date_src:
+  quote: (HF API createdAt for scairesearch/kieve-jev-100m)
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+backbone: Kieve-JeV is an encoder-based **typed decision engine**. It takes a `state` (any
+backbone_src:
+  quote: Kieve-JeV is an encoder-based **typed decision engine**. It takes a `state` (any
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+parameter_count: 'total (custom 544-hidden, 12-layer encoder)** (total checkpoint parameters: 100.4M).'
+parameter_count_src:
+  quote: 'total (custom 544-hidden, 12-layer encoder)** (total checkpoint parameters: 100.4M).'
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+decision_head: '- `noul` - a single yes/no probability (a learned no-answer head).'
+decision_head_src:
+  quote: '- `noul` - a single yes/no probability (a learned no-answer head).'
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+training_data: '## Known issue: this checkpoint was trained on a broken backbone'
+training_data_src:
+  quote: '## Known issue: this checkpoint was trained on a broken backbone'
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+primitives: choice, noul
+primitives_src:
+  quote: probability for the yes/no `noul` primitive).
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+source_urls:
+- 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/scairesearch/kieve-jev-100m/raw/259c7c77f1b545eb6c4d58765ba240008531b7f7/README.md'

@@ -1,0 +1,103 @@
+name: jevtrainer-qwen35-0.8b-2026-10-02
+name_src:
+  quote: '# jevtrainer-qwen35-0.8b-2026-10-02'
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+hf_id: weihongliang/jevtrainer-qwen35-0.8b-2026-10-02
+hf_id_src:
+  quote: Evaluation of `weihongliang/jevtrainer-qwen35-0.8b-2026-10-02`. Accuracy in percent.
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+revision_sha: 8e8f5f4669431c68272e92409847d41fbc7b04df
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+vendor_or_author: weihongliang
+vendor_or_author_src:
+  quote: Evaluation of `weihongliang/jevtrainer-qwen35-0.8b-2026-10-02`. Accuracy in percent.
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+release_date: '2026-10-04'
+release_date_src:
+  quote: (HF API createdAt for weihongliang/jevtrainer-qwen35-0.8b-2026-10-02)
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+backbone: Qwen/Qwen3.5-0.8B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-0.8B'
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+decision_head: a probability for every option. It does not generate text. The readout is `marker`. The base `Qwen/Qwen3.5-0.8B` is fully fine-tuned, with the vision tower frozen. Training finished on **2026-10-02**.
+decision_head_src:
+  quote: a probability for every option. It does not generate text. The readout is `marker`. The base `Qwen/Qwen3.5-0.8B` is fully fine-tuned, with the vision tower frozen. Training finished on **2026-10-02**.
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `choice` | a dict of 2–255 option keys to descriptions | the chosen key, the full distribution, a confidence |'
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+source_urls:
+- 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'
+- 'https://github.com/hongliang-wei/jevtrainer'
+- 'https://github.com/NandhaKishorM/laya'
+source_urls_src:
+  quote: 'Code: [hongliang-wei/jevtrainer](https://github.com/hongliang-wei/jevtrainer)'
+  url: 'https://huggingface.co/weihongliang/jevtrainer-qwen35-0.8b-2026-10-02/raw/8e8f5f4669431c68272e92409847d41fbc7b04df/README.md'

@@ -1,0 +1,102 @@
+name: Decision model (Qwen3.5-4B + decision head)
+name_src:
+  quote: '# Decision model (Qwen3.5-4B + decision head)'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+hf_id: faizaltkl/qdec-lay-decision-model
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+revision_sha: a73631d21f0840b1b4e18304ff4423454d95944c
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+vendor_or_author: faizaltkl
+vendor_or_author_src:
+  quote: 'Trained on [`faizaltkl/decision-model-dataset`](https://huggingface.co/datasets/faizaltkl/decision-model-dataset):'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+release_date: '2026-10-11'
+release_date_src:
+  quote: (HF API createdAt for faizaltkl/qdec-lay-decision-model)
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+availability_and_license: Open weights, other; gated=False
+availability_and_license_src:
+  quote: 'license: other'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+backbone: unsloth/Qwen3.5-4B
+backbone_src:
+  quote: 'base_model: unsloth/Qwen3.5-4B'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+parameter_count: '| Trainable parameters | 64.5M (2.10% of the parameters reported for the 4-bit model) |'
+parameter_count_src:
+  quote: '| Trainable parameters | 64.5M (2.10% of the parameters reported for the 4-bit model) |'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+decision_head: '# Decision model (Qwen3.5-4B + decision head)'
+decision_head_src:
+  quote: '# Decision model (Qwen3.5-4B + decision head)'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+training_data: 'It was fine-tuned with [Unsloth''s decision-model training](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth),'
+training_data_src:
+  quote: 'It was fine-tuned with [Unsloth''s decision-model training](https://unsloth.ai/docs/basics/train-your-own-decision-model-with-unsloth),'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+state_modality: The input (`state`) can be plain text or any JSON object. Act on the
+state_modality_src:
+  quote: The input (`state`) can be plain text or any JSON object. Act on the
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+context_length: '| Max sequence length | 2,048 tokens |'
+context_length_src:
+  quote: '| Max sequence length | 2,048 tokens |'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `choice` | pick one option (e.g. which team) | the chosen option + a probability per option |'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+source_urls:
+- 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'
+- 'https://github.com/unslothai/unsloth'
+source_urls_src:
+  quote: 'Built with [Unsloth](https://github.com/unslothai/unsloth). Training data includes'
+  url: 'https://huggingface.co/faizaltkl/qdec-lay-decision-model/raw/a73631d21f0840b1b4e18304ff4423454d95944c/README.md'

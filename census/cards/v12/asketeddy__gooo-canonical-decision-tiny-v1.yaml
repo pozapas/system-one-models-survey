@@ -1,0 +1,103 @@
+name: Gooo Canonical Decision Tiny v1
+name_src:
+  quote: '# Gooo Canonical Decision Tiny v1'
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+hf_id: asketeddy/gooo-canonical-decision-tiny-v1
+hf_id_src:
+  quote: '[new preregistered study](https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/tree/c520e47d5e68ac44cd0ad032'
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+revision_sha: e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+vendor_or_author: asketeddy
+vendor_or_author_src:
+  quote: '[new preregistered study](https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/tree/c520e47d5e68ac44cd0ad032'
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+release_date: '2026-10-10'
+release_date_src:
+  quote: (HF API createdAt for asketeddy/gooo-canonical-decision-tiny-v1)
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+availability_and_license: Weights not listed in repo files, mit; gated=False
+availability_and_license_src:
+  quote: 'license: mit'
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+backbone: Small, independently trained decision models for Gooo program construction.
+backbone_src:
+  quote: Small, independently trained decision models for Gooo program construction.
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+decision_head: information reaches the decision head; it does not isolate one cause. Exact raw
+decision_head_src:
+  quote: information reaches the decision head; it does not isolate one cause. Exact raw
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+training_objective: hidden representation loss remains unmeasured. The reader makes zero new fits,
+training_objective_src:
+  quote: hidden representation loss remains unmeasured. The reader makes zero new fits,
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+training_data: First-choice selection remains weak, including on training data. Only one seed
+training_data_src:
+  quote: First-choice selection remains weak, including on training data. Only one seed
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+primitives: choice
+primitives_src:
+  quote: They read a source-declared choice, example outputs and intermediate Boolean
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+source_urls:
+- 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'
+- 'https://github.com/kimjooyoon/meta-ontology-go'
+- 'https://github.com/kimjooyoon/gooo-decision-runtime'
+source_urls_src:
+  quote: 'The accepted compiler [`main` source](https://github.com/kimjooyoon/meta-ontology-go/tree/969eb8c07fa3984d5287d049e2ffec1b2ce6a077)'
+  url: 'https://huggingface.co/asketeddy/gooo-canonical-decision-tiny-v1/raw/e6d1e7f2a4c1923f7f69ca11c360ccf27cdaff8d/README.md'

@@ -1,0 +1,102 @@
+name: jevhome E
+name_src:
+  quote: '# jevhome E'
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+hf_id: jevhome/jevhome-E
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+revision_sha: 30618e0dc9890671b99d095e86c43e92ae625bff
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+vendor_or_author: jevhome
+vendor_or_author_src:
+  quote: 'A typed-decision model (bi-encoder, ~48M parameters, fp32) for [jevhome](https://github.com/Jibril-Frej/jev-at-home): gi'
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+release_date: '2026-09-30'
+release_date_src:
+  quote: (HF API createdAt for jevhome/jevhome-E)
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+backbone: ibm-granite/granite-embedding-small-english-r2
+backbone_src:
+  quote: 'base_model: ibm-granite/granite-embedding-small-english-r2'
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+parameter_count: 'A typed-decision model (bi-encoder, ~48M parameters, fp32) for [jevhome](https://github.com/Jibril-Frej/jev-at-home): give it a **state** and'
+parameter_count_src:
+  quote: 'A typed-decision model (bi-encoder, ~48M parameters, fp32) for [jevhome](https://github.com/Jibril-Frej/jev-at-home): give it a **state** and'
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+decision_head: '`pytorch/` holds the PyTorch weights (backbone `model.safetensors` + decision head `head.safetensors`) for GPU or research use; `jevhome` only needs the ONNX files (`--exclude ''pytorch/*''` skips them).'
+decision_head_src:
+  quote: '`pytorch/` holds the PyTorch weights (backbone `model.safetensors` + decision head `head.safetensors`) for GPU or research use; `jevhome` only needs the ONNX files (`--exclude ''pytorch/*''` skips them).'
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: yes/no (`noul`), pick-one (`choice`) or graded (`score`) **questions**, and it returns calibrated probabilities in one
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+source_urls:
+- 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'
+- 'https://github.com/Jibril-Frej/jev-at-home'
+source_urls_src:
+  quote: 'model (bi-encoder, ~48M parameters, fp32) for [jevhome](https://github.com/Jibril-Frej/jev-at-home): give it a **state** and'
+  url: 'https://huggingface.co/jevhome/jevhome-E/raw/30618e0dc9890671b99d095e86c43e92ae625bff/README.md'

@@ -1,0 +1,101 @@
+name: homemade jev 0.8B (F / OR-AND)
+name_src:
+  quote: '# homemade jev 0.8B (F / OR-AND)'
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+hf_id: dimajyg/homemade-jev-0.8b
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+revision_sha: cbaf6e443f05ab3fb28ef8d911783f8b4917c50c
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+vendor_or_author: dimajyg
+vendor_or_author_src:
+  quote: '-0.8b-nli-v2s-long`. Not TypeSafe Jev. Not the MiniCPM 2.5B adapter (`dimajyg/homemade-jev`).'
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+release_date: '2026-10-08'
+release_date_src:
+  quote: (HF API createdAt for dimajyg/homemade-jev-0.8b)
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+backbone: AlexWortega/openjev
+backbone_src:
+  quote: 'base_model: AlexWortega/openjev'
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+primitives: noul
+primitives_src:
+  quote: '| | acc | ECE | refund noul yes | dive acc |'
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+source_urls:
+- 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/dimajyg/homemade-jev-0.8b/raw/cbaf6e443f05ab3fb28ef8d911783f8b4917c50c/README.md'

@@ -1,0 +1,103 @@
+name: StartLux-Decision-v1.1-2B-Instant
+name_src:
+  quote: '# StartLux-Decision-v1.1-2B-Instant'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+hf_id: startlux-models/StartLux-Decision-v1.1-2B-Instant
+hf_id_src:
+  quote: 'Formats: **BF16** · [GGUF](https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant-GGUF) · [MLX 8-bit]('
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+revision_sha: f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+vendor_or_author: startlux-models
+vendor_or_author_src:
+  quote: 'Formats: **BF16** · [GGUF](https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant-GGUF) · [MLX 8-bit]('
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+release_date: '2026-10-10'
+release_date_src:
+  quote: (HF API createdAt for startlux-models/StartLux-Decision-v1.1-2B-Instant)
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+backbone: Stage 1 fine-tuned all weights on about 2.7 million decision examples. Stage 2 trained an adapter with bidirectional prompt attention on about 1.7 million furth
+backbone_src:
+  quote: Stage 1 fine-tuned all weights on about 2.7 million decision examples. Stage 2 trained an adapter with bidirectional prompt attention on about 1.7 million furth
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+state_modality: 'artLux-Decision-v1.1-2B-Instant is a 2B decision model. You give it a state (text or JSON, with up to 8 images) and typed questions about it: pick one of several options (`choice`), yes or no (`noul`), or a level on a scale of 2 to 10 (`score`). It returns a p'
+state_modality_src:
+  quote: 'artLux-Decision-v1.1-2B-Instant is a 2B decision model. You give it a state (text or JSON, with up to 8 images) and typed questions about it: pick one of several options (`choice`), yes or no (`noul`), or a level on a scale of 2 to 10 (`score`). It returns a p'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 'images) and typed questions about it: pick one of several options (`choice`), yes or no (`noul`), or a level on a scale of 2 to 10 (`score`). It returns a probability for every option of every question from one forward pass, without generating text. The requ'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+source_urls:
+- 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'
+- 'https://github.com/StartLuxLabs/StartLux-Decision'
+- 'https://github.com/StartLuxLabs/StartLux-Decision.git'
+source_urls_src:
+  quote: '2B-Instant-MLX-4bit) · Code: [StartLuxLabs/StartLux-Decision](https://github.com/StartLuxLabs/StartLux-Decision) · Paper: [arXiv 2610.17309](https://arxiv.org/a'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1.1-2B-Instant/raw/f1e6cd147dda82c9ffa3e8e725d5c1f175566fb1/README.md'

@@ -1,0 +1,102 @@
+name: pplx-decider-v1.2
+name_src:
+  quote: '# pplx-decider-v1.2'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+hf_id: perplexity-ai/pplx-decider-v1.2
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+revision_sha: cce0f3f80033e9d89d80831d5281fd72124aacce
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+vendor_or_author: Perplexity AI (HF organisation perplexity-ai)
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+release_date: '2026-10-15'
+release_date_src:
+  quote: (HF API createdAt for perplexity-ai/pplx-decider-v1.2)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+availability_and_license: Open weights listed in the repo, Apache-2.0. The card calls the repository private and requires a token, but the HF API on 2026-10-28 reported private=False, gated=False.
+availability_and_license_src:
+  quote: 'The repository is private: authenticate with a Hugging Face token that has access to it.'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+backbone: Qwen/Qwen3.8-27B (finetune), same backbone as v1.1
+backbone_src:
+  quote: on the same Qwen3.8-27B backbone.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+parameter_count: 27B backbone; about 52 GiB of BF16 weights
+parameter_count_src:
+  quote: a CUDA GPU with room for about 52 GiB of BF16 weights plus working memory
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+decision_head: readout.safetensors BF16 [255, 5120] decision head; one readout per question at a marker token; noncausal full attention
+decision_head_src:
+  quote: Each question gets its own readout, at a marker token placed right after that question's options.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+training_data: Reworked data, including official training splits of some Decision Index benchmarks (decontaminated) plus other decision data; several training runs combined by model souping
+training_data_src:
+  quote: It combines several training runs through model souping (weight averaging), chosen as the best compromise across all our evaluations rather than on any single benchmark.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+state_modality: text and images (up to 1.6 MP)
+state_modality_src:
+  quote: This checkpoint handles both text and images (up to 1.6 MP).
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+context_length: max_length 262,144 tokens per sequence; training used sequences up to about 32k tokens
+context_length_src:
+  quote: '**Training used sequences up to about 32k tokens.**'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+cardinality_limit: 1 to 255 options per question (2 to 255 for score)
+cardinality_limit_src:
+  quote: '**Options:** 1 to 255 per question (2 to 255 for `score`).'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+latency_with_hardware: Throughput (requests/s) reported on one GB200; no per-request latency
+latency_with_hardware_src:
+  quote: 'Throughput on one GB200 (bf16, requests/s; ratios against the reference path):'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+price: $0 self-hosted (open weights); no hosted price in the card
+price_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+confidence_definition: response gives choice, per-option probabilities and a confidence field; formula not stated
+confidence_definition_src:
+  quote: The options are shown to the model in the order you give them
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+serving_temperature: 1.382, applied once by decide, then softmax over each question's valid options only
+serving_temperature_src:
+  quote: the temperature fitted on held-out calibration data (1.382 for this checkpoint).
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+calibration_as_shipped: 'Development set (1,497 questions): accuracy 91.3%, ECE 0.014, Brier 0.134; without temperature ECE 0.033, Brier 0.137'
+calibration_as_shipped_src:
+  quote: 'ECE 0.014 and Brier 0.134 (without temperature: ECE 0.033, Brier 0.137)'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+disclosed_failure_modes: Probabilities remain somewhat over-confident on held-out decision datasets (ECE about 0.05); grouping independent candidates in one request can cost about 3 points
+disclosed_failure_modes_src:
+  quote: probabilities remain somewhat over-confident (ECE about 0.05)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+evaluation_protocol_published: Decision Index 0.3 (public) under joint-request and one-question-per-request modes
+evaluation_protocol_published_src:
+  quote: The overall score uses the suite's weighting, not a simple category average.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+primitives: choice, noul, score
+primitives_src:
+  quote: '"type": "choice" | "noul" | "score",'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+source_urls:
+- 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'
+- 'https://github.com/sileod/tasksource'
+source_urls_src:
+  quote: 'A large part of the gains are thanks to the [tasksource](https://github.com/sileod/tasksource) data. If you also use'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-v1.2/raw/cce0f3f80033e9d89d80831d5281fd72124aacce/README.md'

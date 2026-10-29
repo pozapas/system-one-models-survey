@@ -1,0 +1,11 @@
+arxiv_id,title,first_author,published,screen_reason
+2610.18497,Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments,Linhai Ma,2026-10-13,"evaluation: Derivation gap appears ""across all seven judges"", including System One models CLM and Jev; AUROC reported"
+2610.18529,"How Reliable Are System-One Decisions in Medicine? A Comparative Study of Jev, Jev-like Models, and LLMs",Yanrui Du,2026-10-13,"evaluation: Compares system-one models across 15 medical datasets on accuracy, stability and abstention"
+2610.18579,"Reading Right, Acting Wrong: Diagnosing Decision Failures of System One Models in Agent Loops",Yubo Li,2026-10-13,evaluation: Diagnoses decision failures across seventeen fast systems on a frozen agent-state benchmark
+2610.18610,Jev-ToM: Evaluating Theory of Mind in Typed Decision Models,Kawai Chung,2026-10-13,"evaluation: Jev ""reaches 73.2% source-balanced accuracy"" on 11,117 ToM questions"
+2610.18612,Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications,Yang Luo,2026-10-13,evaluation: JevProbe: 81.5% of 228 real-world Jev applications show decision flips
+2610.18615,VideoJev: System One Model for Video Understanding and Interaction,Yuhan Zhu,2026-10-13,own-model: Video System One family; mIoU gains of 6.7 and 10.8 points and inference speedups of 2.8-3.1x
+2610.18773,Jeva: System One Models from First Principles,Qi Li,2026-10-13,"own-model: Decision-native architecture compared against Jev and open models; ""no decision flips under any tested permutations"""
+2610.18780,BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems,Xiaoguang Guo,2026-10-13,"application: BLADE uses Jev for probabilistic judgments; best step accuracy among eight strategies on 1,228 failed runs"
+2610.19118,DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision,Yifan Lan,2026-10-13,evaluation: DecisionRobust benchmark evaluates 30 text and 17 vision configurations under attack
+2610.19478,AgriJev: Efficient Agricultural Candidate Scoring with Multi-Scale Adapted Models,Xuechen Li,2026-10-14,"own-model: Returns scores and probabilities ""in one forward call""; AgriJev-9B reaches 75.44% mean accuracy"

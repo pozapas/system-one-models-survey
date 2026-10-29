@@ -1,0 +1,101 @@
+name: Decision 4B v1.2 (FlyMyJev-4B, preview)
+name_src:
+  quote: '# Decision 4B v1.2 (FlyMyJev-4B, preview)'
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+hf_id: flymy-ai/decision-4b-v1.2
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+revision_sha: 79792bfb89e38498a21d1b71bc96b684be7b6617
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+vendor_or_author: flymy-ai
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+release_date: '2026-09-25'
+release_date_src:
+  quote: (HF API createdAt for flymy-ai/decision-4b-v1.2)
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+backbone: Qwen/Qwen3.5-4B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B'
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+decision_head: '| Readout | the option letters'' logits at the last prompt token (fp32 projection of its hidden state), softmax at the temperature in `model.json` (1.45, fitted on our own data only) |'
+decision_head_src:
+  quote: '| Readout | the option letters'' logits at the last prompt token (fp32 projection of its hidden state), softmax at the temperature in `model.json` (1.45, fitted on our own data only) |'
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+training_objective: cross-entropy on the option-letter logits (the exact distribution where an item declares one), choice options shuffled
+training_objective_src:
+  quote: cross-entropy on the option-letter logits (the exact distribution where an item declares one), choice options shuffled
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+training_data: SemIf's rendering everywhere. No training data was chosen or built from public items.
+training_data_src:
+  quote: SemIf's rendering everywhere. No training data was chosen or built from public items.
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: question with a closed set of answers (`noul` yes/no, `choice`, `score`), and it returns a probability for every
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+source_urls:
+- 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/flymy-ai/decision-4b-v1.2/raw/79792bfb89e38498a21d1b71bc96b684be7b6617/README.md'

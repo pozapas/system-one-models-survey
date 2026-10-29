@@ -1,0 +1,103 @@
+name: sparrow-nano-robot (v1.2)
+name_src:
+  quote: '# sparrow-nano-robot (v1.2)'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+hf_id: sparrow-decider/sparrow-nano-robot
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+revision_sha: dc164c520c74b42330adbf6550ea61b47044f75d
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+vendor_or_author: sparrow-decider
+vendor_or_author_src:
+  quote: 'Part of [Sparrow Decider](https://github.com/sparrow-decider/sparrow-decider), a family of decision'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+release_date: '2026-10-23'
+release_date_src:
+  quote: (HF API createdAt for sparrow-decider/sparrow-nano-robot)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+availability_and_license: Weights not listed in repo files, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+backbone: minishlab/potion-base-8M
+backbone_src:
+  quote: 'base_model: minishlab/potion-base-8M'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+training_data: '- Open-ended language it never trained on is well behind the 2B (MASSIVE domain routing above).'
+training_data_src:
+  quote: '- Open-ended language it never trained on is well behind the 2B (MASSIVE domain routing above).'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+state_modality: 'rate-on-a-scale (`score`) questions about a text state, and it reads `key: number` pairs such as'
+state_modality_src:
+  quote: 'rate-on-a-scale (`score`) questions about a text state, and it reads `key: number` pairs such as'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: A 1.11 MB decision model for robots. It answers yes/no (`noul`), pick-one (`choice`) and
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+source_urls:
+- 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'
+- 'https://github.com/sparrow-decider/sparrow-decider'
+- 'https://github.com/strands-labs/strands-decider'
+source_urls_src:
+  quote: 'Part of [Sparrow Decider](https://github.com/sparrow-decider/sparrow-decider), a family of decision'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-robot/raw/dc164c520c74b42330adbf6550ea61b47044f75d/README.md'

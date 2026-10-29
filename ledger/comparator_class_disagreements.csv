@@ -1,0 +1,11 @@
+analysis,record,study,first,blind,first_reason,blind_reason
+r1Gap,entityF1Selected,steiner2026entity,zero_shot_open,task_trained,"Perplexity Decider v1.2 untrained; the selected prompt is a prompt choice, not training.",The prompt was selected per model and benchmark on test data.
+r1Gap,kevMmluPro,grey_kev,zero_shot_open,task_trained,MMLU-Pro is not among Kev's training sources.,Kev-9B is trained and selected on this suite and its development partitions by the same author.
+r1Gap,kevOod,grey_kev,zero_shot_open,task_trained,Kev OOD set uses six never-trained sources and held-out structures.,Kev-9B is trained and selected on this suite and its development partitions by the same author.
+r1Gap,revDecisionIndex,grey_robbalian_rev,zero_shot_open,task_trained,Rev was trained on public decision pools with no documented overlap with the 19 Decision Index benchmarks.,Rev training pool covers sets and families that the Decision Index tasks draw on.
+r1Gap,rubrixQagsCnn,paramasivam2026rubrix,zero_shot_open,task_trained,"SummEval and QAGS are external benchmarks outside RubriX's training sources, in formats the note calls out of distribution.",RubriX is a specialist trained on rubric-judging data.
+r1Gap,rubrixQagsXsum,paramasivam2026rubrix,zero_shot_open,task_trained,"SummEval and QAGS are external benchmarks outside RubriX's training sources, in formats the note calls out of distribution.",RubriX is a specialist trained on rubric-judging data.
+r1Gap,rubrixSummEval,paramasivam2026rubrix,zero_shot_open,task_trained,"SummEval and QAGS are external benchmarks outside RubriX's training sources, in formats the note calls out of distribution.",RubriX is a specialist trained on rubric-judging data.
+gapJevBest,dingGap,ding2026jet,other_llm,decision_model,"Comparator is JET, pretrained Qwen3.5-27B scored by likelihood with no training.","JET scores candidates with an untuned open model, treated as a decision model."
+gapJevBest,geuterGapHeldOut,geuter2026releasing,task_trained,decision_model,Comparator is the authors' Jeff-1.0-Large trained on OpenDecisions.,Jeff is an open model evaluated zero-shot on held-out datasets.
+gapJevBest,muLlmE1,mu2026hydrojev,other_llm,frontier_llm,Comparators are the open LLMs glm-5.2 and deepseek-v4-pro.,The paper calls deepseek-v4-pro the best frontier reasoning LLM.

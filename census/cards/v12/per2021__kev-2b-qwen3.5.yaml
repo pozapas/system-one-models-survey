@@ -1,0 +1,103 @@
+name: Kev-2B (Qwen3.5 base), unofficial
+name_src:
+  quote: '# Kev-2B (Qwen3.5 base), unofficial'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+hf_id: per2021/kev-2b-qwen3.5
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+revision_sha: ac97885b54011dd6002cf2c82fbcc0aa6033e8cf
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+vendor_or_author: per2021
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+release_date: '2026-09-26'
+release_date_src:
+  quote: (HF API createdAt for per2021/kev-2b-qwen3.5)
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+backbone: Qwen/Qwen3.5-2B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B-Base'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+parameter_count: 'A 2B-parameter [Kev](https://github.com/jaredpalmer/kev) decision model: a rank-16 LoRA adapter and a pointer head on'
+parameter_count_src:
+  quote: 'A 2B-parameter [Kev](https://github.com/jaredpalmer/kev) decision model: a rank-16 LoRA adapter and a pointer head on'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+decision_head: 'hub.com/jaredpalmer/kev) decision model: a rank-16 LoRA adapter and a pointer head on'
+decision_head_src:
+  quote: 'hub.com/jaredpalmer/kev) decision model: a rank-16 LoRA adapter and a pointer head on'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+training_data: '`Qwen/Qwen3.5-2B-Base`, trained with the Kev-0.8B release recipe. It answers yes/no (`noul`), multiple-choice (`choice`)'
+training_data_src:
+  quote: '`Qwen/Qwen3.5-2B-Base`, trained with the Kev-0.8B release recipe. It answers yes/no (`noul`), multiple-choice (`choice`)'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+state_modality: '| Stage | Init | Data | Epochs | lr | Batch × accum | State context | Wall |'
+state_modality_src:
+  quote: '| Stage | Init | Data | Epochs | lr | Batch × accum | State context | Wall |'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: trained with the Kev-0.8B release recipe. It answers yes/no (`noul`), multiple-choice (`choice`)
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+source_urls:
+- 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'
+- 'https://github.com/jaredpalmer/kev'
+- 'https://github.com/jaredpalmer/kev.git'
+source_urls_src:
+  quote: 'A 2B-parameter [Kev](https://github.com/jaredpalmer/kev) decision model: a rank-16 LoRA adapter and a pointer head on'
+  url: 'https://huggingface.co/per2021/kev-2b-qwen3.5/raw/ac97885b54011dd6002cf2c82fbcc0aa6033e8cf/README.md'

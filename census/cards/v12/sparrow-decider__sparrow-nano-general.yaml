@@ -1,0 +1,103 @@
+name: sparrow-nano-general (v1.1)
+name_src:
+  quote: '# sparrow-nano-general (v1.1)'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+hf_id: sparrow-decider/sparrow-nano-general
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+revision_sha: adb91e852793c9f2e7cc1ac3ae74c5d7a4756222
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+vendor_or_author: sparrow-decider
+vendor_or_author_src:
+  quote: It is the default model of the `sparrow-decider` pip package.
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+release_date: '2026-10-23'
+release_date_src:
+  quote: (HF API createdAt for sparrow-decider/sparrow-nano-general)
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+availability_and_license: Weights not listed in repo files, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+backbone: minishlab/potion-base-8M
+backbone_src:
+  quote: 'base_model: minishlab/potion-base-8M'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+training_data: '**Out of scope:** open-ended language far from its training data, yes/no judgement that needs'
+training_data_src:
+  quote: '**Out of scope:** open-ended language far from its training data, yes/no judgement that needs'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+state_modality: rate-on-a-scale (`score`) questions about a text state, with calibrated probabilities. It runs in
+state_modality_src:
+  quote: rate-on-a-scale (`score`) questions about a text state, with calibrated probabilities. It runs in
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: A 2.2 MB general-purpose decision model. It answers yes/no (`noul`), pick-one (`choice`) and
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+source_urls:
+- 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'
+- 'https://github.com/sparrow-decider/sparrow-decider'
+- 'https://github.com/strands-labs/strands-decider'
+source_urls_src:
+  quote: 'Part of [Sparrow Decider](https://github.com/sparrow-decider/sparrow-decider), a family of decision'
+  url: 'https://huggingface.co/sparrow-decider/sparrow-nano-general/raw/adb91e852793c9f2e7cc1ac3ae74c5d7a4756222/README.md'

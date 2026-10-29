@@ -1,0 +1,101 @@
+name: Solar-Decision-JEV-27B-VL
+name_src:
+  quote: '# Solar-Decision-JEV-27B-VL'
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+hf_id: SargeDev/Solar-Decision-JEV-27B-VL
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+revision_sha: a3788e7104af03a36cd20ac4a4c2963115f2d9c6
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+vendor_or_author: SargeDev
+vendor_or_author_src:
+  quote: This release is a descendant of the earlier `SargeDev/JEV-27B-Uncensored` and
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+release_date: '2026-10-21'
+release_date_src:
+  quote: (HF API createdAt for SargeDev/Solar-Decision-JEV-27B-VL)
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+backbone: huihui-ai/Huihui-Qwen3.8-27B-abliterated
+backbone_src:
+  quote: 'base_model: huihui-ai/Huihui-Qwen3.8-27B-abliterated'
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+decision_head: '- The decision readout is trained INTO the model, so a typed decision is a'
+decision_head_src:
+  quote: '- The decision readout is trained INTO the model, so a typed decision is a'
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+training_objective: distillation objective (AutoTrust-style), cosine LR 2e-4, KL_W 1.0,
+training_objective_src:
+  quote: distillation objective (AutoTrust-style), cosine LR 2e-4, KL_W 1.0,
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+training_data: trained on (Apache-2.0), and the **solar r16** adapter trained here on
+training_data_src:
+  quote: trained on (Apache-2.0), and the **solar r16** adapter trained here on
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| model | choice top-1 | score top-1 | score KL | noul AUROC |'
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+source_urls:
+- 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-VL/raw/a3788e7104af03a36cd20ac4a4c2963115f2d9c6/README.md'

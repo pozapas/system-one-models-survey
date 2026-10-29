@@ -1,0 +1,101 @@
+name: od1-typed-decisions · Open Decider (4B specialist)
+name_src:
+  quote: '# od1-typed-decisions · Open Decider (4B specialist)'
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+hf_id: mvbalaji/od1-typed-decisions
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+revision_sha: 3e203a7a6edda2608e383cd373b93bd4e0d146ac
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+vendor_or_author: mvbalaji
+vendor_or_author_src:
+  quote: '**Open Decider** is an open family of *System One* decision models (`mvbalaji/od1-*`): give a model a **state** (text'
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+release_date: '2026-09-26'
+release_date_src:
+  quote: (HF API createdAt for mvbalaji/od1-typed-decisions)
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+backbone: Qwen/Qwen3.5-4B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B'
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+training_objective: '(`opendecide/losses.py::question_loss`) uses cross-entropy against the benchmark''s soft gold distribution whenever a'
+training_objective_src:
+  quote: '(`opendecide/losses.py::question_loss`) uses cross-entropy against the benchmark''s soft gold distribution whenever a'
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+training_data: 'fine-tuned on the benchmark''s **train split**, so it is a **specialist** in the benchmark''s terms: compare it with other'
+training_data_src:
+  quote: 'fine-tuned on the benchmark''s **train split**, so it is a **specialist** in the benchmark''s terms: compare it with other'
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+state_modality: 'of *System One* decision models (`mvbalaji/od1-*`): give a model a **state** (text'
+state_modality_src:
+  quote: 'of *System One* decision models (`mvbalaji/od1-*`): give a model a **state** (text'
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: or JSON) and **typed questions** (`choice`, `noul` = yes/no, `score` = ordinal) and it returns every answer with a full
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+source_urls:
+- 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/mvbalaji/od1-typed-decisions/raw/3e203a7a6edda2608e383cd373b93bd4e0d146ac/README.md'

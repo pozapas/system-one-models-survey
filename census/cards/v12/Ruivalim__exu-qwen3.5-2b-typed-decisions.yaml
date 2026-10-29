@@ -1,0 +1,102 @@
+name: exu-qwen3.5-2b-typed-decisions
+name_src:
+  quote: '# exu-qwen3.5-2b-typed-decisions'
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+hf_id: Ruivalim/exu-qwen3.5-2b-typed-decisions
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+revision_sha: 37b167eec6f530edaec9adba0e93fef0a624eb4d
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+vendor_or_author: Ruivalim
+vendor_or_author_src:
+  quote: 'An experimental decision model from [Exu](https://github.com/ruivalim/exu-base): a'
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+release_date: '2026-10-11'
+release_date_src:
+  quote: (HF API createdAt for Ruivalim/exu-qwen3.5-2b-typed-decisions)
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+backbone: Qwen/Qwen3.5-2B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-2B'
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+decision_head: Qwen3.5-2B body with a small decision head that answers a typed question about an
+decision_head_src:
+  quote: Qwen3.5-2B body with a small decision head that answers a typed question about an
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+training_data: text, so it accepts any question, but it was trained on the dataset's few
+training_data_src:
+  quote: text, so it accepts any question, but it was trained on the dataset's few
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: agent or workflow trace (`choice`, `score` or `noul`) with a probability
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+source_urls:
+- 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'
+- 'https://github.com/ruivalim/exu-base'
+source_urls_src:
+  quote: 'An experimental decision model from [Exu](https://github.com/ruivalim/exu-base): a'
+  url: 'https://huggingface.co/Ruivalim/exu-qwen3.5-2b-typed-decisions/raw/37b167eec6f530edaec9adba0e93fef0a624eb4d/README.md'

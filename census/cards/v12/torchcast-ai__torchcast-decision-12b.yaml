@@ -1,0 +1,102 @@
+name: Torchcast Decision 12B
+name_src:
+  quote: '# Torchcast Decision 12B'
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+hf_id: torchcast-ai/torchcast-decision-12b
+hf_id_src:
+  quote: '[Serving instructions](https://github.com/Torchcast-AI/torchcast-decision-12b/tree/v1.0.0#run-for-evaluation)'
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+revision_sha: 49107b5589bf2dc4ec3f5acd54316971dd5978b1
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+vendor_or_author: torchcast-ai
+vendor_or_author_src:
+  quote: '[Serving instructions](https://github.com/Torchcast-AI/torchcast-decision-12b/tree/v1.0.0#run-for-evaluation)'
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+release_date: '2026-10-02'
+release_date_src:
+  quote: (HF API createdAt for torchcast-ai/torchcast-decision-12b)
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+backbone: google/gemma-4-12B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-12B-it'
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+decision_head: '## Model and readout'
+decision_head_src:
+  quote: '## Model and readout'
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+training_data: A LoRA fine-tune of Gemma-4-12B-it, trained on a 50/50 mix of gold labels and a larger instruction model's option distributions (not TypeSafe/Jev outputs), over procedurally generated decisions, the Open-Jev train split and public dataset train splits; sources
+training_data_src:
+  quote: A LoRA fine-tune of Gemma-4-12B-it, trained on a 50/50 mix of gold labels and a larger instruction model's option distributions (not TypeSafe/Jev outputs), over procedurally generated decisions, the Open-Jev train split and public dataset train splits; sources
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: AI**, based on Gemma-4-12B-it. It supports yes/no probabilities (`noul`), choice distributions (`choice`), and ordinal score distributions (`score`).
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+source_urls:
+- 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'
+- 'https://github.com/Torchcast-AI/torchcast-decision-12b'
+source_urls_src:
+  quote: '[Serving instructions](https://github.com/Torchcast-AI/torchcast-decision-12b/tree/v1.0.0#run-for-evaluation)'
+  url: 'https://huggingface.co/torchcast-ai/torchcast-decision-12b/raw/49107b5589bf2dc4ec3f5acd54316971dd5978b1/README.md'

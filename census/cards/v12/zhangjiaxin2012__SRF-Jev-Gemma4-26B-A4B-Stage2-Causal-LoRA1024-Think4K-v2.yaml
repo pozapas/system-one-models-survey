@@ -1,0 +1,102 @@
+name: SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2
+name_src:
+  quote: '# SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+hf_id: zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+revision_sha: bb0a3e905d09121bca9cce759d86c6085524efd7
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+vendor_or_author: zhangjiaxin2012
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+release_date: '2026-10-24'
+release_date_src:
+  quote: (HF API createdAt for zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2)
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+backbone: google/gemma-4-26B-A4B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-26B-A4B-it'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+decision_head: enable_thinking=True alone does not reproduce the gate, decision readout, JSON reinjection and probability mixture.
+decision_head_src:
+  quote: enable_thinking=True alone does not reproduce the gate, decision readout, JSON reinjection and probability mixture.
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: is JSONL with exactly `id` and `visible` per row. The examples show Choice, NoUL and Score schemas. Keep IDs stable across policies; they determine the label-blind option permutation and thinking seed. Keep gold labels in a separate file. Outputs include sem
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+source_urls:
+- 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'
+- 'https://github.com/jxzhangjhu/srf-jev'
+source_urls_src:
+  quote: 'Full comparison and method: [https://github.com/jxzhangjhu/srf-jev](https://github.com/jxzhangjhu/srf-jev/tree/main/docs/gemma4/research/three-size-20261023).'
+  url: 'https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-26B-A4B-Stage2-Causal-LoRA1024-Think4K-v2/raw/bb0a3e905d09121bca9cce759d86c6085524efd7/README.md'

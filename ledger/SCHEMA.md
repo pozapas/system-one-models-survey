@@ -16,7 +16,7 @@ Each row holds one measured quantity: one study, one model, one task, one metric
 | task_family | document coding / social-science annotation / judging / agent control / memory / retrieval / classification / extraction / safety / QA / scientific workflow / other |
 | dataset | name |
 | n | number of items or decisions scored (as reported) |
-| reference_label_type | human_adjudicated / human_crowd / human_single / llm_teacher / model_consensus / synthetic / vendor_label / administrative_field / task_outcome / none |
+| reference_label_type | human_adjudicated / human_crowd / human_single / llm_teacher / model_consensus / synthetic / vendor_label / administrative_field / task_outcome / mixed / not_reported / none (`not_reported` when the paper does not say how its labels were made, added in version 1.2) |
 | metric | for example macro_F1, accuracy, ECE, AUROC, Brier, kendall_tau, success_rate, cost_ratio, latency_ms_p50 |
 | value | **as reported, with the reported precision** (for example 0.908) |
 | interval_low / interval_high | as reported, or empty |
@@ -27,7 +27,7 @@ Each row holds one measured quantity: one study, one model, one task, one metric
 | comparator_tuning_budget | same prompt / tuned / few-shot / fine-tuned / not reported |
 | cost_or_latency | as reported, with units |
 | hardware_or_provider | as reported |
-| calibration_quantity | ECE-equal-width / ECE-equal-mass / Brier / reliability diagram / none |
+| calibration_quantity | ECE-equal-width / ECE-equal-mass / Brier / reliability diagram / none / other: <description> (added in version 1.2 for SmoothECE and ECE with unstated bins) |
 | post_hoc_calibration | none / temperature / isotonic / Platt / other |
 | cascade_result | a free-text summary of any escalation result (quality retained, cost fraction) |
 | test_set_exposure | public-pre-2026 / new / private / unclear |

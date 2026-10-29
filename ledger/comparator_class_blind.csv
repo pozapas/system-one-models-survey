@@ -1,0 +1,221 @@
+analysis,record,study,class,reason
+r1Gap,nimble324,grey_bespoke_nimble,task_trained,Nimble is LoRA-tuned on the contrastive-choice task family and the holdout is drawn from that family.
+r1Gap,nimble13,grey_bespoke_nimble,zero_shot_open,Nimble is run on public subsets the source says lie outside its training categories.
+r1Gap,cheng2250,cheng2026thisthatmodel,task_trained,this-that-model was trained on the benchmark families.
+r1Gap,ibrOpenBest,ibrahim2026evaluating,zero_shot_open,SemIf-4B is a frozen Qwen3.5-4B letter readout with no training.
+r1Gap,rev975,grey_robbalian_rev,task_trained,Rev is LoRA-tuned on train splits of the same five datasets as the holdout.
+r1Gap,revJevBench,grey_robbalian_rev,task_trained,Rev data design was informed by reading misses on the public JevBench items.
+r1Gap,revDecisionIndex,grey_robbalian_rev,task_trained,Rev training pool covers sets and families that the Decision Index tasks draw on.
+r1Gap,layaTypedDecisions,grey_laya,task_trained,laya-typed-decisions is fine-tuned on this benchmark training split.
+r1Gap,kevInDist,grey_kev,task_trained,Kev-9B is trained and selected on this suite and its development partitions by the same author.
+r1Gap,kevOod,grey_kev,task_trained,Kev-9B is trained and selected on this suite and its development partitions by the same author.
+r1Gap,kevMmluPro,grey_kev,task_trained,Kev-9B is trained and selected on this suite and its development partitions by the same author.
+gapJevBest,ibrGap,ibrahim2026evaluating,frontier_llm,Oracle best-per-task over 19 prompted flagship and other LLMs.
+gapJevBest,liJudgeRewardBench,li2026jevasajudge,frontier_llm,GPT-6 Astra is a flagship LLM used by prompting.
+gapJevBest,liJudgeJudgeBench,li2026jevasajudge,frontier_llm,GPT-6 Astra is a flagship LLM used by prompting.
+gapJevBest,liJudgeHaluEval,li2026jevasajudge,frontier_llm,GPT-6 Astra is a flagship LLM used by prompting.
+gapJevBest,rafeGap,rafe2026calibrated,frontier_llm,Best frontier arm Claude Fable by prompting.
+gapJevBest,zhangGap,zhang2026same,frontier_llm,Gemini Pro is a flagship LLM used by prompting.
+gapJevBest,dengGap,deng2026jev,frontier_llm,Frontier configurations including GPT-6 Astra and Claude Opus by prompting.
+gapJevBest,liFastCloud,li2026fast,other_llm,DeepSeek v4.1 flash is a flash-tier LLM.
+gapJevBest,liFastImage,li2026fast,other_llm,DeepSeek v4.1 flash is a flash-tier LLM.
+gapJevBest,liReplacingOcr,li2026replacing,other_llm,DeepSeek v4.1 flash is a flash-tier LLM.
+r1Gap,liuWaInject,liu2026evaluating,zero_shot_open,Nimble is used as released on prompt-injection data outside its training categories.
+gapJevBest,liuRJudgeBest,liu2026evaluating,other_llm,DeepSeek-V4.1-Flash is a flash-tier open LLM.
+gapJevBest,liBeyondAcc,li2026beyond,other_llm,Qwen3.8-27B first-token readout is an open mid-size LLM.
+r1Gap,kourtisKnown,kourtis2026type,task_trained,Laya FT is fine-tuned on the full training split of the corpus.
+gapJevBest,kourtisGap,kourtis2026type,task_trained,ModernBERT-base is trained on the full training split.
+r1Gap,joyClinc,joy2026system,zero_shot_open,Laya is run at released settings on CLINC150 with no tuning.
+gapJevBest,joyGap,joy2026system,decision_model,Laya is an open typed decision model run zero-shot.
+gapJevBest,madridMetaMedQA,madridgarcia2026jev,frontier_llm,GPT-6 Sol is a flagship LLM used by prompting.
+gapJevBest,sharmaH1,sharma2026selection,other_llm,engram v2 relies on gpt-4o-mini extraction by prompting plus Jev typing.
+gapJevBest,sharmaS4,sharma2026selection,other_llm,gpt-4o-mini listwise reranker is a small LLM used by prompting.
+gapJevBest,zhangEmoGap,zhang2026emo,other_llm,Gemini Flash is a flash-tier LLM.
+r1Gap,perifanisLayaBackend,perifanis2026selmroute,zero_shot_open,Open Laya is used as a frozen probe extractor with no training on routing data.
+gapJevBest,perifanisGap,perifanis2026selmroute,task_trained,CatBoost router is trained on dense embeddings.
+gapJevBest,wangGap,wang2026jev,other_llm,GLM-5.2 is an open-weight generative judge used by prompting.
+r1Gap,dingMmlu,ding2026jet,zero_shot_open,JET scores candidates with an untuned open Qwen3.5-27B.
+gapJevBest,dingGap,ding2026jet,decision_model,"JET scores candidates with an untuned open model, treated as a decision model."
+gapJevBest,konakWisdm,konak2026more,task_trained,Random Forest is trained on other subjects.
+gapJevBest,rezvaniTop1,rezvani2026jevvibe,frontier_llm,GPT-5.6 Sol is a flagship LLM used by prompting.
+r1Gap,porceddaChoice,porcedda2026jev,zero_shot_open,SemIf Choice is a frozen Qwen readout with no training.
+gapJevBest,porceddaGap,porcedda2026jev,decision_model,SemIf Choice is an open decision model used zero-shot.
+gapJevBest,shengSr,sheng2026navjev,frontier_llm,Qwen3.8-Max is a flagship hosted LLM swapped in by prompting.
+r1Gap,daiSst2,dai2026koa,zero_shot_open,Koa-decision is tuned on a separate corpus disjoint from SST-2 and applied zero-shot.
+gapJevBest,daiGapSst2,dai2026koa,frontier_llm,Gemini-Pro-3.1 is a flagship LLM used zero-shot.
+r1Gap,deusserMmlu,deusser2026evaluating,zero_shot_open,Open Qwen3.8-27B is scored by next-token probabilities with no training.
+r1Gap,gaoOrdinal,gao2026more,zero_shot_open,StartLux-27B is used as released on public ordinal datasets with no tuning by the evaluators.
+r1Gap,wangGeneral,wang2026chinese,task_trained,Chinese-Jev is trained on 10 million Chinese decisions from the benchmark source families.
+gapJevBest,xuTraffic,xu2026first,task_trained,"Random Forest is trained on 8,000 records."
+gapJevBest,xuTrafficSol,xu2026first,frontier_llm,GPT-5.6 Sol with high reasoning is a flagship LLM.
+r1Gap,liFastbAF,li2026fastb,zero_shot_open,Laya is an open model run zero-shot on the authors suite.
+gapJevBest,doRosarioBAcc,dorosario2026jevasajudge,frontier_llm,GPT-6 Astra is a flagship LLM used by prompting.
+gapJevBest,hakemMacroF1,teke2026hakembench,other_llm,Gemini Flash is the small tier.
+gapJevBest,hakemHumanGold,teke2026hakembench,other_llm,DeepSeek V4 Pro is an open-weight general LLM used by prompting.
+r1Gap,hakemKev4b,teke2026hakembench,zero_shot_open,Kev 4B is used as released on a new Turkish benchmark.
+gapJevBest,severoF1k1,severo2026jevids,other_llm,Gemini Flash is the small tier.
+gapJevBest,muR2InDist,mu2026hydrojev,task_trained,Logistic regression is trained on 200 labelled windows.
+gapJevBest,muLlmE1,mu2026hydrojev,frontier_llm,The paper calls deepseek-v4-pro the best frontier reasoning LLM.
+gapJevBest,denneyGilardi21,denney2026jev,frontier_llm,GPT-6 Luna is a named flagship-family LLM used by prompting.
+r1Gap,sansiAll,gan2026sansi,task_trained,SanSi-2.6B is trained on the in-distribution sources of the suite.
+r1Gap,mazzoniPlurule,mazzoni2026benchmarking,zero_shot_open,Laya is run zero-shot on moderation data with no tuning.
+gapJevBest,mazzoniOlid,mazzoni2026benchmarking,task_trained,Detoxify is a task-specific toxicity classifier trained on labelled data.
+gapJevBest,sadounTrec,sadoun2026probabilities,other_llm,Qwen3-32B is an open LLM used by prompting.
+r1Gap,duanSii27b,duan2026general,task_trained,SII-Decision-27B is the authors own model with checkpoints selected on a dev set of their benchmark.
+gapJevBest,duanGap,duan2026general,frontier_llm,GPT-6-Luna is a named flagship-family LLM used by prompting.
+r1Gap,caoRewriting,cao2026searchjev,task_trained,SearchJev-4B is trained on the in-domain mixture of the same benchmark.
+r1Gap,caoRouting,cao2026searchjev,task_trained,SearchJev-4B is trained on the in-domain mixture of the same benchmark.
+r1Gap,caoVerification,cao2026searchjev,task_trained,SearchJev-4B is trained on the in-domain mixture of the same benchmark.
+r1Gap,caoSufficiency,cao2026searchjev,task_trained,SearchJev-4B is trained on the in-domain mixture of the same benchmark.
+r1Gap,caoNavigation,cao2026searchjev,task_trained,SearchJev-4B is trained on the in-domain mixture of the same benchmark.
+gapJevBest,paschGap,paschalides2026jev,frontier_llm,GPT-6 Sol is a flagship LLM used by prompting.
+gapJevBest,luGapDbpedia,lu2026benchmarking,other_llm,Qwen2.5-7B-Instruct is a small open LLM.
+r1Gap,wangRouting,wang2026hidden,task_trained,NanoJev is trained on the task data.
+r1Gap,wangCancellation,wang2026hidden,task_trained,NanoJev is trained on the task data.
+r1Gap,wangSeverity,wang2026hidden,task_trained,NanoJev is trained on the task data.
+r1Gap,jungL2,jung2026decision,zero_shot_open,Open Qwen2.5-72B is read through answer-word probabilities with no training.
+r1Gap,jungL3,jung2026decision,zero_shot_open,Open Qwen2.5-72B is read through answer-word probabilities with no training.
+gapJevBest,jungGap,jung2026decision,task_trained,LightGBM is trained on source data.
+r1Gap,huoChip,huo2026nl2hull,task_trained,Chip is fine-tuned on in-distribution records of the benchmark.
+r1Gap,sharmaTickets,sharma2026typedbench,zero_shot_open,Kev-9B is used as released on a third-party benchmark.
+r1Gap,sharmaSeverity,sharma2026typedbench,zero_shot_open,Kev-9B is used as released on a third-party benchmark.
+gapJevBest,sharmaGapGemma,sharma2026typedbench,other_llm,Gemma 4 31B is an open LLM read through first-token log-probabilities.
+gapJevBest,sharmaGapSeverity,sharma2026typedbench,decision_model,Kev-9B is an open decision model used as released.
+r1Gap,fadliLayaFt,fadli2026does,task_trained,Laya-multilingual is fine-tuned on pooled in-domain training data.
+gapJevBest,fadliGap,fadli2026does,frontier_llm,Claude Opus 5.5 is a flagship LLM used by prompting.
+gapJevBest,fadliGapDeepseek,fadli2026does,other_llm,DeepSeek V4.1 Flash is a flash-tier LLM.
+gapJevBest,lingGapReact,ling2026when,other_llm,"ReAct baseline uses gpt-5.6-luna, a flash-tier LLM."
+gapJevBest,liCanGap,li2026can,task_trained,Qwen2.5-7B is LoRA-tuned on VAST.
+gapJevBest,liCanGapGpt,li2026can,frontier_llm,GPT-5.6 is a frontier LLM used by prompting.
+r1Gap,rajputKev,rajput2026hosted,zero_shot_open,Kev-4B is used as released with no tuning.
+gapJevBest,laiDialogue,lai2026correct,other_llm,Qwen3.5-27B is an open LLM used by prompting.
+r1Gap,liReadingEikos,li2026reading,zero_shot_open,Eikos-27B is a released open model run as is.
+gapJevBest,liReadingGpt,li2026reading,frontier_llm,GPT-6.1 Sol is a flagship LLM used by prompting.
+r1Gap,duD3,du2026reliable,zero_shot_open,D3-27B is a general open decision model used without medical tuning.
+gapJevBest,duGemma,du2026reliable,other_llm,Gemma4-31B-IT is an open LLM used by prompting.
+r1Gap,chungOpenJev2B,chung2026jevtom,zero_shot_open,Open-Jev-2B has no task fine-tuning.
+gapJevBest,chungGap,chung2026jevtom,other_llm,GPT-3.5-Turbo is an older small hosted LLM.
+gapJevBest,chungGapNoControls,chung2026jevtom,other_llm,GPT-3.5-Turbo is an older small hosted LLM.
+r1Gap,liJevaBanking,li2026jeva,task_trained,Jeva-4B is trained on about 1M examples including similar intent data.
+r1Gap,agrijev,li2026agrijev,task_trained,AgriJev-9B is adapted to the agricultural task.
+r1Gap,zhangTypedClef,zhang2026typed,zero_shot_open,Clef is a released open decision model used as is.
+gapJevBest,zhangTypedGap,zhang2026typed,frontier_llm,GPT-6 Luna is a named flagship-family LLM used by prompting.
+gapJevBest,zhangTypedGapTabfact,zhang2026typed,frontier_llm,GPT-6 Luna is a named flagship-family LLM used by prompting.
+gapJevBest,chouhanGap,chouhan2026verdict,task_trained,Verdict-MQ and its matched baseline are fine-tuned on the task.
+gapJevBest,chouhanGapBoolq,chouhan2026verdict,task_trained,Verdict-MQ and its matched baseline are fine-tuned on the task.
+gapJevBest,chouhanGapMultirc,chouhan2026verdict,task_trained,Verdict-MQ and its matched baseline are fine-tuned on the task.
+gapJevBest,chouhanGapTyped,chouhan2026verdict,task_trained,Verdict-MQ is fitted to the benchmark training split.
+r1Gap,panStartlux,pan2026world,zero_shot_open,StartLux 27B is used as released on a third-party game benchmark.
+gapJevBest,panGap,pan2026world,other_llm,MiMo v2.6 is a non-flagship LLM used by prompting with an action adapter.
+gapJevBest,panGapGpt,pan2026world,frontier_llm,GPT-6.1-sol is a flagship LLM used by prompting.
+r1Gap,geuterOpenDec,geuter2026releasing,task_trained,"Jeff recipe was selected on OpenDecisions, so this set is its development set."
+r1Gap,geuterHeldOut,geuter2026releasing,zero_shot_open,Jeff is evaluated on held-out public datasets not used for recipe selection or training.
+gapJevBest,geuterGap,geuter2026releasing,task_trained,"Jeff recipe was selected on OpenDecisions, so this set is its development set."
+gapJevBest,geuterGapHeldOut,geuter2026releasing,decision_model,Jeff is an open model evaluated zero-shot on held-out datasets.
+r1Gap,startluxPivot,zhuang2026startlux,task_trained,StartLux was trained on related generated families by the group that built DecisionPivot.
+gapJevBest,startluxGap,zhuang2026startlux,task_trained,StartLux AutoThink was trained on related generated families by the benchmark authors.
+gapJevBest,startluxGapExt,zhuang2026startlux,other_llm,GLM-5.3 is an open-weight LLM used by prompting.
+gapJevBest,lukassenGap,lukassen2026cheap,frontier_llm,Claude Sonnet is a flagship LLM used by prompting.
+r1Gap,huangRunoffTorchcast,huang2026consider,zero_shot_open,Torchcast 12B is used as released with native answers.
+gapJevBest,huangRunoffGap,huang2026consider,decision_model,Mercury Decide is a typed decision API used zero-shot.
+r1Gap,jevguardOverall,hu2026jevguard,task_trained,Jev-Guard is trained in-distribution on the four-domain data.
+gapJevBest,jevguardGap,hu2026jevguard,task_trained,Jev-Guard is trained in-distribution.
+r1Gap,harnessBfcl,zhu2026jevagentharness,zero_shot_open,StartLux-9B is used off the shelf on BFCL.
+r1Gap,harnessShift,zhu2026jevagentharness,task_trained,AgentDecision-4B is trained on the environment states and generator.
+gapJevBest,harnessGap,zhu2026jevagentharness,decision_model,StartLux-9B is an open decision model used off the shelf.
+gapJevBest,harnessGapShift,zhu2026jevagentharness,task_trained,AgentDecision-4B is trained on agent states.
+r1Gap,prismFiveSet,teng2026prism,task_trained,The compared open model is trained on the authors shared training questions.
+r1Gap,prismFiveSetPrism,teng2026prism,task_trained,The compared open model is trained on the authors shared training questions.
+gapJevBest,prismGap,teng2026prism,task_trained,The comparator is trained on the shared training questions.
+r1Gap,arenaAcc,chen2026system1,zero_shot_open,Decision-2.0-Vega-27B is run locally as released.
+gapJevBest,arenaGap,chen2026system1,frontier_llm,Claude Opus 5.5 is a flagship LLM used by prompting.
+gapJevBest,liteMasGap,wang2026jevlitemas,other_llm,DeepSeek-V4-Flash is a flash-tier LLM router.
+gapJevBest,bruGap,bru2026towards,task_trained,LightGBM is trained on survey data.
+r1Gap,internDecisionMean,zhu2026interndecision,task_trained,Intern-Decision-4B is trained on the evaluation sources.
+gapJevBest,internDecisionGap,zhu2026interndecision,task_trained,Intern-Decision-4B is trained on the evaluation sources.
+r1Gap,dknownAcc,li2026dknownjev,task_trained,DKnown-Jev is fine-tuned on in-domain records.
+gapJevBest,dknownGap,li2026dknownjev,task_trained,DKnown-Jev is fine-tuned on in-domain data.
+r1Gap,raoRiceChem,rao2026decision,zero_shot_open,Perplexity Decider is a released general model used with no tuning.
+gapJevBest,raoGapRice,rao2026decision,other_llm,Flash-tier LLM judge used by prompting.
+gapJevBest,raoGapHealth,rao2026decision,other_llm,Flash-tier LLM judge used by prompting.
+gapJevBest,raoGapEllipse,rao2026decision,other_llm,Flash-tier LLM judge used by prompting.
+gapJevBest,raoGapFedTurn,rao2026decision,other_llm,Flash-tier LLM judge used by prompting.
+gapJevBest,raoGapFedDial,rao2026decision,other_llm,Flash-tier LLM judge used by prompting.
+gapJevBest,raoGapLfqa,rao2026decision,other_llm,GPT-5.6 Luna and Gemini Flash are flash-tier LLM judges.
+gapJevBest,raoGapUsrTc,rao2026decision,other_llm,Flash-tier LLM judge used by prompting.
+gapJevBest,raoGapUsrPc,rao2026decision,other_llm,GPT-5.6 Luna and Gemini Flash are flash-tier LLM judges.
+gapJevBest,wangSoup4bMacro,wang2026jevsoup,other_llm,Adaptive Minds router prompts an unadapted Qwen3 backbone.
+gapJevBest,wangSoupIsolatedMicro,wang2026jevsoup,other_llm,Adaptive Minds router prompts an unadapted Qwen3 backbone.
+gapJevBest,zhangMobileSuccess,zhang2026mobile,frontier_llm,Qwen3.8-Max is a flagship hosted LLM choosing each action.
+gapJevBest,wangUniJevGapQwen27,wang2026unijev,other_llm,Qwen3.8-27B is an open LLM used by prompting.
+gapJevBest,youCareGap,you2026native,frontier_llm,GPT Sol is a flagship LLM used by prompting.
+r1Gap,yangReal738,yang2026what,zero_shot_open,Kev-27B is used as released on real decision items with no tuning.
+gapJevBest,yangGapThinking,yang2026what,other_llm,Qwen3.8-27B with thinking is an open mid-size LLM.
+gapJevBest,wangTruncGap,wang2026truncated,decision_model,GPT-6 Luna Decisions API is a typed decision model used zero-shot.
+gapJevBest,iqbalClincGap,iqbal2026typed,task_trained,DeBERTa-v3-large is fine-tuned on full data.
+gapJevBest,zhangCsGapLongHealth,zhang2026general,task_trained,CS1-4B is domain fine-tuned.
+gapJevBest,zhangCsGapTcga,zhang2026general,task_trained,CS1-4B is domain fine-tuned.
+r1Gap,zhuangPair,zhuang2026decisionpivot,zero_shot_open,Perplexity Decider v1.1 is a released model scored as is.
+gapJevBest,zhuangGapPair,zhuang2026decisionpivot,decision_model,Perplexity Decider v1.1 is a released decision model used as is.
+r1Gap,sMasSharp,li2026s2mas,task_trained,sharp-421m is trained on the in-domain survey data.
+gapJevBest,sMasGapSharp,li2026s2mas,task_trained,sharp-421m is trained on in-domain data.
+r1Gap,stamblerNative,stambler2026pyes,zero_shot_open,StartLux Instant is a frozen released model used on new puzzles.
+gapJevBest,stamblerGapJevBench,stambler2026pyes,other_llm,Qwen3.8-27B read through Yes/No logits is an open LLM.
+gapJevBest,gershonUc2,gershon2026decision,other_llm,GLM-5.3 is an open-weight LLM judge.
+gapJevBest,gershonUc2Half,gershon2026decision,frontier_llm,Claude Opus is a flagship LLM judge.
+gapJevBest,gershonUc4,gershon2026decision,frontier_llm,GPT-6 is a flagship LLM judge.
+gapJevBest,munotHotpot,munot2026when,decision_model,Liquid d1 and GPT-6 Luna Decisions are typed decision models used zero-shot.
+gapJevBest,munotMetaTool,munot2026when,decision_model,Liquid d1 and GPT-6 Luna Decisions are typed decision models used zero-shot.
+gapJevBest,munotEcthr,munot2026when,decision_model,Liquid d1 and GPT-6 Luna Decisions are typed decision models used zero-shot.
+r1Gap,wengJevBench35b,weng2026our,task_trained,The 35B LoRA model was developed with the benchmark items in view.
+r1Gap,wengJevBench2b,weng2026our,zero_shot_open,The released 2B was trained before the benchmark download on a broad corpus with no selection.
+r1Gap,wengJevBench2bRetrain,weng2026our,task_trained,The retrain followed benchmark scores and changed recipe and corpus.
+r1Gap,demirOriginal,demir2026commit,zero_shot_open,The Perplexity decider is a released general model used as is.
+r1Gap,demirAbstain,demir2026commit,zero_shot_open,The Perplexity decider is a released general model used as is.
+gapJevBest,demirGap,demir2026commit,other_llm,Gemini Flash is a flash-tier LLM.
+gapJevBest,demirGapAbstain,demir2026commit,other_llm,Gemini Flash is a flash-tier LLM.
+r1Gap,laiNatural,lai2026which,task_trained,LoRA is fine-tuned on the source rule data of the same task.
+gapJevBest,santillanaGap,santillana2026vxone,task_trained,VX-One heads are trained on the dataset.
+r1Gap,retijevDecisionUnseen,liu2026retijev,task_trained,RetiJev-9B is trained on the benchmark rule families.
+r1Gap,retijevDecisionSeen,liu2026retijev,task_trained,RetiJev-9B is trained on the benchmark rule families.
+r1Gap,retijevDiagnosis,liu2026retijev,task_trained,RetiJev-9B is trained on the benchmark rule families.
+r1Gap,retijevGradingOod,liu2026retijev,task_trained,RetiJev-9B is trained on the benchmark rule families.
+r1Gap,retijevGradingHard,liu2026retijev,task_trained,RetiJev-9B is trained on the benchmark rule families.
+r1Gap,haMacroF1,ha2026decision,zero_shot_open,Quyet-1.0-Small is used frozen and zero-shot.
+r1Gap,haAccuracy,ha2026decision,zero_shot_open,Quyet-1.0-Small is used frozen and zero-shot.
+r1Gap,haPhoatis,ha2026decision,zero_shot_open,GLiNER2.5-multi-Decide is used frozen and zero-shot.
+r1Gap,fengRepeat,feng2026jevdlc,task_trained,JEV-SFT is LoRA-tuned on the in-domain training streams.
+r1Gap,fengOpen,feng2026jevdlc,task_trained,JEV-SFT is LoRA-tuned on the in-domain training streams.
+r1Gap,codeChoice,mohebifar2026onecodereviewbench,zero_shot_open,Kev-27B is used as released with no tuning.
+r1Gap,codeBoolean,mohebifar2026onecodereviewbench,zero_shot_open,Kev-27B is used as released with no tuning.
+r1Gap,codeReviewed,mohebifar2026onecodereviewbench,zero_shot_open,Kev-27B is used as released with no tuning.
+r1Gap,robojevSo101,chen2026robojev,task_trained,RoboJev-27B is trained on the benchmark family.
+r1Gap,robojevUnseen,chen2026robojev,task_trained,RoboJev-27B is trained on the benchmark family.
+r1Gap,robojevPplx,chen2026robojev,zero_shot_open,Perplexity Decider v1.2 is a released model used as is.
+gapJevBest,robojevGap,chen2026robojev,frontier_llm,GPT-6 Astra is a flagship LLM used by prompting.
+gapJevBest,robojevGapOpen,chen2026robojev,task_trained,RoboJev-27B is trained on the benchmark family.
+r1Gap,entityF1,steiner2026entity,zero_shot_open,Perplexity Decider v1.2 with the default prompt is a released model.
+r1Gap,entityF1Selected,steiner2026entity,task_trained,The prompt was selected per model and benchmark on test data.
+r1Gap,entityBilliger,steiner2026entity,zero_shot_open,Perplexity Decider v1.2 with the default prompt is a released model.
+gapJevBest,entityGap,steiner2026entity,frontier_llm,GPT-6 Luna generative zero-shot is a named flagship-family LLM.
+r1Gap,trustjevTensorTrust,xu2026trustjev,task_trained,TrustJev is a LoRA model trained on the same attack data.
+r1Gap,trustjevIheval,xu2026trustjev,task_trained,TrustJev is a LoRA model trained on the same attack data.
+r1Gap,trustjevAeb,xu2026trustjev,task_trained,TrustJev is a LoRA model trained on the same attack data.
+r1Gap,trustjevIndustrial,xu2026trustjev,task_trained,TrustJev is a LoRA model trained on the same attack data.
+gapJevBest,trustjevGap,xu2026trustjev,task_trained,TrustJev is trained on the same data.
+r1Gap,rubrixHeldOut,paramasivam2026rubrix,task_trained,RubriX is a specialist trained on rubric-judging data.
+r1Gap,rubrixSummEval,paramasivam2026rubrix,task_trained,RubriX is a specialist trained on rubric-judging data.
+r1Gap,rubrixQagsCnn,paramasivam2026rubrix,task_trained,RubriX is a specialist trained on rubric-judging data.
+r1Gap,rubrixQagsXsum,paramasivam2026rubrix,task_trained,RubriX is a specialist trained on rubric-judging data.
+gapJevBest,heMimic4Gap,he2026can,other_llm,Qwen Flash is a flash-tier LLM used by prompting.
+gapJevBest,heMimic3Gap,he2026can,other_llm,Qwen Flash is a flash-tier LLM used by prompting.
+gapJevBest,heTrialgptGap,he2026can,other_llm,Qwen Flash is a flash-tier LLM used by prompting.
+r1Gap,bromPt,brom2026confidence,task_trained,Laya multilingual is fine-tuned on in-domain pt-PT data.
+gapJevBest,bromPt,brom2026confidence,task_trained,Laya multilingual is fine-tuned on in-domain data.
+r1Gap,liuDbFc,liu2026decisionb,zero_shot_open,The Perplexity decider is a released general model used as is.
+gapJevBest,liuDbFc,liu2026decisionb,frontier_llm,gpt-6-sol is a flagship LLM used by prompting.
+r1Gap,psyJev9b,liu2026psyjev,task_trained,PsyJev-9B is adapted on the benchmark training partition.
+gapJevBest,psyJev9b,liu2026psyjev,task_trained,PsyJev-9B and Gemma-2-9B are adapted on the training partition.
+gapJevBest,psyGemma,liu2026psyjev,task_trained,PsyJev-9B and Gemma-2-9B are adapted on the training partition.
+gapJevBest,khatriGem38,khatri2026need,other_llm,Gemini Flash is a flash-tier LLM.
+gapJevBest,khatriGem25,khatri2026need,other_llm,Gemini Flash is a flash-tier LLM.

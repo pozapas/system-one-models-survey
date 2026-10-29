@@ -1,0 +1,102 @@
+name: Strands Decider v21, compressed for WebGPU
+name_src:
+  quote: '# Strands Decider v21, compressed for WebGPU'
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+hf_id: alxnahas/strands-decider-v21-webgpu
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+revision_sha: 808299822720057dd12e01ed3bdfd26f0a81be9b
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+vendor_or_author: alxnahas
+vendor_or_author_src:
+  quote: 'for the hand-written WebGPU engine in [alxnahas/strands-decider-web](https://github.com/alxnahas/strands-decider-web).'
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+release_date: '2026-10-09'
+release_date_src:
+  quote: (HF API createdAt for alxnahas/strands-decider-v21-webgpu)
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+backbone: Qwen/Qwen3.5-2B-Base
+backbone_src:
+  quote: 'base_model:'
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+decision_head: MB (437 MB of weights, a 27 MB embedding bundle, 8 MB of tokenizer and head),
+decision_head_src:
+  quote: MB (437 MB of weights, a 27 MB embedding bundle, 8 MB of tokenizer and head),
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+training_objective: The BoolQ loss is small but its interval excludes zero, so the 176 above probably reads a little high.
+training_objective_src:
+  quote: The BoolQ loss is small but its interval excludes zero, so the 176 above probably reads a little high.
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+primitives: choice, noul
+primitives_src:
+  quote: 'a mean KL of 0.0002), mostly through the noul cutoffs at 0.2 and 0.8 and calibration bins: the same 176 answers'
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+source_urls:
+- 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'
+- 'https://github.com/alxnahas/strands-decider-web'
+source_urls_src:
+  quote: 'hand-written WebGPU engine in [alxnahas/strands-decider-web](https://github.com/alxnahas/strands-decider-web).'
+  url: 'https://huggingface.co/alxnahas/strands-decider-v21-webgpu/raw/808299822720057dd12e01ed3bdfd26f0a81be9b/README.md'

@@ -1,0 +1,101 @@
+name: EmbeddingGemma 2 · typed decisions
+name_src:
+  quote: '# EmbeddingGemma 2 · typed decisions'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+hf_id: mrm8488/embeddinggemma-2-ft-typed-decision
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+revision_sha: 8403ff7fddc75b6994130e581a832f875fb5bd0e
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+vendor_or_author: mrm8488
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+release_date: '2026-10-11'
+release_date_src:
+  quote: (HF API createdAt for mrm8488/embeddinggemma-2-ft-typed-decision)
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+backbone: google/embeddinggemma-2
+backbone_src:
+  quote: 'base_model: google/embeddinggemma-2'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+parameter_count: '* **Head:** schema-conditioned scorer (~0.5M parameters). The `prior` term is zero-shot embedding similarity;'
+parameter_count_src:
+  quote: '* **Head:** schema-conditioned scorer (~0.5M parameters). The `prior` term is zero-shot embedding similarity;'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+decision_head: 'The head scores the **text of each option** against the state and the question, so the schema is plain data:'
+decision_head_src:
+  quote: 'The head scores the **text of each option** against the state and the question, so the schema is plain data:'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+training_objective: '| `model(**batch)` | `GemmaDecisionOutput(loss, logits, probabilities, text_embeds)` |'
+training_objective_src:
+  quote: '| `model(**batch)` | `GemmaDecisionOutput(loss, logits, probabilities, text_embeds)` |'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+training_data: the training data are less reliable).
+training_data_src:
+  quote: the training data are less reliable).
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+state_modality: 'The head scores the **text of each option** against the state and the question, so the schema is plain data:'
+state_modality_src:
+  quote: 'The head scores the **text of each option** against the state and the question, so the schema is plain data:'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| `choice` | What should we do with this trace? → `continue / observe / human_review / stop` | `str` |'
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+source_urls:
+- 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision/raw/8403ff7fddc75b6994130e581a832f875fb5bd0e/README.md'

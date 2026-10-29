@@ -1,0 +1,103 @@
+name: JEV-System1-Gemma4-26B-Decide
+name_src:
+  quote: '# JEV-System1-Gemma4-26B-Decide'
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+hf_id: assix-research/jev-system1-gemma4-26b-decide
+hf_id_src:
+  quote: '**`assix-research/jev-system1-gemma4-26b-decide`** is an open-source **System 1 Typed Decision Engine** built on the **G'
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+revision_sha: 68b4411911fe870e750bd70cf7384160851cf7f0
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+vendor_or_author: assix-research
+vendor_or_author_src:
+  quote: '**`assix-research/jev-system1-gemma4-26b-decide`** is an open-source **System 1 Typed Decision Engine** built on the **G'
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+release_date: '2026-10-15'
+release_date_src:
+  quote: (HF API createdAt for assix-research/jev-system1-gemma4-26b-decide)
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+backbone: google/gemma-4-26B-A4B-it
+backbone_src:
+  quote: 'base_model: google/gemma-4-26B-A4B-it'
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+parameter_count: Leverages 26B total parameter capacity while activating only 4B parameters per token during the prefill pass.
+parameter_count_src:
+  quote: Leverages 26B total parameter capacity while activating only 4B parameters per token during the prefill pass.
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+decision_head: parameters) coupled with a trainable **`fp32` Clef span-pooling decision head**.
+decision_head_src:
+  quote: parameters) coupled with a trainable **`fp32` Clef span-pooling decision head**.
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+training_objective: '| **Regularization** | KL Divergence Regularization (`kl_weight=0.1`) to preserve base reasoning representations |'
+training_objective_src:
+  quote: '| **Regularization** | KL Divergence Regularization (`kl_weight=0.1`) to preserve base reasoning representations |'
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+state_modality: Evaluates multiple independent or related questions over a shared context (`state`) in a single forward pass.
+state_modality_src:
+  quote: Evaluates multiple independent or related questions over a shared context (`state`) in a single forward pass.
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: unstructured `state` alongside a dictionary of typed `questions` (`choice`, `score`, `noul`), pools token span representations across all candidate options simultaneously, and outputs **LBFGS temperature-calibrated probability distributions** in **~275 ms**
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+source_urls:
+- 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'
+- 'https://github.com/unslothai/unsloth.git'
+- 'https://github.com/unslothai/unsloth-zoo.git'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide/raw/68b4411911fe870e750bd70cf7384160851cf7f0/README.md'

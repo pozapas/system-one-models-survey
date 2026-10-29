@@ -1,0 +1,103 @@
+name: layazh — Laya 中文版决策模型
+name_src:
+  quote: '# layazh — Laya 中文版决策模型'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+hf_id: ZichenAI/layazh-zh
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+revision_sha: 769ee58882c429bd2257c6dffe4f8b080338ffd1
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+vendor_or_author: ZichenAI
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+release_date: '2026-09-27'
+release_date_src:
+  quote: (HF API createdAt for ZichenAI/layazh-zh)
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+availability_and_license: Open weights, other; gated=False
+availability_and_license_src:
+  quote: 'license: other'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+backbone: hfl/chinese-roberta-wwm-ext-large
+backbone_src:
+  quote: 'base_model: hfl/chinese-roberta-wwm-ext-large'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+decision_head: '| 决策头 | 2 层 TransformerEncoder + marker scorer + act head | **同构**（逐行对齐上游 `DecisionModel`） |'
+decision_head_src:
+  quote: '| 决策头 | 2 层 TransformerEncoder + marker scorer + act head | **同构**（逐行对齐上游 `DecisionModel`） |'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+training_objective: '| 训练配方 | RLCD：log + 0.5·spherical（序数题另加 RPS），REINFORCE + group-mean baseline，多轮 TD(λ=1) | 同配方，实测采用：`rl_weight=8`、`kl_weight=1`、`group=4`、`σ=0.5`、`τ=1.5` |'
+training_objective_src:
+  quote: '| 训练配方 | RLCD：log + 0.5·spherical（序数题另加 RPS），REINFORCE + group-mean baseline，多轮 TD(λ=1) | 同配方，实测采用：`rl_weight=8`、`kl_weight=1`、`group=4`、`σ=0.5`、`τ=1.5` |'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+state_modality: '**非自回归的中文 System 1 决策模型。** 给它一个 **state**（中文文本 / 邮件 / 工单 / JSON）'
+state_modality_src:
+  quote: '**非自回归的中文 System 1 决策模型。** 给它一个 **state**（中文文本 / 邮件 / 工单 / JSON）'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+context_length: '| 选项预算 | `head_max_len = 192` | `head_max_len = 192` |'
+context_length_src:
+  quote: '| 选项预算 | `head_max_len = 192` | `head_max_len = 192` |'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '`noul` 恒渲染为 `[false, true]`，故 `p[1]` = “该命题成立”的概率。'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+source_urls:
+- 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'
+- 'https://github.com/NandhaKishorM/laya'
+- 'https://github.com/CLUEbenchmark/CLUE'
+source_urls_src:
+  quote: '- Laya 代码：<https://github.com/NandhaKishorM/laya>'
+  url: 'https://huggingface.co/ZichenAI/layazh-zh/raw/769ee58882c429bd2257c6dffe4f8b080338ffd1/README.md'

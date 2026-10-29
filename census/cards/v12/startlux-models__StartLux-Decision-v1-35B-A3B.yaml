@@ -1,0 +1,101 @@
+name: StartLux-Decision-v1-35B-A3B
+name_src:
+  quote: '# StartLux-Decision-v1-35B-A3B'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+hf_id: startlux-models/StartLux-Decision-v1-35B-A3B
+hf_id_src:
+  quote: 'artlux_decision/` is Apache-2.0. See [LICENSE](https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/blob/'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+revision_sha: 81e59afd1a05942444bf08805c1f258611b8cdac
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+vendor_or_author: startlux-models
+vendor_or_author_src:
+  quote: 'Sizes: [0.8B](https://huggingface.co/startlux-models/StartLux-Decision-v1-0.8B) · [2B](https://huggingface.co/startlux-m'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+release_date: '2026-10-01'
+release_date_src:
+  quote: (HF API createdAt for startlux-models/StartLux-Decision-v1-35B-A3B)
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+availability_and_license: Open weights, cc-by-nc-4.0; gated=False
+availability_and_license_src:
+  quote: 'license: cc-by-nc-4.0'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+backbone: not disclosed
+backbone_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+parameter_count: 'It is a mixture of experts: about 35B parameters, of which about 3B are active for each token. It answers in half the'
+parameter_count_src:
+  quote: 'It is a mixture of experts: about 35B parameters, of which about 3B are active for each token. It answers in half the'
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+training_data: not disclosed
+training_data_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+state_modality: state can be text, JSON or images, up to 262,144 tokens (256K). Every
+state_modality_src:
+  quote: state can be text, JSON or images, up to 262,144 tokens (256K). Every
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: TypeSafe's definitions (for a choice, (p_max − 1/n) / (1 − 1/n)); the top probability is in `probabilities`.
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+source_urls:
+- 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/startlux-models/StartLux-Decision-v1-35B-A3B/raw/81e59afd1a05942444bf08805c1f258611b8cdac/README.md'

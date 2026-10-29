@@ -1,0 +1,102 @@
+name: Solomon MLX — 8-bit
+name_src:
+  quote: '# Solomon MLX — 8-bit'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+hf_id: FrenchCastle/jev-solomon-MLX-8-bit
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+revision_sha: c94e0e84f0f0b0d315d30059d5de951fe70cd831
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+vendor_or_author: FrenchCastle
+vendor_or_author_src:
+  quote: '| [`Solomon-MLX-bf16`](https://huggingface.co/FrenchCastle/Solomon-MLX-bf16) | `quality` | 55.6 GB | about 60 GB of unif'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+release_date: '2026-09-22'
+release_date_src:
+  quote: (HF API createdAt for FrenchCastle/jev-solomon-MLX-8-bit)
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+backbone: FrenchCastle/Solomon-MLX-bf16
+backbone_src:
+  quote: 'base_model: FrenchCastle/Solomon-MLX-bf16'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+decision_head: '| LoRA adapter (`adapter.safetensors`) and decision heads (`heads.npz`) | byte-identical to the release, sha256 pinned in `binding.json` |'
+decision_head_src:
+  quote: '| LoRA adapter (`adapter.safetensors`) and decision heads (`heads.npz`) | byte-identical to the release, sha256 pinned in `binding.json` |'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+training_data: 'training data):'
+training_data_src:
+  quote: 'training data):'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: '| single choice | which of these 2–8 options does it state? | one probability per option (sums to 1) |'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+source_urls:
+- 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'
+- 'https://github.com/ml-explore/mlx'
+source_urls_src:
+  quote: '[MLX](https://github.com/ml-explore/mlx) runtime of the upstream release,'
+  url: 'https://huggingface.co/FrenchCastle/jev-solomon-MLX-8-bit/raw/c94e0e84f0f0b0d315d30059d5de951fe70cd831/README.md'

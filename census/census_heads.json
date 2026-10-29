@@ -1,0 +1,71 @@
+{
+ "values": {
+  "heads": {
+   "coded": {
+    "text": "379",
+    "source": "shared/census/census_heads.json",
+    "note": "T1 originals coded by decision head"
+   },
+   "fixedSlots": {
+    "text": "30",
+    "source": "shared/census/census_heads.json",
+    "note": "originals with head type a"
+   },
+   "fixedSlotsFamilies": {
+    "text": "19",
+    "source": "shared/census/census_heads.json",
+    "note": "families with head type a"
+   },
+   "optionMarkers": {
+    "text": "132",
+    "source": "shared/census/census_heads.json",
+    "note": "originals with head type b"
+   },
+   "optionMarkersFamilies": {
+    "text": "99",
+    "source": "shared/census/census_heads.json",
+    "note": "families with head type b"
+   },
+   "labelLogits": {
+    "text": "171",
+    "source": "shared/census/census_heads.json",
+    "note": "originals with head type c"
+   },
+   "labelLogitsFamilies": {
+    "text": "82",
+    "source": "shared/census/census_heads.json",
+    "note": "families with head type c"
+   },
+   "pairScoring": {
+    "text": "39",
+    "source": "shared/census/census_heads.json",
+    "note": "originals with head type d"
+   },
+   "pairScoringFamilies": {
+    "text": "28",
+    "source": "shared/census/census_heads.json",
+    "note": "families with head type d"
+   },
+   "constrainedDecoding": {
+    "text": "0",
+    "source": "shared/census/census_heads.json",
+    "note": "originals with head type e"
+   },
+   "constrainedDecodingFamilies": {
+    "text": "0",
+    "source": "shared/census/census_heads.json",
+    "note": "families with head type e"
+   },
+   "undisclosed": {
+    "text": "7",
+    "source": "shared/census/census_heads.json",
+    "note": "originals with head type undisclosed"
+   },
+   "undisclosedFamilies": {
+    "text": "7",
+    "source": "shared/census/census_heads.json",
+    "note": "families with head type undisclosed"
+   }
+  }
+ }
+}

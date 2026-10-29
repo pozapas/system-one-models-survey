@@ -1,0 +1,102 @@
+name: pplx-decider-flash-v1.2
+name_src:
+  quote: '# pplx-decider-flash-v1.2'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+hf_id: perplexity-ai/pplx-decider-flash-v1.2
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+revision_sha: 9ff7cf9838e59df461c276b7699d56b244d2af58
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+vendor_or_author: Perplexity AI (HF organisation perplexity-ai)
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+release_date: '2026-10-15'
+release_date_src:
+  quote: (HF API createdAt for perplexity-ai/pplx-decider-flash-v1.2)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+availability_and_license: Open weights listed in the repo, Apache-2.0. The card calls the repository private and requires a token, but the HF API on 2026-10-28 reported private=False, gated=False. A separate GGUF repo (perplexity-ai/pplx-decider-flash-gguf-v1.2) is a T2 format conversion.
+availability_and_license_src:
+  quote: 'The repository is private: authenticate with a Hugging Face token that has access to it.'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+backbone: Qwen/Qwen3.5-4B (finetune)
+backbone_src:
+  quote: It is built on Qwen3.5-4B,
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+parameter_count: 4B backbone; about 9 GiB of BF16 weights
+parameter_count_src:
+  quote: a CUDA GPU with room for about 9 GiB of BF16 weights plus working memory
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+decision_head: readout.safetensors BF16 [255, 2560] decision head; readout at a marker token per question; noncausal full attention
+decision_head_src:
+  quote: a BF16 `[255, 2560]` decision head.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+training_objective: 'Distillation: the student learns the teachers'' full probability distributions, not just their answers'
+training_objective_src:
+  quote: (the student learns the teachers' full probability distributions, not just their answers)
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+training_data: Distilled from the 27B decision models on their training requests; several training runs combined by model souping
+training_data_src:
+  quote: '**distilled from the 27B decision models** on their training requests'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+state_modality: text and images
+state_modality_src:
+  quote: the same joint request format, the same API and the same text and image support
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+context_length: max_length 262,144 tokens per sequence (backbone position limit)
+context_length_src:
+  quote: '- **Length:** `max_length` defaults to 262,144 tokens per sequence, the backbone''s position limit.'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+cardinality_limit: 255 readout rows per question (same limit as v1.2)
+cardinality_limit_src:
+  quote: a BF16 `[255, 2560]` decision head.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+latency_with_hardware: not disclosed
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+price: $0 self-hosted (open weights); no hosted price in the card
+price_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+confidence_definition: not disclosed
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+probability_grid: not disclosed
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+serving_temperature: 1.554, applied once by decide
+serving_temperature_src:
+  quote: the temperature fitted on held-out calibration data (1.554 for this checkpoint).
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+calibration_as_shipped: 'Development set (1,497 questions): accuracy 88.8%, ECE 0.021, Brier 0.163; without temperature ECE 0.057, Brier 0.173'
+calibration_as_shipped_src:
+  quote: 'accuracy 88.8%, ECE 0.021 and Brier 0.163 (without temperature: ECE 0.057, Brier 0.173)'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+disclosed_failure_modes: More accurate with one question per request than joint requests on most multi-question tasks
+disclosed_failure_modes_src:
+  quote: Unlike the 27B model, this model is more accurate with one question per request on most multi-question tasks
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+evaluation_protocol_published: Decision Index with joint and one-question-per-request modes
+evaluation_protocol_published_src:
+  quote: The overall score uses the suite's weighting, not a simple category average.
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+primitives: choice, noul, score (same API as pplx-decider-v1.2)
+primitives_src:
+  quote: the same joint request format, the same API and the same text and image support
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+source_urls:
+- 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'
+- 'https://github.com/sileod/tasksource'
+source_urls_src:
+  quote: 'A large part of the gains are thanks to the [tasksource](https://github.com/sileod/tasksource) data. If you also use'
+  url: 'https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2/raw/9ff7cf9838e59df461c276b7699d56b244d2af58/README.md'

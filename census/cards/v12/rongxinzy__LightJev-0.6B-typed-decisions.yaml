@@ -1,0 +1,102 @@
+name: LightJev 0.6B — Typed Decisions v0.2
+name_src:
+  quote: '# LightJev 0.6B — Typed Decisions v0.2'
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+hf_id: rongxinzy/LightJev-0.6B-typed-decisions
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+revision_sha: cab0b99ac5fffb6b9e116c437ab391df99f28cbb
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+vendor_or_author: rongxinzy
+vendor_or_author_src:
+  quote: (HF API author field)
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+release_date: '2026-09-28'
+release_date_src:
+  quote: (HF API createdAt for rongxinzy/LightJev-0.6B-typed-decisions)
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+backbone: Qwen/Qwen3-0.6B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3-0.6B'
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+decision_head: not disclosed
+decision_head_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+training_objective: '- Training objective: soft-label cross-entropy, full-parameter fine-tuning.'
+training_objective_src:
+  quote: '- Training objective: soft-label cross-entropy, full-parameter fine-tuning.'
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+training_data: '- Training data: 960 cases (4,800 decisions) from the official `typed-decisions` training split.'
+training_data_src:
+  quote: '- Training data: 960 cases (4,800 decisions) from the official `typed-decisions` training split.'
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+primitives: choice, score
+primitives_src:
+  quote: score 0.04492, and 15-bin ECE 0.1578. Accuracy by type is 73.33% (choice), 87.17% (boolean), and 76.13% (ordinal score). See the repository's `docs/results-typed-decisions-v0.2.md` for the full protocol, per-workflow results, and caveats. Earlier experimen
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+source_urls:
+- 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'
+- 'https://github.com/rongxinzy/LightJev.git'
+source_urls_src:
+  quote: none found (README pin only)
+  url: 'https://huggingface.co/rongxinzy/LightJev-0.6B-typed-decisions/raw/cab0b99ac5fffb6b9e116c437ab391df99f28cbb/README.md'

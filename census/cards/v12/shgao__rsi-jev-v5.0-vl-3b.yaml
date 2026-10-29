@@ -1,0 +1,102 @@
+name: rsi-jev-v5.0-vl-3b
+name_src:
+  quote: '# rsi-jev-v5.0-vl-3b'
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+hf_id: shgao/rsi-jev-v5.0-vl-3b
+hf_id_src:
+  quote: '| Hugging Face | [`shgao/rsi-jev-v5.0-vl-3b`](https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b) |'
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+revision_sha: 66eeaee47dce202c4d802e469ad9b806e0ff6df2
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+vendor_or_author: shgao
+vendor_or_author_src:
+  quote: '| Hugging Face | [`shgao/rsi-jev-v5.0-vl-3b`](https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b) |'
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+release_date: '2026-10-03'
+release_date_src:
+  quote: (HF API createdAt for shgao/rsi-jev-v5.0-vl-3b)
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+availability_and_license: Open weights, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+backbone: Qwen/Qwen3.5-4B-Base
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.5-4B-Base'
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+parameter_count: '**3.25B parameters**: decoder layers 1–20 (2.23B), token embeddings (0.64B), vision tower'
+parameter_count_src:
+  quote: '**3.25B parameters**: decoder layers 1–20 (2.23B), token embeddings (0.64B), vision tower'
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+decision_head: 32 layers with the tower fine-tuned and a trained option-scoring head.
+decision_head_src:
+  quote: 32 layers with the tower fine-tuned and a trained option-scoring head.
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+training_data: after the right one on long numbered lists (§4.4). Stages 1 and 2 trained with whole-block
+training_data_src:
+  quote: after the right one on long numbered lists (§4.4). Stages 1 and 2 trained with whole-block
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: It answers `choice` / `noul` / `score` questions about a document and up to four images in one
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+source_urls:
+- 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'
+- 'https://github.com/Shanghua-Gao/RSI-Jev'
+source_urls_src:
+  quote: '[Jev HTTP API](https://github.com/Shanghua-Gao/RSI-Jev/blob/main/serve/README.md).'
+  url: 'https://huggingface.co/shgao/rsi-jev-v5.0-vl-3b/raw/66eeaee47dce202c4d802e469ad9b806e0ff6df2/README.md'

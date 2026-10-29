@@ -1,0 +1,103 @@
+name: decision-1
+name_src:
+  quote: '# decision-1'
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+hf_id: tensorninja2/decision-1
+hf_id_src:
+  quote: (HF API id)
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+revision_sha: 619fcac019964e16f903272003977269d56d72d2
+revision_sha_src:
+  quote: (HF API sha for this repo, fetched 2026-10-28)
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+vendor_or_author: tensorninja2
+vendor_or_author_src:
+  quote: '[Qwen3.8-27B NInfer artifact](https://huggingface.co/tensorninja2/Qwen3.8-27B-NInfer). Download it into'
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+release_date: '2026-10-22'
+release_date_src:
+  quote: (HF API createdAt for tensorninja2/decision-1)
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+access_date: '2026-10-28'
+access_date_src:
+  quote: census fetch date
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+availability_and_license: Weights not listed in repo files, apache-2.0; gated=False
+availability_and_license_src:
+  quote: 'license: apache-2.0'
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+backbone: Qwen/Qwen3.8-27B
+backbone_src:
+  quote: 'base_model: Qwen/Qwen3.8-27B'
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+parameter_count: not disclosed
+parameter_count_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+decision_head: LoRA adapter plus a pointer head. It reads a state and typed questions and returns a probability
+decision_head_src:
+  quote: LoRA adapter plus a pointer head. It reads a state and typed questions and returns a probability
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+training_objective: not disclosed
+training_objective_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+training_data: Kev-27B, which adapts every linear layer and trained on a superset of this data, publishes 0.866
+training_data_src:
+  quote: Kev-27B, which adapts every linear layer and trained on a superset of this data, publishes 0.866
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+state_modality: not disclosed
+state_modality_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+context_length: not disclosed
+context_length_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+cardinality_limit: not extracted (auto-generated card; read the pinned README)
+cardinality_limit_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+latency_with_hardware: not extracted (auto-generated card; read the pinned README)
+latency_with_hardware_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+price: not extracted (auto-generated card; read the pinned README)
+price_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+confidence_definition: not extracted (auto-generated card; read the pinned README)
+confidence_definition_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+probability_grid: not extracted (auto-generated card; read the pinned README)
+probability_grid_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+serving_temperature: not extracted (auto-generated card; read the pinned README)
+serving_temperature_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+calibration_as_shipped: not extracted (auto-generated card; read the pinned README)
+calibration_as_shipped_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+disclosed_failure_modes: not extracted (auto-generated card; read the pinned README)
+disclosed_failure_modes_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+evaluation_protocol_published: not extracted (auto-generated card; read the pinned README)
+evaluation_protocol_published_src:
+  quote: none found
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+primitives: choice, score, noul
+primitives_src:
+  quote: 0.596 accuracy, against 0.913 for `choice` and 0.929 for `noul`.
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+source_urls:
+- 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
+- 'https://github.com/tensorninja/ninfer-4090'
+- 'https://github.com/jaredpalmer/kev'
+source_urls_src:
+  quote: 'for [NInfer-4090](https://github.com/tensorninja/ninfer-4090), which serves it on two wire'
+  url: 'https://huggingface.co/tensorninja2/decision-1/raw/619fcac019964e16f903272003977269d56d72d2/README.md'
