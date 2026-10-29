@@ -2,6 +2,13 @@
 
 Releases v1.0 and v1.1 describe the literature and ecosystem as of 2026-09-24. Release v1.2 moves the cutoff to 2026-10-28.
 
+## v1.2.3 (2026-10-29)
+
+This release completes the second rating of every graded study. The cutoff is unchanged.
+
+- **Second rating.** The six studies added at the adjudication of v1.2.1 were rated on the five risk-of-bias domains by three further raters, blind to the first rating and with every source linked at the version the ledger extracted, who also read one extracted value per study (`ledger/second_rating_added/`, script `make_second_rating_added.py`). All 248 graded studies now have an independent second rating.
+- **Adjudication.** The seven disagreements were decided by the authors against the full text (`Adjudication_added_returned.xlsx`, logged in `adjudication_log_added.md`). Every first rating was kept, so no grade changed.
+
 ## v1.2.2 (2026-10-29)
 
 This release completes the second rating of the first sweep. The cutoff is unchanged.

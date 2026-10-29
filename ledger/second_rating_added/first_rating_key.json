@@ -1,0 +1,95 @@
+{
+ "seed": 20261031,
+ "raters": {
+  "A01": {
+   "inclusion": {},
+   "rob": {
+    "wu2026covnav": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "wang2026calibrated": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L5327",
+     "value": "36.0"
+    },
+    "2": {
+     "row_id": "L5476",
+     "value": "72.5"
+    }
+   },
+   "heads": {}
+  },
+  "A02": {
+   "inclusion": {},
+   "rob": {
+    "zhan2026dyad": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "li2026sok": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L5447",
+     "value": "95/120"
+    },
+    "2": {
+     "row_id": "L5365",
+     "value": "3.80"
+    }
+   },
+   "heads": {}
+  },
+  "A03": {
+   "inclusion": {},
+   "rob": {
+    "besanson2026probabilistic": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "sonthalia2026agent": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L5430",
+     "value": "0.0757"
+    },
+    "2": {
+     "row_id": "L5382",
+     "value": "94"
+    }
+   },
+   "heads": {}
+  }
+ }
+}

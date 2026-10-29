@@ -1,0 +1,63 @@
+{
+ "inclusion": {
+  "n": 0
+ },
+ "rob": {
+  "n": 30,
+  "agree": 23,
+  "agreement": 0.767,
+  "kappa": 0.57,
+  "weightedKappa": 0.62
+ },
+ "robByDomain": {
+  "Reference-label independence": {
+   "n": 6,
+   "agree": 5,
+   "agreement": 0.833,
+   "kappa": 0.71,
+   "weightedKappa": 0.75
+  },
+  "Sampling and reporting": {
+   "n": 6,
+   "agree": 6,
+   "agreement": 1.0,
+   "kappa": 1.0,
+   "weightedKappa": 1.0
+  },
+  "Version pinning and run dates": {
+   "n": 6,
+   "agree": 5,
+   "agreement": 0.833,
+   "kappa": 0.57,
+   "weightedKappa": 0.57
+  },
+  "Tuning-budget parity": {
+   "n": 6,
+   "agree": 3,
+   "agreement": 0.5,
+   "kappa": 0.14,
+   "weightedKappa": 0.25
+  },
+  "Test-set exposure": {
+   "n": 6,
+   "agree": 4,
+   "agreement": 0.667,
+   "kappa": 0.5,
+   "weightedKappa": 0.57
+  }
+ },
+ "extraction": {
+  "n": 6,
+  "agree": 6,
+  "agreement": 1.0
+ },
+ "heads": {
+  "n": 0
+ },
+ "blank": {},
+ "fixedCellsChanged": {
+  "A01": 0,
+  "A02": 0,
+  "A03": 0
+ }
+}

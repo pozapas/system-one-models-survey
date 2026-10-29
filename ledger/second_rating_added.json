@@ -1,0 +1,48 @@
+{
+ "values": {
+  "sr5.raters": {
+   "text": "3",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.robStudies": {
+   "text": "6",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.robN": {
+   "text": "30",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.robAgreeN": {
+   "text": "23",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.robWeightedKappa": {
+   "text": "0.62",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.extractionN": {
+   "text": "6",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.extractionAgreeN": {
+   "text": "6",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.robDisagreeN": {
+   "text": "7",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.robChangedN": {
+   "text": "0",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.studiesSecondRated": {
+   "text": "248",
+   "source": "shared/ledger/second_rating_added.json"
+  },
+  "sr5.studiesGradedOnce": {
+   "text": "0",
+   "source": "shared/ledger/second_rating_added.json"
+  }
+ }
+}
