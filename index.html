@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>System One Decision Models: A Survey</title>
+<meta name="description" content="Typed probabilistic decision models, which their first vendor calls System One models, return a probability distribution over a caller-declared answer space and promise that it is calibrated. They form a contract assembled from five research lines. The survey provides a genealogy, taxonomy, formal core, ecosystem census, graded evidence ledger, benchmark summary, pattern catalogue with failure atlas, and reporting standard. The evidence supports three regularities. The contract travels, while robustness to option names belongs to each checkpoint. Calibration belongs to the model and the task together. Escalation earns the saving when confidence ranks errors and the price gap is wide.">
+<meta name="citation_title" content="System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence">
+<meta name="citation_author" content="Rafe, Amir">
+<meta name="citation_author_institution" content="Texas State University">
+<meta name="citation_author_orcid" content="0000-0002-4089-2088">
+<meta name="citation_author" content="Das, Subasish">
+<meta name="citation_author_institution" content="Texas State University">
+<meta name="citation_author_orcid" content="0000-0002-1671-2753">
+<meta name="citation_publication_date" content="2026/10/29">
+<meta name="citation_online_date" content="2026/10/29">
+<meta name="citation_pdf_url" content="https://pozapas.github.io/system-one-models-survey/system-one-decision-models-survey.pdf">
+<meta name="citation_abstract_html_url" content="https://pozapas.github.io/system-one-models-survey/">
+<meta name="citation_language" content="en">
+<meta name="citation_keywords" content="System One models; decision models; typed probabilistic decision models; confidence calibration; selective prediction; learning to defer; LLM cascades; survey">
+<meta property="og:type" content="article">
+<meta property="og:title" content="System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence">
+<meta property="og:description" content="A survey of typed probabilistic decision models: their lineage, open ecosystem and graded evidence.">
+<meta property="og:url" content="https://pozapas.github.io/system-one-models-survey/">
+<meta property="og:image" content="https://pozapas.github.io/system-one-models-survey/fig/f00_contract.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://pozapas.github.io/system-one-models-survey/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ScholarlyArticle",
+ "headline": "System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence",
+ "name": "System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence",
+ "author": [
+  {
+   "@type": "Person",
+   "name": "Amir Rafe",
+   "identifier": "https://orcid.org/0000-0002-4089-2088",
+   "affiliation": {
+    "@type": "Organization",
+    "name": "Texas State University"
+   }
+  },
+  {
+   "@type": "Person",
+   "name": "Subasish Das",
+   "identifier": "https://orcid.org/0000-0002-1671-2753",
+   "affiliation": {
+    "@type": "Organization",
+    "name": "Texas State University"
+   }
+  }
+ ],
+ "datePublished": "2026-10-29",
+ "abstract": "Typed probabilistic decision models, which their first vendor calls System One models, return a probability distribution over a caller-declared answer space and promise that it is calibrated. They form a contract assembled from five research lines. The survey provides a genealogy, taxonomy, formal core, ecosystem census, graded evidence ledger, benchmark summary, pattern catalogue with failure atlas, and reporting standard. The evidence supports three regularities. The contract travels, while robustness to option names belongs to each checkpoint. Calibration belongs to the model and the task together. Escalation earns the saving when confidence ranks errors and the price gap is wide.",
+ "url": "https://pozapas.github.io/system-one-models-survey/",
+ "encoding": {
+  "@type": "MediaObject",
+  "contentUrl": "https://pozapas.github.io/system-one-models-survey/system-one-decision-models-survey.pdf",
+  "encodingFormat": "application/pdf"
+ }
+}
+</script>
+<style>
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #1d2422;
+  --muted: #5b6662;
+  --line: #e3e0d8;
+  --accent: #1b6b5a;
+  --accent-ink: #ffffff;
+  --accent-soft: #e6f0ec;
+  --gold: #b07f2c;
+  --code-bg: #f3f1ec;
+  --shadow: 0 1px 2px rgba(20, 30, 28, .06), 0 6px 24px rgba(20, 30, 28, .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111615;
+    --surface: #182020;
+    --ink: #e7ece9;
+    --muted: #9fb0aa;
+    --line: #2a3533;
+    --accent: #4fb69a;
+    --accent-ink: #0d1412;
+    --accent-soft: #1d2e2a;
+    --gold: #d7a85a;
+    --code-bg: #0d1211;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 24px rgba(0, 0, 0, .25);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111615;
+  --surface: #182020;
+  --ink: #e7ece9;
+  --muted: #9fb0aa;
+  --line: #2a3533;
+  --accent: #4fb69a;
+  --accent-ink: #0d1412;
+  --accent-soft: #1d2e2a;
+  --gold: #d7a85a;
+  --code-bg: #0d1211;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 24px rgba(0, 0, 0, .25);
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.65 "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+header.hero { padding-top: 64px; padding-bottom: 28px; text-align: center; }
+header.hero figcaption { text-align: left; }
+.eyebrow {
+  display: inline-block; font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-soft); padding: 4px 12px; border-radius: 999px; font-weight: 600;
+}
+h1 {
+  font-family: "Source Serif 4", Georgia, serif; font-weight: 700; letter-spacing: -.01em;
+  font-size: clamp(30px, 4.6vw, 48px); line-height: 1.12; margin: 18px auto 10px; max-width: 900px;
+}
+h1 .sub { display: block; font-weight: 400; font-size: .62em; color: var(--muted); margin-top: 10px; line-height: 1.3; }
+.authors { font-size: 19px; margin: 18px 0 2px; }
+.authors a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+.authors a:hover { border-color: var(--accent); }
+.affil { color: var(--muted); font-size: 15px; }
+.status { color: var(--muted); font-size: 14px; margin-top: 6px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 26px 0 8px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px;
+  text-decoration: none; font-weight: 600; font-size: 15px; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow);
+  transition: transform .12s ease, border-color .12s ease;
+}
+.btn:hover { transform: translateY(-1px); border-color: var(--accent); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn svg { width: 17px; height: 17px; flex: none; }
+figure { margin: 0; }
+.plate {
+  background: #ffffff; border: 1px solid var(--line); border-radius: 14px; padding: 18px; box-shadow: var(--shadow);
+}
+.plate img { display: block; width: 100%; height: auto; }
+figcaption { color: var(--muted); font-size: 15px; margin-top: 12px; line-height: 1.55; }
+figcaption b { color: var(--ink); font-weight: 600; }
+.hero-fig { margin: 30px auto 0; max-width: 900px; }
+section { padding: 44px 0 8px; }
+h2 {
+  font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 28px; margin: 0 0 16px;
+  display: flex; align-items: baseline; gap: 12px;
+}
+h2::before { content: ""; width: 22px; height: 3px; background: var(--gold); border-radius: 2px; transform: translateY(-7px); }
+.abstract { font-size: 18px; max-width: 820px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 6px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; box-shadow: var(--shadow); }
+.stat .num { font-family: "Source Serif 4", Georgia, serif; font-size: 36px; font-weight: 700; color: var(--accent); line-height: 1.1; }
+.stat .lbl { color: var(--muted); font-size: 15px; margin-top: 6px; line-height: 1.4; }
+.regs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.reg { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; box-shadow: var(--shadow); }
+.reg .tag { font-size: 13px; font-weight: 600; letter-spacing: .06em; color: var(--gold); text-transform: uppercase; }
+.reg h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 20px; line-height: 1.3; margin: 6px 0 8px; }
+.reg p { margin: 0; color: var(--muted); font-size: 16px; }
+.figs { display: grid; gap: 34px; }
+.contents { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.item { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; }
+.item h3 { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
+.item p { margin: 0; color: var(--muted); font-size: 16px; }
+.bib { position: relative; }
+pre {
+  margin: 0; background: var(--code-bg); border: 1px solid var(--line); border-radius: 12px; padding: 18px;
+  overflow-x: auto; font: 14px/1.6 "JetBrains Mono", ui-monospace, Consolas, monospace; color: var(--ink);
+}
+.copy {
+  position: absolute; top: 10px; right: 10px; font: 600 13px "Source Sans 3", sans-serif; cursor: pointer;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px;
+}
+.copy:hover { border-color: var(--accent); }
+footer { margin: 56px 0 0; padding: 26px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; }
+.theme {
+  position: fixed; top: 14px; right: 14px; width: 38px; height: 38px; border-radius: 50%; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--line); color: var(--ink); box-shadow: var(--shadow);
+  display: grid; place-items: center;
+}
+.theme svg { width: 18px; height: 18px; }
+@media (max-width: 820px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .regs, .contents { grid-template-columns: 1fr; }
+  header.hero { padding-top: 58px; }
+  .plate { padding: 10px; }
+}
+</style>
+</head>
+<body>
+<button class="theme" id="theme" type="button" aria-label="Switch light or dark theme">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+</button>
+
+<header class="hero wrap">
+  <span class="eyebrow">Survey &middot; Preprint</span>
+  <h1>System One Decision Models<span class="sub">A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence</span></h1>
+  <div class="authors"><a href="https://pozapas.github.io/">Amir Rafe</a> &nbsp;&middot;&nbsp; <a href="https://orcid.org/0000-0002-1671-2753">Subasish Das</a></div>
+  <div class="affil">Texas State University, San Marcos, Texas, USA</div>
+  <div class="status">Version of 29 October 2026 &middot; manuscript under review</div>
+  <nav class="buttons" aria-label="Paper links">
+    <a class="btn primary" href="system-one-decision-models-survey.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>Paper (PDF)</a>
+    <a class="btn" href="system-one-decision-models-survey-supplement.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>Supplement</a>
+    <a class="btn" href="https://github.com/pozapas/system-one-models-survey"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>Data and code</a>
+    <a class="btn" href="https://github.com/pozapas/awesome-system-one-models"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>Awesome list</a>
+    <a class="btn" href="https://arxiv.org/abs/2610.00346"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>Benchmark paper</a>
+    <a class="btn" href="#cite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h4v4H7zM7 11c0 3-1 5-3 6M15 7h4v4h-4zM15 11c0 3-1 5-3 6"/></svg>Cite</a>
+  </nav>
+  <figure class="hero-fig">
+    <div class="plate"><img src="fig/f00_contract.png" width="1096" height="410" alt="Diagram of the typed decision contract. A state and a typed question with K declared options enter a decision head that makes one forward pass and returns a probability over the K options with a confidence; a policy threshold then routes the decision to act, review or escalate. Versioned artifacts underneath are the model revision, the serving temperature, the option texts and the rubric."></div>
+    <figcaption><b>The typed decision contract.</b> A state and a typed question with declared options go through one forward pass of a decision head, which returns a calibrated probability for every option. A policy threshold on that probability decides whether to act, send the case to review or escalate it.</figcaption>
+  </figure>
+</header>
+
+<main class="wrap">
+  <section id="abstract" aria-labelledby="h-abstract">
+    <h2 id="h-abstract">Abstract</h2>
+    <p class="abstract">Typed probabilistic decision models, which their first vendor calls System One models, return a probability distribution over a caller-declared answer space and promise that it is calibrated. They form a contract assembled from five research lines. The survey provides a genealogy, taxonomy, formal core, ecosystem census, graded evidence ledger, benchmark summary, pattern catalogue with failure atlas, and reporting standard. The evidence supports three regularities. The contract travels, while robustness to option names belongs to each checkpoint. Calibration belongs to the model and the task together. Escalation earns the saving when confidence ranks errors and the price gap is wide.</p>
+  </section>
+
+  <section aria-labelledby="h-glance">
+    <h2 id="h-glance">At a glance</h2>
+    <div class="stats">
+      <div class="stat"><div class="num">5</div><div class="lbl">research lines that converge on the contract</div></div>
+      <div class="stat"><div class="num">379</div><div class="lbl">original open implementations in a dated census, each coded by decision head</div></div>
+      <div class="stat"><div class="num">248</div><div class="lbl">studies graded for risk of bias on five domains, with independent second ratings</div></div>
+      <div class="stat"><div class="num">3,519</div><div class="lbl">extracted values, each tied to a verbatim excerpt of its source</div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-regs">
+    <h2 id="h-regs">Three regularities</h2>
+    <div class="regs">
+      <article class="reg"><div class="tag">R1 &middot; Transfer</div><h3>The contract travels, robustness does not</h3><p>Open models on public backbones reproduce the typed contract, while robustness to option names belongs to each checkpoint and must be tested per model.</p></article>
+      <article class="reg"><div class="tag">R2 &middot; Calibration</div><h3>Calibration belongs to model and task together</h3><p>A calibration result for one schema does not carry over to another, so calibration is audited per schema rather than assumed from one report.</p></article>
+      <article class="reg"><div class="tag">R3 &middot; Escalation</div><h3>Escalation earns its saving conditionally</h3><p>Sending uncertain cases to a stronger model saves money only when confidence ranks errors and the price gap to that model is wide.</p></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-figs">
+    <h2 id="h-figs">Figures from the survey</h2>
+    <div class="figs">
+      <figure>
+        <div class="plate"><img src="fig/f01_timeline.png" width="1096" height="830" loading="lazy" alt="Timeline of five research lines from 1950 to 2026, namely label-conditioned classification, reward models and guardrails, proper scoring and calibrated training, the reject option with cascades, and dual-process AI, converging on the release of Jev 1.13 on 15 September 2026, followed by open and hosted decision models released between mid September and October 2026."></div>
+        <figcaption><b>Genealogy.</b> Five research lines, on an axis compressed before 2017, converge on the hosted release of 15 September 2026. The right panel shows the open and hosted decision models that followed within weeks.</figcaption>
+      </figure>
+      <figure>
+        <div class="plate"><img src="fig/f03_heads.png" width="1096" height="586" loading="lazy" alt="Five decision-head designs with the number of census originals and families for each: fixed slots, option markers, label logits, pair scoring and constrained decoding, with example models under each."></div>
+        <figcaption><b>Decision heads in the open census.</b> The five ways an open model reads a distribution over the declared options, with the number of original implementations and families of each type.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-repo">
+    <h2 id="h-repo">What the repository holds</h2>
+    <div class="contents">
+      <div class="item"><h3>Ecosystem census</h3><p>A card for every open implementation and hosted model up to the cutoff of 28 October 2026, with its pinned revision and decision-head code.</p></div>
+      <div class="item"><h3>Evidence ledger</h3><p>Every extracted value with its verbatim excerpt and location, the study notes and the full-text excerpt checks.</p></div>
+      <div class="item"><h3>Risk-of-bias grades and second rating</h3><p>Five-domain grades for every study, the 10 blind second-rater workbooks, agreement and the adjudication log.</p></div>
+      <div class="item"><h3>Synthesis and scripts</h3><p>The selection of every pooled number and the scripts that rebuild the ledger, the grades, the synthesis and the tables.</p></div>
+    </div>
+    <p style="margin-top:18px"><a href="https://github.com/pozapas/system-one-models-survey">github.com/pozapas/system-one-models-survey</a>, release v1.2.1. A curated index of papers, models, datasets and tools is maintained at <a href="https://github.com/pozapas/awesome-system-one-models">awesome-system-one-models</a>.</p>
+  </section>
+
+  <section id="cite" aria-labelledby="h-cite">
+    <h2 id="h-cite">Citation</h2>
+    <div class="bib">
+      <button class="copy" id="copy" type="button">Copy</button>
+      <pre id="bibtex">@misc{rafe2026systemone,
+  title  = {System One Decision Models: A Survey of the Typed Decision Contract, Its Ecosystem and Its Evidence},
+  author = {Rafe, Amir and Das, Subasish},
+  year   = {2026},
+  note   = {Preprint, manuscript under review},
+  url    = {https://pozapas.github.io/system-one-models-survey/}
+}
+</pre>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="row">
+    <span>Preprint, version of 29 October 2026. Manuscript under review.</span>
+    <span><a href="system-one-decision-models-survey.pdf">Paper</a> &middot; <a href="system-one-decision-models-survey-supplement.pdf">Supplement</a> &middot; <a href="https://github.com/pozapas/system-one-models-survey">Repository</a> &middot; <a href="rafe2026systemone.bib">BibTeX</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement, key = "s1-theme";
+  try { var saved = localStorage.getItem(key); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+  document.getElementById("theme").addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") ? root.getAttribute("data-theme") === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem(key, next); } catch (e) {}
+  });
+  var btn = document.getElementById("copy");
+  btn.addEventListener("click", function () {
+    var text = document.getElementById("bibtex").textContent;
+    function done() { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy"; }, 1600); }
+    try {
+      if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+    } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
