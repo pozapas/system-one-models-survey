@@ -1,0 +1,144 @@
+{
+ "values": {
+  "sr3.raters": {
+   "text": "10",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.inclusionN": {
+   "text": "249",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.inclusionAgreeN": {
+   "text": "235",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.inclusionAgreement": {
+   "text": "94",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.inclusionKappa": {
+   "text": "0.70",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robN": {
+   "text": "1066",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robAgreeN": {
+   "text": "793",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robAgreement": {
+   "text": "74",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robKappa": {
+   "text": "0.59",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robWeightedKappa": {
+   "text": "0.63",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robStudies": {
+   "text": "215",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.extractionN": {
+   "text": "294",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.extractionAgreeN": {
+   "text": "293",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.extractionAgreement": {
+   "text": "99.7",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.headsN": {
+   "text": "36",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.headsAgreeN": {
+   "text": "33",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.headsKappa": {
+   "text": "0.87",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.disagreeN": {
+   "text": "291",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robDisagreeN": {
+   "text": "273",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robKeptFirstN": {
+   "text": "149",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robToSecondN": {
+   "text": "121",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robOtherN": {
+   "text": "3",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robChangedN": {
+   "text": "124",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.overallChangedN": {
+   "text": "30",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.inclusionAddedN": {
+   "text": "6",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.headsChangedN": {
+   "text": "2",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.extractionChangedN": {
+   "text": "0",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.headsRecodedN": {
+   "text": "1",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.rulesAcceptedN": {
+   "text": "8",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.rulesRejectedN": {
+   "text": "1",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robKappaLabels": {
+   "text": "0.46",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robKappaReporting": {
+   "text": "0.74",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robKappaVersions": {
+   "text": "0.52",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robKappaTuning": {
+   "text": "0.51",
+   "source": "shared/ledger/second_rating_v12.json"
+  },
+  "sr3.robKappaExposure": {
+   "text": "0.71",
+   "source": "shared/ledger/second_rating_v12.json"
+  }
+ }
+}

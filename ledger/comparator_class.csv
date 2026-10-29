@@ -219,3 +219,7 @@ gapJevBest,psyJev9b,liu2026psyjev,task_trained,"Comparator is PsyJev-9B, adapted
 gapJevBest,psyGemma,liu2026psyjev,task_trained,Comparator is Gemma-2-9B-IT adapted on the benchmark.
 gapJevBest,khatriGem38,khatri2026need,other_llm,Comparator is Gemini 3.8 Flash.
 gapJevBest,khatriGem25,khatri2026need,other_llm,Comparator is Gemini 2.5 Flash.
+r1Gap,zhanDyadNoReason,zhan2026dyad,zero_shot_open,"Dyad is RL-trained on CodeGym actions, not on JevBench or its task family, and is scored on JevBench without training on it."
+gapJevBest,zhanDyadReason,zhan2026dyad,other_llm,"Comparator is Qwen3.5-4B with the authors' Dyad head, which writes reasoning text before its answer, a small LLM rather than a single-pass decision model."
+gapJevBest,sonthaliaEsci,sonthalia2026agent,frontier_llm,Comparator is Claude Opus 5 used zero-shot.
+gapJevBest,liSokRoute,li2026sok,other_llm,"Comparator is Gemini-3.1-Flash-Lite, a flash-tier LLM."

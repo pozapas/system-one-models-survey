@@ -2,7 +2,7 @@
  "values": {
   "cmpAgree": {
    "r1Lines": {
-    "text": "101",
+    "text": "102",
     "source": "shared/ledger/comparator_agreement.json"
    },
    "r1Agreement": {
@@ -20,16 +20,16 @@
     "source": "shared/ledger/comparator_agreement.json"
    },
    "gapLines": {
-    "text": "119",
+    "text": "122",
     "source": "shared/ledger/comparator_agreement.json"
    },
    "gapAgreement": {
-    "text": "97",
+    "text": "98",
     "source": "shared/ledger/comparator_agreement.json",
     "note": "percent of lines coded alike"
    },
    "gapKappa": {
-    "text": "0.96",
+    "text": "0.97",
     "source": "shared/ledger/comparator_agreement.json",
     "note": "Cohen's kappa"
    },

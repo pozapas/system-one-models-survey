@@ -1,0 +1,42 @@
+# wang2026calibrated — Calibrated Typed Decisions for Entity, Relation, and Event Extraction
+
+arXiv:2610.17113v1 [cs.CL], 12 Oct 2026 (HTML header). Full text: fulltext/2610.17113.html and .txt. Own-model paper: the authors build CalOn, a 0.6B encoder that returns a softmax distribution over the caller-declared (queried) types plus a null class for every candidate span or span pair in one forward pass, and measure it on 40 benchmarks (Abstract; Sec 3.2; Sec 5.5).
+
+## Authors and affiliation
+Yang Wang, Hanlin Xiao, Yanan Ma, Chenghao Xiao, Chenghua Lin; University of Manchester, Mayo Clinic, Shanghai University of Finance and Economics (title block; the per-author mapping is not recoverable from the HTML). Corresponding author Chenghua Lin, Manchester (footnote). Affiliation type: academic.
+
+## Task and data
+Zero-shot information extraction under user-specified schemas: NER, RE and EE, with ASTE, pronoun resolution (GAP), coreference (LitBank) and event-event relations (MAVEN-ERE) converted to span-pair extraction (Sec 4 Evaluation; App B.2). 40 benchmarks: 15 NER, 18 RE, 7 EE, with type counts and converted input counts per benchmark in Table 11 (App J). Each input is queried with the dataset's full schema, including types absent from the sentence (Table 1 caption; App B.2). Scoring is exact-match micro F1, equal weight per benchmark in averages; directed relations must match direction (Sec 4; App B.2). Training: 3.1M instances from 84 sources, human-labelled, LLM-annotated and synthetic (Sec 4 Training data; Table 12).
+
+## Decision models evaluated
+CalOn: Qwen3-0.6B backbone with the causal mask removed, two interaction blocks over null, type and candidate vectors, bilinear scoring over queried types plus a null class; a candidate is extracted when 1 - p(null) >= tau and labelled with the most probable queried type (Sec 3.1-3.4; App B.4). Training adds a GRPO-style decision reward on Gaussian-perturbed logits (S=8, sigma=1, rho=0.5) to the likelihood loss, which the authors say is inspired by TypeSafe's RLCD (Sec 1; Sec 2; Sec 3.3; App B.4). Reported model: entity T=1.219, tau=0.88; relations T=1, tau=0.85 fitted on REBEL with gold entities; triggers reuse entity parameters, arguments reuse relation parameters (App B.4). No release tag, revision or weights link is given; single training seed (Limitations). Hosted Jev or any other decision model is not run; TypeSafe AI (2026, accessed 2026-09-29) is cited only as the source of the RLCD idea (References; Sec 1; Sec 2).
+
+## Comparators and tuning parity
+GLiNER2-large, GLiFormer-large, GNER-LLaMA-7B (NER only), InstructUIE, GoLLIE-7B and, for RE with gold entities, GLiREL-large, all with default decoding and the same scoring code; Hugging Face checkpoints listed in Table 10 (Sec 4 Baselines; App I). Asymmetries: GLiFormer, GNER, InstructUIE and GLiREL receive type names only, CalOn, GLiNER2 and GoLLIE receive descriptions (Sec 4; Table 1 caption); Appendix D repeats everything with names alone for all models (App D, Tables 6-8). Non-GLiREL gold-entity RE scores are end-to-end predictions matched to gold entities, which the authors say do not isolate relation prediction (App B.3). GLiREL's threshold (0.05) and a no-relation label were selected on the REBEL calibration split (App B.3). CalOn's checkpoint, hyper-parameters, temperature and thresholds use only training-source validation data (Sec 4 Implementation). Baseline exposure: InstructUIE's released training configuration includes MIT Movie, MIT Restaurant and CASIE; GoLLIE was trained on TACRED sentences reused by Re-TACRED (App B.3 Training coverage; marked with a double dagger in Tables 1-3).
+
+## Reference labels
+The released gold annotations of the 40 public benchmarks, scored by exact match (App B.2). The paper does not say how these gold labels were made, so the ledger records not_reported. The training labels are a separate matter: Qwen3.8-27B generates or reannotates texts, Nemotron-3-Nano-Omni-30B-A3B annotates independently and gpt-oss-120b resolves disagreements; for a subset of synthetic sources a five-model majority vote plus two judges decides (App B.1); the authors note LLM annotation biases cannot be fully eliminated (Limitations).
+
+## n and intervals
+Per-benchmark converted input counts from 98 (MLEE) to 13,418 (Re-TACRED) (Table 11). No confidence intervals, no significance tests; single seed for the main model and for the data-scaling runs (Limitations; App H).
+
+## Test-data exposure
+All evaluation sets are public benchmarks cited from 2012 to 2025 (App B.2; References), so the ledger records public-pre-2026. Decontamination of training data: the generation pipeline does not use evaluation texts or annotations, no labelled target examples are used for training, model selection or calibration, and training texts sharing at least 80% of word 5-grams with an evaluation sentence are removed (Sec 4 Training data; App B.1). Pretraining exposure of the Qwen3-0.6B backbone is not checked (observation, not a statement of the paper). Every evaluated entity type name occurs verbatim in CalOn's training data, so the NER benchmarks test transfer across domains and guidelines rather than to unseen type names (Sec 5.2; App F).
+
+## Cost and latency
+One GH200 GPU, PyTorch and Transformers, bf16, 1,953 MIT Movie test sentences with all 12 types, loading excluded; generative baselines greedy decoding, batch 32 (Table 4; App G). CalOn 120 sentences/s versus 22 (GLiNER2), 18 (GLiFormer), 16 (InstructUIE), 10.8 (GoLLIE) and 4.9 (GNER); weights 1.2 GB, peak memory 8.0 GB versus 2.9 (GLiNER2) and 3.2 (GLiFormer) (Table 4). Under vLLM GNER and GoLLIE reach 112 and 238 sentences/s, so the authors state the PyTorch comparison does not establish a speed advantage across serving frameworks (App G). No monetary cost.
+
+## Calibration
+Entity temperature fitted by minimising multi-class Brier on training-source calibration data (57 log-spaced values from 0.25 to 4); thresholds maximise F1 on a 0.02-0.98 grid (Sec 3.4; App B.4). A null-class prior correction adds log(1/omega) to the null logit (omega=0.1) (Sec 3.4; App B.4). ECE uses 15 equal-width bins over returned predictions, confidence being the probability of the predicted type or role (App E; Table 9). Correction plus temperature refitting lowers average ECE from 0.33 to 0.23 (entities), 0.25 to 0.09 (relations) and 0.51 to 0.39 (event arguments) with little change in F1 (App E; Table 9). Sec 5.4 prints the relation figure as 0.10, while App E and Table 9 give 0.09 (+Corr.+T) and 0.11 (+Corr.); an internal inconsistency in the paper, and the ledger uses the App E value. Relation ECE falls on 17 of 18 benchmarks (CrossRE News rises from 0.08); argument ECE stays at or above 0.30 on six of seven datasets; multi-class Brier over all relation candidates barely moves, 0.157, 0.162, 0.158 (App E). The headline F1 tables use the uncorrected fitted model (App B.4).
+
+## Cascade or escalation
+None.
+
+## Option-name, cardinality, robustness tests
+Type names alone versus descriptions for all models (App D): CrossRE gold-entity average falls from 45.4 to 29.1; CrossNER 66.2 versus GLiFormer 67.6; gold-trigger argument F1 32.9 versus InstructUIE 33.2 (App D; Tables 6-8). Type familiarity: macro F1 by training-frequency third, Spearman rho 0.04 for CalOn, largest margin on the rarest third (58.8 versus GLiNER2 50.6) (App F; Table 5). Ablations: independent sigmoid scores lower average NER F1 from 61.5 to 53.4; thresholding the most probable type also lowers it; treating unknown types as negatives lowers F1 on all three tasks (Sec 5.3; Figure 2). Data scaling 100K to 3.1M instances (App H; Figure 3). The schema size varies by benchmark (1 to 38 types, Table 11), with no separate cardinality sweep. English only (Limitations).
+
+## Code and data availability
+No code, weights or data link for CalOn appears in the paper; links are given only for baselines and sources (App I; App B.3).
+
+## Authors' limitations
+English only; spans capped at 32 tokens and relations only within one input; much of the training data LLM-annotated; calibration parameters fitted on training-source validation data may not hold under domain change; single seed (Limitations). The adapted baseline RE scores do not isolate relation prediction (App B.3); baseline training exposure is marked but its effect is not isolated (App B.3); converted LitBank and MAVEN-ERE scores measure within-input span-pair extraction, not the original document-level tasks (App B.2).

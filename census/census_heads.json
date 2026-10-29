@@ -17,12 +17,12 @@
     "note": "families with head type a"
    },
    "optionMarkers": {
-    "text": "132",
+    "text": "135",
     "source": "shared/census/census_heads.json",
     "note": "originals with head type b"
    },
    "optionMarkersFamilies": {
-    "text": "99",
+    "text": "102",
     "source": "shared/census/census_heads.json",
     "note": "families with head type b"
    },
@@ -37,12 +37,12 @@
     "note": "families with head type c"
    },
    "pairScoring": {
-    "text": "39",
+    "text": "36",
     "source": "shared/census/census_heads.json",
     "note": "originals with head type d"
    },
    "pairScoringFamilies": {
-    "text": "28",
+    "text": "25",
     "source": "shared/census/census_heads.json",
     "note": "families with head type d"
    },

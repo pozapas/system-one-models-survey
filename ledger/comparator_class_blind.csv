@@ -219,3 +219,7 @@ gapJevBest,psyJev9b,liu2026psyjev,task_trained,PsyJev-9B and Gemma-2-9B are adap
 gapJevBest,psyGemma,liu2026psyjev,task_trained,PsyJev-9B and Gemma-2-9B are adapted on the training partition.
 gapJevBest,khatriGem38,khatri2026need,other_llm,Gemini Flash is a flash-tier LLM.
 gapJevBest,khatriGem25,khatri2026need,other_llm,Gemini Flash is a flash-tier LLM.
+r1Gap,zhanDyadNoReason,zhan2026dyad,zero_shot_open,Dyad is RL-trained on CodeGym and not on JevBench and is applied to the items out of domain.
+gapJevBest,zhanDyadReason,zhan2026dyad,other_llm,Dyad with reasoning is a small Qwen3.5-4B that generates text before its typed head and is not single-pass.
+gapJevBest,sonthaliaEsci,sonthalia2026agent,frontier_llm,Opus 5 is a flagship LLM used zero-shot by prompting.
+gapJevBest,liSokRoute,li2026sok,other_llm,Gemini-3.1-Flash-Lite is a flash-tier LLM.

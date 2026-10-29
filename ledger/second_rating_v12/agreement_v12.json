@@ -1,0 +1,80 @@
+{
+ "inclusion": {
+  "n": 249,
+  "agree": 235,
+  "agreement": 0.944,
+  "kappa": 0.7
+ },
+ "rob": {
+  "n": 1066,
+  "agree": 793,
+  "agreement": 0.744,
+  "kappa": 0.59,
+  "weightedKappa": 0.63
+ },
+ "robByDomain": {
+  "Reference-label independence": {
+   "n": 210,
+   "agree": 143,
+   "agreement": 0.681,
+   "kappa": 0.47,
+   "weightedKappa": 0.46
+  },
+  "Sampling and reporting": {
+   "n": 215,
+   "agree": 186,
+   "agreement": 0.865,
+   "kappa": 0.74,
+   "weightedKappa": 0.74
+  },
+  "Version pinning and run dates": {
+   "n": 215,
+   "agree": 159,
+   "agreement": 0.74,
+   "kappa": 0.51,
+   "weightedKappa": 0.52
+  },
+  "Tuning-budget parity": {
+   "n": 215,
+   "agree": 142,
+   "agreement": 0.66,
+   "kappa": 0.45,
+   "weightedKappa": 0.51
+  },
+  "Test-set exposure": {
+   "n": 211,
+   "agree": 163,
+   "agreement": 0.773,
+   "kappa": 0.64,
+   "weightedKappa": 0.71
+  }
+ },
+ "extraction": {
+  "n": 294,
+  "agree": 293,
+  "agreement": 0.997
+ },
+ "heads": {
+  "n": 36,
+  "agree": 33,
+  "agreement": 0.917,
+  "kappa": 0.87
+ },
+ "blank": {
+  "extraction": 1,
+  "rob": 9,
+  "heads": 2
+ },
+ "fixedCellsChanged": {
+  "R01": 0,
+  "R02": 0,
+  "R03": 0,
+  "R04": 0,
+  "R05": 0,
+  "R06": 0,
+  "R07": 0,
+  "R08": 0,
+  "R09": 0,
+  "R10": 0
+ }
+}

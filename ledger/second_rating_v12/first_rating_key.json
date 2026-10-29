@@ -1,0 +1,3191 @@
+{
+ "seed": 20261029,
+ "raters": {
+  "R01": {
+   "inclusion": {
+    "2610.18610": "include",
+    "2610.22131": "include",
+    "2610.00346": "exclude",
+    "2610.34875": "include",
+    "2610.28827": "include",
+    "2610.20665": "include",
+    "2610.34956": "include",
+    "2610.08829": "include",
+    "2609.29769": "include",
+    "2610.32478": "include",
+    "2609.33689": "include",
+    "2609.37647": "include",
+    "2609.33282": "include",
+    "2609.30922": "include",
+    "2610.34816": "include",
+    "2610.06354": "include",
+    "2610.07242": "exclude",
+    "2610.29961": "include",
+    "2610.18122": "include",
+    "2610.19856": "include",
+    "2610.32181": "exclude",
+    "2610.14404": "include",
+    "2610.09328": "include",
+    "2610.02516": "exclude",
+    "2610.24929": "include"
+   },
+   "rob": {
+    "li2026visual": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "su2026jevspawn": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "xu2026trustjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "zhang2026typed": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "chen2026rsajev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "qian2026soma": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "chen2026qwen": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "saeed2026shift": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "tang2026omnimed": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "dorosario2026jevasajudge": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "sudjianto2026teacher": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "feng2026jevdlc": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "cheng2026metaencoder": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "li2026dknownjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "low"
+    },
+    "yang2026what": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "li2026specialized": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "gershon2026decision": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "li2026jeva": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "terven2026scan": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "teke2026hakembench": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "nandakishore2026clm": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "zhuang2026startlux": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L3912",
+     "value": "78.4000"
+    },
+    "2": {
+     "row_id": "L3061",
+     "value": "96.40"
+    },
+    "3": {
+     "row_id": "L2693",
+     "value": "0.5730"
+    },
+    "4": {
+     "row_id": "L2014",
+     "value": "0.83"
+    },
+    "5": {
+     "row_id": "L4825",
+     "value": "24.05"
+    },
+    "6": {
+     "row_id": "L4827",
+     "value": "43.12"
+    },
+    "7": {
+     "row_id": "L4606",
+     "value": "0.49"
+    },
+    "8": {
+     "row_id": "L4612",
+     "value": "0.04"
+    },
+    "9": {
+     "row_id": "L4615",
+     "value": "0.91 to 0.99"
+    },
+    "10": {
+     "row_id": "L4091",
+     "value": "92.86"
+    },
+    "11": {
+     "row_id": "L3492",
+     "value": "66.67"
+    },
+    "12": {
+     "row_id": "L2833",
+     "value": "97.6"
+    },
+    "13": {
+     "row_id": "L2605",
+     "value": "3.17"
+    },
+    "14": {
+     "row_id": "L2458",
+     "value": "1.000"
+    },
+    "15": {
+     "row_id": "L4466",
+     "value": "87"
+    },
+    "16": {
+     "row_id": "L5039",
+     "value": "0.087"
+    },
+    "17": {
+     "row_id": "L5040",
+     "value": "0.078"
+    },
+    "18": {
+     "row_id": "L1929",
+     "value": "0.960"
+    },
+    "19": {
+     "row_id": "L1930",
+     "value": "305.120"
+    },
+    "20": {
+     "row_id": "L4469",
+     "value": "0.364"
+    },
+    "21": {
+     "row_id": "L4474",
+     "value": "0.40"
+    },
+    "22": {
+     "row_id": "L4475",
+     "value": "0.119"
+    },
+    "23": {
+     "row_id": "L1916",
+     "value": "2.5159"
+    },
+    "24": {
+     "row_id": "L2144",
+     "value": "0.762"
+    },
+    "25": {
+     "row_id": "L4622",
+     "value": "93.2"
+    },
+    "26": {
+     "row_id": "L5098",
+     "value": "98.83"
+    },
+    "27": {
+     "row_id": "L5100",
+     "value": "97.95"
+    },
+    "28": {
+     "row_id": "L4226",
+     "value": "8"
+    },
+    "29": {
+     "row_id": "L3611",
+     "value": "80.5"
+    },
+    "30": {
+     "row_id": "L3242",
+     "value": "99.3"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "FluidInference/kev-0-5b-coreml",
+     "panel": "b"
+    },
+    "2": {
+     "id": "zhangjiaxin2012/SRF-Jev-Gemma4-12B-LoRA",
+     "panel": "c"
+    },
+    "3": {
+     "id": "systemonedev/kenning-xl-v0.6",
+     "panel": "c"
+    },
+    "4": {
+     "id": "Maincode/Matilda-Jev-v1.5",
+     "panel": "a"
+    }
+   }
+  },
+  "R02": {
+   "inclusion": {
+    "2610.26797": "include",
+    "2610.28957": "include",
+    "2610.22407": "include",
+    "2610.25553": "include",
+    "2610.26793": "include",
+    "2610.11392": "include",
+    "2609.37470": "include",
+    "2610.34826": "include",
+    "2610.30090": "include",
+    "2610.07953": "include",
+    "2609.34227": "include",
+    "2609.32160": "exclude",
+    "2610.21244": "include",
+    "2610.07716": "include",
+    "2609.36154": "include",
+    "2610.17820": "include",
+    "2610.09937": "include",
+    "2609.35293": "include",
+    "2609.31142": "include",
+    "2610.33775": "exclude",
+    "2610.06744": "include",
+    "2610.00376": "include",
+    "2610.02486": "include",
+    "2610.23346": "include",
+    "2609.39496": "include"
+   },
+   "rob": {
+    "kourtis2026type": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "li2026agrijev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "yang2026code": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "rezvani2026jevvibe": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "wu2026poisoned": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "low"
+    },
+    "luo2026nudge": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "wake2026sharedkv": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "sakhawat2026literal": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "qin2026decision": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "ma2026judges": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "paschalides2026jev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "tommasino2026pathjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "cao2026searchjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "sadoun2026probabilities": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "min2026prune": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "li2026reading": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "santillana2026vxone": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "zhou2026token": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "wang2026jevsoup": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "liu2026psyjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "zhang2026anyjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "steiner2026entity": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L2333",
+     "value": "85.9"
+    },
+    "2": {
+     "row_id": "L1311",
+     "value": "0.90"
+    },
+    "3": {
+     "row_id": "L3528",
+     "value": "75.50"
+    },
+    "4": {
+     "row_id": "L3453",
+     "value": "0.166"
+    },
+    "5": {
+     "row_id": "L5272",
+     "value": "3.65"
+    },
+    "6": {
+     "row_id": "L3470",
+     "value": "81.5"
+    },
+    "7": {
+     "row_id": "L3402",
+     "value": "89.11"
+    },
+    "8": {
+     "row_id": "L3532",
+     "value": "+1.33"
+    },
+    "9": {
+     "row_id": "L3814",
+     "value": "73.2"
+    },
+    "10": {
+     "row_id": "L2263",
+     "value": "1.6"
+    },
+    "11": {
+     "row_id": "L2270",
+     "value": ".538"
+    },
+    "12": {
+     "row_id": "L2272",
+     "value": ".729"
+    },
+    "13": {
+     "row_id": "L1494",
+     "value": "0.0828"
+    },
+    "14": {
+     "row_id": "L1604",
+     "value": "0.624"
+    },
+    "15": {
+     "row_id": "L2557",
+     "value": "94.8"
+    },
+    "16": {
+     "row_id": "L4032",
+     "value": "27.2"
+    },
+    "17": {
+     "row_id": "L4688",
+     "value": "0.544"
+    },
+    "18": {
+     "row_id": "L4689",
+     "value": "0.9837"
+    },
+    "19": {
+     "row_id": "L5066",
+     "value": "+1.21"
+    },
+    "20": {
+     "row_id": "L5074",
+     "value": "91.07"
+    },
+    "21": {
+     "row_id": "L4850",
+     "value": "0.204"
+    },
+    "22": {
+     "row_id": "L4856",
+     "value": "0.213"
+    },
+    "23": {
+     "row_id": "L2462",
+     "value": "2.38"
+    },
+    "24": {
+     "row_id": "L2472",
+     "value": "12"
+    },
+    "25": {
+     "row_id": "L1124",
+     "value": "77.29"
+    },
+    "26": {
+     "row_id": "L1128",
+     "value": "75.01\u201375.34"
+    },
+    "27": {
+     "row_id": "L3038",
+     "value": "44"
+    },
+    "28": {
+     "row_id": "L2077",
+     "value": "100"
+    },
+    "29": {
+     "row_id": "L1943",
+     "value": "32.99"
+    },
+    "30": {
+     "row_id": "L2531",
+     "value": "84.17"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "Maincode/Matilda-Decision-v1-Edge",
+     "panel": "a"
+    },
+    "2": {
+     "id": "Praveenrajus/jevify-qwen3.5-2b-base-readout",
+     "panel": "c"
+    },
+    "3": {
+     "id": "tasksource/modernbert-tasksource-jev",
+     "panel": "b"
+    },
+    "4": {
+     "id": "Rckflr/kev-gemma-270m-experimental",
+     "panel": "b"
+    }
+   }
+  },
+  "R03": {
+   "inclusion": {
+    "2610.32559": "include",
+    "2609.33609": "include",
+    "2610.24692": "include",
+    "2610.13092": "include",
+    "2610.17205": "include",
+    "2609.33843": "include",
+    "2609.30216": "exclude",
+    "2610.23668": "include",
+    "2610.26035": "include",
+    "2609.28587": "include",
+    "2610.34124": "include",
+    "2609.30706": "include",
+    "2610.26002": "include",
+    "2610.17175": "include",
+    "2610.08089": "exclude",
+    "2610.37229": "include",
+    "2609.34180": "include",
+    "2610.07730": "include",
+    "2610.19644": "include",
+    "2610.18497": "include",
+    "2609.40241": "include",
+    "2610.03935": "include",
+    "2609.35865": "include",
+    "2610.03324": "include",
+    "2610.04345": "include"
+   },
+   "rob": {
+    "bru2026towards": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "azizi2026labels": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "wu2026sag2": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "li2026fastb": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "chen2026probability": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "hu2026jevadvbench": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "huo2026nl2hull": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "xu2026same": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "wang2026abacus": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "rahimi2026system": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "han2026niocis": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "sun2026jevgpt": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "wang2026benchmarking": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "vats2026good": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "zheng2026selective": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "munot2026when": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "ma2026worldstream": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "lee2026medjev": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "sautenkov2026uavswarmagent": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "ye2026numericjev": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "antunes2026narrow": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "li2026seeing": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L4259",
+     "value": "0.956"
+    },
+    "2": {
+     "row_id": "L2232",
+     "value": "0.2433"
+    },
+    "3": {
+     "row_id": "L3849",
+     "value": "56.4"
+    },
+    "4": {
+     "row_id": "L1464",
+     "value": "0.09654"
+    },
+    "5": {
+     "row_id": "L4403",
+     "value": "32.2"
+    },
+    "6": {
+     "row_id": "L4404",
+     "value": "0.68"
+    },
+    "7": {
+     "row_id": "L1200",
+     "value": "46.3"
+    },
+    "8": {
+     "row_id": "L2628",
+     "value": "0.0271"
+    },
+    "9": {
+     "row_id": "L2632",
+     "value": "80.82"
+    },
+    "10": {
+     "row_id": "L5229",
+     "value": "0.028"
+    },
+    "11": {
+     "row_id": "L5230",
+     "value": "0.286"
+    },
+    "12": {
+     "row_id": "L2123",
+     "value": "50.0"
+    },
+    "13": {
+     "row_id": "L4941",
+     "value": "62.25"
+    },
+    "14": {
+     "row_id": "L4616",
+     "value": "63"
+    },
+    "15": {
+     "row_id": "L4632",
+     "value": "50"
+    },
+    "16": {
+     "row_id": "L4638",
+     "value": "18"
+    },
+    "17": {
+     "row_id": "L2314",
+     "value": "3.5"
+    },
+    "18": {
+     "row_id": "L4866",
+     "value": "0.74"
+    },
+    "19": {
+     "row_id": "L3306",
+     "value": "35.82"
+    },
+    "20": {
+     "row_id": "L3307",
+     "value": "81.20"
+    },
+    "21": {
+     "row_id": "L4103",
+     "value": "0.55"
+    },
+    "22": {
+     "row_id": "L4328",
+     "value": "83.30"
+    },
+    "23": {
+     "row_id": "L4920",
+     "value": "0.5187"
+    },
+    "24": {
+     "row_id": "L4928",
+     "value": "0.8241"
+    },
+    "25": {
+     "row_id": "L4041",
+     "value": "4.326379"
+    },
+    "26": {
+     "row_id": "L2540",
+     "value": "4"
+    },
+    "27": {
+     "row_id": "L2542",
+     "value": "8"
+    },
+    "28": {
+     "row_id": "L1015",
+     "value": "83.40"
+    },
+    "29": {
+     "row_id": "L3671",
+     "value": "34.09"
+    },
+    "30": {
+     "row_id": "L3674",
+     "value": "455"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "ytbai/MiniCPM5-2B-Jev",
+     "panel": "a"
+    },
+    "2": {
+     "id": "forward-metric/sysone-typed-decisions-0.4B",
+     "panel": "b"
+    },
+    "3": {
+     "id": "dr3x1/jevsec",
+     "panel": "undisclosed"
+    },
+    "4": {
+     "id": "hiteshluke/zyot-decider-v3-verbalizer-4b",
+     "panel": "c"
+    }
+   }
+  },
+  "R04": {
+   "inclusion": {
+    "2610.35654": "include",
+    "2610.22588": "include",
+    "2610.16655": "include",
+    "2610.32318": "include",
+    "2610.11316": "include",
+    "2610.36595": "include",
+    "2610.20907": "include",
+    "2610.33410": "include",
+    "2610.18612": "include",
+    "2609.38850": "exclude",
+    "2610.09188": "include",
+    "2610.07106": "exclude",
+    "2610.30777": "include",
+    "2610.02048": "include",
+    "2610.08155": "include",
+    "2610.02586": "include",
+    "2610.18488": "exclude",
+    "2610.15742": "include",
+    "2610.17113": "exclude",
+    "2610.32955": "include",
+    "2609.34261": "include",
+    "2610.36915": "include",
+    "2610.17309": "include",
+    "2610.27099": "include",
+    "2610.15537": "include"
+   },
+   "rob": {
+    "xie2026lost": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "wang2026hidden": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "geuter2026releasing": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "low"
+    },
+    "chen2026company": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "ahmed2026decision": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "liu2026evaluating": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "pelaseyed2026dfip": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "imperatrice2026are": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "liu2026timesjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "zhang2026decide": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "li2026can": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "chung2026jevtom": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "yadav2026uncertainties": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "shankaranarayana2026beyond": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "ding2026jet": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "stambler2026pyes": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "bellversoler2026audio": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "cina2026jev": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "chen2026robojev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "zhu2026videojev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "zhang2026emo": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "tan2026diagnose": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L3027",
+     "value": "30.42"
+    },
+    "2": {
+     "row_id": "L3029",
+     "value": "61.67"
+    },
+    "3": {
+     "row_id": "L3837",
+     "value": "0.335"
+    },
+    "4": {
+     "row_id": "L2924",
+     "value": "78.1"
+    },
+    "5": {
+     "row_id": "L5001",
+     "value": "0.993"
+    },
+    "6": {
+     "row_id": "L5015",
+     "value": "0.841"
+    },
+    "7": {
+     "row_id": "L3456",
+     "value": "84.8"
+    },
+    "8": {
+     "row_id": "L1292",
+     "value": "282"
+    },
+    "9": {
+     "row_id": "L1405",
+     "value": "328"
+    },
+    "10": {
+     "row_id": "L1407",
+     "value": "74.39"
+    },
+    "11": {
+     "row_id": "L3219",
+     "value": "92.3"
+    },
+    "12": {
+     "row_id": "L3647",
+     "value": "500"
+    },
+    "13": {
+     "row_id": "L3655",
+     "value": "6.12"
+    },
+    "14": {
+     "row_id": "L3657",
+     "value": "34.0"
+    },
+    "15": {
+     "row_id": "L2821",
+     "value": "77.92"
+    },
+    "16": {
+     "row_id": "L1262",
+     "value": "0.756"
+    },
+    "17": {
+     "row_id": "L1263",
+     "value": "130"
+    },
+    "18": {
+     "row_id": "L4415",
+     "value": "61.77"
+    },
+    "19": {
+     "row_id": "L5279",
+     "value": "72.10"
+    },
+    "20": {
+     "row_id": "L2037",
+     "value": "0.74"
+    },
+    "21": {
+     "row_id": "L4334",
+     "value": "+12.7"
+    },
+    "22": {
+     "row_id": "L3719",
+     "value": "1"
+    },
+    "23": {
+     "row_id": "L2322",
+     "value": "76.1"
+    },
+    "24": {
+     "row_id": "L2328",
+     "value": "100"
+    },
+    "25": {
+     "row_id": "L3694",
+     "value": "52.0"
+    },
+    "26": {
+     "row_id": "L3701",
+     "value": "33.5"
+    },
+    "27": {
+     "row_id": "L4898",
+     "value": "0.81"
+    },
+    "28": {
+     "row_id": "L1641",
+     "value": "4.46"
+    },
+    "29": {
+     "row_id": "L1477",
+     "value": "62.00"
+    },
+    "30": {
+     "row_id": "L3481",
+     "value": "79.5"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "vincentzhou/jev-student-4b-yizao",
+     "panel": "c"
+    },
+    "2": {
+     "id": "sdmlai/nano-jev",
+     "panel": "d"
+    },
+    "3": {
+     "id": "hotchpotch/bekko-system-one-v0-17m",
+     "panel": "d"
+    },
+    "4": {
+     "id": "zhangjiaxin2012/SRF-Jev-Gemma4-12B-Stage3-Full-RLCD2-16-Train4K-Think4K-v2",
+     "panel": "c"
+    }
+   }
+  },
+  "R05": {
+   "inclusion": {
+    "2610.22276": "include",
+    "2610.23804": "include",
+    "2610.10615": "include",
+    "2609.30243": "include",
+    "2610.09683": "include",
+    "2609.34969": "include",
+    "2610.36311": "include",
+    "2610.25963": "include",
+    "2610.12292": "include",
+    "2610.06625": "include",
+    "2610.21837": "exclude",
+    "2610.06425": "exclude",
+    "2610.25474": "include",
+    "2610.25985": "include",
+    "2610.19811": "include",
+    "2610.19971": "include",
+    "2610.09896": "include",
+    "2610.24930": "exclude",
+    "2609.29283": "include",
+    "2609.35342": "include",
+    "2609.35286": "include",
+    "2610.07177": "include",
+    "2610.33389": "include",
+    "2609.34024": "include",
+    "2610.08775": "exclude"
+   },
+   "rob": {
+    "song2026premisecheck": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "zhao2026one": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "yan2026chinese": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "ling2026when": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "wang2026truncated": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "kwartler2026harness": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "liu2026multimodal": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "dong2026dice": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "lee2026system": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "wang2026jarvis": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "lyu2026decision": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "denney2026jev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "khezresmaeilzadeh2026claim": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "guo2026blade": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "yilmaz2026lavoir": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "fernandes2026jevasajudge": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "bailo2026system": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "he2026can": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "teng2026prism": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "zhuang2026decisionpivot": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "huang2026consider": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "dai2026koa": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L2609",
+     "value": "0.50"
+    },
+    "2": {
+     "row_id": "L2610",
+     "value": "0.59"
+    },
+    "3": {
+     "row_id": "L2612",
+     "value": "0.59"
+    },
+    "4": {
+     "row_id": "L1673",
+     "value": "62.72"
+    },
+    "5": {
+     "row_id": "L2415",
+     "value": "8"
+    },
+    "6": {
+     "row_id": "L2911",
+     "value": "11"
+    },
+    "7": {
+     "row_id": "L2914",
+     "value": "95.0"
+    },
+    "8": {
+     "row_id": "L4064",
+     "value": "0.93"
+    },
+    "9": {
+     "row_id": "L3502",
+     "value": "52.0"
+    },
+    "10": {
+     "row_id": "L5144",
+     "value": "1.20"
+    },
+    "11": {
+     "row_id": "L5148",
+     "value": "0.0346"
+    },
+    "12": {
+     "row_id": "L3294",
+     "value": "9.8"
+    },
+    "13": {
+     "row_id": "L3299",
+     "value": "27"
+    },
+    "14": {
+     "row_id": "L4314",
+     "value": "80"
+    },
+    "15": {
+     "row_id": "L4315",
+     "value": ".68"
+    },
+    "16": {
+     "row_id": "L1037",
+     "value": "63"
+    },
+    "17": {
+     "row_id": "L2683",
+     "value": ".687"
+    },
+    "18": {
+     "row_id": "L2870",
+     "value": "73.9 to 81.5"
+    },
+    "19": {
+     "row_id": "L4506",
+     "value": "84.79"
+    },
+    "20": {
+     "row_id": "L1885",
+     "value": "0.360"
+    },
+    "21": {
+     "row_id": "L3860",
+     "value": "59.1"
+    },
+    "22": {
+     "row_id": "L3926",
+     "value": "80.0"
+    },
+    "23": {
+     "row_id": "L4081",
+     "value": "91.0"
+    },
+    "24": {
+     "row_id": "L4281",
+     "value": "99.1"
+    },
+    "25": {
+     "row_id": "L4047",
+     "value": "8.47"
+    },
+    "26": {
+     "row_id": "L1111",
+     "value": ".533"
+    },
+    "27": {
+     "row_id": "L1116",
+     "value": "0.04\u20130.06"
+    },
+    "28": {
+     "row_id": "L4694",
+     "value": "89.18"
+    },
+    "29": {
+     "row_id": "L4514",
+     "value": "55.0"
+    },
+    "30": {
+     "row_id": "L4522",
+     "value": "86.9"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "thinkingdbx/DECISIONx-1.5B",
+     "panel": "b"
+    },
+    "2": {
+     "id": "Praveenrajus/jevify-qwen-agentworld-35b-a3b-readout-coh",
+     "panel": "c"
+    },
+    "3": {
+     "id": "jevhome/jevhome-ettin-1b",
+     "panel": "b"
+    },
+    "4": {
+     "id": "0xBrandon/Decision-WAF-V1.1-0.8B",
+     "panel": "c"
+    }
+   }
+  },
+  "R06": {
+   "inclusion": {
+    "2610.20634": "include",
+    "2610.11135": "include",
+    "2610.19345": "exclude",
+    "2610.18233": "include",
+    "2609.33209": "include",
+    "2609.34862": "include",
+    "2609.33401": "include",
+    "2610.24358": "include",
+    "2610.28522": "include",
+    "2609.33538": "include",
+    "2610.08675": "include",
+    "2610.25784": "include",
+    "2610.15029": "include",
+    "2610.11692": "include",
+    "2610.31521": "include",
+    "2610.19596": "include",
+    "2610.35826": "include",
+    "2610.34626": "include",
+    "2610.25843": "include",
+    "2610.11978": "include",
+    "2610.17727": "include",
+    "2609.33971": "include",
+    "2610.01834": "include",
+    "2610.33702": "include",
+    "2610.21046": "include"
+   },
+   "rob": {
+    "rafe2026counting": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "mu2026hydrojev": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "khatri2026need": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "yang2026graphdecisionbench": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "brom2026confidence": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "perifanis2026selmroute": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "messoudi2026calibration": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "yang2026tuplebench": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "zhong2026when": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "you2026native": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "ding2026bongard": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "huang2026skillscreen": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "lu2026benchmarking": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "lai2026which": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "bukhari2026system": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "lukauskas2026probable": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "rao2026decision": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "weng2026our": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "lan2026from": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "paramasivam2026rubrix": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "li2026llmasjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L5242",
+     "value": "147"
+    },
+    "2": {
+     "row_id": "L5246",
+     "value": "0.7 to 2.2"
+    },
+    "3": {
+     "row_id": "L5247",
+     "value": "9 of 12"
+    },
+    "4": {
+     "row_id": "L4236",
+     "value": "37"
+    },
+    "5": {
+     "row_id": "L4238",
+     "value": "45.0"
+    },
+    "6": {
+     "row_id": "L1865",
+     "value": "0.769"
+    },
+    "7": {
+     "row_id": "L3251",
+     "value": "0.942"
+    },
+    "8": {
+     "row_id": "L5290",
+     "value": "4-39"
+    },
+    "9": {
+     "row_id": "L4678",
+     "value": "35.95"
+    },
+    "10": {
+     "row_id": "L3760",
+     "value": "1.432"
+    },
+    "11": {
+     "row_id": "L3762",
+     "value": "0.660"
+    },
+    "12": {
+     "row_id": "L2111",
+     "value": "84.0"
+    },
+    "13": {
+     "row_id": "L2275",
+     "value": "92.2"
+    },
+    "14": {
+     "row_id": "L3003",
+     "value": "-0.13"
+    },
+    "15": {
+     "row_id": "L3681",
+     "value": "0.963"
+    },
+    "16": {
+     "row_id": "L2098",
+     "value": "+0.417"
+    },
+    "17": {
+     "row_id": "L2103",
+     "value": "+0.011"
+    },
+    "18": {
+     "row_id": "L5106",
+     "value": "75.4"
+    },
+    "19": {
+     "row_id": "L1536",
+     "value": "65.66"
+    },
+    "20": {
+     "row_id": "L1001",
+     "value": "1.000"
+    },
+    "21": {
+     "row_id": "L1004",
+     "value": "284"
+    },
+    "22": {
+     "row_id": "L1079",
+     "value": "80.3"
+    },
+    "23": {
+     "row_id": "L1083",
+     "value": "325"
+    },
+    "24": {
+     "row_id": "L4649",
+     "value": "61.3"
+    },
+    "25": {
+     "row_id": "L2350",
+     "value": "61.25"
+    },
+    "26": {
+     "row_id": "L4068",
+     "value": "98.75"
+    },
+    "27": {
+     "row_id": "L4201",
+     "value": "53.3"
+    },
+    "28": {
+     "row_id": "L4203",
+     "value": "18.7"
+    },
+    "29": {
+     "row_id": "L1874",
+     "value": "79"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "Quazim0t0/On-Fly-Jev",
+     "panel": "b"
+    },
+    "2": {
+     "id": "StrandsAgents/strands-decider-E2B-gemma4-v1-2610",
+     "panel": "b"
+    },
+    "3": {
+     "id": "llm-semantic-router/Decision-1.0-Lux-9B",
+     "panel": "b"
+    },
+    "4": {
+     "id": "haohan84/v-jev",
+     "panel": "c"
+    }
+   }
+  },
+  "R07": {
+   "inclusion": {
+    "2610.31422": "include",
+    "2610.18780": "include",
+    "2610.18773": "include",
+    "2610.19883": "exclude",
+    "2610.37624": "exclude",
+    "2610.18615": "include",
+    "2610.36937": "exclude",
+    "2610.25456": "include",
+    "2610.25947": "include",
+    "2610.10978": "exclude",
+    "2610.01601": "include",
+    "2610.35721": "include",
+    "2610.18529": "include",
+    "2610.18326": "include",
+    "2610.01218": "exclude",
+    "2610.14112": "include",
+    "2609.38827": "include",
+    "2610.04985": "include",
+    "2610.11436": "include",
+    "2610.05107": "include",
+    "2610.18272": "include",
+    "2610.02076": "include",
+    "2610.21614": "include",
+    "2610.13071": "exclude",
+    "2610.01231": "exclude"
+   },
+   "rob": {
+    "gan2026sansi": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "zhang2026general": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "shi2026multi": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "chen2026suggested": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "jung2026decision": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "tran2026can": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "deka2026retrieval": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "li2026same": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "panchal2026fundm": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "xu2026first": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "porcedda2026jev": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "low"
+    },
+    "song2026lev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "amit2026permutation": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "li2026s2mas": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "low"
+    },
+    "xu2026jevout": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "lai2026correct": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "pan2026world": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "ma2026can": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "konak2026more": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "wu2026decision": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "liu2026roboicl": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L2056",
+     "value": "84.66"
+    },
+    "2": {
+     "row_id": "L2066",
+     "value": "65.68"
+    },
+    "3": {
+     "row_id": "L3049",
+     "value": "0.963"
+    },
+    "4": {
+     "row_id": "L2207",
+     "value": "3.8"
+    },
+    "5": {
+     "row_id": "L2212",
+     "value": "7.0"
+    },
+    "6": {
+     "row_id": "L2507",
+     "value": "52.1"
+    },
+    "7": {
+     "row_id": "L2636",
+     "value": "14"
+    },
+    "8": {
+     "row_id": "L1674",
+     "value": "0.0378"
+    },
+    "9": {
+     "row_id": "L3078",
+     "value": "82.0"
+    },
+    "10": {
+     "row_id": "L3085",
+     "value": "1716"
+    },
+    "11": {
+     "row_id": "L3086",
+     "value": "96.5"
+    },
+    "12": {
+     "row_id": "L4495",
+     "value": "37.4793"
+    },
+    "13": {
+     "row_id": "L3264",
+     "value": "0.97"
+    },
+    "14": {
+     "row_id": "L1521",
+     "value": "36.1"
+    },
+    "15": {
+     "row_id": "L1522",
+     "value": "0.86"
+    },
+    "16": {
+     "row_id": "L2819",
+     "value": "17.2"
+    },
+    "17": {
+     "row_id": "L3728",
+     "value": "1.65"
+    },
+    "18": {
+     "row_id": "L3730",
+     "value": "4.42"
+    },
+    "19": {
+     "row_id": "L3204",
+     "value": "1.56"
+    },
+    "20": {
+     "row_id": "L1653",
+     "value": "0.978"
+    },
+    "21": {
+     "row_id": "L1255",
+     "value": "0.6960"
+    },
+    "22": {
+     "row_id": "L3825",
+     "value": "-0.9"
+    },
+    "23": {
+     "row_id": "L3829",
+     "value": "67.3"
+    },
+    "24": {
+     "row_id": "L2881",
+     "value": "51.39"
+    },
+    "25": {
+     "row_id": "L1034",
+     "value": "1 of 468"
+    },
+    "26": {
+     "row_id": "L1902",
+     "value": "29"
+    },
+    "27": {
+     "row_id": "L1101",
+     "value": "21.1"
+    },
+    "28": {
+     "row_id": "L4481",
+     "value": "75.6"
+    },
+    "29": {
+     "row_id": "L4483",
+     "value": "91.9"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "0xBrandon/Decision-WAF-V1-0.8B",
+     "panel": "c"
+    },
+    "2": {
+     "id": "llm-semantic-router/Decision-1.0-Nox-4B",
+     "panel": "b"
+    },
+    "3": {
+     "id": "SargeDev/jev-gate-student-b",
+     "panel": "c"
+    },
+    "4": {
+     "id": "sgaseretto/diffcider-typed-decisions",
+     "panel": "c"
+    }
+   }
+  },
+  "R08": {
+   "inclusion": {
+    "2610.30518": "exclude",
+    "2610.11901": "include",
+    "2610.22401": "include",
+    "2609.39111": "include",
+    "2609.36059": "include",
+    "2610.36006": "include",
+    "2609.33874": "include",
+    "2609.36399": "include",
+    "2610.18579": "include",
+    "2610.03387": "include",
+    "2610.07327": "include",
+    "2610.28435": "include",
+    "2609.33671": "include",
+    "2610.02046": "include",
+    "2610.13675": "include",
+    "2610.16191": "include",
+    "2610.27677": "exclude",
+    "2610.20927": "include",
+    "2610.16238": "include",
+    "2610.17016": "include",
+    "2610.30045": "include",
+    "2610.26325": "include",
+    "2610.33258": "include",
+    "2610.23170": "include",
+    "2610.14449": "exclude"
+   },
+   "rob": {
+    "hu2026jevguard": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "yamamoto2026prism": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "gao2026more": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "loi2026argument": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "sharma2026typedbench": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "fadli2026does": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "teke2026ufakzeka": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "nandakishore2026laya": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "li2026jevcascade": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "chouhan2026verdict": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "du2026reliable": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "mei2026improving": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "polignano2026decision4rec": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "sharma2026selection": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "lucca2026measure": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "ha2026decision": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "dai2026probabilitybench": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "qin2026mjevspatial": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "zhou2026pixels": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "duan2026general": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "mohebifar2026onecodereviewbench": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L3742",
+     "value": "0.214"
+    },
+    "2": {
+     "row_id": "L3114",
+     "value": "0.042"
+    },
+    "3": {
+     "row_id": "L3427",
+     "value": "+0.05"
+    },
+    "4": {
+     "row_id": "L2304",
+     "value": "37.69"
+    },
+    "5": {
+     "row_id": "L2889",
+     "value": "0.781"
+    },
+    "6": {
+     "row_id": "L2890",
+     "value": "0.629"
+    },
+    "7": {
+     "row_id": "L1844",
+     "value": "66.2"
+    },
+    "8": {
+     "row_id": "L4804",
+     "value": "43.23"
+    },
+    "9": {
+     "row_id": "L4808",
+     "value": "59.34"
+    },
+    "10": {
+     "row_id": "L4812",
+     "value": "-0.12"
+    },
+    "11": {
+     "row_id": "L3315",
+     "value": "+17.830"
+    },
+    "12": {
+     "row_id": "L2483",
+     "value": "1.0 to 6.3"
+    },
+    "13": {
+     "row_id": "L2486",
+     "value": "0.03"
+    },
+    "14": {
+     "row_id": "L1625",
+     "value": "-0.0030"
+    },
+    "15": {
+     "row_id": "L1631",
+     "value": "2.00-2.37"
+    },
+    "16": {
+     "row_id": "L4877",
+     "value": "0.619"
+    },
+    "17": {
+     "row_id": "L5131",
+     "value": "+8.07"
+    },
+    "18": {
+     "row_id": "L4911",
+     "value": "81.5"
+    },
+    "19": {
+     "row_id": "L4914",
+     "value": "57.1"
+    },
+    "20": {
+     "row_id": "L1333",
+     "value": "0.727"
+    },
+    "21": {
+     "row_id": "L4425",
+     "value": "0.0582"
+    },
+    "22": {
+     "row_id": "L4440",
+     "value": "310-340"
+    },
+    "23": {
+     "row_id": "L4017",
+     "value": "0.103"
+    },
+    "24": {
+     "row_id": "L1513",
+     "value": "273"
+    },
+    "25": {
+     "row_id": "L2713",
+     "value": "0.750"
+    },
+    "26": {
+     "row_id": "L2433",
+     "value": "0.038"
+    },
+    "27": {
+     "row_id": "L2439",
+     "value": "-10.2"
+    },
+    "28": {
+     "row_id": "L3332",
+     "value": "0.710"
+    },
+    "29": {
+     "row_id": "L1054",
+     "value": "80.81"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "larkooo/gemma-e2b-rlcd",
+     "panel": "c"
+    },
+    "2": {
+     "id": "tasksource/tasksource-decider-nano",
+     "panel": "d"
+    },
+    "3": {
+     "id": "startlux-models/StartLux-Decision-v1.1-0.8B-Instant",
+     "panel": "c"
+    },
+    "4": {
+     "id": "lostargon/Tiny-Jev-1.7B",
+     "panel": "b"
+    }
+   }
+  },
+  "R09": {
+   "inclusion": {
+    "2610.00831": "include",
+    "2610.15710": "include",
+    "2610.00213": "include",
+    "2610.33718": "include",
+    "2610.18378": "exclude",
+    "2609.30186": "include",
+    "2609.35039": "include",
+    "2609.36965": "include",
+    "2609.34963": "include",
+    "2609.36115": "include",
+    "2610.01079": "include",
+    "2610.29217": "include",
+    "2610.36804": "include",
+    "2610.16967": "include",
+    "2609.28919": "include",
+    "2610.25768": "include",
+    "2610.21160": "exclude",
+    "2610.20951": "include",
+    "2610.20778": "include",
+    "2610.21412": "include",
+    "2610.00381": "include",
+    "2609.34736": "include",
+    "2610.35010": "exclude",
+    "2610.36689": "include",
+    "2610.18389": "include"
+   },
+   "rob": {
+    "severo2026jevids": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "madridgarcia2026jev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "wang2026prune": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "dinzinger2026system": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "lin2026pact": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "lukassen2026cheap": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "liu2026decisionb": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "chen2026system1": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "liu2026adversarial": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "han2026embodied": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "rajput2026hosted": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "liu2026decision": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "wang2026jev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "yan2026jevforest": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "wang2026chinese": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "wang2026jevlitemas": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "zhang2026jevcoder": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "ma2026fastjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "ichikawa2026decision": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "demir2026commit": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "chen2026cognit": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L1302",
+     "value": "90.34"
+    },
+    "2": {
+     "row_id": "L3871",
+     "value": "0.349"
+    },
+    "3": {
+     "row_id": "L4659",
+     "value": "78.3"
+    },
+    "4": {
+     "row_id": "L4668",
+     "value": "72.2"
+    },
+    "5": {
+     "row_id": "L4836",
+     "value": "-2.5 to +0.7"
+    },
+    "6": {
+     "row_id": "L3088",
+     "value": "1,142.0"
+    },
+    "7": {
+     "row_id": "L5126",
+     "value": "0.41"
+    },
+    "8": {
+     "row_id": "L1222",
+     "value": "66.4"
+    },
+    "9": {
+     "row_id": "L2803",
+     "value": "25.0"
+    },
+    "10": {
+     "row_id": "L5036",
+     "value": "38.34"
+    },
+    "11": {
+     "row_id": "L5295",
+     "value": "80.74"
+    },
+    "12": {
+     "row_id": "L5299",
+     "value": "82.66"
+    },
+    "13": {
+     "row_id": "L3271",
+     "value": "0.78"
+    },
+    "14": {
+     "row_id": "L2698",
+     "value": "73.81-78.76"
+    },
+    "15": {
+     "row_id": "L1446",
+     "value": "0.087"
+    },
+    "16": {
+     "row_id": "L3110",
+     "value": "6.79"
+    },
+    "17": {
+     "row_id": "L2049",
+     "value": "22"
+    },
+    "18": {
+     "row_id": "L2051",
+     "value": "74"
+    },
+    "19": {
+     "row_id": "L2052",
+     "value": "195"
+    },
+    "20": {
+     "row_id": "L1826",
+     "value": "60.10"
+    },
+    "21": {
+     "row_id": "L1537",
+     "value": "77.8"
+    },
+    "22": {
+     "row_id": "L3884",
+     "value": "12.7-54.6"
+    },
+    "23": {
+     "row_id": "L3893",
+     "value": "95.33"
+    },
+    "24": {
+     "row_id": "L2090",
+     "value": "63.2"
+    },
+    "25": {
+     "row_id": "L2094",
+     "value": "55.2"
+    },
+    "26": {
+     "row_id": "L2670",
+     "value": "0.917"
+    },
+    "27": {
+     "row_id": "L3627",
+     "value": "0.822"
+    },
+    "28": {
+     "row_id": "L3631",
+     "value": "0.642"
+    },
+    "29": {
+     "row_id": "L3643",
+     "value": "29.7"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "IntelligenceLab/Jev-Vision-2B",
+     "panel": "c"
+    },
+    "2": {
+     "id": "zhangjiaxin2012/SRF-Jev-Gemma4-12B-Stage3-Legacy-LoRA-RL16-Train4K-Think4K-v2",
+     "panel": "c"
+    },
+    "3": {
+     "id": "systemonedev/kenning-large-v0.4",
+     "panel": "d"
+    }
+   }
+  },
+  "R10": {
+   "inclusion": {
+    "2610.00437": "include",
+    "2610.30947": "include",
+    "2610.27746": "include",
+    "2610.14912": "include",
+    "2610.19478": "include",
+    "2610.02293": "include",
+    "2610.19118": "include",
+    "2610.19619": "include",
+    "2610.02267": "include",
+    "2610.29052": "include",
+    "2610.03073": "include",
+    "2609.28613": "include",
+    "2610.10321": "include",
+    "2610.28826": "include",
+    "2610.21411": "include",
+    "2610.34329": "include",
+    "2610.22066": "include",
+    "2610.24649": "include",
+    "2610.14631": "include",
+    "2610.01006": "include",
+    "2610.11379": "include",
+    "2610.19536": "include",
+    "2609.36116": "exclude",
+    "2610.22526": "include"
+   },
+   "rob": {
+    "zhu2026jevagentharness": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "joy2026system": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "li2026beyond": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "wang2026mnemon": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "deusser2026evaluating": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "liu2026retijev": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "mazzoni2026benchmarking": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "lan2026decisionrobust": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "zhu2026interndecision": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "high"
+    },
+    "buecheler2026cue": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "sheng2026navjev": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "chen2026secjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "song2026understanding": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "rafe2026estimating": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "azizi2026one": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "asseri2026calibrated": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "wang2026unijev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "iqbal2026typed": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "pei2026learning": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "zhang2026mobile": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "li2026cana": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L1705",
+     "value": "42.1-72.2"
+    },
+    "2": {
+     "row_id": "L2852",
+     "value": "100.0"
+    },
+    "3": {
+     "row_id": "L2862",
+     "value": "100"
+    },
+    "4": {
+     "row_id": "L4302",
+     "value": "0.0"
+    },
+    "5": {
+     "row_id": "L4304",
+     "value": "60.1"
+    },
+    "6": {
+     "row_id": "L4306",
+     "value": "0 of 144"
+    },
+    "7": {
+     "row_id": "L2249",
+     "value": "90.20"
+    },
+    "8": {
+     "row_id": "L1801",
+     "value": "0.867"
+    },
+    "9": {
+     "row_id": "L4445",
+     "value": "0.922"
+    },
+    "10": {
+     "row_id": "L4448",
+     "value": "0.095"
+    },
+    "11": {
+     "row_id": "L1412",
+     "value": "-22.9"
+    },
+    "12": {
+     "row_id": "L1424",
+     "value": "0.349"
+    },
+    "13": {
+     "row_id": "L3518",
+     "value": "3.2"
+    },
+    "14": {
+     "row_id": "L1240",
+     "value": "0.067"
+    },
+    "15": {
+     "row_id": "L5085",
+     "value": "245"
+    },
+    "16": {
+     "row_id": "L4703",
+     "value": "84.8"
+    },
+    "17": {
+     "row_id": "L2512",
+     "value": "51.6"
+    },
+    "18": {
+     "row_id": "L2516",
+     "value": ".816"
+    },
+    "19": {
+     "row_id": "L5252",
+     "value": "46.5"
+    },
+    "20": {
+     "row_id": "L2660",
+     "value": "16.2"
+    },
+    "21": {
+     "row_id": "L1619",
+     "value": "0.53"
+    },
+    "22": {
+     "row_id": "L5216",
+     "value": "23.2"
+    },
+    "23": {
+     "row_id": "L1658",
+     "value": "3-11"
+    },
+    "24": {
+     "row_id": "L4283",
+     "value": "85.9"
+    },
+    "25": {
+     "row_id": "L4287",
+     "value": "84.6"
+    },
+    "26": {
+     "row_id": "L1089",
+     "value": "132.67"
+    },
+    "27": {
+     "row_id": "L4001",
+     "value": "88.74"
+    },
+    "28": {
+     "row_id": "L4010",
+     "value": "0.550"
+    },
+    "29": {
+     "row_id": "L3907",
+     "value": "91.4"
+    }
+   },
+   "heads": {
+    "1": {
+     "id": "abhishek085/jev-control-es",
+     "panel": "b"
+    },
+    "2": {
+     "id": "zhangjiaxin2012/SRF-Jev-Gemma4-12B-Stage1-SFT1024-Think4K-v2",
+     "panel": "c"
+    },
+    "3": {
+     "id": "SUPER321/jevflash-doom-basic-0.6b",
+     "panel": "b"
+    }
+   }
+  }
+ }
+}

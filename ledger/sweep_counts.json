@@ -17,11 +17,11 @@
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.includedArxiv": {
-      "text": "237",
+      "text": "243",
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.excludedArxiv": {
-      "text": "34",
+      "text": "28",
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.includedNoRows": {
@@ -29,7 +29,7 @@
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.studiesTotal": {
-      "text": "242",
+      "text": "248",
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.studiesGrey": {
@@ -37,7 +37,7 @@
       "source": "shared/ledger/sweep_counts.json"
     },
     "sweep.ledgerRows": {
-      "text": "3,396",
+      "text": "3,519",
       "source": "shared/ledger/sweep_counts.json"
     }
   }

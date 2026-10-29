@@ -1,37 +1,37 @@
 {
   "values": {
     "syn.ledgerRows": {
-      "text": "3396",
+      "text": "3519",
       "source": "shared/ledger/synthesis.json",
       "note": "rows in ledger.csv at synthesis time"
     },
     "syn.ledgerStudies": {
-      "text": "242",
+      "text": "248",
       "source": "shared/ledger/synthesis.json",
       "note": "studies in ledger.csv"
     },
     "syn.ledgerClusters": {
-      "text": "241",
+      "text": "247",
       "source": "shared/ledger/synthesis.json",
       "note": "independent study clusters (li2026fast and li2026replacing merged)"
     },
     "syn.selectionRowsIncluded": {
-      "text": "1374",
+      "text": "1415",
       "source": "shared/ledger/synthesis.json",
       "note": "selection rows included (all analyses and roles)"
     },
     "syn.selectionRowsExcluded": {
-      "text": "175",
+      "text": "191",
       "source": "shared/ledger/synthesis.json",
       "note": "selection rows marked include=no"
     },
     "syn.r1GapNStudies": {
-      "text": "62",
+      "text": "63",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev on the same items, accuracy-type points (accuracy, macro-F1, leaderboard score), study value = median of its rows: independent study clusters"
     },
     "syn.r1GapNRows": {
-      "text": "75",
+      "text": "76",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev on the same items, accuracy-type points (accuracy, macro-F1, leaderboard score), study value = median of its rows: ledger rows (selection estimate rows)"
     },
@@ -56,12 +56,12 @@
       "note": "R1 best open model minus Jev on the same items, accuracy-type points (accuracy, macro-F1, leaderboard score), study value = median of its rows: cluster with the maximum"
     },
     "syn.r1GapMedian": {
-      "text": "1.5",
+      "text": "1.3",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev on the same items, accuracy-type points (accuracy, macro-F1, leaderboard score), study value = median of its rows: median over clusters (points; positive means the open model is ahead)"
     },
     "syn.r1GapCiLo": {
-      "text": "-0.4",
+      "text": "-0.7",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev on the same items, accuracy-type points (accuracy, macro-F1, leaderboard score), study value = median of its rows: 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -76,7 +76,7 @@
       "note": "R1 median over clusters of the absolute best-open-minus-Jev gap (points)"
     },
     "syn.r1AbsGapCiLo": {
-      "text": "3.2",
+      "text": "3.1",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 absolute gap, bootstrap 2.5th percentile over clusters"
     },
@@ -91,19 +91,19 @@
       "note": "R1 clusters where the best open model is ahead of Jev (brom2026confidence, cao2026searchjev, chen2026system1, cheng2026thisthatmodel, demir2026commit, du2026reliable, duan2026general, fadli2026does, geuter2026releasing, grey_laya, grey_robbalian_rev, hu2026jevguard, huo2026nl2hull, jung2026decision, kourtis2026type, li2026dknownjev, li2026jeva, li2026reading, li2026s2mas, liu2026decisionb, liu2026evaluating, liu2026psyjev, liu2026retijev, mohebifar2026onecodereviewbench, pan2026world, paramasivam2026rubrix, rajput2026hosted, stambler2026pyes, steiner2026entity, teng2026prism, wang2026chinese, xu2026trustjev, zhang2026typed, zhu2026interndecision, zhu2026jevagentharness, zhuang2026decisionpivot, zhuang2026startlux)"
     },
     "syn.r1OpenBehindCount": {
-      "text": "25",
+      "text": "26",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 clusters where Jev is ahead or tied"
     },
     "syn.r1GapParityNStudies": {
-      "text": "9",
+      "text": "10",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 clusters with RoB D4 low"
     },
     "syn.r1GapParityMin": {
-      "text": "-28.4",
+      "text": "-13.6",
       "source": "shared/ledger/synthesis.json",
-      "note": "R1 D4 low minimum gap (mazzoni2026benchmarking)"
+      "note": "R1 D4 low minimum gap (li2026fastb)"
     },
     "syn.r1GapParityMax": {
       "text": "9.8",
@@ -156,7 +156,7 @@
       "note": "R1 TaskOutcomeRef maximum study gap (jung2026decision)"
     },
     "syn.r1GapModelOrSyntheticRefNStudies": {
-      "text": "33",
+      "text": "34",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 clusters with ModelOrSyntheticRef rows"
     },
@@ -171,12 +171,12 @@
       "note": "R1 ModelOrSyntheticRef maximum study gap (zhuang2026startlux)"
     },
     "syn.r1GapZeroShotNStudies": {
-      "text": "34",
+      "text": "35",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, comparator class zero_shot_open (comparator_class.csv): independent study clusters"
     },
     "syn.r1GapZeroShotNRows": {
-      "text": "36",
+      "text": "37",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, comparator class zero_shot_open (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -201,12 +201,12 @@
       "note": "R1 best open model minus Jev, comparator class zero_shot_open (comparator_class.csv): cluster with the maximum"
     },
     "syn.r1GapZeroShotMedian": {
-      "text": "-0.6",
+      "text": "-0.7",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, comparator class zero_shot_open (comparator_class.csv): median over clusters (points; positive means the open model is ahead)"
     },
     "syn.r1GapZeroShotCiLo": {
-      "text": "-3.3",
+      "text": "-4.0",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, comparator class zero_shot_open (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -261,12 +261,12 @@
       "note": "R1 best open model minus Jev, comparator class task_trained (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotPoolNStudies": {
-      "text": "36",
+      "text": "37",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, estimates and sensitivity readings, comparator class zero_shot_open (comparator_class.csv): independent study clusters"
     },
     "syn.r1GapZeroShotPoolNRows": {
-      "text": "44",
+      "text": "45",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, estimates and sensitivity readings, comparator class zero_shot_open (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -291,7 +291,7 @@
       "note": "R1 best open model minus Jev, estimates and sensitivity readings, comparator class zero_shot_open (comparator_class.csv): cluster with the maximum"
     },
     "syn.r1GapZeroShotPoolMedian": {
-      "text": "-0.6",
+      "text": "-0.7",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, estimates and sensitivity readings, comparator class zero_shot_open (comparator_class.csv): median over clusters (points; positive means the open model is ahead)"
     },
@@ -351,19 +351,19 @@
       "note": "R1 best open model minus Jev, estimates and sensitivity readings, comparator class task_trained (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotParityNStudies": {
-      "text": "9",
+      "text": "10",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): independent study clusters"
     },
     "syn.r1GapZeroShotParityNRows": {
-      "text": "10",
+      "text": "11",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): ledger rows (selection estimate rows)"
     },
     "syn.r1GapZeroShotParityMin": {
-      "text": "-28.4",
+      "text": "-13.6",
       "source": "shared/ledger/synthesis.json",
-      "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): minimum over clusters (mazzoni2026benchmarking) (points; positive means the open model is ahead)"
+      "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): minimum over clusters (li2026fastb) (points; positive means the open model is ahead)"
     },
     "syn.r1GapZeroShotParityMax": {
       "text": "9.8",
@@ -371,7 +371,7 @@
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): maximum over clusters (demir2026commit) (points; positive means the open model is ahead)"
     },
     "syn.r1GapZeroShotParityMinStudy": {
-      "text": "mazzoni2026benchmarking",
+      "text": "li2026fastb",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): cluster with the minimum"
     },
@@ -381,17 +381,17 @@
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): cluster with the maximum"
     },
     "syn.r1GapZeroShotParityMedian": {
-      "text": "-0.7",
+      "text": "-0.6",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): median over clusters (points; positive means the open model is ahead)"
     },
     "syn.r1GapZeroShotParityCiLo": {
-      "text": "-13.6",
+      "text": "-6.1",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotParityCiHi": {
-      "text": "1.8",
+      "text": "2.2",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -426,17 +426,17 @@
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): cluster with the maximum"
     },
     "syn.r1GapZeroShotSelfReportMedian": {
-      "text": "-0.3",
+      "text": "-0.7",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): median over clusters (points; positive means the open model is ahead)"
     },
     "syn.r1GapZeroShotSelfReportCiLo": {
-      "text": "-4.0",
+      "text": "-10.1",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotSelfReportCiHi": {
-      "text": "3.2",
+      "text": "3.1",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -653,7 +653,7 @@
     "syn.r1GapCinaOpenWer": {
       "text": "-0.3",
       "source": "shared/ledger/synthesis.json",
-      "note": "cina2026jev Jev (WER points; ref task_outcome; RoB some_concerns; role context); ledger L1284"
+      "note": "cina2026jev Jev (WER points; ref task_outcome; RoB high; role context); ledger L1284"
     },
     "syn.r1GapJoyClinc": {
       "text": "-67.9",
@@ -768,32 +768,32 @@
     "syn.r1GapBongardDecisionBench": {
       "text": "6.0",
       "source": "shared/ledger/synthesis.json",
-      "note": "ding2026bongard Jev (accuracy points; ref not_reported; RoB high; role context); ledger L1856"
+      "note": "ding2026bongard Jev (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L1856"
     },
     "syn.r1GapBongardBanking77": {
       "text": "13.3",
       "source": "shared/ledger/synthesis.json",
-      "note": "ding2026bongard Jev (accuracy points; ref human_crowd; RoB high; role context); ledger L1859"
+      "note": "ding2026bongard Jev (accuracy points; ref human_crowd; RoB some_concerns; role context); ledger L1859"
     },
     "syn.r1GapBongardJudgeBench": {
       "text": "-24.3",
       "source": "shared/ledger/synthesis.json",
-      "note": "ding2026bongard Jev (accuracy points; ref human_single; RoB high; role context); ledger L1860"
+      "note": "ding2026bongard Jev (accuracy points; ref human_single; RoB some_concerns; role context); ledger L1860"
     },
     "syn.r1GapBongardMassive": {
       "text": "-11.9",
       "source": "shared/ledger/synthesis.json",
-      "note": "ding2026bongard Bongard (accuracy points; ref human_crowd; RoB high; role context); ledger L1866"
+      "note": "ding2026bongard Bongard (accuracy points; ref human_crowd; RoB some_concerns; role context); ledger L1866"
     },
     "syn.r1GapWangGeneral": {
       "text": "0.9",
       "source": "shared/ledger/synthesis.json",
-      "note": "wang2026chinese Jev (accuracy points; ref human_crowd; RoB high; role estimate); ledger L1832"
+      "note": "wang2026chinese Jev (accuracy points; ref human_crowd; RoB some_concerns; role estimate); ledger L1832"
     },
     "syn.r1GapWangDomains": {
       "text": "-6.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "wang2026chinese Jev (accuracy points; ref human_crowd; RoB high; role context); ledger L1835"
+      "note": "wang2026chinese Jev (accuracy points; ref human_crowd; RoB some_concerns; role context); ledger L1835"
     },
     "syn.r1GapSuLightsOut": {
       "text": "-5.0",
@@ -1108,12 +1108,12 @@
     "syn.r1GapLiReadingEikos": {
       "text": "3.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026reading Eikos-27B (accuracy points; ref task_outcome; RoB some_concerns; role estimate); ledger L3450"
+      "note": "li2026reading Eikos-27B (accuracy points; ref task_outcome; RoB high; role estimate); ledger L3450"
     },
     "syn.r1GapLiReadingClef": {
       "text": "1.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026reading Clef-27B (accuracy points; ref task_outcome; RoB some_concerns; role context); ledger L3449"
+      "note": "li2026reading Clef-27B (accuracy points; ref task_outcome; RoB high; role context); ledger L3449"
     },
     "syn.r1GapDuD3": {
       "text": "4.9",
@@ -1263,17 +1263,17 @@
     "syn.r1GapJevguardOverall": {
       "text": "17.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "hu2026jevguard Jev-Guard (accuracy points; ref administrative_field; RoB high; role estimate); ledger L3310"
+      "note": "hu2026jevguard Jev-Guard (accuracy points; ref administrative_field; RoB some_concerns; role estimate); ledger L3310"
     },
     "syn.r1GapJevguardCompliance": {
       "text": "43.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "hu2026jevguard Jev-Guard (accuracy points; ref administrative_field; RoB high; role context); ledger L3313"
+      "note": "hu2026jevguard Jev-Guard (accuracy points; ref administrative_field; RoB some_concerns; role context); ledger L3313"
     },
     "syn.r1GapJevguardContent": {
       "text": "28.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "hu2026jevguard Jev-Guard (accuracy points; ref administrative_field; RoB high; role context); ledger L3314"
+      "note": "hu2026jevguard Jev-Guard (accuracy points; ref administrative_field; RoB some_concerns; role context); ledger L3314"
     },
     "syn.r1GapPremiseKevVsJev": {
       "text": "0.0",
@@ -1308,17 +1308,17 @@
     "syn.r1GapPrismFiveSet": {
       "text": "0.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "teng2026prism trained SCQ, Gemma 4 12B (Prism-1 79.5) (accuracy points; ref not_reported; RoB some_concerns; role estimate); ledger L3926"
+      "note": "teng2026prism trained SCQ, Gemma 4 12B (Prism-1 79.5) (accuracy points; ref not_reported; RoB high; role estimate); ledger L3926"
     },
     "syn.r1GapPrismFiveSetPrism": {
       "text": "-0.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "teng2026prism Prism-1 (Gemma 4 12B, LoRA rank 16) (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L3936;L3926"
+      "note": "teng2026prism Prism-1 (Gemma 4 12B, LoRA rank 16) (accuracy points; ref not_reported; RoB high; role context); ledger L3936;L3926"
     },
     "syn.r1GapPrismJevBench": {
       "text": "-7.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "teng2026prism Prism-1 (Gemma 4 12B, no JevBench training data) (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L3932"
+      "note": "teng2026prism Prism-1 (Gemma 4 12B, no JevBench training data) (accuracy points; ref not_reported; RoB high; role context); ledger L3932"
     },
     "syn.r1GapLevJevBench": {
       "text": "-10.4",
@@ -1333,12 +1333,12 @@
     "syn.r1GapArenaAcc": {
       "text": "0.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026system1 Decision-2.0-Vega-27B (accuracy points; ref mixed; RoB high; role estimate); ledger L3874;L3870"
+      "note": "chen2026system1 Decision-2.0-Vega-27B (accuracy points; ref mixed; RoB some_concerns; role estimate); ledger L3874;L3870"
     },
     "syn.r1GapArenaLaya": {
       "text": "-28.1",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026system1 Laya (421M) (accuracy points; ref mixed; RoB high; role context); ledger L3878;L3870"
+      "note": "chen2026system1 Laya (421M) (accuracy points; ref mixed; RoB some_concerns; role context); ledger L3878;L3870"
     },
     "syn.r1GapInternDecisionMean": {
       "text": "1.3",
@@ -1393,27 +1393,27 @@
     "syn.r1GapDknownAcc": {
       "text": "6.1",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026dknownjev DKnown-Jev 27B (B1, 1 domain epoch) (accuracy points; ref human_single; RoB high; role estimate); ledger L4087"
+      "note": "li2026dknownjev DKnown-Jev 27B (B1, 1 domain epoch) (accuracy points; ref human_single; RoB some_concerns; role estimate); ledger L4087"
     },
     "syn.r1GapDknownF1": {
       "text": "6.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026dknownjev DKnown-Jev 27B (B1, 1 domain epoch) (macroF1 points; ref human_single; RoB high; role context); ledger L4088"
+      "note": "li2026dknownjev DKnown-Jev 27B (B1, 1 domain epoch) (macroF1 points; ref human_single; RoB some_concerns; role context); ledger L4088"
     },
     "syn.r1GapDknown2b": {
       "text": "0.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026dknownjev DKnown-Jev 2B (A1, 1 domain epoch) (accuracy points; ref human_single; RoB high; role context); ledger L4091"
+      "note": "li2026dknownjev DKnown-Jev 2B (A1, 1 domain epoch) (accuracy points; ref human_single; RoB some_concerns; role context); ledger L4091"
     },
     "syn.r1GapDknown27b2": {
       "text": "1.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026dknownjev DKnown-Jev 27B (B2, 2 domain epochs) (accuracy points; ref human_single; RoB high; role context); ledger L4093"
+      "note": "li2026dknownjev DKnown-Jev 27B (B2, 2 domain epochs) (accuracy points; ref human_single; RoB some_concerns; role context); ledger L4093"
     },
     "syn.r1GapDknown2b2": {
       "text": "-1.6",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026dknownjev DKnown-Jev 2B (A2, 2 domain epochs) (accuracy points; ref human_single; RoB high; role context); ledger L4092"
+      "note": "li2026dknownjev DKnown-Jev 2B (A2, 2 domain epochs) (accuracy points; ref human_single; RoB some_concerns; role context); ledger L4092"
     },
     "syn.r1GapRaoRiceChem": {
       "text": "-0.7",
@@ -1428,12 +1428,12 @@
     "syn.r1GapYilmazTypedDecisions": {
       "text": "4.7",
       "source": "shared/ledger/synthesis.json",
-      "note": "yilmaz2026lavoir LAVOIR (Laya with Value-Of-Information Routing, ModernBERT-large) (accuracy points; ref human_crowd; RoB high; role context); ledger L1110"
+      "note": "yilmaz2026lavoir LAVOIR (Laya with Value-Of-Information Routing, ModernBERT-large) (accuracy points; ref human_crowd; RoB some_concerns; role context); ledger L1110"
     },
     "syn.r1GapYilmazAgNews": {
       "text": "-0.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "yilmaz2026lavoir LAVOIR (Laya with Value-Of-Information Routing, ModernBERT-large) (accuracy points; ref human_crowd; RoB high; role context); ledger L1113"
+      "note": "yilmaz2026lavoir LAVOIR (Laya with Value-Of-Information Routing, ModernBERT-large) (accuracy points; ref human_crowd; RoB some_concerns; role context); ledger L1113"
     },
     "syn.r1GapYeHeadsVsDirect": {
       "text": "-74.2",
@@ -1498,27 +1498,27 @@
     "syn.r1GapZhangCsLongHealth": {
       "text": "-3.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhang2026general CS1-4B (balanced accuracy points; ref human_single; RoB high; role context); ledger L4483"
+      "note": "zhang2026general CS1-4B (balanced accuracy points; ref human_single; RoB some_concerns; role context); ledger L4483"
     },
     "syn.r1GapZhangCsTcga": {
       "text": "-1.9",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhang2026general CS1-4B (balanced accuracy points; ref administrative_field; RoB high; role context); ledger L4484"
+      "note": "zhang2026general CS1-4B (balanced accuracy points; ref administrative_field; RoB some_concerns; role context); ledger L4484"
     },
     "syn.r1GapZhuangItem": {
       "text": "19.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhuang2026decisionpivot Perplexity Decider v1.1 (accuracy points; ref synthetic; RoB high; role context); ledger L4512"
+      "note": "zhuang2026decisionpivot Perplexity Decider v1.1 (accuracy points; ref synthetic; RoB some_concerns; role context); ledger L4512"
     },
     "syn.r1GapZhuangPair": {
       "text": "39.1",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhuang2026decisionpivot Perplexity Decider v1.1 (best non-vendor one-pass model: Decision 3.0 d3 71.3); SL-27B AutoThink (benchmark authors) 86.9 (accuracy points; ref synthetic; RoB high; role estimate); ledger L4511"
+      "note": "zhuang2026decisionpivot Perplexity Decider v1.1 (best non-vendor one-pass model: Decision 3.0 d3 71.3); SL-27B AutoThink (benchmark authors) 86.9 (accuracy points; ref synthetic; RoB some_concerns; role estimate); ledger L4511"
     },
     "syn.r1GapZhuangReference": {
       "text": "4.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhuang2026decisionpivot SL-27B Instant (benchmark authors) 59.4; Perplexity Decider 57.0 (score points; ref administrative_field; RoB high; role context); ledger L4514"
+      "note": "zhuang2026decisionpivot SL-27B Instant (benchmark authors) 59.4; Perplexity Decider 57.0 (score points; ref administrative_field; RoB some_concerns; role context); ledger L4514"
     },
     "syn.r1GapSMasSharp": {
       "text": "9.3",
@@ -1563,17 +1563,17 @@
     "syn.r1GapWengJevBench35b": {
       "text": "6.3",
       "source": "shared/ledger/synthesis.json",
-      "note": "weng2026our Ours 35B-A3B (Qwen3.6-35B-A3B, LoRA rank 64, Eikos recipe, letter readout) (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L4648"
+      "note": "weng2026our Ours 35B-A3B (Qwen3.6-35B-A3B, LoRA rank 64, Eikos recipe, letter readout) (accuracy points; ref not_reported; RoB high; role context); ledger L4648"
     },
     "syn.r1GapWengJevBench2b": {
       "text": "-11.7",
       "source": "shared/ledger/synthesis.json",
-      "note": "weng2026our Ours 2B (MiniCPM5-2B, LoRA rank 64, Eikos recipe, letter readout; released merged model) (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L4649"
+      "note": "weng2026our Ours 2B (MiniCPM5-2B, LoRA rank 64, Eikos recipe, letter readout; released merged model) (accuracy points; ref not_reported; RoB high; role context); ledger L4649"
     },
     "syn.r1GapWengJevBench2bRetrain": {
       "text": "0.0",
       "source": "shared/ledger/synthesis.json",
-      "note": "weng2026our Ours 2B retrain (Eikos 27B settings, later corpus release, seed 7) (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L4650;L4649"
+      "note": "weng2026our Ours 2B retrain (Eikos 27B settings, later corpus release, seed 7) (accuracy points; ref not_reported; RoB high; role context); ledger L4650;L4649"
     },
     "syn.r1GapDemirOriginal": {
       "text": "9.8",
@@ -1785,6 +1785,16 @@
       "source": "shared/ledger/synthesis.json",
       "note": "khatri2026need Liquid d1 Ultra (accuracy points; ref other: expert annotator labels (adjudication not stated); RoB high; role context); ledger L5284;L5285"
     },
+    "syn.r1GapZhanDyadNoReason": {
+      "text": "-1.5",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad Dyad (Qwen3.5-4B + Dyad, w/o reasoning) (accuracy points; ref not_reported; RoB some_concerns; role estimate); ledger L5354"
+    },
+    "syn.r1GapZhanDyadNoReasonHard": {
+      "text": "-3.8",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad Dyad (Qwen3.5-4B + Dyad, w/o reasoning) (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L5355"
+    },
     "syn.r1ReadoutYuHeadVsSft": {
       "text": "0.0",
       "source": "shared/ledger/synthesis.json",
@@ -1798,12 +1808,12 @@
     "syn.r1ReadoutTangClassification": {
       "text": "4.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "tang2026omnimed OmniMed-Jev (accuracy points; ref human_single; RoB some_concerns; role context); ledger L1908"
+      "note": "tang2026omnimed OmniMed-Jev (accuracy points; ref human_single; RoB high; role context); ledger L1908"
     },
     "syn.r1ReadoutTangMultiLabel": {
       "text": "1.7",
       "source": "shared/ledger/synthesis.json",
-      "note": "tang2026omnimed OmniMed-Jev (macroF1 points; ref human_single; RoB some_concerns; role context); ledger L1912"
+      "note": "tang2026omnimed OmniMed-Jev (macroF1 points; ref human_single; RoB high; role context); ledger L1912"
     },
     "syn.r1ReadoutLlmJevVsSemIf": {
       "text": "0.9",
@@ -1908,12 +1918,12 @@
     "syn.r1ReadoutZhouScienceQa": {
       "text": "1.9",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhou2026pixels PixelJev (Qwen3.5-2B + seed-7 adapter, direct candidate readout) (accuracy points; ref human_single; RoB high; role context); ledger L1054"
+      "note": "zhou2026pixels PixelJev (Qwen3.5-2B + seed-7 adapter, direct candidate readout) (accuracy points; ref human_single; RoB some_concerns; role context); ledger L1054"
     },
     "syn.r1ReadoutZhouPets": {
       "text": "0.0",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhou2026pixels PixelJev (Qwen3.5-2B frozen, direct candidate readout) (accuracy points; ref human_single; RoB high; role context); ledger L1055"
+      "note": "zhou2026pixels PixelJev (Qwen3.5-2B frozen, direct candidate readout) (accuracy points; ref human_single; RoB some_concerns; role context); ledger L1055"
     },
     "syn.r1ReadoutYeTreeVsDirect": {
       "text": "2.9",
@@ -1923,7 +1933,7 @@
     "syn.r1ReadoutYouNoulVsChoiceRecall": {
       "text": "89.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "you2026native Jev (recall (clarification points) points; ref administrative_field; RoB some_concerns; role context); ledger L4206"
+      "note": "you2026native Jev (recall (clarification points) points; ref administrative_field; RoB high; role context); ledger L4206"
     },
     "syn.r1ReadoutIqbalNimbleFpb": {
       "text": "-12.0",
@@ -1969,6 +1979,16 @@
       "text": "3.8",
       "source": "shared/ledger/synthesis.json",
       "note": "liu2026psyjev PsyJev-4B (both questions correct points; ref other: mixed source-dataset annotations (gold and silver, human); RoB high; role context); ledger L5267"
+    },
+    "syn.r1ReadoutWangSoftmaxVsSigmoid": {
+      "text": "8.1",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wang2026calibrated CalOn (independent sigmoid scores ablation) (F1 points; ref not_reported; RoB some_concerns; role context); ledger L5344"
+    },
+    "syn.r1ReadoutZhanDyadVsGeneration": {
+      "text": "5.6",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad Dyad (Qwen3.5-4B + Dyad, w/o reasoning) (accuracy points; ref not_reported; RoB some_concerns; role context); ledger L5354;L5359"
     },
     "syn.r2JevEceNStudies": {
       "text": "47",
@@ -3535,13 +3555,28 @@
       "source": "shared/ledger/synthesis.json",
       "note": "khatri2026need Liquid d1 Ultra raw ECE (not specified); ledger L5284"
     },
+    "syn.r2OpenWangCalOnRelations": {
+      "text": "0.250",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wang2026calibrated CalOn fitted model without null-class correction raw ECE (equal-width 15 bins); ledger L5336"
+    },
+    "syn.r2OpenWangCalOnEntities": {
+      "text": "0.330",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wang2026calibrated CalOn fitted model without null-class correction fitted ECE (equal-width 15 bins); ledger L5335"
+    },
+    "syn.r2OpenWangCalOnArguments": {
+      "text": "0.510",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wang2026calibrated CalOn fitted model without null-class correction raw ECE (equal-width 15 bins); ledger L5337"
+    },
     "syn.r2RecalRatioNStudies": {
-      "text": "20",
+      "text": "21",
       "source": "shared/ledger/synthesis.json",
       "note": "R2 recalibrated over raw ECE, all decision models with both values (range only; methods and fit sets differ): independent study clusters"
     },
     "syn.r2RecalRatioNRows": {
-      "text": "23",
+      "text": "24",
       "source": "shared/ledger/synthesis.json",
       "note": "R2 recalibrated over raw ECE, all decision models with both values (range only; methods and fit sets differ): ledger rows (selection estimate rows)"
     },
@@ -3591,7 +3626,7 @@
       "note": "R2 records with InDomain fits"
     },
     "syn.r2RecalRatioTransferredMin": {
-      "text": "0.40",
+      "text": "0.36",
       "source": "shared/ledger/synthesis.json",
       "note": "R2 recal/raw ECE ratio, Transferred fits, minimum"
     },
@@ -3601,7 +3636,7 @@
       "note": "R2 recal/raw ECE ratio, Transferred fits, maximum"
     },
     "syn.r2RecalRatioTransferredNRecords": {
-      "text": "6",
+      "text": "7",
       "source": "shared/ledger/synthesis.json",
       "note": "R2 records with Transferred fits"
     },
@@ -3834,6 +3869,16 @@
       "text": "-0.279",
       "source": "shared/ledger/synthesis.json",
       "note": "lee2026medjev MedJev: recalibrated minus raw ECE"
+    },
+    "syn.r2RecalOpenEceWangCalOnRelations": {
+      "text": "0.36",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wang2026calibrated CalOn fitted model without null-class correction: recalibrated ECE 0.09 over raw 0.25 (other: null-class prior correction plus temperature and threshold refit on REBEL calibration split; fit transferred (REBEL calibration split to the 18 RE evaluation benchmarks))"
+    },
+    "syn.r2RecalDeltaOpenEceWangCalOnRelations": {
+      "text": "-0.160",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wang2026calibrated CalOn fitted model without null-class correction: recalibrated minus raw ECE"
     },
     "syn.r2LlmBelowJevBefore": {
       "text": "3",
@@ -4650,13 +4695,38 @@
       "source": "shared/ledger/synthesis.json",
       "note": "khatri2026need Jev: Khatri et al. Jev 1.13 AUROC of the top-class probability for separating correct from wrong answers (random escalation would give 0.50); the paper's range over the 11 models is 0.64 to 0.76; ledger L5304 (khatri2026need.jev113ConfidenceAuroc)"
     },
+    "syn.r2CbwBesansonJevWrongAdmit30": {
+      "text": "0.1",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic Jev: Besanson Jev 1.13 (jev-latest) as a sensor on CH-C1 constructed change records, 700 test items at 30 percent document noise; approval-field wrong-admission rate (score admitted past a threshold fitted on split A at a 1 percent false-positive ceiling, yet wrong against the truth label), so a confident-error share; a faithful reading of a contradictory record counts as wrong; synthetic labels; ledger L5413 (besanson2026probabilistic.jevApprovalWrongRateNoise30)"
+    },
+    "syn.r2CbwBesansonHaikuWrongAdmit30": {
+      "text": "0.0",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic Claude Haiku 4.5 (claude-haiku-4-5-20251001): Besanson Claude Haiku 4.5 sensor, same 700 items and noise level, approval-field wrong-admission rate under the same threshold rule (one multi-value JSON prompt per field instead of per-value binary questions); ledger L5413 (besanson2026probabilistic.jevApprovalWrongRateNoise30)"
+    },
+    "syn.r2CbwBesansonJevWrongAdmit10": {
+      "text": "0.0",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic Jev: Besanson Jev approval-field wrong-admission rate at 10 percent noise, same 700 items (0 at 0 percent noise); ledger L5411 (besanson2026probabilistic.jevApprovalWrongRateNoise10)"
+    },
+    "syn.r2CbwBesansonJevResidencyWrongAdmit30": {
+      "text": "0.0",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic Jev: Besanson Jev residency-field wrong-admission rate at 30 percent noise, same 700 items; ledger L5415 (besanson2026probabilistic.jevResidencyWrongRateNoise30)"
+    },
+    "syn.r2CbwBesansonJevUnknown30": {
+      "text": "0.2",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic Jev: Besanson Jev approval-field unknown rate at 30 percent noise (no value cleared its threshold); Haiku 0.4014, driven by a not_recorded value that met the ceiling in neither direction; ledger L5414 (besanson2026probabilistic.jevApprovalUnknownRateNoise30)"
+    },
     "syn.r3RetainedNStudies": {
-      "text": "22",
+      "text": "23",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 cascade quality over strong-model-alone quality (accuracy or success ratio): independent study clusters"
     },
     "syn.r3RetainedNRows": {
-      "text": "22",
+      "text": "23",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 cascade quality over strong-model-alone quality (accuracy or success ratio): ledger rows (selection estimate rows)"
     },
@@ -4691,7 +4761,7 @@
       "note": "R3 cascade quality over strong-model-alone quality (accuracy or success ratio): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r3RetainedCiHi": {
-      "text": "1.0",
+      "text": "1.00",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 cascade quality over strong-model-alone quality (accuracy or success ratio): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -4900,6 +4970,26 @@
       "source": "shared/ledger/synthesis.json",
       "note": "khatri2026need: Khatri et al. Jev 1.13 answers all 406 queries and the 25 percent least confident go to Gemini 3.8 Flash (thinking low); cascade accuracy 68.5 over the strong model alone 70.0 (difference -1.5, p 0.41); thresholds are label-free quantiles fixed before computing (role estimate); ledger L5292"
     },
+    "syn.r3RetainedWuCovnavHm3dV1": {
+      "text": "0.98",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. CovNav (Qwen3-8B fast single-pass typed Yes/No readout, split-conformal gate at alpha 0.5, T 10, fallback to the same Qwen3-8B with thinking on, so the strong model is the same backbone and not a larger one); HM3D v1 ObjectNav, the same 100 sampled episodes for both arms, SR averaged over six target categories (62.8 against Slow-Only 64.2); HM3D v1 is primary because the abstract leads with it and Sec IV-C.1 states the retention claim on it, and the paper headlines no mean; no seeds or intervals; the GPT-5 static relation matrix for the 80 COCO categories sits inside every arm; alpha and T were set without separate selection data and alpha 0.5 has the best SR of the three alpha values only on HM3D v1; the conclusion says CovNav matches Slow-Only, but it is below Slow-Only on all three datasets; no Jev system is run (role estimate); ledger L5481"
+    },
+    "syn.r3RetainedWuCovnavGibson": {
+      "text": "0.96",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. CovNav Gibson ObjectNav, same 100 sampled episodes, category-averaged SR over Slow-Only (79.5 against 83.1); same cascade, gate and caveats as the HM3D v1 line (role context); ledger L5478"
+    },
+    "syn.r3RetainedWuCovnavHm3dV2": {
+      "text": "0.95",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. CovNav HM3D v2 ObjectNav, same 100 sampled episodes, category-averaged SR over Slow-Only (78.5 against 82.5); Table I prints 77.9 for CovNav on the full HM3D v2 benchmark (role context); ledger L5484"
+    },
+    "syn.r3RetainedWuRandomSwitchHm3dV1": {
+      "text": "0.89",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. Random Switch (fast or slow Qwen3-8B mode chosen at random, slow on 53.0 percent of calls) on HM3D v1, same 100 episodes, SR over Slow-Only (57.1 against 64.2 from L5481); a random-gate baseline that escalates more than four times as often as CovNav and retains less (role context); ledger L5485;L5481"
+    },
     "syn.r3FeeFracNStudies": {
       "text": "15",
       "source": "shared/ledger/synthesis.json",
@@ -5100,13 +5190,18 @@
       "source": "shared/ledger/synthesis.json",
       "note": "khatri2026need: Khatri et al. billed cost of the same Jev 1.13 cascade as a share of Gemini 3.8 Flash alone (30 percent) (role estimate); ledger L5292"
     },
+    "syn.r3FeeFracWuCovnavTimeEst": {
+      "text": "0.21",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. CovNav Table II time per query over Slow-Only (0.72 s against 3.40 s); context only because the 0.72 s is estimated from the Table VI module latencies and not measured, and Table VI's own CovNav average of 680 ms against 2400 ms for slow mode (ratio about 0.28) disagrees with it; local RTX 4090D, no monetary cost reported, no Jev, so no speed ratio (role context); ledger L5487"
+    },
     "syn.r3StrongFracNStudies": {
-      "text": "15",
+      "text": "16",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 share of decisions escalated to the strong model: independent study clusters"
     },
     "syn.r3StrongFracNRows": {
-      "text": "15",
+      "text": "16",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 share of decisions escalated to the strong model: ledger rows (selection estimate rows)"
     },
@@ -5136,12 +5231,12 @@
       "note": "R3 share of decisions escalated to the strong model: median over clusters"
     },
     "syn.r3StrongFracCiLo": {
-      "text": "0.27",
+      "text": "0.25",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 share of decisions escalated to the strong model: 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r3StrongFracCiHi": {
-      "text": "0.60",
+      "text": "0.58",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 share of decisions escalated to the strong model: 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -5274,6 +5369,11 @@
       "text": "0.12",
       "source": "shared/ledger/synthesis.json",
       "note": "steiner2026entity: Steiner et al. share of test pairs Jev 1.13 defers to the three-LLM ensemble at 0.5% target risk (11.7%) (role estimate); ledger L5073"
+    },
+    "syn.r3StrongFracWuCovnavHm3dV1": {
+      "text": "0.12",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. CovNav share of queries sent to slow thinking mode at alpha 0.5 (12.4 percent); one figure printed for all three ablation datasets, not per dataset, and the denominator (open-set object queries to the local model or all relation lookups) is not defined (role estimate); ledger L5486"
     },
     "syn.r3ContextRafeBudget": {
       "text": "0.0080",
@@ -5640,23 +5740,68 @@
       "source": "shared/ledger/synthesis.json",
       "note": "khatri2026need: Khatri et al. accuracy of escalating the same number of Jev 1.13 queries at random (63.9) over the strong model alone (70.0); the confidence gate (68.5) beats it; ledger L5292"
     },
+    "syn.r3ContextBesansonJevEscCoverage": {
+      "text": "0.60",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic: Besanson CH-C1 at a 1 percent ceiling and 30 percent noise with unknown routed to escalation instead of deny; share of the 700 test items Jev decides without escalation (exposure among decided 0.0167); escalation to a person or process and not a cascade against a stronger model; descriptive, no registered hypothesis; ledger L5431"
+    },
+    "syn.r3ContextBesansonHaikuEscCoverage": {
+      "text": "0.41",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic: Besanson same escalation setting; share of the 700 items the Haiku sensor decides without escalation; ledger L5431"
+    },
+    "syn.r3ContextBesansonJevEscExposure": {
+      "text": "0.017",
+      "source": "shared/ledger/synthesis.json",
+      "note": "besanson2026probabilistic: Besanson same escalation setting; Jev verdict exposure among decided items (0.1071 when unknown is denied instead); ledger L5432"
+    },
+    "syn.r3ContextLiSokRouteEscalation": {
+      "text": "3.3",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) held-out route catalogues with no feasible candidate listed (120 cases); share in which Jev-1.13 correctly escalates to catalogue rebuilding (GLM-4.7-Flash 109/120); escalation as a scored outcome and not a cascade against a strong model; ledger L5448"
+    },
+    "syn.r3ContextLiSokContractRequest": {
+      "text": "94",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) contract catalogue with no covering candidate (48 configurations); share in which Jev-1.13 correctly requests new candidates (GLM-4.7-Flash 33.3, lexical rule 100.0); ledger L5446"
+    },
+    "syn.r3ContextWuFixedThresh05Switch": {
+      "text": "0.10",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. fixed raw-probability threshold 0.5 without the conformal gate: share of calls sent to slow mode (10.1 percent against 12.4 for CovNav); HM3D v1 SR 60.9 against CovNav 62.8 and Slow-Only 64.2; same ablation episodes on which the default is reported; ledger L5492"
+    },
+    "syn.r3ContextWuFixedThresh08Switch": {
+      "text": "0.43",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. fixed raw-probability threshold 0.8 without the conformal gate: share of calls sent to slow mode (42.7 percent); SR 82.0 / 54.2 / 80.4 on Gibson / HM3D v1 / HM3D v2, above CovNav on Gibson and HM3D v2 but 8.6 points below it on HM3D v1; same ablation episodes; ledger L5493"
+    },
+    "syn.r3ContextWuAlpha08Switch": {
+      "text": "0.22",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. CovNav at alpha 0.8: share of queries sent to slow mode (22.4 percent); SR 82.9 / 61.5 / 79.2 on Gibson / HM3D v1 / HM3D v2, above the alpha 0.5 default on Gibson and HM3D v2; same ablation episodes; ledger L5494"
+    },
+    "syn.r3ContextWuAlpha02Switch": {
+      "text": "0.082",
+      "source": "shared/ledger/synthesis.json",
+      "note": "wu2026covnav: Wu et al. CovNav at alpha 0.2: share of queries sent to slow mode (8.2 percent); SR 80.1 / 59.4 / 75.8 on Gibson / HM3D v1 / HM3D v2, above the alpha 0.5 default on Gibson although the text calls alpha 0.2 a consistent degradation; same ablation episodes; ledger L5494"
+    },
     "syn.r3B3CostOverReflex": {
       "text": "0.72",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 B3 cheap generative cascade cost over REFLEX cost on tau^2-bench (ledger L432, L911)"
     },
     "syn.r3NStudiesAny": {
-      "text": "27",
+      "text": "28",
       "source": "shared/ledger/synthesis.json",
       "note": "R3 study clusters reporting any escalation or cascade record"
     },
     "syn.gapJevBestNStudies": {
-      "text": "51",
+      "text": "54",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator on human-labelled or objectively scored items, accuracy-type points (macro-F1, accuracy, F1), frontier comparators only: independent study clusters"
     },
     "syn.gapJevBestNRows": {
-      "text": "53",
+      "text": "56",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator on human-labelled or objectively scored items, accuracy-type points (macro-F1, accuracy, F1), frontier comparators only: ledger rows (selection estimate rows)"
     },
@@ -5681,12 +5826,12 @@
       "note": "Jev minus best comparator on human-labelled or objectively scored items, accuracy-type points (macro-F1, accuracy, F1), frontier comparators only: cluster with the maximum"
     },
     "syn.gapJevBestMedian": {
-      "text": "-4.3",
+      "text": "-4.1",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator on human-labelled or objectively scored items, accuracy-type points (macro-F1, accuracy, F1), frontier comparators only: median over clusters (points; negative means Jev behind)"
     },
     "syn.gapJevBestCiLo": {
-      "text": "-6.6",
+      "text": "-6.3",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator on human-labelled or objectively scored items, accuracy-type points (macro-F1, accuracy, F1), frontier comparators only: 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -5696,12 +5841,12 @@
       "note": "Jev minus best comparator on human-labelled or objectively scored items, accuracy-type points (macro-F1, accuracy, F1), frontier comparators only: 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestFrontierNStudies": {
-      "text": "25",
+      "text": "26",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class frontier_llm (comparator_class.csv): independent study clusters"
     },
     "syn.gapJevBestFrontierNRows": {
-      "text": "27",
+      "text": "28",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class frontier_llm (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -5726,27 +5871,27 @@
       "note": "Jev minus best comparator, comparator class frontier_llm (comparator_class.csv): cluster with the maximum"
     },
     "syn.gapJevBestFrontierMedian": {
-      "text": "-5.0",
+      "text": "-5.4",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class frontier_llm (comparator_class.csv): median over clusters (points; negative means Jev behind)"
     },
     "syn.gapJevBestFrontierCiLo": {
-      "text": "-8.0",
+      "text": "-7.9",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class frontier_llm (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestFrontierCiHi": {
-      "text": "-1.6",
+      "text": "-2.0",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class frontier_llm (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestOtherLlmNStudies": {
-      "text": "9",
+      "text": "11",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class other_llm (comparator_class.csv): independent study clusters"
     },
     "syn.gapJevBestOtherLlmNRows": {
-      "text": "9",
+      "text": "11",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class other_llm (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -5771,17 +5916,17 @@
       "note": "Jev minus best comparator, comparator class other_llm (comparator_class.csv): cluster with the maximum"
     },
     "syn.gapJevBestOtherLlmMedian": {
-      "text": "-3.9",
+      "text": "-1.7",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class other_llm (comparator_class.csv): median over clusters (points; negative means Jev behind)"
     },
     "syn.gapJevBestOtherLlmCiLo": {
-      "text": "-9.9",
+      "text": "-8.2",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class other_llm (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestOtherLlmCiHi": {
-      "text": "2.7",
+      "text": "-0.5",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, comparator class other_llm (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -5861,12 +6006,12 @@
       "note": "Jev minus best comparator, comparator class decision_model (comparator_class.csv): cluster with the maximum"
     },
     "syn.gapJevBestFrontierPoolNStudies": {
-      "text": "28",
+      "text": "29",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class frontier_llm (comparator_class.csv): independent study clusters"
     },
     "syn.gapJevBestFrontierPoolNRows": {
-      "text": "32",
+      "text": "33",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class frontier_llm (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -5891,27 +6036,27 @@
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class frontier_llm (comparator_class.csv): cluster with the maximum"
     },
     "syn.gapJevBestFrontierPoolMedian": {
-      "text": "-3.3",
+      "text": "-3.7",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class frontier_llm (comparator_class.csv): median over clusters (points; negative means Jev behind)"
     },
     "syn.gapJevBestFrontierPoolCiLo": {
-      "text": "-7.2",
+      "text": "-7.8",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class frontier_llm (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestFrontierPoolCiHi": {
-      "text": "-1.2",
+      "text": "-1.6",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class frontier_llm (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestOtherLlmPoolNStudies": {
-      "text": "29",
+      "text": "31",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class other_llm (comparator_class.csv): independent study clusters"
     },
     "syn.gapJevBestOtherLlmPoolNRows": {
-      "text": "46",
+      "text": "48",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class other_llm (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -5936,17 +6081,17 @@
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class other_llm (comparator_class.csv): cluster with the maximum"
     },
     "syn.gapJevBestOtherLlmPoolMedian": {
-      "text": "-0.7",
+      "text": "-1.0",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class other_llm (comparator_class.csv): median over clusters (points; negative means Jev behind)"
     },
     "syn.gapJevBestOtherLlmPoolCiLo": {
-      "text": "-3.8",
+      "text": "-2.5",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class other_llm (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestOtherLlmPoolCiHi": {
-      "text": "0.6",
+      "text": "0.5",
       "source": "shared/ledger/synthesis.json",
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class other_llm (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -6041,12 +6186,12 @@
       "note": "Jev minus best comparator, estimates and sensitivity readings, comparator class decision_model (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestSensNStudies": {
-      "text": "80",
+      "text": "83",
       "source": "shared/ledger/synthesis.json",
       "note": "Sensitivity: accuracy gap including non-frontier comparators (li cluster, DeepSeek flash): independent study clusters"
     },
     "syn.gapJevBestSensNRows": {
-      "text": "119",
+      "text": "122",
       "source": "shared/ledger/synthesis.json",
       "note": "Sensitivity: accuracy gap including non-frontier comparators (li cluster, DeepSeek flash): ledger rows (selection estimate rows)"
     },
@@ -6081,7 +6226,7 @@
       "note": "Sensitivity: accuracy gap including non-frontier comparators (li cluster, DeepSeek flash): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.gapJevBestSensCiHi": {
-      "text": "-1.1",
+      "text": "-1.2",
       "source": "shared/ledger/synthesis.json",
       "note": "Sensitivity: accuracy gap including non-frontier comparators (li cluster, DeepSeek flash): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -6188,12 +6333,12 @@
     "syn.gapJevBestCinaWerPublished": {
       "text": "0.290",
       "source": "shared/ledger/synthesis.json",
-      "note": "cina2026jev: Cina Brain-to-Text T15 rescoring, 978 test sentences, published interpolation setting: Qwen2.5-7B (best comparator, 7.75) minus Jev (7.46) word error rate in points, so positive means Jev ahead; comparators are untuned 7B open LMs, not frontier models; cued-sentence labels (WER (lower is better; positive means Jev ahead); ref task_outcome; RoB some_concerns; role estimate); ledger L1284"
+      "note": "cina2026jev: Cina Brain-to-Text T15 rescoring, 978 test sentences, published interpolation setting: Qwen2.5-7B (best comparator, 7.75) minus Jev (7.46) word error rate in points, so positive means Jev ahead; comparators are untuned 7B open LMs, not frontier models; cued-sentence labels (WER (lower is better; positive means Jev ahead); ref task_outcome; RoB high; role estimate); ledger L1284"
     },
     "syn.gapJevBestCinaWerRetuned": {
       "text": "0.270",
       "source": "shared/ledger/synthesis.json",
-      "note": "cina2026jev: Cina same sentences with the acoustic weight re-tuned on development data for every arm: OPT-6.7b (best comparator, 7.20) minus Jev (6.93) WER in points, positive means Jev ahead (WER (lower is better; positive means Jev ahead); ref task_outcome; RoB some_concerns; role context); ledger L1285"
+      "note": "cina2026jev: Cina same sentences with the acoustic weight re-tuned on development data for every arm: OPT-6.7b (best comparator, 7.20) minus Jev (6.93) WER in points, positive means Jev ahead (WER (lower is better; positive means Jev ahead); ref task_outcome; RoB high; role context); ledger L1285"
     },
     "syn.gapJevBestJoyGap": {
       "text": "67.9",
@@ -6203,22 +6348,22 @@
     "syn.gapJevBestMadridMetaMedQA": {
       "text": "-7.9",
       "source": "shared/ledger/synthesis.json",
-      "note": "madridgarcia2026jev: Madrid-Garcia MetaMedQA (1,373 items, published expert keys): Jev minus GPT-6 Sol at medium reasoning, one run each, unoptimised prompt; largest and first of four benchmarks chosen as headline (PubMedQA, DiagnosisArena, NEJM are context) (accuracy; ref human_adjudicated; RoB high; role estimate); ledger L1432"
+      "note": "madridgarcia2026jev: Madrid-Garcia MetaMedQA (1,373 items, published expert keys): Jev minus GPT-6 Sol at medium reasoning, one run each, unoptimised prompt; largest and first of four benchmarks chosen as headline (PubMedQA, DiagnosisArena, NEJM are context) (accuracy; ref human_adjudicated; RoB some_concerns; role estimate); ledger L1432"
     },
     "syn.gapJevBestMadridPubMedQA": {
       "text": "0.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "madridgarcia2026jev: Madrid-Garcia PubMedQA (500 items): Jev minus GPT-6 Sol medium accuracy (accuracy; ref human_adjudicated; RoB high; role context); ledger L1433"
+      "note": "madridgarcia2026jev: Madrid-Garcia PubMedQA (500 items): Jev minus GPT-6 Sol medium accuracy (accuracy; ref human_adjudicated; RoB some_concerns; role context); ledger L1433"
     },
     "syn.gapJevBestMadridDiagnosisArena": {
       "text": "-22.6",
       "source": "shared/ledger/synthesis.json",
-      "note": "madridgarcia2026jev: Madrid-Garcia DiagnosisArena-MCQ (915 items): Jev minus GPT-6 Sol medium accuracy (accuracy; ref human_adjudicated; RoB high; role context); ledger L1434"
+      "note": "madridgarcia2026jev: Madrid-Garcia DiagnosisArena-MCQ (915 items): Jev minus GPT-6 Sol medium accuracy (accuracy; ref human_adjudicated; RoB some_concerns; role context); ledger L1434"
     },
     "syn.gapJevBestMadridNejm": {
       "text": "-20.6",
       "source": "shared/ledger/synthesis.json",
-      "note": "madridgarcia2026jev: Madrid-Garcia NEJM Case Challenges (34 cases): Jev minus GPT-6 Sol medium accuracy; tiny sample (accuracy; ref human_adjudicated; RoB high; role context); ledger L1435"
+      "note": "madridgarcia2026jev: Madrid-Garcia NEJM Case Challenges (34 cases): Jev minus GPT-6 Sol medium accuracy; tiny sample (accuracy; ref human_adjudicated; RoB some_concerns; role context); ledger L1435"
     },
     "syn.gapJevBestChenProbGap": {
       "text": "-0.034",
@@ -6363,32 +6508,32 @@
     "syn.gapJevBestLyuMoviesK20": {
       "text": "-0.014",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=20 hard candidates, Jev vs GPT-6-Sol listwise (best method in all 12 settings), 954 users; non-accuracy group so reported not pooled (NDCG@10; ref task_outcome; RoB some_concerns; role estimate); ledger L1883"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=20 hard candidates, Jev vs GPT-6-Sol listwise (best method in all 12 settings), 954 users; non-accuracy group so reported not pooled (NDCG@10; ref task_outcome; RoB high; role estimate); ledger L1883"
     },
     "syn.gapJevBestLyuGamesK20": {
       "text": "-0.020",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Video Games K=20 vs GPT-6-Sol; other setting kept as spread (NDCG@10; ref task_outcome; RoB some_concerns; role context); ledger L1885"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Video Games K=20 vs GPT-6-Sol; other setting kept as spread (NDCG@10; ref task_outcome; RoB high; role context); ledger L1885"
     },
     "syn.gapJevBestLyuBooksK20": {
       "text": "-0.038",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Books K=20 vs GPT-6-Sol; other setting kept as spread (NDCG@10; ref task_outcome; RoB some_concerns; role context); ledger L1886"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Books K=20 vs GPT-6-Sol; other setting kept as spread (NDCG@10; ref task_outcome; RoB high; role context); ledger L1886"
     },
     "syn.gapJevBestLyuBooksK200": {
       "text": "-0.031",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Books K=200 vs GPT-6-Sol; other setting kept as spread (NDCG@10; ref task_outcome; RoB some_concerns; role context); ledger L1887"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Books K=200 vs GPT-6-Sol; other setting kept as spread (NDCG@10; ref task_outcome; RoB high; role context); ledger L1887"
     },
     "syn.gapJevBestLyuMoviesK200Sasrec": {
       "text": "-0.019",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=200, Jev falls below the SASRec first-stage ranking (trained retriever); other setting kept as spread (NDCG@10; ref task_outcome; RoB some_concerns; role context); ledger L1884"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=200, Jev falls below the SASRec first-stage ranking (trained retriever); other setting kept as spread (NDCG@10; ref task_outcome; RoB high; role context); ledger L1884"
     },
     "syn.gapJevBestLyuBooksLightGcn": {
       "text": "-0.105",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Books with LightGCN candidates, Decisions (GPT-6-Luna) ahead of Jev; different candidate generator (NDCG@10; ref task_outcome; RoB some_concerns; role context); ledger L1896"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Books with LightGCN candidates, Decisions (GPT-6-Luna) ahead of Jev; different candidate generator (NDCG@10; ref task_outcome; RoB high; role context); ledger L1896"
     },
     "syn.gapJevBestZhongRejection": {
       "text": "-93.0",
@@ -6778,7 +6923,7 @@
     "syn.gapJevBestChenSonnetDetection": {
       "text": "-2.800",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026suggested: Chen & Le detection rate on the 72 superseded test pairs: Jev three-way Choice minus Claude Sonnet 5 (change pairs only); detection is a recall at a fixed contract not an accuracy; premature-retirement rates use different denominators (97 vs 89); Sonnet shares a family with two label annotators; gold is mostly LLM majority (detection rate; ref model_consensus; RoB high; role estimate); ledger L3056"
+      "note": "chen2026suggested: Chen & Le detection rate on the 72 superseded test pairs: Jev three-way Choice minus Claude Sonnet 5 (change pairs only); detection is a recall at a fixed contract not an accuracy; premature-retirement rates use different denominators (97 vs 89); Sonnet shares a family with two label annotators; gold is mostly LLM majority (detection rate; ref model_consensus; RoB some_concerns; role estimate); ledger L3056"
     },
     "syn.gapJevBestLaiDialogue": {
       "text": "0.6",
@@ -6798,7 +6943,7 @@
     "syn.gapJevBestLiReadingGpt": {
       "text": "-12.1",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026reading: Li et al. paired decision accuracy on the same 19,663 states: Jev minus GPT-6.1 Sol with medium reasoning, the best system in Table 2 (a deliberating reference, not a fast competitor); both numbers read from the ledger cost field (accuracy; ref task_outcome; RoB some_concerns; role estimate); ledger L3441"
+      "note": "li2026reading: Li et al. paired decision accuracy on the same 19,663 states: Jev minus GPT-6.1 Sol with medium reasoning, the best system in Table 2 (a deliberating reference, not a fast competitor); both numbers read from the ledger cost field (accuracy; ref task_outcome; RoB high; role estimate); ledger L3441"
     },
     "syn.gapJevBestDuGemma": {
       "text": "-4.7",
@@ -6828,7 +6973,7 @@
     "syn.gapJevBestJevcoderRecall": {
       "text": "3.600",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhang2026jevcoder: Zhang et al. JevCoder snippet selection recall, Jev minus DeepSeek given the same candidates (189 tasks); DeepSeek is not frontier and recall is not accuracy (recall; ref task_outcome; RoB high; role context); ledger L3625"
+      "note": "zhang2026jevcoder: Zhang et al. JevCoder snippet selection recall, Jev minus DeepSeek given the same candidates (189 tasks); DeepSeek is not frontier and recall is not accuracy (recall; ref task_outcome; RoB some_concerns; role context); ledger L3625"
     },
     "syn.gapJevBestChouhanGap": {
       "text": "14.4",
@@ -6923,7 +7068,7 @@
     "syn.gapJevBestJevguardGap": {
       "text": "-17.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "hu2026jevguard: Hu et al. 7033 matched cases pooled accuracy; Official Jev 1.13 minus the best system (own Jev-Guard 93.72; SFT baseline 93.36 is within noise); prompts and training histories differ, so the gap mixes tuning with architecture (accuracy; ref administrative_field; RoB high; role estimate); ledger L3312"
+      "note": "hu2026jevguard: Hu et al. 7033 matched cases pooled accuracy; Official Jev 1.13 minus the best system (own Jev-Guard 93.72; SFT baseline 93.36 is within noise); prompts and training histories differ, so the gap mixes tuning with architecture (accuracy; ref administrative_field; RoB some_concerns; role estimate); ledger L3312"
     },
     "syn.gapJevBestSunJevgptGap": {
       "text": "0.000",
@@ -6948,17 +7093,17 @@
     "syn.gapJevBestMinGap": {
       "text": "11.300",
       "source": "shared/ledger/synthesis.json",
-      "note": "min2026prune: Min & Chen SJC source-judge validation: 300 sampled AppWorld summary entries, AUROC of Jev-1.13 for the provenance label (0.905) minus the compressor as self-judge GPT-5.6 Luna (0.792), the only LLM comparator; labels from LLM annotators under a written protocol (llm_teacher) (AUROC; ref llm_teacher; RoB some_concerns; role estimate); ledger L3800"
+      "note": "min2026prune: Min & Chen SJC source-judge validation: 300 sampled AppWorld summary entries, AUROC of Jev-1.13 for the provenance label (0.905) minus the compressor as self-judge GPT-5.6 Luna (0.792), the only LLM comparator; labels from LLM annotators under a written protocol (llm_teacher) (AUROC; ref llm_teacher; RoB high; role estimate); ledger L3800"
     },
     "syn.gapJevBestMinGapCorrect": {
       "text": "9.400",
       "source": "shared/ledger/synthesis.json",
-      "note": "min2026prune: Min & Chen same 300 entries, correctness label (298 labelled, only 24 incorrect): AUROC of Jev (0.733) minus GPT-5.6 Luna self-judge (0.639); intervals overlap (AUROC; ref llm_teacher; RoB some_concerns; role context); ledger L3801"
+      "note": "min2026prune: Min & Chen same 300 entries, correctness label (298 labelled, only 24 incorrect): AUROC of Jev (0.733) minus GPT-5.6 Luna self-judge (0.639); intervals overlap (AUROC; ref llm_teacher; RoB high; role context); ledger L3801"
     },
     "syn.gapJevBestMinPass3": {
       "text": "-2.400",
       "source": "shared/ledger/synthesis.json",
-      "note": "min2026prune: Min & Chen AppWorld test-normal (168 tasks x 3 runs), GPT-5.6 Luna agent: Pass3 with Jev as the source judge (73.2) minus the compressor as its own judge (75.6); task outcome of the downstream agent, the other three settings go the other way (Table 6) (Pass3; ref task_outcome; RoB some_concerns; role context); ledger L3814"
+      "note": "min2026prune: Min & Chen AppWorld test-normal (168 tasks x 3 runs), GPT-5.6 Luna agent: Pass3 with Jev as the source judge (73.2) minus the compressor as its own judge (75.6); task outcome of the downstream agent, the other three settings go the other way (Table 6) (Pass3; ref task_outcome; RoB high; role context); ledger L3814"
     },
     "syn.gapJevBestPremiseGap": {
       "text": "-13.300",
@@ -6993,12 +7138,12 @@
     "syn.gapJevBestPrismGap": {
       "text": "-0.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "teng2026prism: Teng et al. five-set mean accuracy: Jev 1.13.0 (80.0) minus the best other system (trained SCQ 80.4; Prism-1 79.5; Mercury Decide 79.4; Torchcast 75.6); Jev used as published (accuracy; ref not_reported; RoB some_concerns; role estimate); ledger L3926"
+      "note": "teng2026prism: Teng et al. five-set mean accuracy: Jev 1.13.0 (80.0) minus the best other system (trained SCQ 80.4; Prism-1 79.5; Mercury Decide 79.4; Torchcast 75.6); Jev used as published (accuracy; ref not_reported; RoB high; role estimate); ledger L3926"
     },
     "syn.gapJevBestPrismGapBanking": {
       "text": "-4.3",
       "source": "shared/ledger/synthesis.json",
-      "note": "teng2026prism: Teng et al. Banking20 (300 messages): Jev 87.0 minus Mercury Decide 91.3 (closed System One model) (accuracy; ref not_reported; RoB some_concerns; role context); ledger L3931"
+      "note": "teng2026prism: Teng et al. Banking20 (300 messages): Jev 87.0 minus Mercury Decide 91.3 (closed System One model) (accuracy; ref not_reported; RoB high; role context); ledger L3931"
     },
     "syn.gapJevBestLevGap": {
       "text": "0.4",
@@ -7008,17 +7153,17 @@
     "syn.gapJevBestArenaGap": {
       "text": "-8.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026system1: Chen et al. System1-Arena 87 tasks mean accuracy: Jev 1.13 (72.6) minus the best model overall (Claude Opus 5.5 at lowest reasoning effort, 81.1) (accuracy; ref mixed; RoB high; role estimate); ledger L3879"
+      "note": "chen2026system1: Chen et al. System1-Arena 87 tasks mean accuracy: Jev 1.13 (72.6) minus the best model overall (Claude Opus 5.5 at lowest reasoning effort, 81.1) (accuracy; ref mixed; RoB some_concerns; role estimate); ledger L3879"
     },
     "syn.gapJevBestArenaGapForecast": {
       "text": "-17.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026system1: Chen et al. System1-Arena forecasting domain (mean over its tasks): Jev 44.1 minus Claude Opus 5.5 61.6 (accuracy; ref mixed; RoB high; role context); ledger L3880"
+      "note": "chen2026system1: Chen et al. System1-Arena forecasting domain (mean over its tasks): Jev 44.1 minus Claude Opus 5.5 61.6 (accuracy; ref mixed; RoB some_concerns; role context); ledger L3880"
     },
     "syn.gapJevBestArenaGapAgent": {
       "text": "-3.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026system1: Chen et al. single-step agent comparison (3481 steps, 6943 questions): Jev 67.8 (13.2% of questions unanswered) minus Gemma-4-31B 71.3 (the comparator column; whether it is the best is not stated) (accuracy; ref task_outcome; RoB high; role context); ledger L3881"
+      "note": "chen2026system1: Chen et al. single-step agent comparison (3481 steps, 6943 questions): Jev 67.8 (13.2% of questions unanswered) minus Gemma-4-31B 71.3 (the comparator column; whether it is the best is not stated) (accuracy; ref task_outcome; RoB some_concerns; role context); ledger L3881"
     },
     "syn.gapJevBestLiteMasGap": {
       "text": "6.7",
@@ -7068,7 +7213,7 @@
     "syn.gapJevBestDknownGap": {
       "text": "-6.1",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026dknownjev: Li et al. same 1120 items: Jev (92.68) minus the best system (own 27B fine-tune, 98.75); the comparator is trained on in-domain data, Jev is not (accuracy; ref human_single; RoB high; role estimate); ledger L4089"
+      "note": "li2026dknownjev: Li et al. same 1120 items: Jev (92.68) minus the best system (own 27B fine-tune, 98.75); the comparator is trained on in-domain data, Jev is not (accuracy; ref human_single; RoB some_concerns; role estimate); ledger L4089"
     },
     "syn.gapJevBestJarvisGap": {
       "text": "13.700",
@@ -7158,17 +7303,17 @@
     "syn.gapJevBestYouCareGap": {
       "text": "-10.3",
       "source": "shared/ledger/synthesis.json",
-      "note": "you2026native: You et al. (clinical triage) CARE-Bench Public Test 1 (135 decision points from 62 cases, four triage actions, benchmark reference actions): Jev macro-F1 0.461 minus GPT Sol 0.564 (best of four general LLMs asked for probabilities with the same prompt, no tuning); main comparison of the paper; fractions converted to points; Jev is fourth of five (macroF1; ref administrative_field; RoB some_concerns; role estimate); ledger L4200"
+      "note": "you2026native: You et al. (clinical triage) CARE-Bench Public Test 1 (135 decision points from 62 cases, four triage actions, benchmark reference actions): Jev macro-F1 0.461 minus GPT Sol 0.564 (best of four general LLMs asked for probabilities with the same prompt, no tuning); main comparison of the paper; fractions converted to points; Jev is fourth of five (macroF1; ref administrative_field; RoB high; role estimate); ledger L4200"
     },
     "syn.gapJevBestYouHealthGap": {
       "text": "-2.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "you2026native: You et al. (clinical triage) HealthBench emergency-referral (453 conversations, 3 classes, physician-majority labels): Jev macro-F1 0.788 minus GPT Sol 0.812; secondary data set; fractions converted to points (macroF1; ref human_crowd; RoB some_concerns; role context); ledger L4211"
+      "note": "you2026native: You et al. (clinical triage) HealthBench emergency-referral (453 conversations, 3 classes, physician-majority labels): Jev macro-F1 0.788 minus GPT Sol 0.812; secondary data set; fractions converted to points (macroF1; ref human_crowd; RoB high; role context); ledger L4211"
     },
     "syn.gapJevBestYouCareGapAcc": {
       "text": "-6.7",
       "source": "shared/ledger/synthesis.json",
-      "note": "you2026native: You et al. (clinical triage) CARE-Bench Public Test 1 accuracy: Jev 53.3 minus GPT Sol 60.0 on the same 135 decision points (supplementary table) (accuracy; ref administrative_field; RoB some_concerns; role context); ledger L4201"
+      "note": "you2026native: You et al. (clinical triage) CARE-Bench Public Test 1 accuracy: Jev 53.3 minus GPT Sol 60.0 on the same 135 decision points (supplementary table) (accuracy; ref administrative_field; RoB high; role context); ledger L4201"
     },
     "syn.gapJevBestYangGapThinking": {
       "text": "-4.4",
@@ -7213,17 +7358,17 @@
     "syn.gapJevBestZhangCsGapLongHealth": {
       "text": "3.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhang2026general: Zhang et al. (CS1-4B) LongHealth (400 pairs, human key): hosted Jev (zero-shot) 91.9 minus the domain fine-tuned CS1-4B 88.1 on the same pairs; the comparators in the paper are open decision models (the best open comparator is not identifiable) and no frontier LLM is scored on this set, so sensitivity only (accuracy; ref human_single; RoB high; role context); ledger L4483"
+      "note": "zhang2026general: Zhang et al. (CS1-4B) LongHealth (400 pairs, human key): hosted Jev (zero-shot) 91.9 minus the domain fine-tuned CS1-4B 88.1 on the same pairs; the comparators in the paper are open decision models (the best open comparator is not identifiable) and no frontier LLM is scored on this set, so sensitivity only (accuracy; ref human_single; RoB some_concerns; role context); ledger L4483"
     },
     "syn.gapJevBestZhangCsGapTcga": {
       "text": "1.9",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhang2026general: Zhang et al. (CS1-4B) TCGA pathology reports (2,139 pairs, registry key): hosted Jev 97.6 minus CS1-4B 95.7 on the same pairs; open comparator only (accuracy; ref administrative_field; RoB high; role context); ledger L4484"
+      "note": "zhang2026general: Zhang et al. (CS1-4B) TCGA pathology reports (2,139 pairs, registry key): hosted Jev 97.6 minus CS1-4B 95.7 on the same pairs; open comparator only (accuracy; ref administrative_field; RoB some_concerns; role context); ledger L4484"
     },
     "syn.gapJevBestZhuangGapPair": {
       "text": "-39.1",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhuang2026decisionpivot: Zhuang et al. (DecisionPivot) core track pair accuracy (the benchmark's headline metric): hosted Jev (31.0) minus Perplexity Decider v1.1 (70.1), the strongest non-vendor decision model in a ledger field; the 14 general LLMs scored on the core track and the vendor models SL-27B (86.9 pair accuracy) are not in numeric ledger fields, and Decider is an open 27B model, not a frontier model, so sensitivity only (accuracy; ref synthetic; RoB high; role context); ledger L4511"
+      "note": "zhuang2026decisionpivot: Zhuang et al. (DecisionPivot) core track pair accuracy (the benchmark's headline metric): hosted Jev (31.0) minus Perplexity Decider v1.1 (70.1), the strongest non-vendor decision model in a ledger field; the 14 general LLMs scored on the core track and the vendor models SL-27B (86.9 pair accuracy) are not in numeric ledger fields, and Decider is an open 27B model, not a frontier model, so sensitivity only (accuracy; ref synthetic; RoB some_concerns; role context); ledger L4511"
     },
     "syn.gapJevBestSMasGapSharp": {
       "text": "-9.3",
@@ -7460,8 +7605,48 @@
       "source": "shared/ledger/synthesis.json",
       "note": "pei2026learning: Pei et al. CALVIN-D 1,011 validation annotations; frozen AutoTrust JEV-27B (open reproduction, not hosted Jev) with up to 34 generic motions minus Qwen3.5-27B direct generation, task success rate in points on the same annotations (score; ref task_outcome; RoB some_concerns; role context); ledger L5255"
     },
+    "syn.gapJevBestZhanDyadReason": {
+      "text": "-1.2",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad: Zhan et al. JevBench public subset (231 items); Jev 1.13 minus the best comparator, Dyad with reasoning (Qwen3.5-4B plus the authors' RL-trained action encoder, about 120 output tokens per item), on the same items; the paper does not say who ran Jev and its 85.01 differs from the 86.6 leaderboard value (accuracy; ref not_reported; RoB some_concerns; role estimate); ledger L5351"
+    },
+    "syn.gapJevBestZhanDyadReasonHard": {
+      "text": "-1.2",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad: Zhan et al. JevBench Hard tier (111 items); Jev 1.13 minus Dyad with reasoning, where the paper places Dyad's largest advantage (accuracy; ref not_reported; RoB some_concerns; role context); ledger L5352"
+    },
+    "syn.gapJevBestZhanQwenReason": {
+      "text": "5.9",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad: Zhan et al. JevBench public subset; Jev 1.13 minus zero-shot Qwen3.5-4B with reasoning (79.10), the generative baseline without the Dyad encoder (accuracy; ref not_reported; RoB some_concerns; role context); ledger L5360"
+    },
+    "syn.gapJevBestSonthaliaEsci": {
+      "text": "-7.8",
+      "source": "shared/ledger/synthesis.json",
+      "note": "sonthalia2026agent: Sonthalia et al. ESCI query-product relevance, same 1,000-instance uniform sample; Jev 1.13.0 (row value) minus Opus 5 zero-shot (row comparator value), macro-F1 on a 0 to 100 scale; Opus 5 is the highest of the three zero-shot scores printed in the text (GLM 5.3 0.593, GPT 5.6 Terra 0.573) and the other seven appear only in an unlabelled figure; no interval for Jev (macroF1; ref not_reported; RoB some_concerns; role estimate); ledger L5380"
+    },
+    "syn.gapJevBestLiSokRoute": {
+      "text": "-1.7",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) held-out route catalogues with a feasible candidate present (120 constructed cases, eight candidates); Jev-1.13 (95/120) minus the best LLM comparator Gemini-3.1-Flash-Lite (97/120) on the same cases; deterministic task rules excluded (the full rule computes the reference and scores 120/120); the abstract reports no accuracy contrast, so the primary is the base condition of the route-catalogue test whose coverage result the abstract does report (the same catalogues in which Jev escalates 4 of 120 infeasible cases); the policy, contract and placement gaps are context; authors' own measurements on constructed cases (accuracy; ref synthetic; RoB high; role estimate); ledger L5447"
+    },
+    "syn.gapJevBestLiSokPolicy": {
+      "text": "17.5",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) access-policy base condition (4 requirements, 6k characters, 120 cases); Jev-1.13 minus the best LLM comparator Gemini-3.1-Flash-Lite (86/120); deterministic rules excluded (full rule 120/120, cheapest 93/120) (accuracy; ref synthetic; RoB high; role context); ledger L5454"
+    },
+    "syn.gapJevBestLiSokPlacement": {
+      "text": "-18.3",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) coupled placement, complete observations with a shared quota (120 cases); Jev-1.13 (14/120) minus the best LLM comparator Gemini-3.1-Flash-Lite (36/120); deterministic rules excluded (accuracy; ref synthetic; RoB high; role context); ledger L5444"
+    },
+    "syn.gapJevBestLiSokContract": {
+      "text": "0.0",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) contract catalogue with stable candidate IDs (48 configurations); Jev-1.13 and Gemini-3.1-Flash-Lite both at 100 percent, a ceiling tie (accuracy; ref synthetic; RoB high; role context); ledger L5445"
+    },
     "syn.gapJevBestNegCount": {
-      "text": "43",
+      "text": "46",
       "source": "shared/ledger/synthesis.json",
       "note": "Accuracy-gap clusters where Jev is behind its best frontier comparator"
     },
@@ -7593,12 +7778,12 @@
     "syn.costRatioCinaCost": {
       "text": "0.42",
       "source": "shared/ledger/synthesis.json",
-      "note": "cina2026jev: Cina cost per 1,000 rescored sentences: OPT-6.7b self-hosted on an L40S at $1.82 per hour at full utilisation over Jev's list price on the same lists (comparator cheaper; break-even only above 43% utilisation) (cost ratio; ref none; RoB some_concerns; role estimate); ledger L1290"
+      "note": "cina2026jev: Cina cost per 1,000 rescored sentences: OPT-6.7b self-hosted on an L40S at $1.82 per hour at full utilisation over Jev's list price on the same lists (comparator cheaper; break-even only above 43% utilisation) (cost ratio; ref none; RoB high; role estimate); ledger L1290"
     },
     "syn.costRatioMadridCost": {
       "text": "84",
       "source": "shared/ledger/synthesis.json",
-      "note": "madridgarcia2026jev: Madrid-Garcia cost to evaluate all 2,823 items: GPT-6 Sol at medium reasoning over Jev (billed spend via the provider APIs) (cost ratio; ref human_adjudicated; RoB high; role estimate); ledger L1450"
+      "note": "madridgarcia2026jev: Madrid-Garcia cost to evaluate all 2,823 items: GPT-6 Sol at medium reasoning over Jev (billed spend via the provider APIs) (cost ratio; ref human_adjudicated; RoB some_concerns; role estimate); ledger L1450"
     },
     "syn.costRatioSharmaWriteCost": {
       "text": "3,100",
@@ -7633,12 +7818,12 @@
     "syn.costRatioBongardCost": {
       "text": "0.11",
       "source": "shared/ledger/synthesis.json",
-      "note": "ding2026bongard: Bongard (open 4B-4B model trained by the authors); Bongard cost per million decisions over hosted Jev's (open replica on one RTX PRO 6000 at $1.79 per GPU hour, projection; ratio below 1 means the replica is cheaper) (cost ratio; ref none; RoB high; role context); ledger L1870"
+      "note": "ding2026bongard: Bongard (open 4B-4B model trained by the authors); Bongard cost per million decisions over hosted Jev's (open replica on one RTX PRO 6000 at $1.79 per GPU hour, projection; ratio below 1 means the replica is cheaper) (cost ratio; ref none; RoB some_concerns; role context); ledger L1870"
     },
     "syn.costRatioBongardLunaCost": {
       "text": "3.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "ding2026bongard: Bongard (open 4B-4B model trained by the authors); GPT-6 Luna cost over Jev cost per million decisions; both figures are quoted from JevBench results (secondary, not measured by the authors) (cost ratio; ref none; RoB high; role context); ledger L1870"
+      "note": "ding2026bongard: Bongard (open 4B-4B model trained by the authors); GPT-6 Luna cost over Jev cost per million decisions; both figures are quoted from JevBench results (secondary, not measured by the authors) (cost ratio; ref none; RoB some_concerns; role context); ledger L1870"
     },
     "syn.costRatioXuCost": {
       "text": "200",
@@ -7773,7 +7958,7 @@
     "syn.costRatioLiReadingCost": {
       "text": "73",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026reading: Li et al. billed cost per decision state of GPT-6.1 Sol (medium reasoning, batch pricing) over Jev on the same 65,228 records; the paper states about 73 times (cost ratio; ref task_outcome; RoB some_concerns; role estimate); ledger L3441"
+      "note": "li2026reading: Li et al. billed cost per decision state of GPT-6.1 Sol (medium reasoning, batch pricing) over Jev on the same 65,228 records; the paper states about 73 times (cost ratio; ref task_outcome; RoB high; role estimate); ledger L3441"
     },
     "syn.costRatioChungCost": {
       "text": "0.47",
@@ -7803,7 +7988,7 @@
     "syn.costRatioJevcoderCost": {
       "text": "1.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhang2026jevcoder: Zhang et al. JevCoder estimated API cost per task with DeepSeek-V4.1-Flash as repair model: same-model judging over Jev guidance (Jev charges included); whole-workflow cost, repair tokens included in both arms (cost ratio; ref task_outcome; RoB high; role estimate); ledger L3642"
+      "note": "zhang2026jevcoder: Zhang et al. JevCoder estimated API cost per task with DeepSeek-V4.1-Flash as repair model: same-model judging over Jev guidance (Jev charges included); whole-workflow cost, repair tokens included in both arms (cost ratio; ref task_outcome; RoB some_concerns; role estimate); ledger L3642"
     },
     "syn.costRatioMessoudiCost": {
       "text": "1.7",
@@ -7838,12 +8023,12 @@
     "syn.costRatioArenaCost": {
       "text": "2.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026system1: Chen et al. System1-Arena, US$ per 1,000 requests on the same 87-task workload: GPT-6 Luna (0.143, closed LLM with similar accuracy) over Jev (0.052) (cost ratio; ref none; RoB high; role estimate); ledger L3873"
+      "note": "chen2026system1: Chen et al. System1-Arena, US$ per 1,000 requests on the same 87-task workload: GPT-6 Luna (0.143, closed LLM with similar accuracy) over Jev (0.052) (cost ratio; ref none; RoB some_concerns; role estimate); ledger L3873"
     },
     "syn.costRatioArenaCostOpus": {
       "text": "200",
       "source": "shared/ledger/synthesis.json",
-      "note": "chen2026system1: Chen et al. same workload: best-accuracy model Claude Opus 5.5 (US$10.380 per 1,000 requests) over Jev (0.052) (cost ratio; ref mixed; RoB high; role context); ledger L3879;L3873"
+      "note": "chen2026system1: Chen et al. same workload: best-accuracy model Claude Opus 5.5 (US$10.380 per 1,000 requests) over Jev (0.052) (cost ratio; ref mixed; RoB some_concerns; role context); ledger L3879;L3873"
     },
     "syn.costRatioBruCost": {
       "text": "50",
@@ -7878,7 +8063,7 @@
     "syn.costRatioYouCost": {
       "text": "37",
       "source": "shared/ledger/synthesis.json",
-      "note": "you2026native: You et al. (clinical triage) estimated cost per 1,000 calls over 925 decision points: GPT Sol (USD 0.7192, OpenRouter-reported) over Jev (USD 0.0193, vendor tariff); estimates, not invoices; GPT Sol is the best comparator on the primary macro-F1 contrast (cost ratio; ref administrative_field; RoB some_concerns; role estimate); ledger L4209"
+      "note": "you2026native: You et al. (clinical triage) estimated cost per 1,000 calls over 925 decision points: GPT Sol (USD 0.7192, OpenRouter-reported) over Jev (USD 0.0193, vendor tariff); estimates, not invoices; GPT Sol is the best comparator on the primary macro-F1 contrast (cost ratio; ref administrative_field; RoB high; role estimate); ledger L4209"
     },
     "syn.costRatioWangTruncCost": {
       "text": "1.1",
@@ -7964,6 +8149,16 @@
       "text": "8.7",
       "source": "shared/ledger/synthesis.json",
       "note": "khatri2026need: Khatri et al. billed cost per 1,000 queries, Gemini 2.5 Flash (US$1.66) over Jev 1.13 (US$0.19); the paper's own LLM baseline (sensitivity) (cost ratio; ref other: expert annotator labels (adjudication not stated); RoB high; role context); ledger L5288"
+    },
+    "syn.costRatioSonthaliaEsciBottledCost": {
+      "text": "0.25",
+      "source": "shared/ledger/synthesis.json",
+      "note": "sonthalia2026agent: Sonthalia et al. ESCI full workload; reported Opus 5 bottling cost (mean of two runs) over Jev's cost projected from the 1,000-instance sample at US$0.042 per million input tokens; the bottled artifact is a different system from the zero-shot model and its macro-F1 (0.499) is on other items, so this is a cost comparison and not a matched-quality one (cost ratio; ref not_reported; RoB some_concerns; role context); ledger L5383"
+    },
+    "syn.costRatioSonthaliaRaidBottledCost": {
+      "text": "0.021",
+      "source": "shared/ledger/synthesis.json",
+      "note": "sonthalia2026agent: Sonthalia et al. RAID full workload; reported Gemini 3.1 Pro bottling cost over Jev's projected full-workload cost (Jev projected from the 1,000-instance sample) (cost ratio; ref not_reported; RoB some_concerns; role context); ledger L5387"
     },
     "syn.costRatioLiClusterMin": {
       "text": "0.59",
@@ -8078,12 +8273,12 @@
     "syn.speedRatioCinaSpeed": {
       "text": "0.096",
       "source": "shared/ledger/synthesis.json",
-      "note": "cina2026jev: Cina median latency per list: OPT-6.7b on a local L40S over Jev through the hosted API from one data centre (network included) (latency ratio; ref none; RoB some_concerns; role estimate); ledger L1292"
+      "note": "cina2026jev: Cina median latency per list: OPT-6.7b on a local L40S over Jev through the hosted API from one data centre (network included) (latency ratio; ref none; RoB high; role estimate); ledger L1292"
     },
     "syn.speedRatioMadridSpeed": {
       "text": "5.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "madridgarcia2026jev: Madrid-Garcia median client-side latency per request: smallest GPT-6 Sol (medium) per-benchmark median over the largest Jev per-benchmark median; a conservative bound because the ledger does not pair medians by benchmark; Jev latency includes the OpenRouter hop, GPT-6 Sol was run with four concurrent requests (latency ratio; ref human_adjudicated; RoB high; role estimate); ledger L1449;L1549"
+      "note": "madridgarcia2026jev: Madrid-Garcia median client-side latency per request: smallest GPT-6 Sol (medium) per-benchmark median over the largest Jev per-benchmark median; a conservative bound because the ledger does not pair medians by benchmark; Jev latency includes the OpenRouter hop, GPT-6 Sol was run with four concurrent requests (latency ratio; ref human_adjudicated; RoB some_concerns; role estimate); ledger L1449;L1549"
     },
     "syn.speedRatioSharmaSpeed": {
       "text": "3.0",
@@ -8138,17 +8333,17 @@
     "syn.speedRatioWangLatency": {
       "text": "0.049",
       "source": "shared/ledger/synthesis.json",
-      "note": "wang2026chinese: Chinese-Jev (open model trained on 10M Chinese decisions, Jev zero-shot); Chinese-Jev median latency (14 ms, one H200) over hosted Jev API's (284 ms client-side with network); open replica and not an LLM comparator, ratio below 1 means the replica is faster (latency ratio; ref human_crowd; RoB high; role context); ledger L1823"
+      "note": "wang2026chinese: Chinese-Jev (open model trained on 10M Chinese decisions, Jev zero-shot); Chinese-Jev median latency (14 ms, one H200) over hosted Jev API's (284 ms client-side with network); open replica and not an LLM comparator, ratio below 1 means the replica is faster (latency ratio; ref human_crowd; RoB some_concerns; role context); ledger L1823"
     },
     "syn.speedRatioLyuSpeedK20": {
       "text": "9.4",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=20 median per-user hosted-API latency, GPT-6-Sol over Jev; both include network time (latency ratio; ref task_outcome; RoB some_concerns; role estimate); ledger L1894"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=20 median per-user hosted-API latency, GPT-6-Sol over Jev; both include network time (latency ratio; ref task_outcome; RoB high; role estimate); ledger L1894"
     },
     "syn.speedRatioLyuSpeedK200": {
       "text": "34",
       "source": "shared/ledger/synthesis.json",
-      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=200 median per-user latency, GPT-6-Sol over Jev (latency ratio; ref task_outcome; RoB some_concerns; role context); ledger L1895"
+      "note": "lyu2026decision: Lyu et al. Amazon Reviews 2023 reranking (NDCG@10 on 0 to 1 scale, difference left as a fraction); Movies and TV K=200 median per-user latency, GPT-6-Sol over Jev (latency ratio; ref task_outcome; RoB high; role context); ledger L1895"
     },
     "syn.speedRatioXuSpeed": {
       "text": "8.0",
@@ -8288,7 +8483,7 @@
     "syn.speedRatioLiReadingSpeed": {
       "text": "4.6",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026reading: Li et al. median latency on the 163-item panel, one item at a time: Qwen3.8-27B option-likelihood readout (thinking off, open LLM) over Jev; the GPT-6.1 latency is not in the ledger rows (latency ratio; ref task_outcome; RoB some_concerns; role estimate); ledger L3438"
+      "note": "li2026reading: Li et al. median latency on the 163-item panel, one item at a time: Qwen3.8-27B option-likelihood readout (thinking off, open LLM) over Jev; the GPT-6.1 latency is not in the ledger rows (latency ratio; ref task_outcome; RoB high; role estimate); ledger L3438"
     },
     "syn.speedRatioChungSpeed": {
       "text": "4.9",
@@ -8308,7 +8503,7 @@
     "syn.speedRatioJevcoderSpeed": {
       "text": "1.8",
       "source": "shared/ledger/synthesis.json",
-      "note": "zhang2026jevcoder: Zhang et al. median workflow runtime with DeepSeek of same-model judging over JevCoder (287.6 s vs 162.7 s); whole-agent runtime, not judge latency (latency ratio; ref task_outcome; RoB high; role context); ledger L3640;L3635"
+      "note": "zhang2026jevcoder: Zhang et al. median workflow runtime with DeepSeek of same-model judging over JevCoder (287.6 s vs 162.7 s); whole-agent runtime, not judge latency (latency ratio; ref task_outcome; RoB some_concerns; role context); ledger L3640;L3635"
     },
     "syn.speedRatioMessoudiSpeed": {
       "text": "0.26",
@@ -8393,7 +8588,7 @@
     "syn.speedRatioYouSpeed": {
       "text": "3.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "you2026native: You et al. (clinical triage) median response latency per call over 925 decision points at four concurrent requests: GPT Sol 1.410 s over Jev 0.401 s (Jev p95 0.499 s); single run, provider-side networks differ (latency ratio; ref administrative_field; RoB some_concerns; role estimate); ledger L4210"
+      "note": "you2026native: You et al. (clinical triage) median response latency per call over 925 decision points at four concurrent requests: GPT Sol 1.410 s over Jev 0.401 s (Jev p95 0.499 s); single run, provider-side networks differ (latency ratio; ref administrative_field; RoB high; role estimate); ledger L4210"
     },
     "syn.speedRatioIqbalDebertaOverJev": {
       "text": "0.034",
@@ -8480,18 +8675,38 @@
       "source": "shared/ledger/synthesis.json",
       "note": "pei2026learning: Pei et al. mean decision latency of Qwen3.5-27B direct generation (3.670 s) over the SFT Qwen3-1.7B formalizer plus frozen JEV-27B pipeline (1.826 s) on the same 1,011 annotations; the pipeline is a hybrid with a local open selector and not hosted Jev (latency ratio; ref task_outcome; RoB some_concerns; role context); ledger L5257"
     },
+    "syn.speedRatioZhanDyadNoReason": {
+      "text": "0.46",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad: Zhan et al. JevBench mean latency until the full response; Dyad without reasoning (0.31 s, own vLLM deployment, hardware not reported) over Jev (0.67 s recomputed from published per-item API timings of a separate evaluation, network included); the authors state the deployments are not a matched-hardware comparison, and the comparator is an open decision model and not an LLM (latency ratio; ref not_reported; RoB some_concerns; role context); ledger L5356"
+    },
+    "syn.speedRatioZhanDyadReason": {
+      "text": "2.0",
+      "source": "shared/ledger/synthesis.json",
+      "note": "zhan2026dyad: Zhan et al. JevBench mean latency; Dyad with reasoning (1.35 s, 120.44 mean output tokens) over Jev's 0.67 s from published API timings; deployments not matched (latency ratio; ref not_reported; RoB some_concerns; role context); ledger L5358"
+    },
+    "syn.speedRatioLiSokDeepseekP95": {
+      "text": "3.4",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) access-policy base block (81 cases); DeepSeek-V4.1-Flash p95 return latency over Jev-1.13 p95 (0.483 s); p95 and not the median because DeepSeek's median is not in the ledger, and the Jev provider is not stated (latency ratio; ref synthetic; RoB high; role context); ledger L5441"
+    },
+    "syn.speedRatioLiSokQwenP50": {
+      "text": "0.94",
+      "source": "shared/ledger/synthesis.json",
+      "note": "li2026sok: Li et al. (SoK) access-policy base block (81 cases); local Qwen3.5-4B median return latency over hosted Jev-1.13 (0.350 s); the contrast mixes local and hosted deployment, and the comparator answers 22 of 120 base policy cases correctly (latency ratio; ref synthetic; RoB high; role context); ledger L5440"
+    },
     "syn.ownStudiesInSynthesis": {
       "text": "3",
       "source": "shared/ledger/synthesis.json",
       "note": "studies of OWN_STUDIES with included selection lines"
     },
     "syn.noOwnR1GapZeroShotNStudies": {
-      "text": "34",
+      "text": "35",
       "source": "shared/ledger/synthesis.json",
       "note": "r1GapZeroShot without rafe2026calibrated, rafe2026counting and rafe2026estimating: independent study clusters"
     },
     "syn.noOwnR1GapZeroShotNRows": {
-      "text": "36",
+      "text": "37",
       "source": "shared/ledger/synthesis.json",
       "note": "r1GapZeroShot without rafe2026calibrated, rafe2026counting and rafe2026estimating: ledger rows (selection estimate rows)"
     },
@@ -8516,12 +8731,12 @@
       "note": "r1GapZeroShot without rafe2026calibrated, rafe2026counting and rafe2026estimating: cluster with the maximum"
     },
     "syn.noOwnR1GapZeroShotMedian": {
-      "text": "-0.6",
+      "text": "-0.7",
       "source": "shared/ledger/synthesis.json",
       "note": "r1GapZeroShot without rafe2026calibrated, rafe2026counting and rafe2026estimating: median over clusters"
     },
     "syn.noOwnR1GapZeroShotCiLo": {
-      "text": "-3.3",
+      "text": "-4.0",
       "source": "shared/ledger/synthesis.json",
       "note": "r1GapZeroShot without rafe2026calibrated, rafe2026counting and rafe2026estimating: 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -8531,12 +8746,12 @@
       "note": "r1GapZeroShot without rafe2026calibrated, rafe2026counting and rafe2026estimating: 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.noOwnGapJevBestFrontierNStudies": {
-      "text": "27",
+      "text": "28",
       "source": "shared/ledger/synthesis.json",
       "note": "gapJevBestFrontier without rafe2026calibrated, rafe2026counting and rafe2026estimating: independent study clusters"
     },
     "syn.noOwnGapJevBestFrontierNRows": {
-      "text": "31",
+      "text": "32",
       "source": "shared/ledger/synthesis.json",
       "note": "gapJevBestFrontier without rafe2026calibrated, rafe2026counting and rafe2026estimating: ledger rows (selection estimate rows)"
     },
@@ -8561,7 +8776,7 @@
       "note": "gapJevBestFrontier without rafe2026calibrated, rafe2026counting and rafe2026estimating: cluster with the maximum"
     },
     "syn.noOwnGapJevBestFrontierMedian": {
-      "text": "-3.0",
+      "text": "-3.3",
       "source": "shared/ledger/synthesis.json",
       "note": "gapJevBestFrontier without rafe2026calibrated, rafe2026counting and rafe2026estimating: median over clusters"
     },
@@ -8571,17 +8786,17 @@
       "note": "gapJevBestFrontier without rafe2026calibrated, rafe2026counting and rafe2026estimating: 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.noOwnGapJevBestFrontierCiHi": {
-      "text": "-0.7",
+      "text": "-1.2",
       "source": "shared/ledger/synthesis.json",
       "note": "gapJevBestFrontier without rafe2026calibrated, rafe2026counting and rafe2026estimating: 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.noOwnR3RetainedNStudies": {
-      "text": "22",
+      "text": "23",
       "source": "shared/ledger/synthesis.json",
       "note": "r3Retained without rafe2026calibrated, rafe2026counting and rafe2026estimating: independent study clusters"
     },
     "syn.noOwnR3RetainedNRows": {
-      "text": "22",
+      "text": "23",
       "source": "shared/ledger/synthesis.json",
       "note": "r3Retained without rafe2026calibrated, rafe2026counting and rafe2026estimating: ledger rows (selection estimate rows)"
     },
@@ -8616,7 +8831,7 @@
       "note": "r3Retained without rafe2026calibrated, rafe2026counting and rafe2026estimating: 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.noOwnR3RetainedCiHi": {
-      "text": "1.0",
+      "text": "1.00",
       "source": "shared/ledger/synthesis.json",
       "note": "r3Retained without rafe2026calibrated, rafe2026counting and rafe2026estimating: 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },

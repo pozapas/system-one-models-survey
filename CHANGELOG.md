@@ -2,6 +2,16 @@
 
 Releases v1.0 and v1.1 describe the literature and ecosystem as of 2026-09-24. Release v1.2 moves the cutoff to 2026-10-28.
 
+## v1.2.1 (2026-10-29)
+
+This release adds the second rating of the v1.2 sweep and its adjudication. The cutoff is unchanged.
+
+- **Second rating.** Ten second raters, blind to the first rating, screened all 249 candidates of `ledger/candidates_v12.csv`, rated the five risk-of-bias domains for all 215 studies graded in v1.2, read 295 extracted values from their sources and coded 38 decision heads. The guide, the returned workbooks, the key used to score them and the agreement are in `ledger/second_rating_v12/` (scripts `make_second_rating_v12.py` and `second_rating_agreement_v12.py`).
+- **Adjudication.** Every disagreement was decided by the authors against the full text in `ledger/second_rating_v12/Adjudication_v12_returned.xlsx`, and `apply_adjudication_v12.py` applied the decisions. Each changed rating records the adjudication in its reason, and `adjudication_log_v12.md` lists every decision. The rating rules written for the cases the anchors left open are at the end of `ledger/PROTOCOL.md`.
+- **New studies.** Six papers excluded at screening were included at adjudication and extracted into `ledger/parts/ledger_V23.csv` to `ledger_V28.csv`, graded in `ledger/parts/rob_G14.csv` and `rob_G15.csv`, and selected in `ledger/selection_parts/sel_S09.csv` and `sel_S10.csv`. `ledger/ledger.csv` now holds 3,519 rows from 250 studies, 248 of them graded.
+- **Corrections from the raters' notes.** Row L3299 names the model of its value (Qwen3.5-35B-A3B), the liu2026timesjev rows name the printed Overall column, and row L1333 has a complete value key. No value changed.
+- **Census.** Three decision heads are recoded from pair scoring to option markers under the adjudicated shared-pass rule (`census/head_check_H2.csv`, `head_check_H4.csv`).
+
 ## v1.2 (2026-10-28)
 
 This release adds a second literature sweep and extends the census to the new cutoff. No existing ledger value was changed.
