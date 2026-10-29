@@ -9,15 +9,15 @@
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.overallSomeConcerns": {
-      "text": "102",
+      "text": "103",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.overallHigh": {
-      "text": "143",
+      "text": "142",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d1High": {
-      "text": "44",
+      "text": "45",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d1Unclear": {
@@ -25,47 +25,47 @@
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d2High": {
-      "text": "11",
+      "text": "10",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d2Unclear": {
-      "text": "130",
+      "text": "131",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d3High": {
-      "text": "64",
+      "text": "65",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d3Unclear": {
-      "text": "169",
+      "text": "170",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d4High": {
-      "text": "53",
+      "text": "55",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d4Unclear": {
-      "text": "133",
+      "text": "136",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d5High": {
-      "text": "95",
+      "text": "93",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.d5Unclear": {
-      "text": "114",
+      "text": "116",
       "source": "shared/ledger/rob.csv (counted by survey/src/t_s3_rob.py)"
     },
     "rob.sensLow": {
-      "text": "4",
+      "text": "3",
       "source": "shared/ledger/rob.csv (sensitivity computed by survey/src/t_s3_rob.py)"
     },
     "rob.sensSome": {
-      "text": "185",
+      "text": "184",
       "source": "shared/ledger/rob.csv (sensitivity computed by survey/src/t_s3_rob.py)"
     },
     "rob.sensHigh": {
-      "text": "59",
+      "text": "61",
       "source": "shared/ledger/rob.csv (sensitivity computed by survey/src/t_s3_rob.py)"
     }
   }

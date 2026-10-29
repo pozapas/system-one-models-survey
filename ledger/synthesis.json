@@ -96,7 +96,7 @@
       "note": "R1 clusters where Jev is ahead or tied"
     },
     "syn.r1GapParityNStudies": {
-      "text": "10",
+      "text": "9",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 clusters with RoB D4 low"
     },
@@ -111,7 +111,7 @@
       "note": "R1 D4 low maximum gap (demir2026commit)"
     },
     "syn.r1GapSelfReportNStudies": {
-      "text": "53",
+      "text": "54",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 clusters with RoB D4 high/unclear"
     },
@@ -351,12 +351,12 @@
       "note": "R1 best open model minus Jev, estimates and sensitivity readings, comparator class task_trained (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotParityNStudies": {
-      "text": "10",
+      "text": "9",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): independent study clusters"
     },
     "syn.r1GapZeroShotParityNRows": {
-      "text": "11",
+      "text": "10",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -381,27 +381,27 @@
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): cluster with the maximum"
     },
     "syn.r1GapZeroShotParityMedian": {
-      "text": "-0.6",
+      "text": "-0.4",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): median over clusters (points; positive means the open model is ahead)"
     },
     "syn.r1GapZeroShotParityCiLo": {
-      "text": "-6.1",
+      "text": "-10.1",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotParityCiHi": {
-      "text": "2.2",
+      "text": "4.9",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 low, comparator class zero_shot_open (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotSelfReportNStudies": {
-      "text": "25",
+      "text": "26",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): independent study clusters"
     },
     "syn.r1GapZeroShotSelfReportNRows": {
-      "text": "26",
+      "text": "27",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): ledger rows (selection estimate rows)"
     },
@@ -426,17 +426,17 @@
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): cluster with the maximum"
     },
     "syn.r1GapZeroShotSelfReportMedian": {
-      "text": "-0.7",
+      "text": "-1.0",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): median over clusters (points; positive means the open model is ahead)"
     },
     "syn.r1GapZeroShotSelfReportCiLo": {
-      "text": "-10.1",
+      "text": "-7.0",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): 2.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
     "syn.r1GapZeroShotSelfReportCiHi": {
-      "text": "3.1",
+      "text": "2.4",
       "source": "shared/ledger/synthesis.json",
       "note": "R1 best open model minus Jev, RoB D4 high/unclear, comparator class zero_shot_open (comparator_class.csv): 97.5th percentile of the bootstrap median over clusters (10000 resamples, seed 11)."
     },
@@ -1803,7 +1803,7 @@
     "syn.r1ReadoutRenReadout": {
       "text": "2.2",
       "source": "shared/ledger/synthesis.json",
-      "note": "ren2026openjev Qwen3 fine-tune (label-token readout, 'Jev way') (AUROC points; ref administrative_field; RoB some_concerns; role context); ledger L249"
+      "note": "ren2026openjev Qwen3 fine-tune (label-token readout, 'Jev way') (AUROC points; ref administrative_field; RoB high; role context); ledger L249"
     },
     "syn.r1ReadoutTangClassification": {
       "text": "4.2",
@@ -6238,17 +6238,17 @@
     "syn.gapJevBestLiJudgeRewardBench": {
       "text": "-3.0",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026jevasajudge: Li et al. RewardBench (preference) human-adjudicated accuracy difference vs GPT-6 Astra; n in the ledger is the number of adjudicated disagreements (accuracy; ref human_adjudicated; RoB high; role estimate); ledger L066"
+      "note": "li2026jevasajudge: Li et al. RewardBench (preference) human-adjudicated accuracy difference vs GPT-6 Astra; n in the ledger is the number of adjudicated disagreements (accuracy; ref human_adjudicated; RoB some_concerns; role estimate); ledger L066"
     },
     "syn.gapJevBestLiJudgeJudgeBench": {
       "text": "-16.0",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026jevasajudge: Li et al. JudgeBench (difficult correctness) human-adjudicated accuracy difference vs GPT-6 Astra (accuracy; ref human_adjudicated; RoB high; role estimate); ledger L067"
+      "note": "li2026jevasajudge: Li et al. JudgeBench (difficult correctness) human-adjudicated accuracy difference vs GPT-6 Astra (accuracy; ref human_adjudicated; RoB some_concerns; role estimate); ledger L067"
     },
     "syn.gapJevBestLiJudgeHaluEval": {
       "text": "-2.5",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026jevasajudge: Li et al. HaluEval (grounded factuality) human-adjudicated accuracy difference vs GPT-6 Astra (accuracy; ref human_adjudicated; RoB high; role estimate); ledger L068"
+      "note": "li2026jevasajudge: Li et al. HaluEval (grounded factuality) human-adjudicated accuracy difference vs GPT-6 Astra (accuracy; ref human_adjudicated; RoB some_concerns; role estimate); ledger L068"
     },
     "syn.gapJevBestRafeGap": {
       "text": "-5.9",
@@ -6303,7 +6303,7 @@
     "syn.gapJevBestGuoKappa": {
       "text": "-0.002",
       "source": "shared/ledger/synthesis.json",
-      "note": "guo2026just: Guo et al. StrongREJECT human set; Jev vs GPT-4o-mini reference scorer on the same 1360 responses; kappa against human labels; comparator not frontier (sensitivity, own metric group) (kappa; ref human_adjudicated; RoB high; role context); ledger L613"
+      "note": "guo2026just: Guo et al. StrongREJECT human set; Jev vs GPT-4o-mini reference scorer on the same 1360 responses; kappa against human labels; comparator not frontier (sensitivity, own metric group) (kappa; ref human_adjudicated; RoB some_concerns; role context); ledger L613"
     },
     "syn.gapJevBestLiuRJudgeBest": {
       "text": "-14.1",
@@ -7718,7 +7718,7 @@
     "syn.costRatioLiJudgeCost": {
       "text": "280",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026jevasajudge: Li et al. matched 120-decision panel; GPT-6 Astra fee over Jev fee (cost ratio; ref none; RoB high; role estimate); ledger L059"
+      "note": "li2026jevasajudge: Li et al. matched 120-decision panel; GPT-6 Astra fee over Jev fee (cost ratio; ref none; RoB some_concerns; role estimate); ledger L059"
     },
     "syn.costRatioZhangCost": {
       "text": "37",
@@ -7768,12 +7768,12 @@
     "syn.costRatioGuoCost": {
       "text": "63",
       "source": "shared/ledger/synthesis.json",
-      "note": "guo2026just: Guo et al. pooled list-price cost of the benchmarks own API LLM judges over Jev on the same 19 benchmarks (cost ratio; ref none; RoB high; role estimate); ledger L617"
+      "note": "guo2026just: Guo et al. pooled list-price cost of the benchmarks own API LLM judges over Jev on the same 19 benchmarks (cost ratio; ref none; RoB some_concerns; role estimate); ledger L617"
     },
     "syn.costRatioGuoCostConservative": {
       "text": "12",
       "source": "shared/ledger/synthesis.json",
-      "note": "guo2026just: Guo et al. conservative repricing (every judge at GPT-4o-mini rates, Jev generic question only); sensitivity (cost ratio; ref none; RoB high; role context); ledger L618"
+      "note": "guo2026just: Guo et al. conservative repricing (every judge at GPT-4o-mini rates, Jev generic question only); sensitivity (cost ratio; ref none; RoB some_concerns; role context); ledger L618"
     },
     "syn.costRatioCinaCost": {
       "text": "0.42",
@@ -8238,7 +8238,7 @@
     "syn.speedRatioLiJudgeSpeed": {
       "text": "12",
       "source": "shared/ledger/synthesis.json",
-      "note": "li2026jevasajudge: Li et al. matched panel median latency; GPT-6 Astra over Jev (latency ratio; ref none; RoB high; role estimate); ledger L061"
+      "note": "li2026jevasajudge: Li et al. matched panel median latency; GPT-6 Astra over Jev (latency ratio; ref none; RoB some_concerns; role estimate); ledger L061"
     },
     "syn.speedRatioDengSpeed": {
       "text": "4.1",

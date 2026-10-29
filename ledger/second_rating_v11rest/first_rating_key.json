@@ -1,0 +1,254 @@
+{
+ "seed": 20261030,
+ "raters": {
+  "S01": {
+   "inclusion": {},
+   "rob": {
+    "grey_robbalian_rev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "rafe2026calibrated": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "low"
+    },
+    "wu2026reflex": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "grey_laya": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L469",
+     "value": "0.213"
+    },
+    "2": {
+     "row_id": "L496",
+     "value": "87.7"
+    },
+    "3": {
+     "row_id": "L077",
+     "value": "0.915"
+    },
+    "4": {
+     "row_id": "L424",
+     "value": "0.95"
+    }
+   },
+   "heads": {}
+  },
+  "S02": {
+   "inclusion": {},
+   "rob": {
+    "grey_localllama_typed_decisions": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "jiang2026jevmem": {
+     "Reference-label independence": "high",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    },
+    "sun2026typesafe": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "zhang2026same": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L514",
+     "value": "1.442"
+    },
+    "2": {
+     "row_id": "L256",
+     "value": "0.93"
+    },
+    "3": {
+     "row_id": "L043",
+     "value": "24"
+    },
+    "4": {
+     "row_id": "L117",
+     "value": "+0.49"
+    }
+   },
+   "heads": {}
+  },
+  "S03": {
+   "inclusion": {},
+   "rob": {
+    "ma2026jevstar": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "low"
+    },
+    "ibrahim2026evaluating": {
+     "Reference-label independence": "low",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "grey_kev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "ren2026openjev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "low"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L476",
+     "value": "0.822"
+    },
+    "2": {
+     "row_id": "L025",
+     "value": "0.163"
+    },
+    "3": {
+     "row_id": "L441",
+     "value": "0.422"
+    },
+    "4": {
+     "row_id": "L236",
+     "value": "97.4"
+    }
+   },
+   "heads": {}
+  },
+  "S04": {
+   "inclusion": {},
+   "rob": {
+    "dossantos2026calibrated": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    },
+    "grey_vercel_p95": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "high",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "unclear"
+    },
+    "grey_bespoke_nimble": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "high",
+     "Test-set exposure": "unclear"
+    },
+    "guo2026just": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "unclear",
+     "Test-set exposure": "high"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L628",
+     "value": "3"
+    },
+    "2": {
+     "row_id": "L461",
+     "value": "54.6 (Nimble) vs 50.1 (Jev)"
+    },
+    "3": {
+     "row_id": "L511",
+     "value": "up to 18 (range ~5-18)"
+    },
+    "4": {
+     "row_id": "L615",
+     "value": "0.748"
+    }
+   },
+   "heads": {}
+  },
+  "S05": {
+   "inclusion": {},
+   "rob": {
+    "li2026replacing": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "unclear",
+     "Version pinning and run dates": "low",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "low"
+    },
+    "li2026jevasajudge": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "low",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "high"
+    },
+    "deng2026jev": {
+     "Reference-label independence": "unclear",
+     "Sampling and reporting": "high",
+     "Version pinning and run dates": "unclear",
+     "Tuning-budget parity": "low",
+     "Test-set exposure": "unclear"
+    }
+   },
+   "extraction": {
+    "1": {
+     "row_id": "L403",
+     "value": "0.335"
+    },
+    "2": {
+     "row_id": "L072",
+     "value": "0.111"
+    },
+    "3": {
+     "row_id": "L202",
+     "value": "320.7"
+    }
+   },
+   "heads": {}
+  }
+ }
+}

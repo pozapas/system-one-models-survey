@@ -2,6 +2,13 @@
 
 Releases v1.0 and v1.1 describe the literature and ecosystem as of 2026-09-24. Release v1.2 moves the cutoff to 2026-10-28.
 
+## v1.2.2 (2026-10-29)
+
+This release completes the second rating of the first sweep. The cutoff is unchanged.
+
+- **Second rating.** The 19 first-sweep studies that the v1.1 second rater did not grade were rated on the five risk-of-bias domains by five further raters, blind to the first rating, who also read one extracted value per study from its source (`ledger/second_rating_v11rest/`, scripts `make_second_rating_v11rest.py` and `second_rating_agreement_v12.py`). Every study graded before the adjudication of 2026-10-29 now has an independent second rating.
+- **Adjudication.** Every disagreement was decided by the authors against the full text that the ledger extracted at the first cutoff (`Adjudication_v11rest_returned.xlsx`, applied by `apply_adjudication_v11rest.py`, logged in `adjudication_log_v11rest.md`). One rule was added for model names without a dated snapshot (`ledger/PROTOCOL.md`). No extracted value changed.
+
 ## v1.2.1 (2026-10-29)
 
 This release adds the second rating of the v1.2 sweep and its adjudication. The cutoff is unchanged.

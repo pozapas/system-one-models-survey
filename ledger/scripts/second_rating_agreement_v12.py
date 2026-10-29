@@ -53,15 +53,26 @@ def stats(pairs, weights=None):
 
 
 def main():
-    folder = Path(sys.argv[1])
-    out = Path(sys.argv[2]) if len(sys.argv) > 2 else folder / "second_rating_v12.json"
-    dis_path = Path(sys.argv[3]) if len(sys.argv) > 3 else folder / "disagreements_v12.csv"
-    key = json.loads(KEY.read_text(encoding="utf-8"))["raters"]
+    # optional --key <file> --orig <folder> score another round (for example make_second_rating_v11rest.py)
+    args = sys.argv[1:]
+    key_path, orig = KEY, ORIG
+    for flag in ("--key", "--orig"):
+        if flag in args:
+            i = args.index(flag)
+            if flag == "--key":
+                key_path = Path(args[i + 1])
+            else:
+                orig = Path(args[i + 1])
+            del args[i:i + 2]
+    folder = Path(args[0])
+    out = Path(args[1]) if len(args) > 1 else folder / "second_rating_v12.json"
+    dis_path = Path(args[2]) if len(args) > 2 else folder / "disagreements_v12.csv"
+    key = json.loads(key_path.read_text(encoding="utf-8"))["raters"]
     inc, rob, ext, heads, dis, blanks, integrity = [], [], [], [], [], defaultdict(int), {}
     rob_dom = defaultdict(list)
     for rid, k in key.items():
         back = load_workbook(folder / f"second_rating_{rid}.xlsx")
-        integrity[rid] = fixed_cells_changed(load_workbook(ORIG / f"second_rating_{rid}.xlsx"), back)
+        integrity[rid] = fixed_cells_changed(load_workbook(orig / f"second_rating_{rid}.xlsx"), back)
         for r in rows(back["Inclusion"]):
             d = str(r.get("decision") or "").strip().lower()
             if not d:

@@ -1,0 +1,60 @@
+{
+ "values": {
+  "sr4.raters": {
+   "text": "5",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.robStudies": {
+   "text": "19",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.robN": {
+   "text": "95",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.robAgreeN": {
+   "text": "60",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.robAgreement": {
+   "text": "63",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.robWeightedKappa": {
+   "text": "0.44",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.extractionN": {
+   "text": "19",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.extractionAgreeN": {
+   "text": "18",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.robDisagreeN": {
+   "text": "35",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.robChangedN": {
+   "text": "22",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.overallChangedN": {
+   "text": "3",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.firstSweepStudies": {
+   "text": "27",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.studiesSecondRated": {
+   "text": "242",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  },
+  "sr4.studiesGradedOnce": {
+   "text": "6",
+   "source": "shared/ledger/second_rating_v11rest.json"
+  }
+ }
+}
